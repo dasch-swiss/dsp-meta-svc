@@ -1,0 +1,21 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "@bazel/ibazel": "0.11.1",
+    "@bazel/typescript": "1.2.0",
+    "@bazel/bazel": "2.0.0",
+    "lite-server": "2.5.4",
+    "typescript": "3.1.1"
+  },
+  "scripts": {
+    "start-prod": "bazel run //src/server",
+    "start-dev": "ibazel run //src/client:dev_server",
+    "create-docker-image": "bazel run //src/server:app_image",
+    "push-docker-image": "bazel run //src/server:push"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "compression": "1.7.4",
+    "lodash": "4.17.19"
+  }
+}

@@ -27,20 +27,27 @@ bazel_skylib_workspace()
 http_archive(
     name = "build_bazel_rules_nodejs",
     urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/3.0.0/rules_nodejs-3.0.0.tar.gz"],
-    sha256 = "6142e9586162b179fdd570a55e50d1332e7d9c030efd853453438d607569721d",
+    # sha256 = "290b659e7a6323e442db922175a4838e4ac622509f9e9fa0dd16b7ca30377d68",
 )
 
-load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories")
+load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install")
 
 # NOTE: this rule installs nodejs, npm, and yarn, but does NOT install
 # your npm dependencies into your node_modules folder.
 # You must still run the package manager to do this.
-node_repositories(package_json = ["//:package.json"])
+node_repositories(
+    node_version = "14.15.4",
+    node_repositories = {
+        "14.15.4-darwin_amd64": ("node-v14.15.4-darwin-x64.tar.gz", "node-v14.15.4-darwin-x64", "6b0e19e5c2601ef97510f7eb4f52cc8ee261ba14cb05f31eb1a41a5043b0304e"),
+        "14.15.4-linux_amd64": ("node-v14.15.4-linux-x64.tar.xz", "node-v14.15.4-linux-x64", "ed01043751f86bb534d8c70b16ab64c956af88fd35a9506b7e4a68f5b8243d8a"),
+        "14.15.4-windows_amd64": ("node-v14.15.4-win-x64.zip", "node-v114.15.4-win-x64", "b2a0765240f8fbd3ba90a050b8c87069d81db36c9f3745aff7516e833e4d2ed6"),
+    },
+    node_urls = ["https://nodejs.org/dist/v{version}/{filename}"],
+    package_json = ["//:package.json"]
+)
 
 load("@build_bazel_rules_nodejs//:package.bzl", "rules_nodejs_dev_dependencies")
 rules_nodejs_dev_dependencies()
-
-load("@build_bazel_rules_nodejs//:index.bzl", "yarn_install")
 
 yarn_install(
   name = "npm",
@@ -53,9 +60,9 @@ yarn_install(
 #
 http_archive(
     name = "build_bazel_rules_svelte",
-    url = "https://github.com/thelgevold/rules_svelte/archive/0.15.zip",
-    strip_prefix = "rules_svelte-0.15",
-    sha256 = "1b04eb08ef80636929d152bb2f2733e36d9e0b8ad10aca7b435c82bd638336f5"
+    url = "https://github.com/subotic/rules_svelte/archive/master.zip",
+    strip_prefix = "rules_svelte-master",
+    # sha256 = "4a06155b8b723c4c541a2fc556fbc65afc6a0747249702c2e9b2f6b1e015b72b"
 ) 
 
 load("@build_bazel_rules_svelte//:defs.bzl", "rules_svelte_dependencies")

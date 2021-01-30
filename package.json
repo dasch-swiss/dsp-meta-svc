@@ -5,9 +5,26 @@
     "@bazel/typescript": "3.0.0",
     "@bazel/bazelisk": "1.7.3",
     "lite-server": "2.6.1",
-    "typescript": "3.9.7"
+    "typescript": "^3.9.7",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "tslib": "^2.0.0",
+    "@tsconfig/svelte": "^1.0.0"
   },
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "validate": "svelte-check",
     "start-prod": "bazel run //src/server",
     "start-dev": "ibazel run //src/client:dev_server",
     "create-docker-image": "bazel run //src/server:app_image",
@@ -16,6 +33,7 @@
   "dependencies": {
     "express": "4.17.1",
     "compression": "1.7.4",
-    "lodash": "4.17.20"
+    "lodash": "4.17.20",
+    "sirv-cli": "^1.0.0"
   }
 }

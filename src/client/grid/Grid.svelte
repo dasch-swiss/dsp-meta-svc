@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import {PersonService} from './person-service';
 
@@ -10,7 +10,6 @@
   onMount(async () => {
 	  title = 'Grid';
 	});
-
 </script>
 
 <div class="row">
@@ -44,4 +43,3 @@
     color: white;
   }
 </style>
-

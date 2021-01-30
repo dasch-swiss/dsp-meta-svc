@@ -3,3 +3,5 @@ dist
 node_modules
 .clwb
 bazel-*
+public/build
+.DS_Store

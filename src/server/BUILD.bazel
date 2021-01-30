@@ -20,7 +20,7 @@ nodejs_binary(
     ":app_server",
     "@npm//express",
     ":index.html",
-    "//src/client:bundle_prod"
+#     "//src/client:bundle_prod"
   ],
   entry_point = "js_src",
 )

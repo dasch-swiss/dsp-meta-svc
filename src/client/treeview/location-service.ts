@@ -1,6 +1,7 @@
 import { Location } from './location';
 
 export class LocationService {
+
   getLocations() {
     let usa = new Location('USA', ['New York', 'Texas'], true);
     let nyc = usa.getLocation('New York').addLocation('New York City');

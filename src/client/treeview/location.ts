@@ -1,4 +1,8 @@
 export class Location {
+
+  name: string;
+  locations: Array<Location>;
+
   constructor(name, locations, visible) {
     this.name = name;
     this.locations = locations.map(l => new Location(l, [], false));

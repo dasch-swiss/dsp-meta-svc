@@ -24,10 +24,12 @@ bazel_skylib_workspace()
 #
 # Download the rules_nodejs repository
 #
+rules_nodejs_version="3.0.0"
+rules_nodejs_version_sha256="6142e9586162b179fdd570a55e50d1332e7d9c030efd853453438d607569721d"
 http_archive(
     name = "build_bazel_rules_nodejs",
-    urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/3.0.0/rules_nodejs-3.0.0.tar.gz"],
-    # sha256 = "290b659e7a6323e442db922175a4838e4ac622509f9e9fa0dd16b7ca30377d68",
+    urls = ["https://github.com/bazelbuild/rules_nodejs/releases/download/%s/rules_nodejs-%s.tar.gz" % (rules_nodejs_version, rules_nodejs_version)],
+    sha256 = rules_nodejs_version_sha256,
 )
 
 load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install")
@@ -54,20 +56,6 @@ yarn_install(
   package_json = "//:package.json",
   yarn_lock = "//:yarn.lock",
 )
-
-#
-# Download the rules_svelte repository
-#
-http_archive(
-    name = "build_bazel_rules_svelte",
-    url = "https://github.com/subotic/rules_svelte/archive/master.zip",
-    strip_prefix = "rules_svelte-master",
-    # sha256 = "4a06155b8b723c4c541a2fc556fbc65afc6a0747249702c2e9b2f6b1e015b72b"
-) 
-
-load("@build_bazel_rules_svelte//:defs.bzl", "rules_svelte_dependencies")
-rules_svelte_dependencies()
-
 
 ##################################
 # Support creating Docker images #

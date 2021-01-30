@@ -14,7 +14,7 @@
 </ul>
 </div>
 
-<script>
+<script lang="ts">
   import Grid from "./grid/Grid.svelte";
   import Treeview from './treeview/Treeview.svelte';
 
@@ -22,7 +22,7 @@
 
   import uniq from 'lodash/uniq';
 	
-	const numbers = [1, 5, 5, 5, 1, 1, 15, 15, 15];
+    const numbers = [1, 5, 5, 5, 1, 1, 15, 15, 15];
 
   const uniqNumbers = uniq(numbers);
 

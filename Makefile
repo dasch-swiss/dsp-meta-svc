@@ -15,14 +15,25 @@ build: ## build all targets
 	@yarn run build
 	@bazel build //...
 
+.PHONY: build-linux
+build-linux: ## build all targets
+	@yarn run build
+	@bazel build --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //...
+
 #################################
 # Docker targets
 #################################
 
 .PHONY: docker-build
-docker-build: # build and publish knora-api docker image locally
-	@bazel run //src/server:app_image
+docker-build: ## publish linux/amd64 platform image locally
+	@bazel run --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //docker -- --norun
 
 .PHONY: docker-publish
-docker-publish: # publish knora-api image to Dockerhub
-	@bazel run //docker/knora-api:push
+docker-publish: ## publish linux/amd64 platform image to Dockerhub
+	@bazel run --platforms=@build_bazel_rules_nodejs//toolchains/node:linux_amd64 //docker:push
+
+.PHONY: help
+help: ## this help
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST) | sort
+
+.DEFAULT_GOAL := help

@@ -25,6 +25,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
+    "start-dev": "ibazel run //src/server",
     "start-prod": "bazel run //src/server"
   },
   "dependencies": {

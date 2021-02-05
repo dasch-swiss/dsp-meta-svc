@@ -25,10 +25,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "start-prod": "bazel run //src/server",
-    "start-dev": "ibazel run //src/client:dev_server",
-    "create-docker-image": "bazel run //src/server:app_image",
-    "push-docker-image": "bazel run //src/server:push"
+    "start-prod": "bazel run //src/server"
   },
   "dependencies": {
     "express": "4.17.1",

@@ -1,5 +1,5 @@
 workspace(
-    name = "svelte_bazel_example",
+    name = "swiss_dasch_dsp_repository",
     managed_directories = {"@npm": ["node_modules"]},
 )
 

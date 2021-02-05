@@ -5,10 +5,12 @@ const app = express();
 
 app.use(compression());
 
-app.use("/assets", express.static("./src/client"));
+app.use("/build", express.static("./public/build"));
 
 app.get("/", (_req, res) => {
-  res.sendFile("index.html", { root: "./src/server" });
+  const options
+
+  res.sendFile("index.html", { root: "./public" });
 });
 
 const port = 5000;

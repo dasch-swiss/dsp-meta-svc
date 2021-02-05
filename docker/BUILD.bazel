@@ -1,0 +1,22 @@
+load("@io_bazel_rules_docker//nodejs:image.bzl", "nodejs_image")
+load("@io_bazel_rules_docker//container:container.bzl", "container_push")
+
+#nodejs_image(
+#    name = "docker",
+#    entry_point = "svelte_bazel_example/src/server/server.js",
+#    node_modules = "@npm//:node_modules",
+#    data = [
+#        "//public",
+#        ":app_server",
+#        ":index.html"
+#    ]
+#)
+#
+#container_push(
+#    name = "push",
+#    image = ":docker",
+#    format = "Docker",
+#    registry = "index.docker.io",
+#    repository = "daschswiss/dsp-repository",
+#    tag = "1"
+#)

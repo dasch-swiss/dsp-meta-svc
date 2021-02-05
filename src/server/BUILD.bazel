@@ -1,53 +1,32 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
-load("@io_bazel_rules_docker//nodejs:image.bzl", "nodejs_image")
 load("@npm//@bazel/typescript:index.bzl", "ts_library")
 
 ts_library(
-  name = "app_server",
+  name = "library",
   srcs = [
       "server.ts"
   ],
-  tsconfig = "//:tsconfig.json",
+  tsconfig = "//:tsconfig-node.json",
   deps = [
     "@npm//express",
     "@npm//compression"
   ]
 )
 
-nodejs_binary(
-  name = "server", 
-  data = [
-    ":app_server",
-    "@npm//express",
-    ":index.html",
-#     "//src/client:bundle_prod"
-  ],
-  entry_point = "js_src",
-)
-
 filegroup(
-    name = "js_src",
-    srcs = ["app_server"],
+    name = "library.js",
+    srcs = [":library"],
     output_group = "es5_sources",
 )
 
-# nodejs_image(
-#     name = "app_image",
-#     entry_point = "svelte_bazel_example/src/server/server.js",
-#     node_modules = "@npm//:node_modules",
-#     data = ["//src/client:bundle_prod", ":app_server", ":index.html"]
-# )
+nodejs_binary(
+  name = "server", 
+  data = [
+    ":library",
+    "@npm//express",
+    "//public",
+  ],
+  entry_point = ":library.js",
+)
 
-# load(
-#     "@io_bazel_rules_docker//container:container.bzl",
-#     "container_push"
-# )
 
-# container_push(
-#    name = "push",
-#    image = ":app_image",
-#    format = "Docker",
-#    registry = "index.docker.io",
-#    repository = "[TODO: ADD YOUR OWN REPO]",
-#    tag = "1"
-# )

@@ -8,7 +8,7 @@ app.use(compression());
 app.use("/build", express.static("./public/build"));
 
 app.get("/", (_req, res) => {
-  const options
+  // const options
 
   res.sendFile("index.html", { root: "./public" });
 });

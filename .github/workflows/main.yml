@@ -6,6 +6,7 @@ on:
     types: [published]
 
 jobs:
+  # test always and publish on release
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -39,8 +40,13 @@ jobs:
             ${{ runner.OS }}-build-${{ env.cache-name }}-
             ${{ runner.OS }}-build-
             ${{ runner.OS }}-
-      - name: Run build everything
+      - name: Build everything
         run: make build
+      - name: Publish to Dockerhub
+        if: github.event_name == 'release' && startsWith(github.ref, 'refs/tags')
+        run: |
+          echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
+          make docker-publish
 
   release-please:
     name: Prepare next release
@@ -54,52 +60,6 @@ jobs:
           release-type: simple
           package-name: dsp-repository
           changelog-types: '[{"type": "feat","section": "Enhancements","hidden": false }, {"type": "fix","section": "Bug Fixes","hidden": false }, {"type": "chore","section": "Maintenance","hidden": false }, {"type": "docs","section": "Documentation","hidden": false }]'
-
-
-  # publish only on release
-  publish:
-    name: Publish (on release only)
-    needs: [
-      test
-    ]
-    runs-on: ubuntu-latest
-    if: github.event_name == 'release' && startsWith(github.ref, 'refs/tags')
-    steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 50
-      - uses: joschi/setup-jdk@v2
-        with:
-          java-version: '11' # The OpenJDK version to make available on the path
-          architecture: 'x64' # defaults to 'x64'
-      - name: Install requirements
-        run: sudo apt-get install ca-certificates-java expect redis-tools unzip
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - name: Set up Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r docs/requirements.txt
-          npm install --global @bazel/bazelisk
-      - name: Cache maven artifacts
-        uses: actions/cache@v1
-        with:
-          path: ~/.ivy2
-          key: ${{ runner.OS }}-build-${{ hashFiles('**/KnoraBuild.sbt') }}
-          restore-keys: |
-            ${{ runner.OS }}-build-${{ env.cache-name }}-
-            ${{ runner.OS }}-build-
-            ${{ runner.OS }}-
-      - name: Build and publish all images to Dockerhub
-        run: |
-          echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
-          make docker-publish
 
   # google chat notification about release
   notification:

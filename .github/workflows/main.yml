@@ -64,7 +64,7 @@ jobs:
   # google chat notification about release
   notification:
     name: Google chat notification about release and published version
-    needs: [publish]
+    needs: [test]
     runs-on: ubuntu-latest
     if: github.event_name == 'release' && startsWith(github.ref, 'refs/tags')
     steps:

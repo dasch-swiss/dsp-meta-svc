@@ -5,3 +5,4 @@ node_modules
 bazel-*
 public/build
 .DS_Store
+/public/build/

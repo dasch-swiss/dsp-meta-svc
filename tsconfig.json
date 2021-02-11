@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "moduleResolution": "node",
-        "target": "es2017",
+        "target": "es2019",
+        "lib": ["es2019"],
         /**
           Svelte Preprocess cannot figure out whether you have a value or a type, so tell TypeScript
           to enforce using `import type` instead of `import` for Types.
@@ -10,10 +10,6 @@
         "isolatedModules": true,
         "strict": false,
         "baseUrl": ".",
-        "paths": {
-            "dsp/*": ["*"]
-        },
-        "module": "commonjs",
         "noImplicitAny": true,
         "noImplicitThis": true,
         "preserveConstEnums": true,
@@ -27,14 +23,13 @@
         "types": [
             "node",
             "express",
-            "svelte",
+            "svelte"
         ],
         "skipLibCheck": true,
         "experimentalDecorators": true,
-        "lib": ["es2019", "dom"],
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true
     },
-    "exclude": ["bazel-*", "node_modules", "public/*"]
+    "exclude": ["bazel-*", "node_modules", "public/build/*"]
 }

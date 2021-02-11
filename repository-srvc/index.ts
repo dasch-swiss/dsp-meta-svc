@@ -1,4 +1,4 @@
-import { ExpressServer } from "./express_server";
+import { ExpressServer } from './express_server';
 
 interface IServerProps {
     httpPort: number;

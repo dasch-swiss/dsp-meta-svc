@@ -6,8 +6,5 @@ filegroup(
         "favicon.png",
         "global.css",
         "index.html",
-        "build/bundle.css",
-        "build/bundle.js",
-        "build/bundle.js.map"
-    ],
+        ] + glob(["build/**/*"]),
 )

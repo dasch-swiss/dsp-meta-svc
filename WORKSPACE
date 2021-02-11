@@ -39,7 +39,7 @@ load("@build_bazel_rules_nodejs//:index.bzl", "node_repositories", "yarn_install
 # You must still run the package manager to do this.
 node_repositories(
     node_version = "14.15.4",
-    package_json = ["//:package.json"]
+    package_json = ["//:package.json"],
 )
 
 load("@build_bazel_rules_nodejs//:package.bzl", "rules_nodejs_dev_dependencies")

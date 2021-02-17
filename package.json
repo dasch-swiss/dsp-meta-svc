@@ -29,8 +29,8 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "node-start-dev": "ibazel run //repository-srvc:bin",
-    "node-start-prod": "bazel run //repository-srvc:bin"
+    "node-start-dev": "ibazel run //services/metadata/backend:bin",
+    "node-start-prod": "bazel run //services/metadata/backend:bin"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -38,7 +38,6 @@
     "compression": "1.7.4",
     "cors": "^2.8.5",
     "express": "4.17.1",
-    "lodash": "4.17.20",
     "sirv-cli": "^1.0.0"
   }
 }

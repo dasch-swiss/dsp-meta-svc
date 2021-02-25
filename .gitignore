@@ -1,8 +1,9 @@
-bazel-out
+bazel-*
 dist
 node_modules
 .clwb
-bazel-*
+.ijwb
 public/build
 .DS_Store
 /public/build/
+/pkg/

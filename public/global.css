@@ -4,13 +4,108 @@
 	height: 100%;
 } */
 
+:root {
+	--cl-background: #cccccc;
+	--cl-background-light: #dddddd;
+	--cl-background-dark: #aaaaaa;
+	
+	--cl-text: #333;
+	
+	--cl-transparent-dark: rgba(0, 0, 0, 0.2);
+	--cl-transparent-light: rgba(255, 255, 255, 0.3);
+}
+
 body {
-	color: #333;
+	color: var(--cl-text);
 	margin: 0;
 	/* padding: 8px; */
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
+.hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+input:focus {
+	outline: none;
+}
+
+
+@media screen and (min-width: 450px){
+	/* extra small screen styles */
+	.xs-inline-block {
+		display: inline-block !important;
+	}
+	.xs-hidden {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 640px){
+	/* small screen styles */
+	.s-inline-block {
+		display: inline-block !important;
+	}
+	.s-hidden {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px){
+	/* medium screen styles */
+	.m-inline-block {
+		display: inline-block !important;
+	}
+	.m-hidden {
+		display: none !important;
+	}
+
+	/* TODO: remove - just for testing */
+	body {
+		background-color: aqua !important;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	/* large screen styles */
+	.l-inline-block {
+		display: inline-block !important;
+	}
+	.l-hidden {
+		display: none !important;
+	}
+
+	/* TODO: remove - just for testing */
+	body {
+		background-color: magenta !important;
+	}
+}
+
+@media screen and (min-width: 1280px){
+	/* extra large screen styles */
+	.xl-inline-block {
+		display: inline-block !important;
+	}
+	.xl-hidden {
+		display: none;
+	}
+
+	/* TODO: remove - just for testing */
+	body {
+		background-color: olivedrab !important;
+	}
+}
+
 
 /* a {
 	color: rgb(0,100,200);
@@ -19,10 +114,6 @@ body {
 
 a:hover {
 	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
 }
 
 label {

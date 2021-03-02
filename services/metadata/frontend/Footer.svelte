@@ -2,18 +2,19 @@
 
 <style>
   .footer {
-    background-color: rgb(185, 184, 184);
-    /* background-color: rgb(89, 73, 167); */ /* DaSCH Purple */
-    color: whitesmoke;
+    background-color: var(--cl-background);
     font-weight: bold;
-    /* display: inline-flex; */
     width: 100%;
-    position: fixed;
-    bottom: 0px;
-    padding: 16px;
-    color: rgb(90, 90, 90);
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* vertical-align: bottom; */
+    padding: 1rem;
+    box-sizing: border-box;
   }
+
+  @media screen and (min-width: 768px){
+	  /* medium screen styles */
+    .footer {
+      position: sticky;
+      bottom: 0px;
+    }
+  }
+
 </style>

@@ -7,16 +7,9 @@
   let future: string;
 </script>
 
-<style>
-  h1 {
-    text-align: center;
-  }
-</style>
-
 <Header/>
-<div>
-  <h1>The {name} future is {future}</h1>
+<Content/>
+<Footer/>
 
-  <Content/>
-</div>
-<Footer />
+<style>
+</style>

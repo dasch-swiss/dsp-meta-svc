@@ -1,20 +1,18 @@
-<div class="footer">Footer...</div>
+<footer>Footer...</footer>
 
 <style>
-  .footer {
+  footer {
+    flex-shrink: 0;
     background-color: var(--cl-background);
     font-weight: bold;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
   }
-
   @media screen and (min-width: 768px){
-	  /* medium screen styles */
-    .footer {
+    footer {
       position: sticky;
       bottom: 0px;
     }
   }
-
 </style>

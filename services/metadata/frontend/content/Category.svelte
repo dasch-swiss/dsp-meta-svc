@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { Project } from "./project.model";
+import { pagedResults, pages } from "./stores";
 
   interface Category {
     id: number;
@@ -21,23 +22,25 @@ import type { Project } from "./project.model";
     { id: 8, isOpen: false, name: 'Organization', sub: ['Last', 'Not least'] },
   ];
 
-  const toggleCetegory = (cat: any) => (event: any) => {
+  const toggleCetegory = (cat: Category) => (event: MouseEvent) => {
+    console.log(cat)
     let bool = cat.isOpen;
     categories[cat.id - 1].isOpen = !bool;
   };
 
-  const handleSubCategory = (q: string) => (event: any) => {
+  const handleSubCategory = (q: string) => (event: MouseEvent) => {
     fetch(`http://localhost:3000/projects?q=${q}`)
       .then(r => r.json())
       .then(data => {
-        console.log(data);
         searched = data;
+        pages.set({totalCount: data.length, totalPages: 1});
+        pagedResults.set(data);
     });
   }
 </script>
 
 {#each categories as category }
-  <button class={category.sub.length ? '' : 'not-allowed'} on:click={toggleCetegory(category)}>
+  <button on:click={toggleCetegory(category)} disabled={!category.sub.length}>
     {category.name}
   </button>
   {#if category.sub && category.sub.length}
@@ -58,7 +61,6 @@ import type { Project } from "./project.model";
     padding: 10px;
     border: 1px solid #aaa;
     border-radius: 3px;
-    cursor: pointer;
     text-align: left;
   }
   .subcategory {
@@ -70,9 +72,6 @@ import type { Project } from "./project.model";
     border-radius: 3px;
     background-color: #f2f2f2;
     font-size: 0.8em;
-  }
-  .not-allowed {
-    cursor: not-allowed;
   }
   input[type=checkbox] {
     margin: 5px 10px;

@@ -97,7 +97,7 @@
     cursor: pointer;
   }
   .title {
-    color: var(--cl-text);
+    color: var(--dasch-text);
     padding: 12px 0;
     white-space: nowrap;
     font-size: 0.8rem;
@@ -126,12 +126,12 @@
     display: inline-block;
     vertical-align: middle;
     border-radius: 0.25rem;
-    cursor: pointer;
     background-color: inherit;
     border: none;
     padding: 0px;
   }
   button:hover {
+    color: var(--dasch-violet);
     background-color: var(--cl-transparent-dark);
   }
   .icon {

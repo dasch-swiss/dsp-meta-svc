@@ -1,14 +1,15 @@
-import {writable} from "svelte/store";
-import type {PaginationData, Project} from "./interfaces";
+import { writable } from 'svelte/store';
+import type { PaginationData } from './interfaces';
 
-export const pages = writable({} as PaginationData)
+export const pagination = writable({} as PaginationData)
 export const pagedResults = writable([]);
-export const currentProject = writable(undefined);
+export const currentProjectMetadata = writable(undefined);
+
 const baseUrl = 'http://localhost:3000/projects?';
 const pageLimit = 9;
 let query = '';
 
-export async function getProjects(page: number, q?: string): Promise<void> {
+export async function getProjectsMetadata(page: number, q?: string): Promise<void> {
   let url: string;
 
   if (q) {
@@ -28,7 +29,7 @@ export async function getProjects(page: number, q?: string): Promise<void> {
       let totalPages: number;
       totalCount = parseInt(r.headers.get('X-Total-Count'));
       totalPages = Math.floor(totalCount/pageLimit) + 1;
-      pages.set({totalCount, totalPages});
+      pagination.set({totalCount, totalPages});
       return r.json();
     })
     .then(data => pagedResults.set(data))

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Category, Project } from "./interfaces";
-  import { pagedResults, pages } from "./stores";
+  import type { Category, ProjectMetadata } from '../interfaces';
+  import { pagedResults, pagination } from '../stores';
 
-  export let searched: Project[] = [];
+  export let searched: ProjectMetadata[] = [];
 
   let categories = [
     { id: 1, isOpen: false, name: 'Discipline', sub: ['Agriculture', 'Antropology', 'Geography', 'History'] },
@@ -25,7 +25,7 @@
       .then(r => r.json())
       .then(data => {
         searched = data;
-        pages.set({totalCount: data.length, totalPages: 1});
+        pagination.set({totalCount: data.length, totalPages: 1});
         pagedResults.set(data);
     });
   }

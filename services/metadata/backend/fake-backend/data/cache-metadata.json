@@ -1,475 +1,490 @@
-
 {
-    "projectsMetadata": [
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082B-project",
+        "@type": "Project",
+        "@created": "1622032057334672000",
+        "@modified": "1622032057334674000",
+        "howToCite": "XX - new property on project level",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-082B-dataset-001"
+        ],
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-082B-grant-001"
+        ],
+        "description": {
+            "en": "cache is a hybrid publication tool for research groups in the humanities."
+        },
+        "spatialCoverage": [
+            {
+                "text": "XX: Geonames URL: https://www.geonames.org/countries",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/countries/"
+            }
+        ],
+        "shortcode": "082B",
+        "disciplines": [
+            {
+                "de": "10301 Allgemeine Geschichte (ohne Ur- und Frühgeschichte)"
+            },
+            {
+                "de": "10600 Soziologie, Soziale Arbeit, Politikwissenschaften, Medien- und Kommunikationswissenschaften, Gesundheit"
+            },
+            {
+                "de": "10302 Schweizer Geschichte"
+            },
+            {
+                "de": "10400 Ethnologie, Sozial- und Humangeographie"
+            }
+        ],
+        "publications": [
+            "Gegen|Wissen (cache 01)"
+        ],
+        "keywords": [
+            {
+                "en": "academic publishing"
+            },
+            {
+                "XX": "humanities"
+            }
+        ],
+        "temporalCoverage": [
+            {
+                "en": "16th Century"
+            },
+            {
+                "en": "19th Century"
+            },
+            {
+                "en": "17th Century"
+            },
+            {
+                "en": "20th Century"
+            },
+            {
+                "en": "18th Century"
+            }
+        ],
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-082B-organization-003"
+        ],
+        "startDate": "2018-12-01",
+        "name": "cache",
+        "urls": [
+            {
+                "text": "www.cache.ch",
+                "type": "URL",
+                "url": "www.cache.ch"
+            }
+        ]
+    },
+    "datasets": [
         {
-            "type": "http://ns.dasch.swiss/repository#Dataset",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-dataset-001",
-            "abstract": [
-                "Genetic engineering, acid rain, nuclear accidents, ozone depletion, computerization — in the years around 1980, science moved center-stage as a socio-political quandary. First and foremost, it were the new social movements that cultivated critiques of science and technology; but soon enough, the desire for an alternative science, or a “counter-knowledge”, diffused into the broader realms of politics, economics and, not least, establishment science. What was this “counter\"-science? Where did it succeed? Where did it fail? And why is this relevant again today?"
-            ],
-            "conditionsOfAccess": "Open",
-            "datePublished": "2020-10-01",
-            "howToCite": "Gegen|Wissen, intercom: Zürich (2020)",
-            "language": [
-                "English",
-                "German"
-            ],
-            "license": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-dataset-001",
+            "@type": "Dataset",
+            "@created": "1622032062448026000",
+            "@modified": "1622032062448027000",
+            "urls": [
                 {
-                    "name": "creativecommons.org",
-                    "type": "https://schema.org/URL",
+                    "text": "www.cache.ch/gegenwissen",
+                    "type": "URL",
+                    "url": "www.cache.ch/gegenwissen"
+                }
+            ],
+            "languages": [
+                {
+                    "en": "English",
+                    "de": "Englisch",
+                    "fr": "anglais"
+                },
+                {
+                    "de": "Deutsch",
+                    "en": "German",
+                    "fr": "allemand"
+                }
+            ],
+            "licenses": [
+                {
+                    "text": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+                    "type": "URL",
                     "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
                 }
             ],
-            "qualifiedAttribution": [
+            "attributions": [
                 {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-008"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "publisher"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-007"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-003",
+                    "roles": [
                         "scientific direction"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-003"
-                        }
                     ]
                 },
                 {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-009"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "project lead"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-001"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-012"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-011"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-006"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-004"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
-                        "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-010"
-                        }
-                    ]
-                },
-                {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
+                    "roles": [
                         "editorial management"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-002"
-                        }
                     ]
                 },
                 {
-                    "type": "http://www.w3.org/ns/prov#Attribution",
-                    "role": [
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
+                    "roles": [
                         "author"
-                    ],
-                    "agent": [
-                        {
-                            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-005"
-                        }
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-001",
+                    "roles": [
+                        "project lead"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
+                    "roles": [
+                        "publisher"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-004",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-008",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
+                    "roles": [
+                        "author"
                     ]
                 }
             ],
             "status": "Finished",
+            "abstracts": {
+                "texts": [
+                    {
+                        "en": "Genetic engineering, acid rain, nuclear accidents, ozone depletion, computerization — in the years around 1980, science moved center-stage as a socio-political quandary. First and foremost, it were the new social movements that cultivated critiques of science and technology; but soon enough, the desire for an alternative science, or a “counter-knowledge”, diffused into the broader realms of politics, economics and, not least, establishment science. What was this “counter\"-science? Where did it succeed? Where did it fail? And why is this relevant again today?"
+                    }
+                ]
+            },
+            "accessConditions": "Open",
+            "datePublished": "2020-10-01",
             "title": "Gegen|Wissen (cache 01)",
             "typeOfData": [
                 "Text"
             ],
-            "project": {
-                "id": "http://ns.dasch.swiss/repository#dsp-082B-project"
-            },
-            "sameAs": [
-                {
-                    "name": "www.cache.ch",
-                    "type": "https://schema.org/URL",
-                    "url": "https://cache.ch/gegenwissen"
-                }
-            ]
-        },
+            "howToCite": "Gegen|Wissen, intercom: Zürich (2020)"
+        }
+    ],
+    "persons": [
         {
-            "type": "http://ns.dasch.swiss/repository#Project",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-project",
-            "contactPoint": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002"
-                }
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
+            "@type": "Person",
+            "@created": "1622032062874676000",
+            "@modified": "1622032062874677000",
+            "familyNames": [
+                "Wulz"
             ],
-            "description": "cache is a hybrid publication tool for research groups in the humanities.",
-            "discipline": [
-                "10400 Ethnologie, Sozial- und Humangeographie ",
-                "10301 Allgemeine Geschichte (ohne Ur- und Frühgeschichte)",
-                "10302 Schweizer Geschichte",
-                "10600 Soziologie, Soziale Arbeit, Politikwissenschaften, Medien- und Kommunikationswissenschaften, Gesundheit"
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
             ],
-            "funder": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003"
-                }
-            ],
-            "grant": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-grant-001"
-                }
-            ],
-            "keywords": [
-                "humanities",
-                "academic publishing"
-            ],
-            "name": "cache",
-            "publication": [
-                "Gegen|Wissen (cache 01)"
-            ],
-            "shortcode": "082B",
-            "spatialCoverage": [
-                {
-                    "place": {
-                        "name": "World",
-                        "url": "https://www.geonames.org/countries/"
-                    }
-                }
-            ],
-            "startDate": "2018-12-01",
-            "temporalCoverage": [
-                "19th Century",
-                "20th Century",
-                "16th Century",
-                "17th Century",
-                "18th Century"
-            ],
-            "url": [
-                {
-                    "name": "www.cache.ch",
-                    "type": "https://schema.org/URL",
-                    "url": "https://www.cache.ch"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
-            "familyName": "Schmidt",
-            "givenName": "Susanne",
-            "jobTitle": [
+            "jobTitles": [
                 "Historian"
             ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
+            "givenNames": [
+                "Monika"
             ]
         },
         {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
-            "familyName": "Wulz",
-            "givenName": "Monika",
-            "jobTitle": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
+            "@type": "Person",
+            "@created": "1622032062874941000",
+            "@modified": "1622032062874942000",
+            "familyNames": [
+                "Schlünder"
+            ],
+            "givenNames": [
+                "Martina"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-001",
+            "@type": "Person",
+            "@created": "1622032062875201000",
+            "@modified": "1622032062875202000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
                 "Historian"
             ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
-            "familyName": "Schlünder",
-            "givenName": "Martina",
-            "jobTitle": [
-                "Historian"
+            "givenNames": [
+                "Nils"
             ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-004",
-            "familyName": "Grote",
-            "givenName": "Mathias",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
-            "familyName": "Grütter",
-            "givenName": "Fabian",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-008",
-            "familyName": "Schmidt",
-            "givenName": "Anna Maria",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
-            "familyName": "Scheidegger",
-            "givenName": "Tobias",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-003",
-            "email": [
-                "mxmlnstdlr@gmail.com"
-            ],
-            "familyName": "Stadler",
-            "givenName": "Max",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Grant",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-grant-001",
-            "funder": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003"
-                }
-            ],
-            "name": "Digital Lives SNF",
-            "number": "183057",
-            "url": [
-                {
-                    "name": "183057",
-                    "type": "https://schema.org/URL",
-                    "url": "http://p3.snf.ch/Project-183057"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-001",
-            "email": [
+            "emails": [
                 "nils.guettler@wiss.gess.ethz.ch"
             ],
-            "familyName": "Güttler",
-            "givenName": "Nils",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
+            "familyNames": [
+                "Güttler"
             ]
         },
         {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
-            "email": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
+            "@type": "Person",
+            "@created": "1622032062875493000",
+            "@modified": "1622032062875494000",
+            "familyNames": [
+                "Grütter"
+            ],
+            "jobTitles": [
+                "Historian"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "givenNames": [
+                "Fabian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-003",
+            "@type": "Person",
+            "@created": "1622032062875706000",
+            "@modified": "1622032062875707000",
+            "familyNames": [
+                "Stadler"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "givenNames": [
+                "Max"
+            ],
+            "emails": [
+                "mxmlnstdlr@gmail.com"
+            ],
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-008",
+            "@type": "Person",
+            "@created": "1622032062875983000",
+            "@modified": "1622032062875984000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "familyNames": [
+                "Schmidt"
+            ],
+            "givenNames": [
+                "Anna Maria"
+            ],
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
+            "@type": "Person",
+            "@created": "1622032062876209000",
+            "@modified": "1622032062876210000",
+            "jobTitles": [
+                "Historian"
+            ],
+            "givenNames": [
+                "Tobias"
+            ],
+            "familyNames": [
+                "Scheidegger"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
+            "@type": "Person",
+            "@created": "1622032062876424000",
+            "@modified": "1622032062876425000",
+            "familyNames": [
+                "Schmidt"
+            ],
+            "givenNames": [
+                "Susanne"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
+            "@type": "Person",
+            "@created": "1622032062876637000",
+            "@modified": "1622032062876638000",
+            "givenNames": [
+                "Nadine"
+            ],
+            "familyNames": [
+                "Zberg"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
+            "@type": "Person",
+            "@created": "1622032062876851000",
+            "@modified": "1622032062876851000",
+            "givenNames": [
+                "Niki"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "familyNames": [
+                "Rhyner"
+            ],
+            "emails": [
                 "niki.rhyner@wiss.gess.ethz.ch"
             ],
-            "familyName": "Rhyner",
-            "givenName": "Niki",
-            "jobTitle": [
+            "jobTitles": [
+                "Historian"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
+            "@type": "Person",
+            "@created": "1622032062877129000",
+            "@modified": "1622032062877130000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
                 "Historian"
             ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
+            "familyNames": [
+                "von Schwerin"
+            ],
+            "givenNames": [
+                "Alexander"
             ]
         },
         {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
-            "familyName": "von Schwerin",
-            "givenName": "Alexander",
-            "jobTitle": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-004",
+            "@type": "Person",
+            "@created": "1622032062877342000",
+            "@modified": "1622032062877343000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
+            ],
+            "jobTitles": [
                 "Historian"
             ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Organization",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001",
-            "name": [
-                "ETH Zurich"
+            "familyNames": [
+                "Grote"
             ],
-            "url": [
-                {
-                    "name": "www.ethz.ch",
-                    "type": "https://schema.org/URL",
-                    "url": "www.ethz.ch"
-                }
+            "givenNames": [
+                "Mathias"
             ]
+        }
+    ],
+    "organizations": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001",
+            "@type": "Organization",
+            "@created": "1622032062877585000",
+            "@modified": "1622032062877585000",
+            "url": {
+                "text": "www.ethz.ch",
+                "type": "URL",
+                "url": "www.ethz.ch"
+            },
+            "name": "ETH Zurich"
         },
         {
-            "type": "http://ns.dasch.swiss/repository#Organization",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
-            "email": "info@intercomverlag.ch",
-            "name": [
-                "intercom Verlag"
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
+            "@type": "Organization",
+            "@created": "1622032062877754000",
+            "@modified": "1622032062877755000",
+            "name": "intercom Verlag",
+            "url": {
+                "text": "www.intercomverlag.ch",
+                "type": "URL",
+                "url": "www.intercomverlag.ch"
+            },
+            "email": "info@intercomverlag.ch"
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003",
+            "@type": "Organization",
+            "@created": "1622032062877949000",
+            "@modified": "1622032062877950000",
+            "name": "SNSF"
+        }
+    ],
+    "grants": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082B-grant-001",
+            "@type": "Grant",
+            "@created": "1622032062878048000",
+            "@modified": "1622032062878048000",
+            "number": "http://p3.snf.ch/Project-183057",
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-082B-organization-003"
             ],
-            "url": [
-                {
-                    "name": "www.intercom",
-                    "type": "https://schema.org/URL",
-                    "url": "www.intercomverlag.ch"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Person",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
-            "familyName": "Zberg",
-            "givenName": "Nadine",
-            "jobTitle": [
-                "Historian"
-            ],
-            "memberOf": [
-                {
-                    "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
-                }
-            ]
-        },
-        {
-            "type": "http://ns.dasch.swiss/repository#Organization",
-            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003",
-            "name": [
-                "SNSF"
-            ]
+            "name": "Digital Lives SNF",
+            "url": {
+                "text": "183057",
+                "type": "URL",
+                "url": "183057"
+            }
         }
     ]
 }

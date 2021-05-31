@@ -1,536 +1,492 @@
 {
-  "projectsMetadata": [
-    {
-      "type": "http://ns.dasch.swiss/repository#Dataset",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-dataset-000",
-      "abstract": [
-        "The dataset includes information about Roud’s publications (complete bibliographic records, facsimiles) and about the materials in his archive at the University of Lausanne (document descriptions, facsimiles). Each work has attached a critical text and a genetic network; the latter links publications and archival materials. The dataset also includes information about persons, places and artistic works (music, literature, visual arts) mentioned in the texts, and short essays about Roud’s artistic production."
-      ],
-      "conditionsOfAccess": "Open",
-      "dateCreated": "2018-08-31",
-      "dateModified": "2021-02-03",
-      "datePublished": "2018-08-31",
-      "documentation": [
-        "https://github.com/gustaveroudproject/SalsahModeEmploi/blob/master/SalsahModeEmploi.md "
-      ],
-      "howToCite": "Maggetti, D., Jacquier Kaempfer, C., Spadini, E., Pellegrino, B., Burri, J., Lacord, R., Peterman, S., Christen, A., Jaouen, L., Rivoal, M., 2020, Gustave Roud, oeuvres [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0112.",
-      "language": [
-        "French"
-      ],
-      "license": [
-        {
-          "name": "Creative Commons",
-          "type": "https://schema.org/URL",
-          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
-        }
-      ],
-      "qualifiedAttribution": [
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data collector"
-          ],
-          "agent": [
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0112-project",
+        "@type": "Project",
+        "@created": "1622032082517981000",
+        "@modified": "1622032082517982000",
+        "howToCite": "XX - new property on project level",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-0112-dataset-000"
+        ],
+        "spatialCoverage": [
             {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-005"
+                "text": "Switzerland",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2658434/"
             }
-          ]
+        ],
+        "keywords": [
+            {
+                "en": "Photography"
+            },
+            {
+                "en": "Literary criticism"
+            },
+            {
+                "XX": "Poetry"
+            },
+            {
+                "de": "Literature from French-speaking Switzerland"
+            },
+            {
+                "en": "Translation"
+            },
+            {
+                "en": "20th century French literature"
+            },
+            {
+                "XX": "Gustave Roud"
+            },
+            {
+                "XX": "Textual genetics"
+            },
+            {
+                "en": "Edition"
+            },
+            {
+                "XX": "Manuscripts"
+            },
+            {
+                "XX": "Digital edition"
+            }
+        ],
+        "disciplines": [
+            {
+                "fr": "http://skos.um.es/unesco6/550613 \r  \r http://skos.um.es/unesco6/550613 \r  \r http://skos.um.es/unesco6/550613"
+            },
+            {
+                "en": "Romance languages and literature"
+            },
+            {
+                "text": "Language and literature",
+                "type": "Skos",
+                "url": "http://skos.um.es/unesco6/570107"
+            }
+        ],
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-0112-grant-000"
+        ],
+        "description": {
+            "en": "Gustave Roud’s work includes several volumes of poetic prose, diary notes, translations, as well as  texts on literature and fine arts. The first critical edition of the poet will be published in two complementary formats: in several volumes, with the publisher Zoé (Carouge-Geneva) and, at the same time, on a digital platform. This platform will constitute the genetic accompaniment of the publication: it will host the digital facsimiles of Gustave Roud’s archive, which includes manuscripts and printed materials.\n\nIn these two formats the publication will enhance the exposure of one of the most important works of the 20th century Swiss literature and it will stimulate studies that respond to contemporary critical orientations: ecocriticism, literary geography and landscape studies, intermediality studies, and queer studies. Furthermore, the digital facsimiles of the archival materials will give the project a strong interdisciplinary dimension: taking into account the diversity of Roud’s practices – diary, poetry, photography, art criticism, literary criticism, translation – it will inspire a renewal of the approach to the work and to its author for the academic as well as the general public."
         },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data collector"
-          ],
-          "agent": [
+        "shortcode": "0112",
+        "endDate": "2021-12-31",
+        "name": "Gustave Roud, Complete works",
+        "urls": [
             {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-003"
+                "text": "http://ark.dasch.swiss/ark:/72163/1/0112 ",
+                "type": "URL",
+                "url": "http://ark.dasch.swiss/ark:/72163/1/0112 "
             }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data curator"
-          ],
-          "agent": [
+        ],
+        "temporalCoverage": [
             {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-008"
+                "XX": "20e siècle"
             }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project leader"
-          ],
-          "agent": [
+        ],
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
+        "startDate": "2017-11-01",
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-0112-organization-001"
+        ],
+        "alternativeNames": [
             {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-001"
+                "fr": "roud-oeuvres"
             }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project member"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-004"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data collector"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project member"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-003"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data manager"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data collector"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-006"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data curator"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project member"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-006"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project member"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-005"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Data collector"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-004"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Other"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-007"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project member"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002"
-            }
-          ]
-        },
-        {
-          "type": "http://www.w3.org/ns/prov#Attribution",
-          "role": [
-            "Project leader"
-          ],
-          "agent": [
-            {
-              "id": "http://ns.dasch.swiss/repository#dsp-0112-person-000"
-            }
-          ]
-        }
-      ],
-      "status": "Ongoing",
-      "title": "Base de données Gustave Roud",
-      "typeOfData": [
-        "Image",
-        "Text",
-        "XML"
-      ],
-      "project": {
-        "id": "http://ns.dasch.swiss/repository#dsp-0112-project"
-      }
+        ]
     },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-005",
-      "email": [
-        "julien.burri@unil.ch"
-      ],
-      "familyName": "Burry",
-      "givenName": "Julien",
-      "jobTitle": [
-        "Junior SNSF Researcher",
-        "Scientific collaborator"
-      ],
-      "memberOf": [
+    "datasets": [
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-dataset-000",
+            "@type": "Dataset",
+            "@created": "1622032090118084000",
+            "@modified": "1622032090118085000",
+            "attributions": [
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
+                    "roles": [
+                        "Other"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-008",
+                    "roles": [
+                        "Data curator"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-002",
+                    "roles": [
+                        "Data manager",
+                        "Data curator",
+                        "Data collector",
+                        "Project member"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-003",
+                    "roles": [
+                        "Data collector",
+                        "Project member"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-005",
+                    "roles": [
+                        "Data collector",
+                        "Project member"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-004",
+                    "roles": [
+                        "Data collector",
+                        "Project member"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-006",
+                    "roles": [
+                        "Data collector",
+                        "Project member"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
+                    "roles": [
+                        "Project leader"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0112-person-001",
+                    "roles": [
+                        "Project leader"
+                    ]
+                }
+            ],
+            "dateCreated": "2018-08-31",
+            "abstracts": {
+                "texts": [
+                    {
+                        "en": "The dataset includes information about Roud’s publications (complete bibliographic records, facsimiles) and about the materials in his archive at the University of Lausanne (document descriptions, facsimiles). Each work has attached a critical text and a genetic network; the latter links publications and archival materials. The dataset also includes information about persons, places and artistic works (music, literature, visual arts) mentioned in the texts, and short essays about Roud’s artistic production."
+                    }
+                ]
+            },
+            "title": "Base de données Gustave Roud",
+            "languages": [
+                {
+                    "en": "French",
+                    "de": "Französisch",
+                    "fr": "français"
+                }
+            ],
+            "typeOfData": [
+                "Text",
+                "XML",
+                "Image"
+            ],
+            "howToCite": "Maggetti, D., Jacquier Kaempfer, C., Spadini, E., Pellegrino, B., Burri, J., Lacord, R., Peterman, S., Christen, A., Jaouen, L., Rivoal, M., 2020, Gustave Roud, oeuvres [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0112.",
+            "dateModified": "2021-02-03",
+            "accessConditions": "Open",
+            "status": "Ongoing",
+            "documentations": {
+                "texts": [
+                    {
+                        "en": "https://github.com/gustaveroudproject/SalsahModeEmploi/blob/master/SalsahModeEmploi.md"
+                    }
+                ]
+            },
+            "licenses": [
+                {
+                    "text": "CC BY-SA 4.0",
+                    "type": "Creative Commons",
+                    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+                }
+            ],
+            "datePublished": "2018-08-31"
         }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Grant",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-grant-000",
-      "funder": [
+    ],
+    "persons": [
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001"
-        }
-      ],
-      "name": "Editionen",
-      "number": "157970",
-      "url": [
-        {
-          "name": "snf.ch",
-          "type": "https://schema.org/URL",
-          "url": "http://p3.snf.ch/Project-157970"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002",
-      "email": [
-        "elena.spadini@unil.ch"
-      ],
-      "familyName": "Spadini",
-      "givenName": "Elena",
-      "jobTitle": [
-        "Post-doctoral researcher",
-        "Senior SNSF Researcher"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ],
-      "sameAs": [
-        {
-          "name": "ORCID",
-          "type": "https://schema.org/URL",
-          "url": "https://orcid.org/0000-0002-4522-2833"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-004",
-      "email": [
-        "alessio.christen@unil.ch"
-      ],
-      "familyName": "Christen",
-      "givenName": "Alessio",
-      "jobTitle": [
-        "Junior SNSF Researcher",
-        "Scientific collaborator"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
-      "email": [
-        "loic.jaouen@unil.ch"
-      ],
-      "familyName": "Jaouen",
-      "givenName": "Loïc",
-      "jobTitle": [
-        "IT support"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-006",
-      "familyName": "Lacord",
-      "givenName": "Raphaëlle ",
-      "jobTitle": [
-        "Junior SNSF Researcher",
-        "Scientific collaborator"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-001",
-      "email": [
-        "claire.jaquier@unine.ch"
-      ],
-      "familyName": "Jaquier Kaempfer",
-      "givenName": "Claire",
-      "jobTitle": [
-        "Full professor"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-002"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-008",
-      "email": [
-        "marion.rivoal@unil.ch"
-      ],
-      "familyName": "Rivoal",
-      "givenName": "Marion",
-      "jobTitle": [
-        "Research manager"
-      ],
-      "memberOf": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ],
-      "sameAs": [
-        {
-          "name": "ORCID",
-          "type": "https://schema.org/URL",
-          "url": "https://orcid.org/0000-0003-4185-7169"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Project",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-project",
-      "alternateName": [
-        "roud-oeuvres"
-      ],
-      "contactPoint": [
-        {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-person-000"
-        }
-      ],
-      "description": "Gustave Roud’s work includes several volumes of poetic prose, diary notes, translations, as well as  texts on literature and fine arts. The first critical edition of the poet will be published in two complementary formats: in several volumes, with the publisher Zoé (Carouge-Geneva) and, at the same time, on a digital platform. This platform will constitute the genetic accompaniment of the publication: it will host the digital facsimiles of Gustave Roud’s archive, which includes manuscripts and printed materials.\n\nIn these two formats the publication will enhance the exposure of one of the most important works of the 20th century Swiss literature and it will stimulate studies that respond to contemporary critical orientations: ecocriticism, literary geography and landscape studies, intermediality studies, and queer studies. Furthermore, the digital facsimiles of the archival materials will give the project a strong interdisciplinary dimension: taking into account the diversity of Roud’s practices – diary, poetry, photography, art criticism, literary criticism, translation – it will inspire a renewal of the approach to the work and to its author for the academic as well as the general public.",
-      "discipline": [
-        "10502 Romance languages and literature",
-        {
-          "name": "History of Literature",
-          "type": "https://schema.org/URL",
-          "url": "http://skos.um.es/unesco6/550613"
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-005",
+            "@type": "Person",
+            "@created": "1622032091115920000",
+            "@modified": "1622032091115922000",
+            "jobTitles": [
+                "Scientific collaborator",
+                "Junior SNSF Researcher"
+            ],
+            "familyNames": [
+                "Burry"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "givenNames": [
+                "Julien"
+            ],
+            "emails": [
+                "julien.burri@unil.ch"
+            ]
         },
         {
-          "name": "Language and literature",
-          "type": "https://schema.org/URL",
-          "url": "http://skos.um.es/unesco6/570107"
-        }
-      ],
-      "endDate": "2021-12-31",
-      "funder": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
+            "@type": "Person",
+            "@created": "1622032091116208000",
+            "@modified": "1622032091116209000",
+            "jobTitles": [
+                "Full professor"
+            ],
+            "givenNames": [
+                "Daniel"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "familyNames": [
+                "Maggetti"
+            ],
+            "emails": [
+                "daniel.maggetti@unil.ch"
+            ]
+        },
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001"
-        }
-      ],
-      "grant": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-003",
+            "@type": "Person",
+            "@created": "1622032091116479000",
+            "@modified": "1622032091116480000",
+            "givenNames": [
+                "Bruno"
+            ],
+            "familyNames": [
+                "Pellegrino"
+            ],
+            "emails": [
+                "bruno.pellegrino@unil.ch"
+            ],
+            "jobTitles": [
+                "Junior SNSF Researcher",
+                "Scientific collaborator"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ]
+        },
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-grant-000"
-        }
-      ],
-      "keywords": [
-        "Manuscripts",
-        "Gustave Roud",
-        "Literature from French-speaking Switzerland",
-        "Literary criticism",
-        "Poetry",
-        "20th century French literature",
-        "Photography",
-        "Digital edition",
-        "Translation",
-        "Edition",
-        "Textual genetics"
-      ],
-      "name": "Gustave Roud, Complete works",
-      "shortcode": "0112",
-      "spatialCoverage": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-004",
+            "@type": "Person",
+            "@created": "1622032091116747000",
+            "@modified": "1622032091116748000",
+            "jobTitles": [
+                "Junior SNSF Researcher",
+                "Scientific collaborator"
+            ],
+            "familyNames": [
+                "Christen"
+            ],
+            "emails": [
+                "alessio.christen@unil.ch"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "givenNames": [
+                "Alessio"
+            ]
+        },
         {
-          "place": {
-            "name": "Geonames",
-            "url": "https://www.geonames.org/2658434/switzerland.html"
-          }
-        }
-      ],
-      "startDate": "2017-11-01",
-      "temporalCoverage": [
-        "20e siècle"
-      ],
-      "url": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
+            "@type": "Person",
+            "@created": "1622032091117012000",
+            "@modified": "1622032091117013000",
+            "givenNames": [
+                "Loïc"
+            ],
+            "jobTitles": [
+                "IT support"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "emails": [
+                "loic.jaouen@unil.ch"
+            ],
+            "familyNames": [
+                "Jaouen"
+            ]
+        },
         {
-          "name": "http://ark.dasch.swiss/ark:/72163/1/0112",
-          "type": "https://schema.org/URL",
-          "url": "http://ark.dasch.swiss/ark:/72163/1/0112"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Organization",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000",
-      "address": {
-        "type": "https://schema.org/PostalAddress",
-        "addressLocality": "Lausanne",
-        "postalCode": "1015",
-        "streetAddress": "Unicentre"
-      },
-      "name": [
-        "Université de Lausanne"
-      ],
-      "url": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-006",
+            "@type": "Person",
+            "@created": "1622032091117264000",
+            "@modified": "1622032091117265000",
+            "familyNames": [
+                "Lacord"
+            ],
+            "jobTitles": [
+                "Junior SNSF Researcher",
+                "Scientific collaborator"
+            ],
+            "givenNames": [
+                "Raphaëlle"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ]
+        },
         {
-          "name": "unil.ch",
-          "type": "https://schema.org/URL",
-          "url": "https://www.unil.ch/"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
-      "email": [
-        "daniel.maggetti@unil.ch"
-      ],
-      "familyName": "Maggetti",
-      "givenName": "Daniel",
-      "jobTitle": [
-        "Full professor"
-      ],
-      "memberOf": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-008",
+            "@type": "Person",
+            "@created": "1622032091117469000",
+            "@modified": "1622032091117470000",
+            "jobTitles": [
+                "Research manager"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "emails": [
+                "marion.rivoal@unil.ch"
+            ],
+            "givenNames": [
+                "Marion"
+            ],
+            "authorityRefs": [
+                {
+                    "text": "ORCID URL: https://orcid.org/0000-0003-4185-7169",
+                    "type": "ORCID",
+                    "url": "https://orcid.org/0000-0003-4185-7169"
+                }
+            ],
+            "familyNames": [
+                "Rivoal"
+            ]
+        },
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Organization",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001",
-      "address": {
-        "type": "https://schema.org/PostalAddress",
-        "addressLocality": "Bern",
-        "postalCode": "3001",
-        "streetAddress": "Wildhainweg 3 Postfach"
-      },
-      "email": "desk@snf.ch",
-      "name": [
-        "Swiss National Science Foundation (SNSF)"
-      ],
-      "url": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-002",
+            "@type": "Person",
+            "@created": "1622032091117855000",
+            "@modified": "1622032091117856000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
+            ],
+            "jobTitles": [
+                "Post-doctoral researcher",
+                "Senior SNSF Researcher"
+            ],
+            "authorityRefs": [
+                {
+                    "text": "ORCID URL: https://orcid.org/0000-0002-4522-2833",
+                    "type": "ORCID",
+                    "url": "https://orcid.org/0000-0002-4522-2833"
+                }
+            ],
+            "emails": [
+                "elena.spadini@unil.ch"
+            ],
+            "familyNames": [
+                "Spadini"
+            ],
+            "givenNames": [
+                "Elena"
+            ]
+        },
         {
-          "name": "snf.ch",
-          "type": "https://schema.org/URL",
-          "url": "http://www.snf.ch/"
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-001",
+            "@type": "Person",
+            "@created": "1622032091118247000",
+            "@modified": "1622032091118248000",
+            "emails": [
+                "claire.jaquier@unine.ch"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-002"
+            ],
+            "jobTitles": [
+                "Full professor"
+            ],
+            "givenNames": [
+                "Claire"
+            ],
+            "familyNames": [
+                "Jaquier Kaempfer"
+            ]
         }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Person",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-person-003",
-      "email": [
-        "bruno.pellegrino@unil.ch"
-      ],
-      "familyName": "Pellegrino",
-      "givenName": "Bruno",
-      "jobTitle": [
-        "Junior SNSF Researcher",
-        "Scientific collaborator"
-      ],
-      "memberOf": [
+    ],
+    "organizations": [
         {
-          "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
-        }
-      ]
-    },
-    {
-      "type": "http://ns.dasch.swiss/repository#Organization",
-      "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-002",
-      "address": {
-        "type": "https://schema.org/PostalAddress",
-        "addressLocality": "Neuchâtel",
-        "postalCode": "2000 ",
-        "streetAddress": "Avenue du 1er-Mars 26"
-      },
-      "name": [
-        "Université de Neuchâtel"
-      ],
-      "url": [
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000",
+            "@type": "Organization",
+            "@created": "1622032091118525000",
+            "@modified": "1622032091118526000",
+            "name": "Université de Lausanne",
+            "address": {
+                "street": "Unicentre",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            },
+            "url": {
+                "text": "https://www.unil.ch/",
+                "type": "URL",
+                "url": "https://www.unil.ch/"
+            }
+        },
         {
-          "name": "unine.ch",
-          "type": "https://schema.org/URL",
-          "url": "http://www.unine.ch/"
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001",
+            "@type": "Organization",
+            "@created": "1622032091225321000",
+            "@modified": "1622032091225323000",
+            "url": {
+                "text": "http://www.snf.ch/",
+                "type": "URL",
+                "url": "http://www.snf.ch/"
+            },
+            "address": {
+                "street": "Wildhainweg 3 Postfach",
+                "postalCode": "3001",
+                "locality": "Bern",
+                "country": "Switzerland"
+            },
+            "email": "desk@snf.ch",
+            "name": "Swiss National Science Foundation (SNSF)"
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-002",
+            "@type": "Organization",
+            "@created": "1622032091296107000",
+            "@modified": "1622032091296109000",
+            "name": "Université de Neuchâtel",
+            "address": {
+                "street": "Avenue du 1er-Mars 26",
+                "postalCode": "2000 ",
+                "locality": "Neuchâtel",
+                "country": "Switzerland"
+            },
+            "url": {
+                "text": "http://www.unine.ch/",
+                "type": "URL",
+                "url": "http://www.unine.ch/"
+            }
         }
-      ]
-    }
-  ]
+    ],
+    "grants": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-0112-grant-000",
+            "@type": "Grant",
+            "@created": "1622032091327538000",
+            "@modified": "1622032091327540000",
+            "url": {
+                "text": "http://p3.snf.ch/Project-157970",
+                "type": "URL",
+                "url": "http://p3.snf.ch/Project-157970"
+            },
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-0112-organization-001"
+            ],
+            "name": "Editionen",
+            "number": "157970"
+        }
+    ]
 }

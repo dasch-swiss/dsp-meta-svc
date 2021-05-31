@@ -1,0 +1,230 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-project",
+        "@type": "Project",
+        "@created": "1622032147281341000",
+        "@modified": "1622032147281343000",
+        "howToCite": "XX - new property on project level",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-081B-dataset-001"
+        ],
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-081B-grant-001"
+        ],
+        "keywords": [
+            {
+                "XX": "scientific poetry"
+            },
+            {
+                "en": "french literature"
+            }
+        ],
+        "publications": [
+            "https://delille.philhist.unibas.ch/dokuwiki/doku.php?id=start"
+        ],
+        "temporalCoverage": [
+            {
+                "text": "18th and 19th Centuries",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/IOGdcZ2CU1tz"
+            }
+        ],
+        "name": "Delille",
+        "description": {
+            "en": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs. The repository includes the NIE-INE file system layer, containing all project data and reflecting the result of the Semantic Web formalisation (in two steps) of the original DokuWiki data. The DokuWiki is a database listing the echoes that Delille received in European culture, that is an edition of L'Homme des champs based on the reception of this text."
+        },
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
+        "urls": [
+            {
+                "text": "https://delille.dasch.swiss/",
+                "type": "URL",
+                "url": "https://delille.dasch.swiss/"
+            }
+        ],
+        "disciplines": [
+            {
+                "text": "Literary theory, analysis and criticism",
+                "type": "Skos",
+                "url": "http://skos.um.es/unesco6/6202"
+            }
+        ],
+        "spatialCoverage": [
+            {
+                "text": "France",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/3017382/republic-of-france.html"
+            },
+            {
+                "text": "Europe",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/6255148/europe.html"
+            }
+        ],
+        "startDate": "2015-02-01",
+        "endDate": "2019-01-31",
+        "alternativeNames": [
+            {
+                "fr": "L'Homme des champs : éditer une réception littéraire"
+            }
+        ],
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-081B-organization-001"
+        ],
+        "shortcode": "081B"
+    },
+    "datasets": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-081B-dataset-001",
+            "@type": "Dataset",
+            "@created": "1622032149696762000",
+            "@modified": "1622032149696764000",
+            "urls": [
+                {
+                    "text": "https://delille.dasch.swiss/",
+                    "type": "URL",
+                    "url": "https://delille.dasch.swiss/"
+                }
+            ],
+            "howToCite": "Reconstruire Delille, 2021, https://delille.dasch.swiss",
+            "licenses": [
+                {
+                    "text": "https://creativecommons.org/licenses/by/3.0",
+                    "type": "URL",
+                    "url": "https://creativecommons.org/licenses/by/3.0"
+                }
+            ],
+            "abstracts": {
+                "texts": [
+                    {
+                        "en": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs."
+                    }
+                ]
+            },
+            "dateCreated": "2021-02-28",
+            "dateModified": "2021-02-28",
+            "typeOfData": [
+                "XML"
+            ],
+            "documentations": {
+                "texts": [
+                    {
+                        "en": "NIE-INE Documentation for the Delille Project"
+                    }
+                ]
+            },
+            "status": "Ongoing",
+            "languages": [
+                {
+                    "en": "English",
+                    "de": "Englisch",
+                    "fr": "anglais"
+                },
+                {
+                    "en": "French",
+                    "de": "Französisch",
+                    "fr": "français"
+                }
+            ],
+            "distribution": {
+                "text": "https://delille.dasch.swiss",
+                "type": "URL",
+                "url": "https://delille.dasch.swiss"
+            },
+            "accessConditions": "under embargo",
+            "alternativeTitles": [
+                {
+                    "fr": "L'Homme des champs : éditer une réception littéraire"
+                }
+            ],
+            "attributions": [
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
+                    "roles": [
+                        "Editor"
+                    ]
+                }
+            ],
+            "title": "Delille"
+        }
+    ],
+    "persons": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
+            "@type": "Person",
+            "@created": "1622032151258574000",
+            "@modified": "1622032151258575000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-081B-organization-002"
+            ],
+            "givenNames": [
+                "Hugues"
+            ],
+            "jobTitles": [
+                "Prof. Dr."
+            ],
+            "familyNames": [
+                "Marchal"
+            ],
+            "authorityRefs": [
+                {
+                    "text": "https://orcid.org/0000-0003-4093-0416",
+                    "type": "URL",
+                    "url": "https://orcid.org/0000-0003-4093-0416"
+                }
+            ]
+        }
+    ],
+    "organizations": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-002",
+            "@type": "Organization",
+            "@created": "1622032151259040000",
+            "@modified": "1622032151259040000",
+            "address": {
+                "street": "Maiengasse 51",
+                "postalCode": "4056",
+                "locality": "Basel",
+                "country": "Switzerland"
+            },
+            "name": "University of Basel"
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001",
+            "@type": "Organization",
+            "@created": "1622032151289246000",
+            "@modified": "1622032151289248000",
+            "url": {
+                "text": "http://www.snf.ch/",
+                "type": "URL",
+                "url": "http://www.snf.ch/"
+            },
+            "name": "SNSF",
+            "email": "desk@snf.ch",
+            "address": {
+                "street": "Wildhainweg 3",
+                "postalCode": "3001",
+                "locality": "Berne",
+                "country": "Switzerland"
+            }
+        }
+    ],
+    "grants": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-081B-grant-001",
+            "@type": "Grant",
+            "@created": "1622032151320619000",
+            "@modified": "1622032151320620000",
+            "url": {
+                "text": "http://p3.snf.ch/project-153189",
+                "type": "URL",
+                "url": "http://p3.snf.ch/project-153189"
+            },
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-081B-organization-001"
+            ],
+            "number": "153189",
+            "name": "Reconstruire Delille"
+        }
+    ]
+}

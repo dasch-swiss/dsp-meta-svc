@@ -1,0 +1,159 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0804-project",
+        "@type": "Project",
+        "@created": "1622032091389274000",
+        "@modified": "1622032091389275000",
+        "howToCite": "XX - new property on project level",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-0804-dataset-000"
+        ],
+        "urls": [
+            {
+                "text": "www.biblio-stmoritz.ch",
+                "type": "URL",
+                "url": "www.biblio-stmoritz.ch"
+            },
+            {
+                "text": "https://www.salsah.org/dokubib/",
+                "type": "URL",
+                "url": "https://www.salsah.org/dokubib/"
+            }
+        ],
+        "temporalCoverage": [
+            {
+                "text": "19th Century (1800 - 1899)",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/mvhEZ4S2qWEa"
+            },
+            {
+                "text": "20th and 21st Centuries",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/INtagfT8h7Fs"
+            },
+            {
+                "text": "20th Century (1900 - 1999)",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/kqORhO4TGm4n"
+            }
+        ],
+        "disciplines": [
+            {
+                "text": "Local history",
+                "type": "Skos",
+                "url": "http://skos.um.es/unesco6/550301"
+            }
+        ],
+        "keywords": [
+            {
+                "XX": "St. Moritz"
+            },
+            {
+                "en": "Local history"
+            },
+            {
+                "fr": "Touristic development"
+            },
+            {
+                "en": "Historic photograph"
+            }
+        ],
+        "shortcode": "0804",
+        "startDate": "1980-04-01",
+        "description": {
+            "en": "Bibliothek St. Moritz Dokumentation is the local history archive of the community of St. Moritz, Switzerland. It’s collection contains publications, manuscripts and audiovisual documents of the touristic development of St. Moritz"
+        },
+        "spatialCoverage": [
+            {
+                "text": "Saint Moritz",
+                "type": "Geonames",
+                "url": "https://geonames.org/2658813"
+            }
+        ],
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-0804-organization-001"
+        ],
+        "name": "Bilddatenbank Bibliothek St. Moritz"
+    },
+    "datasets": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-0804-dataset-000",
+            "@type": "Dataset",
+            "@created": "1622032094260553000",
+            "@modified": "1622032094260554000",
+            "accessConditions": "restricted",
+            "languages": [
+                {
+                    "de": "Deutsch",
+                    "en": "German",
+                    "fr": "allemand"
+                }
+            ],
+            "urls": [
+                {
+                    "text": "https://www.salsah.org/dokubib/",
+                    "type": "URL",
+                    "url": "https://www.salsah.org/dokubib/"
+                }
+            ],
+            "attributions": [
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-0804-organization-000",
+                    "roles": [
+                        "publisher",
+                        "creator"
+                    ]
+                }
+            ],
+            "typeOfData": [
+                "Image",
+                "Text"
+            ],
+            "title": "Dokumentationsbibliothek St. Moritz Bilddatenbank",
+            "abstracts": {
+                "texts": [
+                    {
+                        "en": "Bilddatenbank makes accessible the collection of historic photographs and other graphical representation of St. Moritz Dokumentationsbibliothek"
+                    }
+                ]
+            },
+            "status": "Ongoing",
+            "howToCite": "Dokumentationsbibliothek St. Moritz"
+        }
+    ],
+    "organizations": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-0804-organization-000",
+            "@type": "Organization",
+            "@created": "1622032094821929000",
+            "@modified": "1622032094821931000",
+            "name": "Dokumentationsbibliothek St. Moritz",
+            "address": {
+                "street": "Plazza da Scoula 14",
+                "postalCode": "7500",
+                "locality": "St. Moritz",
+                "country": "Switzerland"
+            },
+            "url": {
+                "text": "www.biblio-stmoritz.ch",
+                "type": "URL",
+                "url": "www.biblio-stmoritz.ch"
+            },
+            "email": "doku@biblio-stmoritz.ch"
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-0804-organization-001",
+            "@type": "Organization",
+            "@created": "1622032094854788000",
+            "@modified": "1622032094854790000",
+            "name": "Gemeinde St. Moritz",
+            "address": {
+                "street": "",
+                "postalCode": "7500",
+                "locality": "St. Moritz",
+                "country": "Switzerland"
+            }
+        }
+    ]
+}

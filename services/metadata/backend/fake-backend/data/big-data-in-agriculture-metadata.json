@@ -1,0 +1,253 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082D-project",
+        "@type": "Project",
+        "@created": "1622032151387876000",
+        "@modified": "1622032151387877000",
+        "howToCite": "XX - new property on project level",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-082D-dataset-001"
+        ],
+        "disciplines": [
+            {
+                "text": "Political geography",
+                "type": "Skos",
+                "url": "http://skos.um.es/unesco6/540305"
+            }
+        ],
+        "publications": [
+            "Pauschinger, D. and Klauser, F.: Räume des Experimentierens: Die Einführung von Sprühdrohnen in der digitalen Landwirtschaft, Geogr. Helv., 75, 325–336, https://doi.org/10.5194/gh-75-325-2020, 2020.",
+            "Klauser, FR.: Surveillance Farms: Towards a Research Agenda on Big Data in Agriculture, Surveillance & Society, 16(3), 370-378, https://doi.org/10.24908/ss.v16i3.12594, 2020."
+        ],
+        "keywords": [
+            {
+                "de": "Drohnen"
+            },
+            {
+                "en": "Smart Farming"
+            },
+            {
+                "XX": "Agriculture"
+            },
+            {
+                "XX": "Swiss Future Farm"
+            },
+            {
+                "XX": "Big Data"
+            }
+        ],
+        "endDate": "2020-06-30",
+        "description": {
+            "en": "Smart technologies transform farming today. Think of autonomous tractors and weeding robots, animals and underground infrastructures with inbuilt sensors, and drones or satellites offering image analysis from the air. There are many opportunities arising from this evolution in terms of increased productivity, profitability, and sustainability. Critical issues, in turn, include techno-dependency, vulnerability and privacy.\nThis project contributes empirical evidence to the discussion of the opportunities and risks associated with smart farming. It starts from the assumption that smart farming – i.e. the management of agricultural practices and processes through techniques of data gathering, transfer and analysis – is never neutral, but shaped by all kinds of decisions and judgements built into the systems from their very elaboration. The project thus studies ‘what lies behind’ novel smart-farming solutions, looking at where, by whom and how they are produced and subsequently diffused as exemplars to follow. It does so through the investigation of two high-profile initiatives in Switzerland:\nSwiss Future Farm: An experimental and demonstration farm, set up on Agroscope’s test site in Tänikon (TG) as a joint public–private initiative, to be inaugurated on 21 September 2018.\nAgroFly’s (now with Aero41) sprayer-drone project (Sierre, VS): The first authorized drone system in Europe for the automated application of pesticides. Test sites are distributed in Switzerland and beyond.\nThis project claims that specific initiatives, anchored in specific sites of experimentation, play a fundamental role in assembling the actor networks that carry forward the evolutions around smart farming. Grounded in Actor Network Theory, the project unpacks the chain of mediations through which relevant actors, ideas and things connect and interact in the co-production of the studied initiatives, and investigates the relationships and mechanisms that tie them to each other and to other sites and initiatives. There are four interrelated research objectives that run through this investigation, relating to the collaborative, expertise-related, discursive, and spatial dimensions of learning and exemplification:\nto analyse the practices of collaboration through which novel smart-farming solutions are developed and stabilized for more normalized use through the studied sites of experimentation.\nto examine what and how specific forms of expertise become authorized to act in the different stages and chains of mediation associated with the studied sites.\nto investigate what and how specific discourses, expectations and beliefs surrounding smart technologies crystallize in and emerge from the studied initiatives.\nto explore the forces and mechanisms through which the studied sites are tied to other places and projects in the circuits of learning and exemplification that shape the field of smart farming.\nTo pursue these objectives, the project follows three methodological pathways: textual analysis of literature and reports, non-participant observation, and semi-structured interviews. This approach is exploratory in ambition and scope and leads to further, follow-up research proposals on Big Data in agriculture. On these grounds, the project studies, informs and debates innovation in the agricultural sector. It highlights the factors that favour or hinder technology innovation, diffusion and adaptation, and fosters greater understanding about the desirability or non-desirability of this. User beneficiaries include farmers and farming associations, technology"
+        },
+        "urls": [
+            {
+                "text": "http://www.unine.ch/geographie/en/home/recherche/--espace-et-pouvoir-a-lere-du-nu/research-projects/smart-farming.html",
+                "type": "URL",
+                "url": "http://www.unine.ch/geographie/en/home/recherche/--espace-et-pouvoir-a-lere-du-nu/research-projects/smart-farming.html"
+            }
+        ],
+        "temporalCoverage": [
+            {
+                "text": "Swiss",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/8bGPuf5syqCD"
+            }
+        ],
+        "name": "Big Data in Agriculture: The Making of Smart Farms",
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-082D-grant-001"
+        ],
+        "shortcode": "082D",
+        "startDate": "2018-12-01",
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-082D-organization-001"
+        ],
+        "spatialCoverage": [
+            {
+                "text": "Switzerland",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2658434/switzerland.html"
+            }
+        ],
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
+        "dataManagementPlan": "http://ns.dasch.swiss/repository#dmp"
+    },
+    "datasets": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-dataset-001",
+            "@type": "Dataset",
+            "@created": "1622032154732169000",
+            "@modified": "1622032154732170000",
+            "accessConditions": "Restricted",
+            "title": "Dataset of Big Data in Agriculture: The Making of Smart Farms",
+            "languages": [
+                {
+                    "en": "English",
+                    "de": "Englisch",
+                    "fr": "anglais"
+                },
+                {
+                    "de": "Deutsch",
+                    "en": "German",
+                    "fr": "allemand"
+                },
+                {
+                    "en": "French",
+                    "de": "Französisch",
+                    "fr": "français"
+                }
+            ],
+            "licenses": [
+                {
+                    "text": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "type": "URL",
+                    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                }
+            ],
+            "typeOfData": [
+                "Text"
+            ],
+            "attributions": [
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
+                    "roles": [
+                        "PI"
+                    ]
+                },
+                {
+                    "person": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
+                    "roles": [
+                        "Senior Research Fellow"
+                    ]
+                }
+            ],
+            "howToCite": "Klauser FR and Pauschinger D (2020) Big Data in Agriculture: The Making of Smart Farms, SNF Project Data Set.",
+            "status": "Finished",
+            "abstracts": {
+                "texts": [
+                    {
+                        "en": "Smart technologies transform farming today. Think of autonomous tractors and weeding robots, animals and underground infrastructures with inbuilt sensors, and drones or satellites offering image analysis from the air. There are many opportunities arising from this evolution in terms of increased productivity, profitability, and sustainability. Critical issues, in turn, include techno-dependency, vulnerability and privacy. This project contributes empirical evidence to the discussion of the opportunities and risks associated with smart farming. It starts from the assumption that smart farming – i.e. the management of agricultural practices and processes through techniques of data gathering, transfer and analysis – is never neutral, but shaped by all kinds of decisions and judgements built into the systems from their very elaboration. The project thus studies ‘what lies behind’ novel smart-farming solutions, looking at where, by whom and how they are produced and subsequently diffused as exemplars to follow. It does so through the investigation of two high-profile initiatives in Switzerland: Swiss Future Farm: An experimental and demonstration farm, set up on Agroscope’s test site in Tänikon (TG) as a joint public–private initiative, to be inaugurated on 21 September 2018. AgroFly’s (now with Aero41) sprayer-drone project (Sierre, VS): The first authorized drone system in Europe for the automated application of pesticides. Test sites are distributed in Switzerland and beyond. This project claims that specific initiatives, anchored in specific sites of experimentation, play a fundamental role in assembling the actor networks that carry forward the evolutions around smart farming. Grounded in Actor Network Theory, the project unpacks the chain of mediations through which relevant actors, ideas and things connect and interact in the co-production of the studied initiatives, and investigates the relationships and mechanisms that tie them to each other and to other sites and initiatives. There are four interrelated research objectives that run through this investigation, relating to the collaborative, expertise-related, discursive, and spatial dimensions of learning and exemplification: to analyse the practices of collaboration through which novel smart-farming solutions are developed and stabilized for more normalized use through the studied sites of experimentation. to examine what and how specific forms of expertise become authorized to act in the different stages and chains of mediation associated with the studied sites. to investigate what and how specific discourses, expectations and beliefs surrounding smart technologies crystallize in and emerge from the studied initiatives. to explore the forces and mechanisms through which the studied sites are tied to other places and projects in the circuits of learning and exemplification that shape the field of smart farming. To pursue these objectives, the project follows three methodological pathways: textual analysis of literature and reports, non-participant observation, and semi-structured interviews. This approach is exploratory in ambition and scope and leads to further, follow-up research proposals on Big Data in agriculture. On these grounds, the project studies, informs and debates innovation in the agricultural sector. It highlights the factors that favour or hinder technology innovation, diffusion and adaptation, and fosters greater understanding about the desirability or non-desirability of this. User beneficiaries include farmers and farming associations, technology"
+                    }
+                ]
+            }
+        }
+    ],
+    "persons": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
+            "@type": "Person",
+            "@created": "1622032155137816000",
+            "@modified": "1622032155137818000",
+            "givenNames": [
+                "Dennis"
+            ],
+            "address": {
+                "street": "Espace Tilo-Frey 1",
+                "postalCode": "2000",
+                "locality": "Neuchâtel",
+                "country": "Switzerland"
+            },
+            "familyNames": [
+                "Pauschinger"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082D-organization-002"
+            ],
+            "jobTitles": [
+                "Postdoc"
+            ],
+            "emails": [
+                "dennis.pauschinger@unine.ch"
+            ]
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
+            "@type": "Person",
+            "@created": "1622032155169397000",
+            "@modified": "1622032155169399000",
+            "jobTitles": [
+                "Full professor of political geography"
+            ],
+            "emails": [
+                "francisco.klauser@unine.ch"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-082D-organization-002"
+            ],
+            "givenNames": [
+                "Francisco R."
+            ],
+            "authorityRefs": [
+                {
+                    "text": "https://orcid.org/0000-0003-3383-3570.",
+                    "type": "URL",
+                    "url": "https://orcid.org/0000-0003-3383-3570."
+                }
+            ],
+            "familyNames": [
+                "Klauser"
+            ],
+            "address": {
+                "street": "Espace Tilo-Frey 1",
+                "postalCode": "2000",
+                "locality": "Neuchâtel",
+                "country": "Switzerland"
+            }
+        }
+    ],
+    "organizations": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-organization-002",
+            "@type": "Organization",
+            "@created": "1622032155199798000",
+            "@modified": "1622032155199799000",
+            "name": "Université de Neuchâtel, Faculté des lettres et sciences humaines",
+            "url": {
+                "text": "http://www.unine.ch/geographie/home.html",
+                "type": "URL",
+                "url": "http://www.unine.ch/geographie/home.html"
+            },
+            "address": {
+                "street": "Espace Tilo-Frey 1",
+                "postalCode": "2000",
+                "locality": "Neuchâtel",
+                "country": "Switzerland"
+            },
+            "email": "Secretariat.Geographie@unine.ch"
+        },
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-organization-001",
+            "@type": "Organization",
+            "@created": "1622032155231561000",
+            "@modified": "1622032155231563000",
+            "name": "Swiss National Science Foundation"
+        }
+    ],
+    "grants": [
+        {
+            "@id": "http://ns.dasch.swiss/repository#dsp-082D-grant-001",
+            "@type": "Grant",
+            "@created": "1622032155231703000",
+            "@modified": "1622032155231703000",
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-082D-organization-001"
+            ],
+            "url": {
+                "text": "http://www.snf.ch/de/foerderung/projekte/digital-lives/Seiten/default.aspx",
+                "type": "URL",
+                "url": "http://www.snf.ch/de/foerderung/projekte/digital-lives/Seiten/default.aspx"
+            },
+            "number": "FN 10DL1A_183037",
+            "name": "Digital Lives"
+        }
+    ],
+    "dataManagementPlan": {
+        "@id": "http://ns.dasch.swiss/repository#dmp",
+        "@type": "DataManagementPlan",
+        "@created": "1622032155232041000",
+        "@modified": "1622032155232042000",
+        "available": true
+    }
+}

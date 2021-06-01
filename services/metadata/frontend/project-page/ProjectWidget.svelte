@@ -4,32 +4,20 @@
   let grant;
 
   const findObjectById = (id) => {
-    
-    // console.log('searching', $currentProjectMetadata?.grants);
-    let res = $currentProjectMetadata?.grants.find(o => o['@id'] === 'id');
-    console.log(res);
+    let grants = $currentProjectMetadata?.grants
+    let res = grants.find(o => o['@id'] === id);
     if (res) return res;
-    res = $currentProjectMetadata?.persons.find(o => o['@id'] === 'id');
-    console.log(res);
+
+    let persons = $currentProjectMetadata?.persons
+    if (persons && persons.length > 0){
+    res = persons.find(o => o['@id'] === id);
+    if (res) return res;}
+
+    res = $currentProjectMetadata?.organizations.find(o => o['@id'] === id);
     if (res) return res;
-    res = $currentProjectMetadata?.organizations.find(o => o['@id'] === 'id');
-    console.log(res);
-    if (res) return res;
-    // console.log('searching', $currentProjectMetadata?.persons);
-    // console.log('searching', $currentProjectMetadata?.grants);
-    // console.log('searching', $currentProjectMetadata?.find(o => o['@type'] === 'Dataset'));
-    // console.log($currentProjectMetadata?.find(obj => obj['@id'] === id));
-    return "blah"
     // grant = $currentProjectMetadata?.metadata.find(obj => obj.id === id);
     // return $currentProjectMetadata?.find(obj => obj['@id'] === id);
   };
-
-  // const handleSpatialCoverageName = (s) => {
-  //   const regex = /[^/]+\.html/i;
-  //   // return s.split("/")[4].split('.')[0].split("-").join(' ');
-  //   return s.substr(s.lastIndexOf('/') + 1).split('.')[0].split("-").join(' ');
-  //   // return s.match(regex)[0].split('.')[0].split("-").join(' ');
-  // }
 
   const truncateString = (s) => {
     if (s.length > 35) {
@@ -88,16 +76,18 @@
 <div class=label>Funder</div>
 {#if Array.isArray($currentProject?.funders)}
   {#each $currentProject?.funders as f}
-  {console.log(f)}
-  {console.log('searching for: ', f, 'found: ',findObjectById(f))}
-    <!-- {#if findObjectById(f.id).type === "http://ns.dasch.swiss/repository#Person"}
-      <div class=data>{findObjectById(f.id)?.givenName.split(";").join(" ")} {findObjectById(f.id)?.familyName}</div>
-    {:else if findObjectById(f.id).type === "http://ns.dasch.swiss/repository#Organization"}
-      <div class=data>{findObjectById(f.id)?.name.join(", ")}</div>
-    {/if} -->
+    {#if findObjectById(f)['@type'] === "Person"}
+      {console.log('person',findObjectById(f))}
+      <!-- TODO: handle funding person - need to find example -->
+      <!-- <div class=data>{findObjectById(f)?.givenName.split(";").join(" ")} {findObjectById(f)?.familyName}</div> -->
+    {:else if findObjectById(f)['@type'] === "Organization"}
+      {console.log('organization',findObjectById(f))}
+      <div class=data>{findObjectById(f).name}</div>
+    {/if}
   {/each}
 {/if}
 
+<!-- 
 {#if $currentProject?.grant && Array.isArray($currentProject?.grant)}
 <div class=label>Grant</div>
   {#each $currentProject?.grant as g}
@@ -140,7 +130,7 @@
 {#if $currentProject}
   <div class=label>Keywords</div>
   <span class="keyword">{$currentProject?.keywords.join(", ")}</span>
-{/if}
+{/if} -->
 
 <style>
   a {

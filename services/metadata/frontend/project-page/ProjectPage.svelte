@@ -26,12 +26,21 @@
     // const res = await fetch(`${process.env.BASE_URL}projects/${params.id}`);
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
     const projectMetadata = await res.json();
+    console.log('metadata: ', projectMetadata);
+    
     currentProjectMetadata.set(projectMetadata);
-    const project = $currentProjectMetadata.metadata.find((p: any) => p.type === 'http://ns.dasch.swiss/repository#Project');
+
+    const project = $currentProjectMetadata['project']
+    console.log('project: ', project);
+    
+    // const project = $currentProjectMetadata.metadata.find((p: any) => p.type === 'http://ns.dasch.swiss/repository#Project');
     currentProject.set(project);
     document.title = project.name;
 
-    datasets = $currentProjectMetadata.metadata.filter((p: any) => p.type === 'http://ns.dasch.swiss/repository#Dataset');
+    // datasets = $currentProjectMetadata.metadata.filter((p: any) => p.type === 'http://ns.dasch.swiss/repository#Dataset');
+    datasets = $currentProjectMetadata['datasets']
+    console.log('datasets: ', datasets);
+    
 
     datasets.forEach(d => tabs.push({
       label: d.title,

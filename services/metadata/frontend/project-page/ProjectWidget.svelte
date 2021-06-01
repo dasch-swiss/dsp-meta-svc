@@ -4,16 +4,32 @@
   let grant;
 
   const findObjectById = (id) => {
-    grant = $currentProjectMetadata?.metadata.find(obj => obj.id === id);
-    return $currentProjectMetadata?.metadata.find(obj => obj.id === id);
+    
+    // console.log('searching', $currentProjectMetadata?.grants);
+    let res = $currentProjectMetadata?.grants.find(o => o['@id'] === 'id');
+    console.log(res);
+    if (res) return res;
+    res = $currentProjectMetadata?.persons.find(o => o['@id'] === 'id');
+    console.log(res);
+    if (res) return res;
+    res = $currentProjectMetadata?.organizations.find(o => o['@id'] === 'id');
+    console.log(res);
+    if (res) return res;
+    // console.log('searching', $currentProjectMetadata?.persons);
+    // console.log('searching', $currentProjectMetadata?.grants);
+    // console.log('searching', $currentProjectMetadata?.find(o => o['@type'] === 'Dataset'));
+    // console.log($currentProjectMetadata?.find(obj => obj['@id'] === id));
+    return "blah"
+    // grant = $currentProjectMetadata?.metadata.find(obj => obj.id === id);
+    // return $currentProjectMetadata?.find(obj => obj['@id'] === id);
   };
 
-  const handleSpatialCoverageName = (s) => {
-    const regex = /[^/]+\.html/i;
-    // return s.split("/")[4].split('.')[0].split("-").join(' ');
-    return s.substr(s.lastIndexOf('/') + 1).split('.')[0].split("-").join(' ');
-    // return s.match(regex)[0].split('.')[0].split("-").join(' ');
-  }
+  // const handleSpatialCoverageName = (s) => {
+  //   const regex = /[^/]+\.html/i;
+  //   // return s.split("/")[4].split('.')[0].split("-").join(' ');
+  //   return s.substr(s.lastIndexOf('/') + 1).split('.')[0].split("-").join(' ');
+  //   // return s.match(regex)[0].split('.')[0].split("-").join(' ');
+  // }
 
   const truncateString = (s) => {
     if (s.length > 35) {
@@ -29,18 +45,16 @@
 <div class=data>{$currentProject?.dataManagementPlan ? "available" : "unavailable"}</div>
 
 <div class=label>Discipline</div>
-{#if Array.isArray($currentProject?.discipline)}
-  {#each $currentProject?.discipline as d}
-    {#if typeof d === "string"}
-      {#if d.split(" ")[0].match(/^[0-9]*$/)}
-        <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(d)}</a>
-      {:else if d.match("http")}
-        <a class="data external-link" href={d} target=_>{truncateString(d)}</a>
-      {:else}
-        <div class="data">{d}</div>
-      {/if}
+{#if Array.isArray($currentProject?.disciplines)}
+  {#each $currentProject?.disciplines as d}
+    {#if d.url}
+      <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
     {:else}
-      <a class="data external-link" href={d.url} target=_>{d.name}</a>
+      {#if d[Object.keys(d)[0]].match(/^\d+ /)}
+        <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(d[Object.keys(d)[0]])}</a>
+      {:else}
+        <div class="data">{d[Object.keys(d)[0]]}</div>
+      {/if}
     {/if}
   {/each}
 {/if}
@@ -48,10 +62,10 @@
 <div class=label>Temporal Coverage</div>
 {#if Array.isArray($currentProject?.temporalCoverage)}
   {#each $currentProject?.temporalCoverage as t}
-    {#if typeof t === "string"}
-      <div class="data">{t}</div>
+    {#if t.url}
+      <a class="data external-link" href={t.url} target=_>{truncateString(t.text)}</a>
     {:else}
-      <a class="data external-link" href={t.url} target=_>{truncateString(t.name)}</a>
+      <div class="data">{t[Object.keys(t)[0]]}</div>
     {/if}
   {/each}
 {/if}
@@ -59,12 +73,7 @@
 <div class=label>Spatial Coverage</div>
 {#if Array.isArray($currentProject?.spatialCoverage)}
   {#each $currentProject?.spatialCoverage as s}
-  <!-- temp solution: some of the names were fixed manually, another are paserd from URLs -->
-    {#if s.place.name !== "Geonames"}
-      <a class="data external-link" style="text-transform: capitalize" href={s.place.url} target=_>{truncateString(s.place.name)}</a>
-    {:else}
-      <a class="data external-link" style="text-transform: capitalize" href={s.place.url} target=_>{truncateString(handleSpatialCoverageName(s.place.url))}</a>
-    {/if}    
+    <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
   {/each}
 {/if}
 
@@ -77,13 +86,15 @@
 {/if}
 
 <div class=label>Funder</div>
-{#if Array.isArray($currentProject?.funder)}
-  {#each $currentProject?.funder as f}
-    {#if findObjectById(f.id).type === "http://ns.dasch.swiss/repository#Person"}
+{#if Array.isArray($currentProject?.funders)}
+  {#each $currentProject?.funders as f}
+  {console.log(f)}
+  {console.log('searching for: ', f, 'found: ',findObjectById(f))}
+    <!-- {#if findObjectById(f.id).type === "http://ns.dasch.swiss/repository#Person"}
       <div class=data>{findObjectById(f.id)?.givenName.split(";").join(" ")} {findObjectById(f.id)?.familyName}</div>
     {:else if findObjectById(f.id).type === "http://ns.dasch.swiss/repository#Organization"}
       <div class=data>{findObjectById(f.id)?.name.join(", ")}</div>
-    {/if}
+    {/if} -->
   {/each}
 {/if}
 

@@ -4,6 +4,7 @@
   let grant;
 
   const findObjectById = (id) => {
+    // TODO: update once interface is written
     let grants = $currentProjectMetadata?.grants
     let res = grants.find(o => o['@id'] === id);
     if (res) return res;

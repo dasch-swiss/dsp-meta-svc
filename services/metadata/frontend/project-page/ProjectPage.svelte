@@ -1,6 +1,7 @@
 <script lang='ts'>
   import { tick } from 'svelte';
   import { currentProject, currentProjectMetadata, handleSnackbar, previousRoute } from '../store';
+  import type {Metadata, Text} from "../interfaces";
   import ProjectWidget from './ProjectWidget.svelte';
   import DownloadWidget from './DownloadWidget.svelte';
   import Tab from './Tab.svelte';
@@ -14,6 +15,39 @@
   let descriptionLinesNumber: number;
   let arePublicationsExpanded: boolean;
 
+
+
+  function getText(text: Text, lang?:string) {
+    // if (lang && text.get(lang)) {
+    //   return text.get(lang);
+    // }
+    // TODO: figure out why Map is not working as intended
+    // console.log('blah');
+    // console.log(text['XX']);
+    
+    // let temp = text.has('en');
+    // return "blah";
+    // console.log(temp)
+    // if (text.get('en')) {
+    //   return text.get('en');
+    // }
+    // if (text.get('de')) {
+    //   return text.get('de');
+    // }
+    // if (text.get('fr')) {
+    //   return text.get('fr');
+    // }
+    // return text.entries().next().value;
+    if (lang && text[lang]) {
+      return text[lang]
+    }
+    if (text['en']) {
+      return text['en']
+    }
+    // return text[text.keys()[0]]
+    return text[Object.keys(text)[0]]
+  }
+
   const getProjectMetadata = async () => {
     const protocol = window.location.protocol;
     const port = protocol === 'https:' ? '' : ':3000';
@@ -22,12 +56,12 @@
     
     // const res = await fetch(`${process.env.BASE_URL}projects/${params.id}`);
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
-    const projectMetadata = await res.json();
+    const projectMetadata: Metadata = await res.json();
     // console.log('metadata: ', projectMetadata);
-    
+
     currentProjectMetadata.set(projectMetadata);
 
-    const project = $currentProjectMetadata['project']
+    const project = $currentProjectMetadata.project
     // console.log('project: ', project);
     
     // const project = $currentProjectMetadata.metadata.find((p: any) => p.type === 'http://ns.dasch.swiss/repository#Project');
@@ -35,7 +69,7 @@
     document.title = project.name;
 
     // datasets = $currentProjectMetadata.metadata.filter((p: any) => p.type === 'http://ns.dasch.swiss/repository#Dataset');
-    datasets = $currentProjectMetadata['datasets']
+    datasets = $currentProjectMetadata.datasets
     // console.log('datasets: ', datasets);
     
 
@@ -51,13 +85,13 @@
     // console.log('metadata', projectMetadata, 'project', $currentProject)
   };
 
-  const handleData = (val: any) => {
-    if (Array.isArray(val) && val.length > 1) {
-      return val.join(', ')
-    } else {
-      return val
-    }
-  };
+  // const handleData = (val: any) => {
+  //   if (Array.isArray(val) && val.length > 1) {
+  //     return val.join(', ')
+  //   } else {
+  //     return val
+  //   }
+  // };
 
   const toggleDescriptionExpand = () => {
     isDescriptionExpanded = !isDescriptionExpanded;
@@ -89,11 +123,14 @@
     <h1 class="title top-heading">
       {$currentProject?.name}
     </h1>
-    {#if $currentProject?.alternateName}
+    {#if $currentProject?.alternativeNames}
     <div class="row">
       <h4 class="title new-title">
         Also known as:&nbsp;
-        <span style="color:var(--secondary-colour)">{$currentProject?.alternateName.join(", ")}</span>
+        <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames.map(t => {return getText(t)}).join(', ')}</span>
+        <!-- <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames}</span> -->
+        <!-- <span style="color:var(--secondary-colour)">{[getText(t) for t in $currentProject?.alternativeNames]}</span> -->
+        <!-- <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames.join(", ")}</span> -->
       </h4>
     </div>
     {/if}
@@ -109,10 +146,10 @@
         <div on:click={toggleDescriptionExpand} class=expand-button>show {isDescriptionExpanded ? "less" : "more"}</div>
       {/if}
 
-      {#if $currentProject?.publication && Array.isArray($currentProject?.publication)}
+      {#if $currentProject?.publications && Array.isArray($currentProject?.publications)}
         <div class="property-row">
           <span class="label new-subtitle">Publications</span>
-            {#each $currentProject?.publication as p, i}
+            {#each $currentProject?.publications as p, i}
               {#if i > 1}
                 <span class="{arePublicationsExpanded ? "data new-text" : "hidden"}">{p}</span>
               {:else}
@@ -121,7 +158,7 @@
             {/each}
         </div>
 
-        {#if $currentProject?.publication.length > 2}
+        {#if $currentProject?.publications.length > 2}
           <div on:click={togglePublicationExpand} class=expand-button>show {arePublicationsExpanded ? "less" : "more"}</div>
         {/if}
 
@@ -132,7 +169,8 @@
         <Matomo />
 
         <div class="tabs">
-          <Tab {tabs} />
+          <!-- TODO: add again -->
+          <!-- <Tab {tabs} /> -->
         </div>
       {/await}
 

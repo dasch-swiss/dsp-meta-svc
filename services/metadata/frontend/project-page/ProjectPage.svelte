@@ -18,34 +18,18 @@
 
 
   function getText(text: Text, lang?:string) {
-    // if (lang && text.get(lang)) {
-    //   return text.get(lang);
-    // }
-    // TODO: figure out why Map is not working as intended
-    // console.log('blah');
-    // console.log(text['XX']);
+    let langs = Object.keys(text);
+    console.log(text, langs, langs.length);
     
-    // let temp = text.has('en');
-    // return "blah";
-    // console.log(temp)
-    // if (text.get('en')) {
-    //   return text.get('en');
-    // }
-    // if (text.get('de')) {
-    //   return text.get('de');
-    // }
-    // if (text.get('fr')) {
-    //   return text.get('fr');
-    // }
-    // return text.entries().next().value;
-    if (lang && text[lang]) {
+    if (langs.length === 0) {
+      return ""
+    } else if (lang && langs.includes(lang)) {
       return text[lang]
-    }
-    if (text['en']) {
+    } else if (langs.includes('en')) {
       return text['en']
+    } else {
+      return text[langs[0]]
     }
-    // return text[text.keys()[0]]
-    return text[Object.keys(text)[0]]
   }
 
   const getProjectMetadata = async () => {

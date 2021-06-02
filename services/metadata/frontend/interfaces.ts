@@ -58,5 +58,11 @@ export interface URL {
   url: string;
 }
 
-export type Text = Map<string, string>
+// export type Text = Map<string, string>
+
+export interface Text {
+  [lang: string]: string
+}
+
+// export type Text = Record<string, string>
 

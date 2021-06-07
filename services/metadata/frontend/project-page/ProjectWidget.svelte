@@ -1,9 +1,10 @@
-<script>
+<script lang='ts'>
   import { currentProject, currentProjectMetadata } from "../store";
+  import type {Text} from "../interfaces";
 
   let grant;
 
-  const findObjectById = (id) => {
+  const findObjectById = (id: string) => {
     // TODO: update once interface is written
     let grants = $currentProjectMetadata?.grants
     let res = grants.find(o => o['@id'] === id);
@@ -25,6 +26,21 @@
       return `${s.slice(0, 35)}...`;
     } else return s;
   };
+
+  function getText(text: Text, lang?:string) {
+    let langs = Object.keys(text);
+    console.log(text, langs, langs.length);
+    
+    if (langs.length === 0) {
+      return ""
+    } else if (lang && langs.includes(lang)) {
+      return text[lang]
+    } else if (langs.includes('en')) {
+      return text['en']
+    } else {
+      return text[langs[0]]
+    }
+  }
 </script>
 
 <div class=label>DSP Internal Shortcode</div>
@@ -137,11 +153,10 @@
   {/each}
 {/if}
 
-<!-- 
 {#if $currentProject}
   <div class=label>Keywords</div>
-  <span class="keyword">{$currentProject?.keywords.join(", ")}</span>
-{/if} -->
+  <span class="keyword">{$currentProject?.keywords.map(t => {return getText(t)}).join(", ")}</span>
+{/if}
 
 <style>
   a {

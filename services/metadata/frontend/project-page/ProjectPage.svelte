@@ -41,21 +41,13 @@
     // const res = await fetch(`${process.env.BASE_URL}projects/${params.id}`);
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
     const projectMetadata: Metadata = await res.json();
-    // console.log('metadata: ', projectMetadata);
-
     currentProjectMetadata.set(projectMetadata);
 
     const project = $currentProjectMetadata.project
-    // console.log('project: ', project);
-    
-    // const project = $currentProjectMetadata.metadata.find((p: any) => p.type === 'http://ns.dasch.swiss/repository#Project');
     currentProject.set(project);
     document.title = project.name;
 
-    // datasets = $currentProjectMetadata.metadata.filter((p: any) => p.type === 'http://ns.dasch.swiss/repository#Dataset');
     datasets = $currentProjectMetadata.datasets
-    // console.log('datasets: ', datasets);
-    
 
     datasets.forEach(d => tabs.push({
       label: d.title,
@@ -65,17 +57,7 @@
 
     await tick();
     getDivHeight();
-
-    // console.log('metadata', projectMetadata, 'project', $currentProject)
   };
-
-  // const handleData = (val: any) => {
-  //   if (Array.isArray(val) && val.length > 1) {
-  //     return val.join(', ')
-  //   } else {
-  //     return val
-  //   }
-  // };
 
   const toggleDescriptionExpand = () => {
     isDescriptionExpanded = !isDescriptionExpanded;
@@ -112,9 +94,6 @@
       <h4 class="title new-title">
         Also known as:&nbsp;
         <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames.map(t => {return getText(t)}).join(', ')}</span>
-        <!-- <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames}</span> -->
-        <!-- <span style="color:var(--secondary-colour)">{[getText(t) for t in $currentProject?.alternativeNames]}</span> -->
-        <!-- <span style="color:var(--secondary-colour)">{$currentProject?.alternativeNames.join(", ")}</span> -->
       </h4>
     </div>
     {/if}

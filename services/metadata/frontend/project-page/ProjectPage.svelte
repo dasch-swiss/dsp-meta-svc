@@ -19,7 +19,7 @@
 
   function getText(text: Text, lang?:string) {
     let langs = Object.keys(text);
-    console.log(text, langs, langs.length);
+    // console.log(text, langs, langs.length);
     
     if (langs.length === 0) {
       return ""

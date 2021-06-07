@@ -130,14 +130,14 @@
   {/each}
 {/if}
 
-<!-- 
 <div class=label>Project Website</div>
-{#if Array.isArray($currentProject?.url)}
-  {#each $currentProject?.url as url}
-    <a class="data external-link" href={url.url} target=_>{truncateString(url.name)}</a>
+{#if Array.isArray($currentProject?.urls)}
+  {#each $currentProject?.urls as url}
+    <a class="data external-link" href={url.url} target=_>{truncateString(url.text)}</a>
   {/each}
 {/if}
 
+<!-- 
 {#if $currentProject}
   <div class=label>Keywords</div>
   <span class="keyword">{$currentProject?.keywords.join(", ")}</span>

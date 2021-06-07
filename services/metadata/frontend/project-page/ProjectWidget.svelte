@@ -105,26 +105,32 @@
   {/each}
 {/if}
 
-<!-- 
 {#if $currentProject?.contactPoint}
   <div class=label>Contact</div>
-  {#if findObjectById($currentProject?.contactPoint[0].id)?.givenName && findObjectById($currentProject?.contactPoint[0].id)?.familyName}
-    <div id=contact class=data>{findObjectById($currentProject?.contactPoint[0].id)?.givenName?.split(";").join(" ")} {findObjectById($currentProject?.contactPoint[0].id)?.familyName}</div>
-  {/if}
-  {#if Array.isArray(findObjectById($currentProject?.contactPoint[0].id)?.memberOf)}
-    {#each findObjectById($currentProject?.contactPoint[0].id)?.memberOf as o}
-      <span>{findObjectById(o.id).name[0]}</span>
-    {/each}
-  {/if}
-  {#if findObjectById($currentProject?.contactPoint[0].id)?.email}
-    {#if Array.isArray(findObjectById($currentProject?.contactPoint[0].id)?.email)}
-      <a class="data email" href="mailto:{findObjectById($currentProject?.contactPoint[0].id)?.email[0]}">{findObjectById($currentProject?.contactPoint[0].id)?.email[0]}</a>
+  {#each [findObjectById($currentProject?.contactPoint)] as c}
+    <!-- {console.log(c)} -->
+    {#if c['@type'] === 'Organization'}
+      <div id=contact class=data>{c.name}</div>
+      {#if c.email}
+        <a class="data email" href="mailto:{c?.email}">{c?.email}</a>
+      {/if}
     {:else}
-      <a class="data email" href="mailto:{findObjectById($currentProject?.contactPoint[0].id)?.email}">{findObjectById($currentProject?.contactPoint[0].id)?.email}</a>
+      {#if c?.givenNames && c?.familyNames}
+        <div id=contact class=data>{c?.givenNames?.join(" ")} {c?.familyNames.join(" ")}</div>
+      {/if}
+      {#if Array.isArray(c?.affiliation)}
+        {#each c?.affiliation as o}
+          <span class="data">{findObjectById(o).name}</span>
+        {/each}
+      {/if}
+      {#if c.emails}
+        <a class="data email" href="mailto:{c?.emails[0]}">{c?.emails[0]}</a>
+      {/if}
     {/if}
-  {/if}
+  {/each}
 {/if}
 
+<!-- 
 <div class=label>Project Website</div>
 {#if Array.isArray($currentProject?.url)}
   {#each $currentProject?.url as url}

@@ -80,28 +80,32 @@
     {#if findObjectById(f)['@type'] === "Person"}
       {console.log('person',findObjectById(f))}
       <!-- TODO: handle funding person - need to find example -->
+      {console.log('organization',findObjectById(f))}
       <!-- <div class=data>{findObjectById(f)?.givenName.split(";").join(" ")} {findObjectById(f)?.familyName}</div> -->
     {:else if findObjectById(f)['@type'] === "Organization"}
-      {console.log('organization',findObjectById(f))}
       <div class=data>{findObjectById(f).name}</div>
+    {/if}
+  {/each}
+{/if}
+  
+  {#if $currentProject?.grants && Array.isArray($currentProject?.grants)}
+  <div class=label>Grant</div>
+  {#each $currentProject?.grants.map(id => {return findObjectById(id)}) as g}
+    {#if g?.number && g?.url && g?.name}
+      <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+      <!-- TODO: roll back if people don't like it -->
+      <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
+    {:else if g?.number && g?.url}
+      <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
+    {:else if g?.number}
+      <span class="data">{g?.number}</span>
+    {:else}
+      <span class="data">{findObjectById(g?.funders[0])?.name}</span>
     {/if}
   {/each}
 {/if}
 
 <!-- 
-{#if $currentProject?.grant && Array.isArray($currentProject?.grant)}
-<div class=label>Grant</div>
-  {#each $currentProject?.grant as g}
-    {#if findObjectById(g.id)?.number && findObjectById(g.id)?.url}
-      <a class="data external-link" href={findObjectById(g.id)?.url[0].url} target=_>{findObjectById(g.id)?.number}</a>
-    {:else if findObjectById(g.id)?.number}
-      <span class="data">{findObjectById(g.id)?.number}</span>
-    {:else}
-      <span class="data">{findObjectById(findObjectById(g.id)?.funder[0].id)?.name.join(', ')}</span>
-    {/if}
-  {/each}
-{/if}
-
 {#if $currentProject?.contactPoint}
   <div class=label>Contact</div>
   {#if findObjectById($currentProject?.contactPoint[0].id)?.givenName && findObjectById($currentProject?.contactPoint[0].id)?.familyName}

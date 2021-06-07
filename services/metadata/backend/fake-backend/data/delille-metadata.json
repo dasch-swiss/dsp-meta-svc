@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-081B-project",
-        "@type": "Project",
-        "@created": "1622032147281341000",
-        "@modified": "1622032147281343000",
+        "id": "http://ns.dasch.swiss/repository#dsp-081B-project",
+        "type": "Project",
+        "created": "1622032147281341000",
+        "modified": "1622032147281343000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-081B-dataset-001"
@@ -75,10 +75,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081B-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032149696762000",
-            "@modified": "1622032149696764000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081B-dataset-001",
+            "type": "Dataset",
+            "created": "1622032149696762000",
+            "modified": "1622032149696764000",
             "urls": [
                 {
                     "text": "https://delille.dasch.swiss/",
@@ -150,10 +150,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
-            "@type": "Person",
-            "@created": "1622032151258574000",
-            "@modified": "1622032151258575000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
+            "type": "Person",
+            "created": "1622032151258574000",
+            "modified": "1622032151258575000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-081B-organization-002"
             ],
@@ -177,10 +177,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-002",
-            "@type": "Organization",
-            "@created": "1622032151259040000",
-            "@modified": "1622032151259040000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081B-organization-002",
+            "type": "Organization",
+            "created": "1622032151259040000",
+            "modified": "1622032151259040000",
             "address": {
                 "street": "Maiengasse 51",
                 "postalCode": "4056",
@@ -190,10 +190,10 @@
             "name": "University of Basel"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001",
-            "@type": "Organization",
-            "@created": "1622032151289246000",
-            "@modified": "1622032151289248000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001",
+            "type": "Organization",
+            "created": "1622032151289246000",
+            "modified": "1622032151289248000",
             "url": {
                 "text": "http://www.snf.ch/",
                 "type": "URL",
@@ -211,10 +211,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081B-grant-001",
-            "@type": "Grant",
-            "@created": "1622032151320619000",
-            "@modified": "1622032151320620000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081B-grant-001",
+            "type": "Grant",
+            "created": "1622032151320619000",
+            "modified": "1622032151320620000",
             "url": {
                 "text": "http://p3.snf.ch/project-153189",
                 "type": "URL",

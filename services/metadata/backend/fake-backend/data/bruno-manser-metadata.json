@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0813-project",
-        "@type": "Project",
-        "@created": "1622032161008077000",
-        "@modified": "1622032161008078000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0813-project",
+        "type": "Project",
+        "created": "1622032161008077000",
+        "modified": "1622032161008078000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0813-dataset-001"
@@ -96,10 +96,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0813-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032167517516000",
-            "@modified": "1622032167517517000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0813-dataset-001",
+            "type": "Dataset",
+            "created": "1622032167517516000",
+            "modified": "1622032167517517000",
             "howToCite": "Bruno Manser/Bruno Manser Fonds",
             "licenses": [
                 {
@@ -162,10 +162,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0813-person-002",
-            "@type": "Person",
-            "@created": "1622032168375171000",
-            "@modified": "1622032168375172000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0813-person-002",
+            "type": "Person",
+            "created": "1622032168375171000",
+            "modified": "1622032168375172000",
             "jobTitles": [
                 "Creator"
             ],
@@ -180,10 +180,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
-            "@type": "Person",
-            "@created": "1622032168375392000",
-            "@modified": "1622032168375392000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
+            "type": "Person",
+            "created": "1622032168375392000",
+            "modified": "1622032168375392000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
             ],
@@ -203,10 +203,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
-            "@type": "Organization",
-            "@created": "1622032168375700000",
-            "@modified": "1622032168375701000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
+            "type": "Organization",
+            "created": "1622032168375700000",
+            "modified": "1622032168375701000",
             "email": "info@bmf.ch",
             "address": {
                 "street": "Socinstrasse 37",
@@ -224,10 +224,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0813-grant-001",
-            "@type": "Grant",
-            "@created": "1622032168405350000",
-            "@modified": "1622032168405351000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0813-grant-001",
+            "type": "Grant",
+            "created": "1622032168405350000",
+            "modified": "1622032168405351000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
             ]

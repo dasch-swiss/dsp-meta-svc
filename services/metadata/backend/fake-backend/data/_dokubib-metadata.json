@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0804-project",
-        "@type": "Project",
-        "@created": "1622032091389274000",
-        "@modified": "1622032091389275000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0804-project",
+        "type": "Project",
+        "created": "1622032091389274000",
+        "modified": "1622032091389275000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0804-dataset-000"
@@ -78,10 +78,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0804-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032094260553000",
-            "@modified": "1622032094260554000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0804-dataset-000",
+            "type": "Dataset",
+            "created": "1622032094260553000",
+            "modified": "1622032094260554000",
             "accessConditions": "restricted",
             "languages": [
                 {
@@ -124,10 +124,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0804-organization-000",
-            "@type": "Organization",
-            "@created": "1622032094821929000",
-            "@modified": "1622032094821931000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0804-organization-000",
+            "type": "Organization",
+            "created": "1622032094821929000",
+            "modified": "1622032094821931000",
             "name": "Dokumentationsbibliothek St. Moritz",
             "address": {
                 "street": "Plazza da Scoula 14",
@@ -143,10 +143,10 @@
             "email": "doku@biblio-stmoritz.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0804-organization-001",
-            "@type": "Organization",
-            "@created": "1622032094854788000",
-            "@modified": "1622032094854790000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0804-organization-001",
+            "type": "Organization",
+            "created": "1622032094854788000",
+            "modified": "1622032094854790000",
             "name": "Gemeinde St. Moritz",
             "address": {
                 "street": "",

@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0838-project",
-        "@type": "Project",
-        "@created": "1622032071700025000",
-        "@modified": "1622032071700027000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0838-project",
+        "type": "Project",
+        "created": "1622032071700025000",
+        "modified": "1622032071700027000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0838-dataset-001"
@@ -117,10 +117,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0838-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032080640407000",
-            "@modified": "1622032080640408000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0838-dataset-001",
+            "type": "Dataset",
+            "created": "1622032080640407000",
+            "modified": "1622032080640408000",
             "abstracts": {
                 "texts": [
                     {
@@ -168,10 +168,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0838-person-001",
-            "@type": "Person",
-            "@created": "1622032082439124000",
-            "@modified": "1622032082439125000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0838-person-001",
+            "type": "Person",
+            "created": "1622032082439124000",
+            "modified": "1622032082439125000",
             "familyNames": [
                 "Butterfly"
             ],
@@ -188,19 +188,19 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0838-organization-001",
-            "@type": "Organization",
-            "@created": "1622032082439378000",
-            "@modified": "1622032082439379000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0838-organization-001",
+            "type": "Organization",
+            "created": "1622032082439378000",
+            "modified": "1622032082439379000",
             "name": "Departement für Umweltwissenschaften der Universität Basel"
         }
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0838-grant-001",
-            "@type": "Grant",
-            "@created": "1622032082439481000",
-            "@modified": "1622032082439481000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0838-grant-001",
+            "type": "Grant",
+            "created": "1622032082439481000",
+            "modified": "1622032082439481000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0838-organization-001"
             ]

@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0801-project",
-        "@type": "Project",
-        "@created": "1622032168469833000",
-        "@modified": "1622032168469834000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0801-project",
+        "type": "Project",
+        "created": "1622032168469833000",
+        "modified": "1622032168469834000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0801-dataset-002",
@@ -125,10 +125,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-002",
-            "@type": "Dataset",
-            "@created": "1622032175719217000",
-            "@modified": "1622032175719218000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-002",
+            "type": "Dataset",
+            "created": "1622032175719217000",
+            "modified": "1622032175719218000",
             "status": "Finished",
             "typeOfData": [
                 "XML",
@@ -184,10 +184,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-003",
-            "@type": "Dataset",
-            "@created": "1622032176852112000",
-            "@modified": "1622032176852114000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-003",
+            "type": "Dataset",
+            "created": "1622032176852112000",
+            "modified": "1622032176852114000",
             "alternativeTitles": [
                 {
                     "XX": "BEBB"
@@ -253,10 +253,10 @@
             "datePublished": "2018-01-01"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032177436789000",
-            "@modified": "1622032177436790000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-000",
+            "type": "Dataset",
+            "created": "1622032177436789000",
+            "modified": "1622032177436790000",
             "accessConditions": "open",
             "status": "Finished",
             "howToCite": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss",
@@ -320,10 +320,10 @@
             "title": "Briefwechsel von Leonhard Euler mit Christian Goldbach"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032177526362000",
-            "@modified": "1622032177526363000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-001",
+            "type": "Dataset",
+            "created": "1622032177526362000",
+            "modified": "1622032177526363000",
             "typeOfData": [
                 "Image",
                 "Text",
@@ -379,10 +379,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-001",
-            "@type": "Person",
-            "@created": "1622032177992463000",
-            "@modified": "1622032177992465000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-001",
+            "type": "Person",
+            "created": "1622032177992463000",
+            "modified": "1622032177992465000",
             "familyNames": [
                 "Lemmermeyer"
             ],
@@ -397,10 +397,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-004",
-            "@type": "Person",
-            "@created": "1622032177992682000",
-            "@modified": "1622032177992683000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-004",
+            "type": "Person",
+            "created": "1622032177992682000",
+            "modified": "1622032177992683000",
             "jobTitles": [
                 "Professor"
             ],
@@ -415,10 +415,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-000",
-            "@type": "Person",
-            "@created": "1622032177992891000",
-            "@modified": "1622032177992892000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-000",
+            "type": "Person",
+            "created": "1622032177992891000",
+            "modified": "1622032177992892000",
             "jobTitles": [
                 "Wissenschaftlicher Mitarbeiter"
             ],
@@ -436,10 +436,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-002",
-            "@type": "Person",
-            "@created": "1622032177993163000",
-            "@modified": "1622032177993164000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-002",
+            "type": "Person",
+            "created": "1622032177993163000",
+            "modified": "1622032177993164000",
             "jobTitles": [
                 "Leiter Bernoulli-Archiv"
             ],
@@ -457,10 +457,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-005",
-            "@type": "Person",
-            "@created": "1622032177993448000",
-            "@modified": "1622032177993449000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-005",
+            "type": "Person",
+            "created": "1622032177993448000",
+            "modified": "1622032177993449000",
             "familyNames": [
                 "Hug"
             ],
@@ -475,10 +475,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-003",
-            "@type": "Person",
-            "@created": "1622032177993649000",
-            "@modified": "1622032177993650000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-person-003",
+            "type": "Person",
+            "created": "1622032177993649000",
+            "modified": "1622032177993650000",
             "emails": [
                 "sulamith.gehr@unibas.ch"
             ],
@@ -498,10 +498,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003",
-            "@type": "Organization",
-            "@created": "1622032177993938000",
-            "@modified": "1622032177993938000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003",
+            "type": "Organization",
+            "created": "1622032177993938000",
+            "modified": "1622032177993938000",
             "address": {
                 "street": "Universitätsbibliothek, Schönbeinstrasse 18-20",
                 "postalCode": "4056",
@@ -517,10 +517,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-000",
-            "@type": "Organization",
-            "@created": "1622032178854925000",
-            "@modified": "1622032178854927000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-organization-000",
+            "type": "Organization",
+            "created": "1622032178854925000",
+            "modified": "1622032178854927000",
             "address": {
                 "street": "Wildhainweg 3, Postfach",
                 "postalCode": "3001",
@@ -536,10 +536,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-002",
-            "@type": "Organization",
-            "@created": "1622032179368528000",
-            "@modified": "1622032179368530000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-organization-002",
+            "type": "Organization",
+            "created": "1622032179368528000",
+            "modified": "1622032179368530000",
             "email": "sagw@sagw.ch",
             "name": "Schweizerische Akademie der Geisteswissenschaften (SAGW)",
             "url": {
@@ -557,19 +557,19 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-001",
-            "@type": "Grant",
-            "@created": "1622032179405807000",
-            "@modified": "1622032179405809000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-grant-001",
+            "type": "Grant",
+            "created": "1622032179405807000",
+            "modified": "1622032179405809000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0801-organization-002"
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-000",
-            "@type": "Grant",
-            "@created": "1622032179405927000",
-            "@modified": "1622032179405928000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0801-grant-000",
+            "type": "Grant",
+            "created": "1622032179405927000",
+            "modified": "1622032179405928000",
             "number": "166072",
             "name": "Projektförderung (Abt. I-III)",
             "funders": [

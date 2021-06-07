@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0103-project",
-        "@type": "Project",
-        "@created": "1622032138146449000",
-        "@modified": "1622032138146450000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0103-project",
+        "type": "Project",
+        "created": "1622032138146449000",
+        "modified": "1622032138146450000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0103-dataset-000"
@@ -168,10 +168,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032146586549000",
-            "@modified": "1622032146586550000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-dataset-000",
+            "type": "Dataset",
+            "created": "1622032146586549000",
+            "modified": "1622032146586550000",
             "howToCite": "Ponzetto, V., Ruimi, J., Hodroge, A., Fièvre, P., Baumann, F., Hugentobler, Th., Schuwey, Ch., Rivoal, M., 2018, Théâtres de société [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0103.",
             "attributions": [
                 {
@@ -277,10 +277,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-008",
-            "@type": "Person",
-            "@created": "1622032147149318000",
-            "@modified": "1622032147149320000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-008",
+            "type": "Person",
+            "created": "1622032147149318000",
+            "modified": "1622032147149320000",
             "jobTitles": [
                 "Research manager"
             ],
@@ -298,10 +298,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-001",
-            "@type": "Person",
-            "@created": "1622032147149660000",
-            "@modified": "1622032147149661000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-001",
+            "type": "Person",
+            "created": "1622032147149660000",
+            "modified": "1622032147149661000",
             "givenNames": [
                 "Jennifer"
             ],
@@ -327,10 +327,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-004",
-            "@type": "Person",
-            "@created": "1622032147150185000",
-            "@modified": "1622032147150186000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-004",
+            "type": "Person",
+            "created": "1622032147150185000",
+            "modified": "1622032147150186000",
             "jobTitles": [
                 "Research Assistant"
             ],
@@ -345,10 +345,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-007",
-            "@type": "Person",
-            "@created": "1622032147150442000",
-            "@modified": "1622032147150442000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-007",
+            "type": "Person",
+            "created": "1622032147150442000",
+            "modified": "1622032147150442000",
             "jobTitles": [
                 "IT support"
             ],
@@ -366,10 +366,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-003",
-            "@type": "Person",
-            "@created": "1622032147150777000",
-            "@modified": "1622032147150778000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-003",
+            "type": "Person",
+            "created": "1622032147150777000",
+            "modified": "1622032147150778000",
             "emails": [
                 "thibault.hugentobler@unil.ch"
             ],
@@ -387,10 +387,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-002",
-            "@type": "Person",
-            "@created": "1622032147151110000",
-            "@modified": "1622032147151111000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-002",
+            "type": "Person",
+            "created": "1622032147151110000",
+            "modified": "1622032147151111000",
             "givenNames": [
                 "Aline"
             ],
@@ -408,10 +408,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-006",
-            "@type": "Person",
-            "@created": "1622032147151451000",
-            "@modified": "1622032147151452000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-006",
+            "type": "Person",
+            "created": "1622032147151451000",
+            "modified": "1622032147151452000",
             "emails": [
                 "christophe.schuwey@yale.edu"
             ],
@@ -436,10 +436,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-000",
-            "@type": "Person",
-            "@created": "1622032147151883000",
-            "@modified": "1622032147151883000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-000",
+            "type": "Person",
+            "created": "1622032147151883000",
+            "modified": "1622032147151883000",
             "emails": [
                 "valentina.ponzetto@unil.ch"
             ],
@@ -470,10 +470,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-person-005",
-            "@type": "Person",
-            "@created": "1622032147181866000",
-            "@modified": "1622032147181868000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-person-005",
+            "type": "Person",
+            "created": "1622032147181866000",
+            "modified": "1622032147181868000",
             "givenNames": [
                 "Paul"
             ],
@@ -493,17 +493,17 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-organization-000",
-            "@type": "Organization",
-            "@created": "1622032147182350000",
-            "@modified": "1622032147182351000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-organization-000",
+            "type": "Organization",
+            "created": "1622032147182350000",
+            "modified": "1622032147182351000",
             "name": "Université de Lausanne"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-organization-001",
-            "@type": "Organization",
-            "@created": "1622032147182464000",
-            "@modified": "1622032147182465000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-organization-001",
+            "type": "Organization",
+            "created": "1622032147182464000",
+            "modified": "1622032147182465000",
             "address": {
                 "street": "Wildhainweg 3 Postfach",
                 "postalCode": "3001",
@@ -516,10 +516,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-grant-001",
-            "@type": "Grant",
-            "@created": "1622032147212929000",
-            "@modified": "1622032147212931000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-grant-001",
+            "type": "Grant",
+            "created": "1622032147212929000",
+            "modified": "1622032147212931000",
             "url": {
                 "text": "http://p3.snf.ch/Project-190070",
                 "type": "URL",
@@ -532,10 +532,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0103-grant-000",
-            "@type": "Grant",
-            "@created": "1622032147213311000",
-            "@modified": "1622032147213312000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0103-grant-000",
+            "type": "Grant",
+            "created": "1622032147213311000",
+            "modified": "1622032147213312000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0103-organization-001"
             ],

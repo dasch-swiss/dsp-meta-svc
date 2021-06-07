@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-080E-project",
-        "@type": "Project",
-        "@created": "1622032109244413000",
-        "@modified": "1622032109244414000",
+        "id": "http://ns.dasch.swiss/repository#dsp-080E-project",
+        "type": "Project",
+        "created": "1622032109244413000",
+        "modified": "1622032109244414000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-080E-dataset-000"
@@ -117,10 +117,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032114269626000",
-            "@modified": "1622032114269628000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-dataset-000",
+            "type": "Dataset",
+            "created": "1622032114269626000",
+            "modified": "1622032114269628000",
             "datePublished": "2016-12-20",
             "languages": [
                 {
@@ -187,10 +187,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-000",
-            "@type": "Organization",
-            "@created": "1622032115815727000",
-            "@modified": "1622032115815729000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-000",
+            "type": "Organization",
+            "created": "1622032115815727000",
+            "modified": "1622032115815729000",
             "address": {
                 "street": "Effingerstrasse 15, Postfach",
                 "postalCode": "3001",
@@ -205,10 +205,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-003",
-            "@type": "Organization",
-            "@created": "1622032115951329000",
-            "@modified": "1622032115951330000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-003",
+            "type": "Organization",
+            "created": "1622032115951329000",
+            "modified": "1622032115951330000",
             "address": {
                 "street": "St. Jakobs-Strasse 7",
                 "postalCode": "4002",
@@ -223,10 +223,10 @@
             "name": "Ceramica Stiftung"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-005",
-            "@type": "Organization",
-            "@created": "1622032116046722000",
-            "@modified": "1622032116046724000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-005",
+            "type": "Organization",
+            "created": "1622032116046722000",
+            "modified": "1622032116046724000",
             "address": {
                 "street": "Petersgraben 51",
                 "postalCode": "4051",
@@ -242,10 +242,10 @@
             "name": "Classical Archaeology, University of Basel"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-001",
-            "@type": "Organization",
-            "@created": "1622032116083524000",
-            "@modified": "1622032116083526000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-001",
+            "type": "Organization",
+            "created": "1622032116083524000",
+            "modified": "1622032116083526000",
             "name": "Stavros Niarchos Foundation",
             "url": {
                 "text": "httpS://www.snf.org/en",
@@ -261,10 +261,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-004",
-            "@type": "Organization",
-            "@created": "1622032116121048000",
-            "@modified": "1622032116121050000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-004",
+            "type": "Organization",
+            "created": "1622032116121048000",
+            "modified": "1622032116121050000",
             "address": {
                 "street": "Rennweg 50",
                 "postalCode": "4020",
@@ -280,10 +280,10 @@
             "email": "contact@binding-stiftung.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-organization-002",
-            "@type": "Organization",
-            "@created": "1622032116152824000",
-            "@modified": "1622032116152826000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-organization-002",
+            "type": "Organization",
+            "created": "1622032116152824000",
+            "modified": "1622032116152826000",
             "address": {
                 "street": "Artherstrasse 19",
                 "postalCode": "6300",
@@ -300,19 +300,19 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-grant-000",
-            "@type": "Grant",
-            "@created": "1622032116184121000",
-            "@modified": "1622032116184123000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-grant-000",
+            "type": "Grant",
+            "created": "1622032116184121000",
+            "modified": "1622032116184123000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-000"
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-grant-001",
-            "@type": "Grant",
-            "@created": "1622032116184239000",
-            "@modified": "1622032116184240000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-grant-001",
+            "type": "Grant",
+            "created": "1622032116184239000",
+            "modified": "1622032116184240000",
             "url": {
                 "text": "https://www.snf.org/en/grants/grantees/u/university-of-basel/department-of-ancient-civilisations-program-support/",
                 "type": "URL",
@@ -324,10 +324,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-grant-002",
-            "@type": "Grant",
-            "@created": "1622032116184579000",
-            "@modified": "1622032116184580000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-grant-002",
+            "type": "Grant",
+            "created": "1622032116184579000",
+            "modified": "1622032116184580000",
             "number": "2015-2371/1.2",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-002"
@@ -335,20 +335,20 @@
             "name": "Gesuch im Bereich Bildung und Wissenschaft"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-grant-003",
-            "@type": "Grant",
-            "@created": "1622032116184778000",
-            "@modified": "1622032116184779000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-grant-003",
+            "type": "Grant",
+            "created": "1622032116184778000",
+            "modified": "1622032116184779000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-003"
             ],
             "number": "14/17-18"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-080E-grant-004",
-            "@type": "Grant",
-            "@created": "1622032116184923000",
-            "@modified": "1622032116184924000",
+            "id": "http://ns.dasch.swiss/repository#dsp-080E-grant-004",
+            "type": "Grant",
+            "created": "1622032116184923000",
+            "modified": "1622032116184924000",
             "number": "19-109",
             "name": "Gesuch im Bereich Kultur",
             "funders": [

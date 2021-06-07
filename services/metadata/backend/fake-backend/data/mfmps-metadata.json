@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0116-project",
-        "@type": "Project",
-        "@created": "1622032101296841000",
-        "@modified": "1622032101296842000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0116-project",
+        "type": "Project",
+        "created": "1622032101296841000",
+        "modified": "1622032101296842000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0116-dataset-000"
@@ -105,10 +105,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032108243033000",
-            "@modified": "1622032108243034000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-dataset-000",
+            "type": "Dataset",
+            "created": "1622032108243033000",
+            "modified": "1622032108243034000",
             "attributions": [
                 {
                     "person": "http://ns.dasch.swiss/repository#dsp-0116-person-003",
@@ -177,10 +177,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-person-002",
-            "@type": "Person",
-            "@created": "1622032108957728000",
-            "@modified": "1622032108957729000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-person-002",
+            "type": "Person",
+            "created": "1622032108957728000",
+            "modified": "1622032108957729000",
             "familyNames": [
                 "Ciardo"
             ],
@@ -198,10 +198,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-person-000",
-            "@type": "Person",
-            "@created": "1622032108958012000",
-            "@modified": "1622032108958013000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-person-000",
+            "type": "Person",
+            "created": "1622032108958012000",
+            "modified": "1622032108958013000",
             "givenNames": [
                 "Laurence"
             ],
@@ -232,10 +232,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-person-003",
-            "@type": "Person",
-            "@created": "1622032109061779000",
-            "@modified": "1622032109061781000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-person-003",
+            "type": "Person",
+            "created": "1622032109061779000",
+            "modified": "1622032109061781000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0116-organization-001"
             ],
@@ -253,10 +253,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-person-001",
-            "@type": "Person",
-            "@created": "1622032109062070000",
-            "@modified": "1622032109062071000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-person-001",
+            "type": "Person",
+            "created": "1622032109062070000",
+            "modified": "1622032109062071000",
             "familyNames": [
                 "Acosta"
             ],
@@ -276,10 +276,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-organization-000",
-            "@type": "Organization",
-            "@created": "1622032109062382000",
-            "@modified": "1622032109062383000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-organization-000",
+            "type": "Organization",
+            "created": "1622032109062382000",
+            "modified": "1622032109062383000",
             "name": "Université de Neuchâtel",
             "url": {
                 "text": "http://www.unine.ch/",
@@ -294,10 +294,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-organization-002",
-            "@type": "Organization",
-            "@created": "1622032109104331000",
-            "@modified": "1622032109104333000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-organization-002",
+            "type": "Organization",
+            "created": "1622032109104331000",
+            "modified": "1622032109104333000",
             "url": {
                 "text": "http://www.snf.ch/",
                 "type": "URL",
@@ -313,10 +313,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-organization-001",
-            "@type": "Organization",
-            "@created": "1622032109137559000",
-            "@modified": "1622032109137561000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-organization-001",
+            "type": "Organization",
+            "created": "1622032109137559000",
+            "modified": "1622032109137561000",
             "url": {
                 "text": "https://www.unil.ch/",
                 "type": "URL",
@@ -333,10 +333,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0116-grant-000",
-            "@type": "Grant",
-            "@created": "1622032109168998000",
-            "@modified": "1622032109169000000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0116-grant-000",
+            "type": "Grant",
+            "created": "1622032109168998000",
+            "modified": "1622032109169000000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0116-organization-002"
             ],

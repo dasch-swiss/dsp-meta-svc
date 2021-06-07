@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-081C-project",
-        "@type": "Project",
-        "@created": "1622032031785368000",
-        "@modified": "1622032031785370000",
+        "id": "http://ns.dasch.swiss/repository#dsp-081C-project",
+        "type": "Project",
+        "created": "1622032031785368000",
+        "modified": "1622032031785370000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-081C-dataset-000"
@@ -103,10 +103,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081C-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032043217392000",
-            "@modified": "1622032043217393000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081C-dataset-000",
+            "type": "Dataset",
+            "created": "1622032043217392000",
+            "modified": "1622032043217393000",
             "accessConditions": "open",
             "datePublished": "2015-04-01",
             "abstracts": {
@@ -148,10 +148,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-081C-organization-000",
-            "@type": "Organization",
-            "@created": "1622032043863272000",
-            "@modified": "1622032043863273000",
+            "id": "http://ns.dasch.swiss/repository#dsp-081C-organization-000",
+            "type": "Organization",
+            "created": "1622032043863272000",
+            "modified": "1622032043863273000",
             "url": {
                 "text": "https://www.musik.unibe.ch/index_ger.html",
                 "type": "URL",

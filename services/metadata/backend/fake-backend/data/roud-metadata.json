@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0112-project",
-        "@type": "Project",
-        "@created": "1622032082517981000",
-        "@modified": "1622032082517982000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0112-project",
+        "type": "Project",
+        "created": "1622032082517981000",
+        "modified": "1622032082517982000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0112-dataset-000"
@@ -98,10 +98,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032090118084000",
-            "@modified": "1622032090118085000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-dataset-000",
+            "type": "Dataset",
+            "created": "1622032090118084000",
+            "modified": "1622032090118085000",
             "attributions": [
                 {
                     "person": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
@@ -209,10 +209,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-005",
-            "@type": "Person",
-            "@created": "1622032091115920000",
-            "@modified": "1622032091115922000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-005",
+            "type": "Person",
+            "created": "1622032091115920000",
+            "modified": "1622032091115922000",
             "jobTitles": [
                 "Scientific collaborator",
                 "Junior SNSF Researcher"
@@ -231,10 +231,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
-            "@type": "Person",
-            "@created": "1622032091116208000",
-            "@modified": "1622032091116209000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-000",
+            "type": "Person",
+            "created": "1622032091116208000",
+            "modified": "1622032091116209000",
             "jobTitles": [
                 "Full professor"
             ],
@@ -252,10 +252,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-003",
-            "@type": "Person",
-            "@created": "1622032091116479000",
-            "@modified": "1622032091116480000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-003",
+            "type": "Person",
+            "created": "1622032091116479000",
+            "modified": "1622032091116480000",
             "givenNames": [
                 "Bruno"
             ],
@@ -274,10 +274,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-004",
-            "@type": "Person",
-            "@created": "1622032091116747000",
-            "@modified": "1622032091116748000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-004",
+            "type": "Person",
+            "created": "1622032091116747000",
+            "modified": "1622032091116748000",
             "jobTitles": [
                 "Junior SNSF Researcher",
                 "Scientific collaborator"
@@ -296,10 +296,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
-            "@type": "Person",
-            "@created": "1622032091117012000",
-            "@modified": "1622032091117013000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-007",
+            "type": "Person",
+            "created": "1622032091117012000",
+            "modified": "1622032091117013000",
             "givenNames": [
                 "Loïc"
             ],
@@ -317,10 +317,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-006",
-            "@type": "Person",
-            "@created": "1622032091117264000",
-            "@modified": "1622032091117265000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-006",
+            "type": "Person",
+            "created": "1622032091117264000",
+            "modified": "1622032091117265000",
             "familyNames": [
                 "Lacord"
             ],
@@ -336,10 +336,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-008",
-            "@type": "Person",
-            "@created": "1622032091117469000",
-            "@modified": "1622032091117470000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-008",
+            "type": "Person",
+            "created": "1622032091117469000",
+            "modified": "1622032091117470000",
             "jobTitles": [
                 "Research manager"
             ],
@@ -364,10 +364,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-002",
-            "@type": "Person",
-            "@created": "1622032091117855000",
-            "@modified": "1622032091117856000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-002",
+            "type": "Person",
+            "created": "1622032091117855000",
+            "modified": "1622032091117856000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0112-organization-000"
             ],
@@ -393,10 +393,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-person-001",
-            "@type": "Person",
-            "@created": "1622032091118247000",
-            "@modified": "1622032091118248000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-person-001",
+            "type": "Person",
+            "created": "1622032091118247000",
+            "modified": "1622032091118248000",
             "emails": [
                 "claire.jaquier@unine.ch"
             ],
@@ -416,10 +416,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000",
-            "@type": "Organization",
-            "@created": "1622032091118525000",
-            "@modified": "1622032091118526000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-000",
+            "type": "Organization",
+            "created": "1622032091118525000",
+            "modified": "1622032091118526000",
             "name": "Université de Lausanne",
             "address": {
                 "street": "Unicentre",
@@ -434,10 +434,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001",
-            "@type": "Organization",
-            "@created": "1622032091225321000",
-            "@modified": "1622032091225323000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-001",
+            "type": "Organization",
+            "created": "1622032091225321000",
+            "modified": "1622032091225323000",
             "url": {
                 "text": "http://www.snf.ch/",
                 "type": "URL",
@@ -453,10 +453,10 @@
             "name": "Swiss National Science Foundation (SNSF)"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-organization-002",
-            "@type": "Organization",
-            "@created": "1622032091296107000",
-            "@modified": "1622032091296109000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-organization-002",
+            "type": "Organization",
+            "created": "1622032091296107000",
+            "modified": "1622032091296109000",
             "name": "Université de Neuchâtel",
             "address": {
                 "street": "Avenue du 1er-Mars 26",
@@ -473,10 +473,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0112-grant-000",
-            "@type": "Grant",
-            "@created": "1622032091327538000",
-            "@modified": "1622032091327540000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0112-grant-000",
+            "type": "Grant",
+            "created": "1622032091327538000",
+            "modified": "1622032091327540000",
             "url": {
                 "text": "http://p3.snf.ch/Project-157970",
                 "type": "URL",

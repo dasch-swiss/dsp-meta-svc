@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0114-project",
-        "@type": "Project",
-        "@created": "1622032094958922000",
-        "@modified": "1622032094958923000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0114-project",
+        "type": "Project",
+        "created": "1622032094958922000",
+        "modified": "1622032094958923000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0114-dataset-000"
@@ -88,10 +88,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032100430801000",
-            "@modified": "1622032100430803000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-dataset-000",
+            "type": "Dataset",
+            "created": "1622032100430801000",
+            "modified": "1622032100430803000",
             "attributions": [
                 {
                     "person": "http://ns.dasch.swiss/repository#dsp-0114-person-001",
@@ -170,10 +170,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-005",
-            "@type": "Person",
-            "@created": "1622032101157824000",
-            "@modified": "1622032101157825000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-005",
+            "type": "Person",
+            "created": "1622032101157824000",
+            "modified": "1622032101157825000",
             "emails": [
                 "marion.rivoal@unil.ch"
             ],
@@ -198,10 +198,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-004",
-            "@type": "Person",
-            "@created": "1622032101158250000",
-            "@modified": "1622032101158251000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-004",
+            "type": "Person",
+            "created": "1622032101158250000",
+            "modified": "1622032101158251000",
             "familyNames": [
                 "Metzger"
             ],
@@ -219,10 +219,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-002",
-            "@type": "Person",
-            "@created": "1622032101158527000",
-            "@modified": "1622032101158527000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-002",
+            "type": "Person",
+            "created": "1622032101158527000",
+            "modified": "1622032101158527000",
             "givenNames": [
                 "Helena"
             ],
@@ -240,10 +240,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-003",
-            "@type": "Person",
-            "@created": "1622032101158796000",
-            "@modified": "1622032101158797000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-003",
+            "type": "Person",
+            "created": "1622032101158796000",
+            "modified": "1622032101158797000",
             "familyNames": [
                 "Défayes"
             ],
@@ -261,10 +261,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-001",
-            "@type": "Person",
-            "@created": "1622032101159067000",
-            "@modified": "1622032101159068000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-001",
+            "type": "Person",
+            "created": "1622032101159067000",
+            "modified": "1622032101159068000",
             "givenNames": [
                 "Florence"
             ],
@@ -290,10 +290,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-000",
-            "@type": "Person",
-            "@created": "1622032101159514000",
-            "@modified": "1622032101159515000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-person-000",
+            "type": "Person",
+            "created": "1622032101159514000",
+            "modified": "1622032101159515000",
             "givenNames": [
                 "Patrick"
             ],
@@ -320,10 +320,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001",
-            "@type": "Organization",
-            "@created": "1622032101160024000",
-            "@modified": "1622032101160025000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001",
+            "type": "Organization",
+            "created": "1622032101160024000",
+            "modified": "1622032101160025000",
             "address": {
                 "street": "Unicentre",
                 "postalCode": "1015",
@@ -338,10 +338,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-000",
-            "@type": "Organization",
-            "@created": "1622032101190801000",
-            "@modified": "1622032101190803000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-organization-000",
+            "type": "Organization",
+            "created": "1622032101190801000",
+            "modified": "1622032101190803000",
             "url": {
                 "text": "http://www.snf.ch/",
                 "type": "URL",
@@ -359,10 +359,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0114-grant-000",
-            "@type": "Grant",
-            "@created": "1622032101222219000",
-            "@modified": "1622032101222221000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0114-grant-000",
+            "type": "Grant",
+            "created": "1622032101222219000",
+            "modified": "1622032101222221000",
             "name": "Project funding (Div. I-III)",
             "number": "179043",
             "funders": [

@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-082B-project",
-        "@type": "Project",
-        "@created": "1622032057334672000",
-        "@modified": "1622032057334674000",
+        "id": "http://ns.dasch.swiss/repository#dsp-082B-project",
+        "type": "Project",
+        "created": "1622032057334672000",
+        "modified": "1622032057334674000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082B-dataset-001"
@@ -81,10 +81,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032062448026000",
-            "@modified": "1622032062448027000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-dataset-001",
+            "type": "Dataset",
+            "created": "1622032062448026000",
+            "modified": "1622032062448027000",
             "urls": [
                 {
                     "text": "www.cache.ch/gegenwissen",
@@ -210,10 +210,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
-            "@type": "Person",
-            "@created": "1622032062874676000",
-            "@modified": "1622032062874677000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
+            "type": "Person",
+            "created": "1622032062874676000",
+            "modified": "1622032062874677000",
             "familyNames": [
                 "Wulz"
             ],
@@ -228,10 +228,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
-            "@type": "Person",
-            "@created": "1622032062874941000",
-            "@modified": "1622032062874942000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
+            "type": "Person",
+            "created": "1622032062874941000",
+            "modified": "1622032062874942000",
             "familyNames": [
                 "Schlünder"
             ],
@@ -246,10 +246,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-001",
-            "@type": "Person",
-            "@created": "1622032062875201000",
-            "@modified": "1622032062875202000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-001",
+            "type": "Person",
+            "created": "1622032062875201000",
+            "modified": "1622032062875202000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
             ],
@@ -267,10 +267,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
-            "@type": "Person",
-            "@created": "1622032062875493000",
-            "@modified": "1622032062875494000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
+            "type": "Person",
+            "created": "1622032062875493000",
+            "modified": "1622032062875494000",
             "familyNames": [
                 "Grütter"
             ],
@@ -285,10 +285,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-003",
-            "@type": "Person",
-            "@created": "1622032062875706000",
-            "@modified": "1622032062875707000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-003",
+            "type": "Person",
+            "created": "1622032062875706000",
+            "modified": "1622032062875707000",
             "familyNames": [
                 "Stadler"
             ],
@@ -306,10 +306,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-008",
-            "@type": "Person",
-            "@created": "1622032062875983000",
-            "@modified": "1622032062875984000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-008",
+            "type": "Person",
+            "created": "1622032062875983000",
+            "modified": "1622032062875984000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
             ],
@@ -324,10 +324,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
-            "@type": "Person",
-            "@created": "1622032062876209000",
-            "@modified": "1622032062876210000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
+            "type": "Person",
+            "created": "1622032062876209000",
+            "modified": "1622032062876210000",
             "jobTitles": [
                 "Historian"
             ],
@@ -342,10 +342,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
-            "@type": "Person",
-            "@created": "1622032062876424000",
-            "@modified": "1622032062876425000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
+            "type": "Person",
+            "created": "1622032062876424000",
+            "modified": "1622032062876425000",
             "familyNames": [
                 "Schmidt"
             ],
@@ -360,10 +360,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
-            "@type": "Person",
-            "@created": "1622032062876637000",
-            "@modified": "1622032062876638000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
+            "type": "Person",
+            "created": "1622032062876637000",
+            "modified": "1622032062876638000",
             "givenNames": [
                 "Nadine"
             ],
@@ -378,10 +378,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
-            "@type": "Person",
-            "@created": "1622032062876851000",
-            "@modified": "1622032062876851000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
+            "type": "Person",
+            "created": "1622032062876851000",
+            "modified": "1622032062876851000",
             "givenNames": [
                 "Niki"
             ],
@@ -399,10 +399,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
-            "@type": "Person",
-            "@created": "1622032062877129000",
-            "@modified": "1622032062877130000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
+            "type": "Person",
+            "created": "1622032062877129000",
+            "modified": "1622032062877130000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
             ],
@@ -417,10 +417,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-person-004",
-            "@type": "Person",
-            "@created": "1622032062877342000",
-            "@modified": "1622032062877343000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-person-004",
+            "type": "Person",
+            "created": "1622032062877342000",
+            "modified": "1622032062877343000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-001"
             ],
@@ -437,10 +437,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001",
-            "@type": "Organization",
-            "@created": "1622032062877585000",
-            "@modified": "1622032062877585000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-001",
+            "type": "Organization",
+            "created": "1622032062877585000",
+            "modified": "1622032062877585000",
             "url": {
                 "text": "www.ethz.ch",
                 "type": "URL",
@@ -449,10 +449,10 @@
             "name": "ETH Zurich"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
-            "@type": "Organization",
-            "@created": "1622032062877754000",
-            "@modified": "1622032062877755000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
+            "type": "Organization",
+            "created": "1622032062877754000",
+            "modified": "1622032062877755000",
             "name": "intercom Verlag",
             "url": {
                 "text": "www.intercomverlag.ch",
@@ -462,19 +462,19 @@
             "email": "info@intercomverlag.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003",
-            "@type": "Organization",
-            "@created": "1622032062877949000",
-            "@modified": "1622032062877950000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-organization-003",
+            "type": "Organization",
+            "created": "1622032062877949000",
+            "modified": "1622032062877950000",
             "name": "SNSF"
         }
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082B-grant-001",
-            "@type": "Grant",
-            "@created": "1622032062878048000",
-            "@modified": "1622032062878048000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082B-grant-001",
+            "type": "Grant",
+            "created": "1622032062878048000",
+            "modified": "1622032062878048000",
             "number": "http://p3.snf.ch/Project-183057",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-003"

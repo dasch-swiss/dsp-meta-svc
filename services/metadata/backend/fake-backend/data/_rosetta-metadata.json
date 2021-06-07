@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-082E-project",
-        "@type": "Project",
-        "@created": "1622032130189912000",
-        "@modified": "1622032130189912000",
+        "id": "http://ns.dasch.swiss/repository#dsp-082E-project",
+        "type": "Project",
+        "created": "1622032130189912000",
+        "modified": "1622032130189912000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082E-dataset-000"
@@ -79,10 +79,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082E-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032133361210000",
-            "@modified": "1622032133361211000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082E-dataset-000",
+            "type": "Dataset",
+            "created": "1622032133361210000",
+            "modified": "1622032133361211000",
             "languages": [
                 {
                     "de": "Deutsch",
@@ -160,10 +160,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000",
-            "@type": "Organization",
-            "@created": "1622032138030663000",
-            "@modified": "1622032138030671000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000",
+            "type": "Organization",
+            "created": "1622032138030663000",
+            "modified": "1622032138030671000",
             "email": "info@dasch.swiss",
             "url": {
                 "text": "www.dasch.swiss",

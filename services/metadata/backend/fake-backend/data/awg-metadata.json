@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0806-project",
-        "@type": "Project",
-        "@created": "1622032043991499000",
-        "@modified": "1622032043991500000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0806-project",
+        "type": "Project",
+        "created": "1622032043991499000",
+        "modified": "1622032043991500000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0806-dataset-000"
@@ -172,10 +172,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032054386574000",
-            "@modified": "1622032054386575000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-dataset-000",
+            "type": "Dataset",
+            "created": "1622032054386574000",
+            "modified": "1622032054386575000",
             "typeOfData": [
                 "XML",
                 "Image",
@@ -254,10 +254,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
-            "@type": "Person",
-            "@created": "1622032054782000000",
-            "@modified": "1622032054782002000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
+            "type": "Person",
+            "created": "1622032054782000000",
+            "modified": "1622032054782002000",
             "address": {
                 "street": "Petersgraben 27/29",
                 "postalCode": "CH-4051",
@@ -289,10 +289,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
-            "@type": "Person",
-            "@created": "1622032055157686000",
-            "@modified": "1622032055157687000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
+            "type": "Person",
+            "created": "1622032055157686000",
+            "modified": "1622032055157687000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-001",
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
@@ -326,10 +326,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
-            "@type": "Person",
-            "@created": "1622032055464658000",
-            "@modified": "1622032055464659000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
+            "type": "Person",
+            "created": "1622032055464658000",
+            "modified": "1622032055464659000",
             "jobTitles": [
                 "Member of the editorial management",
                 "Research associate"
@@ -362,10 +362,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
-            "@type": "Person",
-            "@created": "1622032055873738000",
-            "@modified": "1622032055873740000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
+            "type": "Person",
+            "created": "1622032055873738000",
+            "modified": "1622032055873740000",
             "authorityRefs": [
                 {
                     "text": "GND URL: http://d-nb.info/gnd/130219827",
@@ -397,10 +397,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
-            "@type": "Person",
-            "@created": "1622032056180950000",
-            "@modified": "1622032056180952000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
+            "type": "Person",
+            "created": "1622032056180950000",
+            "modified": "1622032056180952000",
             "familyNames": [
                 "Obert"
             ],
@@ -434,10 +434,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
-            "@type": "Person",
-            "@created": "1622032056590798000",
-            "@modified": "1622032056590800000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
+            "type": "Person",
+            "created": "1622032056590798000",
+            "modified": "1622032056590800000",
             "givenNames": [
                 "Stefan"
             ],
@@ -471,10 +471,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-004",
-            "@type": "Organization",
-            "@created": "1622032056775342000",
-            "@modified": "1622032056775344000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-004",
+            "type": "Organization",
+            "created": "1622032056775342000",
+            "modified": "1622032056775344000",
             "name": "Schweizerische Akademie der Geistes- und Sozialwissenschaften",
             "url": {
                 "text": "https://sagw.ch/",
@@ -490,10 +490,10 @@
             "email": "sagw@sagw.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005",
-            "@type": "Organization",
-            "@created": "1622032057104628000",
-            "@modified": "1622032057104629000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005",
+            "type": "Organization",
+            "created": "1622032057104628000",
+            "modified": "1622032057104629000",
             "name": "EvS",
             "url": {
                 "text": "https://www.evs-musikstiftung.ch",
@@ -509,10 +509,10 @@
             "email": "rossnagl@evs-musikstiftung.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003",
-            "@type": "Organization",
-            "@created": "1622032057136171000",
-            "@modified": "1622032057136172000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003",
+            "type": "Organization",
+            "created": "1622032057136171000",
+            "modified": "1622032057136172000",
             "name": "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung",
             "email": "com@snf.ch",
             "url": {
@@ -528,10 +528,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-002",
-            "@type": "Organization",
-            "@created": "1622032057167467000",
-            "@modified": "1622032057167469000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-002",
+            "type": "Organization",
+            "created": "1622032057167467000",
+            "modified": "1622032057167469000",
             "email": "office-pss@unibas.ch",
             "address": {
                 "street": "Münsterplatz 4",
@@ -547,10 +547,10 @@
             "name": "Paul Sacher Stiftung"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001",
-            "@type": "Organization",
-            "@created": "1622032057198242000",
-            "@modified": "1622032057198243000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001",
+            "type": "Organization",
+            "created": "1622032057198242000",
+            "modified": "1622032057198243000",
             "email": "sekretariat-mws@unibas.ch",
             "name": "MWS",
             "url": {
@@ -566,10 +566,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000",
-            "@type": "Organization",
-            "@created": "1622032057228219000",
-            "@modified": "1622032057228221000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000",
+            "type": "Organization",
+            "created": "1622032057228219000",
+            "modified": "1622032057228221000",
             "name": "AWG",
             "url": {
                 "text": "https://www.anton-webern.ch",
@@ -587,10 +587,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-001",
-            "@type": "Grant",
-            "@created": "1622032057257969000",
-            "@modified": "1622032057257970000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-001",
+            "type": "Grant",
+            "created": "1622032057257969000",
+            "modified": "1622032057257970000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
@@ -603,10 +603,10 @@
             "number": "157968"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-006",
-            "@type": "Grant",
-            "@created": "1622032057258242000",
-            "@modified": "1622032057258243000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-006",
+            "type": "Grant",
+            "created": "1622032057258242000",
+            "modified": "1622032057258243000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-005"
             ],
@@ -619,10 +619,10 @@
             "number": "E13_1003"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-007",
-            "@type": "Grant",
-            "@created": "1622032057258493000",
-            "@modified": "1622032057258493000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-007",
+            "type": "Grant",
+            "created": "1622032057258493000",
+            "modified": "1622032057258493000",
             "url": {
                 "text": "https://www.evs-musikstiftung.ch/de/preise/preise/archiv/foerderprojekte/2011/publikationentagungen/historisch-kritische-gesamtausgabe",
                 "type": "URL",
@@ -635,20 +635,20 @@
             "name": "[2010–2012]"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-000",
-            "@type": "Grant",
-            "@created": "1622032057258741000",
-            "@modified": "1622032057258741000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-000",
+            "type": "Grant",
+            "created": "1622032057258741000",
+            "modified": "1622032057258741000",
             "name": "Editionen [2021–2024]",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-004"
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-003",
-            "@type": "Grant",
-            "@created": "1622032057258860000",
-            "@modified": "1622032057258861000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-003",
+            "type": "Grant",
+            "created": "1622032057258860000",
+            "modified": "1622032057258861000",
             "name": "Projektförderung (spezial) [2012–2015]",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
@@ -661,10 +661,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-005",
-            "@type": "Grant",
-            "@created": "1622032057259107000",
-            "@modified": "1622032057259108000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-005",
+            "type": "Grant",
+            "created": "1622032057259107000",
+            "modified": "1622032057259108000",
             "name": "Projektförderung (Abt. I-III) [2006–2009]",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
@@ -677,10 +677,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-002",
-            "@type": "Grant",
-            "@created": "1622032057259352000",
-            "@modified": "1622032057259353000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-002",
+            "type": "Grant",
+            "created": "1622032057259352000",
+            "modified": "1622032057259353000",
             "url": {
                 "text": "http://p3.snf.ch/Project-162871",
                 "type": "URL",
@@ -693,10 +693,10 @@
             "number": "162871"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-004",
-            "@type": "Grant",
-            "@created": "1622032057259596000",
-            "@modified": "1622032057259597000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0806-grant-004",
+            "type": "Grant",
+            "created": "1622032057259596000",
+            "modified": "1622032057259597000",
             "url": {
                 "text": "http://p3.snf.ch/Project-126789 ",
                 "type": "URL",
@@ -710,10 +710,10 @@
         }
     ],
     "dataManagementPlan": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0806-dmp",
-        "@type": "DataManagementPlan",
-        "@created": "1622032057259873000",
-        "@modified": "1622032057259874000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0806-dmp",
+        "type": "DataManagementPlan",
+        "created": "1622032057259873000",
+        "modified": "1622032057259874000",
         "available": true
     }
 }

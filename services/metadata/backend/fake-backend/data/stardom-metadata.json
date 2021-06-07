@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0107-project",
-        "@type": "Project",
-        "@created": "1622032116260544000",
-        "@modified": "1622032116260545000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0107-project",
+        "type": "Project",
+        "created": "1622032116260544000",
+        "modified": "1622032116260545000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0107-dataset-000"
@@ -99,10 +99,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032121501532000",
-            "@modified": "1622032121501533000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-dataset-000",
+            "type": "Dataset",
+            "created": "1622032121501532000",
+            "modified": "1622032121501533000",
             "attributions": [
                 {
                     "person": "http://ns.dasch.swiss/repository#dsp-0107-person-002",
@@ -188,10 +188,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-000",
-            "@type": "Person",
-            "@created": "1622032122336885000",
-            "@modified": "1622032122336887000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-000",
+            "type": "Person",
+            "created": "1622032122336885000",
+            "modified": "1622032122336887000",
             "emails": [
                 "alain.boillat@unil.ch"
             ],
@@ -216,10 +216,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-006",
-            "@type": "Person",
-            "@created": "1622032122337303000",
-            "@modified": "1622032122337303000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-006",
+            "type": "Person",
+            "created": "1622032122337303000",
+            "modified": "1622032122337303000",
             "emails": [
                 "marion.rivoal@unil.ch"
             ],
@@ -244,10 +244,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-002",
-            "@type": "Person",
-            "@created": "1622032122337709000",
-            "@modified": "1622032122337710000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-002",
+            "type": "Person",
+            "created": "1622032122337709000",
+            "modified": "1622032122337710000",
             "emails": [
                 "jeanne.rohner@unil.ch"
             ],
@@ -272,10 +272,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-005",
-            "@type": "Person",
-            "@created": "1622032122338113000",
-            "@modified": "1622032122338114000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-005",
+            "type": "Person",
+            "created": "1622032122338113000",
+            "modified": "1622032122338114000",
             "familyNames": [
                 "Jaouen"
             ],
@@ -293,10 +293,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-001",
-            "@type": "Person",
-            "@created": "1622032122338393000",
-            "@modified": "1622032122338394000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-001",
+            "type": "Person",
+            "created": "1622032122338393000",
+            "modified": "1622032122338394000",
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
             ],
@@ -321,10 +321,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-004",
-            "@type": "Person",
-            "@created": "1622032122338783000",
-            "@modified": "1622032122338783000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-004",
+            "type": "Person",
+            "created": "1622032122338783000",
+            "modified": "1622032122338783000",
             "jobTitles": [
                 "PhD student"
             ],
@@ -339,10 +339,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-003",
-            "@type": "Person",
-            "@created": "1622032122338982000",
-            "@modified": "1622032122338982000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-person-003",
+            "type": "Person",
+            "created": "1622032122338982000",
+            "modified": "1622032122338982000",
             "familyNames": [
                 "Cordonier"
             ],
@@ -362,10 +362,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-001",
-            "@type": "Organization",
-            "@created": "1622032122339269000",
-            "@modified": "1622032122339269000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-organization-001",
+            "type": "Organization",
+            "created": "1622032122339269000",
+            "modified": "1622032122339269000",
             "address": {
                 "street": "Wildhainweg 3 Postfach",
                 "postalCode": "3001",
@@ -381,10 +381,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000",
-            "@type": "Organization",
-            "@created": "1622032122500495000",
-            "@modified": "1622032122500497000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000",
+            "type": "Organization",
+            "created": "1622032122500495000",
+            "modified": "1622032122500497000",
             "name": "Université de Lausanne",
             "url": {
                 "text": "https://www.unil.ch/",
@@ -401,10 +401,10 @@
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0107-grant-000",
-            "@type": "Grant",
-            "@created": "1622032122667543000",
-            "@modified": "1622032122667544000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0107-grant-000",
+            "type": "Grant",
+            "created": "1622032122667543000",
+            "modified": "1622032122667544000",
             "name": "Project funding (Div. I-III)",
             "url": {
                 "text": "http://p3.snf.ch/Project-166366",

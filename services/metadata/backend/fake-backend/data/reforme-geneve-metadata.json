@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-0111-project",
-        "@type": "Project",
-        "@created": "1622032062949332000",
-        "@modified": "1622032062949333000",
+        "id": "http://ns.dasch.swiss/repository#dsp-0111-project",
+        "type": "Project",
+        "created": "1622032062949332000",
+        "modified": "1622032062949333000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0111-dataset-000"
@@ -98,10 +98,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-dataset-000",
-            "@type": "Dataset",
-            "@created": "1622032070876023000",
-            "@modified": "1622032070876026000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-dataset-000",
+            "type": "Dataset",
+            "created": "1622032070876023000",
+            "modified": "1622032070876026000",
             "datePublished": "2019-01-17",
             "licenses": [
                 {
@@ -175,10 +175,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-person-003",
-            "@type": "Person",
-            "@created": "1622032071579994000",
-            "@modified": "1622032071579995000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-person-003",
+            "type": "Person",
+            "created": "1622032071579994000",
+            "modified": "1622032071579995000",
             "familyNames": [
                 "Rivoal"
             ],
@@ -203,10 +203,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-person-000",
-            "@type": "Person",
-            "@created": "1622032071580507000",
-            "@modified": "1622032071580508000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-person-000",
+            "type": "Person",
+            "created": "1622032071580507000",
+            "modified": "1622032071580508000",
             "emails": [
                 "christian.grosse@unil.ch"
             ],
@@ -231,10 +231,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-person-002",
-            "@type": "Person",
-            "@created": "1622032071581018000",
-            "@modified": "1622032071581018000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-person-002",
+            "type": "Person",
+            "created": "1622032071581018000",
+            "modified": "1622032071581018000",
             "familyNames": [
                 "Matthey-Doret"
             ],
@@ -249,10 +249,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-person-001",
-            "@type": "Person",
-            "@created": "1622032071581259000",
-            "@modified": "1622032071581260000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-person-001",
+            "type": "Person",
+            "created": "1622032071581259000",
+            "modified": "1622032071581260000",
             "givenNames": [
                 "Anouk"
             ],
@@ -272,10 +272,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-organization-001",
-            "@type": "Organization",
-            "@created": "1622032071581579000",
-            "@modified": "1622032071581580000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-organization-001",
+            "type": "Organization",
+            "created": "1622032071581579000",
+            "modified": "1622032071581580000",
             "address": {
                 "street": "Unicentre\r CH-1015 Lausanne\r ",
                 "postalCode": "1015",
@@ -290,10 +290,10 @@
             }
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-0111-organization-000",
-            "@type": "Organization",
-            "@created": "1622032071611821000",
-            "@modified": "1622032071611823000",
+            "id": "http://ns.dasch.swiss/repository#dsp-0111-organization-000",
+            "type": "Organization",
+            "created": "1622032071611821000",
+            "modified": "1622032071611823000",
             "address": {
                 "street": "Rue de l'Hôtel-de-Ville 1 Case postale 3964",
                 "postalCode": "1211 ",

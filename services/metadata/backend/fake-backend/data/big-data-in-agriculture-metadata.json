@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "@id": "http://ns.dasch.swiss/repository#dsp-082D-project",
-        "@type": "Project",
-        "@created": "1622032151387876000",
-        "@modified": "1622032151387877000",
+        "id": "http://ns.dasch.swiss/repository#dsp-082D-project",
+        "type": "Project",
+        "created": "1622032151387876000",
+        "modified": "1622032151387877000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082D-dataset-001"
@@ -76,10 +76,10 @@
     },
     "datasets": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-dataset-001",
-            "@type": "Dataset",
-            "@created": "1622032154732169000",
-            "@modified": "1622032154732170000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-dataset-001",
+            "type": "Dataset",
+            "created": "1622032154732169000",
+            "modified": "1622032154732170000",
             "accessConditions": "Restricted",
             "title": "Dataset of Big Data in Agriculture: The Making of Smart Farms",
             "languages": [
@@ -136,10 +136,10 @@
     ],
     "persons": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
-            "@type": "Person",
-            "@created": "1622032155137816000",
-            "@modified": "1622032155137818000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
+            "type": "Person",
+            "created": "1622032155137816000",
+            "modified": "1622032155137818000",
             "givenNames": [
                 "Dennis"
             ],
@@ -163,10 +163,10 @@
             ]
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
-            "@type": "Person",
-            "@created": "1622032155169397000",
-            "@modified": "1622032155169399000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
+            "type": "Person",
+            "created": "1622032155169397000",
+            "modified": "1622032155169399000",
             "jobTitles": [
                 "Full professor of political geography"
             ],
@@ -199,10 +199,10 @@
     ],
     "organizations": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-organization-002",
-            "@type": "Organization",
-            "@created": "1622032155199798000",
-            "@modified": "1622032155199799000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-organization-002",
+            "type": "Organization",
+            "created": "1622032155199798000",
+            "modified": "1622032155199799000",
             "name": "Université de Neuchâtel, Faculté des lettres et sciences humaines",
             "url": {
                 "text": "http://www.unine.ch/geographie/home.html",
@@ -218,19 +218,19 @@
             "email": "Secretariat.Geographie@unine.ch"
         },
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-organization-001",
-            "@type": "Organization",
-            "@created": "1622032155231561000",
-            "@modified": "1622032155231563000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-organization-001",
+            "type": "Organization",
+            "created": "1622032155231561000",
+            "modified": "1622032155231563000",
             "name": "Swiss National Science Foundation"
         }
     ],
     "grants": [
         {
-            "@id": "http://ns.dasch.swiss/repository#dsp-082D-grant-001",
-            "@type": "Grant",
-            "@created": "1622032155231703000",
-            "@modified": "1622032155231703000",
+            "id": "http://ns.dasch.swiss/repository#dsp-082D-grant-001",
+            "type": "Grant",
+            "created": "1622032155231703000",
+            "modified": "1622032155231703000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-082D-organization-001"
             ],
@@ -244,10 +244,10 @@
         }
     ],
     "dataManagementPlan": {
-        "@id": "http://ns.dasch.swiss/repository#dmp",
-        "@type": "DataManagementPlan",
-        "@created": "1622032155232041000",
-        "@modified": "1622032155232042000",
+        "id": "http://ns.dasch.swiss/repository#dmp",
+        "type": "DataManagementPlan",
+        "created": "1622032155232041000",
+        "modified": "1622032155232042000",
         "available": true
     }
 }

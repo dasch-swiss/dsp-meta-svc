@@ -7,7 +7,6 @@
   import Tab from './Tab.svelte';
   import { fade } from 'svelte/transition';
   import Snackbar from '../Snackbar.svelte';
-  import Matomo from '../Matomo.svelte';
   
   let datasets: any[] = [];
   let tabs = [] as any[];
@@ -128,9 +127,6 @@
       {/if}
 
       {#await getProjectMetadata() then go}
-        <!-- to wait for all project data to be fetched and passed to MAtomo  -->
-        <Matomo />
-
         <div class="tabs">
           <!-- TODO: add again -->
           <!-- <Tab {tabs} /> -->

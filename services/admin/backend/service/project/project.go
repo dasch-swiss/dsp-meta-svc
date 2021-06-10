@@ -18,7 +18,6 @@ package project
 
 import (
 	"context"
-	"fmt"
 	"github.com/dasch-swiss/dasch-service-platform/services/admin/backend/entity/project"
 	"github.com/dasch-swiss/dasch-service-platform/shared/go/pkg/valueobject"
 )
@@ -56,7 +55,7 @@ func (s *Service) CreateProject(ctx context.Context, shortCode valueobject.Short
 	if len(existingShortCodes) > 0 {
 		for _, esc := range existingShortCodes {
 			if shortCode.String() == esc.String() {
-				return valueobject.Identifier{}, fmt.Errorf("provided short code already exists")
+				return valueobject.Identifier{}, project.ErrShortCodeAlreadyExists
 			}
 		}
 	}
@@ -122,20 +121,6 @@ func (s *Service) DeleteProject(ctx context.Context, uuid valueobject.Identifier
 	}
 
 	return p, nil
-}
-
-// MigrateProject creates a project with a specified short code.
-func (s *Service) MigrateProject(ctx context.Context, shortCode valueobject.ShortCode, shortName valueobject.ShortName, longName valueobject.LongName, description valueobject.Description) (valueobject.Identifier, error) {
-
-	id, _ := valueobject.NewIdentifier()
-
-	e := project.NewAggregate(id, shortCode, shortName, longName, description)
-
-	if _, err := s.repo.Save(ctx, e); err != nil {
-		return valueobject.Identifier{}, err
-	}
-
-	return id, nil
 }
 
 // GetProject gets a project with the corresponding uuid.

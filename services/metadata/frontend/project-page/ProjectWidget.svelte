@@ -1,27 +1,25 @@
 <script lang='ts'>
   import { currentProject, currentProjectMetadata } from "../store";
-  import type {Text} from "../interfaces";
+  import type {Text, URL, Person, Organization, Grant, Project} from "../interfaces";
 
   let grant;
 
-  const findObjectById = (id: string) => {
-    // TODO: update once interface is written
-    let grants = $currentProjectMetadata?.grants
-    let res = grants.find(o => o['@id'] === id);
-    if (res) return res;
+  function findObjectById(id: string): Grant | Person | Organization {
+    let grants = $currentProjectMetadata?.grants;
+    let g = grants.find(o => o.id === id);
+    if (g) return g;
 
     let persons = $currentProjectMetadata?.persons
     if (persons && persons.length > 0){
-    res = persons.find(o => o['@id'] === id);
-    if (res) return res;}
+      let p = persons.find(o => o.id === id);
+      if (p) return p;
+    }
 
-    res = $currentProjectMetadata?.organizations.find(o => o['@id'] === id);
-    if (res) return res;
-    // grant = $currentProjectMetadata?.metadata.find(obj => obj.id === id);
-    // return $currentProjectMetadata?.find(obj => obj['@id'] === id);
+    let o = $currentProjectMetadata?.organizations.find(o => o.id === id);
+    if (o) return o;
   };
 
-  const truncateString = (s) => {
+  const truncateString = (s: string) => {
     if (s.length > 35) {
       return `${s.slice(0, 35)}...`;
     } else return s;
@@ -29,7 +27,6 @@
 
   function getText(text: Text, lang?:string) {
     let langs = Object.keys(text);
-    console.log(text, langs, langs.length);
     
     if (langs.length === 0) {
       return ""
@@ -41,24 +38,83 @@
       return text[langs[0]]
     }
   }
+
+  interface a {
+    type: "something"
+    field: string;
+  }
+  interface b {
+    type: "anotherthing"
+    field2: string;
+  }
+
+  type c = a | b
+
+  function doStuff(o:c) {
+    console.log(o);
+    console.log(o.type)
+  }
+
+  function testStuff(arg: any) {
+    if (!$currentProjectMetadata) {
+      return ""
+    }
+    console.log("testing...")
+
+    doStuff({type: "something", field: "blah"})
+
+    // let p = $currentProject?.shortcode
+
+    // console.log(p);
+    // console.log(arg);
+    // console.log($currentProject);
+    // console.log($currentProject?.__type === "Project");
+
+    let p = $currentProjectMetadata?.project
+
+    console.log(p.shortcode);
+    
+
+    switch (p.__type) {
+      case "Project":
+        console.log("huzza!");
+        
+        break;
+
+      case undefined:
+        console.log("hö?");
+        break
+    
+      default:
+        console.log("meh");
+        
+        break;
+    }
+    
+
+    return ""
+  }
 </script>
 
 <div class=label>DSP Internal Shortcode</div>
 <div class=data>{$currentProject?.shortcode}</div>
 
+{testStuff($currentProject?.shortcode)}
+
 <div class=label>Data Management Plan</div>
 <div class=data>{$currentProject?.dataManagementPlan ? "available" : "unavailable"}</div>
 
 <div class=label>Discipline</div>
+<!-- TODO: remove array check. should be done by interface -->
 {#if Array.isArray($currentProject?.disciplines)}
   {#each $currentProject?.disciplines as d}
-    {#if d.url}
+    {#if d.__type === "URL"}
       <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
     {:else}
-      {#if d[Object.keys(d)[0]].match(/^\d+ /)}
-        <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(d[Object.keys(d)[0]])}</a>
+      {#if getText(d).match(/^\d+ /)}
+        <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(getText(d))}</a>
       {:else}
-        <div class="data">{d[Object.keys(d)[0]]}</div>
+        <div class="data">{getText(d)}</div>
       {/if}
     {/if}
   {/each}
@@ -67,10 +123,11 @@
 <div class=label>Temporal Coverage</div>
 {#if Array.isArray($currentProject?.temporalCoverage)}
   {#each $currentProject?.temporalCoverage as t}
-    {#if t.url}
+    {#if t.__type === "URL"}
       <a class="data external-link" href={t.url} target=_>{truncateString(t.text)}</a>
     {:else}
-      <div class="data">{t[Object.keys(t)[0]]}</div>
+      <div class="data">{getText(t)}</div>
+      <!-- <div class="data">{getText(asText(t))}</div> -->
     {/if}
   {/each}
 {/if}
@@ -90,16 +147,24 @@
 <div class=data>{$currentProject?.endDate}</div>
 {/if}
 
+
+<!-- FIXME -->
 <div class=label>Funder</div>
 {#if Array.isArray($currentProject?.funders)}
-  {#each $currentProject?.funders as f}
-    {#if findObjectById(f)['@type'] === "Person"}
-      {console.log('person',findObjectById(f))}
+  {#each $currentProject?.funders.map((o) => {return findObjectById(o)}) as f}
+  <!-- {console.log("Project", $currentProject?.____type === "Project")} -->
+  <!-- {console.log($currentProjectMetadata?.grants[0])}
+  {console.log($currentProjectMetadata?.grants[0].__type === "Grant")} -->
+  <!-- {console.log(f)}
+  {console.log("grant:", f.__type==="Grant")}
+  {console.log("org:", f.__type==="Organization")}
+  {console.log("pers:", f.__type==="Person")} -->
+    {#if f.__type === "Person"}
+      {console.log('person',f)}
       <!-- TODO: handle funding person - need to find example -->
-      {console.log('organization',findObjectById(f))}
       <!-- <div class=data>{findObjectById(f)?.givenName.split(";").join(" ")} {findObjectById(f)?.familyName}</div> -->
-    {:else if findObjectById(f)['@type'] === "Organization"}
-      <div class=data>{findObjectById(f).name}</div>
+      {:else if f.__type === "Organization"}
+      <div class=data>{f.name}</div>
     {/if}
   {/each}
 {/if}
@@ -107,25 +172,39 @@
   {#if $currentProject?.grants && Array.isArray($currentProject?.grants)}
   <div class=label>Grant</div>
   {#each $currentProject?.grants.map(id => {return findObjectById(id)}) as g}
-    {#if g?.number && g?.url && g?.name}
-      <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
-      <!-- TODO: roll back if people don't like it -->
-      <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
-    {:else if g?.number && g?.url}
-      <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
-    {:else if g?.number}
-      <span class="data">{g?.number}</span>
-    {:else}
-      <span class="data">{findObjectById(g?.funders[0])?.name}</span>
+  <!-- {console.log(g)} -->
+  <!-- FIXME  -->
+  <!-- {console.log(g.__type === "Grant")} -->
+    {#if g.__type === "Grant"}
+      {#if g?.number && g?.url && g?.name}
+        <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+        <!-- TODO: roll back if people don't like it -->
+        <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
+      {:else if g?.number && g?.url}
+        <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
+      {:else if g?.number}
+        <span class="data">{g?.number}</span>
+      {:else}
+        {#each [g?.funders[0]].map(o => {return findObjectById(o)}) as f}
+          {#if f.__type === "Organization"}
+            <span class="data">{f.name}</span>
+          {/if}
+        {/each}
+        
+      {/if}
     {/if}
+
+
+
+    
   {/each}
 {/if}
 
-{#if $currentProject?.contactPoint}
+<!-- TODO -->
+<!-- {#if $currentProject?.contactPoint}
   <div class=label>Contact</div>
   {#each [findObjectById($currentProject?.contactPoint)] as c}
-    <!-- {console.log(c)} -->
-    {#if c['@type'] === 'Organization'}
+    {#if c.type === 'Organization'}
       <div id=contact class=data>{c.name}</div>
       {#if c.email}
         <a class="data email" href="mailto:{c?.email}">{c?.email}</a>
@@ -144,7 +223,7 @@
       {/if}
     {/if}
   {/each}
-{/if}
+{/if} -->
 
 <div class=label>Project Website</div>
 {#if Array.isArray($currentProject?.urls)}
@@ -155,7 +234,7 @@
 
 {#if $currentProject}
   <div class=label>Keywords</div>
-  <span class="keyword">{$currentProject?.keywords.map(t => {return getText(t)}).join(", ")}</span>
+  <!-- <span class="keyword">{$currentProject?.keywords.map(t => {return getText(t)}).join(", ")}</span> -->
 {/if}
 
 <style>

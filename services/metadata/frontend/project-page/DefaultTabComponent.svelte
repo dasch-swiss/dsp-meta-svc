@@ -2,12 +2,12 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import { projectMetadata, handleSnackbar } from "../store";
-  import type { TabContent, Grant, Person, Organization } from "../interfaces";
+  import type { TabContent, Grant, Person, Organization, Text } from "../interfaces";
 
   export let dataset: TabContent;
 
   let isAbstractExpanded: boolean;
-  let abstractLinesNumber: number = 1;
+  let abstractLinesNumber: number;
 
   const toggleExpand = () => {
     isAbstractExpanded = !isAbstractExpanded;
@@ -28,13 +28,30 @@
     if (o) return o;
   };
 
+  function getText(text: Text, lang?:string) {
+    if (!text){
+      return ""
+    }
+
+    let langs = Object.keys(text);
+    
+    if (langs.length === 0) {
+      return ""
+    } else if (lang && langs.includes(lang)) {
+      return text[lang]
+    } else if (langs.includes('en')) {
+      return text['en']
+    } else {
+      return text[langs[0]]
+    }
+  }
+
   onMount(() => {
     const el = document.getElementById('abstract');
-    // TODO: re-add
-    // const lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
-    // const divHeight = el.scrollHeight;
-    // abstractLinesNumber = divHeight / lineHeight;
-    // isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
+    const lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
+    const divHeight = el.scrollHeight;
+    abstractLinesNumber = divHeight / lineHeight;
+    isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
   });
 
   const copyToClipboard = () => {
@@ -73,7 +90,7 @@
   //   }
   // }
 
-  console.log('loaded dataset', dataset)
+  // console.log('loaded dataset', dataset)
 </script>
 
 <div id=dataset in:fade={{duration: 200}}>
@@ -81,7 +98,7 @@
     {#if dataset?.content.alternativeTitles}
       <div>
         <span class=label>Alternative Title</span>
-        <span class=data>{dataset?.content.alternativeTitles}</span>
+        <span class=data>{dataset?.content.alternativeTitles.map((t => {return getText(t)})).join(', ')}</span>
       </div>
     {/if}
   <div class="grid-wrapper">
@@ -109,7 +126,7 @@
       <span class=label>License</span>
       {#if Array.isArray(dataset?.content.licenses)}
         {#each dataset?.content.licenses as l}
-          <a href={l.url} class="data external-link" target=_>CC {(`${l.url.split("/")[4]} ${l.url.split("/")[5]}`).toUpperCase()}</a>
+          <a href={l.url} class="data external-link" target=_>{l.text}</a>
         {/each}
       {/if}
     </div>
@@ -117,6 +134,9 @@
       <span class=label>Type of Data</span>
       <span class=data>{dataset?.content.typeOfData.join(', ')}</span>
     </div>
+
+    <!-- XXX: checked until here -->
+
     {#if dataset?.content.documentations}
       <div style="grid-column-start: 1;grid-column-end: 3;">
         <span class=label>Additional documentation</span>

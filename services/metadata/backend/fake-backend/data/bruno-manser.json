@@ -1,21 +1,23 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dasch-service-platform/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "id": "http://ns.dasch.swiss/repository#dsp-0813-project",
-        "type": "Project",
-        "created": "1622032161008077000",
-        "modified": "1622032161008078000",
+        "__id": "http://ns.dasch.swiss/repository#dsp-0813-project",
+        "__type": "Project",
+        "__created": "1623677806276491000",
+        "__modified": "1623677806276492000",
         "howToCite": "XX - new property on project level",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0813-dataset-001"
         ],
         "disciplines": [
             {
+                "__type": "URL",
                 "text": "Social anthropology",
                 "type": "Skos",
                 "url": "http://skos.um.es/unesco6/5103"
             },
             {
+                "__type": "URL",
                 "text": "Cultural anthropology",
                 "type": "Skos",
                 "url": "http://skos.um.es/unesco6/5101"
@@ -23,16 +25,7 @@
         ],
         "keywords": [
             {
-                "en": "Hunters and Gatherers"
-            },
-            {
-                "XX": "Rainforest"
-            },
-            {
-                "XX": "Bruno Manser"
-            },
-            {
-                "XX": "Waldnomaden"
+                "en": "Nomads"
             },
             {
                 "XX": "Bruno Manser Fonds"
@@ -41,26 +34,49 @@
                 "XX": "Penan"
             },
             {
-                "XX": "Nomaden"
+                "de": "Nomaden"
             },
             {
-                "XX": "Regenwald"
+                "de": "Regenwald"
             },
             {
-                "XX": "Nomads"
+                "en": "Hunters and Gatherers"
+            },
+            {
+                "en": "Waldnomaden"
             },
             {
                 "en": "nomadic lifestyle"
+            },
+            {
+                "XX": "Bruno Manser"
+            },
+            {
+                "en": "Rainforest"
+            }
+        ],
+        "startDate": "2014-05-01",
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
+        ],
+        "alternativeNames": [
+            {
+                "en": "Annotating Bruno Manser's Diaries"
             }
         ],
         "urls": [
             {
+                "__type": "URL",
                 "text": "https://data.dasch.swiss/bmf/",
                 "type": "URL",
                 "url": "https://data.dasch.swiss/bmf/"
             }
         ],
-        "startDate": "2014-05-01",
+        "name": "Annotating Media of Bruno Manser",
+        "description": {
+            "en": "Bruno Manser has left a variety of media in which he documented the nomadic life of the Penan. The project aims to show and annotate the everyday life moments of a nomadic lifestyle across media as diary entries, video footage and photographs of Bruno Manser."
+        },
+        "shortcode": "0813",
         "temporalCoverage": [
             {
                 "de": "1984 - 2000",
@@ -68,75 +84,27 @@
                 "fr": "1984 - 2000"
             }
         ],
-        "shortcode": "0813",
-        "description": {
-            "en": "Bruno Manser has left a variety of media in which he documented the nomadic life of the Penan. The project aims to show and annotate the everyday life moments of a nomadic lifestyle across media as diary entries, video footage and photographs of Bruno Manser."
-        },
-        "name": "Annotating Media of Bruno Manser",
         "spatialCoverage": [
             {
+                "__type": "URL",
                 "text": "Switzerland",
                 "type": "Geonames",
                 "url": "https://www.geonames.org/2658434/switzerland.html"
             },
             {
+                "__type": "URL",
                 "text": "Sarawak",
                 "type": "Geonames",
                 "url": "https://www.geonames.org/1733038/sarawak.html"
             }
-        ],
-        "alternativeNames": [
-            {
-                "en": "Annotating Bruno Manser's Diaries"
-            }
-        ],
-        "funders": [
-            "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
         ]
     },
     "datasets": [
         {
-            "id": "http://ns.dasch.swiss/repository#dsp-0813-dataset-001",
-            "type": "Dataset",
-            "created": "1622032167517516000",
-            "modified": "1622032167517517000",
-            "howToCite": "Bruno Manser/Bruno Manser Fonds",
-            "licenses": [
-                {
-                    "text": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                    "type": "URL",
-                    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-                }
-            ],
-            "title": "Annotating Media of Bruno Manser",
-            "typeOfData": [
-                "Video",
-                "Text",
-                "Image"
-            ],
-            "status": "Ongoing",
-            "abstracts": {
-                "texts": [
-                    {
-                        "en": "The dataset contains data of digitized diaries, video footage, photographs and other media of Bruno Manser"
-                    }
-                ]
-            },
-            "languages": [
-                {
-                    "en": "English",
-                    "de": "Englisch",
-                    "fr": "anglais"
-                },
-                {
-                    "XX": "Penan"
-                },
-                {
-                    "de": "Deutsch",
-                    "en": "German",
-                    "fr": "allemand"
-                }
-            ],
+            "__id": "http://ns.dasch.swiss/repository#dsp-0813-dataset-001",
+            "__type": "Dataset",
+            "__created": "1623677808151931000",
+            "__modified": "1623677808151933000",
             "attributions": [
                 {
                     "person": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
@@ -157,77 +125,120 @@
                     ]
                 }
             ],
-            "accessConditions": "Restricted"
+            "title": "Annotating Media of Bruno Manser",
+            "languages": [
+                {
+                    "de": "Deutsch",
+                    "en": "German",
+                    "fr": "allemand"
+                },
+                {
+                    "en": "English",
+                    "de": "Englisch",
+                    "fr": "anglais"
+                },
+                {
+                    "XX": "Penan"
+                }
+            ],
+            "howToCite": "Bruno Manser/Bruno Manser Fonds",
+            "status": "Ongoing",
+            "accessConditions": "Restricted",
+            "abstracts": [
+                {
+                    "en": "The dataset contains data of digitized diaries, video footage, photographs and other media of Bruno Manser"
+                }
+            ],
+            "typeOfData": [
+                "Image",
+                "Video",
+                "Text"
+            ],
+            "licenses": [
+                {
+                    "__type": "URL",
+                    "text": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "type": "URL",
+                    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                }
+            ]
         }
     ],
     "persons": [
         {
-            "id": "http://ns.dasch.swiss/repository#dsp-0813-person-002",
-            "type": "Person",
-            "created": "1622032168375171000",
-            "modified": "1622032168375172000",
-            "jobTitles": [
-                "Creator"
-            ],
+            "__id": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
+            "__type": "Person",
+            "__created": "1623677808255904000",
+            "__modified": "1623677808255905000",
             "givenNames": [
-                "Bruno"
-            ],
-            "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
+                "Erwin"
             ],
             "familyNames": [
-                "Manser"
-            ]
-        },
-        {
-            "id": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
-            "type": "Person",
-            "created": "1622032168375392000",
-            "modified": "1622032168375392000",
+                "Zbinden"
+            ],
+            "jobTitles": [
+                "Leiter Dokumentationsstelle"
+            ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
             ],
             "emails": [
                 "erwin.zbinden@bmf.ch"
-            ],
-            "givenNames": [
-                "Erwin"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0813-person-002",
+            "__type": "Person",
+            "__created": "1623677808256191000",
+            "__modified": "1623677808256192000",
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
             ],
             "jobTitles": [
-                "Leiter Dokumentationsstelle"
+                "Creator"
             ],
             "familyNames": [
-                "Zbinden"
+                "Manser"
+            ],
+            "givenNames": [
+                "Bruno"
             ]
         }
     ],
     "organizations": [
         {
-            "id": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
-            "type": "Organization",
-            "created": "1622032168375700000",
-            "modified": "1622032168375701000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
+            "__type": "Organization",
+            "__created": "1623677808256432000",
+            "__modified": "1623677808256433000",
+            "alternativeNames": [
+                {
+                    "XX": "XX - new property on organization"
+                }
+            ],
+            "url": {
+                "__type": "URL",
+                "text": "https://www.bmf.ch/",
+                "type": "URL",
+                "url": "https://www.bmf.ch/"
+            },
             "email": "info@bmf.ch",
+            "name": "Bruno Manser Fonds",
             "address": {
+                "__type": "Address",
                 "street": "Socinstrasse 37",
                 "postalCode": "4051",
                 "locality": "Basel",
                 "country": "Switzerland"
-            },
-            "name": "Bruno Manser Fonds",
-            "url": {
-                "text": "https://www.bmf.ch/",
-                "type": "URL",
-                "url": "https://www.bmf.ch/"
             }
         }
     ],
     "grants": [
         {
-            "id": "http://ns.dasch.swiss/repository#dsp-0813-grant-001",
-            "type": "Grant",
-            "created": "1622032168405350000",
-            "modified": "1622032168405351000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0813-grant-001",
+            "__type": "Grant",
+            "__created": "1623677808312176000",
+            "__modified": "1623677808312177000",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0813-organization-001"
             ]

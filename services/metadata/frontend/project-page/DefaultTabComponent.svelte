@@ -18,10 +18,11 @@
 
   onMount(() => {
     const el = document.getElementById('abstract');
-    const lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
-    const divHeight = el.scrollHeight;
-    abstractLinesNumber = divHeight / lineHeight;
-    isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
+    // TODO: re-add
+    // const lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
+    // const divHeight = el.scrollHeight;
+    // abstractLinesNumber = divHeight / lineHeight;
+    // isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
   });
 
   const copyToClipboard = () => {
@@ -43,21 +44,22 @@
     } else return s;
   };
 
-  let mergedAttributions = [];
-  const attributions = JSON.parse(JSON.stringify(dataset?.content.qualifiedAttribution));
-  for(let a of attributions) {
-    if(!mergedAttributions.length) {
-      mergedAttributions.push(a);
-    } else {
-      mergedAttributions.push(a);
-      for(let b of mergedAttributions) {
-        if(a.agent[0].id === b.agent[0].id && a.role !== b.role){
-          b.role.push(a.role[0]);
-          mergedAttributions.splice(mergedAttributions.indexOf(a) ,1);
-        }
-      }
-    }
-  }
+  // let mergedAttributions = [];
+  // TODO: re-add
+  // const attributions = JSON.parse(JSON.stringify(dataset?.content.qualifiedAttribution));
+  // for(let a of attributions) {
+  //   if(!mergedAttributions.length) {
+  //     mergedAttributions.push(a);
+  //   } else {
+  //     mergedAttributions.push(a);
+  //     for(let b of mergedAttributions) {
+  //       if(a.agent[0].id === b.agent[0].id && a.role !== b.role){
+  //         b.role.push(a.role[0]);
+  //         mergedAttributions.splice(mergedAttributions.indexOf(a) ,1);
+  //       }
+  //     }
+  //   }
+  // }
 
   console.log('loaded dataset', dataset)
 </script>
@@ -124,7 +126,8 @@
   <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
     <div>
       <span class=label>Languages</span>
-      <span class=data>{dataset?.content.language.join(', ')}</span>
+      <!-- TODO: re-add -->
+      <!-- <span class=data>{dataset?.content.language.join(', ')}</span> -->
     </div>
   </div>
 
@@ -174,7 +177,8 @@
 
   <span class=label>Attributions</span>
   <div class="grid-wrapper">
-    {#if Array.isArray(mergedAttributions)}
+    <!-- TODO: re-add -->
+    <!-- {#if Array.isArray(mergedAttributions)}
       {#each mergedAttributions as a}
         <div class="attributions data">
           <div class=role>{a.role.join(", ")}</div>
@@ -198,7 +202,7 @@
           {/if}
         </div>
       {/each}
-    {/if}
+    {/if} -->
   </div>
 
   {/if}

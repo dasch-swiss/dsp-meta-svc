@@ -21,12 +21,12 @@
 
   const handleTabsBrowsing = (tabValue: number) => () => (activeTabValue = tabValue);
 </script>
-{datasets}
+
 <ul>
   {#each tabs as tab}
     <li class={activeTabValue === tab.value ? 'active' : ''}>
       {#if tabs.length > 1 && activeTabValue !== tab.value}
-        <span on:click={handleTabsBrowsing(tab.value)} title={tab.label}>{`${tab.label.substring(0,5)}...`}</span>
+        <span on:click={handleTabsBrowsing(tab.value)} title={tab.label}>{`${tab.label.substring(0,12)}...`}</span>
       {:else}
         <span on:click={handleTabsBrowsing(tab.value)}>{tab.label}</span>
       {/if}
@@ -37,7 +37,7 @@
 	{#if activeTabValue === tab.value}
     <div class=box>
       <!-- TODO: add again -->
-      <!-- <svelte:component this={DefaultTabComponent} dataset={tab} /> -->
+      <svelte:component this={DefaultTabComponent} dataset={tab} />
     </div>
 	{/if}
 {/each}

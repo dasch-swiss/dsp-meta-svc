@@ -19,6 +19,9 @@
 
 
   function getText(text: Text, lang?:string) {
+    if (!text){
+      return ""
+    }
     let langs = Object.keys(text);
     // console.log(text, langs, langs.length);
     
@@ -111,7 +114,7 @@
     <div class="column-left">
       <div class="property-row">
         <span class="label new-subtitle">Description</span>
-        <div id=description class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">{$currentProject?.description}</div>
+        <div id=description class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">{getText($currentProject?.description)}</div>
       </div>
       <!-- TODO: if accepted and reused consder move it to separate component -->
       {#if descriptionLinesNumber > 6}

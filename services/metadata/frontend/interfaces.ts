@@ -29,10 +29,9 @@ export interface Metadata {
 
 export interface Project {
   __type: "Project";
-  type: string;
-  id: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   shortcode: string;
   name: string;
   description: Text;
@@ -55,15 +54,14 @@ export interface Project {
 
 export interface Dataset {
   __type: "Dataset";
-  id: string;
-  type: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   title: string;
   accessConditions: string;
   howToCite: string;
   status: string;
-  abstracts: Abstracts;
+  abstracts: (Text | URL)[];
   typeOfData: string[];
   licenses: URL[];
   languages: Text[];
@@ -74,20 +72,20 @@ export interface Dataset {
   dateModified?: string;
   distribution?: URL;
   urls?: URL[];
-  documentations?: Documentations;
+  documentations?: (Text | URL)[];
 }
 
-export interface Documentations {
-  __type: "Documentations";
-  urls?: URL[];
-  texts?: Text[];
-}
+// export interface Documentations {
+//   __type: "Documentations";
+//   urls?: URL[];
+//   texts?: Text[];
+// }
 
-export interface Abstracts {
-  __type: "Abstracts";
-  urls?: URL[];
-  texts?: Text[];
-}
+// export interface Abstracts {
+//   __type: "Abstracts";
+//   urls?: URL[];
+//   texts?: Text[];
+// }
 
 export interface Attribution {
   __type: "Attribution";
@@ -127,6 +125,7 @@ export interface URL {
 }
 
 export interface Text {
+  // TODO: add to data! is missing so far
   __type: "Text";
   [lang: string]: string
 }

@@ -1,21 +1,19 @@
 <script lang='ts'>
-  import { currentProject, currentProjectMetadata } from "../store";
+  import { projectMetadata } from "../store";
   import type {Text, URL, Person, Organization, Grant, Project} from "../interfaces";
 
-  let grant;
-
   function findObjectById(id: string): Grant | Person | Organization {
-    let grants = $currentProjectMetadata?.grants;
+    let grants = $projectMetadata?.grants;
     let g = grants.find(o => o.__id === id);
     if (g) return g;
 
-    let persons = $currentProjectMetadata?.persons
+    let persons = $projectMetadata?.persons
     if (persons && persons.length > 0){
       let p = persons.find(o => o.__id === id);
       if (p) return p;
     }
 
-    let o = $currentProjectMetadata?.organizations.find(o => o.__id === id);
+    let o = $projectMetadata?.organizations.find(o => o.__id === id);
     if (o) return o;
   };
 
@@ -46,15 +44,15 @@
 </script>
 
 <div class=label>DSP Internal Shortcode</div>
-<div class=data>{$currentProject?.shortcode}</div>
+<div class=data>{$projectMetadata?.project.shortcode}</div>
 
 <div class=label>Data Management Plan</div>
-<div class=data>{$currentProject?.dataManagementPlan ? "available" : "unavailable"}</div>
+<div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
 
 <div class=label>Discipline</div>
 <!-- TODO: remove array check. should be done by interface? -->
-{#if Array.isArray($currentProject?.disciplines)}
-  {#each $currentProject?.disciplines as d}
+{#if Array.isArray($projectMetadata?.project.disciplines)}
+  {#each $projectMetadata?.project.disciplines as d}
     {#if d.__type === "URL"}
       <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
     {:else}
@@ -68,8 +66,8 @@
 {/if}
 
 <div class=label>Temporal Coverage</div>
-{#if Array.isArray($currentProject?.temporalCoverage)}
-  {#each $currentProject?.temporalCoverage as t}
+{#if Array.isArray($projectMetadata?.project.temporalCoverage)}
+  {#each $projectMetadata?.project.temporalCoverage as t}
     {#if t.__type === "URL"}
       <a class="data external-link" href={t.url} target=_>{truncateString(t.text)}</a>
     {:else}
@@ -80,24 +78,24 @@
 {/if}
 
 <div class=label>Spatial Coverage</div>
-{#if Array.isArray($currentProject?.spatialCoverage)}
-  {#each $currentProject?.spatialCoverage as s}
+{#if Array.isArray($projectMetadata?.project.spatialCoverage)}
+  {#each $projectMetadata?.project.spatialCoverage as s}
     <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
   {/each}
 {/if}
 
 <div class=label>Start date</div>
-<div class=data>{$currentProject?.startDate}</div>
+<div class=data>{$projectMetadata?.project.startDate}</div>
 
-{#if $currentProject?.endDate}
+{#if $projectMetadata?.project.endDate}
 <div class=label>End date</div>
-<div class=data>{$currentProject?.endDate}</div>
+<div class=data>{$projectMetadata?.project.endDate}</div>
 {/if}
 
 
 <div class=label>Funder</div>
-{#if Array.isArray($currentProject?.funders)}
-  {#each $currentProject?.funders.map((o) => {return findObjectById(o)}) as f}
+{#if Array.isArray($projectMetadata?.project.funders)}
+  {#each $projectMetadata?.project.funders.map((o) => {return findObjectById(o)}) as f}
     {#if f.__type === "Person"}
       {console.log('person',f)}
       <!-- TODO: handle funding person - need to find example -->
@@ -108,9 +106,9 @@
   {/each}
 {/if}
   
-{#if $currentProject?.grants && Array.isArray($currentProject?.grants)}
+{#if $projectMetadata?.project.grants && Array.isArray($projectMetadata?.project.grants)}
   <div class=label>Grant</div>
-  {#each $currentProject?.grants.map(id => {return findObjectById(id)}) as g}
+  {#each $projectMetadata?.project.grants.map(id => {return findObjectById(id)}) as g}
     {#if g.__type === "Grant"}
       {#if g?.number && g?.url && g?.name}
         <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
@@ -132,9 +130,9 @@
 {/if}
 
 <!-- TODO -->
-{#if $currentProject?.contactPoint}
+{#if $projectMetadata?.project.contactPoint}
   <div class=label>Contact</div>
-  {#each [findObjectById($currentProject?.contactPoint)] as c}
+  {#each [findObjectById($projectMetadata?.project.contactPoint)] as c}
     {#if c.__type === 'Organization'}
       <div id=contact class=data>{c.name}</div>
       {#if c.email}
@@ -161,15 +159,15 @@
 {/if}
 
 <div class=label>Project Website</div>
-{#if Array.isArray($currentProject?.urls)}
-  {#each $currentProject?.urls as url}
+{#if Array.isArray($projectMetadata?.project.urls)}
+  {#each $projectMetadata?.project.urls as url}
     <a class="data external-link" href={url.url} target=_>{truncateString(url.text)}</a>
   {/each}
 {/if}
 
-{#if $currentProject}
+{#if $projectMetadata?.project}
   <div class=label>Keywords</div>
-  <span class="keyword">{$currentProject?.keywords.map(t => {return getText(t)}).join(", ")}</span>
+  <span class="keyword">{$projectMetadata?.project.keywords.map(t => {return getText(t)}).join(", ")}</span>
 {/if}
 
 <style>

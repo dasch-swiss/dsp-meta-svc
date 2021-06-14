@@ -14,13 +14,13 @@ export interface ProjectMetadata {
   description: string;
   id: string;
   name: string;
-  metadata: any[];
+  // metadata: any[];
 }
 
 // TODO: add types 
 export interface Metadata {
   project: Project;
-  datasets: any[];
+  datasets: Dataset[];
   persons: any[];
   organizations: any[];
   grants: any[];

@@ -142,7 +142,7 @@
       {#await getProjectMetadata() then go}
         <div class="tabs">
           <!-- TODO: add again -->
-          <!-- <Tab {tabs} /> -->
+          <Tab datasets={$projectMetadata?.datasets} />
         </div>
       {/await}
 

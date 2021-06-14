@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { currentProjectMetadata, handleSnackbar } from "../store";
+  import { projectMetadata, handleSnackbar } from "../store";
 
   export let dataset;
 
@@ -13,7 +13,7 @@
   };
 
   const findObjectById = (id) => {
-    return $currentProjectMetadata?.metadata.find(obj => obj.id === id);
+    return $projectMetadata?.metadata.find(obj => obj.id === id);
   };
 
   onMount(() => {

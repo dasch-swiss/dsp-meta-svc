@@ -1,12 +1,27 @@
 <script lang="ts">
   import DefaultTabComponent from "./DefaultTabComponent.svelte";
+  import type { Dataset } from "../interfaces";
 
-  export let tabs = [] as any[];
+  export let datasets = [] as Dataset[];
+  // export let tabs = [] as any[];
   export let activeTabValue = 0;
+  
+  interface Tb {
+    label: string;
+    value: number;
+    content: Dataset;
+  }
+
+  let tabs = [] as Tb[]
+  datasets.forEach(d => tabs.push({
+    label: d.title,
+    value: datasets.indexOf(d),
+    content: d
+  }));
 
   const handleTabsBrowsing = (tabValue: number) => () => (activeTabValue = tabValue);
 </script>
-
+{datasets}
 <ul>
   {#each tabs as tab}
     <li class={activeTabValue === tab.value ? 'active' : ''}>
@@ -21,7 +36,8 @@
 {#each tabs as tab}
 	{#if activeTabValue === tab.value}
     <div class=box>
-      <svelte:component this={DefaultTabComponent} dataset={tab} />
+      <!-- TODO: add again -->
+      <!-- <svelte:component this={DefaultTabComponent} dataset={tab} /> -->
     </div>
 	{/if}
 {/each}

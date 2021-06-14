@@ -1,9 +1,9 @@
 import { navigate } from 'svelte-routing';
 import { writable } from 'svelte/store';
-import type { PaginationData, Metadata, Project } from './interfaces';
+import type { PaginationData, Metadata, ProjectMetadata } from './interfaces';
 
 export const pagination = writable({} as PaginationData);
-export const pagedResults = writable(undefined as any[]);
+export const pagedResults = writable(undefined as ProjectMetadata[]);
 export const projectMetadata = writable(undefined as Metadata);
 export const query = writable('');
 export const previousRoute = writable('');

@@ -129,7 +129,6 @@
   {/each}
 {/if}
 
-<!-- TODO -->
 {#if $projectMetadata?.project.contactPoint}
   <div class=label>Contact</div>
   {#each [findObjectById($projectMetadata?.project.contactPoint)] as c}

@@ -10,6 +10,12 @@ export interface PaginationData {
   totalCount: number;
   totalPages: number;
 }
+  
+export interface TabContent {
+  label: string;
+  value: number;
+  content: Dataset;
+}
 export interface ProjectMetadata {
   description: string;
   id: string;

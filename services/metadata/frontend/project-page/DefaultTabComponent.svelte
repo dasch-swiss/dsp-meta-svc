@@ -1,19 +1,31 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import { projectMetadata, handleSnackbar } from "../store";
+  import type { TabContent, Grant, Person, Organization } from "../interfaces";
 
-  export let dataset;
+  export let dataset: TabContent;
 
-  let isAbstractExpanded;
-  let abstractLinesNumber;
+  let isAbstractExpanded: boolean;
+  let abstractLinesNumber: number = 1;
 
   const toggleExpand = () => {
     isAbstractExpanded = !isAbstractExpanded;
   };
 
-  const findObjectById = (id) => {
-    return $projectMetadata?.metadata.find(obj => obj.id === id);
+  function findObjectById(id: string): Grant | Person | Organization {
+    let grants = $projectMetadata?.grants;
+    let g = grants.find(o => o.__id === id);
+    if (g) return g;
+
+    let persons = $projectMetadata?.persons
+    if (persons && persons.length > 0){
+      let p = persons.find(o => o.__id === id);
+      if (p) return p;
+    }
+
+    let o = $projectMetadata?.organizations.find(o => o.__id === id);
+    if (o) return o;
   };
 
   onMount(() => {
@@ -35,7 +47,7 @@
     handleSnackbar.set({isSnackbar: true, message: 'Citation copied succesfully!'});
   };
 
-  const truncateString = (s) => {
+  const truncateString = (s: string) => {
     const browserWidth = window.innerWidth;
     if (browserWidth < 992 && s.length > ((browserWidth - 100) / 8)) {
       return `${s.substring(0, (browserWidth - 100) / 8)}...`;
@@ -66,16 +78,16 @@
 
 <div id=dataset in:fade={{duration: 200}}>
   {#if dataset}
-    {#if dataset?.content.alternativeTitle}
+    {#if dataset?.content.alternativeTitles}
       <div>
         <span class=label>Alternative Title</span>
-        <span class=data>{dataset?.content.alternativeTitle}</span>
+        <span class=data>{dataset?.content.alternativeTitles}</span>
       </div>
     {/if}
   <div class="grid-wrapper">
     <div>
       <span class=label>Access</span>
-      <span class=data>{dataset?.content.conditionsOfAccess}</span>
+      <span class=data>{dataset?.content.accessConditions}</span>
     </div>
     <div>
       <span class=label>Status</span>
@@ -95,8 +107,8 @@
     {/if}
     <div>
       <span class=label>License</span>
-      {#if Array.isArray(dataset?.content.license)}
-        {#each dataset?.content.license as l}
+      {#if Array.isArray(dataset?.content.licenses)}
+        {#each dataset?.content.licenses as l}
           <a href={l.url} class="data external-link" target=_>CC {(`${l.url.split("/")[4]} ${l.url.split("/")[5]}`).toUpperCase()}</a>
         {/each}
       {/if}
@@ -105,18 +117,19 @@
       <span class=label>Type of Data</span>
       <span class=data>{dataset?.content.typeOfData.join(', ')}</span>
     </div>
-    {#if dataset?.content.documentation}
+    {#if dataset?.content.documentations}
       <div style="grid-column-start: 1;grid-column-end: 3;">
         <span class=label>Additional documentation</span>
-        {#if Array.isArray(dataset?.content.documentation)}
-          {#each dataset?.content.documentation as d}
-            {#if d.url}
+        {#if Array.isArray(dataset?.content.documentations)}
+          {#each dataset?.content.documentations as d}
+            <!-- TODO: re-add -->
+            <!-- {#if d.url}
               <a class="data external-link" href={d.url} target=_>{truncateString(d.name)}</a>
             {:else if d.match("http")}
               <a class="data external-link" href={d} target=_>{truncateString(d)}</a>
             {:else}
               <span class=data>{d}</span>
-            {/if}
+            {/if} -->
           {/each}
         {/if}
       </div>
@@ -131,7 +144,8 @@
     </div>
   </div>
 
-  {#if dataset?.content.sameAs}
+  <!-- TODO: find an actual example of this -->
+  <!-- {#if dataset?.content.sameAs}
     <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
       <div>
         <span class=label>Dataset Website</span>
@@ -144,7 +158,7 @@
         {/each}
       </div>
     </div>
-  {/if}
+  {/if} -->
 
   <div class="property-row">
     <span class=label style="display:inline">
@@ -158,15 +172,16 @@
 
   <div>
     <span class=label>Abstract</span>
-    {#if Array.isArray(dataset?.content.abstract)}
+    {#if Array.isArray(dataset?.content.abstracts)}
       <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
-        {#each dataset?.content.abstract as a}
+        <!-- TODO: re-add -->
+        <!-- {#each dataset?.content.abstracts as a}
           {#if a.url}
             <div><a class="data external-link" href={a.url} target=_>{truncateString(a.name)}</a></div>
           {:else}
             <div>{a}</div>
           {/if}
-        {/each}
+        {/each} -->
       </div>
     {/if}
   </div>

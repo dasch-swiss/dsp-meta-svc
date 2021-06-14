@@ -1,18 +1,12 @@
 <script lang="ts">
   import DefaultTabComponent from "./DefaultTabComponent.svelte";
-  import type { Dataset } from "../interfaces";
+  import type { Dataset, TabContent } from "../interfaces";
 
   export let datasets = [] as Dataset[];
   // export let tabs = [] as any[];
   export let activeTabValue = 0;
-  
-  interface Tb {
-    label: string;
-    value: number;
-    content: Dataset;
-  }
 
-  let tabs = [] as Tb[]
+  let tabs = [] as TabContent[]
   datasets.forEach(d => tabs.push({
     label: d.title,
     value: datasets.indexOf(d),

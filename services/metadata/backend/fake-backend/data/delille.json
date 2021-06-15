@@ -118,8 +118,8 @@
             "licenses": [
                 {
                     "__type": "URL",
-                    "text": "https://creativecommons.org/licenses/by/3.0",
-                    "type": "URL",
+                    "text": "CC BY 3.0",
+                    "type": "Creative Commons",
                     "url": "https://creativecommons.org/licenses/by/3.0"
                 }
             ],

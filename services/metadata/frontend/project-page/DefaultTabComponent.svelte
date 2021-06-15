@@ -135,23 +135,16 @@
       <span class=data>{dataset?.content.typeOfData.join(', ')}</span>
     </div>
 
-    <!-- XXX: checked until here -->
-
     {#if dataset?.content.documentations}
       <div style="grid-column-start: 1;grid-column-end: 3;">
         <span class=label>Additional documentation</span>
-        {#if Array.isArray(dataset?.content.documentations)}
-          {#each dataset?.content.documentations as d}
-            <!-- TODO: re-add -->
-            <!-- {#if d.url}
-              <a class="data external-link" href={d.url} target=_>{truncateString(d.name)}</a>
-            {:else if d.match("http")}
-              <a class="data external-link" href={d} target=_>{truncateString(d)}</a>
-            {:else}
-              <span class=data>{d}</span>
-            {/if} -->
-          {/each}
-        {/if}
+        {#each dataset?.content.documentations as d}
+          {#if d.__type === "URL"}
+            <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
+          {:else}
+            <span class=data>{getText(d)}</span>
+          {/if}
+        {/each}
       </div>
     {/if}
   </div>
@@ -159,8 +152,7 @@
   <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
     <div>
       <span class=label>Languages</span>
-      <!-- TODO: re-add -->
-      <!-- <span class=data>{dataset?.content.language.join(', ')}</span> -->
+      <span class=data>{dataset?.content.languages.map(l => {return getText(l)}).join(', ')}</span>
     </div>
   </div>
 

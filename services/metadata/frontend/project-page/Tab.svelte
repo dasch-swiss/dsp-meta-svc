@@ -30,7 +30,6 @@
 {#each tabs as tab}
 	{#if activeTabValue === tab.value}
     <div class=box>
-      <!-- TODO: add again -->
       <svelte:component this={DefaultTabComponent} dataset={tab} />
     </div>
 	{/if}

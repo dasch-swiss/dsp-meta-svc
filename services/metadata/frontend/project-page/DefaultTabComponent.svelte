@@ -184,18 +184,15 @@
 
   <div>
     <span class=label>Abstract</span>
-    {#if Array.isArray(dataset?.content.abstracts)}
       <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
-        <!-- TODO: re-add -->
-        <!-- {#each dataset?.content.abstracts as a}
-          {#if a.url}
-            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.name)}</a></div>
+        {#each dataset?.content.abstracts as a}
+          {#if a.__type === "URL"}
+            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
           {:else}
-            <div>{a}</div>
+            <div>{getText(a)}</div>
           {/if}
-        {/each} -->
+        {/each}
       </div>
-    {/if}
   </div>
 
   {#if abstractLinesNumber > 6}
@@ -230,6 +227,32 @@
         </div>
       {/each}
     {/if} -->
+    <!-- TODO: more methods than just findObjectByID -->
+    {#each dataset?.content.attributions as a}
+      <div class="attributions data">
+        <div class=role>{a.roles.join(", ")}</div>
+        {#each [findObjectById(a.person)] as p}
+          {#if p.__type === "Person"}
+            {#if p.authorityRefs}
+              <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+            {:else}
+              <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+            {/if}
+            {#if p.affiliation}
+              {#each p.affiliation.map(o => {return findObjectById(o)}) as org}
+                {#if org.__type === "Organization"}
+                  <div>{org.name}</div>
+                {/if}
+              {/each}
+            {/if}
+            <div>{p.jobTitles[0]}</div>
+            {#if p.emails}
+              <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
+            {/if}
+          {/if}
+        {/each}
+      </div>
+    {/each}
   </div>
 
   {/if}

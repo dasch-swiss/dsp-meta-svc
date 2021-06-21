@@ -6,6 +6,7 @@
   // export let tabs = [] as any[];
   export let activeTabValue = 0;
 
+  // TODO: maybe we can even drop the TabContent interface completely?
   let tabs = [] as TabContent[]
   datasets.forEach(d => tabs.push({
     label: d.title,

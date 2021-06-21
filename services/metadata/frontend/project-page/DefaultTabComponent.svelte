@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { projectMetadata, handleSnackbar } from "../store";
+  import { handleSnackbar } from "../store";
+  import { getText, findPersonByID, findOrganizationByID } from "../functions";
   import type { TabContent, Grant, Person, Organization, Text } from "../interfaces";
 
   export let dataset: TabContent;
@@ -12,39 +13,6 @@
   const toggleExpand = () => {
     isAbstractExpanded = !isAbstractExpanded;
   };
-
-  function findObjectById(id: string): Grant | Person | Organization {
-    let grants = $projectMetadata?.grants;
-    let g = grants.find(o => o.__id === id);
-    if (g) return g;
-
-    let persons = $projectMetadata?.persons
-    if (persons && persons.length > 0){
-      let p = persons.find(o => o.__id === id);
-      if (p) return p;
-    }
-
-    let o = $projectMetadata?.organizations.find(o => o.__id === id);
-    if (o) return o;
-  };
-
-  function getText(text: Text, lang?:string) {
-    if (!text){
-      return ""
-    }
-
-    let langs = Object.keys(text);
-    
-    if (langs.length === 0) {
-      return ""
-    } else if (lang && langs.includes(lang)) {
-      return text[lang]
-    } else if (langs.includes('en')) {
-      return text['en']
-    } else {
-      return text[langs[0]]
-    }
-  }
 
   onMount(() => {
     const el = document.getElementById('abstract');
@@ -182,26 +150,25 @@
   <div class="grid-wrapper">
     <!-- TODO: more methods than just findObjectByID -->
     {#each dataset?.content.attributions as a}
-      <div class="attributions data">
-        <div class=role>{a.roles.join(", ")}</div>
-        {#each [findObjectById(a.person)] as p}
-          {#if p.__type === "Person"}
-            {#if p.authorityRefs}
-              <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
-            {:else}
-              <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
-            {/if}
-            {#if p.affiliation}
-              {#each p.affiliation.map(o => {return findObjectById(o)}) as org}
-                {#if org.__type === "Organization"}
-                  <div>{org.name}</div>
-                {/if}
-              {/each}
-            {/if}
-            <div>{p.jobTitles[0]}</div>
-            {#if p.emails}
-              <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
-            {/if}
+    <div class="attributions data">
+      <div class=role>{a.roles.join(", ")}</div>
+      {#each [findPersonByID(a.person)] as p}
+      {console.log(a.person)}
+      <!-- FIXME: can be organization, see cache -->
+          {#if p.authorityRefs}
+            <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+          {:else}
+            <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+          {/if}
+          {#if p.affiliation}
+            {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
+              <div>{org.name}</div>
+            {/each}
+          {/if}
+          {console.log(p)}
+          <div>{p.jobTitles[0]}</div>
+          {#if p.emails}
+            <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
           {/if}
         {/each}
       </div>

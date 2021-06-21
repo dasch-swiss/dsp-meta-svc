@@ -1,45 +1,13 @@
 <script lang='ts'>
   import { projectMetadata } from "../store";
-  import type {Text, URL, Person, Organization, Grant, Project} from "../interfaces";
-
-  function findObjectById(id: string): Grant | Person | Organization {
-    let grants = $projectMetadata?.grants;
-    let g = grants.find(o => o.__id === id);
-    if (g) return g;
-
-    let persons = $projectMetadata?.persons
-    if (persons && persons.length > 0){
-      let p = persons.find(o => o.__id === id);
-      if (p) return p;
-    }
-
-    let o = $projectMetadata?.organizations.find(o => o.__id === id);
-    if (o) return o;
-  };
+  import { getText, findObjectByID, findGrantByID, findOrganizationByID } from "../functions";
 
   const truncateString = (s: string) => {
+    // TODO: can this be improved? 1. dynamic langth depending on space; 2. show full text on hover
     if (s.length > 35) {
       return `${s.slice(0, 35)}...`;
     } else return s;
   };
-
-  function getText(text: Text, lang?:string) {
-    if (!text){
-      return ""
-    }
-
-    let langs = Object.keys(text);
-    
-    if (langs.length === 0) {
-      return ""
-    } else if (lang && langs.includes(lang)) {
-      return text[lang]
-    } else if (langs.includes('en')) {
-      return text['en']
-    } else {
-      return text[langs[0]]
-    }
-  }
 
 </script>
 
@@ -89,7 +57,7 @@
   {/if}
 
   <div class=label>Funder</div>
-  {#each $projectMetadata?.project.funders.map((o) => {return findObjectById(o)}) as f}
+  {#each $projectMetadata?.project.funders.map((o) => {return findObjectByID(o)}) as f}
     {#if f.__type === "Person"}
       {console.log('person',f)}
       <!-- TODO: handle funding person - need to find example -->
@@ -100,29 +68,25 @@
   {/each}
   
   <div class=label>Grant</div>
-  {#each $projectMetadata?.project.grants.map(id => {return findObjectById(id)}) as g}
-    {#if g.__type === "Grant"}
-      {#if g?.number && g?.url && g?.name}
-        <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
-        <!-- TODO: roll back if people don't like it -->
-        <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
-      {:else if g?.number && g?.url}
-        <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
-      {:else if g?.number}
-        <span class="data">{g?.number}</span>
-      {:else}
-        {#each [g?.funders[0]].map(o => {return findObjectById(o)}) as f}
-          {#if f.__type === "Organization"}
-            <span class="data">{f.name}</span>
-          {/if}
-        {/each}
-      {/if}
+  {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
+    {#if g?.number && g?.url && g?.name}
+      <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+      <!-- TODO: roll back if people don't like it -->
+      <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
+    {:else if g?.number && g?.url}
+      <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
+    {:else if g?.number}
+      <span class="data">{g?.number}</span>
+    {:else}
+      {#each [g?.funders[0]].map(o => {return findOrganizationByID(o)}) as f}
+        <span class="data">{f.name}</span>
+      {/each}
     {/if}
   {/each}
 
   {#if $projectMetadata?.project.contactPoint}
     <div class=label>Contact</div>
-    {#each [findObjectById($projectMetadata?.project.contactPoint)] as c}
+    {#each [findObjectByID($projectMetadata?.project.contactPoint)] as c}
       {#if c.__type === 'Organization'}
         <div id=contact class=data>{c.name}</div>
         {#if c.email}
@@ -134,10 +98,8 @@
         {/if}
         {#if Array.isArray(c?.affiliation)}
           {#each c?.affiliation as o}
-            {#each [findObjectById(o)] as org}
-              {#if org.__type === 'Organization'}
-                <span class="data">{org.name}</span>
-              {/if}
+            {#each [findOrganizationByID(o)] as org}
+              <span class="data">{org.name}</span>
             {/each}
           {/each}
         {/if}

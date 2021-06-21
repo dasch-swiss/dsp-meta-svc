@@ -1,42 +1,22 @@
 <script lang='ts'>
   import { tick } from 'svelte';
   import { projectMetadata, handleSnackbar, previousRoute } from '../store';
-  import type {Metadata, Text} from "../interfaces";
+  import type {Metadata} from "../interfaces";
   import ProjectWidget from './ProjectWidget.svelte';
   import DownloadWidget from './DownloadWidget.svelte';
   import Tab from './Tab.svelte';
   import { fade } from 'svelte/transition';
   import Snackbar from '../Snackbar.svelte';
+  import { getText } from "../functions";
 
   const mobileResolution = window.innerWidth < 992;
   
-  // let datasets: any[] = [];
-  // let tabs = [] as any[];
   let isDescriptionExpanded: boolean;
   let descriptionLinesNumber: number;
   let arePublicationsExpanded: boolean;
 
-
-
-  function getText(text: Text, lang?:string) {
-    if (!text){
-      return ""
-    }
-    let langs = Object.keys(text);
-    // console.log(text, langs, langs.length);
-    
-    if (langs.length === 0) {
-      return ""
-    } else if (lang && langs.includes(lang)) {
-      return text[lang]
-    } else if (langs.includes('en')) {
-      return text['en']
-    } else {
-      return text[langs[0]]
-    }
-  }
-
   const getProjectMetadata = async () => {
+    // TODO: can this be cleaned up?
     const protocol = window.location.protocol;
     const port = protocol === 'https:' ? '' : ':3000';
     const baseUrl = `${protocol}//${window.location.hostname}${port}/`;

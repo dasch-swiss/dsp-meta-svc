@@ -20,10 +20,8 @@ export interface ProjectMetadata {
   description: string;
   id: string;
   name: string;
-  // metadata: any[];
 }
 
-// TODO: add types 
 export interface Metadata {
   project: Project;
   datasets: Dataset[];
@@ -80,18 +78,6 @@ export interface Dataset {
   urls?: URL[];
   documentations?: (Text | URL)[];
 }
-
-// export interface Documentations {
-//   __type: "Documentations";
-//   urls?: URL[];
-//   texts?: Text[];
-// }
-
-// export interface Abstracts {
-//   __type: "Abstracts";
-//   urls?: URL[];
-//   texts?: Text[];
-// }
 
 export interface Attribution {
   __type: "Attribution";

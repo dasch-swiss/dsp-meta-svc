@@ -94,7 +94,7 @@
       {console.log('person',f)}
       <!-- TODO: handle funding person - need to find example -->
       <!-- <div class=data>{findObjectById(f)?.givenName.split(";").join(" ")} {findObjectById(f)?.familyName}</div> -->
-      {:else if f.__type === "Organization"}
+    {:else if f.__type === "Organization"}
       <div class=data>{f.name}</div>
     {/if}
   {/each}

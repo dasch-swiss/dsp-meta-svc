@@ -73,24 +73,6 @@
     } else return s;
   };
 
-  // let mergedAttributions = [];
-  // TODO: re-add
-  // const attributions = JSON.parse(JSON.stringify(dataset?.content.qualifiedAttribution));
-  // for(let a of attributions) {
-  //   if(!mergedAttributions.length) {
-  //     mergedAttributions.push(a);
-  //   } else {
-  //     mergedAttributions.push(a);
-  //     for(let b of mergedAttributions) {
-  //       if(a.agent[0].id === b.agent[0].id && a.role !== b.role){
-  //         b.role.push(a.role[0]);
-  //         mergedAttributions.splice(mergedAttributions.indexOf(a) ,1);
-  //       }
-  //     }
-  //   }
-  // }
-
-  // console.log('loaded dataset', dataset)
 </script>
 
 <div id=dataset in:fade={{duration: 200}}>
@@ -156,21 +138,18 @@
     </div>
   </div>
 
-  <!-- TODO: find an actual example of this -->
-  <!-- {#if dataset?.content.sameAs}
+  {#if dataset?.content.urls}
     <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
       <div>
         <span class=label>Dataset Website</span>
-        {#each dataset?.content.sameAs as a}
-          {#if a.url}
-            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.name)}</a></div>
-          {:else}
-            <div>{a}</div>
+        {#each dataset?.content.urls as u}
+          {#if u.__type === 'URL'}
+            <div><a class="data external-link" href={u.url} target=_>{truncateString(u.text)}</a></div>
           {/if}
         {/each}
       </div>
     </div>
-  {/if} -->
+  {/if}
 
   <div class="property-row">
     <span class=label style="display:inline">
@@ -201,32 +180,6 @@
 
   <span class=label>Attributions</span>
   <div class="grid-wrapper">
-    <!-- TODO: re-add -->
-    <!-- {#if Array.isArray(mergedAttributions)}
-      {#each mergedAttributions as a}
-        <div class="attributions data">
-          <div class=role>{a.role.join(", ")}</div>
-          {#if findObjectById(a.agent[0].id).type === "http://ns.dasch.swiss/repository#Person"}
-            {#if findObjectById(a.agent[0].id)?.sameAs}
-              <a href={findObjectById(a.agent[0].id)?.sameAs[0].url} target=_ class="external-link">{findObjectById(a.agent[0].id)?.givenName.split(";").join(" ")} {findObjectById(a.agent[0].id)?.familyName.split(";").join(" ")}</a>
-            {:else}
-              <div>{findObjectById(a.agent[0].id)?.givenName.split(";").join(" ")} {findObjectById(a.agent[0].id)?.familyName.split(";").join(" ")}</div>
-            {/if}
-            {#if Array.isArray(findObjectById(a.agent[0].id)?.memberOf)}
-              {#each findObjectById(a.agent[0].id)?.memberOf as o}
-                <div>{findObjectById(o.id).name}</div>
-              {/each}
-            {/if}
-            <div>{findObjectById(a.agent[0].id)?.jobTitle[0]}</div>
-          {:else}
-            <div>{findObjectById(a.agent[0].id)?.name}</div>
-          {/if}
-          {#if findObjectById(a.agent[0].id)?.email && Array.isArray(findObjectById(a.agent[0].id)?.email)}
-            <a class=email href="mailto:{findObjectById(a.agent[0].id)?.email[0]}">{findObjectById(a.agent[0].id)?.email[0]}</a>
-          {/if}
-        </div>
-      {/each}
-    {/if} -->
     <!-- TODO: more methods than just findObjectByID -->
     {#each dataset?.content.attributions as a}
       <div class="attributions data">

@@ -193,7 +193,7 @@
                     "__type": "URL",
                     "text": "www.cache.ch/gegenwissen",
                     "type": "URL",
-                    "url": "www.cache.ch/gegenwissen"
+                    "url": "https://cache.ch/gegenwissen"
                 }
             ],
             "status": "Finished",

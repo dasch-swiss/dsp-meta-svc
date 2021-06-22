@@ -25,10 +25,10 @@ export interface ProjectMetadata {
 export interface Metadata {
   project: Project;
   datasets: Dataset[];
-  persons: any[];
-  organizations: any[];
-  grants: any[];
-  dataManagementPlan: any;
+  persons?: Person[];
+  organizations: Organization[];
+  grants: Grant[];
+  dataManagementPlan: DataManagementPlan;
 }
 
 export interface Project {
@@ -40,20 +40,20 @@ export interface Project {
   name: string;
   description: Text;
   startDate: string;
+  datasets: string[];
   keywords: Text[];
   disciplines: (URL | Text)[];
   temporalCoverage: (URL | Text)[];
   spatialCoverage: URL[];
   urls: URL[];
   funders: string[];
-  dataManagementPlan: string;
-  endDate: string;
-  datasets: string[];
-  publications: string[];
-  grants: string[];
-  alternativeNames: Text[];
-  contactPoint: string;
-  howToCite: string;
+  dataManagementPlan?: string;
+  endDate?: string;
+  publications?: string[];
+  grants?: string[];
+  alternativeNames?: Text[];
+  contactPoint?: string;
+  howToCite?: string;
 }
 
 export interface Dataset {
@@ -96,10 +96,9 @@ export interface Address {
 
 export interface Person {
   __type: "Person";
-  id: string;
-  type: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   jobTitles: string[];
   givenNames: string[];
   familyNames: string[];
@@ -124,10 +123,9 @@ export interface Text {
 
 export interface Organization {
   __type: "Organization";
-  id: string;
-  type: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   name: string;
   alternativeNames?: Text[];
   url?: URL;
@@ -138,10 +136,9 @@ export interface Organization {
 
 export interface Grant {
   __type: "Grant";
-  id: string;
-  type: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   funders: string[];
   number?: string;
   name?: string;
@@ -150,10 +147,9 @@ export interface Grant {
 
 export interface DataManagementPlan {
   __type: "DataManagementPlan";
-  id: string;
-  type: string;
-  created: string;
-  modified: string;
+  __id: string;
+  __created: string;
+  __modified: string;
   available?: boolean;
   url?: URL;
 }

@@ -36,7 +36,7 @@
   <div class=label>Temporal Coverage</div>
   {#each $projectMetadata?.project.temporalCoverage as t}
     {#if t.__type === "URL"}
-      <a class="data external-link" href={t.url} target=_>{truncateString(t.text)}</a>
+      <a class="data external-link" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
     {:else}
       <div class="data">{getText(t)}</div>
       <!-- <div class="data">{getText(asText(t))}</div> -->
@@ -68,6 +68,7 @@
   {/each}
   
   <div class=label>Grant</div>
+  <!-- FIXME: can be missing -->
   {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
     {#if g?.number && g?.url && g?.name}
       <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>

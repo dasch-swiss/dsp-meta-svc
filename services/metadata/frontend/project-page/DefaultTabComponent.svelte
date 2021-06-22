@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import { handleSnackbar } from "../store";
-  import { getText, findPersonByID, findOrganizationByID } from "../functions";
+  import { getText, findPersonByID, findOrganizationByID, findObjectByID } from "../functions";
   import type { TabContent, Grant, Person, Organization, Text } from "../interfaces";
 
   export let dataset: TabContent;
@@ -148,27 +148,33 @@
 
   <span class=label>Attributions</span>
   <div class="grid-wrapper">
-    <!-- TODO: more methods than just findObjectByID -->
     {#each dataset?.content.attributions as a}
     <div class="attributions data">
       <div class=role>{a.roles.join(", ")}</div>
-      {#each [findPersonByID(a.person)] as p}
-      {console.log(a.person)}
-      <!-- FIXME: can be organization, see cache -->
-          {#if p.authorityRefs}
-            <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
-          {:else}
-            <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
-          {/if}
-          {#if p.affiliation}
-            {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
-              <div>{org.name}</div>
-            {/each}
-          {/if}
-          {console.log(p)}
-          <div>{p.jobTitles[0]}</div>
-          {#if p.emails}
-            <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
+      <!-- TODO: should this only be person or also organization? -->
+        {#each [findObjectByID(a.person)] as p}
+          {#if p.__type === 'Person'}
+            {#if p.authorityRefs}
+              <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+            {:else}
+              <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+            {/if}
+            {#if p.affiliation}
+              {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
+                <div>{org.name}</div>
+              {/each}
+            {/if}
+            <div>{p.jobTitles[0]}</div>
+            {#if p.emails}
+              <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
+            {/if}
+          {:else if p.__type === 'Organization'}
+            {#if p.url}
+              <a href={p.url.url} target=_ class="external-link">{p.name}</a>
+            {/if}
+            {#if p.email}
+              <a class=email href="mailto:{p.email}">{p.email}</a>
+            {/if}
           {/if}
         {/each}
       </div>

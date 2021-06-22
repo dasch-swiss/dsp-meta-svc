@@ -67,23 +67,24 @@
     {/if}
   {/each}
   
-  <div class=label>Grant</div>
-  <!-- FIXME: can be missing -->
-  {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
-    {#if g?.number && g?.url && g?.name}
-      <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
-      <!-- TODO: roll back if people don't like it -->
-      <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
-    {:else if g?.number && g?.url}
-      <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
-    {:else if g?.number}
-      <span class="data">{g?.number}</span>
-    {:else}
-      {#each [g?.funders[0]].map(o => {return findOrganizationByID(o)}) as f}
-        <span class="data">{f.name}</span>
-      {/each}
-    {/if}
-  {/each}
+  {#if $projectMetadata?.project.grants}
+    <div class=label>Grant</div>
+    {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
+      {#if g?.number && g?.url && g?.name}
+        <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+        <!-- TODO: roll back if people don't like it -->
+        <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
+      {:else if g?.number && g?.url}
+        <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
+      {:else if g?.number}
+        <span class="data">{g?.number}</span>
+      {:else}
+        {#each [g?.funders[0]].map(o => {return findOrganizationByID(o)}) as f}
+          <span class="data">{f.name}</span>
+        {/each}
+      {/if}
+    {/each}
+  {/if}
 
   {#if $projectMetadata?.project.contactPoint}
     <div class=label>Contact</div>

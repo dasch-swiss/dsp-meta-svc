@@ -1,9 +1,26 @@
-<script lang="ts">
-    import {getProjects, deleteProject, projectsList} from "./store";
+<script>
+    import {getProjects, deleteProject, projectsList, userInfo} from "./store";
     import {onMount} from 'svelte';
     import {Router, Link} from "svelte-routing";
     import Content from "./Modal/Content.svelte";
     import Modal from 'svelte-simple-modal';
+    import KeyCloak from 'keycloak-js';
+
+    let kc = new KeyCloak("/keycloak.json");
+
+    let logged_in = null;
+
+    kc.init({onLoad: "check-sso", checkLoginIframe: false}).then((auth) => {
+        logged_in = auth;
+        if (auth) {
+            logged_in = true;
+
+            kc.loadUserInfo().then((user) => {
+                user.token = kc.idToken;
+                userInfo.set(user)
+            })
+        }
+    })
 
     onMount(async () => {
         await getProjects();
@@ -12,6 +29,27 @@
 
 </script>
 <div class="projects">
+    <div class="header">
+        <div class="login-logout">
+            {#if logged_in && $userInfo.preferred_username}
+                <!--            <pre>{JSON.stringify($userInfo, null, 2)}</pre>-->
+                <div>
+                    {$userInfo.preferred_username}
+                    <button on:click={() => { kc.logout(); }}>
+                        Logout
+                    </button>
+                </div>
+            {/if}
+
+            {#if logged_in == false}
+                <div>
+                    <button on:click={() => { kc.login(); }}>
+                        Login
+                    </button>
+                </div>
+            {/if}
+        </div>
+    </div>
     <div>
         <h1>Projects</h1>
     </div>
@@ -40,8 +78,25 @@
 
 <style lang="scss">
     .projects {
-        width: 100%;
+        width: 96%;
         padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .projects .header .login-logout {
+      float: right;
+    }
+
+    .projects .header .login-logout button{
+      color: white;
+      background: #1e90ff;
+      border: 1px #1e90ff solid;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .projects .header .login-logout button:hover{
+      background: #027cf4;
     }
 
     .projects .list {

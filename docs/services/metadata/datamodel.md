@@ -37,7 +37,7 @@
 
 #### URL
 
-```json
+```jsonc
 {
     "__type": "URL",  // internal type: must always be `URL`
     "type": "URL",  // type: either `URL` or a supported authority file

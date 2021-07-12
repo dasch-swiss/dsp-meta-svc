@@ -74,21 +74,22 @@ It is recommended to _always_ include english, furthermore any of the official l
 
 ### Project
 
-| Class        | Note          | Cardinality | Domain Model | Domain Model Type | JSON API | RDF Mapping   | SWISSUbase mapping |
-| ------------ | ------------- | ----------- | ------------ | ----------------- | -------- | ------------- | ------------------ |
-| ID           | internal ID   | 1           | id           | UUID              | string   | <!-- TODO --> | -                  |
-| type         | internal type | 1           | type         | String            | string   | <!-- TODO --> | -                  |
-| date created | creation date | 1           | created      | Date              |          |               |                    |
+| Class         | Note                           | Cardinality | Domain Model  | Domain Model Type | JSON API      | JSON Type       | RDF Mapping      | RDF type                     | RDF Cardinality | SWISSUbase mapping |
+| ------------- | ------------------------------ | ----------- | ------------- | ----------------- | ------------- | --------------- | ---------------- | ---------------------------- | --------------- | ------------------ |
+| ID            | internal ID                    | 1           | `id`          | UUID              | `__id`        | string          | IRI              | IRI                          | -               | -                  |
+| type          | internal type                  | 1           | `type`        | String            | `__type`      | string          | `@type`          | rdf:type                     | -               | -                  |
+| date created  | internal creation date         | 1           | `created`     | Date              | `__created`   | string          | <!-- TODO -->    | <!-- TODO -->                | -               | -                  |
+| date modified | internal modification date     | 1           | `modified`    | Date              | `__modified`  | string          | <!-- TODO -->    | <!-- TODO -->                | -               | -                  |
+| short code    | deprecated internal short code | 1           | `shortcode`   | Shortcode         | `shortcode`   | string          | `:hasShortcode`  | xsd:string                   | 1               | ?                  |
+| name          | project name                   | 1           | `name`        | String            | `name`        | string          | `hasName`        | xsd:string                   | 1               | Title (302)        |
+| description   | project description            | 1           | `description` | MultiLanguageText | `description` | object (`text`) | `hasDescription` | xsd:string (with `@en` etc.) | 1-n             | Abstract (314)     |
+|               |                                |             |               |                   |               |                 |                  |                              |                 |                    |
 
 
 
 <!-- 
 
 (1)
-Date created
-Date modified
-Shortcode shortcode
-String name
 MultiLanguageText description
 Date startDate
 

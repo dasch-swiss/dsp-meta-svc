@@ -1,36 +1,18 @@
 # Metadata
-- [Metadata](#metadata)
-  - [Data Types](#data-types)
-    - [Overview](#overview)
-    - [API Details](#api-details)
-      - [URL](#url)
-      - [Multi-Language Text](#multi-language-text)
-  - [Resource Classes](#resource-classes)
-  - [Properties on Resource Classes](#properties-on-resource-classes)
-    - [Project](#project)
-  - [API Details](#api-details-1)
-    - [Project](#project-1)
-    - [template](#template)
-- [Old](#old)
-  - [Domain Entities](#domain-entities)
-  - [API representation](#api-representation)
-    - [Macro structure](#macro-structure)
-  - [Building the UML Diagrams](#building-the-uml-diagrams)
-
 
 
 ## Data Types
 
 ### Overview
 
-| General             | Domain Model      | JSON API | RDF Mapping |
-| ------------------- | ----------------- | -------- | ----------- |
-| UUID                | UUID              | string   | literal     |
-| string              | String            | string   | literal     |
-| boolean             | Boolean           | boolean  | boolean     |
-| URL                 | URL               | object   | schema:url  |
-| date                | Date              | string   | ?           |
-| multi-language text | MultiLanguageText | object   | ?           |
+| General             | Domain Model      | JSON API | RDF Mapping                  |
+| ------------------- | ----------------- | -------- | ---------------------------- |
+| UUID                | UUID              | string   | xsd:string                   |
+| string              | String            | string   | xsd:string                   |
+| boolean             | Boolean           | boolean  | xsd:boolean                  |
+| URL                 | URL               | object   | schema:URL                   |
+| date                | Date              | string   | xsd:date                     |
+| multi-language text | MultiLanguageText | object   | xsd:string (with `@en` etc.) |
 
 
 ### API Details
@@ -61,7 +43,7 @@ The following values are accepted in `type`:
 
 #### Multi-Language Text
 
-```json
+```jsonc
 {
     "en": "history",
     "de": "Geschichte"
@@ -76,15 +58,15 @@ It is recommended to _always_ include english, furthermore any of the official l
 
 ## Resource Classes
 
-| General              | Domain Model       | JSON API | JSON-LD Mapping | SWISSUbase mapping |
-| -------------------- | ------------------ | -------- | --------------- | ------------------ |
-| Project              | Project            | object   | ?               | ?                  |
-| Dataset              | Dataset            | object   | ?               | ?                  |
-| Person               | Person             | object   | ?               | ?                  |
-| Organization         | Organization       | object   | ?               | ?                  |
-| Address              | Address            | object   | ?               | ?                  |
-| Grant                | Grant              | object   | ?               | ?                  |
-| Data Management Plan | DataManagementPlan | object   | ?               | ?                  |
+| General              | Domain Model       | JSON API | RDF Mapping   | SWISSUbase mapping |
+| -------------------- | ------------------ | -------- | ------------- | ------------------ |
+| Project              | Project            | object   | :Project      | Study (300)        |
+| Dataset              | Dataset            | object   | <!-- TODO --> | <!-- TODO -->      |
+| Person               | Person             | object   | <!-- TODO --> | <!-- TODO -->      |
+| Organization         | Organization       | object   | <!-- TODO --> | <!-- TODO -->      |
+| Address              | Address            | object   | <!-- TODO --> | <!-- TODO -->      |
+| Grant                | Grant              | object   | <!-- TODO --> | <!-- TODO -->      |
+| Data Management Plan | DataManagementPlan | object   | <!-- TODO --> | <!-- TODO -->      |
 
 
 
@@ -92,18 +74,17 @@ It is recommended to _always_ include english, furthermore any of the official l
 
 ### Project
 
-| General | Note          | Cardinality | Domain Model | JSON API | JSON-LD Mapping | SWISSUbase mapping |
-| ------- | ------------- | ----------- | ------------ | -------- | --------------- | ------------------ |
-| ID      | internal ID   | 1           | UUID         | string   | literal         | -                  |
-| type    | internal type | 1           | String       | string   |                 |                    |
+| Class        | Note          | Cardinality | Domain Model | Domain Model Type | JSON API | RDF Mapping   | SWISSUbase mapping |
+| ------------ | ------------- | ----------- | ------------ | ----------------- | -------- | ------------- | ------------------ |
+| ID           | internal ID   | 1           | id           | UUID              | string   | <!-- TODO --> | -                  |
+| type         | internal type | 1           | type         | String            | string   | <!-- TODO --> | -                  |
+| date created | creation date | 1           | created      | Date              |          |               |                    |
 
 
 
 <!-- 
 
 (1)
-UUID id
-String type
 Date created
 Date modified
 Shortcode shortcode
@@ -144,7 +125,7 @@ MultiLanguageText[] alternativeNames
 
 ### Project
 
-```json
+```jsonc
 {
     ...
 }

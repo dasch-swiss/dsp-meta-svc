@@ -41,17 +41,20 @@ The following values are accepted in `type`:
 - Grid
 
 
-#### Multi-Language Text
+#### Text (Multi-Language)
+
+
+Representation of the same text in multiple languages. (Minimum 1 language.)
+
+The keys of the object must be a two character ISO language code string. The property can be any string in the according language.
 
 ```jsonc
 {
-    "en": "history",
-    "de": "Geschichte"
+  "en": // ISO language code
+    "history", // string in said language
+  "de": "Geschichte" // the same for another language
 }
 ```
-
-The keys must be two-character ISO languages.  
-The values are the text in the corresponding language.
 
 It is recommended to _always_ include english, furthermore any of the official languages of Switzerland can be used. Other languages _may_ be used but are not likely to be prioritized to be displayed in the front end.
 
@@ -74,30 +77,30 @@ It is recommended to _always_ include english, furthermore any of the official l
 
 ### Project
 
-| Class                | Note                                                           | Cardinality | Domain Model                                       | Domain Model Type             | JSON API      | JSON Type             | RDF Mapping                           | RDF type                     | RDF Cardinality | SWISSUbase mapping                                   |
-| -------------------- | -------------------------------------------------------------- | ----------- | -------------------------------------------------- | ----------------------------- | ------------- | --------------------- | ------------------------------------- | ---------------------------- | --------------- | ---------------------------------------------------- |
-| ID                   | internal ID                                                    | 1           | `id`                                               | UUID                          | `__id`        | string                | IRI                                   | IRI                          | -               | -                                                    |
-| type                 | internal type                                                  | 1           | `type`                                             | String                        | `__type`      | string                | `@type`                               | rdf:type                     | -               | -                                                    |
-| date created         | internal creation date                                         | 1           | `created`                                          | Date                          | `__created`   | string                | <!-- XXX -->                          | <!-- XXX -->                 | -               | -                                                    |
-| date modified        | internal modification date                                     | 1           | `modified`                                         | Date                          | `__modified`  | string                | <!-- XXX -->                          | <!-- XXX -->                 | -               | -                                                    |
-| (†) short code       | deprecated internal short code                                 | 1           | `shortcode`                                        | Shortcode                     | `shortcode`   | string                | `:hasShortcode`                       | xsd:string                   | 1               | ?                                                    |
-| name                 | project name                                                   | 1           | `name`                                             | String                        | `name`        | string                | `:hasName`                            | xsd:string                   | 1               | Title (302)                                          |
-| description          | project description                                            | 1           | `description`                                      | MultiLanguageText             | `description` | object (`text`)       | `:hasDescription`                     | xsd:string (with `@en` etc.) | 1-n             | Abstract (314)                                       |
-| start date           | start date of the project                                      | 1           | `startDate`                                        | Date                          | `startDate`   | string (`YYYY-MM-DD`) | `:hasStartDate`                       | xsd:date                     | 1               | Start date (308)                                     |
-| datasets             | references to all datasets that are part of the project        | 1-n         | `datasets`                                         | Dataset[]                     | `datasets`    | string[]              | - <!-- TODO: add? or leave as is? --> | -                            | 1-n             | <!-- TODO: note: they link it in dataset (400.1) --> |
-| keywords             | keywords describing the project                                | 1-n         | `keywords`                                         | MultiLanguageText[]           |               |                       |                                       |                              |                 |                                                      |
-| disciplines          | discipline of research the project belongs to                  | 1-n         | `disciplineTexts` and `disciplineRefs`             | MultiLanguageText[] and URL[] |               |                       |                                       |                              |                 |                                                      |
-| temporal coverage    | time period covered by the project                             | 1-n         | `temporalCoverageTexts` and `temporalCoverageRefs` | MultiLanguageText[] and URL[] |               |                       |                                       |                              |                 |                                                      |
-| funders              | funding persons or organizations                               | 1-n         | `funderPersons` and `funderOrganizations`          | Person[] and Organization[]   |               |                       |                                       |                              |                 |                                                      |
-| primary URL          | project's primary URL, pointing to the DaSCH                   | 1           | `url`                                              | URL                           |               |                       |                                       |                              |                 |                                                      |
-| secondary URL        | optional secondary URL, pointing to a specific project website | 0-1         | `secondaryURL`                                     | URL                           |               |                       |                                       |                              |                 |                                                      |
-| data management plan | data management plan                                           | 0-1         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| end date             | end date of the project                                        | 0-1         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| contact point        | contact person or organization                                 | 0-1         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| how-to-cite          | representation how to correctly cite the project               | 0-1         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| publications         | scientific works published in the context of the project       | 0-n         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| grants               | financial grants granted to the project                        | 0-n         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
-| alternativeNames     | alternative names of the project                               | 0-n         |                                                    |                               |               |                       |                                       |                              |                 |                                                      |
+| Class                | Note                                                           | Cardinality | Domain Model                                       | Domain Model Type             | JSON API           | JSON Type                | RDF Mapping                           | RDF type                     | RDF Cardinality | SWISSUbase mapping                                   |
+| -------------------- | -------------------------------------------------------------- | ----------- | -------------------------------------------------- | ----------------------------- | ------------------ | ------------------------ | ------------------------------------- | ---------------------------- | --------------- | ---------------------------------------------------- |
+| ID                   | internal ID                                                    | 1           | `id`                                               | UUID                          | `__id`             | string                   | IRI                                   | IRI                          | -               | -                                                    |
+| type                 | internal type                                                  | 1           | `type`                                             | String                        | `__type`           | string                   | `@type`                               | rdf:type                     | -               | -                                                    |
+| date created         | internal creation date                                         | 1           | `created`                                          | Date                          | `__created`        | string                   | <!-- XXX -->                          | <!-- XXX -->                 | -               | -                                                    |
+| date modified        | internal modification date                                     | 1           | `modified`                                         | Date                          | `__modified`       | string                   | <!-- XXX -->                          | <!-- XXX -->                 | -               | -                                                    |
+| (†) short code       | deprecated internal short code                                 | 1           | `shortcode`                                        | Shortcode                     | `shortcode`        | string                   | `:hasShortcode`                       | xsd:string                   | 1               | ?                                                    |
+| name                 | project name                                                   | 1           | `name`                                             | String                        | `name`             | string                   | `:hasName`                            | xsd:string                   | 1               | Title (302)                                          |
+| description          | project description                                            | 1           | `description`                                      | MultiLanguageText             | `description`      | object (`text`)          | `:hasDescription`                     | xsd:string (with `@en` etc.) | 1-n             | Abstract (314)                                       |
+| start date           | start date of the project                                      | 1           | `startDate`                                        | Date                          | `startDate`        | string (`YYYY-MM-DD`)    | `:hasStartDate`                       | xsd:date                     | 1               | Start date (308)                                     |
+| datasets             | references to all datasets that are part of the project        | 1-n         | `datasets`                                         | Dataset[]                     | `datasets`         | array of string (ID)     | - <!-- TODO: add? or leave as is? --> | -                            | 1-n             | <!-- TODO: note: they link it in dataset (400.1) --> |
+| keywords             | keywords describing the project                                | 1-n         | `keywords`                                         | MultiLanguageText[]           | `keywords`         | array of object (`text`) |                                       |                              |                 |                                                      |
+| disciplines          | discipline of research the project belongs to                  | 1-n         | `disciplineTexts` and `disciplineRefs`             | MultiLanguageText[] and URL[] | `disciplines`      | array of object (`URL`)  |                                       |                              |                 |                                                      |
+| temporal coverage    | time period covered by the project                             | 1-n         | `temporalCoverageTexts` and `temporalCoverageRefs` | MultiLanguageText[] and URL[] | `temporalCoverage` | array of object (`URL`)  |                                       |                              |                 |                                                      |
+| funders              | funding persons or organizations                               | 1-n         | `funderPersons` and `funderOrganizations`          | Person[] and Organization[]   | `funders`          | array of string (ID)     |                                       |                              |                 |                                                      |
+| primary URL          | project's primary URL, pointing to the DaSCH                   | 1           | `url`                                              | URL                           | `url`              | object (`URL`)           |                                       |                              |                 |                                                      |
+| secondary URL        | optional secondary URL, pointing to a specific project website | 0-1         | `secondaryURL`                                     | URL                           | `secondaryURL`     | object (`URL`)           |                                       |                              |                 |                                                      |
+| data management plan | data management plan                                           | 0-1         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| end date             | end date of the project                                        | 0-1         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| contact point        | contact person or organization                                 | 0-1         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| how-to-cite          | representation how to correctly cite the project               | 0-1         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| publications         | scientific works published in the context of the project       | 0-n         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| grants               | financial grants granted to the project                        | 0-n         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
+| alternativeNames     | alternative names of the project                               | 0-n         |                                                    |                               |                    |                          |                                       |                              |                 |                                                      |
 
 
 
@@ -128,21 +131,8 @@ MultiLanguageText[] alternativeNames
 
  -->
 
-## API Details
+## JSON API Details
 
-### text (multi-language)
-
-Representation of the same text in multiple languages. (Minimum 1 language.)
-
-The keys of the object must be a two character ISO language code string. The property can be any string in the according language.
-
-```jsonc
-{
-  "en": // ISO language code
-    "history", // string in said language
-  "de": "Geschichte" // the same for another language
-}
-```
 
 ### Project
 

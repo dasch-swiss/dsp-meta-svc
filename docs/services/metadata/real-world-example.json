@@ -51,14 +51,12 @@
             "http://ns.dasch.swiss/repository#dsp-0806-organization-005",
             "http://ns.dasch.swiss/repository#dsp-0806-organization-004"
         ],
-        "urls": [
-            {
-                "__type": "URL",
-                "text": "https://www.anton-webern.ch",
-                "type": "URL",
-                "url": "https://www.anton-webern.ch"
-            }
-        ],
+        "url": {
+            "__type": "URL",
+            "text": "https://www.anton-webern.ch",
+            "type": "URL",
+            "url": "https://www.anton-webern.ch"
+        },
         "spatialCoverage": [
             {
                 "__type": "URL",

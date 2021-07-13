@@ -47,6 +47,68 @@
 
 
 
+### Dataset
+
+| Class               | Note                                               | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type           | RDF Mapping                                                     | RDF type         | RDF Cardinality | SWISSUbase mapping             |
+| ------------------- | -------------------------------------------------- | ----------- | -------------------------- | ------------------------ | -------------------- | ------------------- | --------------------------------------------------------------- | ---------------- | --------------- | ------------------------------ |
+| ID                  | internal ID                                        | 1           | `id`                       | UUID                     | `__id`               | string              | IRI                                                             | IRI              | -               | -                              |
+| type                | internal type                                      | 1           | `type`                     | String                   | `__type`             | string              | `@type` / `rdf:type`                                            | rdf:type         | -               | -                              |
+| date created        | internal creation date                             | 1           | `created`                  | Date                     | `__created`          | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
+| date modified       | internal modification date                         | 1           | `modified`                 | Date                     | `__modified`         | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
+| title               | title of the dataset                               | 1           | `title`                    | String                   | `title`              | string              | `:hasTitle`                                                     | xsd:string       | 1               | Title (402)                    |
+| accessConditions    | conditions under which the dataset can be accessed | 1           | `accessConditions`         | String                   | `accessConditions`   | string              | `:hasConditionsOfAccess` <!-- TODO: adjust name here aswell --> | xsd:string       | 1               | Special permission (413)       |
+| how-to-cite         | representation how to correctly cite the dataset   | 1           | `howToCite`                | String                   | `howToCite`          | string              | `:hasHowToCite`                                                 | xsd:string       | 1               | Bibliographical citation (409) |
+| status              | the status of the dataset                          | 1           | `status`                   | String                   | `status`             | string              | `:hasStatus`                                                    | xsd:string       | 1               | ?                              |
+| ___________________ | _________________________________                  | ___         | __________________________ | ________________________ | ____________________ | ___________________ | ___________________________                                     | ________________ | ___             | ________________               |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+
+
+#### Status
+
+Dataset status can have one of the following values:
+
+- `In planning`
+- `Ongoing`
+- `On hold`
+- `Finished`
+
+
+<!-- 
+-- Required Fields --
+.. (1) ..
++String title
++String accessConditions
++String howToCite
++Status status
+
+.. (1 - n) ..
++MultiLanguageText[] abstractTexts
++URL[] abstractURLs
++TypesOfData[] typesOfData
++URL[] licenses
++MultiLanguageText[] languages
++Attribution[] attributions
+
+-- Optional Fields --
+.. (0 - 1) ..
++Date datePublished
++Date dateCreated
++Date dateModified
++URL distribution
+
+.. (0 - n) ..
++MultiLanguageText[] alternativeTitles
++URL[] urls
++MultiLanguageText[] documentationTexts
++URL[] documentationURLs
+ -->
+
 ## Data Types
 
 ### Overview

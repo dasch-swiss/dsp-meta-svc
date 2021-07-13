@@ -42,14 +42,18 @@
         "__type": "URL"
       }
     ],
-    "urls": [
-      {
-        "text": "DaSCH.swiss",
-        "type": "URL",
-        "url": "https://dasch.swiss/someproject",
-        "__type": "URL"
-      }
-    ],
+    "url": {
+      "text": "DaSCH.swiss",
+      "type": "URL",
+      "url": "https://dasch.swiss/someproject",
+      "__type": "URL"
+    },
+    "secondaryURL": {
+      "__type": "URL",
+      "type": "URL",
+      "text": "Project at Zenodo",
+      "url": "https://zenodo.org/record/99999999999999"
+    },
     "dataManagementPlan": "dmp-001",
     "endDate": "2022-01-01",
     "datasets": [

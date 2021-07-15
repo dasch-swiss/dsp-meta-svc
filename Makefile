@@ -84,22 +84,6 @@ resource-service-test: ## run all resource-service tests
 	@bazel test //services/resource/backend/...
 
 #################################
-# Docs targets
-#################################
-
-.PHONY: docs-build
-docs-build: build ## build the DSP API Slate docs
-	docker run --rm --name slate -v $(CURRENT_DIR)/docs:/srv/slate/source slatedocs/slate build
-
-.PHONY: docs-serve
-docs-serve: ## serve the DSP API Slate docs locally
-	docker run --rm --name slate -p 4567:4567 -v $(CURRENT_DIR)/docs:/srv/slate/source slatedocs/slate serve
-
-.PHONY: docs-publish
-docs-publish: publish ## publish the DSP API Slate docs to Github Pages
-	docker run --rm --name slate -v $(CURRENT_DIR)/docs:/srv/slate/source slatedocs/slate publish
-
-#################################
 # Other targets
 #################################
 

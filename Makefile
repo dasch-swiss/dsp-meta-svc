@@ -36,26 +36,6 @@ gen-go-deps: ## regenerate dependencies file (deps.bzl)
 docker-publish: metadata-docker-publish ## publish all docker images
 
 #################################
-# Admin service targets
-#################################
-
-.PHONY: admin-docker-build
-admin-docker-build: build ## publish linux/amd64 platform image locally
-	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/admin/backend/cmd:image -- --norun
-
-.PHONY: admin-docker-publish
-admin-docker-publish: build ## publish linux/amd64 platform image to Dockerhub
-	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/admin/docker:push
-
-.PHONY: admin-service-run
-admin-service-run: build ## start the admin-service
-	@bazel run //services/admin/backend/cmd
-
-.PHONY: admin-service-test
-admin-service-test: ## run all admin-service tests
-	@bazel test //services/admin/backend/...
-
-#################################
 # Metadata service targets
 #################################
 
@@ -102,14 +82,6 @@ resource-service-run: build ## start the resource-service
 .PHONY: resource-service-test
 resource-service-test: ## run all resource-service tests
 	@bazel test //services/resource/backend/...
-
-#################################
-# API-SPA-Server targets
-#################################
-
-.PHONY: apispa-test
-apispa-test: ## run API-SPA-Server tests
-	@bazel test //shared/go/pkg/server/...
 
 #################################
 # Docs targets

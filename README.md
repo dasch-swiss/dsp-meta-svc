@@ -1,14 +1,8 @@
-# dsp-repository
-Service for browsing, searching, and editing of project metadata
-
-
-## Services
-
-### Metadata
+# Metadata service
 
 Service for providing users with project and dataset specific metadata.
 
-#### Front-end
+## Front-end
 
 The front-end part is basing on [Svelte](https://svelte.dev). To run it, `yarn` and/or `make` need to be installed. 
 
@@ -41,7 +35,7 @@ This starts the application on the [localhost:5000](http://localhost:5000).
 
 *Note that you will also need to have [Node.js](https://nodejs.org) installed.*
 
-#### Server
+## Server
 
 For now, metadata is served from a simple server written in Go.
 
@@ -56,118 +50,6 @@ The server supports pagination and full text search.
 
 To run the server locally, use the command `make metadata`.  
 To run, build and publish a docker image of the server, use the commands `metadata-docker-run`, `metadata-docker-build` and `metadata-docker-publish`respectively. (`...-run` will build first.)
-
-### Admin
-
-#### Server
-
-This service requires a running event store.
-
-For testing, you can create a local event store by running:
-
-```docker run --name esdb-node -it -p 2113:2113 -p 1113:1113 eventstore/eventstore:latest --insecure --run-projections=All --enable-atom-pub-over-http=true```
-
-You can view the event store on http://localhost:2113/
-
-Then run:
-```make admin-service-run```
-
-The terminal will hang on:
-
-```2021/07/08 14:01:33 Starting server...```
-
-```2021/07/08 14:01:33 Serving on port: :8080```
-
-This is because of Negroni, which will log out the results of your API requests.
-Now you can send requests to the API via Postman or your preferred application/method.
-
-**A valid JWT token must be provided with each API request**
-
-Example create project request:
-URL:
-```POST http://localhost:8080/v1/projects```
-
-Headers:
-```json
-{
-  "Authorization": "bearer [JWT]"
-}
-```
-
-JSON request body:
-```json
-{
-  "shortCode": "0000",
-  "shortName": "my proj",
-  "longName": "my projects name",
-  "description": "description of my project"
-}
-```
-
-You will then see this project creation event in your event store on http://localhost:2113 under the Stream Browser tab (you may need to refresh the page if you're currently on it).
-
-
-Example update project request:
-
-URL:
-```PUT http://localhost:8080/v1/projects/[uuid]```
-
-Headers:
-```json
-{
-  "Authorization": "bearer [JWT]"
-}
-```
-
-JSON request body:
-```json
-{
-  "shortCode": "ffff",
-  "shortName": "short",
-  "longName": "updated project name",
-  "description": "updated description of my project"
-}
-```
-
-You will then see this project update event in your event store on http://localhost:2113 under the Stream Browser tab (you may need to refresh the page if you're currently on it).
-
-Example delete project request:
-
-URL:
-```DELETE http://localhost:8080/v1/projects/[uuid]```
-
-Headers:
-```json
-{
-  "Authorization": "bearer [JWT]"
-}
-```
-
-You will then see this project deletion event in your event store on http://localhost:2113 under the Stream Browser tab (you may need to refresh the page if you're currently on it).
-
-To get a list of all the projects:
-
-URL:
-```GET http://localhost:8080/v1/projects```
-
-Headers:
-```json
-{
-  "Authorization": "bearer [JWT]"
-}
-```
-
-To get a project:
-
-URL:
-```GET http://localhost:8080/v1/projects/[uuid]```
-
-Headers:
-```json
-{
-  "Authorization": "bearer [JWT]"
-}
-```
 
 ## Go dependencies
 

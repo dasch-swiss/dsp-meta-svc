@@ -22,7 +22,7 @@ build: yarn ## build all targets
 .PHONY: test
 test: yarn ## test all targets
 	@bazel run @nodejs//:yarn -- run build
-	# @bazel test //...
+#	@bazel test //...
 
 .PHONY: buildifier
 buildifier: ## format Bazel WORKSPACE and BUILD.bazel files
@@ -54,6 +54,14 @@ metadata-docker-publish: build ## publish metadata mock-server linux/amd64 platf
 .PHONY: metadata-docker-run
 metadata-docker-run: metadata-docker-build ## build and run metadata mock-server linux/amd64 platform docker image (watching /data/*.json)
 	@docker run --rm -p 3000:3000 bazel/services/metadata/backend/fake-backend:image
+
+.PHONY: metadata-service-run
+metadata-service-run: build ## start the metadata-service
+	@bazel run //services/metadata/backend/cmd
+
+.PHONY: metadata-service-test
+metadata-service-test: ## run all metadata-service tests
+	@bazel test //services/metadata/backend/...
 
 #################################
 # Other targets

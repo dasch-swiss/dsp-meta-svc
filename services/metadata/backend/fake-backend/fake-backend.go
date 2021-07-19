@@ -274,7 +274,7 @@ func main() {
 
 	// init SPA handler
 	spa := spaHandler{
-		staticPath: "public/metadata",
+		staticPath: "public",
 		indexPath:  "index.html",
 	}
 

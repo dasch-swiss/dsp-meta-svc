@@ -1,7 +1,7 @@
 # Metadata
 
 
-## Resource Classes
+## Top Level Resource Classes
 
 | General              | Domain Model       | JSON API | RDF Mapping  | SWISSUbase mapping   |
 | -------------------- | ------------------ | -------- | ------------ | -------------------- |
@@ -19,7 +19,7 @@
 
 ### Project
 
-| Class                | Note                                                           | Cardinality                                 | Domain Model                                       | Domain Model Type             | JSON API             | JSON Type                             | RDF Mapping                           | RDF type                     | RDF Cardinality | SWISSUbase mapping                                                      |
+| Property             | Note                                                           | Cardinality                                 | Domain Model                                       | Domain Model Type             | JSON API             | JSON Type                             | RDF Mapping                           | RDF type                     | RDF Cardinality | SWISSUbase mapping                                                      |
 | -------------------- | -------------------------------------------------------------- | ------------------------------------------- | -------------------------------------------------- | ----------------------------- | -------------------- | ------------------------------------- | ------------------------------------- | ---------------------------- | --------------- | ----------------------------------------------------------------------- |
 | ID                   | internal ID                                                    | 1                                           | `id`                                               | UUID                          | `__id`               | string                                | IRI                                   | IRI                          | -               | -                                                                       |
 | type                 | internal type                                                  | 1                                           | `type`                                             | String                        | `__type`             | string                                | `@type` / `rdf:type`                  | rdf:type                     | -               | -                                                                       |
@@ -49,51 +49,36 @@
 
 ### Dataset
 
-| Class               | Note                                               | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type           | RDF Mapping                                                     | RDF type         | RDF Cardinality | SWISSUbase mapping             |
-| ------------------- | -------------------------------------------------- | ----------- | -------------------------- | ------------------------ | -------------------- | ------------------- | --------------------------------------------------------------- | ---------------- | --------------- | ------------------------------ |
-| ID                  | internal ID                                        | 1           | `id`                       | UUID                     | `__id`               | string              | IRI                                                             | IRI              | -               | -                              |
-| type                | internal type                                      | 1           | `type`                     | String                   | `__type`             | string              | `@type` / `rdf:type`                                            | rdf:type         | -               | -                              |
-| date created        | internal creation date                             | 1           | `created`                  | Date                     | `__created`          | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
-| date modified       | internal modification date                         | 1           | `modified`                 | Date                     | `__modified`         | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
-| title               | title of the dataset                               | 1           | `title`                    | String                   | `title`              | string              | `:hasTitle`                                                     | xsd:string       | 1               | Title (402)                    |
-| accessConditions    | conditions under which the dataset can be accessed | 1           | `accessConditions`         | String                   | `accessConditions`   | string              | `:hasConditionsOfAccess` <!-- TODO: adjust name here aswell --> | xsd:string       | 1               | Special permission (413)       |
-| how-to-cite         | representation how to correctly cite the dataset   | 1           | `howToCite`                | String                   | `howToCite`          | string              | `:hasHowToCite`                                                 | xsd:string       | 1               | Bibliographical citation (409) |
-| status              | the status of the dataset                          | 1           | `status`                   | String                   | `status`             | string              | `:hasStatus`                                                    | xsd:string       | 1               | ?                              |
-| ___________________ | _________________________________                  | ___         | __________________________ | ________________________ | ____________________ | ___________________ | ___________________________                                     | ________________ | ___             | ________________               |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
-|                     |                                                    |             |                            |                          |                      |                     |                                                                 |                  |                 |                                |
+| Property            | Note                                                                    | Cardinality | Domain Model                       | Domain Model Type             | JSON API             | JSON Type           | RDF Mapping                                                     | RDF type         | RDF Cardinality | SWISSUbase mapping             |
+| ------------------- | ----------------------------------------------------------------------- | ----------- | ---------------------------------- | ----------------------------- | -------------------- | ------------------- | --------------------------------------------------------------- | ---------------- | --------------- | ------------------------------ |
+| ID                  | internal ID                                                             | 1           | `id`                               | UUID                          | `__id`               | string              | IRI                                                             | IRI              | -               | -                              |
+| type                | internal type                                                           | 1           | `type`                             | String                        | `__type`             | string              | `@type` / `rdf:type`                                            | rdf:type         | -               | -                              |
+| date created        | internal creation date                                                  | 1           | `created`                          | Date                          | `__created`          | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
+| date modified       | internal modification date                                              | 1           | `modified`                         | Date                          | `__modified`         | string              | <!-- XXX -->                                                    | <!-- XXX -->     | -               | -                              |
+| title               | title of the dataset                                                    | 1           | `title`                            | String                        | `title`              | string              | `:hasTitle`                                                     | xsd:string       | 1               | Title (402)                    |
+| accessConditions    | conditions under which the dataset can be accessed                      | 1           | `accessConditions`                 | String                        | `accessConditions`   | string              | `:hasConditionsOfAccess` <!-- TODO: adjust name here aswell --> | xsd:string       | 1               | Special permission (413)       |
+| how-to-cite         | representation how to correctly cite the dataset                        | 1           | `howToCite`                        | String                        | `howToCite`          | string              | `:hasHowToCite`                                                 | xsd:string       | 1               | Bibliographical citation (409) |
+| status              | the status of the dataset                                               | 1           | `status`                           | String                        | `status`             | string              | `:hasStatus`                                                    | xsd:string       | 1               | ?                              |
+| ___________________ | _______________________________________                                 | ___         | __________________________         | ________________________      | ____________________ | ___________________ | ___________________________                                     | ________________ | ___             | ________________               |
+| abstracts           | abstracts describing the dataset                                        | 1-n         | `abstractTexts` and `abstractURLs` | MultiLanguageText[] and URL[] |                      |                     |                                                                 |                  |                 |                                |
+| types of data       | the types of data contained in the dataset                              | 1-n         | `typesOfData`                      | String[]                      |                      |                     |                                                                 |                  |                 |                                |
+| licenses            | the license(s) under which the data is made available                   | 1-n         | `licenses`                         | <!-- TODO -->                 |                      |                     |                                                                 |                  |                 |                                |
+| languages           | the languages used in the dataset                                       | 1-n         | `languages`                        | MultiLanguageText[]           |                      |                     |                                                                 |                  |                 |                                |
+| attributions        | attributions of contributions to the dataset by people or organizations | 1-n         | `attributions`                     | Attribution[]                 |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                                         |             |                                    |                               |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                                         |             |                                    |                               |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                                         |             |                                    |                               |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                                         |             |                                    |                               |                      |                     |                                                                 |                  |                 |                                |
+|                     |                                                                         |             |                                    |                               |                      |                     |                                                                 |                  |                 |                                |
 
 
-#### Status
+<!-- TODO: make access conditions a fixed vocabulary: open, restricted, closed -->
 
-Dataset status can have one of the following values:
+<!-- TODO: handle license as object -->
 
-- `In planning`
-- `Ongoing`
-- `On hold`
-- `Finished`
 
 
 <!-- 
--- Required Fields --
-.. (1) ..
-+String title
-+String accessConditions
-+String howToCite
-+Status status
-
-.. (1 - n) ..
-+MultiLanguageText[] abstractTexts
-+URL[] abstractURLs
-+TypesOfData[] typesOfData
-+URL[] licenses
-+MultiLanguageText[] languages
-+Attribution[] attributions
 
 -- Optional Fields --
 .. (0 - 1) ..
@@ -108,6 +93,24 @@ Dataset status can have one of the following values:
 +MultiLanguageText[] documentationTexts
 +URL[] documentationURLs
  -->
+#### Status
+
+Dataset status can have one of the following values:
+
+- `In planning`
+- `Ongoing`
+- `On hold`
+- `Finished`
+
+#### Types of Data
+
+The following Values are allowed in "Types of Data":
+
+- `XML`
+- `Text`
+- `Image`
+- `Video`
+- `Audio`
 
 ## Data Types
 

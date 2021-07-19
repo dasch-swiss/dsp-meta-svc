@@ -105,10 +105,15 @@
       ],
       "licenses": [
         {
-          "text": "CC-BY 4.0",
-          "type": "URL",
-          "url": "https://creativecommons.org/licenses/by/4.0/",
-          "__type": "URL"
+          "__type": "License",
+          "license": {
+            "text": "CC-BY 4.0",
+            "type": "URL",
+            "url": "https://creativecommons.org/licenses/by/4.0/",
+            "__type": "URL"
+          },
+          "date": "2020-01-01",
+          "details": "All files included in the dataset can be re-used under the CC BY 4.0 license."
         }
       ],
       "languages": [
@@ -123,6 +128,7 @@
       ],
       "attributions": [
         {
+          "__type": "Attribution",
           "agent": "person-001",
           "roles": [
             "Project owner",

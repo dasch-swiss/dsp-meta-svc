@@ -723,15 +723,15 @@
     },
     "attribution": {
       "type": "object",
-      "description": "Attribution of work to a person, taking in one or more roles.",
+      "description": "Attribution of work to a person or organization, taking in one or more roles.",
       "properties": {
-        "person": {
+        "agent": {
           "type": "string",
-          "description": "ID of a person."
+          "description": "ID of a person/organization."
         },
         "roles": {
           "type": "array",
-          "description": "Roles the person had.",
+          "description": "Roles the person/organization had.",
           "minItems": 1,
           "items": {
             "type": "string",
@@ -740,7 +740,7 @@
         }
       },
       "required": [
-        "person",
+        "agent",
         "roles"
       ],
       "additionalProperties": false

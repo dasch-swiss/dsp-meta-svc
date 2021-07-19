@@ -199,27 +199,27 @@
             ],
             "attributions": [
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
                     "roles": [
                         "Contributor",
                         "Creator"
                     ]
                 },
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
                     "roles": [
                         "Creator",
                         "Contributor"
                     ]
                 },
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
                     "roles": [
                         "Member of the editorial management"
                     ]
                 },
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
                     "roles": [
                         "Contributor",
                         "Creator",
@@ -227,14 +227,14 @@
                     ]
                 },
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
                     "roles": [
                         "Creator",
                         "Contributor"
                     ]
                 },
                 {
-                    "person": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
                     "roles": [
                         "Project manager",
                         "Member of the editorial management"

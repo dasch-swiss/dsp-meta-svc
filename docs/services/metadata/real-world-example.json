@@ -199,6 +199,7 @@
             ],
             "attributions": [
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
                     "roles": [
                         "Contributor",
@@ -206,6 +207,7 @@
                     ]
                 },
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
                     "roles": [
                         "Creator",
@@ -213,12 +215,14 @@
                     ]
                 },
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
                     "roles": [
                         "Member of the editorial management"
                     ]
                 },
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
                     "roles": [
                         "Contributor",
@@ -227,6 +231,7 @@
                     ]
                 },
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
                     "roles": [
                         "Creator",
@@ -234,6 +239,7 @@
                     ]
                 },
                 {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
                     "roles": [
                         "Project manager",
@@ -252,10 +258,14 @@
             "howToCite": "https://www.anton-webern.ch/index.php?id=85",
             "licenses": [
                 {
-                    "__type": "URL",
-                    "text": "CC BY-SA 4.0",
-                    "type": "Creative Commons",
-                    "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+                    "__type": "License",
+                    "date": "2021-01-01",
+                    "license": {
+                        "__type": "URL",
+                        "text": "CC BY-SA 4.0",
+                        "type": "Creative Commons",
+                        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+                    }
                 }
             ],
             "abstracts": [

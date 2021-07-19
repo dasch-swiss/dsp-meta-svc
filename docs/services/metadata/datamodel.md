@@ -62,7 +62,7 @@
 | ___________________ | _______________________________________                                 | ___         | __________________________         | ________________________      | ____________________ | ___________________________                  | ___________________________                                     | ________________ | ___             | ________________               |
 | abstracts           | abstracts describing the dataset                                        | 1-n         | `abstractTexts` and `abstractURLs` | MultiLanguageText[] and URL[] | `abstract`           | array of object (multi-language text or URL) |                                                                 |                  |                 |                                |
 | types of data       | the types of data contained in the dataset                              | 1-n         | `typesOfData`                      | String[] (enum)               | `typeOfData`         | array of string (enum)                       |                                                                 |                  |                 |                                |
-| licenses            | the license(s) under which the data is made available                   | 1-n         | `licenses`                         | License[]                     | `licenses`           | <!-- TODO -->                                |                                                                 |                  |                 |                                |
+| licenses            | the license(s) under which the data is made available                   | 1-n         | `licenses`                         | License[]                     | `licenses`           | object (license)                             |                                                                 |                  |                 |                                |
 | languages           | the languages used in the dataset                                       | 1-n         | `languages`                        | MultiLanguageText[]           | `languages`          | object (multi-language text)                 |                                                                 |                  |                 |                                |
 | attributions        | attributions of contributions to the dataset by people or organizations | 1-n         | `attributions`                     | Attribution[]                 | `attributions`       | object (attribution)                         |                                                                 |                  |                 |                                |
 |                     |                                                                         |             |                                    |                               |                      |                                              |                                                                 |                  |                 |                                |
@@ -176,11 +176,29 @@ Attribution attributes one or more roles to a person or organization.
 
 ```jsonc
 {
+  "__type": "Attribution",
   "agent": "ID", // ID of a person ort organization
   "roles": [ // the roles of the person/organization
     "PI",
     "Editor"
   ]
+}
+```
+
+
+#### License
+
+```jsonc
+{
+  "__type": "License",
+  "license": {  // the license itself is specified as a URL object
+    "text": "CC-BY 4.0",
+    "type": "URL",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "__type": "URL"
+  },
+  "date": "2020-01-01",
+  "details": "All files included in the dataset can be re-used under the CC BY 4.0 license."
 }
 ```
 

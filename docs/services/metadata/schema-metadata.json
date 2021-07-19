@@ -503,7 +503,7 @@
           "minItems": 1,
           "items": {
             "description": "A reference to a license",
-            "$ref": "#/definitions/url"
+            "$ref": "#/definitions/license"
           }
         },
         "languages": {
@@ -725,6 +725,10 @@
       "type": "object",
       "description": "Attribution of work to a person or organization, taking in one or more roles.",
       "properties": {
+        "__type": {
+          "type": "string",
+          "const": "Attribution"
+        },
         "agent": {
           "type": "string",
           "description": "ID of a person/organization."
@@ -740,8 +744,37 @@
         }
       },
       "required": [
+        "__type",
         "agent",
         "roles"
+      ],
+      "additionalProperties": false
+    },
+    "license": {
+      "type": "object",
+      "description": "License information.",
+      "properties": {
+        "__type": {
+          "type": "string",
+          "const": "License"
+        },
+        "license": {
+          "description": "the specific license",
+          "$ref": "#/definitions/url"
+        },
+        "date": {
+          "description": "license date",
+          "$ref": "#/definitions/date"
+        },
+        "details": {
+          "type": "string",
+          "description": "additional information on the license (e.g. the scope of the license, if multiple licenses are used)."
+        }
+      },
+      "required": [
+        "__type",
+        "license",
+        "date"
       ],
       "additionalProperties": false
     }

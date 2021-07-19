@@ -83,7 +83,7 @@ package toplevel {
     +MultiLanguageText[] abstractTexts
     +URL[] abstractURLs
     +TypesOfData[] typesOfData
-    +URL[] licenses
+    +License[] licenses
     +MultiLanguageText[] languages
     +Attribution[] attributions
 
@@ -231,6 +231,18 @@ package toplevel {
     +String[] roles
 
   }
+
+  class License {
+    Struct holding license information.
+    -- Required --
+    .. (1) ..
+    +URL license
+    +Date date
+
+    -- Optional --
+    .. (0 - 1) ..
+    +String details
+  }
   
 
 }
@@ -365,6 +377,7 @@ Project --> Dataset
 Project --> DataManagementPlan
 Project --> Grant
 Dataset --> Attribution
+Dataset --> License
 Attribution --> Person
 Person --> Organization
 Person --> Address

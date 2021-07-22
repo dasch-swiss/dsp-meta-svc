@@ -200,6 +200,7 @@
         "additional": "Postfach",
         "postalCode": "4000",
         "locality": "Basel",
+        "canton": "Basel-Stadt",
         "country": "Switzerland",
         "__type": "Address"
       },

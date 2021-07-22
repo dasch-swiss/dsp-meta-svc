@@ -672,6 +672,10 @@
           "type": "string",
           "description": "The country."
         },
+        "canton": {
+          "type": "string",
+          "description": "region or organizational unit (canton, state, ...)"
+        },
         "additional": {
           "type": "string",
           "description": "Additional address information like c/o or post box"

@@ -9,7 +9,7 @@
 | Dataset              | Dataset            | object   | :Dataset     | DatasetVersion (400) |
 | Person               | Person             | object   | <!-- XXX --> | <!-- XXX -->         |
 | Organization         | Organization       | object   | <!-- XXX --> | <!-- XXX -->         |
-| Address              | Address            | object   | <!-- XXX --> | <!-- XXX -->         |
+| Address              | Address            | object   | :Address     | Addresses (112/207)  |
 | Grant                | Grant              | object   | <!-- XXX --> | <!-- XXX -->         |
 | Data Management Plan | DataManagementPlan | object   | <!-- XXX --> | <!-- XXX -->         |
 
@@ -83,6 +83,36 @@
 +MultiLanguageText[] documentationTexts
 +URL[] documentationURLs
  -->
+
+
+### Address
+
+| Property      | Note                                    | Cardinality | Domain Model  | Domain Model Type | JSON API        | JSON Type | RDF Mapping               | RDF type    | RDF Cardinality | SWISSUbase mapping               |
+| ------------- | --------------------------------------- | ----------- | ------------- | ----------------- | --------------- | --------- | ------------------------- | ----------- | --------------- | -------------------------------- |
+| street        | street                                  | 1           | `street`      | String            | `street`        | string    | `schema:streetAddress`    | xsd:string  | 1               | Address line 1 (112.1 / 207.1)   |
+| postal code   | postal code of the locality             | 1           | `postalCode`  | String            | `postalCode`    | string    | `schema:postalCode`       | xsd:string  | 1               | Zip code (112.4 / 207.4)         |
+| locality      | the name of the locality                | 1           | `locality`    | String            | `locality`      | string    | `schema:addressLocality`  | xsd:string  | 1               | City (112.5 / 207.5)             |
+| country       | country                                 | 1           | `country`     | String            | `country`       | string    | `schema:addressCountry`   | xsd:string  | 1               | Country (112.7 / 207.7)          |
+| canton        | canton/state within the country         | 0-1         | `canton`      | String            | `canton`        | string    | `schema:addressRegion`    | xsd:string  | 0-1             | Canton (112.6 / 207.6)           |
+| additional    | additional information (post box, c/o)  | 0-1         | `additional`  | String            | `additional`    | string    | ? <!-- XXX: ? -->         | xsd:string  | 0-1             | 112.2? 112.3? <!-- XXX: ? -->    |
+| _____________ | _______________________________________ | ___         | _____________ | _________________ | _______________ | ________  | _________________________ | ___________ | ___             | ________________________________ |
+
+
+<!-- 
+Struct containing a postal address.
+Required
+(1)
+String street
+String postalCode
+String locality
+String country
+
+Optional
+String canton
+String additional
+ -->
+
+
 #### Status
 
 Dataset status can have one of the following values:

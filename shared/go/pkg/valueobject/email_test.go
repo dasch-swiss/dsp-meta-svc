@@ -2,7 +2,7 @@ package valueobject_test
 
 import (
 	"fmt"
-	"github.com/dasch-swiss/dasch-service-platform/shared/go/pkg/valueobject"
+	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

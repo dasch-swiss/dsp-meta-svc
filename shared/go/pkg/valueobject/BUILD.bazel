@@ -18,7 +18,7 @@ go_library(
         "url.go",
         "username.go",
     ],
-    importpath = "github.com/dasch-swiss/dasch-service-platform/shared/go/pkg/valueobject",
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_gofrs_uuid//:go_default_library",

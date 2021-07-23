@@ -22,7 +22,7 @@ build: yarn ## build all targets
 .PHONY: test
 test: yarn ## test all targets
 	@bazel run @nodejs//:yarn -- run build
-#	@bazel test //...
+	@bazel test //...
 
 .PHONY: buildifier
 buildifier: ## format Bazel WORKSPACE and BUILD.bazel files

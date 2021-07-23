@@ -1,4 +1,4 @@
-module github.com/dasch-swiss/dasch-service-platform
+module github.com/dasch-swiss/dsp-meta-svc
 
 go 1.16
 

@@ -176,10 +176,6 @@ package toplevel {
     -UUID createdBy
 
     .. (1 - n) ..
-    -Date modifiedAt
-    -UUID modifiedBy
-    -Date deletedAt
-    -UUID deletedBy
     +String[] jobTitles
     +String[] givenNames
     +String[] familyNames
@@ -187,6 +183,10 @@ package toplevel {
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +Address address
 
     .. (0 - 2) ..

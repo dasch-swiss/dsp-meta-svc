@@ -614,7 +614,7 @@
             "$ref": "#/definitions/url"
           }
         },
-        "documentations": {
+        "additional": {
           "type": "object",
           "description": "Documentations of the dataset.",
           "additionalProperties": false,

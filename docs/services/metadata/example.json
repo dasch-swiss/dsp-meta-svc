@@ -161,7 +161,7 @@
           "__type": "URL"
         }
       ],
-      "documentations": {
+      "additional": {
         "urls": [
           {
             "url": "https://dasch.swiss/0000-project/dataset-001/docs",

@@ -3,8 +3,10 @@
   "project": {
     "__id": "0000-project",
     "__type": "Project",
-    "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-    "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+    "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+    "__createdBy": "32141234213412341234234",
+    "__modifiedAt": "2009-11-10 23:30:00 +0000 UTC m=+0.000000003",
+    "__modifiedBy": "32141234213412341234235",
     "shortcode": "0000",
     "name": "Test Project Name",
     "description": {
@@ -81,8 +83,8 @@
     {
       "__id": "dataset-001",
       "__type": "Dataset",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "title": "Dataset 1",
       "accessConditions": "Embargo until 2023, then open access.",
       "howToCite": "Dataset XY, in Project AB (ARK: ...)",
@@ -181,8 +183,8 @@
     {
       "__id": "person-001",
       "__type": "Person",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "jobTitles": [
         "Professor"
       ],
@@ -196,13 +198,16 @@
         "organization-001"
       ],
       "address": {
+        "__id": "address-001",
+        "__type": "Address",
+        "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+        "__createdBy": "",
         "street": "Petersgraben 1",
         "additional": "Postfach",
         "postalCode": "4000",
         "locality": "Basel",
         "canton": "Basel-Stadt",
-        "country": "Switzerland",
-        "__type": "Address"
+        "country": "Switzerland"
       },
       "emails": [
         "jane.doe@dasch.swiss",
@@ -222,8 +227,10 @@
     {
       "__id": "organization-001",
       "__type": "Organization",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
+      "__modifiedAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__modifiedBy": "",
       "name": "DaSCH",
       "alternativeNames": [
         {
@@ -243,7 +250,10 @@
         "postalCode": "4000",
         "locality": "Basel",
         "country": "Switzerland",
-        "__type": "Address"
+        "__id": "address-001",
+        "__type": "Address",
+        "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+        "__createdBy": ""
       },
       "authorityRefs": [
         {
@@ -257,8 +267,8 @@
     {
       "__id": "organization-002",
       "__type": "Organization",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "name": "SNF",
       "alternativeNames": [
         {
@@ -272,8 +282,8 @@
     {
       "__id": "grant-001",
       "__type": "Grant",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "funders": [
         "organization-001"
       ],
@@ -290,8 +300,8 @@
   "dataManagementPlan": {
     "__id": "dmp-001",
     "__type": "DataManagementPlan",
-    "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-    "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+    "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+    "__createdBy": "",
     "available": true,
     "url": {
       "url": "https://dasch.swiss/someproject/dmp",

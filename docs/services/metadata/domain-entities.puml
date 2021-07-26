@@ -8,8 +8,8 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +Shortcode shortcode
     +String name
     +MultiLanguageText description
@@ -29,6 +29,10 @@ package toplevel {
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +DataManagementPlan dataManagementPlan
     +Date endDate
     +Person contactPerson
@@ -72,8 +76,8 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +String title
     +String accessConditions
     +String howToCite
@@ -89,6 +93,10 @@ package toplevel {
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +Date datePublished
     +Date dateCreated
     +Date dateModified
@@ -115,10 +123,14 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
 
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +boolean available
     +URL url
 
@@ -130,8 +142,8 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
 
     .. (1 - n) ..
     +Person[] funderPersons
@@ -139,6 +151,10 @@ package toplevel {
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +String number
     +MultiLanguageText name
     +URL url
@@ -156,10 +172,14 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
 
     .. (1 - n) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +String[] jobTitles
     +String[] givenNames
     +String[] familyNames
@@ -187,12 +207,16 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +String name
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +URL url
     +Address address
     +Email email
@@ -211,6 +235,10 @@ package toplevel {
     Struct containing a postal address.
     -- Required --
     .. (1) ..
+    -UUID id
+    -String type
+    -Date createdAt
+    -UUID createdBy
     +String street
     +String postalCode
     +String locality
@@ -218,6 +246,10 @@ package toplevel {
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +String canton
     +String additional
 
@@ -227,7 +259,9 @@ package toplevel {
     Struct holding information on how work on a dataset can be attributed to a person.
     -- Required Fields --
     .. (1) ..
+    ' TODO: do I need this as an entity too?
     +Person person
+    ' TODO: what about organization?
     .. (1 - n) ..
     +String[] roles
 
@@ -237,6 +271,7 @@ package toplevel {
     Struct holding license information.
     -- Required --
     .. (1) ..
+    ' TODO: do I need this as an entity too?
     +URL license
     +Date date
 

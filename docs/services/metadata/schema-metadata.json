@@ -131,13 +131,29 @@
           "description": "Type of this object",
           "const": "Project"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "shortcode": {
           "type": "string",
@@ -270,8 +286,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified",
+        "__createdAt",
+        "__createdBy",
         "shortcode",
         "name",
         "description",
@@ -298,13 +314,29 @@
           "type": "string",
           "const": "Grant"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "funders": {
           "description": "Legal bodies funding the grant.",
@@ -331,8 +363,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified",
+        "__createdAt",
+        "__createdBy",
         "funders"
       ],
       "additionalProperties": false
@@ -349,13 +381,29 @@
           "type": "string",
           "const": "Person"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "jobTitles": {
           "type": "array",
@@ -417,8 +465,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified",
+        "__createdAt",
+        "__createdBy",
         "jobTitles",
         "givenNames",
         "familyNames",
@@ -432,19 +480,35 @@
       "properties": {
         "__id": {
           "type": "string",
-          "description": "Unique id of the grant."
+          "description": "Unique id of the dataset."
         },
         "__type": {
           "type": "string",
           "const": "Dataset"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "title": {
           "type": "string",
@@ -573,8 +637,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified",
+        "__createdAt",
+        "__createdBy",
         "title",
         "accessConditions",
         "howToCite",
@@ -599,13 +663,29 @@
           "type": "string",
           "const": "Organization"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "name": {
           "type": "string",
@@ -642,8 +722,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified",
+        "__createdAt",
+        "__createdBy",
         "name"
       ],
       "additionalProperties": false
@@ -652,9 +732,37 @@
       "description": "A postal address.",
       "type": "object",
       "properties": {
+        "__id": {
+          "type": "string",
+          "description": "Unique id of the address."
+        },
         "__type": {
-          "description": "Internal Object type",
+          "type": "string",
           "const": "Address"
+        },
+        "__createdAt": {
+          "type": "string",
+          "description": "Creation date of this object"
+        },
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
+          "type": "string",
+          "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "street": {
           "type": "string",
@@ -682,7 +790,10 @@
         }
       },
       "required": [
+        "__id",
         "__type",
+        "__createdAt",
+        "__createdBy",
         "street",
         "postalCode",
         "locality",
@@ -702,13 +813,29 @@
           "type": "string",
           "const": "DataManagementPlan"
         },
-        "__created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "__modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "available": {
           "type": "boolean"
@@ -720,8 +847,8 @@
       "required": [
         "__id",
         "__type",
-        "__created",
-        "__modified"
+        "__createdAt",
+        "__createdBy"
       ],
       "additionalProperties": false
     },

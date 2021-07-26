@@ -15,6 +15,7 @@ package toplevel {
     +MultiLanguageText description
     +Date startDate
     +URL url
+    +String teaserText
 
     .. (1 - n) ..
     +Dataset[] datasets

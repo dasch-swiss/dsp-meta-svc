@@ -33,6 +33,7 @@
 | name                 | project name                                                   | 1                                           | `name`                                             | String                        | `name`               | string                                       | `:hasName`                            | xsd:string                   | 1               | Title (302)                                                             |
 | description          | project description                                            | 1                                           | `description`                                      | MultiLanguageText             | `description`        | object (multi-language text)                 | `:hasDescription`                     | xsd:string (with `@en` etc.) | 1-n             | Abstract (314)                                                          |
 | start date           | start date of the project                                      | 1                                           | `startDate`                                        | Date                          | `startDate`          | string (`YYYY-MM-DD`)                        | `:hasStartDate`                       | xsd:date                     | 1               | Start date (308)                                                        |
+| teaser text          | short teaser text for previewing the project                   | 1                                           | `teaserText`                                       | String                        | `teaserText`         | string                                       | ? <!-- TODO: what to call this? -->   | xsd:string                   | 1               | ?                                                                       |
 | datasets             | references to all datasets that are part of the project        | 1-n                                         | `datasets`                                         | Dataset[]                     | `datasets`           | array of string (ID)                         | - <!-- TODO: add? or leave as is? --> | -                            | 1-n             | <!-- TODO: note: they link it in dataset (400.1) -->                    |
 | keywords             | keywords describing the project                                | 1-n                                         | `keywords`                                         | MultiLanguageText[]           | `keywords`           | array of object (multi-language text)        | `:hasKeywords`                        | xsd:string                   | 1-n             | ?                                                                       |
 | disciplines          | discipline of research the project belongs to                  | 1-n                                         | `disciplineTexts` and `disciplineRefs`             | MultiLanguageText[] and URL[] | `disciplines`        | array of object (multi-language text or URL) | `:hasDiscipline`                      | schema:URL or xsd:string     | 1-n             | ? <!-- TODO: ideally create our own skos on basis of SNF vocabulary --> |
@@ -83,14 +84,6 @@
 
 
 <!-- TODO: make access conditions a fixed vocabulary: open, restricted, closed -->
-
-<!-- 
-.. (0 - n) ..
-+MultiLanguageText[] alternativeTitles
-+URL[] urls
-+MultiLanguageText[] documentationTexts
-+URL[] documentationURLs
- -->
 
 
 ### Address

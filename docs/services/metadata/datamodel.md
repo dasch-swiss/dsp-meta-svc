@@ -10,7 +10,7 @@
 | Person               | Person             | object   | <!-- XXX --> | <!-- XXX -->         |
 | Organization         | Organization       | object   | <!-- XXX --> | <!-- XXX -->         |
 | Address              | Address            | object   | :Address     | Addresses (112/207)  |
-| Grant                | Grant              | object   | <!-- XXX --> | <!-- XXX -->         |
+| Grant                | Grant              | object   | :Grant       | <!-- TODO -->?       |
 | Data Management Plan | DataManagementPlan | object   | <!-- XXX --> | <!-- XXX -->         |
 
 
@@ -107,6 +107,51 @@
 | _____________ | _______________________________________ | ___         | _____________ | _________________ | _______________ | ________  | _________________________ | ___________  | ___             | ________________________________ |
 
 
+### Grant
+
+| Property      | Note                                    | Cardinality | Domain Model                              | Domain Model Type           | JSON API        | JSON Type                    | RDF Mapping               | RDF type                 | RDF Cardinality | SWISSUbase mapping               |
+| ------------- | --------------------------------------- | ----------- | ----------------------------------------- | --------------------------- | --------------- | ---------------------------- | ------------------------- | ------------------------ | --------------- | -------------------------------- |
+| ID            | internal ID                             | 1           | `id`                                      | UUID                        | `__id`          | string                       | IRI                       | IRI                      | -               | -                                |
+| type          | internal type                           | 1           | `type`                                    | String                      | `__type`        | string                       | `@type` / `rdf:type`      | rdf:type                 | -               | -                                |
+| created at    | internal creation date                  | 1           | `createdAt`                               | Date                        | `__createdAt`   | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| created by    | ID of the user who created the resource | 1           | `createdBy`                               | User                        | `__createdBy`   | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| modified at   | internal last modification date         | 0-1         | `modifiedAt`                              | Date                        | `__modifiedAt`  | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| modified by   | ID of the user who last the resource    | 0-1         | `modifiedBy`                              | User                        | `__modifiedBy`  | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| deleted at    | internal deletion date                  | 0-1         | `deletedAt`                               | Date                        | `__deletedAt`   | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| deleted by    | ID of the user who deleted the resource | 0-1         | `deletedBy`                               | User                        | `__deletedBy`   | string                       | <!-- XXX -->              | <!-- XXX -->             | -               | -                                |
+| funders       | funding persons or organizations        | 1-n         | `funderPersons` and `funderOrganizations` | Person[] and Organization[] | `funders`       | array of string (ID)         | `:hasFunder`              | :Person or :Organization | 1-n             | ?                                |
+| number        | the official grant number               | 0-1         | `number`                                  | String                      | `number`        | string                       | `:hasNumber`              | xsd:string               | 0-1             | ?                                |
+| name          | name of the grant type                  | 0-1         | `name`                                    | MultiLanguageText           | `name`          | object (multi-language text) | `:hasname`                | xsd:string               | 0-n             | ?                                |
+| url           | url of the grant                        | 0-1         | `url`                                     | URL                         | `url`           | object (URL)                 | `:hasURL`                 | schema:URL               | 0-1             | ?                                |
+| _____________ | _______________________________________ | ___         | _______________________                   | _________________           | _______________ | ________________             | _________________________ | ___________              | ___             | ________________________________ |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+|               |                                         |             |                                           |                             |                 |                              |                           |                          |                 |                                  |
+
+<!-- 
+
+    -- Required Fields --
+    .. (1) ..
+
+    .. (1 - n) ..
+    +Person[] funderPersons
+    +Organization[] funderOrganizations
+
+    -- Optional Fields --
+    .. (0 - 1) ..
+    +String number
+    +MultiLanguageText name
+    +URL url
+
+  }
+
+ -->
 
 #### Status
 

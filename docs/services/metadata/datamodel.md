@@ -140,9 +140,9 @@
 | modified by   | ID of the user who last the resource             | 0-1         | `modifiedBy`      | User              | `__modifiedBy`  | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
 | deleted at    | internal deletion date                           | 0-1         | `deletedAt`       | Date              | `__deletedAt`   | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
 | deleted by    | ID of the user who deleted the resource          | 0-1         | `deletedBy`       | User              | `__deletedBy`   | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
-| _____________ | _______________________________________          | ___         | _________________ | _________________ | _______________ | ________________ | _________________________ | _____________ | ___             | ___________________________ |
 | available     | indicates if a data management plan is available | 0-1         | `available`       | Boolean           | `available`     | boolean          | `:isAvailable`            | xsd:boolean   | 0-1             | ?                           |
 | URL           | URL to the data management plan                  | 0-1         | `url`             | URL               | `url`           | object (URL)     | `hasURL`                  | schema:URL    | 0-1             | ?                           |
+| _____________ | _______________________________________          | ___         | _________________ | _________________ | _______________ | ________________ | _________________________ | _____________ | ___             | ___________________________ |
 
 
 ### License
@@ -157,10 +157,10 @@
 | modified by   | ID of the user who last the resource        | 0-1         | `modifiedBy`      | User              | `__modifiedBy`  | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
 | deleted at    | internal deletion date                      | 0-1         | `deletedAt`       | Date              | `__deletedAt`   | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
 | deleted by    | ID of the user who deleted the resource     | 0-1         | `deletedBy`       | User              | `__deletedBy`   | string           | <!-- XXX -->              | <!-- XXX -->  | -               | -                           |
-| _____________ | _______________________________________     | ___         | _________________ | _________________ | _______________ | ________________ | _________________________ | _____________ | ___             | ___________________________ |
 | license       | URL pointing to the license itself          | 1           | `license`         | URL               | `license`       | object (URL)     | `:hasLicenseURL`          | schema:URL    | 1               | ?                           |
 | date          | licensing date                              | 1           | `date`            | Date              | `date`          | string           | `:hasDate`                | xsd:date      | 1               | ?                           |
 | details       | additional information (e.g. license scope) | 0-1         | `details`         | String            | `details`       | string           | `:hasDetails`             | xsd:string    | 0-1             | ?                           |
+| _____________ | _______________________________________     | ___         | _________________ | _________________ | _______________ | ________________ | _________________________ | _____________ | ___             | ___________________________ |
 
 
 #### Status

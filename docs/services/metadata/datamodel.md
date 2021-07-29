@@ -88,6 +88,26 @@
 <!-- TODO: make access conditions a fixed vocabulary: open, restricted, closed -->
 
 
+#### Status
+
+Dataset status can have one of the following values:
+
+- `In planning`
+- `Ongoing`
+- `On hold`
+- `Finished`
+
+#### Types of Data
+
+The following Values are allowed in "Types of Data":
+
+- `XML`
+- `Text`
+- `Image`
+- `Video`
+- `Audio`
+
+
 ### Address
 
 | Property      | Note                                    | Cardinality | Domain Model  | Domain Model Type | JSON API        | JSON Type | RDF Mapping               | RDF type     | RDF Cardinality | SWISSUbase mapping               |
@@ -163,24 +183,6 @@
 | _____________ | _______________________________________     | ___         | _________________ | _________________ | _______________ | ________________ | _________________________ | _____________ | ___             | ___________________________ |
 
 
-#### Status
-
-Dataset status can have one of the following values:
-
-- `In planning`
-- `Ongoing`
-- `On hold`
-- `Finished`
-
-#### Types of Data
-
-The following Values are allowed in "Types of Data":
-
-- `XML`
-- `Text`
-- `Image`
-- `Video`
-- `Audio`
 
 ## Data Types
 

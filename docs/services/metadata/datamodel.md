@@ -258,32 +258,10 @@ Attribution attributes one or more roles to a person or organization.
 ```
 
 
-#### License
-
-```jsonc
-{
-  "__type": "License",
-  "license": {  // the license itself is specified as a URL object
-    "text": "CC-BY 4.0",
-    "type": "URL",
-    "url": "https://creativecommons.org/licenses/by/4.0/",
-    "__type": "URL"
-  },
-  "date": "2020-01-01",
-  "details": "All files included in the dataset can be re-used under the CC BY 4.0 license."
-}
-```
-
 
 <!-- TODO: add API stuff for all the classes -->
 
 
-
-### template
-
-| General | Domain Model | JSON API | JSON-LD Mapping | SWISSUbase mapping |
-| ------- | ------------ | -------- | --------------- | ------------------ |
-|         |              |          |                 |                    |
 
 
 
@@ -314,35 +292,6 @@ This JSON contains the entirety of a dataset. Endpoints can be implemented that 
 
 Other serializations of the data are possible. Eventually, a serialization in RDF should bee added.
 
-### Macro structure
-
-The overall structure of the JSON representation of a metadata-set should look like this:
-
-```json
-{
-  "$schema": "...",
-  "project": {
-    ...
-  },
-  "datasets": [
-    ...
-  ],
-  "persons": [
-    ...
-  ],
-  "organizations": [
-    ...
-  ],
-  "grants": [
-    ...
-  ],
-  "dataManagementPlan": {
-    ...
-  }
-}
-```
-
-`project` and `datasets` are required, `persons`, `organizations`, `grants` and `dataManagementPlan` are optional.
 
 ## Building the UML Diagrams
 

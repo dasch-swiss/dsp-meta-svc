@@ -261,23 +261,35 @@ package toplevel {
     -- Required Fields --
     .. (1) ..
     ' TODO: do I need this as an entity too?
-    +Person person
-    ' TODO: what about organization?
     .. (1 - n) ..
+    +Person agentPerson
+    +Organization agentOrganization
     +String[] roles
 
   }
+
+  note left of Attribution::agentPerson
+    `agentPerson` and `agentOrganization`
+    together are `agent` (1)
+  end note
 
   class License {
     Struct holding license information.
     -- Required --
     .. (1) ..
-    ' TODO: do I need this as an entity too?
+    -UUID id
+    -String type
+    -Date createdAt
+    -UUID createdBy
     +URL license
     +Date date
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +String details
   }
   

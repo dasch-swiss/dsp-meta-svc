@@ -210,10 +210,8 @@
         "canton": "Basel-Stadt",
         "country": "Switzerland"
       },
-      "emails": [
-        "jane.doe@dasch.swiss",
-        "j.doe@gmail.com"
-      ],
+      "email": "jane.doe@dasch.swiss",
+      "secondaryEmail": "j.doe@gmail.com",
       "authorityRefs": [
         {
           "url": "http://viaf.org/viaf/00000000",

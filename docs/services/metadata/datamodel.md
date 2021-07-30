@@ -16,6 +16,11 @@
 
 
 
+<!-- TODO: compare multi-language text between swissubase and our model -->
+<!-- QUESTION: country als vocabulary? -->
+<!-- QUESTION: attribution as entity? -->
+<!-- TODO: role in attribution: should be vocabulary -->
+
 
 ## Properties on Resource Classes
 
@@ -53,6 +58,8 @@
 | ___________________  | _________________________________                              | ___                                         | __________________________                         | ________________________      | ____________________ | ___________________________                  | ___________________________           | ________________             | ___             | ________________                                                        |
 
 
+<!-- TODO: disciplines: make our own SKOS vocabulary on basis of SNF disciplines -->
+
 
 ### Dataset
 
@@ -87,7 +94,6 @@
 
 <!-- TODO: make access conditions a fixed vocabulary: open, restricted, closed -->
 
-
 #### Status
 
 Dataset status can have one of the following values:
@@ -106,6 +112,93 @@ The following Values are allowed in "Types of Data":
 - `Image`
 - `Video`
 - `Audio`
+
+
+
+### Person
+
+| Property            | Note                                    | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type                   | RDF Mapping                 | RDF type         | RDF Cardinality | SWISSUbase mapping |
+| ------------------- | --------------------------------------- | ----------- | -------------------------- | ------------------------ | -------------------- | --------------------------- | --------------------------- | ---------------- | --------------- | ------------------ |
+| ID                  | internal ID                             | 1           | `id`                       | UUID                     | `__id`               | string                      | IRI                         | IRI              | -               | -                  |
+| type                | internal type                           | 1           | `type`                     | String                   | `__type`             | string                      | `@type` / `rdf:type`        | rdf:type         | -               | -                  |
+| created at          | internal creation date                  | 1           | `createdAt`                | Date                     | `__createdAt`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| created by          | ID of the user who created the resource | 1           | `createdBy`                | User                     | `__createdBy`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| modified at         | internal last modification date         | 0-1         | `modifiedAt`               | Date                     | `__modifiedAt`       | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| modified by         | ID of the user who last the resource    | 0-1         | `modifiedBy`               | User                     | `__modifiedBy`       | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| deleted at          | internal deletion date                  | 0-1         | `deletedAt`                | Date                     | `__deletedAt`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| deleted by          | ID of the user who deleted the resource | 0-1         | `deletedBy`                | User                     | `__deletedBy`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| ___________________ | _______________________________________ | ___         | __________________________ | ________________________ | ____________________ | ___________________________ | ___________________________ | ________________ | ___             | ________________   |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+
+
+<!-- 
+
+    .. (1 - n) ..
+    +String[] jobTitles
+    +String[] givenNames
+    +String[] familyNames
+    +Organization[] affiliation
+
+    .. (0 - 1) ..
+    +Address address
+
+    .. (0 - 2) ..
+    +Email[] emails -> primary and secondary!
+
+    .. (0 - n) ..
+    +URL[] authorityRefs
+
+ -->
+
+
+### Organization
+
+| Property            | Note                                    | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type                   | RDF Mapping                 | RDF type         | RDF Cardinality | SWISSUbase mapping |
+| ------------------- | --------------------------------------- | ----------- | -------------------------- | ------------------------ | -------------------- | --------------------------- | --------------------------- | ---------------- | --------------- | ------------------ |
+| ID                  | internal ID                             | 1           | `id`                       | UUID                     | `__id`               | string                      | IRI                         | IRI              | -               | -                  |
+| type                | internal type                           | 1           | `type`                     | String                   | `__type`             | string                      | `@type` / `rdf:type`        | rdf:type         | -               | -                  |
+| created at          | internal creation date                  | 1           | `createdAt`                | Date                     | `__createdAt`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| created by          | ID of the user who created the resource | 1           | `createdBy`                | User                     | `__createdBy`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| modified at         | internal last modification date         | 0-1         | `modifiedAt`               | Date                     | `__modifiedAt`       | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| modified by         | ID of the user who last the resource    | 0-1         | `modifiedBy`               | User                     | `__modifiedBy`       | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| deleted at          | internal deletion date                  | 0-1         | `deletedAt`                | Date                     | `__deletedAt`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| deleted by          | ID of the user who deleted the resource | 0-1         | `deletedBy`                | User                     | `__deletedBy`        | string                      | <!-- XXX -->                | <!-- XXX -->     | -               | -                  |
+| ___________________ | _______________________________________ | ___         | __________________________ | ________________________ | ____________________ | ___________________________ | ___________________________ | ________________ | ___             | ________________   |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+
+
+
+<!-- 
+
+
+    .. (1) ..
+    +String name
+
+    -- Optional --
+    .. (0 - 1) ..
+    +URL url
+    +Address address -> 0-n
+    +Email email
+
+    .. (0 - n) ..
+    +MultiLanguageText[] alternativeNames
+    +URL[] authorityRefs
+
+ -->
 
 
 ### Address

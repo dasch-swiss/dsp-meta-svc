@@ -342,8 +342,7 @@ package valueobject {
   class Date {
     Valueobject struct holding an ISO date.
     -- Fields --
-    +String value
-    'TODO: string or date String
+    +Date value
     -- Methods --
     .. Static Methods ..
     {static} +URL newDate()

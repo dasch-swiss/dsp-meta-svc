@@ -276,7 +276,7 @@ The following values are accepted in `type`:
 - URL
 - Geonames
 - Pleiades
-- Skos
+- Skos/unesco6
 - Periodo
 - Chronontology
 - GND

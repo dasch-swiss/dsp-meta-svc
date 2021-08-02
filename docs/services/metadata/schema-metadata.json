@@ -303,7 +303,8 @@
         "temporalCoverage",
         "spatialCoverage",
         "funders",
-        "url"
+        "url",
+        "howToCite"
       ],
       "additionalProperties": false
     },

@@ -8,7 +8,7 @@
 | Project              | Project            | object   | :Project            | StudyVersion (300)   |
 | Dataset              | Dataset            | object   | :Dataset            | DatasetVersion (400) |
 | Person               | Person             | object   | :Person             | Person (100)         |
-| Organization         | Organization       | object   | <!-- XXX -->        | <!-- XXX -->         |
+| Organization         | Organization       | object   | :Organization       | Institution (200)    |
 | Address              | Address            | object   | :Address            | Addresses (112/207)  |
 | Grant                | Grant              | object   | :Grant              | ?                    |
 | Data Management Plan | DataManagementPlan | object   | :DataManagementPlan | ?                    |
@@ -141,45 +141,25 @@ The following Values are allowed in "Types of Data":
 
 ### Organization
 
-| Property            | Note                                    | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type                   | RDF Mapping                 | RDF type         | RDF Cardinality | SWISSUbase mapping |
-| ------------------- | --------------------------------------- | ----------- | -------------------------- | ------------------------ | -------------------- | --------------------------- | --------------------------- | ---------------- | --------------- | ------------------ |
-| ID                  | internal ID                             | 1           | `id`                       | UUID                     | `__id`               | string                      | IRI                         | IRI              | -               | -                  |
-| type                | internal type                           | 1           | `type`                     | String                   | `__type`             | string                      | `@type` / `rdf:type`        | rdf:type         | -               | -                  |
-| created at          | internal creation date                  | 1           | `createdAt`                | Date                     | `__createdAt`        | string                      | -                           | -                | -               | -                  |
-| created by          | ID of the user who created the resource | 1           | `createdBy`                | User                     | `__createdBy`        | string                      | -                           | -                | -               | -                  |
-| modified at         | internal last modification date         | 0-1         | `modifiedAt`               | Date                     | `__modifiedAt`       | string                      | -                           | -                | -               | -                  |
-| modified by         | ID of the user who last the resource    | 0-1         | `modifiedBy`               | User                     | `__modifiedBy`       | string                      | -                           | -                | -               | -                  |
-| deleted at          | internal deletion date                  | 0-1         | `deletedAt`                | Date                     | `__deletedAt`        | string                      | -                           | -                | -               | -                  |
-| deleted by          | ID of the user who deleted the resource | 0-1         | `deletedBy`                | User                     | `__deletedBy`        | string                      | -                           | -                | -               | -                  |
-| ___________________ | _______________________________________ | ___         | __________________________ | ________________________ | ____________________ | ___________________________ | ___________________________ | ________________ | ___             | ________________   |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
-|                     |                                         |             |                            |                          |                      |                             |                             |                  |                 |                    |
+| Property                  | Note                                                               | Cardinality | Domain Model               | Domain Model Type        | JSON API             | JSON Type                             | RDF Mapping                 | RDF type         | RDF Cardinality | SWISSUbase mapping |
+| ------------------------- | ------------------------------------------------------------------ | ----------- | -------------------------- | ------------------------ | -------------------- | ------------------------------------- | --------------------------- | ---------------- | --------------- | ------------------ |
+| ID                        | internal ID                                                        | 1           | `id`                       | UUID                     | `__id`               | string                                | IRI                         | IRI              | -               | -                  |
+| type                      | internal type                                                      | 1           | `type`                     | String                   | `__type`             | string                                | `@type` / `rdf:type`        | rdf:type         | -               | -                  |
+| created at                | internal creation date                                             | 1           | `createdAt`                | Date                     | `__createdAt`        | string                                | -                           | -                | -               | -                  |
+| created by                | ID of the user who created the resource                            | 1           | `createdBy`                | User                     | `__createdBy`        | string                                | -                           | -                | -               | -                  |
+| modified at               | internal last modification date                                    | 0-1         | `modifiedAt`               | Date                     | `__modifiedAt`       | string                                | -                           | -                | -               | -                  |
+| modified by               | ID of the user who last the resource                               | 0-1         | `modifiedBy`               | User                     | `__modifiedBy`       | string                                | -                           | -                | -               | -                  |
+| deleted at                | internal deletion date                                             | 0-1         | `deletedAt`                | Date                     | `__deletedAt`        | string                                | -                           | -                | -               | -                  |
+| deleted by                | ID of the user who deleted the resource                            | 0-1         | `deletedBy`                | User                     | `__deletedBy`        | string                                | -                           | -                | -               | -                  |
+| name                      | the name of the organization                                       | 1           | `name`                     | String                   | `name`               | string                                | `:hasName`                  | xsd:string       | 1               | Name (201)         |
+| URL                       | the organization's website                                         | 0-1         | `url`                      | URL                      | `url`                | object (URL)                          | `:hasURL`                   | schema:URL       | 0-1             | Website (204)      |
+| address                   | postal address of the organization                                 | 0-1         | `address`                  | Address                  | `address`            | object (Address)                      | `:hasAddress`               | :Address         | 0-1             | Addresses (207)    |
+| e-mail                    | e-mail address of the organization                                 | 0-1         | `email`                    | Email                    | `email`              | string                                | `:hasEmail`                 | xsd:string       | 0-1             | Email (206)        |
+| alternative names         | alternative names of hte organization                              | 0-n         | `alternativeNames`         | MultiLanguageText[]      | `alternativeNames`   | array of object (multi-language text) | `:hasAlternativeNames`      | xsd:string       | 0-n             | Name (201)         |
+| authority file references | references to the organization's entry in external authority files | 0-n         | `authorityRefs`            | URL[]                    | `authorityRefs`      | array of object (URL)                 | `:sameAs`?                  | schema:URL       | 0-n             | ?                  |
+| ___________________       | _______________________________________                            | ___         | __________________________ | ________________________ | ____________________ | ___________________________           | ___________________________ | ________________ | ___             | ________________   |
 
 
-
-<!-- 
-
-
-    .. (1) ..
-    +String name
-
-    -- Optional --
-    .. (0 - 1) ..
-    +URL url
-    +Address address -> 0-n
-    +Email email
-
-    .. (0 - n) ..
-    +MultiLanguageText[] alternativeNames
-    +URL[] authorityRefs
-
- -->
 
 
 ### Address

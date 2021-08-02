@@ -2,11 +2,10 @@
 
 
 <!-- TASKS: TODOs -->
-<!-- TODO: role in attribution: should be vocabulary -->
 <!-- TODO: disciplines: make our own SKOS vocabulary on basis of SNF disciplines -->
-<!-- TODO: dataset - accessConditions: make a fixed vocabulary: open, restricted, closed -->
 
 <!-- TASKS: questions -->
+<!-- QUESTION: role in attribution: should be vocabulary -->
 <!-- QUESTION: country als vocabulary? -->
 <!-- QUESTION: project - howToCite: should this be optional? -->
 <!-- QUESTION: how to treat person - names -->
@@ -78,7 +77,7 @@
 | deleted at          | internal deletion date                                                  | 0-1         | `deletedAt`                            | Date                          | `__deletedAt`        | string                                       | -                           | -                        | -               | -                              |
 | deleted by          | ID of the user who deleted the resource                                 | 0-1         | `deletedBy`                            | User                          | `__deletedBy`        | string                                       | -                           | -                        | -               | -                              |
 | title               | title of the dataset                                                    | 1           | `title`                                | String                        | `title`              | string                                       | `:hasTitle`                 | xsd:string               | 1               | Title (402)                    |
-| accessConditions    | conditions under which the dataset can be accessed                      | 1           | `accessConditions`                     | String                        | `accessConditions`   | string                                       | `:hasAccessConditions`      | xsd:string               | 1               | Special permission (413)       |
+| access conditions   | conditions under which the dataset can be accessed                      | 1           | `accessConditions`                     | String                        | `accessConditions`   | string                                       | `:hasAccessConditions`      | xsd:string               | 1               | Special permission (413)       |
 | how-to-cite         | representation how to correctly cite the dataset                        | 1           | `howToCite`                            | String                        | `howToCite`          | string                                       | `:hasHowToCite`             | xsd:string               | 1               | Bibliographical citation (409) |
 | status              | the status of the dataset                                               | 1           | `status`                               | String (enum)                 | `status`             | string (enum)                                | `:hasStatus`                | xsd:string               | 1               | ?                              |
 | abstracts           | abstracts describing the dataset                                        | 1-n         | `abstractTexts` and `abstractURLs`     | MultiLanguageText[] and URL[] | `abstract`           | array of object (multi-language text or URL) | `:hasAbstract`              | xsd:string or schema:URL | 1-n             | ?                              |
@@ -108,13 +107,22 @@ Dataset status can have one of the following values:
 
 #### Types of Data
 
-The following Values are allowed in "Types of Data":
+The following values are allowed in "Types of Data":
 
 - `XML`
 - `Text`
 - `Image`
 - `Video`
 - `Audio`
+
+
+#### Access Conditions
+
+The following values are allowed as access conditions:
+
+- `open`
+- `restricted`
+- `closed`
 
 
 
@@ -316,7 +324,6 @@ Attribution attributes one or more roles to a person or organization.
 
 
 
-<!-- TODO: add API stuff for all the classes -->
 
 
 

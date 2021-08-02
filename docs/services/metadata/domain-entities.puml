@@ -80,7 +80,7 @@ package toplevel {
     -Date createdAt
     -UUID createdBy
     +String title
-    +String accessConditions
+    +AccessConditions accessConditions
     +String howToCite
     +Status status
 
@@ -259,8 +259,6 @@ package toplevel {
   class Attribution {
     Struct holding information on how work on a dataset can be attributed to a person.
     -- Required Fields --
-    .. (1) ..
-    ' TODO: do I need this as an entity too?
     .. (1 - n) ..
     +Person agentPerson
     +Organization agentOrganization
@@ -380,6 +378,12 @@ package valueobject {
 }
 
 package enums {
+
+  enum AccessConditions {
+    Open
+    Restricted
+    Closed
+  }
 
   enum TypesOfData {
     XML

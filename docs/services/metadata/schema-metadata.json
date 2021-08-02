@@ -521,7 +521,12 @@
         },
         "accessConditions": {
           "type": "string",
-          "description": "The conditions under which the data of the dataset can be accessed."
+          "description": "The conditions under which the data of the dataset can be accessed.",
+          "enum": [
+            "open",
+            "restricted",
+            "closed"
+          ]
         },
         "howToCite": {
           "type": "string",

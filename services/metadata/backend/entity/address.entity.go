@@ -1,15 +1,16 @@
 package main
 
 import (
-	// "errors"
 	"fmt"
+	"log"
 
+	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
-	// "github.com/opencontainers/runc/libcontainer/configs/validate"
 )
 
 const addresType = "http://ns.dasch.swiss/repository#Address"
 
+// TODO canton and additonal should be optional
 type Address struct {
 	ID         valueobject.Identifier  `json:"id"`
 	Type       string                  `json:"type"`
@@ -25,10 +26,15 @@ type Address struct {
 	ChangedBy  valueobject.Identifier  `json:"changedBy,omitempty"`
 	DeletedAt  valueobject.Timestamp   `json:"deletedAt,omitempty"`
 	DeletedBy  valueobject.Identifier  `json:"deletedBy,omitempty"`
+
+	changes []event.Event
 }
 
-func NewAddress(Street valueobject.Street, PostalCode valueobject.PostalCode, Locality valueobject.Locality, Country valueobject.Country, Canton *valueobject.Canton, Additional *valueobject.Additional) (*Address, error) {
-	a := &Address{
+// creates a new address entity
+func NewAddress(Street valueobject.Street, PostalCode valueobject.PostalCode, Locality valueobject.Locality, Country valueobject.Country, Canton *valueobject.Canton, Additional *valueobject.Additional) *Address {
+	a := &Address{}
+
+	a.raise(&event.AddressCreated{
 		ID:         valueobject.Identifier{},
 		Type:       addresType,
 		Street:     Street,
@@ -39,68 +45,38 @@ func NewAddress(Street valueobject.Street, PostalCode valueobject.PostalCode, Lo
 		Additional: Additional,
 		CreatedAt:  valueobject.NewTimestamp(),
 		CreatedBy:  valueobject.Identifier{},
-		ChangedAt:  valueobject.NewTimestamp(),
-		ChangedBy:  valueobject.Identifier{},
-		DeletedAt:  valueobject.NewTimestamp(),
-		DeletedBy:  valueobject.Identifier{},
-	}
-
-	// if a.Street == "" || a.PostalCode == "" || a.Locality == "" || a.Country == "" {
-	// 	fmt.Print("Invalid address: street, postalCode, locality and country are required")
-	// 	return nil, errors.New("Invalid address: street, postalCode, locality and country are required")
-	// }
+	})
 
 	fmt.Println(a)
 
-	return a, nil
+	return a
 }
 
-func (a *Address) AddType() error {
-	a.Type = addresType
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
+// updates an address entity
+func (a *Address) UpdateAddress(id valueobject.Identifier, Street valueobject.Street, PostalCode valueobject.PostalCode, Locality valueobject.Locality, Country valueobject.Country, Canton *valueobject.Canton, Additional *valueobject.Additional) *Address {
+	a.raise(&event.AddressChanged{
+		ID:         id,
+		Street:     Street,
+		PostalCode: PostalCode,
+		Locality:   Locality,
+		Country:    Country,
+		Canton:     Canton,
+		Additional: Additional,
+		ChangedAt:  valueobject.NewTimestamp(),
+		ChangedBy:  valueobject.Identifier{},
+	})
+
 	return nil
 }
 
-func (a *Address) AddStreet(s valueobject.Street) error {
-	a.Street = s
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
-	return nil
-}
+// deletes an address entity
+func (a *Address) DeleteAddress(id valueobject.Identifier) *Address {
+	a.raise(&event.AddressDeleted{
+		ID:        id,
+		DeletedAt: valueobject.NewTimestamp(),
+		DeletedBy: valueobject.Identifier{},
+	})
 
-func (a *Address) AddPostalCode(pc valueobject.PostalCode) error {
-	a.PostalCode = pc
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
-	return nil
-}
-
-func (a *Address) AddLocality(l valueobject.Locality) error {
-	a.Locality = l
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
-	return nil
-}
-
-func (a *Address) AddCountry(c valueobject.Country) error {
-	a.Country = c
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
-	return nil
-}
-
-func (a *Address) AddCanton(c valueobject.Canton) error {
-	a.Canton = &c
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
-	return nil
-}
-
-func (a *Address) AddAdditional(add valueobject.Additional) error {
-	a.Additional = &add
-	a.ChangedAt = valueobject.NewTimestamp()
-	// a.ChangedBy = valueobject.Identifier{}
 	return nil
 }
 
@@ -112,4 +88,63 @@ func main() {
 	// canton, _ := valueobject.NewCanton("Basel-Stadt")
 	// additional, _ := valueobject.NewAdditional("blablabla")
 	NewAddress(street, code, locality, coauntry, nil, nil)
+}
+
+// The raise method does two things, it appends the event into our changes slice
+// and calls the event handler On saying that this is a new event and we should
+// not increment the version number. The version is an optimistic concurrency
+// pattern used to help us avoid database locks to change our aggregate.
+func (a *Address) raise(event event.Event) {
+	a.changes = append(a.changes, event)
+	a.On(event, true)
+}
+
+// On handles user events on the project aggregate.
+// The On method first does a type switch on the event and selects the case for
+// each event type. This is where state change happens. Once an event is emitted
+// and saved we do not throw an error, we simply process the event and carry on.
+// We can change here if we decide that an event is no longer relevant or if it
+// means something different, but we can’t return an error and say an event is
+// invalid. Then we check if this is a new event. If it isn’t we increment the
+// version number of our aggregate.
+func (a *Address) On(ev event.Event, new bool) {
+	switch e := ev.(type) {
+	case *event.AddressCreated:
+		a.ID = e.ID
+		a.Type = addresType
+		a.Street = e.Street
+		a.PostalCode = e.PostalCode
+		a.Locality = e.Locality
+		a.Country = e.Country
+		a.CreatedAt = e.CreatedAt
+		a.CreatedBy = e.CreatedBy
+
+	case *event.AddressChanged:
+		a.ID = e.ID
+		a.Street = e.Street
+		a.PostalCode = e.PostalCode
+		a.Locality = e.Locality
+		a.Country = e.Country
+		a.ChangedAt = e.ChangedAt
+		a.ChangedBy = e.ChangedBy
+
+	case *event.AddressDeleted:
+		a.ID = e.ID
+		a.DeletedAt = e.DeletedAt
+		a.DeletedBy = e.DeletedBy
+
+	default:
+		log.Printf("unknown event %T", e)
+	}
+}
+
+// helper method that creates a new address from a series of events
+func NewAddressFromEvents(e []event.Event) *Address {
+	a := &Address{}
+
+	for _, err := range e {
+		a.On(err, false)
+	}
+
+	return a
 }

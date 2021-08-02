@@ -1,13 +1,13 @@
-load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
 
 go_library(
     name = "event",
     srcs = [
         "event.go",
-        "addres.event.go",
+        "address.event.go",
     ],
-    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/meta/backend/event",
-    visibility = ["//services/meta:__subpackages__"],
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event",
+    visibility = ["//services/metadata:__subpackages__"],
     deps = [
         "//shared/go/pkg/valueobject",
     ],

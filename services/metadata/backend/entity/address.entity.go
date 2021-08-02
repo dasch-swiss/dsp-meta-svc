@@ -1,67 +1,69 @@
-package main
+package address
 
 import (
-	"fmt"
+	// "fmt"
 	"log"
 
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 )
 
-const addresType = "http://ns.dasch.swiss/repository#Address"
+const addressType = "http://ns.dasch.swiss/repository#Address"
 
 // TODO canton and additonal should be optional
 type Address struct {
-	ID         valueobject.Identifier  `json:"id"`
-	Type       string                  `json:"type"`
-	Street     valueobject.Street      `json:"street"`
-	PostalCode valueobject.PostalCode  `json:"postalCode"`
-	Locality   valueobject.Locality    `json:"locality"`
-	Country    valueobject.Country     `json:"country"`
-	Canton     *valueobject.Canton     `json:"canton"`
-	Additional *valueobject.Additional `json:"additional"`
-	CreatedAt  valueobject.Timestamp   `json:"createdAt"`
-	CreatedBy  valueobject.Identifier  `json:"createdBy"`
-	ChangedAt  valueobject.Timestamp   `json:"changedAt,omitempty"`
-	ChangedBy  valueobject.Identifier  `json:"changedBy,omitempty"`
-	DeletedAt  valueobject.Timestamp   `json:"deletedAt,omitempty"`
-	DeletedBy  valueobject.Identifier  `json:"deletedBy,omitempty"`
+	ID         valueobject.Identifier `json:"id"`
+	Type       string                 `json:"type"`
+	Street     valueobject.Street     `json:"street"`
+	PostalCode valueobject.PostalCode `json:"postalCode"`
+	Locality   valueobject.Locality   `json:"locality"`
+	Country    valueobject.Country    `json:"country"`
+	Canton     valueobject.Canton     `json:"canton"`
+	Additional valueobject.Additional `json:"additional"`
+	CreatedAt  valueobject.Timestamp  `json:"createdAt"`
+	CreatedBy  valueobject.Identifier `json:"createdBy"`
+	ChangedAt  valueobject.Timestamp  `json:"changedAt,omitempty"`
+	ChangedBy  valueobject.Identifier `json:"changedBy,omitempty"`
+	DeletedAt  valueobject.Timestamp  `json:"deletedAt,omitempty"`
+	DeletedBy  valueobject.Identifier `json:"deletedBy,omitempty"`
 
-	changes []event.Event
+	Changes []event.Event
 }
 
 // creates a new address entity
-func NewAddress(Street valueobject.Street, PostalCode valueobject.PostalCode, Locality valueobject.Locality, Country valueobject.Country, Canton *valueobject.Canton, Additional *valueobject.Additional) *Address {
+func NewAddress(id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) *Address {
 	a := &Address{}
 
 	a.raise(&event.AddressCreated{
-		ID:         valueobject.Identifier{},
-		Type:       addresType,
-		Street:     Street,
-		PostalCode: PostalCode,
-		Locality:   Locality,
-		Country:    Country,
-		Canton:     Canton,
-		Additional: Additional,
+		ID:         id,
+		Type:       addressType,
+		Street:     street,
+		PostalCode: postalCode,
+		Locality:   locality,
+		Country:    country,
+		Canton:     canton,
+		Additional: additional,
 		CreatedAt:  valueobject.NewTimestamp(),
 		CreatedBy:  valueobject.Identifier{},
 	})
-
-	fmt.Println(a)
 
 	return a
 }
 
 // updates an address entity
-func (a *Address) UpdateAddress(id valueobject.Identifier, Street valueobject.Street, PostalCode valueobject.PostalCode, Locality valueobject.Locality, Country valueobject.Country, Canton *valueobject.Canton, Additional *valueobject.Additional) *Address {
+func (a *Address) UpdateAddress(id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) error {
+	if !a.DeletedAt.Time().IsZero() {
+		return ErrAddressHasBeenDeleted
+	}
 	a.raise(&event.AddressChanged{
 		ID:         id,
-		Street:     Street,
-		PostalCode: PostalCode,
-		Locality:   Locality,
-		Country:    Country,
-		Canton:     Canton,
-		Additional: Additional,
+		Type:       addressType,
+		Street:     street,
+		PostalCode: postalCode,
+		Locality:   locality,
+		Country:    country,
+		Canton:     canton,
+		Additional: additional,
 		ChangedAt:  valueobject.NewTimestamp(),
 		ChangedBy:  valueobject.Identifier{},
 	})
@@ -70,7 +72,11 @@ func (a *Address) UpdateAddress(id valueobject.Identifier, Street valueobject.St
 }
 
 // deletes an address entity
-func (a *Address) DeleteAddress(id valueobject.Identifier) *Address {
+func (a *Address) DeleteAddress(id valueobject.Identifier) error {
+	if !a.DeletedAt.Time().IsZero() {
+		return ErrAddressHasBeenDeleted
+	}
+
 	a.raise(&event.AddressDeleted{
 		ID:        id,
 		DeletedAt: valueobject.NewTimestamp(),
@@ -80,22 +86,22 @@ func (a *Address) DeleteAddress(id valueobject.Identifier) *Address {
 	return nil
 }
 
-func main() {
-	street, _ := valueobject.NewStreet("street")
-	code, _ := valueobject.NewPostalCode("00-000")
-	locality, _ := valueobject.NewLocality("Poznan")
-	coauntry, _ := valueobject.NewCountry("Poland")
-	// canton, _ := valueobject.NewCanton("Basel-Stadt")
-	// additional, _ := valueobject.NewAdditional("blablabla")
-	NewAddress(street, code, locality, coauntry, nil, nil)
-}
+// func main() {
+// 	street, _ := valueobject.NewStreet("street")
+// 	code, _ := valueobject.NewPostalCode("00-000")
+// 	locality, _ := valueobject.NewLocality("Poznan")
+// 	coauntry, _ := valueobject.NewCountry("Poland")
+// 	// canton, _ := valueobject.NewCanton("Basel-Stadt")
+// 	// additional, _ := valueobject.NewAdditional("blablabla")
+// 	NewAddress(street, code, locality, coauntry, nil, nil)
+// }
 
 // The raise method does two things, it appends the event into our changes slice
 // and calls the event handler On saying that this is a new event and we should
 // not increment the version number. The version is an optimistic concurrency
 // pattern used to help us avoid database locks to change our aggregate.
 func (a *Address) raise(event event.Event) {
-	a.changes = append(a.changes, event)
+	a.Changes = append(a.Changes, event)
 	a.On(event, true)
 }
 
@@ -111,20 +117,25 @@ func (a *Address) On(ev event.Event, new bool) {
 	switch e := ev.(type) {
 	case *event.AddressCreated:
 		a.ID = e.ID
-		a.Type = addresType
+		a.Type = addressType
 		a.Street = e.Street
 		a.PostalCode = e.PostalCode
 		a.Locality = e.Locality
 		a.Country = e.Country
+		a.Canton = e.Canton
+		a.Additional = e.Additional
 		a.CreatedAt = e.CreatedAt
 		a.CreatedBy = e.CreatedBy
 
 	case *event.AddressChanged:
 		a.ID = e.ID
+		a.Type = addressType
 		a.Street = e.Street
 		a.PostalCode = e.PostalCode
 		a.Locality = e.Locality
 		a.Country = e.Country
+		a.Country = e.Country
+		a.Canton = e.Canton
 		a.ChangedAt = e.ChangedAt
 		a.ChangedBy = e.ChangedBy
 

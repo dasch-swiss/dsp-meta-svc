@@ -9,29 +9,29 @@ func (e AddressChanged) isEvent() {}
 func (e AddressDeleted) isEvent() {}
 
 type AddressCreated struct {
-	ID         valueobject.Identifier  `json:"id"`
-	Type       string                  `json:"type"`
-	Street     valueobject.Street      `json:"street"`
-	PostalCode valueobject.PostalCode  `json:"postalCode"`
-	Locality   valueobject.Locality    `json:"locality"`
-	Country    valueobject.Country     `json:"country"`
-	Canton     *valueobject.Canton     `json:"canton"`
-	Additional *valueobject.Additional `json:"additional"`
-	CreatedAt  valueobject.Timestamp   `json:"createdAt"`
-	CreatedBy  valueobject.Identifier  `json:"createdBy"`
+	ID         valueobject.Identifier `json:"id"`
+	Type       string                 `json:"type"`
+	Street     valueobject.Street     `json:"street"`
+	PostalCode valueobject.PostalCode `json:"postalCode"`
+	Locality   valueobject.Locality   `json:"locality"`
+	Country    valueobject.Country    `json:"country"`
+	Canton     valueobject.Canton     `json:"canton"`
+	Additional valueobject.Additional `json:"additional"`
+	CreatedAt  valueobject.Timestamp  `json:"createdAt"`
+	CreatedBy  valueobject.Identifier `json:"createdBy"`
 }
 
 type AddressChanged struct {
-	ID valueobject.Identifier `json:"id"`
-	// Type       string                  `json:"type"`
-	Street     valueobject.Street      `json:"street"`
-	PostalCode valueobject.PostalCode  `json:"postalCode"`
-	Locality   valueobject.Locality    `json:"locality"`
-	Country    valueobject.Country     `json:"country"`
-	Canton     *valueobject.Canton     `json:"canton"`
-	Additional *valueobject.Additional `json:"additional"`
-	ChangedAt  valueobject.Timestamp   `json:"changedAt"`
-	ChangedBy  valueobject.Identifier  `json:"changedBy"`
+	ID         valueobject.Identifier `json:"id"`
+	Type       string                 `json:"type"`
+	Street     valueobject.Street     `json:"street"`
+	PostalCode valueobject.PostalCode `json:"postalCode"`
+	Locality   valueobject.Locality   `json:"locality"`
+	Country    valueobject.Country    `json:"country"`
+	Canton     valueobject.Canton     `json:"canton"`
+	Additional valueobject.Additional `json:"additional"`
+	ChangedAt  valueobject.Timestamp  `json:"changedAt"`
+	ChangedBy  valueobject.Identifier `json:"changedBy"`
 }
 
 type AddressDeleted struct {

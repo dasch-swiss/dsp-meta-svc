@@ -1,7 +1,6 @@
 package address
 
 import (
-	// "fmt"
 	"log"
 
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
@@ -11,6 +10,7 @@ import (
 const addressType = "http://ns.dasch.swiss/repository#Address"
 
 // TODO canton and additonal should be optional
+// address domain entity
 type Address struct {
 	ID         valueobject.Identifier `json:"id"`
 	Type       string                 `json:"type"`
@@ -85,16 +85,6 @@ func (a *Address) DeleteAddress(id valueobject.Identifier) error {
 
 	return nil
 }
-
-// func main() {
-// 	street, _ := valueobject.NewStreet("street")
-// 	code, _ := valueobject.NewPostalCode("00-000")
-// 	locality, _ := valueobject.NewLocality("Poznan")
-// 	coauntry, _ := valueobject.NewCountry("Poland")
-// 	// canton, _ := valueobject.NewCanton("Basel-Stadt")
-// 	// additional, _ := valueobject.NewAdditional("blablabla")
-// 	NewAddress(street, code, locality, coauntry, nil, nil)
-// }
 
 // The raise method does two things, it appends the event into our changes slice
 // and calls the event handler On saying that this is a new event and we should

@@ -221,6 +221,7 @@ func Test_DeleteAddress(t *testing.T) {
 
 	// while trying to update deleted address an error should be returned
 	err := a.UpdateAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
+	// amd no more events added to the event array
 	assert.Len(t, a.Changes, 2)
 	assert.Equal(t, err, address.ErrAddressHasBeenDeleted)
 }

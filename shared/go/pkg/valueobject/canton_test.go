@@ -21,3 +21,15 @@ func TestInvalidNewCanton(t *testing.T) {
 	_, err3 := valueobject.NewCanton("LongerThan25CharactersCanton")
 	assert.NotNil(t, err3)
 }
+
+func Test_Canton_Equals(t *testing.T) {
+	a, _ := valueobject.NewCanton("abc")
+	b, _ := valueobject.NewCanton("abc")
+	assert.True(t, a.Equals(b))
+}
+
+func Test_Canton_NotEquals(t *testing.T) {
+	a, _ := valueobject.NewCanton("abc")
+	b, _ := valueobject.NewCanton("def")
+	assert.False(t, a.Equals(b))
+}

@@ -34,3 +34,9 @@ func (v *Street) UnmarshalText(b []byte) error {
 	*v, err = NewStreet(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v Street) Equals(value Value) bool {
+	otherValueObject, ok := value.(Street)
+	return ok && v.Value == otherValueObject.Value
+}

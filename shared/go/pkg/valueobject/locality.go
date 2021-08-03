@@ -34,3 +34,9 @@ func (v *Locality) UnmarshalText(b []byte) error {
 	*v, err = NewLocality(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v Locality) Equals(value Value) bool {
+	otherValueObject, ok := value.(Locality)
+	return ok && v.Value == otherValueObject.Value
+}

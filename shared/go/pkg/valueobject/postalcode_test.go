@@ -21,3 +21,15 @@ func TestInvalidNewPostalCode(t *testing.T) {
 	_, err3 := valueobject.NewPostalCode("123456")
 	assert.NotNil(t, err3)
 }
+
+func Test_PostalCode_Equals(t *testing.T) {
+	a, _ := valueobject.NewPostalCode("abc")
+	b, _ := valueobject.NewPostalCode("abc")
+	assert.True(t, a.Equals(b))
+}
+
+func Test_PostalCode_NotEquals(t *testing.T) {
+	a, _ := valueobject.NewPostalCode("abc")
+	b, _ := valueobject.NewPostalCode("def")
+	assert.False(t, a.Equals(b))
+}

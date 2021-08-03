@@ -34,3 +34,9 @@ func (v *Additional) UnmarshalText(b []byte) error {
 	*v, err = NewAdditional(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v Additional) Equals(value Value) bool {
+	otherValueObject, ok := value.(Additional)
+	return ok && v.Value == otherValueObject.Value
+}

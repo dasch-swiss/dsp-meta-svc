@@ -34,3 +34,9 @@ func (v *Canton) UnmarshalText(b []byte) error {
 	*v, err = NewCanton(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v Canton) Equals(value Value) bool {
+	otherValueObject, ok := value.(Canton)
+	return ok && v.Value == otherValueObject.Value
+}

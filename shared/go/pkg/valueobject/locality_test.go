@@ -21,3 +21,15 @@ func TestInvalidNewLocality(t *testing.T) {
 	_, err3 := valueobject.NewLocality("Longerthan25CharactersLocality")
 	assert.NotNil(t, err3)
 }
+
+func Test_Locality_Equals(t *testing.T) {
+	a, _ := valueobject.NewLocality("abc")
+	b, _ := valueobject.NewLocality("abc")
+	assert.True(t, a.Equals(b))
+}
+
+func Test_Locality_NotEquals(t *testing.T) {
+	a, _ := valueobject.NewLocality("abc")
+	b, _ := valueobject.NewLocality("def")
+	assert.False(t, a.Equals(b))
+}

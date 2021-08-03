@@ -34,3 +34,9 @@ func (v *Country) UnmarshalText(b []byte) error {
 	*v, err = NewCountry(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v Country) Equals(value Value) bool {
+	otherValueObject, ok := value.(Country)
+	return ok && v.Value == otherValueObject.Value
+}

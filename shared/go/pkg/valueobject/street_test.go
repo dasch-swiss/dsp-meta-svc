@@ -21,3 +21,15 @@ func TestInvalidNewStreet(t *testing.T) {
 	_, err3 := valueobject.NewStreet("this is longer than fifty characters street name!!!")
 	assert.NotNil(t, err3)
 }
+
+func Test_Street_Equals(t *testing.T) {
+	a, _ := valueobject.NewStreet("abc")
+	b, _ := valueobject.NewStreet("abc")
+	assert.True(t, a.Equals(b))
+}
+
+func Test_Street_NotEquals(t *testing.T) {
+	a, _ := valueobject.NewStreet("abc")
+	b, _ := valueobject.NewStreet("def")
+	assert.False(t, a.Equals(b))
+}

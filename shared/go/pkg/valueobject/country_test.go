@@ -21,3 +21,15 @@ func TestInvalidNewCountry(t *testing.T) {
 	_, err3 := valueobject.NewCountry("LongerThan25CharactersCountry")
 	assert.NotNil(t, err3)
 }
+
+func Test_Country_Equals(t *testing.T) {
+	a, _ := valueobject.NewCountry("abc")
+	b, _ := valueobject.NewCountry("abc")
+	assert.True(t, a.Equals(b))
+}
+
+func Test_Country_NotEquals(t *testing.T) {
+	a, _ := valueobject.NewCountry("abc")
+	b, _ := valueobject.NewCountry("def")
+	assert.False(t, a.Equals(b))
+}

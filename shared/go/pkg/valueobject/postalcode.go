@@ -34,3 +34,9 @@ func (v *PostalCode) UnmarshalText(b []byte) error {
 	*v, err = NewPostalCode(string(b))
 	return err
 }
+
+// checks if two value objects are the same
+func (v PostalCode) Equals(value Value) bool {
+	otherValueObject, ok := value.(PostalCode)
+	return ok && v.Value == otherValueObject.Value
+}

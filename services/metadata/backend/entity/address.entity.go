@@ -149,3 +149,8 @@ func NewAddressFromEvents(e []event.Event) *Address {
 
 	return a
 }
+
+// Events returns the uncommitted events from the project aggregate.
+func (p Address) Events() []event.Event {
+	return p.Changes
+}

@@ -104,7 +104,7 @@ func TestService_UpdateAddress(t *testing.T) {
 	assert.NotEqual(t, foundAddress.Country, updatedAddress.Country)
 	assert.NotEqual(t, foundAddress.Canton, updatedAddress.Canton)
 	// why?
-	// assert.NotEqual(t, foundAddress.Additional, updatedAddress.Additional)
+	assert.NotEqual(t, foundAddress.Additional, updatedAddress.Additional)
 }
 
 func TestService_DeleteAddress(t *testing.T) {

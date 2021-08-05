@@ -23,7 +23,7 @@ func NewInMemRepo() *inMemRepo {
 	}
 }
 
-// saves an address
+// saves address
 func (r *inMemRepo) Save(ctx context.Context, e *address.Address) (valueobject.Identifier, error) {
 	var events []event.Event
 
@@ -41,7 +41,7 @@ func (r *inMemRepo) Save(ctx context.Context, e *address.Address) (valueobject.I
 	return e.ID, nil
 }
 
-// loads project
+// loads address
 func (r *inMemRepo) Load(ctx context.Context, id valueobject.Identifier) (*address.Address, error) {
 	if r.m[id.UUID()] == nil {
 		return nil, address.ErrAddressNotFound

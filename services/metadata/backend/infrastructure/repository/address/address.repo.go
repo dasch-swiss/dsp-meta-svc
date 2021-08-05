@@ -160,7 +160,7 @@ func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeletedAdd
 
 	var addressIds []valueobject.Identifier
 
-	// filter to select only ProjectCreated events
+	// filter to select only AddressCreated events
 	for _, record := range recordedEvents {
 		switch eventType := record.EventType; eventType {
 

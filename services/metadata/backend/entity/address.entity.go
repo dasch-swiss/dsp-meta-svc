@@ -89,20 +89,20 @@ func (a *Address) DeleteAddress(id valueobject.Identifier) error {
 // The raise method does two things, it appends the event into our changes slice
 // and calls the event handler On saying that this is a new event and we should
 // not increment the version number. The version is an optimistic concurrency
-// pattern used to help us avoid database locks to change our aggregate.
+// pattern used to help us avoid database locks to change Address entity
 func (a *Address) raise(event event.Event) {
 	a.Changes = append(a.Changes, event)
 	a.On(event, true)
 }
 
-// On handles user events on the project aggregate.
+// On handles user events on the Address entity.
 // The On method first does a type switch on the event and selects the case for
 // each event type. This is where state change happens. Once an event is emitted
 // and saved we do not throw an error, we simply process the event and carry on.
 // We can change here if we decide that an event is no longer relevant or if it
 // means something different, but we can’t return an error and say an event is
 // invalid. Then we check if this is a new event. If it isn’t we increment the
-// version number of our aggregate.
+// version number of Address entity
 func (a *Address) On(ev event.Event, new bool) {
 	switch e := ev.(type) {
 	case *event.AddressCreated:
@@ -149,7 +149,7 @@ func NewAddressFromEvents(e []event.Event) *Address {
 	return a
 }
 
-// Events returns the uncommitted events from the project aggregate.
+// returns the uncommitted events from the Address entity
 func (p Address) Events() []event.Event {
 	return p.Changes
 }

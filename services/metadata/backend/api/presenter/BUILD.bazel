@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "presenter",
+    srcs = [
+        "address.presenter.go",
+    ],
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/api/presenter",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//services/metadata/backend/entity:address",
+        "//shared/go/pkg/valueobject",
+    ],
+)
+
+go_test(
+    name = "presenter_test",
+    size = "small",
+    srcs = [
+        "address_test.presenter.go",
+    ],
+    embed = [":presenter"],
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_stretchr_testify//assert"],
+)

@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestNewCountry(t *testing.T) {
+func Test_NewCountry(t *testing.T) {
 	v, _ := valueobject.NewCountry("Kongo")
 	assert.Equal(t, v.String(), "Kongo")
 }
 
-func TestInvalidNewCountry(t *testing.T) {
+func Test_InvalidNewCountry(t *testing.T) {
 	_, err := valueobject.NewCountry("")
 	assert.NotNil(t, err)
 

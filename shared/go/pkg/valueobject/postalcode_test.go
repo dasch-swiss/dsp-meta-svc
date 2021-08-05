@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestPostalCode(t *testing.T) {
+func Test_PostalCode(t *testing.T) {
 	v, _ := valueobject.NewPostalCode("12345")
 	assert.Equal(t, v.String(), "12345")
 }
 
-func TestInvalidNewPostalCode(t *testing.T) {
+func Test_InvalidNewPostalCode(t *testing.T) {
 	_, err := valueobject.NewPostalCode("")
 	assert.NotNil(t, err)
 

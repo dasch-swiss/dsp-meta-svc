@@ -19,7 +19,7 @@ go_test(
     size = "small",
     srcs = [
         "inmem_test.go",
-        "address.service_test.go",
+        "address_test.service.go",
     ],
     embed = [":address"],
     visibility = ["//visibility:private"],

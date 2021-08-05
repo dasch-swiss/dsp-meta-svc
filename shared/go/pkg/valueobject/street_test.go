@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestNewStreet(t *testing.T) {
+func Test_NewStreet(t *testing.T) {
 	v, _ := valueobject.NewStreet("new street")
 	assert.Equal(t, v.String(), "new street")
 }
 
-func TestInvalidNewStreet(t *testing.T) {
+func Test_InvalidNewStreet(t *testing.T) {
 	_, err := valueobject.NewStreet("")
 	assert.NotNil(t, err)
 

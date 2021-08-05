@@ -18,7 +18,7 @@ go_library(
 go_test(
     name = "address_test",
     size = "small",
-    srcs = ["address.entity_test.go"],
+    srcs = ["address_test.entity.go"],
     embed = [":address"],
     visibility = ["//visibility:public"],
     deps = ["@com_github_stretchr_testify//assert"],

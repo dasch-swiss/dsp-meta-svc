@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestNewLocality(t *testing.T) {
+func Test_NewLocality(t *testing.T) {
 	v, _ := valueobject.NewLocality("Szczebrzeszyn")
 	assert.Equal(t, v.String(), "Szczebrzeszyn")
 }
 
-func TestInvalidNewLocality(t *testing.T) {
+func Test_InvalidNewLocality(t *testing.T) {
 	_, err := valueobject.NewLocality("")
 	assert.NotNil(t, err)
 

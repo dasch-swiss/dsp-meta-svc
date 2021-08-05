@@ -6,12 +6,12 @@ import (
 	"testing"
 )
 
-func TestNewCanton(t *testing.T) {
+func Test_NewCanton(t *testing.T) {
 	v, _ := valueobject.NewCanton("Basel-Landschaft")
 	assert.Equal(t, v.String(), "Basel-Landschaft")
 }
 
-func TestInvalidNewCanton(t *testing.T) {
+func Test_InvalidNewCanton(t *testing.T) {
 	_, err := valueobject.NewCanton("")
 	assert.NotNil(t, err)
 

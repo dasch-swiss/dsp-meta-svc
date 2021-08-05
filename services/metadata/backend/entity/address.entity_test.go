@@ -9,11 +9,11 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-const addressType = "http://ns.dasch.swiss/repository#Address"
+const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 
 func Test_NewAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
-	expectedType := addressType
+	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
 	expectedPostalCode, _ := valueobject.NewPostalCode("4053")
 	expectedLocality, _ := valueobject.NewLocality("Basel")
@@ -53,7 +53,7 @@ func Test_NewAddress(t *testing.T) {
 
 func Test_NewAddressFromEvents(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
-	expectedType := addressType
+	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
 	expectedPostalCode, _ := valueobject.NewPostalCode("4053")
 	expectedLocality, _ := valueobject.NewLocality("Basel")
@@ -94,7 +94,7 @@ func Test_NewAddressFromEvents(t *testing.T) {
 
 func Test_UpdateAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
-	expectedType := addressType
+	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
 	expectedPostalCode, _ := valueobject.NewPostalCode("4053")
 	expectedLocality, _ := valueobject.NewLocality("Basel")
@@ -163,7 +163,7 @@ func Test_UpdateAddress(t *testing.T) {
 
 func Test_DeleteAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
-	expectedType := addressType
+	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
 	expectedPostalCode, _ := valueobject.NewPostalCode("4053")
 	expectedLocality, _ := valueobject.NewLocality("Basel")

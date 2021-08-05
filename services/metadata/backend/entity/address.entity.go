@@ -7,7 +7,7 @@ import (
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 )
 
-const addressType = "http://ns.dasch.swiss/repository#Address"
+const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 
 // TODO canton and additonal should be optional
 // address domain entity
@@ -36,7 +36,7 @@ func NewAddress(id valueobject.Identifier, street valueobject.Street, postalCode
 
 	a.raise(&event.AddressCreated{
 		ID:         id,
-		Type:       addressType,
+		Type:       ADDRESS_TYPE,
 		Street:     street,
 		PostalCode: postalCode,
 		Locality:   locality,
@@ -57,7 +57,7 @@ func (a *Address) UpdateAddress(id valueobject.Identifier, street valueobject.St
 	}
 	a.raise(&event.AddressChanged{
 		ID:         id,
-		Type:       addressType,
+		Type:       ADDRESS_TYPE,
 		Street:     street,
 		PostalCode: postalCode,
 		Locality:   locality,
@@ -107,7 +107,7 @@ func (a *Address) On(ev event.Event, new bool) {
 	switch e := ev.(type) {
 	case *event.AddressCreated:
 		a.ID = e.ID
-		a.Type = addressType
+		a.Type = ADDRESS_TYPE
 		a.Street = e.Street
 		a.PostalCode = e.PostalCode
 		a.Locality = e.Locality
@@ -119,7 +119,6 @@ func (a *Address) On(ev event.Event, new bool) {
 
 	case *event.AddressChanged:
 		a.ID = e.ID
-		a.Type = addressType
 		a.Street = e.Street
 		a.PostalCode = e.PostalCode
 		a.Locality = e.Locality

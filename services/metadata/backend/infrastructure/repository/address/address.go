@@ -148,7 +148,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 }
 
 // returns list of all active addresses ids
-func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeletedAddresses bool) ([]valueobject.Identifier, error) {
+func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bool) ([]valueobject.Identifier, error) {
 	eventsToRead := 1000
 	numberOfEvents := uint64(eventsToRead)
 
@@ -179,7 +179,7 @@ func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeletedAdd
 				return []valueobject.Identifier{}, fmt.Errorf("Problem deserializing '%s' event from JSON", record.EventType)
 			}
 			// if deleted address should not be returned - loop through the address ids
-			if !includeDeletedAddresses {
+			if !includeDeleted {
 				for i := range addressIds {
 					// if deleted address is found among the address ids - remove it
 					if addressIds[i] == e.ID {

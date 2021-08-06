@@ -9,7 +9,7 @@ import (
 
 type Reader interface {
 	Load(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error)
-	GetAddressIds(ctx context.Context, includeDeletedAddresses bool) ([]valueobject.Identifier, error)
+	GetAddressIds(ctx context.Context, includeDeleted bool) ([]valueobject.Identifier, error)
 }
 
 type Writer interface {
@@ -23,7 +23,7 @@ type Repository interface {
 
 type UseCase interface {
 	GetAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error)
-	GetAddresses(ctx context.Context, includeDeletedAddresses bool) ([]addressEntity.Address, error)
+	GetAddresses(ctx context.Context, includeDeleted bool) ([]addressEntity.Address, error)
 	CreateAddress(ctx context.Context, s valueobject.Street, pc valueobject.PostalCode, l valueobject.Locality, c valueobject.Country, ca valueobject.Canton, a valueobject.Additional) (valueobject.Identifier, error)
 	UpdateAddress(ctx context.Context, id valueobject.Identifier, s valueobject.Street, pc valueobject.PostalCode, l valueobject.Locality, c valueobject.Country, ca valueobject.Canton, a valueobject.Additional) (*addressEntity.Address, error)
 	DeleteAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error)

@@ -51,7 +51,7 @@ func (r *inMemRepo) Load(ctx context.Context, id valueobject.Identifier) (*addre
 
 }
 
-func (r *inMemRepo) GetAddressIds(ctx context.Context, includeDeletedAddresses bool) ([]valueobject.Identifier, error) {
+func (r *inMemRepo) GetAddressIds(ctx context.Context, includeDeleted bool) ([]valueobject.Identifier, error) {
 	i := 0
 	addressIds := make([]valueobject.Identifier, len(r.m))
 

@@ -92,9 +92,9 @@ func (s *Service) GetAddress(ctx context.Context, id valueobject.Identifier) (*a
 	return a, err
 }
 
-func (s *Service) GetAddresses(ctx context.Context, includeDeletedAddresses bool) ([]addressEntity.Address, error) {
+func (s *Service) GetAddresses(ctx context.Context, includeDeleted bool) ([]addressEntity.Address, error) {
 	var addresses []addressEntity.Address
-	ids, err := s.repo.GetAddressIds(ctx, includeDeletedAddresses)
+	ids, err := s.repo.GetAddressIds(ctx, includeDeleted)
 	if err != nil {
 		return []addressEntity.Address{}, err
 	}

@@ -28,6 +28,15 @@ type AddressRequestBody struct {
 	Additional string `json:"additional"`
 }
 
+// makes URL handlers for creating, updating, deleting and getting addresses
+func MakeAddressHandler(r *mux.Router, service address.UseCase)  {
+	r.HandleFunc("/v1/addresses", createAddress(service)).Methods("POST", "OPTIONS")
+	r.HandleFunc("/v1/addresses/{id}", updateAddress(service)).Methods("PUT", "OPTION")
+	r.HandleFunc("/v1/addresses/{id}", deleteAddress(service)).Methods("DELETE", "OPTIONS")
+	r.HandleFunc("/v1/addresses/{id}", getAddress(service)).Methods("GET", "OPTION")
+	r.HandleFunc("/v1/addresses", getAddresses(service)).Methods("GET", "OPTIONS")
+}
+
 // creates address with provided request body
 func createAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -471,10 +480,3 @@ func getAddresses(service address.UseCase) func(w http.ResponseWriter, r *http.R
 	}
 }
 
-func MakeAddressHandler(r *mux.Router, service address.UseCase)  {
-	r.HandleFunc("/v1/addresses", createAddress(service)).Methods("POST", "OPTIONS")
-	r.HandleFunc("/v1/addresses/{id}", updateAddress(service)).Methods("PUT", "OPTION")
-	r.HandleFunc("/v1/addresses/{id}", deleteAddress(service)).Methods("DELETE", "OPTIONS")
-	r.HandleFunc("/v1/addresses/{id}", getAddress(service)).Methods("GET", "OPTION")
-	r.HandleFunc("/v1/addresses", getAddresses(service)).Methods("GET", "OPTIONS")
-}

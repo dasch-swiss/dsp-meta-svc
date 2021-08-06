@@ -2,12 +2,12 @@ package address_test
 
 import (
 	"context"
+	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 	"testing"
 	"time"
 
 	"github.com/EventStore/EventStore-Client-Go/direction"
 	"github.com/EventStore/EventStore-Client-Go/streamrevision"
-	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity"
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/infrastructure/repository/address"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 	"github.com/stretchr/testify/assert"

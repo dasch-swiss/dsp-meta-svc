@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 	"log"
 	"time"
 
@@ -12,7 +13,6 @@ import (
 	"github.com/EventStore/EventStore-Client-Go/messages"
 	"github.com/EventStore/EventStore-Client-Go/position"
 	"github.com/EventStore/EventStore-Client-Go/streamrevision"
-	address "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity"
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 	"github.com/gofrs/uuid"
@@ -31,7 +31,7 @@ func NewAddressRepository(client *client.Client) *addressRepository {
 }
 
 // stores address events in the events store/repository
-func (r *addressRepository) Save(ctx context.Context, a *address.Address) (valueobject.Identifier, error) {
+func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) (valueobject.Identifier, error) {
 	var proposedEvents []messages.ProposedEvent
 	streamRevision := streamrevision.StreamRevisionStreamExists
 
@@ -101,14 +101,14 @@ func (r *addressRepository) Save(ctx context.Context, a *address.Address) (value
 }
 
 // loads addresses from the event store and recreates Address entity
-func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier) (*address.Address, error) {
+func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	streamID := "Address-" + id.String()
 
 	// currently hardcoded to replay the last 1000 events
 	recordedEvents, err := r.c.ReadStreamEvents(ctx, direction.Forwards, streamID, streamrevision.StreamRevisionStart, 1000, false)
 	if err != nil {
 		log.Printf("Unexpected failure: %+v", err)
-		return &address.Address{}, address.ErrAddressNotFound
+		return &addressEntity.Address{}, addressEntity.ErrAddressNotFound
 	}
 
 	var events []event.Event
@@ -119,7 +119,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressCreated
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &address.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -127,7 +127,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressChanged
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &address.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -135,7 +135,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressDeleted
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &address.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -144,7 +144,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 		}
 	}
 
-	return address.NewAddressFromEvents(events), nil
+	return addressEntity.NewAddressFromEvents(events), nil
 }
 
 // returns list of all active addresses ids

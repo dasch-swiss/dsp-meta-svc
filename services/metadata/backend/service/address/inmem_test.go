@@ -2,8 +2,8 @@ package address_test
 
 import (
 	"context"
+	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 
-	address "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity"
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 	"github.com/gofrs/uuid"
@@ -24,7 +24,7 @@ func NewInMemRepo() *inMemRepo {
 }
 
 // saves address
-func (r *inMemRepo) Save(ctx context.Context, e *address.Address) (valueobject.Identifier, error) {
+func (r *inMemRepo) Save(ctx context.Context, e *addressEntity.Address) (valueobject.Identifier, error) {
 	var events []event.Event
 
 	// get previously stored events
@@ -42,12 +42,12 @@ func (r *inMemRepo) Save(ctx context.Context, e *address.Address) (valueobject.I
 }
 
 // loads address
-func (r *inMemRepo) Load(ctx context.Context, id valueobject.Identifier) (*address.Address, error) {
+func (r *inMemRepo) Load(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	if r.m[id.UUID()] == nil {
-		return nil, address.ErrAddressNotFound
+		return nil, addressEntity.ErrAddressNotFound
 	}
 
-	return address.NewAddressFromEvents(r.m[id.UUID()]), nil
+	return addressEntity.NewAddressFromEvents(r.m[id.UUID()]), nil
 
 }
 

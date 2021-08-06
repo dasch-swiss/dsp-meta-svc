@@ -2,8 +2,8 @@ package address
 
 import (
 	"context"
+	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 
-	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 )
 
@@ -25,7 +25,7 @@ func (s *Service) CreateAddress(ctx context.Context, street valueobject.Street, 
 	id, _ := valueobject.NewIdentifier()
 
 	// populate data
-	a := address.NewAddress(id, street, postalCode, locality, country, canton, additional)
+	a := addressEntity.NewAddress(id, street, postalCode, locality, country, canton, additional)
 
 	if _, err := s.repo.Save(ctx, a); err != nil {
 		return valueobject.Identifier{}, err
@@ -35,42 +35,42 @@ func (s *Service) CreateAddress(ctx context.Context, street valueobject.Street, 
 }
 
 // updates existing address with provided values
-func (s *Service) UpdateAddress(ctx context.Context, id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) (*address.Address, error) {
+func (s *Service) UpdateAddress(ctx context.Context, id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) (*addressEntity.Address, error) {
 
 	// get address to update
 	a, err := s.repo.Load(ctx, id)
 	if err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 
 	// throw error if address has been deleted
 	if !a.DeletedAt.Time().IsZero() {
-		return &address.Address{}, address.ErrAddressHasBeenDeleted
+		return &addressEntity.Address{}, addressEntity.ErrAddressHasBeenDeleted
 	}
 
 	// throw error if none of passed values differ from current ones
 	if isIdentical(*a, street, postalCode, locality, country, canton, additional) {
-		return &address.Address{}, address.ErrNoPropertiesChanged
+		return &addressEntity.Address{}, addressEntity.ErrNoPropertiesChanged
 	}
 
 	// update address
 	if err := a.UpdateAddress(id, street, postalCode, locality, country, canton, additional); err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 
 	// save event
 	if _, err := s.repo.Save(ctx, a); err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 
 	return a, nil
 }
 
-func (s *Service) DeleteAddress(ctx context.Context, id valueobject.Identifier) (*address.Address, error) {
+func (s *Service) DeleteAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	// get address to delete
 	a, err := s.repo.Load(ctx, id)
 	if err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 
 	// delete address
@@ -78,31 +78,31 @@ func (s *Service) DeleteAddress(ctx context.Context, id valueobject.Identifier) 
 
 	// save event
 	if _, err := s.repo.Save(ctx, a); err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 
 	return a, nil
 }
 
-func (s *Service) GetAddress(ctx context.Context, id valueobject.Identifier) (*address.Address, error) {
+func (s *Service) GetAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	a, err := s.repo.Load(ctx, id)
 	if err != nil {
-		return &address.Address{}, err
+		return &addressEntity.Address{}, err
 	}
 	return a, err
 }
 
-func (s *Service) GetAddresses(ctx context.Context, includeDeletedAddresses bool) ([]address.Address, error) {
-	var addresses []address.Address
+func (s *Service) GetAddresses(ctx context.Context, includeDeletedAddresses bool) ([]addressEntity.Address, error) {
+	var addresses []addressEntity.Address
 	ids, err := s.repo.GetAddressIds(ctx, includeDeletedAddresses)
 	if err != nil {
-		return []address.Address{}, err
+		return []addressEntity.Address{}, err
 	}
 
 	for _, id := range ids {
 		a, err := s.GetAddress(ctx, id)
 		if err != nil {
-			return []address.Address{}, err
+			return []addressEntity.Address{}, err
 		}
 
 		addresses = append(addresses, *a)
@@ -112,7 +112,7 @@ func (s *Service) GetAddresses(ctx context.Context, includeDeletedAddresses bool
 
 }
 
-func isIdentical(a address.Address, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) bool {
+func isIdentical(a addressEntity.Address, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) bool {
 	if a.Street.Equals(street) &&
 		a.PostalCode.Equals(postalCode) &&
 		a.Locality.Equals(locality) &&

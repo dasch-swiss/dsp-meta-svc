@@ -12,20 +12,20 @@ const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 // TODO canton and additonal should be optional
 // address domain entity
 type Address struct {
-	ID         valueobject.Identifier `json:"id"`
-	Type       string                 `json:"type"`
-	Street     valueobject.Street     `json:"street"`
-	PostalCode valueobject.PostalCode `json:"postalCode"`
-	Locality   valueobject.Locality   `json:"locality"`
-	Country    valueobject.Country    `json:"country"`
-	Canton     valueobject.Canton     `json:"canton"`
-	Additional valueobject.Additional `json:"additional"`
-	CreatedAt  valueobject.Timestamp  `json:"createdAt"`
-	CreatedBy  valueobject.Identifier `json:"createdBy"`
-	ChangedAt  valueobject.Timestamp  `json:"changedAt,omitempty"`
-	ChangedBy  valueobject.Identifier `json:"changedBy,omitempty"`
-	DeletedAt  valueobject.Timestamp  `json:"deletedAt,omitempty"`
-	DeletedBy  valueobject.Identifier `json:"deletedBy,omitempty"`
+	ID         valueobject.Identifier
+	Type       string
+	Street     valueobject.Street
+	PostalCode valueobject.PostalCode
+	Locality   valueobject.Locality
+	Country    valueobject.Country
+	Canton     valueobject.Canton
+	Additional valueobject.Additional
+	CreatedAt  valueobject.Timestamp
+	CreatedBy  valueobject.Identifier
+	ChangedAt  valueobject.Timestamp
+	ChangedBy  valueobject.Identifier
+	DeletedAt  valueobject.Timestamp
+	DeletedBy  valueobject.Identifier
 
 	Changes []event.Event
 }

@@ -1,9 +1,9 @@
 package address_test
 
 import (
+	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 	"testing"
 
-	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity"
 	"github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/event"
 	"github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 	"github.com/stretchr/testify/assert"
@@ -21,7 +21,7 @@ func Test_NewAddress(t *testing.T) {
 	expectedCanton, _ := valueobject.NewCanton("Basel-Stadt")
 	expectedAdditional, _ := valueobject.NewAdditional("Es ist keine echte Adresse")
 
-	a := address.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
+	a := addressEntity.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
 	assert.Equal(t, expectedId, a.ID)
 	assert.Equal(t, expectedType, a.Type)
 	assert.Equal(t, expectedStreet, a.Street)
@@ -79,7 +79,7 @@ func Test_NewAddressFromEvents(t *testing.T) {
 	events := []event.Event{createEvent}
 	print(events)
 
-	a := address.NewAddressFromEvents(events)
+	a := addressEntity.NewAddressFromEvents(events)
 	assert.Equal(t, expectedId, a.ID)
 	assert.Equal(t, expectedType, a.Type)
 	assert.Equal(t, expectedStreet, a.Street)
@@ -102,7 +102,7 @@ func Test_UpdateAddress(t *testing.T) {
 	expectedCanton, _ := valueobject.NewCanton("Basel-Stadt")
 	expectedAdditional, _ := valueobject.NewAdditional("Es ist keine echte Adresse")
 
-	a := address.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
+	a := addressEntity.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
 	assert.Equal(t, expectedId, a.ID)
 	assert.Equal(t, expectedType, a.Type)
 	assert.Equal(t, expectedStreet, a.Street)
@@ -171,7 +171,7 @@ func Test_DeleteAddress(t *testing.T) {
 	expectedCanton, _ := valueobject.NewCanton("Basel-Stadt")
 	expectedAdditional, _ := valueobject.NewAdditional("Es ist keine echte Adresse")
 
-	a := address.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
+	a := addressEntity.NewAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
 	assert.Equal(t, expectedId, a.ID)
 	assert.Equal(t, expectedType, a.Type)
 	assert.Equal(t, expectedStreet, a.Street)
@@ -223,5 +223,5 @@ func Test_DeleteAddress(t *testing.T) {
 	err := a.UpdateAddress(expectedId, expectedStreet, expectedPostalCode, expectedLocality, expectedCountry, expectedCanton, expectedAdditional)
 	// amd no more events added to the event array
 	assert.Len(t, a.Changes, 2)
-	assert.Equal(t, err, address.ErrAddressHasBeenDeleted)
+	assert.Equal(t, err, addressEntity.ErrAddressHasBeenDeleted)
 }

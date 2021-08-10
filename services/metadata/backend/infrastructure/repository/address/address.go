@@ -149,12 +149,13 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 
 // returns list of all active addresses ids
 func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bool) ([]valueobject.Identifier, error) {
+	// TODO: improve it especially because of looping through deleted addresses isn't efficient https://stackoverflow.com/a/37335777/9338572
 	eventsToRead := 1000
 	numberOfEvents := uint64(eventsToRead)
 
 	recordedEvents, err := r.c.ReadAllEvents(ctx, direction.Forwards, position.StartPosition, numberOfEvents, true)
 	if err != nil {
-		log.Printf("Unexpected failure: %+v", err)
+		log.Printf("Unexpected failure %+v", err)
 		return nil, err
 	}
 
@@ -180,12 +181,25 @@ func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bo
 			}
 			// if deleted address should not be returned - loop through the address ids
 			if !includeDeleted {
-				for i := range addressIds {
-					// if deleted address is found among the address ids - remove it
-					if addressIds[i] == e.ID {
-						addressIds = append(addressIds[:i], addressIds[i+1:]...)
+
+				//for i := range addressIds {
+				//	// if deleted address is found among the address ids - remove it
+				//	if addressIds[i] == e.ID {
+				//		log.Println(addressIds[i], i, "0000")
+				//		addressIds = append(addressIds[:i], addressIds[i+1:]...)
+				//	}
+				//}
+
+				// check if address ID is marked as deleted and remove it from results
+				isNotDeleted := func(x valueobject.Identifier) bool { return x != e.ID }
+				i := 0
+				for _, x := range addressIds {
+					if isNotDeleted(x) {
+						addressIds[i] = x
+						i++
 					}
 				}
+				addressIds = addressIds[:i]
 			}
 		}
 	}

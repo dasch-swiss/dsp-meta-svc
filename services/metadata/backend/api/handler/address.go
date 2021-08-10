@@ -35,7 +35,7 @@ func HandleAddressRoutes(r *mux.Router, n negroni.Negroni, service address.UseCa
 		)).Methods("POST", "OPTIONS")
 	r.Handle("/v1/addresses/{id}", n.With(negroni.Wrap(updateAddress(service)),
 		)).Methods("PUT", "OPTIONS")
-	r.Handle("/v1/addresses", n.With(negroni.Wrap(deleteAddress(service)),
+	r.Handle("/v1/addresses/{id}", n.With(negroni.Wrap(deleteAddress(service)),
 		)).Methods("DELETE", "OPTIONS")
 	r.Handle("/v1/addresses/{id}", n.With(negroni.Wrap(getAddress(service)),
 		)).Methods("GET", "OPTIONS")
@@ -169,6 +169,7 @@ func updateAddress(service address.UseCase) http.Handler {
 			log.Println(err.Error())
 			w.WriteHeader(http.StatusBadRequest)
 			w.Write([]byte(err.Error()))
+			return
 		}
 
 		// get variables from request url
@@ -200,7 +201,7 @@ func updateAddress(service address.UseCase) http.Handler {
 			w.Write([]byte(addressEntity.ErrServerNotResponding.Error()))
 			return
 		}
-		if a != nil {
+		if a == nil {
 			w.WriteHeader(http.StatusNotFound)
 			w.Write([]byte(addressEntity.ErrNoAddressDataReturned.Error()))
 			return

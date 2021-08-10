@@ -20,22 +20,22 @@ type Address struct {
 	DeletedBy  string                 `json:"deletedBy"`
 }
 
-func (p *Address) NullifyJsonProps() Address {
-	if p.ChangedAt == "0001-01-01 00:00:00 +0000 UTC" {
-		p.ChangedAt = "null"
+func (a *Address) NullifyJsonProps() Address {
+	if a.ChangedAt == "0001-01-01 00:00:00 +0000 UTC" {
+		a.ChangedAt = ""
 	}
 
-	if p.ChangedBy == "00000000-0000-0000-0000-000000000000" {
-		p.ChangedBy = "null"
+	if a.ChangedBy == "00000000-0000-0000-0000-000000000000" {
+		a.ChangedBy = ""
 	}
 
-	if p.DeletedAt == "0001-01-01 00:00:00 +0000 UTC" {
-		p.DeletedAt = "null"
+	if a.DeletedAt == "0001-01-01 00:00:00 +0000 UTC" {
+		a.DeletedAt = ""
 	}
 
-	if p.DeletedBy == "00000000-0000-0000-0000-000000000000" {
-		p.DeletedBy = "null"
+	if a.DeletedBy == "00000000-0000-0000-0000-000000000000" {
+		a.DeletedBy = ""
 	}
 
-	return *p
+	return *a
 }

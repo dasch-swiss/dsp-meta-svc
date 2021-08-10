@@ -125,6 +125,7 @@ func (a *Address) On(ev event.Event, new bool) {
 		a.Country = e.Country
 		a.Country = e.Country
 		a.Canton = e.Canton
+		a.Additional = e.Additional
 		a.ChangedAt = e.ChangedAt
 		a.ChangedBy = e.ChangedBy
 

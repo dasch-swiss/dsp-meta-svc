@@ -29,7 +29,7 @@ type AddressRequestBody struct {
 }
 
 // makes URL handlers for creating, updating, deleting and getting addresses
-func MakeAddressHandler(r *mux.Router, service address.UseCase)  {
+func HandleAddressRoutes(r *mux.Router, service address.UseCase)  {
 	r.HandleFunc("/v1/addresses", createAddress(service)).Methods("POST", "OPTIONS")
 	r.HandleFunc("/v1/addresses/{id}", updateAddress(service)).Methods("PUT", "OPTION")
 	r.HandleFunc("/v1/addresses/{id}", deleteAddress(service)).Methods("DELETE", "OPTIONS")
@@ -366,7 +366,7 @@ func getAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Req
 		ctx, cancel := context.WithTimeout(context.Background(), time.Duration(5)*time.Second)
 		defer cancel()
 
-		// get addres by UUID
+		// get address by UUID
 		a, err := service.GetAddress(ctx, uuid)
 		w.Header().Set("Content-Type", "application/json")
 		if err != nil && err == addressEntity.ErrAddressNotFound {

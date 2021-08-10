@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	addressEntity "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/entity/address"
 	"github.com/gorilla/mux"
+	"github.com/urfave/negroni"
 	"log"
 	"net/http"
 	"time"
@@ -29,17 +30,22 @@ type AddressRequestBody struct {
 }
 
 // makes URL handlers for creating, updating, deleting and getting addresses
-func HandleAddressRoutes(r *mux.Router, service address.UseCase)  {
-	r.HandleFunc("/v1/addresses", createAddress(service)).Methods("POST", "OPTIONS")
-	r.HandleFunc("/v1/addresses/{id}", updateAddress(service)).Methods("PUT", "OPTION")
-	r.HandleFunc("/v1/addresses/{id}", deleteAddress(service)).Methods("DELETE", "OPTIONS")
-	r.HandleFunc("/v1/addresses/{id}", getAddress(service)).Methods("GET", "OPTION")
-	r.HandleFunc("/v1/addresses", getAddresses(service)).Methods("GET", "OPTIONS")
+func HandleAddressRoutes(r *mux.Router, n negroni.Negroni, service address.UseCase) {
+	r.Handle("/v1/addresses", n.With(negroni.Wrap(createAddress(service)),
+		)).Methods("POST", "OPTIONS")
+	r.Handle("/v1/addresses/{id}", n.With(negroni.Wrap(updateAddress(service)),
+		)).Methods("PUT", "OPTIONS")
+	r.Handle("/v1/addresses", n.With(negroni.Wrap(deleteAddress(service)),
+		)).Methods("DELETE", "OPTIONS")
+	r.Handle("/v1/addresses/{id}", n.With(negroni.Wrap(getAddress(service)),
+		)).Methods("GET", "OPTIONS")
+	r.Handle("/v1/addresses", n.With(negroni.Wrap(getAddresses(service)),
+		)).Methods("GET", "OPTIONS")
 }
 
 // creates address with provided request body
-func createAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
-	return func(w http.ResponseWriter, r *http.Request) {
+func createAddress(service address.UseCase) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 		var input AddressRequestBody
 		err := json.NewDecoder(r.Body).Decode(&input)
@@ -146,7 +152,7 @@ func createAddress(service address.UseCase) func(w http.ResponseWriter, r *http.
 			w.Write([]byte(err.Error()))
 			return
 		}
-	}
+	})
 }
 
 // updates address with the provided RequestBody.
@@ -154,8 +160,8 @@ func createAddress(service address.UseCase) func(w http.ResponseWriter, r *http.
 // All fields of the RequestBody must be provided.
 // At least one of the values of the provided RequestBody must differ from the current value of the corresponding address field.
 // If a value of a field is identical to what it already is, the update will not be performed for that field.
-func updateAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
-	return func(w http.ResponseWriter, r *http.Request) {
+func updateAddress(service address.UseCase) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 		var input AddressRequestBody
 		err := json.NewDecoder(r.Body).Decode(&input)
@@ -281,12 +287,12 @@ func updateAddress(service address.UseCase) func(w http.ResponseWriter, r *http.
 			w.Write([]byte(err.Error()))
 			return
 		}
-	}
+	})
 }
 
 // deletes address with provided UUID
-func deleteAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
-	return func(w http.ResponseWriter, r *http.Request) {
+func deleteAddress(service address.UseCase) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 		// get variables from request url
 		vars := mux.Vars(r)
@@ -348,11 +354,11 @@ func deleteAddress(service address.UseCase) func(w http.ResponseWriter, r *http.
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
 		}
-	}
+	})
 }
 
-func getAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
-	return func(w http.ResponseWriter, r *http.Request) {
+func getAddress(service address.UseCase) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 		// get variables from request url
 		vars := mux.Vars(r)
@@ -409,14 +415,14 @@ func getAddress(service address.UseCase) func(w http.ResponseWriter, r *http.Req
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
 		}
-	}
+	})
 }
 
 // gets list of all addresses
 // By default, this only returns active (not marked as delete) addresses.
 // IncludeDeleted can be provided in the request body to also return addresses marked as deleted.
-func getAddresses(service address.UseCase) func(w http.ResponseWriter, r *http.Request) {
-	return func(w http.ResponseWriter, r *http.Request) {
+func getAddresses(service address.UseCase) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		var input struct{
 			IncludeDeleted bool `json:"includeDeleted"`
 		}
@@ -477,6 +483,6 @@ func getAddresses(service address.UseCase) func(w http.ResponseWriter, r *http.R
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
 		}
-	}
+	})
 }
 

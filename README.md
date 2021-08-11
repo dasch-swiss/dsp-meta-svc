@@ -6,7 +6,7 @@ Service for providing users with project and dataset specific metadata.
 
 The front-end part is basing on [Svelte](https://svelte.dev). To run it, `yarn` and/or `make` need to be installed. 
 
-1. Clone the repoistory:
+1. Clone the repository:
 
 ```
 https://github.com/dasch-swiss/dasch-service-platform.git

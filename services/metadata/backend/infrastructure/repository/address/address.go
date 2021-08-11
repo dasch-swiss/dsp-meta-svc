@@ -23,14 +23,14 @@ type addressRepository struct {
 	c *client.Client
 }
 
-// creates a new repository to store address events in
+// NewAddressRepository creates new repository to store address events in
 func NewAddressRepository(client *client.Client) *addressRepository {
 	return &addressRepository{
 		c: client,
 	}
 }
 
-// stores address events in the events store/repository
+// Save saves address events in events store/repository
 func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) (valueobject.Identifier, error) {
 	var proposedEvents []messages.ProposedEvent
 	streamRevision := streamrevision.StreamRevisionStreamExists
@@ -40,7 +40,7 @@ func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) 
 		case *event.AddressCreated:
 			j, err := json.Marshal(e)
 			if err != nil {
-				return e.ID, fmt.Errorf("Problem sertializing '%T' event to JSON", e)
+				return e.ID, fmt.Errorf("problem sertializing '%T' event to JSON", e)
 			}
 
 			eventID, _ := uuid.NewV4()
@@ -57,7 +57,7 @@ func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) 
 		case *event.AddressChanged:
 			j, err := json.Marshal(e)
 			if err != nil {
-				return e.ID, fmt.Errorf("Problem sertializing '%T' event to JSON", e)
+				return e.ID, fmt.Errorf("problem sertializing '%T' event to JSON", e)
 			}
 
 			eventID, _ := uuid.NewV4()
@@ -73,7 +73,7 @@ func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) 
 		case *event.AddressDeleted:
 			j, err := json.Marshal(e)
 			if err != nil {
-				return e.ID, fmt.Errorf("Problem sertializing '%T' event to JSON", e)
+				return e.ID, fmt.Errorf("problem sertializing '%T' event to JSON", e)
 			}
 
 			eventID, _ := uuid.NewV4()
@@ -100,11 +100,11 @@ func (r *addressRepository) Save(ctx context.Context, a *addressEntity.Address) 
 	return a.ID, nil
 }
 
-// loads addresses from the event store and recreates Address entity
+// Load loads addresses from event store
 func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	streamID := "Address-" + id.String()
 
-	// currently hardcoded to replay the last 1000 events
+	// TODO find better way to return all events, not only hardcoded number of 1000 events
 	recordedEvents, err := r.c.ReadStreamEvents(ctx, direction.Forwards, streamID, streamrevision.StreamRevisionStart, 1000, false)
 	if err != nil {
 		log.Printf("Unexpected failure: %+v", err)
@@ -119,7 +119,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressCreated
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -127,7 +127,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressChanged
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -135,7 +135,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 			var e event.AddressDeleted
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return &addressEntity.Address{}, fmt.Errorf("Problem desertializing '%T' event to JSON", e)
+				return &addressEntity.Address{}, fmt.Errorf("problem desertializing '%T' event to JSON", e)
 			}
 			events = append(events, &e)
 
@@ -147,7 +147,7 @@ func (r *addressRepository) Load(ctx context.Context, id valueobject.Identifier)
 	return addressEntity.NewAddressFromEvents(events), nil
 }
 
-// returns list of all active addresses ids
+// GetAddressIds returns list of all active addresses ids
 func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bool) ([]valueobject.Identifier, error) {
 	// TODO: improve it especially because of looping through deleted addresses isn't efficient https://stackoverflow.com/a/37335777/9338572
 	eventsToRead := 1000
@@ -169,7 +169,7 @@ func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bo
 			var e event.AddressCreated
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return []valueobject.Identifier{}, fmt.Errorf("Problem deserializing '%s' event from JSON", record.EventType)
+				return []valueobject.Identifier{}, fmt.Errorf("problem deserializing '%s' event from JSON", record.EventType)
 			}
 			addressIds = append(addressIds, e.ID)
 
@@ -177,19 +177,10 @@ func (r *addressRepository) GetAddressIds(ctx context.Context, includeDeleted bo
 			var e event.AddressDeleted
 			err := json.Unmarshal(record.Data, &e)
 			if err != nil {
-				return []valueobject.Identifier{}, fmt.Errorf("Problem deserializing '%s' event from JSON", record.EventType)
+				return []valueobject.Identifier{}, fmt.Errorf("problem deserializing '%s' event from JSON", record.EventType)
 			}
 			// if deleted address should not be returned - loop through the address ids
 			if !includeDeleted {
-
-				//for i := range addressIds {
-				//	// if deleted address is found among the address ids - remove it
-				//	if addressIds[i] == e.ID {
-				//		log.Println(addressIds[i], i, "0000")
-				//		addressIds = append(addressIds[:i], addressIds[i+1:]...)
-				//	}
-				//}
-
 				// check if address ID is marked as deleted and remove it from results
 				isNotDeleted := func(x valueobject.Identifier) bool { return x != e.ID }
 				i := 0

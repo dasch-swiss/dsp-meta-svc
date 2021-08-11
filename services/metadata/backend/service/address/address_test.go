@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_Service_CreateAddress(t *testing.T) {
+func Test_AddressService_CreateAddress(t *testing.T) {
 	// create test environment
 	repo := NewInMemRepo()
 	service := address.NewService(repo)
@@ -41,7 +41,7 @@ func Test_Service_CreateAddress(t *testing.T) {
 	assert.Equal(t, expectedAdditional, foundAddress.Additional)
 }
 
-func Test_Service_GetAddresses(t *testing.T) {
+func Test_AddressService_GetAddresses(t *testing.T) {
 	// create test environment
 	repo := NewInMemRepo()
 	service := address.NewService(repo)
@@ -66,7 +66,7 @@ func Test_Service_GetAddresses(t *testing.T) {
 	assert.Equal(t, addresses[0].ID, addressId)
 }
 
-func Test_Service_UpdateAddress(t *testing.T) {
+func Test_AddressService_UpdateAddress(t *testing.T) {
 	// create test environment
 	repo := NewInMemRepo()
 	service := address.NewService(repo)
@@ -106,7 +106,7 @@ func Test_Service_UpdateAddress(t *testing.T) {
 	assert.NotEqual(t, foundAddress.Additional, updatedAddress.Additional)
 }
 
-func Test_Service_DeleteAddress(t *testing.T) {
+func Test_AddressService_DeleteAddress(t *testing.T) {
 	// create test environment
 	repo := NewInMemRepo()
 	service := address.NewService(repo)

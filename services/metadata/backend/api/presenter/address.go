@@ -2,7 +2,7 @@ package presenter
 
 import "github.com/dasch-swiss/dsp-meta-svc/shared/go/pkg/valueobject"
 
-// data used as the result for any address operation
+// Address data used as the result for any address operation
 type Address struct {
 	ID         valueobject.Identifier `json:"id"`
 	Type       string                 `json:"type"`

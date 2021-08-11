@@ -11,7 +11,7 @@ import (
 
 const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 
-func Test_NewAddress(t *testing.T) {
+func Test_AddressEntity_NewAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
 	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
@@ -51,7 +51,7 @@ func Test_NewAddress(t *testing.T) {
 	}
 }
 
-func Test_NewAddressFromEvents(t *testing.T) {
+func Test_AddressEntity_NewAddressFromEvents(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
 	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
@@ -92,7 +92,7 @@ func Test_NewAddressFromEvents(t *testing.T) {
 	assert.True(t, a.ChangedAt.Time().IsZero())
 }
 
-func Test_UpdateAddress(t *testing.T) {
+func Test_AddressEntity_UpdateAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
 	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
@@ -161,7 +161,7 @@ func Test_UpdateAddress(t *testing.T) {
 	}
 }
 
-func Test_DeleteAddress(t *testing.T) {
+func Test_AddressEntity_DeleteAddress(t *testing.T) {
 	expectedId, _ := valueobject.NewIdentifier()
 	expectedType := ADDRESS_TYPE
 	expectedStreet, _ := valueobject.NewStreet("Banhofstrasse 1")
@@ -197,9 +197,6 @@ func Test_DeleteAddress(t *testing.T) {
 	default:
 		t.Fatalf("unexpected event type: %T", e)
 	}
-
-	// deletedAddress := a.DeleteAddress(a.ID)
-	// assert.Nil(t, deletedAddress)
 
 	a.DeleteAddress(a.ID)
 

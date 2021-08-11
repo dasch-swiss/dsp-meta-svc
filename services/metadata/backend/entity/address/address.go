@@ -9,8 +9,8 @@ import (
 
 const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 
-// TODO canton and additonal should be optional
-// address domain entity
+// Address domain entity
+// TODO canton and additional should be optional
 type Address struct {
 	ID         valueobject.Identifier
 	Type       string
@@ -30,7 +30,7 @@ type Address struct {
 	Changes []event.Event
 }
 
-// creates a new address entity
+// NewAddress creates a new address entity
 func NewAddress(id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) *Address {
 	a := &Address{}
 
@@ -50,7 +50,7 @@ func NewAddress(id valueobject.Identifier, street valueobject.Street, postalCode
 	return a
 }
 
-// updates an address entity
+// UpdateAddress updates an address entity
 func (a *Address) UpdateAddress(id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) error {
 	if !a.DeletedAt.Time().IsZero() {
 		return ErrAddressHasBeenDeleted
@@ -71,7 +71,7 @@ func (a *Address) UpdateAddress(id valueobject.Identifier, street valueobject.St
 	return nil
 }
 
-// deletes an address entity
+// DeleteAddress deletes an address entity
 func (a *Address) DeleteAddress(id valueobject.Identifier) error {
 	if !a.DeletedAt.Time().IsZero() {
 		return ErrAddressHasBeenDeleted
@@ -139,7 +139,7 @@ func (a *Address) On(ev event.Event, new bool) {
 	}
 }
 
-// helper method that creates a new address from a series of events
+// NewAddressFromEvents helper method creates new address from series of events
 func NewAddressFromEvents(e []event.Event) *Address {
 	a := &Address{}
 
@@ -150,7 +150,7 @@ func NewAddressFromEvents(e []event.Event) *Address {
 	return a
 }
 
-// returns the uncommitted events from the Address entity
-func (p Address) Events() []event.Event {
-	return p.Changes
+// Events returns the uncommitted events from the Address entity
+func (a Address) Events() []event.Event {
+	return a.Changes
 }

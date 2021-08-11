@@ -12,14 +12,14 @@ type Service struct {
 	repo Repository
 }
 
-// creates new address usecase/sercice
+// NewService creates new address service
 func NewService(r Repository) *Service {
 	return &Service{
 		repo: r,
 	}
 }
 
-// creates new address
+// CreateAddress creates new address
 func (s *Service) CreateAddress(ctx context.Context, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) (valueobject.Identifier, error) {
 	// generate new UUID
 	id, _ := valueobject.NewIdentifier()
@@ -34,7 +34,7 @@ func (s *Service) CreateAddress(ctx context.Context, street valueobject.Street, 
 	return id, nil
 }
 
-// updates existing address with provided values
+// UpdateAddress updates existing address with provided values
 func (s *Service) UpdateAddress(ctx context.Context, id valueobject.Identifier, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) (*addressEntity.Address, error) {
 
 	// get address to update
@@ -66,6 +66,7 @@ func (s *Service) UpdateAddress(ctx context.Context, id valueobject.Identifier, 
 	return a, nil
 }
 
+// DeleteAddress deletes address of provided ID
 func (s *Service) DeleteAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	// get address to delete
 	a, err := s.repo.Load(ctx, id)
@@ -84,6 +85,7 @@ func (s *Service) DeleteAddress(ctx context.Context, id valueobject.Identifier) 
 	return a, nil
 }
 
+// GetAddress gets address of provided ID
 func (s *Service) GetAddress(ctx context.Context, id valueobject.Identifier) (*addressEntity.Address, error) {
 	a, err := s.repo.Load(ctx, id)
 	if err != nil {
@@ -92,6 +94,7 @@ func (s *Service) GetAddress(ctx context.Context, id valueobject.Identifier) (*a
 	return a, err
 }
 
+// GetAddresses get existing addresses, setting includeDeleted returns also addresses marked as deleted
 func (s *Service) GetAddresses(ctx context.Context, includeDeleted bool) ([]addressEntity.Address, error) {
 	var addresses []addressEntity.Address
 	ids, err := s.repo.GetAddressIds(ctx, includeDeleted)
@@ -112,6 +115,7 @@ func (s *Service) GetAddresses(ctx context.Context, includeDeleted bool) ([]addr
 
 }
 
+// checks itf there is a difference between provided addresses
 func isIdentical(a addressEntity.Address, street valueobject.Street, postalCode valueobject.PostalCode, locality valueobject.Locality, country valueobject.Country, canton valueobject.Canton, additional valueobject.Additional) bool {
 	if a.Street.Equals(street) &&
 		a.PostalCode.Equals(postalCode) &&

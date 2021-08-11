@@ -2,8 +2,8 @@ package address
 
 import "errors"
 
-var ErrAddressHasBeenDeleted = errors.New("Address has been marked as deleted")
-var ErrNoPropertiesChanged = errors.New("No new value for any property provided")
-var ErrAddressNotFound = errors.New("No address found with the provided uuid")
-var ErrServerNotResponding = errors.New("Server is not responding")
-var ErrNoAddressDataReturned = errors.New("No address data returned")
+var ErrAddressHasBeenDeleted = errors.New("address has been marked as deleted")
+var ErrNoPropertiesChanged = errors.New("no new value for any property provided")
+var ErrAddressNotFound = errors.New("no address found with the provided uuid")
+var ErrServerNotResponding = errors.New("server is not responding")
+var ErrNoAddressDataReturned = errors.New("no address data returned")

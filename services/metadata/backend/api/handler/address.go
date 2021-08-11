@@ -17,10 +17,8 @@ import (
 
 const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
 
-// reusable struct to use when decoding the JSON request body
+// AddressRequestBody reusable struct to use when decoding the JSON request body
 type AddressRequestBody struct {
-	// ID         string `json:"id"`
-	// Type       string `json:"type"`
 	Street     string `json:"street"`
 	PostalCode string `json:"postalCode"`
 	Locality   string `json:"locality"`
@@ -29,7 +27,7 @@ type AddressRequestBody struct {
 	Additional string `json:"additional"`
 }
 
-// makes URL handlers for creating, updating, deleting and getting addresses
+// HandleAddressRoutes makes URL handlers for creating, updating, deleting and getting addresses
 func HandleAddressRoutes(r *mux.Router, n negroni.Negroni, service address.UseCase) {
 	r.Handle("/v1/addresses", n.With(negroni.Wrap(createAddress(service)),
 		)).Methods("POST", "OPTIONS")
@@ -143,7 +141,7 @@ func createAddress(service address.UseCase) http.Handler {
 			DeletedBy:  a.DeletedBy.String(),
 		}
 
-		// replace null-values with "null"
+		// replace null-values with empty string
 		*res = res.NullifyJsonProps()
 
 		w.WriteHeader(http.StatusCreated)
@@ -279,7 +277,7 @@ func updateAddress(service address.UseCase) http.Handler {
 			DeletedBy:  updatedAddress.DeletedBy.String(),
 		}
 
-		// replace null-values with "null"
+		// replace null-values with empty string
 		*res = res.NullifyJsonProps()
 		
 		w.WriteHeader(http.StatusOK)
@@ -348,7 +346,7 @@ func deleteAddress(service address.UseCase) http.Handler {
 			DeletedBy:  deletedAddress.DeletedBy.String(),
 		}
 
-		// replace null-values with "null"
+		// replace null-values with empty string
 		*res = res.NullifyJsonProps()
 
 		if err := json.NewEncoder(w).Encode(res); err != nil {
@@ -409,7 +407,7 @@ func getAddress(service address.UseCase) http.Handler {
 			DeletedBy:  a.DeletedBy.String(),
 		}
 
-		// replace null-values with "null"
+		// replace null-values with empty string
 		*res = res.NullifyJsonProps()
 
 		if err := json.NewEncoder(w).Encode(res); err != nil {
@@ -475,7 +473,7 @@ func getAddresses(service address.UseCase) http.Handler {
 				DeletedBy:  a.DeletedBy.String(),
 			}
 
-			// replace null-values with "null"
+			// replace null-values with empty string
 			addressToAppend = addressToAppend.NullifyJsonProps()
 			res = append(res, addressToAppend)
 		}
@@ -486,4 +484,3 @@ func getAddresses(service address.UseCase) http.Handler {
 		}
 	})
 }
-

@@ -13,8 +13,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-const ADDRESS_TYPE = "http://ns.dasch.swiss/repository#Address"
-
 func Test_AddressRepository_Save(t *testing.T) {
 	container := GetEmptyDatabase()
 	defer container.Close()
@@ -76,10 +74,10 @@ func Test_AddressRepository_Load(t *testing.T) {
 	additional, _ := valueobject.NewAdditional("Es ist keine echte Adresse")
 
 	// create new address
-	address := addressEntity.NewAddress(id, street, postalCode, locality, country, canton, additional)
+	a := addressEntity.NewAddress(id, street, postalCode, locality, country, canton, additional)
 
 	// save event to the store
-	r.Save(ctx, address)
+	r.Save(ctx, a)
 
 	// load address from store
 	addressFromEvents, err := r.Load(ctx, id)
@@ -87,15 +85,15 @@ func Test_AddressRepository_Load(t *testing.T) {
 		t.Fatalf("Unexpected failure: %+v", err)
 	}
 
-	// check if intially created addres is the same as one loaded from events
-	assert.Equal(t, address.ID, addressFromEvents.ID)
-	assert.Equal(t, address.Type, addressFromEvents.Type)
-	assert.Equal(t, address.Street, addressFromEvents.Street)
-	assert.Equal(t, address.PostalCode, addressFromEvents.PostalCode)
-	assert.Equal(t, address.Locality, addressFromEvents.Locality)
-	assert.Equal(t, address.Country, addressFromEvents.Country)
-	assert.Equal(t, address.Canton, addressFromEvents.Canton)
-	assert.Equal(t, address.Additional, addressFromEvents.Additional)
+	// check if initially created address is the same as one loaded from events
+	assert.Equal(t, a.ID, addressFromEvents.ID)
+	assert.Equal(t, a.Type, addressFromEvents.Type)
+	assert.Equal(t, a.Street, addressFromEvents.Street)
+	assert.Equal(t, a.PostalCode, addressFromEvents.PostalCode)
+	assert.Equal(t, a.Locality, addressFromEvents.Locality)
+	assert.Equal(t, a.Country, addressFromEvents.Country)
+	assert.Equal(t, a.Canton, addressFromEvents.Canton)
+	assert.Equal(t, a.Additional, addressFromEvents.Additional)
 }
 
 func Test_AddressRepository_GetAddressIds(t *testing.T) {
@@ -120,10 +118,10 @@ func Test_AddressRepository_GetAddressIds(t *testing.T) {
 	additional, _ := valueobject.NewAdditional("Es ist keine echte Adresse")
 
 	// create new address
-	address := addressEntity.NewAddress(id, street, postalCode, locality, country, canton, additional)
+	a := addressEntity.NewAddress(id, street, postalCode, locality, country, canton, additional)
 
 	// save event to the store
-	r.Save(ctx, address)
+	r.Save(ctx, a)
 
 	// get list of address ids
 	addressIds, err := r.GetAddressIds(ctx, false)

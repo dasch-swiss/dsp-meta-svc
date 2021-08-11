@@ -6,7 +6,7 @@ type FamilyName struct {
 	value string
 }
 
-// NewGivenName creates a new valid given name object.
+// NewFamilyName creates a new valid given name object.
 func NewFamilyName(value string) (FamilyName, error) {
 	if len(value) > 50 || value == "" {
 		return FamilyName{}, fmt.Errorf("invalid family name, must be within 50 characters and non-empty")

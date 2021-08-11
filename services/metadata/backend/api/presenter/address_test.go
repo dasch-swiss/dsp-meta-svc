@@ -41,8 +41,8 @@ func Test_AddressPresenter_NullifyJsonProps(t *testing.T) {
 	assert.Equal(t, a.Additional, "additional")
 	assert.Equal(t, a.CreatedAt, "2021-08-05 12:12:00 +0000 UTC")
 	assert.Equal(t, a.CreatedBy, "12345678-1234-1234-1234-123456789101")
-	assert.Equal(t, a.ChangedAt, "null")
-	assert.Equal(t, a.ChangedBy, "null")
-	assert.Equal(t, a.DeletedAt, "null")
-	assert.Equal(t, a.DeletedBy, "null")
+	assert.Equal(t, a.ChangedAt, "")
+	assert.Equal(t, a.ChangedBy, "")
+	assert.Equal(t, a.DeletedAt, "")
+	assert.Equal(t, a.DeletedBy, "")
 }

@@ -5,7 +5,7 @@ import (
 	"regexp"
 )
 
-// EmailAddress errors
+// ErrInvalidEmail EmailAddress errors
 var (
 	ErrInvalidEmail = errors.New("not a valid email address")
 )

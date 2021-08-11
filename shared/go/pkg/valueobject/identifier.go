@@ -29,7 +29,7 @@ func IdentifierFromBytes(input []byte) (Identifier, error) {
 	return id, nil
 }
 
-//AsUUID returns the UUID of the identifier.
+// UUID AsUUID returns the UUID of the identifier.
 func (v Identifier) UUID() uuid.UUID {
 	return v.value
 }

@@ -1,0 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "address",
+    srcs = [
+        "address.go",
+        "interface.go",
+    ],
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend/service/address",
+    visibility = ["//services/metadata/backend:__subpackages__"],
+    deps = [
+        "//services/metadata/backend/entity/address",
+        "//shared/go/pkg/valueobject",
+    ],
+)
+
+go_test(
+    name = "address_test",
+    size = "small",
+    srcs = [
+        "address_test.go",
+        "inmem_test.go",
+    ],
+    embed = [":address"],
+    visibility = ["//visibility:private"],
+    deps = [
+        "//services/metadata/backend/event",
+        "@com_github_gofrs_uuid//:go_default_library",
+        "@com_github_stretchr_testify//assert",
+    ],
+)

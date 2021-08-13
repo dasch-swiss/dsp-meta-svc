@@ -111,8 +111,15 @@ http_archive(
 
 # Load macros and repository rules.
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
-load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
+load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
 load("//:deps.bzl", "go_dependencies")
+
+go_repository(
+    name = "com_github_dasch_swiss_dasch_service_platform",
+    importpath = "github.com/dasch-swiss/dasch-service-platform",
+    sum = "h1:eJxpBoJt/LRX2oriugyc1rigKFu2tgHDbIIyP7VgqLM=",
+    version = "v1.4.1",
+)
 
 # gazelle:repository_macro deps.bzl%go_dependencies
 go_dependencies()

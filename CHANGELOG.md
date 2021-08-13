@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.4.1...v0.0.1) (2021-08-13)
+
+
+### Maintenance
+
+* release 0.0.1 ([088b5a7](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/088b5a7f4f6a2bb8423d07a5e0baac2c39262075))
+
 ### [1.4.1](https://www.github.com/dasch-swiss/dasch-service-platform/compare/v1.4.0...v1.4.1) (2021-07-14)
 
 

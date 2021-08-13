@@ -5,6 +5,6 @@ container_push(
     format = "Docker",
     image = "//services/metadata/backend:image",
     registry = "index.docker.io",
-    repository = "daschswiss/dsp-metadata-service",
+    repository = "daschswiss/dsp-meta-svc",
     tag = "{BUILD_SCM_TAG}",
 )

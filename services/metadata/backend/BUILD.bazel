@@ -10,7 +10,7 @@ container_push(
     format = "Docker",
     image = ":image",
     registry = "index.docker.io",
-    repository = "daschswiss/dsp-metadata-service",
+    repository = "daschswiss/dsp-meta-svc",
     tag = "{BUILD_SCM_TAG}",
 )
 
@@ -22,7 +22,7 @@ go_image(
         "//public",
         "//services/metadata/backend/data",
     ],
-    importpath = "github.com/dasch-swiss/dasch-service-platform/services/metadata/backend",
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_gorilla_handlers//:handlers",
@@ -38,7 +38,7 @@ go_binary(
         "//:version",
         "//services/metadata/backend/data",
     ],
-    importpath = "github.com/dasch-swiss/dasch-service-platform/services/metadata/backend",
+    importpath = "github.com/dasch-swiss/dsp-meta-svc/services/metadata/backend",
     visibility = ["//visibility:public"],
     deps = [
         "@com_github_gorilla_handlers//:handlers",

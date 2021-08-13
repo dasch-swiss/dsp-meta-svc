@@ -45,15 +45,15 @@ metadata: ## start Go mock backend on port 3000
 
 .PHONY: metadata-docker-build
 metadata-docker-build: build ## publish metadata mock-server linux/amd64 platform docker image locally (watching /data/*.json)
-	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/metadata/backend/backend:image -- --norun
+	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/metadata/backend:image -- --norun
 
 .PHONY: metadata-docker-publish
 metadata-docker-publish: build ## publish metadata mock-server linux/amd64 platform docker image to Dockerhub (watching /data/*.json)
-	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/metadata/backend/backend:push
+	@bazel run --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 //services/metadata/backend:push
 
 .PHONY: metadata-docker-run
 metadata-docker-run: metadata-docker-build ## build and run metadata mock-server linux/amd64 platform docker image (watching /data/*.json)
-	@docker run --rm -p 3000:3000 bazel/services/metadata/backend/backend:image
+	@docker run --rm -p 3000:3000 bazel/services/metadata/backend:image
 
 .PHONY: metadata-service-run
 metadata-service-run: build ## start the metadata-service

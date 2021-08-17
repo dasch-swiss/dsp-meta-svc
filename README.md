@@ -44,7 +44,7 @@ The server serves the frontend (static file serving on `./public/`) and the meta
 The route `/` serves the frontend.
 
 The routes `/projects` and `/projects/:id` form a simple metadata API.  
-The server serves all data found in `./services/metadata/backend/data/*.json`, where the JSON file follows the data structure as currently provided by DSP-JS-LIB.  
+The server serves all data found in `./services/metadata/go_ca_backend/data/*.json`, where the JSON file follows the data structure as currently provided by DSP-JS-LIB.  
 __Note:__ Files starting with underscore (`_`) are excluded. This provides a simple means to leave out files that are not supposed to be public.  
 The server supports pagination and full text search.
 

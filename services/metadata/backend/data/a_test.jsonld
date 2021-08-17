@@ -1,0 +1,10 @@
+{
+	"projectsMetadata": [
+		{
+			"type": "http://ns.dasch.swiss/repository#Project",
+			"description": "test",
+			"name": "test",
+			"shortcode": "7777"
+		}
+	]
+}

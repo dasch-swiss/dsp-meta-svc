@@ -27,7 +27,7 @@ type Project struct {
 }
 
 type Projects struct {
-	dataJSON []Project
+	dataJSON   []Project
 	dataJSONLD []Project
 }
 
@@ -148,7 +148,7 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 		matches = make([]Project, len(projects.dataJSONLD))
 		copy(matches, projects.dataJSON)
 		log.Printf("JSON-LD request for: %v", r.URL)
-	} else if contentType == "application/json" {
+	} else {
 		w.Header().Set("Content-Type", "application/json")
 
 		// request parameters
@@ -200,7 +200,7 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSONLD
 		log.Printf("JSON-LD request for: %v", r.URL)
-	} else if contentType == "application/json" {
+	} else {
 		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSON
 		log.Printf("JSON request for: %v", r.URL)
@@ -307,7 +307,7 @@ func main() {
 
 	// load Data
 	projects = loadProjectData()
-	log.Printf("Loaded %v files = %v JSON + %v JSON-LD files", len(projects.dataJSON) + len(projects.dataJSONLD), len(projects.dataJSON), len(projects.dataJSONLD))
+	log.Printf("Loaded %v files = %v JSON + %v JSON-LD files", len(projects.dataJSON)+len(projects.dataJSONLD), len(projects.dataJSON), len(projects.dataJSONLD))
 
 	// init Router
 	router := mux.NewRouter()

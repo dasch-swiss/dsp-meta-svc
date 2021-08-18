@@ -146,7 +146,7 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 	if contentType == "application/ld+json" {
 		w.Header().Set("Content-Type", "application/ld+json")
 		matches = make([]Project, len(projects.dataJSONLD))
-		copy(matches, projects.dataJSON)
+		copy(matches, projects.dataJSONLD)
 		log.Printf("JSON-LD request for: %v", r.URL)
 	} else {
 		w.Header().Set("Content-Type", "application/json")

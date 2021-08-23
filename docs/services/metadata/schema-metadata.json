@@ -743,21 +743,9 @@
       "description": "A postal address.",
       "type": "object",
       "properties": {
-        "__id": {
-          "type": "string",
-          "description": "Unique id of the address."
-        },
         "__type": {
           "type": "string",
           "const": "Address"
-        },
-        "__createdAt": {
-          "type": "string",
-          "description": "Creation date of this object"
-        },
-        "__createdBy": {
-          "type": "string",
-          "description": "ID of the user who created this object"
         },
         "__modifiedAt": {
           "type": "string",
@@ -801,10 +789,7 @@
         }
       },
       "required": [
-        "__id",
         "__type",
-        "__createdAt",
-        "__createdBy",
         "street",
         "postalCode",
         "locality",

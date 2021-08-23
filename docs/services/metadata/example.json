@@ -199,10 +199,7 @@
         "organization-001"
       ],
       "address": {
-        "__id": "address-001",
         "__type": "Address",
-        "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-        "__createdBy": "",
         "street": "Petersgraben 1",
         "additional": "Postfach",
         "postalCode": "4000",
@@ -249,10 +246,7 @@
         "postalCode": "4000",
         "locality": "Basel",
         "country": "Switzerland",
-        "__id": "address-001",
-        "__type": "Address",
-        "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-        "__createdBy": ""
+        "__type": "Address"
       },
       "authorityRefs": [
         {

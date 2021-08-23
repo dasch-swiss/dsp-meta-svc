@@ -6,6 +6,7 @@
   import Tab from './Tab.svelte';
   import { fade } from 'svelte/transition';
   import Snackbar from '../Snackbar.svelte';
+  import Loading from '../Loading.svelte';
 
   const mobileResolution = window.innerWidth < 992;
   
@@ -171,6 +172,8 @@
       </div>
     </div>
   </div>
+{:else}
+  <Loading />
 {/if}
 
 <style>

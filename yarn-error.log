@@ -60,8 +60,8 @@ npm manifest:
       "dev": "rollup -c -w",
       "start": "sirv public",
       "validate": "svelte-check",
-      "node-start-dev": "ibazel run //services/metadata/backend:bin",
-      "node-start-prod": "bazel run //services/metadata/backend:bin",
+      "node-start-dev": "ibazel run //services/metadata/go_ca_backend:bin",
+      "node-start-prod": "bazel run //services/metadata/go_ca_backend:bin",
       "uml": "puml generate -s docs/services/metadata/domain-entities.puml -o docs/services/metadata/domain-entities.svg && puml generate -s docs/services/metadata/api-example.puml -o docs/services/metadata/api-example.svg"
     },
     "dependencies": {

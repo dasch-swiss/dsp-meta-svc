@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.4.2...v1.4.3) (2021-08-23)
+
+
+### Bug Fixes
+
+* **project-page:** fix async project page loading ([#10](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/10)) ([7ed6708](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/7ed6708970c29c491286362812b66e8e680444bc))
+
 ### [1.4.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.0.0...v1.4.2) (2021-08-18)
 
 

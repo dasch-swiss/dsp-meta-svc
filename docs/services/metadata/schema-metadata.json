@@ -781,37 +781,9 @@
       "type": "object",
       "description": "Data management plan of the project",
       "properties": {
-        "__id": {
-          "type": "string",
-          "description": "ID of the data management plan."
-        },
         "__type": {
           "type": "string",
           "const": "DataManagementPlan"
-        },
-        "__createdAt": {
-          "type": "string",
-          "description": "Creation date of this object"
-        },
-        "__createdBy": {
-          "type": "string",
-          "description": "ID of the user who created this object"
-        },
-        "__modifiedAt": {
-          "type": "string",
-          "description": "Last modification date of this object"
-        },
-        "__modifiedBy": {
-          "type": "string",
-          "description": "ID of the user who last modified this object"
-        },
-        "__deletedAt": {
-          "type": "string",
-          "description": "Deletion date of this object"
-        },
-        "__deletedBy": {
-          "type": "string",
-          "description": "ID of the user who deleted this object"
         },
         "available": {
           "type": "boolean"
@@ -821,10 +793,7 @@
         }
       },
       "required": [
-        "__id",
-        "__type",
-        "__createdAt",
-        "__createdBy"
+        "__type"
       ],
       "additionalProperties": false
     },

@@ -57,7 +57,18 @@
       "text": "Project at Zenodo",
       "url": "https://zenodo.org/record/99999999999999"
     },
-    "dataManagementPlan": "dmp-001",
+    "dataManagementPlan": {
+      "__id": "dmp-001",
+      "__type": "DataManagementPlan",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
+      "available": true,
+      "url": {
+        "url": "https://dasch.swiss/someproject/dmp",
+        "type": "URL",
+        "__type": "URL"
+      }
+    },
     "endDate": "2022-01-01",
     "datasets": [
       "dataset-001"
@@ -289,17 +300,5 @@
         "__type": "URL"
       }
     }
-  ],
-  "dataManagementPlan": {
-    "__id": "dmp-001",
-    "__type": "DataManagementPlan",
-    "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-    "__createdBy": "",
-    "available": true,
-    "url": {
-      "url": "https://dasch.swiss/someproject/dmp",
-      "type": "URL",
-      "__type": "URL"
-    }
-  }
+  ]
 }

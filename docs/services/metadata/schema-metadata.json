@@ -44,9 +44,6 @@
         "type": "object",
         "$ref": "#/definitions/grant"
       }
-    },
-    "dataManagementPlan": {
-      "$ref": "#/definitions/dataManagementPlan"
     }
   },
   "required": [
@@ -248,8 +245,7 @@
           "$ref": "#/definitions/url"
         },
         "dataManagementPlan": {
-          "description": "ID of a data management plan.",
-          "type": "string"
+          "$ref": "#/definitions/dataManagementPlan"
         },
         "endDate": {
           "description": "End date of the project.",
@@ -746,22 +742,6 @@
         "__type": {
           "type": "string",
           "const": "Address"
-        },
-        "__modifiedAt": {
-          "type": "string",
-          "description": "Last modification date of this object"
-        },
-        "__modifiedBy": {
-          "type": "string",
-          "description": "ID of the user who last modified this object"
-        },
-        "__deletedAt": {
-          "type": "string",
-          "description": "Deletion date of this object"
-        },
-        "__deletedBy": {
-          "type": "string",
-          "description": "ID of the user who deleted this object"
         },
         "street": {
           "type": "string",

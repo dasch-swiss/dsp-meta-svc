@@ -704,9 +704,9 @@ node-nailgun-server@^0.1.4:
   dependencies:
     commander "^2.8.1"
 
-node-plantuml-back@BalduinLandolt/node-plantuml-back:
-  version "1.0.4"
-  resolved "https://codeload.github.com/BalduinLandolt/node-plantuml-back/tar.gz/ed5e23ba570399c721d848d300875ca638628cc7"
+node-plantuml-back@vowstar/node-plantuml-back:
+  version "1.1.0"
+  resolved "https://codeload.github.com/vowstar/node-plantuml-back/tar.gz/b0dc0b56ea3398f8ff4e8db0267f31c85bd76c85"
   dependencies:
     commander "^2.8.1"
     node-nailgun-client "^0.1.0"

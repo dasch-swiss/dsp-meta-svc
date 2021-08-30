@@ -44,9 +44,6 @@
         "type": "object",
         "$ref": "#/definitions/grant"
       }
-    },
-    "dataManagementPlan": {
-      "$ref": "#/definitions/dataManagementPlan"
     }
   },
   "required": [
@@ -79,6 +76,10 @@
       "type": "object",
       "description": "A URL (general URL or reference to an authority file)",
       "properties": {
+        "__type": {
+          "description": "Internal Object type",
+          "const": "URL"
+        },
         "type": {
           "type": "string",
           "description": "The type of reference. Default is `URL`, any other type should indicate an authority file supported by the DSP.",
@@ -108,6 +109,7 @@
         }
       },
       "required": [
+        "__type",
         "type",
         "url"
       ],
@@ -117,22 +119,38 @@
       "description": "A project on the DSP",
       "type": "object",
       "properties": {
-        "@id": {
+        "__id": {
           "type": "string",
           "description": "Identifier of the project"
         },
-        "@type": {
+        "__type": {
           "type": "string",
           "description": "Type of this object",
           "const": "Project"
         },
-        "@created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "@modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "shortcode": {
           "type": "string",
@@ -150,6 +168,10 @@
         "startDate": {
           "description": "Start date of the project.",
           "$ref": "#/definitions/date"
+        },
+        "teaserText": {
+          "type": "string",
+          "description": "short description of the project for previewing"
         },
         "datasets": {
           "description": "The datasets of which the project consists.",
@@ -214,18 +236,16 @@
             "description": "ID of the funding person or organization."
           }
         },
-        "urls": {
-          "description": "URLs of the project. The first one should be the project landing page or website. One additional website can be added, if relevant.",
-          "type": "array",
-          "minItems": 1,
-          "maxItems": 2,
-          "items": {
-            "$ref": "#/definitions/url"
-          }
+        "url": {
+          "description": "Primary URL of the project. This should be the project landing page or website hosted by the DaSCH.",
+          "$ref": "#/definitions/url"
+        },
+        "secondaryURL": {
+          "description": "Optional secondary project URL. This can point to any external project website.",
+          "$ref": "#/definitions/url"
         },
         "dataManagementPlan": {
-          "description": "ID of a data management plan.",
-          "type": "string"
+          "$ref": "#/definitions/dataManagementPlan"
         },
         "endDate": {
           "description": "End date of the project.",
@@ -264,21 +284,23 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified",
+        "__id",
+        "__type",
+        "__createdAt",
+        "__createdBy",
         "shortcode",
         "name",
         "description",
         "startDate",
+        "teaserText",
         "datasets",
         "keywords",
         "disciplines",
         "temporalCoverage",
         "spatialCoverage",
         "funders",
-        "urls"
+        "url",
+        "howToCite"
       ],
       "additionalProperties": false
     },
@@ -286,21 +308,37 @@
       "type": "object",
       "description": "A financial grant.",
       "properties": {
-        "@id": {
+        "__id": {
           "type": "string",
           "description": "Unique id of the grant."
         },
-        "@type": {
+        "__type": {
           "type": "string",
           "const": "Grant"
         },
-        "@created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "@modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "funders": {
           "description": "Legal bodies funding the grant.",
@@ -325,10 +363,10 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified",
+        "__id",
+        "__type",
+        "__createdAt",
+        "__createdBy",
         "funders"
       ],
       "additionalProperties": false
@@ -337,21 +375,37 @@
       "type": "object",
       "description": "A person relevant to the project.",
       "properties": {
-        "@id": {
+        "__id": {
           "type": "string",
           "description": "Unique id of the person."
         },
-        "@type": {
+        "__type": {
           "type": "string",
           "const": "Person"
         },
-        "@created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "@modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "jobTitles": {
           "type": "array",
@@ -393,15 +447,15 @@
           "$ref": "#/definitions/address",
           "description": "The postal address of the organization."
         },
-        "emails": {
-          "description": "E-mail addresses.",
-          "type": "array",
-          "minItems": 1,
-          "maxItems": 2,
-          "items": {
-            "type": "string",
-            "format": "email"
-          }
+        "email": {
+          "description": "primary e-mail address.",
+          "type": "string",
+          "format": "email"
+        },
+        "secondaryEmail": {
+          "description": "primary e-mail address.",
+          "type": "string",
+          "format": "email"
         },
         "authorityRefs": {
           "type": "array",
@@ -411,10 +465,10 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified",
+        "__id",
+        "__type",
+        "__createdAt",
+        "__createdBy",
         "jobTitles",
         "givenNames",
         "familyNames",
@@ -426,21 +480,37 @@
       "type": "object",
       "description": "A dataset belonging to the project.",
       "properties": {
-        "@id": {
+        "__id": {
           "type": "string",
-          "description": "Unique id of the grant."
+          "description": "Unique id of the dataset."
         },
-        "@type": {
+        "__type": {
           "type": "string",
           "const": "Dataset"
         },
-        "@created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "@modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "title": {
           "type": "string",
@@ -448,7 +518,12 @@
         },
         "accessConditions": {
           "type": "string",
-          "description": "The conditions under which the data of the dataset can be accessed."
+          "description": "The conditions under which the data of the dataset can be accessed.",
+          "enum": [
+            "open",
+            "restricted",
+            "closed"
+          ]
         },
         "howToCite": {
           "type": "string",
@@ -465,22 +540,17 @@
           ]
         },
         "abstracts": {
-          "type": "object",
+          "type": "array",
           "description": "Abstracts describing the dataset.",
-          "additionalProperties": false,
-          "properties": {
-            "urls": {
-              "type": "array",
-              "items": {
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/text"
+              },
+              {
                 "$ref": "#/definitions/url"
               }
-            },
-            "texts": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/text"
-              }
-            }
+            ]
           }
         },
         "typeOfData": {
@@ -504,7 +574,7 @@
           "minItems": 1,
           "items": {
             "description": "A reference to a license",
-            "$ref": "#/definitions/url"
+            "$ref": "#/definitions/license"
           }
         },
         "languages": {
@@ -551,7 +621,7 @@
             "$ref": "#/definitions/url"
           }
         },
-        "documentations": {
+        "additional": {
           "type": "object",
           "description": "Documentations of the dataset.",
           "additionalProperties": false,
@@ -572,10 +642,10 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified",
+        "__id",
+        "__type",
+        "__createdAt",
+        "__createdBy",
         "title",
         "accessConditions",
         "howToCite",
@@ -592,21 +662,37 @@
       "description": "An organization.",
       "type": "object",
       "properties": {
-        "@id": {
+        "__id": {
           "type": "string",
           "description": "ID of the organization."
         },
-        "@type": {
+        "__type": {
           "type": "string",
           "const": "Organization"
         },
-        "@created": {
+        "__createdAt": {
           "type": "string",
           "description": "Creation date of this object"
         },
-        "@modified": {
+        "__createdBy": {
+          "type": "string",
+          "description": "ID of the user who created this object"
+        },
+        "__modifiedAt": {
           "type": "string",
           "description": "Last modification date of this object"
+        },
+        "__modifiedBy": {
+          "type": "string",
+          "description": "ID of the user who last modified this object"
+        },
+        "__deletedAt": {
+          "type": "string",
+          "description": "Deletion date of this object"
+        },
+        "__deletedBy": {
+          "type": "string",
+          "description": "ID of the user who deleted this object"
         },
         "name": {
           "type": "string",
@@ -626,9 +712,11 @@
           "format": "email"
         },
         "alternativeNames": {
-          "type": "object",
+          "type": "array",
           "description": "Alternative names of the organization.",
-          "$ref": "#/definitions/text"
+          "items": {
+            "$ref": "#/definitions/text"
+          }
         },
         "authorityRefs": {
           "type": "array",
@@ -639,10 +727,10 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified",
+        "__id",
+        "__type",
+        "__createdAt",
+        "__createdBy",
         "name"
       ],
       "additionalProperties": false
@@ -651,6 +739,10 @@
       "description": "A postal address.",
       "type": "object",
       "properties": {
+        "__type": {
+          "type": "string",
+          "const": "Address"
+        },
         "street": {
           "type": "string",
           "description": "The street."
@@ -667,12 +759,17 @@
           "type": "string",
           "description": "The country."
         },
+        "canton": {
+          "type": "string",
+          "description": "region or organizational unit (canton, state, ...)"
+        },
         "additional": {
           "type": "string",
           "description": "Additional address information like c/o or post box"
         }
       },
       "required": [
+        "__type",
         "street",
         "postalCode",
         "locality",
@@ -684,21 +781,9 @@
       "type": "object",
       "description": "Data management plan of the project",
       "properties": {
-        "@id": {
-          "type": "string",
-          "description": "ID of the data management plan."
-        },
-        "@type": {
+        "__type": {
           "type": "string",
           "const": "DataManagementPlan"
-        },
-        "@created": {
-          "type": "string",
-          "description": "Creation date of this object"
-        },
-        "@modified": {
-          "type": "string",
-          "description": "Last modification date of this object"
         },
         "available": {
           "type": "boolean"
@@ -708,24 +793,25 @@
         }
       },
       "required": [
-        "@id",
-        "@type",
-        "@created",
-        "@modified"
+        "__type"
       ],
       "additionalProperties": false
     },
     "attribution": {
       "type": "object",
-      "description": "Attribution of work to a person, taking in one or more roles.",
+      "description": "Attribution of work to a person or organization, taking in one or more roles.",
       "properties": {
-        "person": {
+        "__type": {
           "type": "string",
-          "description": "ID of a person."
+          "const": "Attribution"
+        },
+        "agent": {
+          "type": "string",
+          "description": "ID of a person/organization."
         },
         "roles": {
           "type": "array",
-          "description": "Roles the person had.",
+          "description": "Roles the person/organization had.",
           "minItems": 1,
           "items": {
             "type": "string",
@@ -734,8 +820,37 @@
         }
       },
       "required": [
-        "person",
+        "__type",
+        "agent",
         "roles"
+      ],
+      "additionalProperties": false
+    },
+    "license": {
+      "type": "object",
+      "description": "License information.",
+      "properties": {
+        "__type": {
+          "type": "string",
+          "const": "License"
+        },
+        "license": {
+          "description": "the specific license",
+          "$ref": "#/definitions/url"
+        },
+        "date": {
+          "description": "license date",
+          "$ref": "#/definitions/date"
+        },
+        "details": {
+          "type": "string",
+          "description": "additional information on the license (e.g. the scope of the license, if multiple licenses are used)."
+        }
+      },
+      "required": [
+        "__type",
+        "license",
+        "date"
       ],
       "additionalProperties": false
     }

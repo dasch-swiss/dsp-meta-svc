@@ -622,22 +622,17 @@
           }
         },
         "additional": {
-          "type": "object",
-          "description": "Documentations of the dataset.",
-          "additionalProperties": false,
-          "properties": {
-            "urls": {
-              "type": "array",
-              "items": {
+          "type": "array",
+          "description": "Additional information about the dataset.",
+          "items": {
+            "oneOf": [
+              {
                 "$ref": "#/definitions/url"
-              }
-            },
-            "texts": {
-              "type": "array",
-              "items": {
+              },
+              {
                 "$ref": "#/definitions/text"
               }
-            }
+            ]
           }
         }
       },

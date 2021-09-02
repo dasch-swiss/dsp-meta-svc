@@ -170,22 +170,18 @@
           "__type": "URL"
         }
       ],
-      "additional": {
-        "urls": [
-          {
-            "url": "https://dasch.swiss/0000-project/dataset-001/docs",
-            "text": "Documentation",
-            "type": "URL",
-            "__type": "URL"
-          }
-        ],
-        "texts": [
-          {
-            "de": "Bei dem Datenset handelt es sich um...",
-            "en": "The dataset is about..."
-          }
-        ]
-      }
+      "additional": [
+        {
+          "url": "https://dasch.swiss/0000-project/dataset-001/docs",
+          "text": "Documentation",
+          "type": "URL",
+          "__type": "URL"
+        },
+        {
+          "de": "Bei dem Datenset handelt es sich um...",
+          "en": "The dataset is about..."
+        }
+      ]
     }
   ],
   "persons": [

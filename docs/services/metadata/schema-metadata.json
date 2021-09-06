@@ -171,7 +171,7 @@
         },
         "teaserText": {
           "type": "string",
-          "description": "short description of the project for previewing"
+          "description": "Short description of the project for previewing."
         },
         "datasets": {
           "description": "The datasets of which the project consists.",

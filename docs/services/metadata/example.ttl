@@ -11,7 +11,7 @@ dsp:0000-project a dsp:Project ;
     dsp:hasDescription "Dies ist ein einfaches Beipiel-Projekt zu Dokumentationszwecken."@de ;
     dsp:hasDescription "This is a simple example project for documentation purposes."@en ;
     dsp:hasStartDate "2021-01-01"^^xsd:date ;
-    dsp:hasTeaser "A sample metadata-set for illustration purposes."^^xsd:date ;
+    dsp:hasTeaser "A sample metadata-set for illustration purposes."^^xsd:string ;
     dsp:hasDataset dsp:dataset-001 ;
     dsp:hasKeywords "Geschichte."@de ;
     dsp:hasKeywords "history"@en ;

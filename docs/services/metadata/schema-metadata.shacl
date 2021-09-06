@@ -1,0 +1,68 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+# @prefix dash: <http://datashapes.org/dash#> .
+# @prefix xml: <http://www.w3.org/XML/1998/namespace> .
+# @prefix foaf:<http://xmlns.com/foaf/0.1/> .
+# @prefix vowl: <http://purl.org/vowl/spec/v2/> .
+# @prefix prov: <http://www.w3.org/ns/prov#> .
+# @prefix dc: <http://purl.org/dc/elements/1.1/> .
+# @prefix dct: <http://purl.org/dc/terms/> .
+# @prefix locn: <http://www.w3.org/ns/locn#> .
+# @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+# @prefix schema: <https://schema.org/>.
+# @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+# @prefix unesco6: <http://skos.um.es/unesco6/> .
+# @prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
+# @prefix knora-admin: <http://www.knora.org/ontology/knora-admin#> .
+
+#
+# Validation:
+# `pyshacl -s docs/services/metadata/schema-metadata.shacl -sf turtle -f human docs/services/metadata/example.ttl`
+#
+
+@base <http://ns.dasch.swiss/repository#> .
+
+dsp:ProjectShape a sh:NodeShape ;
+    sh:targetClass dsp:Project ;
+    sh:property [
+        sh:path dsp:hasShortcode ;
+        sh:name "Shortcode" ;
+        sh:description "Shortcode of the project."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasName ;
+        sh:name "Name" ;
+        sh:description "Name of the project."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDescription ;
+        sh:name "Description" ;
+        sh:description "A human readable description of the project."@en ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasStartDate ;
+        sh:name "Start Date" ;
+        sh:description "Start date of the project."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasTeaser ;
+        sh:name "Teaser" ;
+        sh:description "Short description of the project for previewing."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+        
+        
+        .
+

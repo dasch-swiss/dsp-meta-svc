@@ -46,7 +46,7 @@
       }
     ],
     "url": {
-      "text": "DaSCH.swiss",
+      "text": "DaSCH Some Project",
       "type": "URL",
       "url": "https://dasch.swiss/someproject",
       "__type": "URL"
@@ -54,7 +54,7 @@
     "secondaryURL": {
       "__type": "URL",
       "type": "URL",
-      "text": "Project at Zenodo",
+      "text": "Some Project at Zenodo",
       "url": "https://zenodo.org/record/99999999999999"
     },
     "dataManagementPlan": {
@@ -200,7 +200,8 @@
         "Doe"
       ],
       "affiliation": [
-        "organization-001"
+        "organization-001",
+        "organization-002"
       ],
       "address": {
         "__type": "Address",

@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sdo: <https://schema.org/>.
 # @prefix dash: <http://datashapes.org/dash#> .
 # @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 # @prefix foaf:<http://xmlns.com/foaf/0.1/> .
@@ -13,7 +14,6 @@
 # @prefix dct: <http://purl.org/dc/terms/> .
 # @prefix locn: <http://www.w3.org/ns/locn#> .
 # @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-# @prefix schema: <https://schema.org/>.
 # @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 # @prefix unesco6: <http://skos.um.es/unesco6/> .
 # @prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
@@ -62,7 +62,160 @@ dsp:ProjectShape a sh:NodeShape ;
         sh:datatype xsd:string ;
         sh:maxCount 1 ;
         sh:minCount 1 ; ] ;
-        
-        
-        .
+    sh:property [
+        sh:path dsp:hasDataset ;
+        sh:name "Dataset" ;
+        sh:description "The datasets of which the project consists."@en ;
+        sh:class dsp:Dataset ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasKeyword ;
+        sh:name "Keyword" ;
+        sh:description "Keyword/Tag describing the project."@en ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDiscipline ;
+        sh:name "Discipline" ;
+        sh:description "Discipline/field of research of the project."@en ;
+        sh:or ( 
+            [ sh:datatype rdf:langString ] 
+            [ sh:class sdo:URL ] 
+        ) ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasTemporalCoverage ;
+        sh:name "Temporal coverage" ;
+        sh:description "Temporal coverage of the project."@en ;
+        sh:or ( 
+            [ sh:datatype rdf:langString ] 
+            [ sh:class sdo:URL ] 
+        ) ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasSpatialCoverage ;
+        sh:name "Spatial coverage" ;
+        sh:description "Spatial coverage of the project."@en ;
+        sh:class sdo:URL ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasFunder ;
+        sh:name "Funder" ;
+        sh:description "Funder of the project."@en ;
+        sh:or ( 
+            [ sh:class dsp:Person ] 
+            [ sh:class dsp:Organization ] 
+        ) ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "Primary URL" ;
+        sh:description "Primary URL of the project. This should be the project landing page or website hosted by the DaSCH."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasSecondaryURL ;
+        sh:name "Secondary URL" ;
+        sh:description "Optional secondary project URL. This can point to any external project website."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDataManagementPlan ;
+        sh:name "Data management plan" ;
+        sh:description "Data management plan of the project."@en ;
+        sh:class dsp:DataManagementPlan ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasEndDate ;
+        sh:name "End Date" ;
+        sh:description "End date of the project.."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasContactPoint ;
+        sh:name "Contact Point" ;
+        sh:description "Contact point of the project."@en ;
+        sh:or ( 
+            [ sh:class dsp:Person ] 
+            [ sh:class dsp:Organization ] 
+        ) ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasHowToCite ;
+        sh:name "how to cite" ;
+        sh:description "A string representation of how the project can be cited."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasPublication ;
+        sh:name "Publication" ;
+        sh:description "Publication produced during the lifetime of the project."@en ;
+        sh:datatype xsd:string ; ] ;
+    sh:property [
+        sh:path dsp:hasGrant ;
+        sh:name "Grant" ;
+        sh:description "Financial grant of the project."@en ;
+        sh:class dsp:Grant ; ] ;
+    sh:property [
+        sh:path dsp:hasAlternativeName ;
+        sh:name "Alternative Name" ;
+        sh:description "Alternative names of the project."@en ;
+        sh:datatype rdf:langString ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
 
+
+
+
+dsp:DataManagementPlanShape a sh:NodeShape ;
+    sh:targetClass dsp:DataManagementPlan ;
+    sh:property [
+        sh:path dsp:isAvailable ;
+        sh:name "is available" ;
+        sh:description "Indicates if there is a DMP available for the project."@en ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "URL" ;
+        sh:description "URL pointing to the DMP."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+dsp:GrantShape a sh:NodeShape ;
+    sh:targetClass dsp:Grant ;
+    sh:property [
+        sh:path dsp:hasFunder ;
+        sh:name "Funder" ;
+        sh:description "Legal body funding the grant."@en ;
+        sh:or ( 
+            [ sh:class dsp:Person ] 
+            [ sh:class dsp:Organization ] 
+        ) ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasNumber ;
+        sh:name "Number" ;
+        sh:description "The number or identifier assigned to the grant by the funding body."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasName ;
+        sh:name "Name" ;
+        sh:description "The name that the type of grant is usually referred to."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "URL" ;
+        sh:description "The URL of the grant."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .

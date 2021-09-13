@@ -13,8 +13,8 @@ dsp:0000-project a dsp:Project ;
     dsp:hasStartDate "2021-01-01"^^xsd:date ;
     dsp:hasTeaser "A sample metadata-set for illustration purposes."^^xsd:string ;
     dsp:hasDataset dsp:dataset-001 ;
-    dsp:hasKeywords "Geschichte."@de ;
-    dsp:hasKeywords "history"@en ;
+    dsp:hasKeyword "Geschichte."@de ;
+    dsp:hasKeyword "history"@en ;
     dsp:hasDiscipline [
         a sdo:URL;
         sdo:url "http://skos.um.es/unesco6/11" ;
@@ -23,6 +23,8 @@ dsp:0000-project a dsp:Project ;
             sdo:propertyID "Logic"
         ]
     ] ;
+    dsp:hasDiscipline "Logik"@de ;
+    dsp:hasDiscipline "Logic"@en ;
     dsp:hasTemporalCoverage [
         a sdo:URL;
         sdo:url "http://chronontology.dainst.org/period/Ef9SyESSafJ1" ;

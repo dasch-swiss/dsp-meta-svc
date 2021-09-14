@@ -99,7 +99,7 @@ dsp:dataset-001 a dsp:Dataset ;
     dsp:hasTypeOfData "Image"^^xsd:string ;
     dsp:hasLicense [
         a dsp:License ;
-        dsp:date "2020-01-01"^^xsd:date ;
+        dsp:hasDate "2020-01-01"^^xsd:date ;
         dsp:hasDetails "All files included in the dataset can be re-used under the CC BY 4.0 license."^^xsd:string ;
         dsp:hasURL [
             a sdo:URL;
@@ -159,14 +159,14 @@ dsp:person-001 a dsp:Person ;
     dsp:hasAddress [
         a sdo:PostalAddress;
         sdo:streetAddress "Petersgraben 1"^^xsd:string ;
-        sdo:description "Postfach"^^xsd:string ;
+        dsp:additional "Postfach"^^xsd:string ;
         sdo:postalCode "4000"^^xsd:string ;
         sdo:addressLocality "Basel"^^xsd:string ;
         sdo:addressRegion "Basel-Stadt"^^xsd:string ;
         sdo:addressCountry "Switzerland"^^xsd:string 
     ] ;
-    dsp:hasEmail "jane.doe@dasch.swiss" ;
-    dsp:hasSecondaryEmail "j.doe@gmail.com" ;
+    dsp:hasEmail "jane.doe@dasch.swiss"^^xsd:string ;
+    dsp:hasSecondaryEmail "j.doe@gmail.com"^^xsd:string ;
     dsp:hasAuthorityReference [
         a sdo:URL;
         sdo:url "http://viaf.org/viaf/00000000" ;
@@ -192,7 +192,7 @@ dsp:organization-001 a dsp:Organization ;
     dsp:hasAddress [
         a sdo:PostalAddress;
         sdo:streetAddress "Petersgraben 1"^^xsd:string ;
-        sdo:description "Postfach"^^xsd:string ;
+        dsp:additional "Postfach"^^xsd:string ;
         sdo:postalCode "4000"^^xsd:string ;
         sdo:addressLocality "Basel"^^xsd:string ;
         sdo:addressCountry "Switzerland"^^xsd:string 

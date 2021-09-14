@@ -5,26 +5,23 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sdo: <https://schema.org/>.
-# @prefix dash: <http://datashapes.org/dash#> .
-# @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-# @prefix foaf:<http://xmlns.com/foaf/0.1/> .
-# @prefix vowl: <http://purl.org/vowl/spec/v2/> .
-# @prefix prov: <http://www.w3.org/ns/prov#> .
-# @prefix dc: <http://purl.org/dc/elements/1.1/> .
-# @prefix dct: <http://purl.org/dc/terms/> .
-# @prefix locn: <http://www.w3.org/ns/locn#> .
-# @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-# @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-# @prefix unesco6: <http://skos.um.es/unesco6/> .
-# @prefix knora-base: <http://www.knora.org/ontology/knora-base#> .
-# @prefix knora-admin: <http://www.knora.org/ontology/knora-admin#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 
 #
 # Validation:
 # `pyshacl -s docs/services/metadata/schema-metadata.shacl -sf turtle -f human docs/services/metadata/example.ttl`
+# or even
+# `pyshacl -s docs/services/metadata/schema-metadata.shacl -sf turtle -f human docs/services/metadata/example.ttl | egrep "(^Result|^Conforms)"`
 #
 
 @base <http://ns.dasch.swiss/repository#> .
+
+
+
+
+# Project
+# -------
+
 
 dsp:ProjectShape a sh:NodeShape ;
     sh:targetClass dsp:Project ;
@@ -168,6 +165,248 @@ dsp:ProjectShape a sh:NodeShape ;
 
 
 
+# Dataset
+# -------
+
+
+dsp:DatasetShape a sh:NodeShape ;
+    sh:targetClass dsp:Dataset ;
+    sh:property [
+        sh:path dsp:hasTitle ;
+        sh:name "Title" ;
+        sh:description "The title of the dataset."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAccessConditions ;
+        sh:name "Access Conditions" ;
+        sh:description "The conditions under which the data of the dataset can be accessed."@en ;
+        sh:datatype xsd:string ;
+        sh:in (
+            "open"^^xsd:string 
+            "restricted"^^xsd:string 
+            "closed"^^xsd:string ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasHowToCite ;
+        sh:name "How To Cite" ;
+        sh:description "A string representation of how the dataset can be cited."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasStatus ;
+        sh:name "Status" ;
+        sh:description "The status of the dataset."@en ;
+        sh:datatype xsd:string ;
+        sh:in (
+            "In planning"^^xsd:string 
+            "Ongoing"^^xsd:string 
+            "On hold"^^xsd:string 
+            "Finished"^^xsd:string ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAbstract ;
+        sh:name "Abstract" ;
+        sh:description "Abstract describing the dataset."@en ;
+        sh:or ( 
+            [ sh:datatype rdf:langString ] 
+            [ sh:class sdo:URL ] 
+        ) ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasTypeOfData ;
+        sh:name "Type of data" ;
+        sh:description "Type of data held by the dataset: XML, Text, Image, Movie, Audio"@en ;
+        sh:datatype xsd:string ;
+        sh:in (
+            "XML"^^xsd:string 
+            "Text"^^xsd:string 
+            "Image"^^xsd:string 
+            "Video"^^xsd:string 
+            "Audio"^^xsd:string ) ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasLicense ;
+        sh:name "License" ;
+        sh:description "License under which the dataset is published."@en ;
+        sh:class dsp:License ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasLanguage ;
+        sh:name "Language" ;
+        sh:description "Language present in the dataset."@en ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasQualifiedAttribution ;
+        sh:name "Qualified Attribution" ;
+        sh:description "Attribution of work to a person or organization, taking in one or more roles."@en ;
+        sh:class prov:Attribution ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDatePublished ;
+        sh:name "Publication Date" ;
+        sh:description "Publishing date of the dataset."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDateCreated ;
+        sh:name "Creation Date" ;
+        sh:description "Creation date of the dataset."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDateModified ;
+        sh:name "Modification Date" ;
+        sh:description "Last modification date of the dataset."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDistribution ;
+        sh:name "Download" ;
+        sh:description "A downloadable form of the dataset."@en ;
+        sh:class sdo:DataDownload ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAlternativeTitle ;
+        sh:name "Alternative Title" ;
+        sh:description "Alternative titles of the dataset."@en ;
+        sh:datatype rdf:langString ;] ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "URL" ;
+        sh:description "URL pointing to representations of this dataset."@en ;
+        sh:class sdo:URL ; ] ;
+    sh:property [
+        sh:path dsp:hasAdditional ;
+        sh:name "Additional Information" ;
+        sh:description "Additional information about the dataset."@en ;
+        sh:or ( 
+            [ sh:datatype rdf:langString ] 
+            [ sh:class sdo:URL ] 
+        ) ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Person
+# ------
+
+
+dsp:PersonShape a sh:NodeShape ;
+    sh:targetClass dsp:Person ;
+    sh:property [
+        sh:path dsp:hasJobTitle ;
+        sh:name "Job Title" ;
+        sh:description "The job title of the person."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasGivenName ;
+        sh:name "Given Name" ;
+        sh:description "Given name of the person."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasFamilyName ;
+        sh:name "Family Name" ;
+        sh:description "Family name of the person."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAffiliation ;
+        sh:name "Institutional Affiliation" ;
+        sh:description "Institutional affiliation of the person."@en ;
+        sh:class dsp:Organization ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAddress ;
+        sh:name "Postal Address" ;
+        sh:description "Postal address of the person."@en ;
+        sh:class sdo:PostalAddress ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasEmail ;
+        sh:name "primary e-mail address" ;
+        sh:description "primary e-mail address."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasSecondaryEmail ;
+        sh:name "secondary e-mail address" ;
+        sh:description "secondary e-mail address."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAuthorityReference ;
+        sh:name "Authority File Reference" ;
+        sh:description "Reference to an external authority file."@en ;
+        sh:class sdo:URL ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Organization
+# ------------
+
+
+dsp:OrganizationShape a sh:NodeShape ;
+    sh:targetClass dsp:Organization ;
+    sh:property [
+        sh:path dsp:hasName ;
+        sh:name "Name" ;
+        sh:description "Name of the organization."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "URL" ;
+        sh:description "URL of the organization's website."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAddress ;
+        sh:name "Postal Address" ;
+        sh:description "Postal address of the organization."@en ;
+        sh:class sdo:PostalAddress ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasEmail ;
+        sh:name "E-mail Address" ;
+        sh:description "E-mail address of the organization."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasAlternativeName ;
+        sh:name "Alternative Name" ;
+        sh:description "Alternative name of the organization."@en ;
+        sh:datatype rdf:langString ;] ;
+    sh:property [
+        sh:path dsp:hasAuthorityReference ;
+        sh:name "Authority File Reference" ;
+        sh:description "Reference to an external authority file."@en ;
+        sh:class sdo:URL ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Data Management Plan
+# --------------------
+
+
 dsp:DataManagementPlanShape a sh:NodeShape ;
     sh:targetClass dsp:DataManagementPlan ;
     sh:property [
@@ -186,6 +425,10 @@ dsp:DataManagementPlanShape a sh:NodeShape ;
     sh:ignoredProperties (rdf:type) .
 
 
+
+
+# Grant
+# -----
 
 
 dsp:GrantShape a sh:NodeShape ;
@@ -217,5 +460,161 @@ dsp:GrantShape a sh:NodeShape ;
         sh:description "The URL of the grant."@en ;
         sh:class sdo:URL ;
         sh:maxCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# License
+# -------
+
+
+dsp:LicenseShape a sh:NodeShape ;
+    sh:targetClass dsp:License ;
+    sh:property [
+        sh:path dsp:hasURL ;
+        sh:name "License URL" ;
+        sh:description "URL pointing to the specific license."@en ;
+        sh:class sdo:URL ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ;  ] ;
+    sh:property [
+        sh:path dsp:hasDate ;
+        sh:name "Date" ;
+        sh:description "The licensing date."@en ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasDetails ;
+        sh:name "Licensing Details" ;
+        sh:description "Additional information on the license (e.g. the scope of the license, if multiple licenses are used)."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Attribution
+# -----------
+
+
+dsp:AttributionShape a sh:NodeShape ;
+    sh:targetClass prov:Attribution ;
+    sh:property [
+        sh:path prov:agent ;
+        sh:name "Agent" ;
+        sh:description "The Person/Organization."@en ;
+        sh:or ( 
+            [ sh:class dsp:Person ] 
+            [ sh:class dsp:Organization ] 
+        ) ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:hasRole ;
+        sh:name "Role" ;
+        sh:description "Role of the person/organization."@en ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Data Download
+# -------------
+
+
+dsp:DownloadShape a sh:NodeShape ;
+    sh:targetClass sdo:Datadownload ;
+    sh:property [
+        sh:path sdo:url ;
+        sh:name "URL" ;
+        sh:description "The URL."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# URL
+# ---
+
+
+dsp:URLShape a sh:NodeShape ;
+    sh:targetClass sdo:URL ;
+    sh:property [
+        sh:path sdo:url ;
+        sh:name "URL" ;
+        sh:description "The URL."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path sdo:propertyID ;
+        sh:name "Property ID" ;
+        sh:description "Commonly used identifier."@en ;
+        sh:class sdo:PropertyValue ;
+        sh:maxCount 1 ; ] ;
+    sh:closed true ;
+    sh:ignoredProperties (rdf:type) .
+
+
+
+
+# Postal Address
+# --------------
+
+
+dsp:PostalAddressShape a sh:NodeShape ;
+    sh:targetClass sdo:PostalAddress ;
+    sh:property [
+        sh:path sdo:streetAddress ;
+        sh:name "Street" ;
+        sh:description "Street."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path dsp:additional ;
+        sh:name "Additional" ;
+        sh:description "Additional information (e.g. Post Pox, c/o)."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path sdo:postalCode ;
+        sh:name "Postal Code" ;
+        sh:description "Postal Code."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path sdo:addressLocality ;
+        sh:name "Locality" ;
+        sh:description "Locality (City, Settlement, etc.)."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
+    sh:property [
+        sh:path sdo:addressRegion ;
+        sh:name "Region" ;
+        sh:description "Region (Canton, State, etc.)."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ; ] ;
+    sh:property [
+        sh:path sdo:addressCountry ;
+        sh:name "Country" ;
+        sh:description "Country."@en ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+        sh:minCount 1 ; ] ;
     sh:closed true ;
     sh:ignoredProperties (rdf:type) .

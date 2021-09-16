@@ -135,7 +135,7 @@ package Entities {
     -Date deletedAt
     -UUID deletedBy
     +String number
-    +MultiLanguageText name
+    +String name
     +URL url
 
   }

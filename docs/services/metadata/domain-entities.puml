@@ -13,6 +13,7 @@ package Entities {
     +Shortcode shortcode
     +String name
     +MultiLanguageText description
+    +String howToCite
     +Date startDate
     +URL url
     +String teaserText
@@ -36,7 +37,6 @@ package Entities {
     +DataManagementPlan dataManagementPlan
     +Date endDate
     +Person|Organization contactPoint
-    +String howToCite
     +URL secondaryURL
 
     .. (0 - n) ..

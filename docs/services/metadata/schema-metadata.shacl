@@ -143,6 +143,7 @@ dsp:ProjectShape a sh:NodeShape ;
         sh:name "how to cite" ;
         sh:description "A string representation of how the project can be cited."@en ;
         sh:datatype xsd:string ;
+        sh:minCount 1 ;
         sh:maxCount 1 ; ] ;
     sh:property [
         sh:path dsp:hasPublication ;

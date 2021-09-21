@@ -13,6 +13,7 @@
       "de": "Dies ist ein einfaches Beipiel-Projekt zu Dokumentationszwecken.",
       "en": "This is a simple example project for documentation purposes."
     },
+    "howToCite": "Doe, J. [et al.]: Project AB (ARK: ...).",
     "startDate": "2021-01-01",
     "teaserText": "A sample metadata-set for illustration purposes.",
     "keywords": [
@@ -85,8 +86,7 @@
     "funders": [
       "organization-001"
     ],
-    "contactPoint": "organization-001",
-    "howToCite": "Doe, J. [et al.]: Project AB (ARK: ...)."
+    "contactPoint": "organization-001"
   },
   "datasets": [
     {

@@ -346,7 +346,7 @@ dsp:PersonShape a sh:NodeShape ;
         sh:datatype xsd:string ;
         sh:maxCount 1 ; ] ;
     sh:property [
-        sh:path dsp:hasAuthorityReference ;
+        sh:path dsp:hasAuthorityFileReference ;
         sh:name "Authority File Reference" ;
         sh:description "Reference to an external authority file."@en ;
         sh:class sdo:URL ; ] ;
@@ -393,7 +393,7 @@ dsp:OrganizationShape a sh:NodeShape ;
         sh:description "Alternative name of the organization."@en ;
         sh:datatype rdf:langString ;] ;
     sh:property [
-        sh:path dsp:hasAuthorityReference ;
+        sh:path dsp:hasAuthorityFileReference ;
         sh:name "Authority File Reference" ;
         sh:description "Reference to an external authority file."@en ;
         sh:class sdo:URL ; ] ;

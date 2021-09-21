@@ -167,7 +167,7 @@ dsp:person-001 a dsp:Person ;
     ] ;
     dsp:hasEmail "jane.doe@dasch.swiss"^^xsd:string ;
     dsp:hasSecondaryEmail "j.doe@gmail.com"^^xsd:string ;
-    dsp:hasAuthorityReference [
+    dsp:hasAuthorityFileReference [
         a sdo:URL;
         sdo:url "http://viaf.org/viaf/00000000" ;
         sdo:propertyID [
@@ -199,7 +199,7 @@ dsp:organization-001 a dsp:Organization ;
     ] ;
     dsp:hasEmail "info@dasch.swiss" ;
     dsp:hasAlternativeName "Data and Service Center for the Humanities"@en ;
-    dsp:hasAuthorityReference [
+    dsp:hasAuthorityFileReference [
         a sdo:URL;
         sdo:url "https://grid.ac/institutes/grid.6612.3" ;
         sdo:propertyID [

@@ -332,7 +332,7 @@ dsp:PersonShape a sh:NodeShape ;
         sh:name "Postal Address" ;
         sh:description "Postal address of the person."@en ;
         sh:class sdo:PostalAddress ;
-        sh:minCount 1 ; ] ;
+        sh:maxCount 1 ; ] ;
     sh:property [
         sh:path dsp:hasEmail ;
         sh:name "primary e-mail address" ;

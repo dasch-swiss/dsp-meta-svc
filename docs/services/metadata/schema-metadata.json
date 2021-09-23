@@ -171,7 +171,7 @@
         },
         "teaserText": {
           "type": "string",
-          "description": "short description of the project for previewing"
+          "description": "Short description of the project for previewing."
         },
         "datasets": {
           "description": "The datasets of which the project consists.",
@@ -445,7 +445,7 @@
         },
         "address": {
           "$ref": "#/definitions/address",
-          "description": "The postal address of the organization."
+          "description": "The postal address of the person."
         },
         "email": {
           "description": "primary e-mail address.",
@@ -570,7 +570,7 @@
         },
         "licenses": {
           "type": "array",
-          "description": "Abstracts describing the dataset.",
+          "description": "Licenses under which the dataset is published.",
           "minItems": 1,
           "items": {
             "description": "A reference to a license",
@@ -586,7 +586,7 @@
         },
         "attributions": {
           "type": "array",
-          "description": "Work on the dataset attributed to individual persons.",
+          "description": "Work on the dataset attributed to an individual persons.",
           "minItems": 1,
           "items": {
             "$ref": "#/definitions/attribution"

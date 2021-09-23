@@ -222,7 +222,7 @@ The following values are accepted in `type`:
 #### Text (Multi-Language)
 
 
-Representation of the same text in multiple languages. (Minimum 1 language.)
+Representation of the same text in multiple languages (minimum 1 language).
 
 The keys of the object must be a two character ISO language code string. The property can be any string in the according language.
 
@@ -261,7 +261,7 @@ Representation of a postal address.
 {
   "__type": "Address",
   "street": "Petersgraben 1",
-  "additional": "Postfach",  // Can be c/o, post box or similar; is assumed to be the second address line. (optional)
+  "additional": "Postfach",  // Can be c/o, post box or similar; is assumed to be the second address line (optional)
   "postalCode": "4000",
   "locality": "Basel",
   "canton": "Basel-Stadt", // Organizational district like canton, state, etc. (optional)

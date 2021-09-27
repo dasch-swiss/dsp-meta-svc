@@ -42,6 +42,9 @@
     // const res = await fetch(`${process.env.BASE_URL}projects/${params.id}`);
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
     const metadata: Metadata = await res.json();
+
+    console.log("Metadata:", metadata);
+
     projectMetadata.set(metadata);
 
     // const project = $currentProjectMetadata.project

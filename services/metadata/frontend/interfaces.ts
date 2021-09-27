@@ -10,7 +10,7 @@ export interface PaginationData {
   totalCount: number;
   totalPages: number;
 }
-  
+
 export interface TabContent {
   label: string;
   value: number;
@@ -23,37 +23,39 @@ export interface ProjectMetadata {
 }
 
 export interface Metadata {
+  $schema: String;
   project: Project;
   datasets: Dataset[];
   persons?: Person[];
   organizations: Organization[];
   grants: Grant[];
-  dataManagementPlan: DataManagementPlan;
 }
 
 export interface Project {
   __type: "Project";
   __id: string;
-  __created: string;
-  __modified: string;
+  __createdAt: string;
+  __createdBy: string;
   shortcode: string;
   name: string;
   description: Text;
+  howToCite: string;
   startDate: string;
+  url: URL;
+  teaserText: string;
   datasets: string[];
   keywords: Text[];
   disciplines: (URL | Text)[];
   temporalCoverage: (URL | Text)[];
   spatialCoverage: URL[];
-  urls: URL[];
   funders: string[];
-  dataManagementPlan?: string;
+  dataManagementPlan?: DataManagementPlan;
   endDate?: string;
+  contactPoint?: string;
+  secondaryURL?: URL;
   publications?: string[];
   grants?: string[];
   alternativeNames?: Text[];
-  contactPoint?: string;
-  howToCite?: string;
 }
 
 export interface Dataset {
@@ -147,9 +149,6 @@ export interface Grant {
 
 export interface DataManagementPlan {
   __type: "DataManagementPlan";
-  __id: string;
-  __created: string;
-  __modified: string;
   available?: boolean;
   url?: URL;
 }

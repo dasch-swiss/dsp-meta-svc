@@ -47,7 +47,7 @@
 
     projectMetadata.set(metadata);
 
-    // const project = $currentProjectMetadata.project
+    // const project = $projectMetadata.project
     // currentProject.set(project);
     document.title = metadata.project.name;
 
@@ -115,6 +115,7 @@
       <span class="button-label">Go Back</span>
     </button>
   {/if}
+  <!-- Project name and alternative names -->
   <div class="row" style="flex-wrap: wrap;">
     <h1 class="title top-heading">
       {$projectMetadata?.project.name}
@@ -123,76 +124,53 @@
       <div class="row">
         <h4 class="title new-title">
           Also known as:&nbsp;
-          <span style="color:var(--secondary-colour)"
-            >{$projectMetadata?.project.alternativeNames
+          <span style="color:var(--secondary-colour)">
+            {$projectMetadata?.project.alternativeNames
               .map((t) => {
                 return getText(t);
               })
-              .join(", ")}</span
-          >
+              .join(", ")}
+          </span>
         </h4>
       </div>
     {/if}
   </div>
   <div class="row">
     <div class="column-left">
+
+      <!-- Description -->
       <div class="property-row">
         <span class="label new-subtitle">Description</span>
-        <div
-          id="description"
-          class="data new-text {isDescriptionExpanded
-            ? ''
-            : 'description-short'}"
-        >
+        <div id=description class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">
           {getText($projectMetadata?.project.description)}
         </div>
+        {#if descriptionLinesNumber > 6}
+          <div on:click={toggleDescriptionExpand} class=expand-button>show {isDescriptionExpanded ? "less" : "more"}</div>
+        {/if}
       </div>
 
+      <!-- Publications -->
       {#if $projectMetadata?.project.publications && Array.isArray($projectMetadata?.project.publications)}
         <div class="property-row">
           <span class="label new-subtitle">Publications</span>
           {#each $projectMetadata?.project.publications as p, i}
             {#if i > 1}
-              <span class={arePublicationsExpanded ? "data new-text" : "hidden"}
-                >{p}</span
-              >
+              <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p}</span>
             {:else}
               <span class="data new-text">{p}</span>
             {/if}
           {/each}
         </div>
-
         {#if $projectMetadata?.project.publications.length > 2}
           <div on:click={togglePublicationExpand} class="expand-button">
             show {arePublicationsExpanded ? "less" : "more"}
           </div>
         {/if}
 
-        <!-- {#if $currentProject?.publication && Array.isArray($currentProject?.publication)}
-          <div class="property-row">
-            <span class="label new-subtitle">Publications</span>
-            {#each $currentProject?.publication as p, i}
-              {#if i > 1}
-                <span
-                  class={arePublicationsExpanded ? "data new-text" : "hidden"}
-                  >{p}</span
-                >
-              {:else}
-                <span class="data new-text">{p}</span>
-              {/if}
-            {/each}
-          </div>
-
-          {#if $currentProject?.publication.length > 2}
-            <div on:click={togglePublicationExpand} class="expand-button">
-              show {arePublicationsExpanded ? "less" : "more"}
-            </div>
-          {/if}
-        {/if} -->
-
-        <div class="tabs">
+        <!-- XXX:reenable -->
+        <!-- <div class="tabs">
           <Tab datasets={$projectMetadata?.datasets} />
-        </div>
+        </div> -->
 
         {#if !mobileResolution}
           <button
@@ -245,6 +223,7 @@
         </button>
       {/if}
 
+      <!-- XXX: reenable -->
       <div class="widget">
         <ProjectWidget />
       </div>

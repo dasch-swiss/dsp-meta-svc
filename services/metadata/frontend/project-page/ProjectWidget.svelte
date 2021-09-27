@@ -14,13 +14,22 @@
 
 {#if $projectMetadata}
 
+<!-- Shortcode -->
   <div class=label>DSP Internal Shortcode</div>
   <div class=data>{$projectMetadata?.project.shortcode}</div>
 
+  <!-- DMP -->
   <div class=label>Data Management Plan</div>
-  <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
+  {#if $projectMetadata?.project.dataManagementPlan.url}
+    <a class="data external-link" href="{$projectMetadata?.project.dataManagementPlan.url.url}" target=_>
+      {$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}
+    </a>
+  {:else}
+    <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
+  {/if}
 
-  <div class=label>Discipline</div>
+  <!-- Disciplines -->
+  <div class=label>Disciplines</div>
   {#each $projectMetadata?.project.disciplines as d}
     {#if d.__type === "URL"}
       <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
@@ -33,29 +42,33 @@
     {/if}
   {/each}
 
+  <!-- Temporal Coverage -->
   <div class=label>Temporal Coverage</div>
   {#each $projectMetadata?.project.temporalCoverage as t}
     {#if t.__type === "URL"}
       <a class="data external-link" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
     {:else}
       <div class="data">{getText(t)}</div>
-      <!-- <div class="data">{getText(asText(t))}</div> -->
     {/if}
   {/each}
 
+  <!-- Spatial Coverage -->
   <div class=label>Spatial Coverage</div>
   {#each $projectMetadata?.project.spatialCoverage as s}
     <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
   {/each}
 
+  <!-- Start Date -->
   <div class=label>Start date</div>
   <div class=data>{$projectMetadata?.project.startDate}</div>
-
+  
+  <!-- End Date -->
   {#if $projectMetadata?.project.endDate}
-  <div class=label>End date</div>
-  <div class=data>{$projectMetadata?.project.endDate}</div>
+    <div class=label>End date</div>
+    <div class=data>{$projectMetadata?.project.endDate}</div>
   {/if}
 
+  <!-- Funders -->
   <div class=label>Funder</div>
   {#each $projectMetadata?.project.funders.map((o) => {return findObjectByID(o)}) as f}
     {#if f.__type === "Person"}
@@ -67,6 +80,7 @@
     {/if}
   {/each}
   
+  <!-- Grants -->
   {#if $projectMetadata?.project.grants}
     <div class=label>Grant</div>
     {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
@@ -86,6 +100,7 @@
     {/each}
   {/if}
 
+  <!-- Contact Point -->
   {#if $projectMetadata?.project.contactPoint}
     <div class=label>Contact</div>
     {#each [findObjectByID($projectMetadata?.project.contactPoint)] as c}
@@ -112,11 +127,12 @@
     {/each}
   {/if}
 
+  <!-- URLs -->
   <div class=label>Project Website</div>
-  {#each $projectMetadata?.project.urls as url}
-    <a class="data external-link" href={url.url} target=_>{truncateString(url.text)}</a>
-  {/each}
+  <a class="data external-link" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
+  <!-- XXX: secondaryURL -->
 
+  <!-- KEywords -->
   <div class=label>Keywords</div>
   <span class="keyword">{$projectMetadata?.project.keywords.map(t => {return getText(t)}).join(", ")}</span>
 

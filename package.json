@@ -13,7 +13,7 @@
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.25",
-    "node-plantuml-back": "BalduinLandolt/node-plantuml-back",
+    "node-plantuml-back": "vowstar/node-plantuml-back",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -30,9 +30,9 @@
     "dev": "rollup -c -w",
     "start": "sirv public -s",
     "validate": "svelte-check",
-    "node-start-dev": "ibazel run //services/metadata/backend:bin",
-    "node-start-prod": "bazel run //services/metadata/backend:bin",
-    "uml": "puml generate -s docs/services/metadata/domain-entities.puml -o docs/services/metadata/domain-entities.svg && puml generate -s docs/services/metadata/api-example.puml -o docs/services/metadata/api-example.svg"
+    "node-start-dev": "ibazel run //services/metadata/go_ca_backend:bin",
+    "node-start-prod": "bazel run //services/metadata/go_ca_backend:bin",
+    "uml": "puml generate -s docs/services/metadata/domain-entities.puml -o docs/services/metadata/domain-entities.svg"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",

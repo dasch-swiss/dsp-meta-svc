@@ -1,6 +1,6 @@
 @startuml Domain Entities
 
-package toplevel {
+package Entities {
 
   class Project {
     The Project.
@@ -8,32 +8,35 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +Shortcode shortcode
     +String name
     +MultiLanguageText description
+    +String howToCite
     +Date startDate
     +URL url
+    +String teaserText
 
     .. (1 - n) ..
     +Dataset[] datasets
     +MultiLanguageText[] keywords
-    +MultiLanguageText[] disciplineTexts
+    +MultiLanguageText|URL[] disciplines
     +URL[] disciplineRefs
-    +MultiLanguageText[] temporalCoverageTexts
-    +URL[] temporalCoverageRefs
+    +MultiLanguageText|URL[] temporalCoverage
     +URL[] spatialCoverages
     +Person[] funderPersons
     +Organization[] funderOrganizations
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +DataManagementPlan dataManagementPlan
     +Date endDate
-    +Person contactPerson
-    +Organization contactOrganization
-    +String howToCite
+    +Person|Organization contactPoint
     +URL secondaryURL
 
     .. (0 - n) ..
@@ -72,16 +75,15 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +String title
-    +String accessConditions
+    +AccessConditions accessConditions
     +String howToCite
     +Status status
 
     .. (1 - n) ..
-    +MultiLanguageText[] abstractTexts
-    +URL[] abstractURLs
+    +MultiLanguageText|URL[] abstracts
     +TypesOfData[] typesOfData
     +License[] licenses
     +MultiLanguageText[] languages
@@ -89,6 +91,10 @@ package toplevel {
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +Date datePublished
     +Date dateCreated
     +Date dateModified
@@ -97,8 +103,7 @@ package toplevel {
     .. (0 - n) ..
     +MultiLanguageText[] alternativeTitles
     +URL[] urls
-    +MultiLanguageText[] documentationTexts
-    +URL[] documentationURLs
+    +MultiLanguageText|URL[] additional
   }
 
   note left of Dataset::abstractTexts
@@ -111,36 +116,26 @@ package toplevel {
     together are `documentations` (0-n)
   end note
 
-  class DataManagementPlan {
-    .. (1) ..
-    -UUID id
-    -String type
-    -Date created
-    -Date modified
-
-    .. (0 - 1) ..
-    +boolean available
-    +URL url
-
-  }
-
   class Grant {
     A financial grant.
     -- Required Fields --
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
 
     .. (1 - n) ..
-    +Person[] funderPersons
-    +Organization[] funderOrganizations
+    +Person|Organization[] funders
 
     -- Optional Fields --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +String number
-    +MultiLanguageText name
+    +String name
     +URL url
 
   }
@@ -156,8 +151,8 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
 
     .. (1 - n) ..
     +String[] jobTitles
@@ -167,6 +162,10 @@ package toplevel {
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +Address address
 
     .. (0 - 2) ..
@@ -187,12 +186,16 @@ package toplevel {
     .. (1) ..
     -UUID id
     -String type
-    -Date created
-    -Date modified
+    -Date createdAt
+    -UUID createdBy
     +String name
 
     -- Optional --
     .. (0 - 1) ..
+    -Date modifiedAt
+    -UUID modifiedBy
+    -Date deletedAt
+    -UUID deletedBy
     +URL url
     +Address address
     +Email email
@@ -207,50 +210,27 @@ package toplevel {
     Must be AuthorityReference
   end note
 
-  class Address {
-    Struct containing a postal address.
-    -- Required --
-    .. (1) ..
-    +String street
-    +String postalCode
-    +String locality
-    +String country
-
-    -- Optional --
-    .. (0 - 1) ..
-    +String additional
-
-  }
-
   class Attribution {
-    Struct holding information on how work on a dataset can be attributed to a person.
+    Entity holding information on how work on a dataset can be attributed to a person.
     -- Required Fields --
-    .. (1) ..
-    +Person person
     .. (1 - n) ..
+    +Person agentPerson
+    +Organization agentOrganization
     +String[] roles
 
   }
 
-  class License {
-    Struct holding license information.
-    -- Required --
-    .. (1) ..
-    +URL license
-    +Date date
-
-    -- Optional --
-    .. (0 - 1) ..
-    +String details
-  }
+  note left of Attribution::agentPerson
+    `agentPerson` and `agentOrganization`
+    together are `agent` (1)
+  end note
   
-
 }
 
 package valueobject {
 
   class Shortcode{
-    Valueobject struct holding a shortcode.
+    Valueobject holding a shortcode.
     -- Fields --
     +String value
     -- Methods --
@@ -263,7 +243,7 @@ package valueobject {
   }
 
   class Email{
-    Valueobject struct holding an e-mail address.
+    Valueobject holding an e-mail address.
     -- Fields --
     +String value
     -- Methods --
@@ -276,7 +256,7 @@ package valueobject {
   }
 
   class URL{
-    Valueobject struct holding an e-mail address.
+    Valueobject holding an e-mail address.
     -- Fields --
     +URLType type
     +String url
@@ -291,10 +271,9 @@ package valueobject {
   }
 
   class Date {
-    Valueobject struct holding an ISO date.
+    Valueobject holding an ISO date.
     -- Fields --
-    +String value
-    'TODO: string or date String
+    +Date value
     -- Methods --
     .. Static Methods ..
     {static} +URL newDate()
@@ -305,7 +284,7 @@ package valueobject {
   }
 
   class MultiLanguageText {
-    Valueobject struct holding text in multiple different languages.
+    Valueobject holding text in multiple different languages.
     -- Fields --
     +Map[ISOLanguage,String] value
     -- Methods --
@@ -318,7 +297,7 @@ package valueobject {
   }
 
   class ISOLanguage {
-    Valueobject struct holding a two character ISO language tag.
+    Valueobject holding a two character ISO language tag.
     -- Fields --
     +String value
     -- Methods --
@@ -329,9 +308,56 @@ package valueobject {
     +String string()
     +boolean equals()
   }
+
+  class License {
+    Value object holding license information.
+    -- Required --
+    .. (1) ..
+    -String type
+    +URL license
+    +Date date
+
+    -- Optional --
+    .. (0 - 1) ..
+    +String details
+  }
+
+  class Address {
+    Value object containing a postal address.
+    -- Required --
+    .. (1) ..
+    -String type
+    +String street
+    +String postalCode
+    +String locality
+    +String country
+
+    -- Optional --
+    .. (0 - 1) ..
+    +String canton
+    +String additional
+
+  }
+
+  class DataManagementPlan {
+    .. (1) ..
+    -String type
+
+    .. (0 - 1) ..
+    +boolean available
+    +URL url
+
+  }
+
 }
 
 package enums {
+
+  enum AccessConditions {
+    Open
+    Restricted
+    Closed
+  }
 
   enum TypesOfData {
     XML
@@ -366,22 +392,13 @@ package enums {
 
 }
 
-package externals {
-  class uuid::UUID {
-    Unique ID
-  }
-}
-
 
 Project --> Dataset
-Project --> DataManagementPlan
 Project --> Grant
 Dataset --> Attribution
-Dataset --> License
 Attribution --> Person
+Attribution --> Organization
 Person --> Organization
-Person --> Address
-Organization --> Address
 
 
 @enduml

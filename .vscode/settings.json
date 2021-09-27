@@ -13,6 +13,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
   },
   "go.formatTool": "gofmt",
+  "go.useLanguageServer": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
 }

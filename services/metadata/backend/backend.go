@@ -19,7 +19,6 @@ import (
 	"github.com/snabb/sitemap"
 )
 
-// Representation of a project
 type Project struct {
 	ID          string      `json:"id"`
 	Name        string      `json:"name"`
@@ -27,20 +26,25 @@ type Project struct {
 	Metadata    interface{} `json:"metadata"`
 }
 
+type Projects struct {
+	dataJSON   []Project
+	dataJSONLD []Project
+}
+
+// All projects that are being served
+var projects Projects
+
 type spaHandler struct {
 	staticPath string
 	indexPath  string
 }
-
-// All projects that are being served
-var projects []Project
 
 // Full text search of a project.
 // Returns a slice of Projects where each project matches the search query.
 // Note: The query is a regex pattern and is matched against the JSON representation of the project.
 func searchProjects(query string) []Project {
 	var res []Project
-	for _, project := range projects {
+	for _, project := range projects.dataJSON {
 		content, _ := json.Marshal(project.Metadata)
 		match, _ := regexp.Match("(?i)"+query, content)
 		if match {
@@ -50,10 +54,28 @@ func searchProjects(query string) []Project {
 	return res
 }
 
-// Loads a project from a JSON file.
+// Searches for a element with type == "http://ns.dasch.swiss/repository#Project"
+// in a json-shaped []interface{}
+func findProjectNode(list []interface{}) map[string]interface{} {
+	for _, item := range list {
+		innerMap, ok := item.(map[string]interface{})
+		if ok {
+			tp := innerMap["type"]
+			if tp == "http://ns.dasch.swiss/repository#Project" {
+				return innerMap
+			}
+		} else {
+			log.Fatal("Failed to parse node")
+		}
+	}
+	return nil
+}
+
+// Loads a project from a JSON files
 // Expects this file to be located in ./data/*.json
 func loadProject(path string) Project {
 	log.Printf("Loading: %v", path)
+
 	// read json
 	byteValue, err := ioutil.ReadFile(path)
 	if err != nil {
@@ -95,77 +117,111 @@ func loadProject(path string) Project {
 	}
 }
 
-// Load Project Data
-func loadProjectData() []Project {
-	var res []Project
+// Loads Projects
+func loadProjectData() Projects {
+	var res Projects
 
-	pathPrefix := "./services/metadata/backend/fake-backend/data/"
-	paths, _ := filepath.Glob(pathPrefix + "*.json")
+	// get all JOIN and JSON-LD files
+	pathPrefix := "./services/metadata/backend/data/"
+	paths, _ := filepath.Glob(pathPrefix + "*.json*")
 
+	// loop thought paths and prepare response
 	for _, path := range paths {
 		file := filepath.Base(path)
+
+		// omit files which name starts with _
 		if !strings.HasPrefix(file, "_") {
-			res = append(res, loadProject(path))
+			fileExtension := filepath.Ext(path)
+
+			// depends on the extension place data in right slice
+			if fileExtension != ".jsonld" {
+				res.dataJSON = append(res.dataJSON, loadProject(path))
+			} else {
+				res.dataJSONLD = append(res.dataJSONLD, loadProject(path))
+			}
 		}
 	}
 
 	return res
 }
 
-// Get projects
-// Route: /projecs
+// Gets projects on route: /projects
+// request parameters are only provided for JSON requests
 func getProjects(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Request for: %v", r.URL)
+	var matches []Project
 
-	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Access-Control-Expose-Headers", "X-Total-Count")
-
-	// Request parameters
-	query := r.URL.Query().Get("q")
-	page, _ := strconv.Atoi(r.URL.Query().Get("_page"))
-	limit, _ := strconv.Atoi(r.URL.Query().Get("_limit"))
-
-	matches := make([]Project, len(projects))
-
-	if query == "" {
-		// no search query all projects are matches
-		copy(matches, projects)
+	// depends on the Content-Type, return JSON or JSON-LD data
+	contentType := r.Header.Get("Content-Type")
+	if contentType == "application/ld+json" {
+		w.Header().Set("Content-Type", "application/ld+json")
+		matches = make([]Project, len(projects.dataJSONLD))
+		copy(matches, projects.dataJSONLD)
+		log.Printf("JSON-LD request for: %v", r.URL)
 	} else {
-		// reduce projects by search
-		matches = searchProjects(query)
-	}
-	w.Header().Set("X-Total-Count", strconv.Itoa(len(matches)))
-	// paginate
-	if len(matches) > 1 && len(matches) > limit && page > 0 && limit > 0 {
-		max := len(matches)
-		start := (page - 1) * limit
-		if start > max {
-			start = max
+		w.Header().Set("Content-Type", "application/json")
+
+		// request parameters
+		query := r.URL.Query().Get("q")
+		// TODO: does page start at 0 or 1?
+		page, _ := strconv.Atoi(r.URL.Query().Get("_page"))
+		limit, _ := strconv.Atoi(r.URL.Query().Get("_limit"))
+
+		matches = make([]Project, len(projects.dataJSON))
+
+		if query == "" {
+			// no search query all projects are matches
+			copy(matches, projects.dataJSON)
+		} else {
+			// reduce projects by search
+			matches = searchProjects(query)
 		}
-		end := page * limit
-		if end > max {
-			end = max
+		w.Header().Set("X-Total-Count", strconv.Itoa(len(matches)))
+
+		// paginate
+		if len(matches) > 1 && len(matches) > limit && page > 0 && limit > 0 {
+			max := len(matches)
+			start := (page - 1) * limit
+			if start > max {
+				start = max
+			}
+			end := page * limit
+			if end > max {
+				end = max
+			}
+
+			matches = matches[start:end]
 		}
-		matches = matches[start:end]
+
+		log.Printf("JSON request for: %v", r.URL)
 	}
-	// returns whatever remains
+
 	json.NewEncoder(w).Encode(matches)
 }
 
-// Get a single project
-// Route /projects/:id
+// Gets a single project on route /projects/:id
 func getProject(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Request for: %v", r.URL)
-
-	w.Header().Set("Content-Type", "application/json")
-
+	var data []Project
 	params := mux.Vars(r)
-	for _, item := range projects {
+
+	// depends on the Content-Type, return JSON or JSON-LD data
+	contentType := r.Header.Get("Content-Type")
+	if contentType == "application/ld+json" {
+		w.Header().Set("Content-Type", "application/json")
+		data = projects.dataJSONLD
+		log.Printf("JSON-LD request for: %v", r.URL)
+	} else {
+		w.Header().Set("Content-Type", "application/json")
+		data = projects.dataJSON
+		log.Printf("JSON request for: %v", r.URL)
+	}
+
+	for _, item := range data {
 		for item.ID == params["id"] {
 			json.NewEncoder(w).Encode(item.Metadata)
 			return
 		}
 	}
+
 	json.NewEncoder(w).Encode(&Project{})
 }
 
@@ -180,7 +236,7 @@ func getSitemap(w http.ResponseWriter, r *http.Request) {
 		ChangeFreq: sitemap.Weekly,
 	})
 
-	for _, item := range projects {
+	for _, item := range projects.dataJSON {
 		projectUrl := fmt.Sprintf("https://meta.dasch.swiss/projects/%s/", item.ID)
 		sm.Add(&sitemap.URL{
 			Loc:        projectUrl,
@@ -260,7 +316,7 @@ func main() {
 
 	// load Data
 	projects = loadProjectData()
-	log.Printf("Loaded Projects: %v", len(projects))
+	log.Printf("Loaded %v files = %v JSON + %v JSON-LD files", len(projects.dataJSON)+len(projects.dataJSONLD), len(projects.dataJSON), len(projects.dataJSONLD))
 
 	// init Router
 	router := mux.NewRouter()
@@ -288,6 +344,8 @@ func main() {
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
+
+	log.Print("Metadata Server started @ port 3000")
 
 	// run server
 	log.Fatal(srv.ListenAndServe())

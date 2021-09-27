@@ -3,15 +3,19 @@
   "project": {
     "__id": "0000-project",
     "__type": "Project",
-    "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-    "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+    "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+    "__createdBy": "32141234213412341234234",
+    "__modifiedAt": "2009-11-10 23:30:00 +0000 UTC m=+0.000000003",
+    "__modifiedBy": "32141234213412341234235",
     "shortcode": "0000",
     "name": "Test Project Name",
     "description": {
       "de": "Dies ist ein einfaches Beipiel-Projekt zu Dokumentationszwecken.",
       "en": "This is a simple example project for documentation purposes."
     },
+    "howToCite": "Doe, J. [et al.]: Project AB (ARK: ...).",
     "startDate": "2021-01-01",
+    "teaserText": "A sample metadata-set for illustration purposes.",
     "keywords": [
       {
         "en": "history",
@@ -43,7 +47,7 @@
       }
     ],
     "url": {
-      "text": "DaSCH.swiss",
+      "text": "DaSCH Some Project",
       "type": "URL",
       "url": "https://dasch.swiss/someproject",
       "__type": "URL"
@@ -51,10 +55,18 @@
     "secondaryURL": {
       "__type": "URL",
       "type": "URL",
-      "text": "Project at Zenodo",
+      "text": "Some Project at Zenodo",
       "url": "https://zenodo.org/record/99999999999999"
     },
-    "dataManagementPlan": "dmp-001",
+    "dataManagementPlan": {
+      "__type": "DataManagementPlan",
+      "available": true,
+      "url": {
+        "url": "https://dasch.swiss/someproject/dmp",
+        "type": "URL",
+        "__type": "URL"
+      }
+    },
     "endDate": "2022-01-01",
     "datasets": [
       "dataset-001"
@@ -74,17 +86,16 @@
     "funders": [
       "organization-001"
     ],
-    "contactPoint": "organization-001",
-    "howToCite": "Doe, J. [et al.]: Project AB (ARK: ...)."
+    "contactPoint": "organization-001"
   },
   "datasets": [
     {
       "__id": "dataset-001",
       "__type": "Dataset",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "title": "Dataset 1",
-      "accessConditions": "Embargo until 2023, then open access.",
+      "accessConditions": "restricted",
       "howToCite": "Dataset XY, in Project AB (ARK: ...)",
       "status": "Ongoing",
       "abstracts": [
@@ -159,30 +170,26 @@
           "__type": "URL"
         }
       ],
-      "documentations": {
-        "urls": [
-          {
-            "url": "https://dasch.swiss/0000-project/dataset-001/docs",
-            "text": "Documentation",
-            "type": "URL",
-            "__type": "URL"
-          }
-        ],
-        "texts": [
-          {
-            "de": "Bei dem Datenset handelt es sich um...",
-            "en": "The dataset is about..."
-          }
-        ]
-      }
+      "additional": [
+        {
+          "url": "https://dasch.swiss/0000-project/dataset-001/docs",
+          "text": "Documentation",
+          "type": "URL",
+          "__type": "URL"
+        },
+        {
+          "de": "Bei dem Datenset handelt es sich um...",
+          "en": "The dataset is about..."
+        }
+      ]
     }
   ],
   "persons": [
     {
       "__id": "person-001",
       "__type": "Person",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "jobTitles": [
         "Professor"
       ],
@@ -193,20 +200,20 @@
         "Doe"
       ],
       "affiliation": [
-        "organization-001"
+        "organization-001",
+        "organization-002"
       ],
       "address": {
+        "__type": "Address",
         "street": "Petersgraben 1",
         "additional": "Postfach",
         "postalCode": "4000",
         "locality": "Basel",
-        "country": "Switzerland",
-        "__type": "Address"
+        "canton": "Basel-Stadt",
+        "country": "Switzerland"
       },
-      "emails": [
-        "jane.doe@dasch.swiss",
-        "j.doe@gmail.com"
-      ],
+      "email": "jane.doe@dasch.swiss",
+      "secondaryEmail": "j.doe@gmail.com",
       "authorityRefs": [
         {
           "url": "http://viaf.org/viaf/00000000",
@@ -221,8 +228,10 @@
     {
       "__id": "organization-001",
       "__type": "Organization",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
+      "__modifiedAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__modifiedBy": "",
       "name": "DaSCH",
       "alternativeNames": [
         {
@@ -256,8 +265,8 @@
     {
       "__id": "organization-002",
       "__type": "Organization",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "name": "SNF",
       "alternativeNames": [
         {
@@ -271,8 +280,8 @@
     {
       "__id": "grant-001",
       "__type": "Grant",
-      "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-      "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
+      "__createdAt": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
+      "__createdBy": "",
       "funders": [
         "organization-001"
       ],
@@ -285,17 +294,5 @@
         "__type": "URL"
       }
     }
-  ],
-  "dataManagementPlan": {
-    "__id": "dmp-001",
-    "__type": "DataManagementPlan",
-    "__created": "2009-11-10 23:00:00 +0000 UTC m=+0.000000001",
-    "__modified": "2009-11-10 23:00:00 +0000 UTC m=+0.000000003",
-    "available": true,
-    "url": {
-      "url": "https://dasch.swiss/someproject/dmp",
-      "type": "URL",
-      "__type": "URL"
-    }
-  }
+  ]
 }

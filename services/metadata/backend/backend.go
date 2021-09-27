@@ -76,8 +76,6 @@ func loadProject(path string) Project {
 	// projMetadata, ok := jsonMap["projectsMetadata"].([]interface{})
 	projectMap, ok := jsonMap["project"].(map[string]interface{})
 
-	log.Println(projectMap)
-
 	if ok {
 		// projectMap := findProjectNode(projMetadata)
 		id := projectMap["shortcode"].(string)

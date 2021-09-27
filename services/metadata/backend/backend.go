@@ -89,30 +89,21 @@ func loadProject(path string) Project {
 		log.Fatal(err)
 	}
 
-	// get core information from json to build Project struct
-	p, ok := jsonMap["project"].(map[string]interface{})
+	// grab actual metadata from JSON
+	projMetadata, ok := jsonMap["projectsMetadata"].([]interface{})
 	if ok {
-		id := p["shortcode"].(string)
-		name := p["name"].(string)
-		// default description: simply toString of description map
-		description_map := p["description"].(map[string]interface{})
-		description := fmt.Sprint(description_map)
-		// if en, de or fr are in map, use specific string (in that order)
-		if d, ok := description_map["en"]; ok {
-			description = d.(string)
-		} else if d, ok := description_map["de"]; ok {
-			description = d.(string)
-		} else if d, ok := description_map["fr"]; ok {
-			description = d.(string)
-		}
+		projectMap := findProjectNode(projMetadata)
+		id := projectMap["shortcode"].(string)
+		name := projectMap["name"].(string)
+		description := projectMap["description"].(string)
 		return Project{
 			ID:          id,
 			Name:        name,
 			Description: description,
-			Metadata:    jsonMap,
+			Metadata:    projMetadata,
 		}
 	} else {
-		log.Fatal("Could not create project from JSON")
+		log.Fatal("Could not find project in JSON")
 		return Project{}
 	}
 }
@@ -217,7 +208,7 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 
 	for _, item := range data {
 		for item.ID == params["id"] {
-			json.NewEncoder(w).Encode(item.Metadata)
+			json.NewEncoder(w).Encode(item)
 			return
 		}
 	}

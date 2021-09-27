@@ -22,11 +22,9 @@ package Entities {
     +Dataset[] datasets
     +MultiLanguageText[] keywords
     +MultiLanguageText|URL[] disciplines
-    +URL[] disciplineRefs
     +MultiLanguageText|URL[] temporalCoverage
     +URL[] spatialCoverages
-    +Person[] funderPersons
-    +Organization[] funderOrganizations
+    +Person[]|Organization[] funders
 
     -- Optional Fields --
     .. (0 - 1) ..

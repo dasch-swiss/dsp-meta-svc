@@ -54,23 +54,6 @@ func searchProjects(query string) []Project {
 	return res
 }
 
-// Searches for a element with type == "http://ns.dasch.swiss/repository#Project"
-// in a json-shaped []interface{}
-func findProjectNode(list []interface{}) map[string]interface{} {
-	for _, item := range list {
-		innerMap, ok := item.(map[string]interface{})
-		if ok {
-			tp := innerMap["type"]
-			if tp == "http://ns.dasch.swiss/repository#Project" {
-				return innerMap
-			}
-		} else {
-			log.Fatal("Failed to parse node")
-		}
-	}
-	return nil
-}
-
 // Loads a project from a JSON files
 // Expects this file to be located in ./data/*.json
 func loadProject(path string) Project {
@@ -90,17 +73,21 @@ func loadProject(path string) Project {
 	}
 
 	// grab actual metadata from JSON
-	projMetadata, ok := jsonMap["projectsMetadata"].([]interface{})
+	// projMetadata, ok := jsonMap["projectsMetadata"].([]interface{})
+	projectMap, ok := jsonMap["project"].(map[string]interface{})
+
+	log.Println(projectMap)
+
 	if ok {
-		projectMap := findProjectNode(projMetadata)
+		// projectMap := findProjectNode(projMetadata)
 		id := projectMap["shortcode"].(string)
 		name := projectMap["name"].(string)
-		description := projectMap["description"].(string)
+		description := projectMap["teaserText"].(string)
 		return Project{
 			ID:          id,
 			Name:        name,
 			Description: description,
-			Metadata:    projMetadata,
+			Metadata:    jsonMap,
 		}
 	} else {
 		log.Fatal("Could not find project in JSON")
@@ -208,7 +195,7 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 
 	for _, item := range data {
 		for item.ID == params["id"] {
-			json.NewEncoder(w).Encode(item)
+			json.NewEncoder(w).Encode(item.Metadata)
 			return
 		}
 	}

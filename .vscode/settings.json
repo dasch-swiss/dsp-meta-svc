@@ -3,6 +3,7 @@
   "[svelte]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    "editor.formatOnSave": false
   },
   "[go]": {
     "editor.insertSpaces": false,

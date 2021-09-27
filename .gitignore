@@ -7,3 +7,5 @@ public/build
 .DS_Store
 /public/build/
 /pkg/
+.idea
+env/

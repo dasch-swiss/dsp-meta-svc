@@ -19,14 +19,20 @@
   <div class=data>{$projectMetadata?.project.shortcode}</div>
 
   <!-- DMP -->
-  <div class=label>Data Management Plan</div>
-  {#if $projectMetadata?.project.dataManagementPlan.url}
-    <a class="data external-link" href="{$projectMetadata?.project.dataManagementPlan.url.url}" target=_>
-      {$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}
-    </a>
-  {:else}
-    <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
+  {#if $projectMetadata?.project.dataManagementPlan}
+    <div class=label>Data Management Plan</div>
+    {#if $projectMetadata?.project.dataManagementPlan.url}
+      <a class="data external-link" href="{$projectMetadata?.project.dataManagementPlan.url.url}" target=_>
+        {$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}
+      </a>
+    {:else}
+      <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
+    {/if}
   {/if}
+
+  <!-- How to Cite -->
+  <div class=label>How to Cite this Project</div>
+  <div class=data>{$projectMetadata?.project.howToCite}</div>
 
   <!-- Disciplines -->
   <div class=label>Disciplines</div>
@@ -130,9 +136,12 @@
   <!-- URLs -->
   <div class=label>Project Website</div>
   <a class="data external-link" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
-  <!-- XXX: secondaryURL -->
+  <!-- Secondary URL -->
+  {#if $projectMetadata?.project.secondaryURL}
+    <a class="data external-link" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
+  {/if}
 
-  <!-- KEywords -->
+  <!-- Keywords -->
   <div class=label>Keywords</div>
   <span class="keyword">{$projectMetadata?.project.keywords.map(t => {return getText(t)}).join(", ")}</span>
 

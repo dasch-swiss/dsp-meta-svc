@@ -43,7 +43,7 @@
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
     const metadata: Metadata = await res.json();
 
-    console.log("Metadata:", metadata);
+    // console.log("Metadata:", metadata);
 
     projectMetadata.set(metadata);
 
@@ -166,11 +166,12 @@
             show {arePublicationsExpanded ? "less" : "more"}
           </div>
         {/if}
+      {/if}
 
         <!-- XXX:reenable -->
-        <!-- <div class="tabs">
+        <div class="tabs">
           <Tab datasets={$projectMetadata?.datasets} />
-        </div> -->
+        </div>
 
         {#if !mobileResolution}
           <button
@@ -195,7 +196,6 @@
             </svg>
           </button>
         {/if}
-      {/if}
     </div>
     <div class="column-right">
       {#if !mobileResolution}
@@ -223,7 +223,6 @@
         </button>
       {/if}
 
-      <!-- XXX: reenable -->
       <div class="widget">
         <ProjectWidget />
       </div>

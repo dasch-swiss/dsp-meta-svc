@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import { projectMetadata } from "../store";
+  import { projectMetadata, handleSnackbar } from "../store";
   import { getText, findObjectByID, findGrantByID, findOrganizationByID } from "../functions";
 
   const truncateString = (s: string) => {
@@ -7,6 +7,16 @@
     if (s.length > 35) {
       return `${s.slice(0, 35)}...`;
     } else return s;
+  };
+
+  const copyToClipboard = () => {
+    let text = document.createRange();
+    text.selectNode(document.getElementById('how-to-cite'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(text);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    handleSnackbar.set({isSnackbar: true, message: 'Citation copied succesfully!'});
   };
 
 </script>
@@ -31,7 +41,14 @@
   {/if}
 
   <!-- How to Cite -->
-  <div class=label>How to Cite this Project</div>
+  <div class=label>
+    <span class=label style="display:inline">
+    How To Cite
+    <button on:click={copyToClipboard} title="copy citation to the clipboard">
+       <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+    </button>
+  </span>
+  </div>
   <div class=data>{$projectMetadata?.project.howToCite}</div>
 
   <!-- Disciplines -->
@@ -92,8 +109,6 @@
     {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
       {#if g?.number && g?.url && g?.name}
         <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
-        <!-- TODO: roll back if people don't like it -->
-        <!-- <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a> -->
       {:else if g?.number && g?.url}
         <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
       {:else if g?.number}
@@ -126,8 +141,8 @@
             {/each}
           {/each}
         {/if}
-        {#if c.emails}
-          <a class="data email" href="mailto:{c?.emails[0]}">{c?.emails[0]}</a>
+        {#if c.email}
+          <a class="data email" href="mailto:{c?.email}">{c?.email}</a>
         {/if}
       {/if}
     {/each}
@@ -174,5 +189,20 @@
   }
   .label {
     padding: 10px 0 0;
+  }
+  button {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    color: var(--lead-colour);
+    z-index: 0;
+  }
+  .icon {
+    margin: -1rem 0 0.25rem;
+  }
+  .icon:hover {
+    color: var(--dasch-light-violet);
   }
 </style>

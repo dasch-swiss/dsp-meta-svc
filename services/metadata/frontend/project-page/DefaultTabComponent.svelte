@@ -3,9 +3,9 @@
   import { fade } from "svelte/transition";
   import { handleSnackbar } from "../store";
   import { getText, findPersonByID, findOrganizationByID, findObjectByID } from "../functions";
-  import type { TabContent, Grant, Person, Organization, Text } from "../interfaces";
+  import type { Dataset, Grant, Person, Organization, Text } from "../interfaces";
 
-  export let dataset: TabContent;
+  export let dataset: Dataset;
 
   let isAbstractExpanded: boolean;
   let abstractLinesNumber: number;
@@ -20,6 +20,7 @@
     const divHeight = el.scrollHeight;
     abstractLinesNumber = divHeight / lineHeight;
     isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
+    console.log("abstract:", abstractLinesNumber, isAbstractExpanded)
   });
 
   const copyToClipboard = () => {
@@ -45,141 +46,173 @@
 
 <div id=dataset in:fade={{duration: 200}}>
   {#if dataset}
-    {#if dataset?.content.alternativeTitles}
+  <!-- Alternative titles -->
+    {#if dataset?.alternativeTitles}
       <div>
         <span class=label>Alternative Title</span>
-        <span class=data>{dataset?.content.alternativeTitles.map((t => {return getText(t)})).join(', ')}</span>
+        <span class=data>{dataset?.alternativeTitles.map((t => {return getText(t)})).join(', ')}</span>
       </div>
     {/if}
-  <div class="grid-wrapper">
-    <div>
-      <span class=label>Access</span>
-      <span class=data>{dataset?.content.accessConditions}</span>
-    </div>
-    <div>
-      <span class=label>Status</span>
-      <span class=data>{dataset?.content.status}</span>
-    </div>
-    {#if dataset.content.dateCreated}
+
+    <div class="grid-wrapper">
+
+      <!-- Access conditions -->
       <div>
-        <span class=label>Date Created</span>
-        <span class=data>{dataset?.content.dateCreated}</span>
+        <span class=label>Access</span>
+        <span class=data>{dataset?.accessConditions}</span>
       </div>
-    {/if}
-    {#if dataset.content.dateModified}
+
+      <!-- Status -->
       <div>
-        <span class=label>Date Modified</span>
-        <span class=data>{dataset?.content.dateModified}</span>
+        <span class=label>Status</span>
+        <span class=data>{dataset?.status}</span>
       </div>
-    {/if}
+
+      <!-- Dates -->
+      {#if dataset.dateCreated}
+        <div>
+          <span class=label>Date Created</span>
+          <span class=data>{dataset?.dateCreated}</span>
+        </div>
+      {/if}
+      {#if dataset.datePublished}
+        <div>
+          <span class=label>Date Published</span>
+          <span class=data>{dataset?.datePublished}</span>
+        </div>
+      {/if}
+      {#if dataset.dateModified}
+        <div>
+          <span class=label>Date Modified</span>
+          <span class=data>{dataset?.dateModified}</span>
+        </div>
+      {/if}
+
+      <!-- Type of Data -->
+      <div>
+        <span class=label>Type of Data</span>
+        <span class=data>{dataset?.typeOfData.join(', ')}</span>
+      </div>
+
+      <!-- Additional -->
+      {#if dataset?.additional}
+        <div style="grid-column-start: 1;grid-column-end: 3;">
+          <span class=label>Additional documentation</span>
+          {#each dataset?.additional as d}
+            {#if d.__type === "URL"}
+              <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
+            {:else}
+              <span class=data>{getText(d)}</span>
+            {/if}
+          {/each}
+        </div>
+      {/if}
+      
+    </div>
+
+    <!-- License -->
+    <!-- TODO: check how this looks with multiple licenses -->
     <div>
       <span class=label>License</span>
-      {#if Array.isArray(dataset?.content.licenses)}
-        {#each dataset?.content.licenses as l}
-          <a href={l.url} class="data external-link" target=_>{l.text}</a>
-        {/each}
-      {/if}
-    </div>
-    <div>
-      <span class=label>Type of Data</span>
-      <span class=data>{dataset?.content.typeOfData.join(', ')}</span>
+        {#if dataset?.licenses}
+          {#each dataset?.licenses as l}
+            <div class="data">
+              <a href={l.license.url} class="external-link" target=_>{l.license.text}</a>
+              {#if l.details}
+                <div>{l.details}</div>
+              {/if}
+              <div>({l.date})</div>
+            </div>
+          {/each}
+        {/if}
     </div>
 
-    {#if dataset?.content.documentations}
-      <div style="grid-column-start: 1;grid-column-end: 3;">
-        <span class=label>Additional documentation</span>
-        {#each dataset?.content.documentations as d}
-          {#if d.__type === "URL"}
-            <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
-          {:else}
-            <span class=data>{getText(d)}</span>
-          {/if}
-        {/each}
-      </div>
-    {/if}
-  </div>
-
-  <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
-    <div>
-      <span class=label>Languages</span>
-      <span class=data>{dataset?.content.languages.map(l => {return getText(l)}).join(', ')}</span>
-    </div>
-  </div>
-
-  {#if dataset?.content.urls}
+    <!-- Languages -->
     <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
       <div>
-        <span class=label>Dataset Website</span>
-        {#each dataset?.content.urls as u}
-          {#if u.__type === 'URL'}
-            <div><a class="data external-link" href={u.url} target=_>{truncateString(u.text)}</a></div>
-          {/if}
-        {/each}
+        <span class=label>Languages</span>
+        <span class=data>{dataset?.languages.map(l => {return getText(l)}).join(', ')}</span>
       </div>
     </div>
-  {/if}
 
-  <div class="property-row">
-    <span class=label style="display:inline">
-      How To Cite
-      <button on:click={copyToClipboard} title="copy citation to the clipboard">
-         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-      </button>
-    </span>
-    <span id=how-to-cite class=data>{dataset?.content.howToCite}</span>
-  </div>
-
-  <div>
-    <span class=label>Abstract</span>
-      <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
-        {#each dataset?.content.abstracts as a}
-          {#if a.__type === "URL"}
-            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
-          {:else}
-            <div>{getText(a)}</div>
-          {/if}
-        {/each}
+    <!-- URLs -->
+    {#if dataset?.urls}
+      <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
+        <div>
+          <span class=label>Dataset Website</span>
+          {#each dataset?.urls as u}
+            {#if u.__type === 'URL'}
+              <div><a class="data external-link" href={u.url} target=_>{truncateString(u.text)}</a></div>
+            {/if}
+          {/each}
+        </div>
       </div>
-  </div>
+    {/if}
 
-  {#if abstractLinesNumber > 6}
-    <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
-  {/if}
+    <!-- How To Cite -->
+    <div class="property-row">
+      <span class=label style="display:inline">
+        How To Cite
+        <button on:click={copyToClipboard} title="copy citation to the clipboard">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        </button>
+      </span>
+      <span id=how-to-cite class=data>{dataset?.howToCite}</span>
+    </div>
 
-  <span class=label>Attributions</span>
-  <div class="grid-wrapper">
-    {#each dataset?.content.attributions as a}
-    <div class="attributions data">
-      <div class=role>{a.roles.join(", ")}</div>
-      <!-- TODO: should this only be person or also organization? -->
-        {#each [findObjectByID(a.person)] as p}
-          {#if p.__type === 'Person'}
-            {#if p.authorityRefs}
-              <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+    <!-- Abstract -->
+    <div>
+      <span class=label>Abstract</span>
+        <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
+          {#each dataset?.abstracts as a}
+            {#if a.__type === "URL"}
+              <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
             {:else}
-              <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+              <div>{getText(a)}</div>
             {/if}
-            {#if p.affiliation}
-              {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
-                <div>{org.name}</div>
-              {/each}
+          {/each}
+        </div>
+    </div>
+    {#if abstractLinesNumber > 6}
+      <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
+    {/if}
+    <!-- FIXME: issues with expanding abstracts on some datasets -->
+
+    <!-- Attribution -->
+    <span class=label>Attributions</span>
+    <div class="grid-wrapper">
+      {#each dataset?.attributions as a}
+      <div class="attributions data">
+        <div class=role>{a.roles.join(", ")}</div>
+        <!-- TODO: should this only be person or also organization? -->
+          {#each [findObjectByID(a.agent)] as p}
+            {#if p.__type === 'Person'}
+              {#if p.authorityRefs}
+                <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+              {:else}
+                <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+              {/if}
+              {#if p.affiliation}
+                {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
+                  <div>{org.name}</div>
+                {/each}
+              {/if}
+              <div>{p.jobTitles[0]}</div>
+              {#if p.email}
+                <a class=email href="mailto:{p.email}">{p.email}</a>
+              {/if}
+            {:else if p.__type === 'Organization'}
+              {#if p.url}
+                <a href={p.url.url} target=_ class="external-link">{p.name}</a>
+              {/if}
+              {#if p.email}
+                <a class=email href="mailto:{p.email}">{p.email}</a>
+              {/if}
             {/if}
-            <div>{p.jobTitles[0]}</div>
-            {#if p.emails}
-              <a class=email href="mailto:{p.emails[0]}">{p.emails[0]}</a>
-            {/if}
-          {:else if p.__type === 'Organization'}
-            {#if p.url}
-              <a href={p.url.url} target=_ class="external-link">{p.name}</a>
-            {/if}
-            {#if p.email}
-              <a class=email href="mailto:{p.email}">{p.email}</a>
-            {/if}
-          {/if}
-        {/each}
-      </div>
-    {/each}
-  </div>
+          {/each}
+        </div>
+      {/each}
+    </div>
 
   {/if}
 </div>

@@ -11,11 +11,6 @@ export interface PaginationData {
   totalPages: number;
 }
 
-export interface TabContent {
-  label: string;
-  value: number;
-  content: Dataset;
-}
 export interface ProjectMetadata {
   description: string;
   id: string;
@@ -61,29 +56,36 @@ export interface Project {
 export interface Dataset {
   __type: "Dataset";
   __id: string;
-  __created: string;
-  __modified: string;
+  __createdAt: string;
+  __createdBy: string;
   title: string;
   accessConditions: string;
   howToCite: string;
   status: string;
   abstracts: (Text | URL)[];
   typeOfData: string[];
-  licenses: URL[];
+  licenses: License[];
   languages: Text[];
   attributions: Attribution[];
-  alternativeTitles?: Text[];
   datePublished?: string;
   dateCreated?: string;
   dateModified?: string;
   distribution?: URL;
+  alternativeTitles?: Text[];
   urls?: URL[];
-  documentations?: (Text | URL)[];
+  additional?: (Text | URL)[];
+}
+
+export interface License {
+  __type: "License";
+  date: string;
+  license: URL;
+  details?: string;
 }
 
 export interface Attribution {
   __type: "Attribution";
-  person: string;
+  agent: string;
   roles: string[];
 }
 
@@ -93,20 +95,22 @@ export interface Address {
   additional?: string;
   postalCode: string;
   locality: string;
+  canton?: string;
   country: string;
 }
 
 export interface Person {
   __type: "Person";
   __id: string;
-  __created: string;
-  __modified: string;
+  __createdAt: string;
+  __createdBy: string;
+  email: string;
   jobTitles: string[];
   givenNames: string[];
   familyNames: string[];
   affiliation: string[];
+  secondaryEmail?: string;
   address?: Address;
-  emails?: string[];
   authorityRefs?: URL[];
 }
 
@@ -118,7 +122,6 @@ export interface URL {
 }
 
 export interface Text {
-  // TODO: add to data! is missing so far
   __type: "Text";
   [lang: string]: string
 }
@@ -129,10 +132,10 @@ export interface Organization {
   __created: string;
   __modified: string;
   name: string;
-  alternativeNames?: Text[];
   url?: URL;
-  email?: string;
   address?: Address;
+  email?: string;
+  alternativeNames?: Text[];
   authorityRefs?: URL[];
 }
 

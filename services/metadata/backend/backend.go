@@ -29,6 +29,7 @@ type Project struct {
 type Projects struct {
 	dataJSON   []Project
 	dataJSONLD []Project
+	dataTTL    []Project
 }
 
 // All projects that are being served
@@ -99,7 +100,7 @@ func loadProjectData() Projects {
 
 	// get all JOIN and JSON-LD files
 	pathPrefix := "./services/metadata/backend/data/"
-	paths, _ := filepath.Glob(pathPrefix + "*.json*")
+	paths, _ := filepath.Glob(pathPrefix + "*.json")
 
 	// loop thought paths and prepare response
 	for _, path := range paths {
@@ -107,13 +108,40 @@ func loadProjectData() Projects {
 
 		// omit files which name starts with _
 		if !strings.HasPrefix(file, "_") {
-			fileExtension := filepath.Ext(path)
+			// load JSON
+			project := loadProject(path)
+			res.dataJSON = append(res.dataJSON, project)
 
-			// depends on the extension place data in right slice
-			if fileExtension != ".jsonld" {
-				res.dataJSON = append(res.dataJSON, loadProject(path))
-			} else {
-				res.dataJSONLD = append(res.dataJSONLD, loadProject(path))
+			// load potential RDFs
+			filename := strings.TrimSuffix(file, filepath.Ext(file))
+			pathLD := pathPrefix + filename + ".jsonld"
+			pathTTL := pathPrefix + filename + ".ttl"
+
+			byteValueLD, err := ioutil.ReadFile(pathLD)
+			if err == nil {
+				jsonMap := make([]map[string]interface{}, 100)
+				err2 := json.Unmarshal(byteValueLD, &jsonMap)
+				if err2 == nil {
+					res.dataJSONLD = append(res.dataJSONLD, Project{
+						ID:          project.ID,
+						Name:        project.Name,
+						Description: project.Description,
+						Metadata:    jsonMap,
+					})
+				} else {
+					log.Fatal(err2)
+				}
+			}
+
+			byteValueTTL, err := ioutil.ReadFile(pathTTL)
+			if err == nil {
+				ttl := string(byteValueTTL)
+				res.dataTTL = append(res.dataTTL, Project{
+					ID:          project.ID,
+					Name:        project.Name,
+					Description: project.Description,
+					Metadata:    ttl,
+				})
 			}
 		}
 	}
@@ -129,10 +157,15 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 	// depends on the Content-Type, return JSON or JSON-LD data
 	contentType := r.Header.Get("Content-Type")
 	if contentType == "application/ld+json" {
-		w.Header().Set("Content-Type", "application/ld+json")
+		w.Header().Set("Content-Type", "application/json")
 		matches = make([]Project, len(projects.dataJSONLD))
 		copy(matches, projects.dataJSONLD)
 		log.Printf("JSON-LD request for: %v", r.URL)
+	} else if contentType == "text/turtle" {
+		w.Header().Set("Content-Type", "application/json")
+		matches = make([]Project, len(projects.dataTTL))
+		copy(matches, projects.dataTTL)
+		log.Printf("TURTLE request for: %v", r.URL)
 	} else {
 		w.Header().Set("Content-Type", "application/json")
 
@@ -185,6 +218,16 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSONLD
 		log.Printf("JSON-LD request for: %v", r.URL)
+	} else if contentType == "text/turtle" {
+		w.Header().Set("Content-Type", "text/turtle")
+		data = projects.dataTTL
+		log.Printf("TURTLE request for: %v", r.URL)
+		for _, item := range data {
+			for item.ID == params["id"] {
+				w.Write([]byte(item.Metadata.(string)))
+				return
+			}
+		}
 	} else {
 		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSON
@@ -292,7 +335,11 @@ func main() {
 
 	// load Data
 	projects = loadProjectData()
-	log.Printf("Loaded %v files = %v JSON + %v JSON-LD files", len(projects.dataJSON)+len(projects.dataJSONLD), len(projects.dataJSON), len(projects.dataJSONLD))
+	log.Printf("Loaded %v files (%v JSON + %v JSON-LD + %v Turtle)",
+		len(projects.dataJSON)+len(projects.dataJSONLD)+len(projects.dataTTL),
+		len(projects.dataJSON),
+		len(projects.dataJSONLD),
+		len(projects.dataTTL))
 
 	// init Router
 	router := mux.NewRouter()

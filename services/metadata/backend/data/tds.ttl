@@ -1,0 +1,279 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsp:dsp-0103-project a dsp:Project ;
+    dsp:hasAlternativeName "theatre-societe"@fr ;
+    dsp:hasContactPoint dsp:dsp-0103-person-000 ;
+    dsp:hasDataset dsp:dsp-0103-dataset-000 ;
+    dsp:hasDescription """Le théâtre de société se définit comme un théâtre principalement ou totalement amateur, non lucratif, sans programmation régulière et pratiqué chez des particuliers. Notre projet concerne l’étude de cette forme de théâtre entre XVIIIe et XIXe siècle, en France et en Suisse Romande, selon une approche résolument interdisciplinaire, joignant la dramaturgie, l’histoire de l’art et des arts du spectacle, l’histoire culturelle, l’esthétique et la sociologie.
+La recherche vise à mieux documenter, comprendre et interpréter le phénomène dans sa globalité. 
+Ses objectifs sont :
+1. Mieux définir et problématiser l’objet d’étude par rapport à d’autres formes théâtrales contemporaines ou successives
+2. Cerner les espaces scéniques et sociaux investis par le théâtre de société
+3. Distinguer les traits propres à son esthétique dramatique, dans le domaine de l’écriture des pièces, du choix des répertoires et de la manière de les jouer
+4. Étudier la nature, l’étendue et les enjeux des réseaux de sociabilité créés et entretenus par cette pratique
+5. Étudier les aspects les plus matériels des représentations de société, liés à la culture visuelle et à la mise en scène des spectacles.
+6. Montrer la permanence de pratiques théâtrales et sociales nées sur les scènes de société dans des formes théâtrales contemporaines
+7. Organiser et structurer les données sur les représentations étudiées dans une base de données de référence.
+Notre ambition est de dépasser la vision partielle et fragmentaire qui a caractérisé jusqu’à présent la recherche sur le sujet pour l’appréhender dans son identité distinctive, par-delà les cloisonnements traditionnels des secteurs disciplinaires et des répartitions séculaires. Le projet pourra ainsi restituer au théâtre de société son ihistoire, les principes de son identité distinctive et la place qu’il mérite dans l’histoire culturelle : carrefour de réseaux de sociabilité, vecteur de questionnements et de redéfinitions esthétiques, catalyseur de passions dramatiques comme de questions morales et identitaires."""@fr ;
+    dsp:hasDiscipline "Music, Theatre"@en,
+        "Romance languages and literature"@en ;
+    dsp:hasEndDate "2021-08-31"^^xsd:date ;
+    dsp:hasFunder dsp:dsp-0103-organization-001 ;
+    dsp:hasGrant dsp:dsp-0103-grant-000,
+        dsp:dsp-0103-grant-001 ;
+    dsp:hasHowToCite "Ponzetto, V., Ruimi, J., Hodroge, A., Fièvre, P., Baumann, F., Hugentobler, Th., Schuwey, Ch., Rivoal, M., 2018, Théâtres de société [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0103."^^xsd:string ;
+    dsp:hasKeyword "18th Century French Literature"@en,
+        "19th Century French Literature"@en,
+        "Amateurs"@en,
+        "Cultural History"@en,
+        "Drama"@en,
+        "Literary History"@en,
+        "Performing Arts"@en,
+        "Sociability"@en,
+        "Theatre"@en ;
+    dsp:hasName "« Théâtre de société » (Age of Enlightenment - Second French Empire)"^^xsd:string ;
+    dsp:hasPublication "Dhraief Beya, Négrel Éric, Ruimi Jennifer (2018), Théâtre et charlatans dans l'Europe moderne, Presses de la Sorbonne Nouvelle, Paris."^^xsd:string,
+        "Hodroge Aline (2016), \"Dramaturgie de la mélancolie staëlienne\", in Cahiers staëliens, (66), 189-202."^^xsd:string,
+        "Hodroge Aline (2017), \"'Etre un quart d'heure un autre: sympathie et théâtre staëlien\", in Cahiers staëliens, (67), 321-333."^^xsd:string,
+        "Hodroge Aline (2018), \"Le théâtre staëlien de l'exil\", in Cocula Anne-Marie, Combet Michel (ed.), Ausonius, Bordeaux, 53-62."^^xsd:string,
+        "Hodroge Aline (2020), « La scène staëlienne : une dramaturgie de l’intime », in Espaces des théâtres de société. Définitions, enjeux, postérité, 107-120."^^xsd:string,
+        "Hodroge Aline, Poirier Blandine (2017), Bibliographie staëlienne (2006-2017), in Cahiers staëliens, (64), 237-278."^^xsd:string,
+        "Hodroge Aline, « ‘La lecture interprétée’ : théâtre joué et théâtre lu de Germaine de Staël », in Etudes de lettres."^^xsd:string,
+        "Hodroge Aline, « ‘Sur le bord de la tombe’ : jouer et déjouer la mort dans le théâtre staëlien », in Travaux et recherches de l'Institut Benjamin Constant."^^xsd:string,
+        "Ponzetto Valentina (2016), « \"Fabriquer\" une déclaration. Quête du beau et du naturel dans l’écriture d’Il faut qu’une porte soit ouverte ou fermée », in Fix Florence (ed.), Champion, Paris, 297-308."^^xsd:string,
+        "Ponzetto Valentina (2016), « Quitte pour la peur, nuances de l’ironie »,, in Bulletin de l’Association des Amis d’Alfred de Vigny, Nouvelle série, 2016(n.1), 57-72."^^xsd:string,
+        "Ponzetto Valentina (2016), « Vigny et le genre du proverbe », in Ledda Sylvain, Sabourin Lise (ed.), Champion, Paris, 144-159."^^xsd:string,
+        "Ponzetto Valentina (2017), « Définitions et modes d’emploi du proverbe. Entre discours paratextuels et représentations métathéâtrales », in Ponzetto Valentina (ed.), CEREdI, Rouen, np-np."^^xsd:string,
+        "Ponzetto Valentina (2017), « Gants verts, bourses rouges, miroirs magiques : théâtralisation des (in)fidélités conjugales dans les Comédies et proverbes de Musset », in Verjus Anne, Gougelmann Stéphane (ed.), Publications de l’Université de Saint-Etienne, Saint-Etienne, 179-196."^^xsd:string,
+        "Ponzetto Valentina (2017), « Le proverbe dramatique, une voie détournée pour théâtraliser l’irréprésentable ? », in Fabula LHT, (19), https://www.fabula.org/lht/19/ponzetto.html."^^xsd:string,
+        "Ponzetto Valentina (2017), « Un idéal raisonnable. Morale des proverbes de George Sand », in Zanone Damien (ed.), Champion, Paris, 93-104."^^xsd:string,
+        "Ponzetto Valentina (2018), « Spectres de Nohant. Revenants, apparitions, doppelgänger dans le théâtre de société de George Sand », in Guinand Cécile (ed.), La Baconnière, Genève, 205-221."^^xsd:string,
+        "Ponzetto Valentina (2019), « \"Tous les comédiens ne sont pas au théâtre\" : microsociologie des proverbes de Théodore Leclercq », in Magasin du XIXe siècle, 2019 (n. 9), 75-81."^^xsd:string,
+        "Ponzetto Valentina (2020), « Le \"spectacle dans un fauteuil\" de George Sand : entre scène historique et poème dramatique », in Cahiers d’études nodiéristes, (9), 99-113."^^xsd:string,
+        "Ponzetto Valentina (2020), « Raisonneuse ou comique ? Rire au théâtre avec George Sand, à Nohant et à Paris », in Kerlouégan François, Bara Olivier (ed.), UGA Editions, Grenoble, 193-208."^^xsd:string,
+        "Ponzetto Valentina (ed.) (2017), Théâtres en liberté, du XVIIIe au XXe siècle. Genres nouveaux, scènes marginales ?, CEREdI, Rouen."^^xsd:string,
+        "Ponzetto Valentina, Edition critique de Alexandre Guillaume de Moissy, La Poupée, Les Revenants, La Petite Vérole, avec une introduction sur Moissy, in Plagnol-diéval Marie-Emmanuelle (ed.), Classiques Garnier, Paris."^^xsd:string,
+        "Ponzetto Valentina, Ruimi Jennifer (2020), Théâtre de société. Un objet à redéfinir, in Ponzetto Valentina, Ruimi Jennifer (ed.), PUR, Rennes, 7-27."^^xsd:string,
+        "Ponzetto Valentina, « Le théâtre de société de Marie de Solms, ou comment une femme peut devenir dramaturge au XIXe siècle », in Colombo Laura, Masson Catherine (ed.), NC, Verona."^^xsd:string,
+        "Ponzetto Valentina, « Le théâtre de société de l’Hôtel de Castellane, réseau de sociabilité », in Magasin du XIXe siècle, \"Réseaux\"(10)."^^xsd:string,
+        "Ponzetto Valentina, « Les accessoires du théâtre de Nohant : objets symboliques et clés d’accès au fantastique », in Auraix-Jonchière Pascale (ed.), Garnier, Paris."^^xsd:string,
+        "Ponzetto Valentina, « Proverbes d’éducation pour les enfants au XVIIIe siècle. Une morale en action», in Chiron Jeanne, Audy-Trottier Andréane (ed.), PUR, Rennes, nc."^^xsd:string,
+        "Ponzetto Valentina, « Rencontres et hybridations entre proverbes et charades au XIXe siècle. Un observatoire privilégié sur l’esthétique des théâtres de société », in Ponzetto Valentina, Ruimi Jennifer (ed.), à confirmer, à confirmer."^^xsd:string,
+        "Ponzetto Valentina, « Théâtre de société et théâtre de lecture de Juste Olivier », in Etudes de Lettres."^^xsd:string,
+        "Ponzetto Valentina, « Valeur dramaturgique, pathétique et morale du sang dans \"La Saignée\" de Thomas Garnier », in Tropé Helène, Lucas-Fiorato Corinne (ed.), Presses Universitaires du Septentrion, Villeneuve d'Ascq."^^xsd:string,
+        "Ruimi Jennifer (2017), « Filles grosses d’enfant dans les parades de société, de la peur au rire », in Dion Laëtitia Gargam Adeline Grande Nathalie Henneau Marie-Elisabeth (ed.), Artois Presses Universités, Arras, 141-150."^^xsd:string,
+        "Ruimi Jennifer (2017), « La force d’âme des jeunes filles », in Lefay Sophie Roudaut François (ed.), Librairie Droz, Genève, 29, 155-163."^^xsd:string,
+        "Ruimi Jennifer (2017), « La joyeuse mise à mort d’Aristote dans les théâtres de société », in Ponzetto Valentina (ed.), Publications numériques du CÉRÉdI, Rouen, 1-11."^^xsd:string,
+        "Ruimi Jennifer (2017), « Spectacles de cire : le cabinet de Curtius au XVIIIe siècle », in Dix-Huitième Siècle, (49), 319-334."^^xsd:string,
+        "Ruimi Jennifer (2018), « De l’ambivalence des figures d’opérateur dans le théâtre de société du XVIIIe siècle », in Ruimi Jennifer, Négrel Éric, Dhraief Beya (ed.), Presses de la Sorbonne Nouvelle, Paris, 175-183."^^xsd:string,
+        "Ruimi Jennifer (2018), « L’esprit parisien ou la trace des temps anciens dans les Parades de Potocki », in Klene Émilie (ed.), Oxford University Studies in the Enlightenment, Oxford, 231-242."^^xsd:string,
+        "Ruimi Jennifer (2018), “‘Words have no smell’: faecal references in eighteenth-century society theatre”, in Kleiman Sophie Barr Rebecca Vasset Sophie (ed.), Manchester University Press, Manchester, 145-158."^^xsd:string,
+        "Ruimi Jennifer (2019), Ne pas en finir : les Mémoires de Mlle Clairon, in Les fins intermédiaires dans les fictions narratives des XVIIe et XVIIIe siècles , fabula.org, ?."^^xsd:string,
+        "Ruimi Jennifer (2019), « Ridere regnare est : les parades ou le devoir de rire », in Nancy Sarah, Gros de Gasquet Julia (ed.), Presses universitaires de Rennes, Rennes, 41-51."^^xsd:string,
+        "Ruimi Jennifer (2020), Les récréations de Voltaire, in Belmas Elisabeth, Vion-Dury Juliette (ed.), L'Harmattan, Paris, 198-211."^^xsd:string,
+        "Ruimi Jennifer (2020), « \"La Scène est quelque part\" : espace scénique et espace dramatique dans le théâtre de société au XVIIIe siècle », in Ruimi Jennifer, Ponzetto Valentina (ed.), Presses universitaires de Rennes, Rennes, 71-82."^^xsd:string,
+        "Ruimi Jennifer, Edition critique de Léandre marchand d’agnus, Les Bottes de sept lieues, Zizabelle mannequin, Laurette, Sans titre, in Oeuvres complètes de Beaumarchais, Garnier, Paris."^^xsd:string,
+        "Ruimi Jennifer, Emilie Du Châtelet actrice, in Kölving Ulla (ed.), Centre international d’études du 18e siècle, Ferney-Voltaire."^^xsd:string,
+        "Ruimi Jennifer, Ponzetto Valentina (ed.) (2020), Espaces des théâtres de société. Définitions, enjeux, postérité, PUR - Presses Universitaires de Rennes, Rennes."^^xsd:string,
+        "Ruimi Jennifer, « \"La Vérité dans le Vin\" : le motif de l’ivresse dans le théâtre de société au XVIIIe siècle »,, in États d'ivresse. Discours et images des corps ivres de l'Antiquité aux Lumières, ?."^^xsd:string,
+        "Ruimi Jennifer, « Faire du théâtre à Genève malgré le Consistoire : le défi de Voltaire », in Revue Études de Lettres."^^xsd:string,
+        "Ruimi Jennifer, « Les théâtres de société de Voltaire, lieux de plaisir, lieux de pouvoir », in Cossic Annick, Jones Emrys (ed.), Le Manuscrit, Paris."^^xsd:string,
+        "Ruimi Jennifer, « Tout est régénération devant les lois de la chimie » : réparer la pureté virginale au XVIIIe siècle, in \" Les représentations du sang à l'époque moderne en France en Espagne et en Italie\", MSH, ParisHAL-Inria, Electronique."^^xsd:string,
+        "Ruimi Jennifer, « Venise, Londres, Paris : les détours de L’Écossaise de Voltaire », in La comédie et l’étranger."^^xsd:string,
+        "Schuwey Christophe (2016), Peindre le siècle en comédies. Une introduction au « Misanthrope » et au « Tartuffe » de Molière, PURH, Rouen."^^xsd:string,
+        "Schuwey Christophe (2018), “La forme sur le fond: les enjeux de l’interface”, in Des humanités numériques littéraires, CerisyOBVIL, Sorbonne, Paris."^^xsd:string ;
+    dsp:hasSecondaryURL [ a sdo:URL ;
+            sdo:url "http://ark.dasch.swiss/ark:/72163/1/0103" ] ;
+    dsp:hasShortcode "0103"^^xsd:string ;
+    dsp:hasSpatialCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Switzerland" ] ;
+            sdo:url "https://www.geonames.org/2658434" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "France" ] ;
+            sdo:url "https://www.geonames.org/3017382" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Europe" ] ;
+            sdo:url "https://www.geonames.org/6255148" ] ;
+    dsp:hasStartDate "2016-09-01"^^xsd:date ;
+    dsp:hasTeaser "XX - new property"^^xsd:string ;
+    dsp:hasTemporalCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Second Empire, 1852-1870" ] ;
+            sdo:url "http://n2t.net/ark:/99152/p06c6g38g49" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Siècle des Lumières" ] ;
+            sdo:url "http://n2t.net/ark:/99152/p0qhb66tf8f" ],
+        "18th century"@en,
+        "19th century"@en ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://theatresdesociete.unil.ch/" ] .
+
+dsp:dsp-0103-dataset-000 a dsp:Dataset ;
+    dsp:hasAbstract "Répertoire numérique des spectacles joués sur les scènes de société en France et en Suisse Romande au XVIIIe et au XIXe siècle, consultable selon les critères suivants : lieu de la représentation, date de la représentation, auteur ou titre de la pièce jouée, intervenant. Pour les intervenants, les résultats obtenus précisent le rôle : comédien/comédienne (avec le nom du personnage joué), propriétaire des lieux, commanditaire, organisateur du spectacle, spectateur. Pour chaque représentation sont indiquées les sources documentaires, imprimées ou manuscrites, dont sont issues les données. Des extraits significatifs de ces sources sont transcrits dans les notices d’accompagnement."@fr ;
+    dsp:hasAccessConditions "open"^^xsd:string ;
+    dsp:hasDateCreated "2018-01-11"^^xsd:date ;
+    dsp:hasDateModified "2021-02-11"^^xsd:date ;
+    dsp:hasDatePublished "2018-01-11"^^xsd:date ;
+    dsp:hasHowToCite "Ponzetto, V., Ruimi, J., Hodroge, A., Fièvre, P., Baumann, F., Hugentobler, Th., Schuwey, Ch., Rivoal, M., 2018, Théâtres de société [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0103."^^xsd:string ;
+    dsp:hasLanguage "Französisch"@de,
+        "French"@en,
+        "français"@fr ;
+    dsp:hasLicense [ a dsp:License ;
+            dsp:hasDate "2021-09-02"^^xsd:date ;
+            dsp:hasURL [ a sdo:URL ;
+                    sdo:propertyID [ a sdo:PropertyValue ;
+                            sdo:propertyID "CC BY-SA 4.0" ] ;
+                    sdo:url "https://creativecommons.org/licenses/by-sa/4.0/" ] ] ;
+    dsp:hasQualifiedAttribution [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-005 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-001 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-004 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data curator"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-006 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Other"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-007 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-002 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project leader"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-000 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-003 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data curator"^^xsd:string ;
+            prov:agent dsp:dsp-0103-person-008 ] ;
+    dsp:hasStatus "Ongoing"^^xsd:string ;
+    dsp:hasTitle "Base de données Théâtres de société"^^xsd:string ;
+    dsp:hasTypeOfData "Text"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://theatresdesociete.unil.ch/" ] .
+
+dsp:dsp-0103-grant-000 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-0103-organization-001 ;
+    dsp:hasName "SNSF Professorships"^^xsd:string ;
+    dsp:hasNumber "157392"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://p3.snf.ch/Project-157392" ] .
+
+dsp:dsp-0103-grant-001 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-0103-organization-001 ;
+    dsp:hasName "SNSF Professorships"^^xsd:string ;
+    dsp:hasNumber "190070"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://p3.snf.ch/Project-190070" ] .
+
+dsp:dsp-0103-person-001 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasAuthorityFileReference [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "ORCID URL: https://orcid.org/0000-0002-3788-9785" ] ;
+            sdo:url "https://orcid.org/0000-0002-3788-9785" ] ;
+    dsp:hasEmail "jennifer.ruimi@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Ruimi"^^xsd:string ;
+    dsp:hasGivenName "Jennifer"^^xsd:string ;
+    dsp:hasJobTitle "Post-doctoral researcher"^^xsd:string,
+        "Senior SNSF Researcher"^^xsd:string .
+
+dsp:dsp-0103-person-002 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasEmail "aline.hodroge@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Hodroge"^^xsd:string ;
+    dsp:hasGivenName "Aline"^^xsd:string ;
+    dsp:hasJobTitle "PhD student"^^xsd:string .
+
+dsp:dsp-0103-person-003 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasEmail "thibault.hugentobler@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Hugentobler"^^xsd:string ;
+    dsp:hasGivenName "Thibault"^^xsd:string ;
+    dsp:hasJobTitle "Research Assistant"^^xsd:string .
+
+dsp:dsp-0103-person-004 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasFamilyName "Baumann"^^xsd:string ;
+    dsp:hasGivenName "Fiona"^^xsd:string ;
+    dsp:hasJobTitle "Research Assistant"^^xsd:string .
+
+dsp:dsp-0103-person-005 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasEmail "paul.fievre@gmail.com"^^xsd:string ;
+    dsp:hasFamilyName "Fièvre"^^xsd:string ;
+    dsp:hasGivenName "Paul"^^xsd:string ;
+    dsp:hasJobTitle "IT support"^^xsd:string .
+
+dsp:dsp-0103-person-006 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasAuthorityFileReference [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "ORCID URL: https://orcid.org/0000-0001-7683-515X" ] ;
+            sdo:url "https://orcid.org/0000-0001-7683-515X" ] ;
+    dsp:hasEmail "christophe.schuwey@yale.edu"^^xsd:string ;
+    dsp:hasFamilyName "Schuwey"^^xsd:string ;
+    dsp:hasGivenName "Christophe"^^xsd:string ;
+    dsp:hasJobTitle "IT support"^^xsd:string .
+
+dsp:dsp-0103-person-007 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasEmail "loic.jaouen@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Jaouen"^^xsd:string ;
+    dsp:hasGivenName "Loïc"^^xsd:string ;
+    dsp:hasJobTitle "IT support"^^xsd:string .
+
+dsp:dsp-0103-person-008 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasEmail "marion.rivoal@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Rivoal"^^xsd:string ;
+    dsp:hasGivenName "Marion"^^xsd:string ;
+    dsp:hasJobTitle "Research manager"^^xsd:string .
+
+dsp:dsp-0103-person-000 a dsp:Person ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "XX - Switzerland?"^^xsd:string ;
+            sdo:addressLocality "Les Acacias (GE)"^^xsd:string ;
+            sdo:postalCode "1227"^^xsd:string ;
+            sdo:streetAddress "Rue des Allobroges 31"^^xsd:string ] ;
+    dsp:hasAffiliation dsp:dsp-0103-organization-000 ;
+    dsp:hasAuthorityFileReference [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "ORCID URL: https://orcid.org/0000-0002-6599-5630" ] ;
+            sdo:url "https://orcid.org/0000-0002-6599-5630" ] ;
+    dsp:hasEmail "valentina.ponzetto@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Ponzetto"^^xsd:string ;
+    dsp:hasGivenName "Valentina"^^xsd:string ;
+    dsp:hasJobTitle "Assistant professor"^^xsd:string .
+
+dsp:dsp-0103-organization-001 a dsp:Organization ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Bern"^^xsd:string ;
+            sdo:postalCode "3001"^^xsd:string ;
+            sdo:streetAddress "Wildhainweg 3 Postfach"^^xsd:string ] ;
+    dsp:hasEmail "desk@snf.ch"^^xsd:string ;
+    dsp:hasName "Swiss National Science Foundation (SNSF)"^^xsd:string .
+
+dsp:dsp-0103-organization-000 a dsp:Organization ;
+    dsp:hasName "Université de Lausanne"^^xsd:string .
+

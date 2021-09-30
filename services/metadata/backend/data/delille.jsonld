@@ -1,0 +1,586 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-grant-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Reconstruire Delille"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "153189"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N98ffa6538f7e4e7c8e5c0c973c5b2a32"
+      }
+    ]
+  },
+  {
+    "@id": "_:N98ffa6538f7e4e7c8e5c0c973c5b2a32",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/project-153189"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeName": [
+      {
+        "@language": "fr",
+        "@value": "L'Homme des champs : éditer une réception littéraire"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasContactPoint": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-person-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-dataset-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs. The repository includes the NIE-INE file system layer, containing all project data and reflecting the result of the Semantic Web formalisation (in two steps) of the original DokuWiki data. The DokuWiki is a database listing the echoes that Delille received in European culture, that is an edition of L'Homme des champs based on the reception of this text."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:Ndb9ca38a71584c5e90252eec9ba739d1"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2019-01-31"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-grant-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Reconstruire Delille, 2021, https://delille.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "french literature"
+      },
+      {
+        "@language": "en",
+        "@value": "scientific poetry"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Delille"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasPublication": [
+      {
+        "@value": "https://delille.philhist.unibas.ch/dokuwiki/doku.php?id=start"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "081B"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N51e3dbf04b0e4378a57cbe79b0350dc7"
+      },
+      {
+        "@id": "_:Nb6b586cdc8184709b0f703091013a6a3"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2015-02-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@id": "_:Na910e4430843452aa00efa8b411f8b6a"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nfeeff47ab850481ebd453728a879bb0a"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb9ca38a71584c5e90252eec9ba739d1",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N14c847734b164aafa07a14695eeba16d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/6202"
+      }
+    ]
+  },
+  {
+    "@id": "_:N14c847734b164aafa07a14695eeba16d",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Literary theory, analysis and criticism"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na910e4430843452aa00efa8b411f8b6a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N48487106a072424ebb246947ec7daa35"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://chronontology.dainst.org/period/IOGdcZ2CU1tz"
+      }
+    ]
+  },
+  {
+    "@id": "_:N48487106a072424ebb246947ec7daa35",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "18th and 19th Centuries"
+      }
+    ]
+  },
+  {
+    "@id": "_:N51e3dbf04b0e4378a57cbe79b0350dc7",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Na1dbf8cd229245cf9bd1637b1d1f55b7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/3017382/republic-of-france.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1dbf8cd229245cf9bd1637b1d1f55b7",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "France"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb6b586cdc8184709b0f703091013a6a3",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nd9ab0cd8286f40a49ce4450e2125827d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255148/europe.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd9ab0cd8286f40a49ce4450e2125827d",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Europe"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfeeff47ab850481ebd453728a879bb0a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://delille.dasch.swiss/"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-dataset-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "restricted"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAdditional": [
+      {
+        "@language": "en",
+        "@value": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeTitle": [
+      {
+        "@language": "fr",
+        "@value": "L'Homme des champs : éditer une réception littéraire"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-02-28"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-02-28"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDistribution": [
+      {
+        "@id": "_:N9931147ab82446a5a79fca86b7a71633"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Reconstruire Delille, 2021, https://delille.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "English"
+      },
+      {
+        "@language": "de",
+        "@value": "Englisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "anglais"
+      },
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:N8eab0c3cd7a84166a35969756b039f71"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N9a4005b87ede4181abe38f26f4af4798"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Delille"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "XML"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N411fbc56d3d64b469681b53133004539"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8eab0c3cd7a84166a35969756b039f71",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N011b65751a654d639287051849068668"
+      }
+    ]
+  },
+  {
+    "@id": "_:N011b65751a654d639287051849068668",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by/3.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a4005b87ede4181abe38f26f4af4798",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Editor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9931147ab82446a5a79fca86b7a71633",
+    "@type": [
+      "http://schema.org/DataDownload"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://delille.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "_:N411fbc56d3d64b469681b53133004539",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://delille.dasch.swiss/"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N346f5c0870eb4230a65639d1eaca594b"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "University of Basel"
+      }
+    ]
+  },
+  {
+    "@id": "_:N346f5c0870eb4230a65639d1eaca594b",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "4056"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Maiengasse 51"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-002"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N633259bc6ef5412abef744e440e4b447"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Marchal"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Hugues"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Prof. Dr."
+      }
+    ]
+  },
+  {
+    "@id": "_:N633259bc6ef5412abef744e440e4b447",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0003-4093-0416"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081B-organization-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nf44decc7e6ec4d80a3dcab919be36449"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "desk@snf.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "SNSF"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N652e4a7cddcf4a7b8830f12e99a63718"
+      }
+    ]
+  },
+  {
+    "@id": "_:N652e4a7cddcf4a7b8830f12e99a63718",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.snf.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf44decc7e6ec4d80a3dcab919be36449",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Berne"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Wildhainweg 3"
+      }
+    ]
+  }
+]

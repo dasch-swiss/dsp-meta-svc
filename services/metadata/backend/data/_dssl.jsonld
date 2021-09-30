@@ -1,0 +1,784 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Deubelbeiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Irene"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeName": [
+      {
+        "@language": "en",
+        "@value": "DSSL"
+      },
+      {
+        "@language": "en",
+        "@value": "SumSekLit"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-dataset-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "de",
+        "@value": "Die Datenbank umfasst etwa 55'000 Einträge mit Sekundärliteratur zu sumerischen Lexemen. Jeder Eintrag basiert auf einer Hauptzeichenabfolge mit möglichen Lesungen und unorthografischen Schreibungen. Für jedes Lexem wird die Sekundärliteratur erfasst und nicht selten werden die in den Beiträgen vorgeschlagenen Bedeutungen wiedergegeben. \nF: La base de données comporte environ 55'000 entrées enregistrant la littérature secondaire consacrée à un lexème sumérien. Chaque entrée est constituée d'une séquence de signes principale et de leurs lectures possibles, avec le plus souvent renvoi aux graphies non-standards. Pour chaque lexème, la littérature secondaire est saisie, avec pas rarement indication des significations proposées. \n\nE: The database comprises about 55'000 entries listing the secondary literature on Sumerian lexemes. Each entry consists of a main sign sequence with its possible readings and includes references to unorthographical writings. Each lexeme is provided with a list of secondary literature, often indicating the meanings suggested therein."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N0244881d3b324a1693d5152b0f830ec4"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-01-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-001"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-002"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-grant-002"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "https://dssl.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "Akkadian"
+      },
+      {
+        "@language": "de",
+        "@value": "Akkadisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "akkadien"
+      },
+      {
+        "@language": "de",
+        "@value": "Altorientalistik"
+      },
+      {
+        "@language": "de",
+        "@value": "Assyriologie"
+      },
+      {
+        "@language": "en",
+        "@value": "Assyriology"
+      },
+      {
+        "@language": "de",
+        "@value": "Keilschrift"
+      },
+      {
+        "@language": "en",
+        "@value": "Mesopotamia"
+      },
+      {
+        "@language": "de",
+        "@value": "Mesopotamien"
+      },
+      {
+        "@language": "fr",
+        "@value": "Mésopotamie"
+      },
+      {
+        "@language": "de",
+        "@value": "Sekundärliteratur"
+      },
+      {
+        "@language": "fr",
+        "@value": "littérature secondaire"
+      },
+      {
+        "@language": "en",
+        "@value": "secondary literature"
+      },
+      {
+        "@language": "en",
+        "@value": "Sumerian"
+      },
+      {
+        "@language": "de",
+        "@value": "Sumerisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "Sumérien"
+      },
+      {
+        "@language": "en",
+        "@value": "cuneiform"
+      },
+      {
+        "@language": "fr",
+        "@value": "cunéiforme"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Datenbank der sumerischen Sekundärliteratur"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSecondaryURL": [
+      {
+        "@id": "_:N0425155dc8ac4b65823f8904452b34f2"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "0824"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N0f07e04f1df841cea90ef575fed25d8f"
+      },
+      {
+        "@id": "_:N2b084de0dae34383b6930e70f2c463f2"
+      },
+      {
+        "@id": "_:N0207b22b77ca46559ea67fdaba18ad77"
+      },
+      {
+        "@id": "_:N67263b105f6045d9be98dc1946f259aa"
+      },
+      {
+        "@id": "_:Nbc26a26bee194e088c3a8738f57e9f87"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2014-10-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@id": "_:N74155ea196074598a2ee02defe87762f"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N68ef858da5dc4a97a6211173f0d1553f"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0244881d3b324a1693d5152b0f830ec4",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N8c6410aec093442d8face3b833e15e76"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://skos.um.es/unesco6/550510/html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8c6410aec093442d8face3b833e15e76",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Philology "
+      }
+    ]
+  },
+  {
+    "@id": "_:N74155ea196074598a2ee02defe87762f",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nf2637ff31af04cd6a1b803c8d9f0ce0e"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://chronontology.dainst.org/period/ZAxRV9WoxlrI"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf2637ff31af04cd6a1b803c8d9f0ce0e",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "4th millenium BCE"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0f07e04f1df841cea90ef575fed25d8f",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nf2bd1b2248b64f4abf28c033a571aa34"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/99237/republic-of-iraq.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf2bd1b2248b64f4abf28c033a571aa34",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Iraq"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2b084de0dae34383b6930e70f2c463f2",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N9deab2678cbe44fe8bd8413b29cd7efa"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255147/asia.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9deab2678cbe44fe8bd8413b29cd7efa",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Asia"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0207b22b77ca46559ea67fdaba18ad77",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N854d1de82875463c85cf257cb66b6af3"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/298795/republic-of-turkey.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N854d1de82875463c85cf257cb66b6af3",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Turkey"
+      }
+    ]
+  },
+  {
+    "@id": "_:N67263b105f6045d9be98dc1946f259aa",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N37b4e262b25449da87ad0b1bec8985d7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/130758/islamic-republic-of-iran.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N37b4e262b25449da87ad0b1bec8985d7",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Iran"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbc26a26bee194e088c3a8738f57e9f87",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ndfbfb483877f4a2bb212c04140f903f7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/163843/syrian-arab-republic.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndfbfb483877f4a2bb212c04140f903f7",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Syria"
+      }
+    ]
+  },
+  {
+    "@id": "_:N68ef858da5dc4a97a6211173f0d1553f",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ark.dasch.swiss/ark:/72163/1/0824"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0425155dc8ac4b65823f8904452b34f2",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://dssl.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-dataset-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "de",
+        "@value": "D: Die Datenbank umfasst etwa 55'000 Einträge mit Sekundärliteratur zu sumerischen Lexemen. Jeder Eintrag basiert auf einer Hauptzeichenabfolge mit möglichen Lesungen und unorthografischen Schreibungen. Für jedes Lexem wird die Sekundärliteratur erfasst und nicht selten werden die in den Beiträgen vorgeschlagenen Bedeutungen wiedergegeben."
+      },
+      {
+        "@language": "en",
+        "@value": "E: The database comprises about 55'000 entries listing the secondary literature on Sumerian lexemes. Each entry consists of a main sign sequence with its possible readings and includes references to unorthographical writings. Each lexeme is provided with a list of secondary literature, often indicating the meanings suggested therein."
+      },
+      {
+        "@language": "fr",
+        "@value": "F: La base de données comporte environ 55'000 entrées enregistrant la littérature secondaire consacrée à un lexème sumérien. Chaque entrée est constituée d'une séquence de signes principale et de leurs lectures possibles, avec le plus souvent renvoi aux graphies non-standards. Pour chaque lexème, la littérature secondaire est saisie, avec pas rarement indication des significations proposées."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDatePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-01-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "https://dssl.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "de",
+        "@value": "Akkadisch"
+      },
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "de",
+        "@value": "Englisch"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "de",
+        "@value": "Sumerisch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Nbf11a1e819d94544bc5a54d156291ae7"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N6e1e6334a8394c54949e9b0b0d7db930"
+      },
+      {
+        "@id": "_:Nac4d444a971c4d019480043f44087bfd"
+      },
+      {
+        "@id": "_:Nd155423496634c26b512ac3c61ae72f8"
+      },
+      {
+        "@id": "_:N4fd96e9679c546da8f1b031e5a5eac61"
+      },
+      {
+        "@id": "_:N5230b6a6a54b4293b9fe0b98547688e9"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Dataset of Datenbank der sumerischen Sekundärliteratur"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Text"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbf11a1e819d94544bc5a54d156291ae7",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N56a7d876c5ec41afbc83609007eb7fed"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56a7d876c5ec41afbc83609007eb7fed",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6e1e6334a8394c54949e9b0b0d7db930",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac4d444a971c4d019480043f44087bfd",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-004"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd155423496634c26b512ac3c61ae72f8",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-005"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4fd96e9679c546da8f1b031e5a5eac61",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-002"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5230b6a6a54b4293b9fe0b98547688e9",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-003"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-grant-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-001"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerische Akademie der Geisteswissenschaften (SAGW)"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Attinger"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Pascal"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Novák"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Mirko"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Mittermayer"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Catherine"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-person-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Ecklin"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Sabine"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerischer Nationalfonds (SNSF)"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-grant-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-002"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0824-organization-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Université de Genève"
+      }
+    ]
+  }
+]

@@ -1,0 +1,468 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081C-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "The database documents the events that took place in the Hôtel de Musique in Bern between 1766 and 1905. The repertoire was constituted by different kinds of spectacles like theatre plays, operas, ballets, concerts, dance parties, acrobatic performances, conferences or magicians. The list reconstructs the lifely and colourful theatre culture of Bern in the 19th Century."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDatePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2015-04-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "HdM-Bern"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:N0aab7d4ba1c04aa78c899fd6894306a5"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N43a57455aa0747b38027f4648b790bbf"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Finished"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Hôtel de Musique Bern"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Text"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0aab7d4ba1c04aa78c899fd6894306a5",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N9964453985f94a1fa162f49c0c3ec6fa"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9964453985f94a1fa162f49c0c3ec6fa",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ndf32e8091de94a99ab8e6fdd717164db"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc/4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndf32e8091de94a99ab8e6fdd717164db",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-NC 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N43a57455aa0747b38027f4648b790bbf",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081C-organization-000"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081C-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081C-dataset-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "The database documents the events that took place in the Hôtel de Musique in Bern between 1766 and 1905. The repertoire was constituted by different kinds of spectacles like theatre plays, operas, ballets, concerts, dance parties, acrobatic performances, conferences or magicians. The list reconstructs the lifely and colourful theatre culture of Bern in the 19th Century."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@language": "de",
+        "@value": "10302 Schweizer Geschichte"
+      },
+      {
+        "@language": "de",
+        "@value": "10405 Musikologie"
+      },
+      {
+        "@language": "de",
+        "@value": "10406 Theater-und Filmwissenschaften"
+      },
+      {
+        "@language": "de",
+        "@value": "10604 Musik und Theater"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-081C-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "HdM-Bern"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "19 Century"
+      },
+      {
+        "@language": "de",
+        "@value": "Bern"
+      },
+      {
+        "@language": "en",
+        "@value": "Concert"
+      },
+      {
+        "@language": "en",
+        "@value": "Music"
+      },
+      {
+        "@language": "en",
+        "@value": "Musicology"
+      },
+      {
+        "@language": "en",
+        "@value": "Opera"
+      },
+      {
+        "@language": "en",
+        "@value": "Spectales"
+      },
+      {
+        "@language": "en",
+        "@value": "Switzerland"
+      },
+      {
+        "@language": "en",
+        "@value": "Theater history"
+      },
+      {
+        "@language": "en",
+        "@value": "Theatre"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Hôtel de Musique Bern"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "081C"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N6463ba73aef1442e9c88d5fe1a926cba"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2009-04-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@id": "_:N16dea93dab58440abcf525c26abf4a44"
+      },
+      {
+        "@id": "_:Nf351cb4257654489b4e19a4071301315"
+      },
+      {
+        "@id": "_:Nd5b3f64cc1354c559f2c6fe9b4e28e6e"
+      },
+      {
+        "@language": "de",
+        "@value": "1766-1905"
+      },
+      {
+        "@language": "en",
+        "@value": "1766-1905"
+      },
+      {
+        "@language": "fr",
+        "@value": "1766-1905"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Ne90a75f093ae48ee993b1968e590f9b6"
+      }
+    ]
+  },
+  {
+    "@id": "_:N16dea93dab58440abcf525c26abf4a44",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N4f35897f5b7c4db38e6980d60ba83a28"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://n2t.net/ark:/99152/p06c6g3pvr5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4f35897f5b7c4db38e6980d60ba83a28",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Under Mediation act, 1803-1814"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf351cb4257654489b4e19a4071301315",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N1e3e1974240f4f558636788fb34e9a3f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://n2t.net/ark:/99152/p06c6g3p4cf"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1e3e1974240f4f558636788fb34e9a3f",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Sonderbund, 1845-1847"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd5b3f64cc1354c559f2c6fe9b4e28e6e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N02de2e70b91f4c4bace4a796b9d16a49"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://n2t.net/ark:/99152/p06c6g364np"
+      }
+    ]
+  },
+  {
+    "@id": "_:N02de2e70b91f4c4bace4a796b9d16a49",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Helvetic Republic, 1798-1803"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6463ba73aef1442e9c88d5fe1a926cba",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ndc5e1af1919c4e779572392a36b8af65"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/2661552"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndc5e1af1919c4e779572392a36b8af65",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Bern"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne90a75f093ae48ee993b1968e590f9b6",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nf1092736795f482ebbecf51087ce457d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.salsah.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf1092736795f482ebbecf51087ce457d",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "www.salsah.org"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-081C-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Na40cffa50d4742239ecca3afbf912f34"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "urchueguia@musik.unibe.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Institut für Musikwissenschaft der Universität Bern"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N928aa2e5ebb44cc6b8deb6b8c0b9133f"
+      }
+    ]
+  },
+  {
+    "@id": "_:N928aa2e5ebb44cc6b8deb6b8c0b9133f",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.musik.unibe.ch/index_ger.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na40cffa50d4742239ecca3afbf912f34",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3011"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Mittelstr. 43"
+      }
+    ]
+  }
+]

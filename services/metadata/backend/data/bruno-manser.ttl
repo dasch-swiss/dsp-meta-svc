@@ -1,0 +1,104 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsp:dsp-0813-grant-001 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-0813-organization-001 .
+
+dsp:dsp-0813-project a dsp:Project ;
+    dsp:hasAlternativeName "Annotating Bruno Manser's Diaries"@en ;
+    dsp:hasDataset dsp:dsp-0813-dataset-001 ;
+    dsp:hasDescription "Bruno Manser has left a variety of media in which he documented the nomadic life of the Penan. The project aims to show and annotate the everyday life moments of a nomadic lifestyle across media as diary entries, video footage and photographs of Bruno Manser."@en ;
+    dsp:hasDiscipline [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Cultural anthropology" ] ;
+            sdo:url "http://skos.um.es/unesco6/5101" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Social anthropology" ] ;
+            sdo:url "http://skos.um.es/unesco6/5103" ] ;
+    dsp:hasFunder dsp:dsp-0813-organization-001 ;
+    dsp:hasHowToCite "Bruno Manser/Bruno Manser Fonds"^^xsd:string ;
+    dsp:hasKeyword "Bruno Manser Fonds"@de,
+        "Nomaden"@de,
+        "Regenwald"@de,
+        "Waldnomaden"@de,
+        "Bruno Manser"@en,
+        "Hunters and Gatherers"@en,
+        "Nomads"@en,
+        "Penan"@en,
+        "Rainforest"@en,
+        "nomadic lifestyle"@en ;
+    dsp:hasName "Annotating Media of Bruno Manser"^^xsd:string ;
+    dsp:hasShortcode "0813"^^xsd:string ;
+    dsp:hasSpatialCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Sarawak" ] ;
+            sdo:url "https://www.geonames.org/1733038/sarawak.html" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Switzerland" ] ;
+            sdo:url "https://www.geonames.org/2658434/switzerland.html" ] ;
+    dsp:hasStartDate "2014-05-01"^^xsd:date ;
+    dsp:hasTeaser "XX - new property"^^xsd:string ;
+    dsp:hasTemporalCoverage "1984 - 2000"@de,
+        "1984 - 2000"@en,
+        "1984 - 2000"@fr ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "https://data.dasch.swiss/bmf/" ] .
+
+dsp:dsp-0813-dataset-001 a dsp:Dataset ;
+    dsp:hasAbstract "The dataset contains data of digitized diaries, video footage, photographs and other media of Bruno Manser"@en ;
+    dsp:hasAccessConditions "restricted"^^xsd:string ;
+    dsp:hasHowToCite "Bruno Manser/Bruno Manser Fonds"^^xsd:string ;
+    dsp:hasLanguage "Deutsch"@de,
+        "Englisch"@de,
+        "English"@en,
+        "German"@en,
+        "Penan"@en,
+        "allemand"@fr,
+        "anglais"@fr ;
+    dsp:hasLicense [ a dsp:License ;
+            dsp:hasDate "2021-09-02"^^xsd:date ;
+            dsp:hasURL [ a sdo:URL ;
+                    sdo:url "https://creativecommons.org/licenses/by-nc-sa/4.0/" ] ] ;
+    dsp:hasQualifiedAttribution [ a prov:Attribution ;
+            dsp:hasRole "Author"^^xsd:string ;
+            prov:agent dsp:dsp-0813-person-002 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Projektleiter"^^xsd:string ;
+            prov:agent dsp:dsp-0813-person-001 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Editor"^^xsd:string ;
+            prov:agent dsp:dsp-0813-organization-001 ] ;
+    dsp:hasStatus "Ongoing"^^xsd:string ;
+    dsp:hasTitle "Annotating Media of Bruno Manser"^^xsd:string ;
+    dsp:hasTypeOfData "Image"^^xsd:string,
+        "Text"^^xsd:string,
+        "Video"^^xsd:string .
+
+dsp:dsp-0813-person-001 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0813-organization-001 ;
+    dsp:hasEmail "erwin.zbinden@bmf.ch"^^xsd:string ;
+    dsp:hasFamilyName "Zbinden"^^xsd:string ;
+    dsp:hasGivenName "Erwin"^^xsd:string ;
+    dsp:hasJobTitle "Leiter Dokumentationsstelle"^^xsd:string .
+
+dsp:dsp-0813-person-002 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0813-organization-001 ;
+    dsp:hasFamilyName "Manser"^^xsd:string ;
+    dsp:hasGivenName "Bruno"^^xsd:string ;
+    dsp:hasJobTitle "Creator"^^xsd:string .
+
+dsp:dsp-0813-organization-001 a dsp:Organization ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Basel"^^xsd:string ;
+            sdo:postalCode "4051"^^xsd:string ;
+            sdo:streetAddress "Socinstrasse 37"^^xsd:string ] ;
+    dsp:hasEmail "info@bmf.ch"^^xsd:string ;
+    dsp:hasName "Bruno Manser Fonds"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "https://www.bmf.ch/" ] .
+

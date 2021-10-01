@@ -328,10 +328,41 @@ The JSON representation is "flat", i.e. not nested, so all top-level types are p
 
 ## RDF API
 
-An RDF endpoint will be added eventually. The mappings are defined in the tables above.
+Metadata is available in RDF. The mappings are defined in the tables above.
+
+Currently, only `JSON-LD` and `ttl` serializations are available.
+
+Both metadata routes support RDF instead of JSON. RDF can be requested by means of content negotiation.
+Adding the header `Content-Type: application/ld+json` or `Content-Type: text/turtle` respectively will force the response to be RDF.
+
+__Get a single project__
+
+```bash
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects/0806' --header 'Content-Type: text/turtle'
+```
+
+will return the turtle representation of the project with the shortcode `0806`.
 
 
-<!-- TODO: update -->
+__Get a single project__
+
+```bash
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects' --header 'Content-Type: text/turtle'
+```
+
+will return JSON of the following format:
+
+```jsonc
+[
+    {
+        "id": "0806",
+        "name": "Anton Webern Gesamtausgabe",
+        "description": "...",
+        "metadata": "@prefix dsp: ..."  // string containing the turtle serialization
+    },
+    {}  // all other projects
+]
+```
 
 
 ------

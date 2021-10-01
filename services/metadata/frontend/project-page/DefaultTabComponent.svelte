@@ -203,7 +203,6 @@
     {#if abstractLinesNumber > 6}
       <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
     {/if}
-    <!-- FIXME: issues with expanding abstracts on some datasets -->
 
     <!-- Attribution -->
     <span class=label>Attributions</span>
@@ -212,7 +211,6 @@
       {#each dataset?.attributions as a}
       <div class="attributions data">
         <div class=role>{a.roles.join(", ")}</div>
-        <!-- TODO: should this only be person or also organization? -->
           {#each [findObjectByID(a.agent)] as p}
             {#if p.__type === 'Person'}
               {#if p.authorityRefs}

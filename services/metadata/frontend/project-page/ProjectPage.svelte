@@ -27,10 +27,10 @@
     await getProjectMetadata();
   });
 
-  // onDestroy(() => {
-  //   // clear cached project
-  //   currentProject.set(undefined);
-  // });
+  onDestroy(() => {
+    // clear cached project
+    projectMetadata.set(undefined);
+  });
 
   const getProjectMetadata = async () => {
     // TODO: can this be cleaned up?

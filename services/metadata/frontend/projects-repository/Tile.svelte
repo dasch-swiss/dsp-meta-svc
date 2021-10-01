@@ -1,15 +1,9 @@
 <script lang="ts">
   import { Router, Link } from 'svelte-routing';
   import type { ProjectMetadata } from '../interfaces';
-  import { projectMetadata } from '../store';
 
   export let metadata: ProjectMetadata;
 
-  // const setProject = () => {
-  //   const project = metadata.metadata.find((p: any) => p.type === 'http://ns.dasch.swiss/repository#Project');
-  //   console.log(444444, metadata)
-  //   projectMetadata.set(project);
-  // };
 </script>
 
 <section>
@@ -20,7 +14,6 @@
   <div class=footer>
     <Router>
       <Link to={`/projects/${metadata.id}`} class="read-more regular-link">
-      <!-- <Link to={`/projects/${projectMetadata.id}`} on:click={setProject} class="read-more regular-link"> -->
         Read more
       </Link>
     </Router>

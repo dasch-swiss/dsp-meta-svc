@@ -3,7 +3,6 @@
   import type { Dataset } from "../interfaces";
 
   export let datasets = [] as Dataset[];
-  // export let tabs = [] as any[];
   export let activeTabValue = 0;
 
   const handleTabsBrowsing = (tabValue: number) => () => (activeTabValue = tabValue);

@@ -54,7 +54,7 @@
   <div class=tile-container>
     {#if $pagedResults && $pagedResults.length}
       {#each $pagedResults as project}
-        <!-- TODO: remove actual metadata content from BE response on /projects endpoint, and see what that would break -->
+        <!-- LATER: remove actual metadata content from BE response on /projects endpoint, and see what that would break -->
         <Tile metadata={project}/>
       {/each}
     {:else}

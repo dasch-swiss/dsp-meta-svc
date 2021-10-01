@@ -20,7 +20,6 @@
     const divHeight = el.scrollHeight;
     abstractLinesNumber = divHeight / lineHeight;
     isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
-    console.log("abstract:", abstractLinesNumber, isAbstractExpanded)
   });
 
   const copyToClipboard = () => {
@@ -59,13 +58,21 @@
       <!-- Access conditions -->
       <div>
         <span class=label>Access</span>
-        <span class=data>{dataset?.accessConditions}</span>
+        {#if dataset?.accessConditions}
+          <span class=data>{dataset?.accessConditions}</span>
+        {:else}
+          <span class="warning data">access conditions missing</span>
+        {/if}
       </div>
 
       <!-- Status -->
       <div>
         <span class=label>Status</span>
+        {#if dataset?.status}
         <span class=data>{dataset?.status}</span>
+        {:else}
+          <span class="warning data">status missing</span>
+        {/if}
       </div>
 
       <!-- Dates -->
@@ -91,7 +98,11 @@
       <!-- Type of Data -->
       <div>
         <span class=label>Type of Data</span>
+        {#if dataset?.typeOfData}
         <span class=data>{dataset?.typeOfData.join(', ')}</span>
+        {:else}
+          <span class="warning data">type of data missing</span>
+        {/if}
       </div>
 
       <!-- Additional -->
@@ -124,6 +135,8 @@
               <div>({l.date})</div>
             </div>
           {/each}
+        {:else}
+          <span class="warning data">licenses missing</span>
         {/if}
     </div>
 
@@ -131,7 +144,11 @@
     <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
       <div>
         <span class=label>Languages</span>
+        {#if dataset?.languages}
         <span class=data>{dataset?.languages.map(l => {return getText(l)}).join(', ')}</span>
+        {:else}
+          <span class="warning data">languages missing</span>
+        {/if}
       </div>
     </div>
 
@@ -153,25 +170,35 @@
     <div class="property-row">
       <span class=label style="display:inline">
         How To Cite
+        {#if dataset?.howToCite}
         <button on:click={copyToClipboard} title="copy citation to the clipboard">
           <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
         </button>
+        {/if}
       </span>
+      {#if dataset?.howToCite}
       <span id=how-to-cite class=data>{dataset?.howToCite}</span>
+      {:else}
+        <span class="warning data">how to cite missing</span>
+      {/if}
     </div>
 
     <!-- Abstract -->
     <div>
       <span class=label>Abstract</span>
-        <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
-          {#each dataset?.abstracts as a}
-            {#if a.__type === "URL"}
-              <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
-            {:else}
-              <div>{getText(a)}</div>
-            {/if}
-          {/each}
-        </div>
+      {#if dataset?.abstracts}
+      <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
+        {#each dataset?.abstracts as a}
+          {#if a.__type === "URL"}
+            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
+          {:else}
+            <div>{getText(a)}</div>
+          {/if}
+        {/each}
+      </div>
+      {:else}
+        <span class="warning data" id="abstract">abstract missing</span>
+      {/if}
     </div>
     {#if abstractLinesNumber > 6}
       <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
@@ -181,6 +208,7 @@
     <!-- Attribution -->
     <span class=label>Attributions</span>
     <div class="grid-wrapper">
+      {#if dataset?.attributions}
       {#each dataset?.attributions as a}
       <div class="attributions data">
         <div class=role>{a.roles.join(", ")}</div>
@@ -212,12 +240,19 @@
           {/each}
         </div>
       {/each}
+      {:else}
+        <span class="warning data">attributions missing</span>
+      {/if}
     </div>
 
   {/if}
 </div>
 
 <style>
+  .warning{
+    /* TODO: could be done better */
+    color: red;
+  }
   a {color: var(--lead-colour);}
   button {
     border: none;

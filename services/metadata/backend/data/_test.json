@@ -12,9 +12,6 @@
             "dataset_001"
         ],
         "contactPoint": "organization_000",
-        "description": {
-            "en": "This is a test project to ensure the frontend can handle all possible cases"
-        },
         "disciplines": [
             {
                 "__type": "URL",
@@ -32,7 +29,7 @@
                 "de": "Test"
             }
         ],
-        "name": "test",
+        "name": "",
         "shortcode": "0000",
         "spatialCoverage": [
             {
@@ -54,5 +51,8 @@
             "url": "http://app.test.dasch.swiss",
             "text": "app.test.dasch.swiss"
         }
-    }
+    },
+    "datasets": [
+        {}
+    ]
 }

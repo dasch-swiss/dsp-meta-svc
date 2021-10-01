@@ -3,22 +3,24 @@ import {get} from "svelte/store";
 import {projectMetadata as ProjectMetadata} from "./store";
 import type {Grant, Person, Organization, Text} from "./interfaces";
 
-export function findPersonByID(id:string): Person {
+export function findPersonByID(id: string): Person {
   let persons = get(ProjectMetadata).persons;
   if (persons && persons.length > 0) {
     return persons.find(o => o.__id === id);
   }
 }
 
-export function findOrganizationByID(id:string): Organization {
-  return get(ProjectMetadata).organizations.find(o => o.__id === id);
+export function findOrganizationByID(id: string): Organization {
+  let x = get(ProjectMetadata).organizations
+  return x ? x.find(o => o.__id === id) : undefined;
 }
 
-export function findGrantByID(id:string): Grant {
-  return get(ProjectMetadata).grants.find(o => o.__id === id);
+export function findGrantByID(id: string): Grant {
+  let x = get(ProjectMetadata).grants
+  return x ? x.find(o => o.__id === id) : undefined;
 }
 
-export function findObjectByID(id:string): Grant | Person | Organization {
+export function findObjectByID(id: string): Grant | Person | Organization {
   let o: Grant | Person | Organization;
   o = findPersonByID(id);
   if (o) return o;

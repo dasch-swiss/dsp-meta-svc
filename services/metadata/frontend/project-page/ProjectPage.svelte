@@ -1,15 +1,9 @@
 <script lang="ts">
   import type { Metadata } from "../interfaces";
   import { onDestroy, onMount, tick } from "svelte";
-  import {
-    // currentProject,
-    // currentProjectMetadata,
-    handleSnackbar,
-    previousRoute,
-    projectMetadata,
-  } from "../store";
+  import { handleSnackbar, previousRoute, projectMetadata } from "../store";
   import ProjectWidget from "./ProjectWidget.svelte";
-  import DownloadWidget from "./DownloadWidget.svelte";
+  // import DownloadWidget from "./DownloadWidget.svelte";  // LATER: bring back with download widget
   import Tab from "./Tab.svelte";
   import { fade } from "svelte/transition";
   import Snackbar from "../Snackbar.svelte";
@@ -33,31 +27,18 @@
   });
 
   const getProjectMetadata = async () => {
-    // TODO: can this be cleaned up?
     const protocol = window.location.protocol;
+    // LATER: This probably should not be hard coded
     const port = protocol === "https:" ? "" : ":3000";
     const baseUrl = `${protocol}//${window.location.hostname}${port}/`;
     const projectID = window.location.pathname.split("/")[2];
 
-    // const res = await fetch(`${process.env.BASE_URL}projects/${params.id}`);
     const res = await fetch(`${baseUrl}api/v1/projects/${projectID}`);
     const metadata: Metadata = await res.json();
 
-    // console.log("Metadata:", metadata);
-
     projectMetadata.set(metadata);
 
-    // const project = $projectMetadata.project
-    // currentProject.set(project);
     document.title = metadata.project.name;
-
-    // datasets = $projectMetadata.datasets
-
-    // datasets.forEach(d => tabs.push({
-    //   label: d.title,
-    //   value: datasets.indexOf(d),
-    //   content: d
-    // }));
 
     await tick();
     getDivHeight();
@@ -90,85 +71,103 @@
   </div>
 {/if}
 
-<div class="container" in:fade={{ duration: 200 }}>
-  {#if mobileResolution}
-    <button
-      on:click={() => history.back()}
-      class="goback-button"
-      title="go back to the projects list"
-      disabled={!$previousRoute && window.history.length <= 2}
-    >
-      <svg
-        class="icon"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+{#if $projectMetadata}
+  <div class="container" in:fade={{ duration: 200 }}>
+    {#if mobileResolution}
+      <button
+        on:click={() => history.back()}
+        class="goback-button"
+        title="go back to the projects list"
+        disabled={!$previousRoute && window.history.length <= 2}
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M10 19l-7-7m0 0l7-7m-7 7h18"
-        />
-      </svg>
-      <span class="button-label">Go Back</span>
-    </button>
-  {/if}
-  <!-- Project name and alternative names -->
-  <div class="row" style="flex-wrap: wrap;">
-    <h1 class="title top-heading">
-      {$projectMetadata?.project.name}
-    </h1>
-    {#if $projectMetadata?.project.alternativeNames}
-      <div class="row">
-        <h4 class="title new-title">
-          Also known as:&nbsp;
-          <span style="color:var(--secondary-colour)">
-            {$projectMetadata?.project.alternativeNames
-              .map((t) => {
-                return getText(t);
-              })
-              .join(", ")}
-          </span>
-        </h4>
-      </div>
+        <svg
+          class="icon"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        <span class="button-label">Go Back</span>
+      </button>
     {/if}
-  </div>
-  <div class="row">
-    <div class="column-left">
 
-      <!-- Description -->
-      <div class="property-row">
-        <span class="label new-subtitle">Description</span>
-        <div id=description class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">
-          {getText($projectMetadata?.project.description)}
-        </div>
-        {#if descriptionLinesNumber > 6}
-          <div on:click={toggleDescriptionExpand} class=expand-button>show {isDescriptionExpanded ? "less" : "more"}</div>
-        {/if}
-      </div>
-
-      <!-- Publications -->
-      {#if $projectMetadata?.project.publications && Array.isArray($projectMetadata?.project.publications)}
-        <div class="property-row">
-          <span class="label new-subtitle">Publications</span>
-          {#each $projectMetadata?.project.publications as p, i}
-            {#if i > 1}
-              <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p}</span>
-            {:else}
-              <span class="data new-text">{p}</span>
-            {/if}
-          {/each}
-        </div>
-        {#if $projectMetadata?.project.publications.length > 2}
-          <div on:click={togglePublicationExpand} class="expand-button">
-            show {arePublicationsExpanded ? "less" : "more"}
-          </div>
-        {/if}
+    <!-- Project name and alternative names -->
+    <div class="row" style="flex-wrap: wrap;">
+      {#if $projectMetadata?.project.name}
+        <h1 class="title top-heading">
+          {$projectMetadata?.project.name}
+        </h1>
+      {:else}
+        <div class="warning top-heading">Project Name missing</div>
       {/if}
+      {#if $projectMetadata?.project.alternativeNames}
+        <div class="row">
+          <h4 class="title new-title">
+            Also known as:&nbsp;
+            <span style="color:var(--secondary-colour)">
+              {$projectMetadata?.project.alternativeNames
+                .map((t) => {
+                  return getText(t);
+                })
+                .join(", ")}
+            </span>
+          </h4>
+        </div>
+      {/if}
+    </div>
+    <div class="row">
+      <div class="column-left">
+        <!-- Description -->
+        <div class="property-row">
+            {#if $projectMetadata?.project.description && getText($projectMetadata?.project.description)}
+            <span class="label new-subtitle">Description</span>
+            <div
+              id="description"
+              class="data new-text {isDescriptionExpanded
+                ? ''
+                : 'description-short'}"
+            >
+              {getText($projectMetadata?.project.description)}
+            </div>
+            {#if descriptionLinesNumber > 6}
+              <div on:click={toggleDescriptionExpand} class="expand-button">
+                show {isDescriptionExpanded ? "less" : "more"}
+              </div>
+            {/if}
+          {:else}
+            <div class="warning" id="description">Description missing</div>
+          {/if}
+        </div>
 
-        <!-- XXX:reenable -->
+        <!-- Publications -->
+        {#if $projectMetadata?.project.publications && Array.isArray($projectMetadata?.project.publications)}
+          <div class="property-row">
+            <span class="label new-subtitle">Publications</span>
+            {#each $projectMetadata?.project.publications as p, i}
+              {#if i > 1}
+                <span
+                  class={arePublicationsExpanded ? "data new-text" : "hidden"}
+                  >{p}</span
+                >
+              {:else}
+                <span class="data new-text">{p}</span>
+              {/if}
+            {/each}
+          </div>
+          {#if $projectMetadata?.project.publications.length > 2}
+            <div on:click={togglePublicationExpand} class="expand-button">
+              show {arePublicationsExpanded ? "less" : "more"}
+            </div>
+          {/if}
+        {/if}
+
         <div class="tabs">
           <Tab datasets={$projectMetadata?.datasets} />
         </div>
@@ -196,74 +195,78 @@
             </svg>
           </button>
         {/if}
-    </div>
-    <div class="column-right">
-      {#if !mobileResolution}
-        <button
-          on:click={() => history.back()}
-          class="goback-button"
-          title="go back to the projects list"
-          disabled={!$previousRoute && window.history.length <= 2}
-        >
-          <svg
-            class="icon"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
-            />
-          </svg>
-          <span class="button-label">Go Back</span>
-        </button>
-      {/if}
-
-      <div class="widget">
-        <ProjectWidget />
       </div>
-
-      <!-- TODO: temp disabled download widget -->
-      <!-- <div class=widget>
-          <DownloadWidget />
-        </div> -->
-
-      {#if mobileResolution}
-        <button
-          on:click={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-          }}
-          class="gototop-button m-hidden"
-          title="Get back to the top"
-        >
-          <svg
-            class="icon"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+      <div class="column-right">
+        {#if !mobileResolution}
+          <button
+            on:click={() => history.back()}
+            class="goback-button"
+            title="go back to the projects list"
+            disabled={!$previousRoute && window.history.length <= 2}
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
-          </svg>
-        </button>
-      {/if}
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              />
+            </svg>
+            <span class="button-label">Go Back</span>
+          </button>
+        {/if}
+
+        <div class="widget">
+          <ProjectWidget />
+        </div>
+
+        <!-- LATER: temp disabled download widget -->
+        <!-- <div class=widget>
+            <DownloadWidget />
+          </div> -->
+
+        {#if mobileResolution}
+          <button
+            on:click={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+            class="gototop-button m-hidden"
+            title="Get back to the top"
+          >
+            <svg
+              class="icon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+              />
+            </svg>
+          </button>
+        {/if}
+      </div>
     </div>
   </div>
-</div>
-
-<!-- {:else}
+{:else}
   <Loading />
-{/if} -->
+{/if}
+
 <style>
+  .warning{
+    /* TODO: could be done better */
+    color: red;
+  }
   button {
     color: var(--lead-colour);
     box-shadow: var(--shadow-1);

@@ -1,0 +1,6 @@
+{
+    "singleQuote": true,
+    "svelteAllowShorthand": true,
+    "allowShorthand": true,
+    "svelteStrictMode": false
+}

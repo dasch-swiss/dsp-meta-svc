@@ -40,7 +40,6 @@
       return `${s.substring(0, (browserWidth / 17))}...`;
     } else return s;
   };
-
 </script>
 
 <div id=dataset in:fade={{duration: 200}}>
@@ -53,25 +52,25 @@
       </div>
     {/if}
 
-    <div class="grid-wrapper">
+    <div class=grid-wrapper>
       <!-- Access conditions -->
       <div>
         <span class=label>Access</span>
-        {#if dataset?.accessConditions}
-          <span class=data>{dataset?.accessConditions}</span>
-        {:else}
-          <span class="warning data">access conditions missing</span>
-        {/if}
+          {#if dataset?.accessConditions}
+            <span class=data>{dataset?.accessConditions}</span>
+          {:else}
+            <span class="warning data">access conditions missing</span>
+          {/if}
       </div>
 
       <!-- Status -->
       <div>
         <span class=label>Status</span>
-        {#if dataset?.status}
-        <span class=data>{dataset?.status}</span>
-        {:else}
-          <span class="warning data">status missing</span>
-        {/if}
+          {#if dataset?.status}
+            <span class=data>{dataset?.status}</span>
+          {:else}
+            <span class="warning data">status missing</span>
+          {/if}
       </div>
 
       <!-- Dates -->
@@ -97,11 +96,11 @@
       <!-- Type of Data -->
       <div>
         <span class=label>Type of Data</span>
-        {#if dataset?.typeOfData}
-        <span class=data>{dataset?.typeOfData.join(', ')}</span>
-        {:else}
-          <span class="warning data">type of data missing</span>
-        {/if}
+          {#if dataset?.typeOfData}
+            <span class=data>{dataset?.typeOfData.join(', ')}</span>
+          {:else}
+            <span class="warning data">type of data missing</span>
+          {/if}
       </div>
 
       <!-- Additional -->
@@ -126,8 +125,8 @@
       <span class=label>License</span>
         {#if dataset?.licenses}
           {#each dataset?.licenses as l}
-            <div class="data">
-              <a href={l.license.url} class="external-link" target=_>{l.license.text}</a>
+            <div class=data>
+              <a href={l.license.url} class=external-link target=_>{l.license.text}</a>
               {#if l.details}
                 <div>{l.details}</div>
               {/if}
@@ -140,11 +139,11 @@
     </div>
 
     <!-- Languages -->
-    <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
+    <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
       <div>
         <span class=label>Languages</span>
         {#if dataset?.languages}
-        <span class=data>{dataset?.languages.map(l => {return getText(l)}).join(', ')}</span>
+          <span class=data>{dataset?.languages.map(l => {return getText(l)}).join(', ')}</span>
         {:else}
           <span class="warning data">languages missing</span>
         {/if}
@@ -153,7 +152,7 @@
 
     <!-- URLs -->
     {#if dataset?.urls}
-      <div class="grid-wrapper" style="grid-template-columns: repeat(1, 1fr)">
+      <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
         <div>
           <span class=label>Dataset Website</span>
           {#each dataset?.urls as u}
@@ -170,13 +169,13 @@
       <span class=label style="display:inline">
         How To Cite
         {#if dataset?.howToCite}
-        <button on:click={copyToClipboard} title="copy citation to the clipboard">
-          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-        </button>
+          <button on:click={copyToClipboard} title="copy citation to the clipboard">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          </button>
         {/if}
       </span>
       {#if dataset?.howToCite}
-      <span id=how-to-cite class=data>{dataset?.howToCite}</span>
+        <span id=how-to-cite class=data>{dataset?.howToCite}</span>
       {:else}
         <span class="warning data">how to cite missing</span>
       {/if}
@@ -186,15 +185,15 @@
     <div>
       <span class=label>Abstract</span>
       {#if dataset?.abstracts}
-      <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
-        {#each dataset?.abstracts as a}
-          {#if a.__type === "URL"}
-            <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
-          {:else}
-            <div>{getText(a)}</div>
-          {/if}
-        {/each}
-      </div>
+        <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
+          {#each dataset?.abstracts as a}
+            {#if a.__type === "URL"}
+              <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
+            {:else}
+              <div>{getText(a)}</div>
+            {/if}
+          {/each}
+        </div>
       {:else}
         <span class="warning data" id="abstract">abstract missing</span>
       {/if}
@@ -205,38 +204,38 @@
 
     <!-- Attribution -->
     <span class=label>Attributions</span>
-    <div class="grid-wrapper">
+    <div class=grid-wrapper>
       {#if dataset?.attributions}
-      {#each dataset?.attributions as a}
-      <div class="attributions data">
-        <div class=role>{a.roles.join(", ")}</div>
-          {#each [findObjectByID(a.agent)] as p}
-            {#if p.__type === 'Person'}
-              {#if p.authorityRefs}
-                <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
-              {:else}
-                <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+        {#each dataset?.attributions as a}
+          <div class="attributions data">
+            <div class=role>{a.roles.join(", ")}</div>
+            {#each [findObjectByID(a.agent)] as p}
+              {#if p.__type === 'Person'}
+                {#if p.authorityRefs}
+                  <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+                {:else}
+                  <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+                {/if}
+                {#if p.affiliation}
+                  {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
+                    <div>{org.name}</div>
+                  {/each}
+                {/if}
+                <div>{p.jobTitles[0]}</div>
+                {#if p.email}
+                  <a class=email href="mailto:{p.email}">{p.email}</a>
+                {/if}
+              {:else if p.__type === 'Organization'}
+                {#if p.url}
+                  <a href={p.url.url} target=_ class="external-link">{p.name}</a>
+                {/if}
+                {#if p.email}
+                  <a class=email href="mailto:{p.email}">{p.email}</a>
+                {/if}
               {/if}
-              {#if p.affiliation}
-                {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
-                  <div>{org.name}</div>
-                {/each}
-              {/if}
-              <div>{p.jobTitles[0]}</div>
-              {#if p.email}
-                <a class=email href="mailto:{p.email}">{p.email}</a>
-              {/if}
-            {:else if p.__type === 'Organization'}
-              {#if p.url}
-                <a href={p.url.url} target=_ class="external-link">{p.name}</a>
-              {/if}
-              {#if p.email}
-                <a class=email href="mailto:{p.email}">{p.email}</a>
-              {/if}
-            {/if}
-          {/each}
-        </div>
-      {/each}
+            {/each}
+          </div>
+        {/each}
       {:else}
         <span class="warning data">attributions missing</span>
       {/if}

@@ -22,13 +22,12 @@
 
 
 {#if $projectMetadata}
-
   <!-- Shortcode -->
   <div class=label>DSP Internal Shortcode</div>
   {#if $projectMetadata?.project.shortcode}
     <div class=data>{$projectMetadata?.project.shortcode}</div>
   {:else}
-    <div class="warning">Shortcode missing</div>
+    <div class=warning>Shortcode missing</div>
   {/if}
 
   <!-- DMP -->
@@ -46,18 +45,18 @@
   <!-- How to Cite -->
   <div class=label>
     <span class=label style="display:inline">
-    How To Cite
-    {#if $projectMetadata?.project.howToCite}
-      <button on:click={copyToClipboard} title="copy citation to the clipboard">
-        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-      </button>
-    {/if}
-  </span>
+      How To Cite
+      {#if $projectMetadata?.project.howToCite}
+        <button on:click={copyToClipboard} title="copy citation to the clipboard">
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        </button>
+      {/if}
+    </span>
   </div>
   {#if $projectMetadata?.project.howToCite}
     <div class=data>{$projectMetadata?.project.howToCite}</div>
   {:else}
-    <div class="warning">How-to-cite missing</div>
+    <div class=warning>How-to-cite missing</div>
   {/if}
 
 
@@ -71,12 +70,12 @@
         {#if getText(d).match(/^\d+ /)}
           <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(getText(d))}</a>
         {:else}
-          <div class="data">{getText(d)}</div>
+          <div class=data>{getText(d)}</div>
         {/if}
       {/if}
     {/each}
   {:else}
-    <div class="warning">Disciplines missing</div>
+    <div class=warning>Disciplines missing</div>
   {/if}
 
   <!-- Temporal Coverage -->
@@ -86,11 +85,11 @@
       {#if t.__type === "URL"}
         <a class="data external-link" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
       {:else}
-        <div class="data">{getText(t)}</div>
+        <div class=data>{getText(t)}</div>
       {/if}
     {/each}
   {:else}
-    <div class="warning">Temporal coverage missing</div>
+    <div class=warning>Temporal coverage missing</div>
   {/if}
 
 
@@ -101,7 +100,7 @@
       <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
     {/each}
   {:else}
-    <div class="warning">Spatial coverage missing</div>
+    <div class=warning>Spatial coverage missing</div>
   {/if}
 
   <!-- Start Date -->
@@ -109,7 +108,7 @@
   {#if $projectMetadata?.project.startDate}
     <div class=data>{$projectMetadata?.project.startDate}</div>
   {:else}
-    <div class="warning">Start date missing</div>
+    <div class=warning>Start date missing</div>
   {/if}
   
   <!-- End Date -->
@@ -131,11 +130,11 @@
           <div class=data>{f.name}</div>
         {/if}
       {:else}
-        <div class="warning">funders missing</div>
+        <div class=warning>funders missing</div>
       {/if}
     {/each}
   {:else}
-    <div class="warning">funders missing</div>
+    <div class=warning>funders missing</div>
   {/if}
   
   <!-- Grants -->
@@ -147,10 +146,10 @@
       {:else if g?.number && g?.url}
         <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
       {:else if g?.number}
-        <span class="data">{g?.number}</span>
+        <span class=data>{g?.number}</span>
       {:else}
         {#each [g?.funders[0]].map(o => {return findOrganizationByID(o)}) as f}
-          <span class="data">{f.name}</span>
+          <span class=data>{f.name}</span>
         {/each}
       {/if}
     {/each}
@@ -172,7 +171,7 @@
         {#if Array.isArray(c?.affiliation)}
           {#each c?.affiliation as o}
             {#each [findOrganizationByID(o)] as org}
-              <span class="data">{org.name}</span>
+              <span class=data>{org.name}</span>
             {/each}
           {/each}
         {/if}
@@ -188,7 +187,7 @@
   {#if $projectMetadata?.project.url}
     <a class="data external-link" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
   {:else}
-    <div class="warning">URL missing</div>
+    <div class=warning>URL missing</div>
   {/if}
   <!-- Secondary URL -->
   {#if $projectMetadata?.project.secondaryURL}
@@ -200,11 +199,11 @@
   {#if $projectMetadata?.project.keywords}
     <span class="keyword">{$projectMetadata?.project.keywords.map(t => {return getText(t)}).join(", ")}</span>
   {:else}
-    <div class="warning">keywords missing</div>
+    <div class=warning>keywords missing</div>
   {/if}
 
 {:else}
-  <div class="warning">Project not available</div>
+  <div class=warning>Project not available</div>
 {/if}
 
 <style>

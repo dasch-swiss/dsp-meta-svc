@@ -6,7 +6,7 @@
         "__createdAt": "1630601323747283000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Maggetti, D., Jacquier Kaempfer, C., Spadini, E., Pellegrino, B., Burri, J., Lacord, R., Peterman, S., Christen, A., Jaouen, L., Rivoal, M., 2020, Gustave Roud, oeuvres [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0112.",
-        "teaserText": "XX - new property",
+        "teaserText": "This database is the accompaniment of the critical edition of Gustave Roud’s work. It hosts the digital facsimiles of Gustave Roud’s archive, which includes manuscripts and printed materials.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0112-dataset-000"
         ],

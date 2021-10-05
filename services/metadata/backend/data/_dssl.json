@@ -6,7 +6,7 @@
         "__createdAt": "1630601370424772000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "https://dssl.dasch.swiss",
-        "teaserText": "XX - new property",
+        "teaserText": "Die Datenbank umfasst etwa 55'000 Einträge mit Sekundärliteratur zu sumerischen Lexemen.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0824-dataset-001"
         ],

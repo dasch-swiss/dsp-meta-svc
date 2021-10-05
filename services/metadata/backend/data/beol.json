@@ -6,7 +6,7 @@
         "__createdAt": "1630601412179086000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss",
-        "teaserText": "XX - new property",
+        "teaserText": "The project Bernoulli-Euler Online (BEOL) focuses on the mathematics influenced by the Bernoulli dynasty and Leonhard Euler and presents these materials to the public and researchers.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0801-dataset-000",
             "http://ns.dasch.swiss/repository#dsp-0801-dataset-001",

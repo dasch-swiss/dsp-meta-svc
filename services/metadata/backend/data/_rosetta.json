@@ -6,7 +6,7 @@
         "__createdAt": "1630601349756338000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "DaSCH (2021): Rosetta, DaSCH. http://ark.dasch.swiss/ark:/72163/1/082E/",
-        "teaserText": "XX - new property",
+        "teaserText": "Rosetta is the sample project of DaSCH.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082E-dataset-000"
         ],

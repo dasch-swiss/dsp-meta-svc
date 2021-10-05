@@ -6,7 +6,7 @@
         "__createdAt": "1630601339049038000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Klauser FR and Pauschinger D (2020) Big Data in Agriculture: The Making of Smart Farms.",
-        "teaserText": "XX - new property",
+        "teaserText": "This project contributes empirical evidence to the discussion of the opportunities and risks associated with smart farming.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082D-dataset-001"
         ],

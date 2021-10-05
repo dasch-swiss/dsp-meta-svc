@@ -1,0 +1,557 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-082E-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasContactPoint": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082E-dataset-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "Rosetta is the sample project of DaSCH. It contains texts, objects, documents and images from different cultures and times. In the future the sample project will be enriched with new types of data such as audio, video and 3D-images. The downloadable file rosetta.zip contains the data model (json-file), the data itself (xml.file) as well as some documentation (pdf and csv-files). You can use these files to start creating your own data model."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N7c1605540f284ee09305870ecc9d3308"
+      },
+      {
+        "@id": "_:N06bf2ca8f20142d48723b01c8d821993"
+      },
+      {
+        "@id": "_:Neaf0f724942f4a1585111c9c984f5730"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "DaSCH (2021): Rosetta, DaSCH. http://ark.dasch.swiss/ark:/72163/1/082E/"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "archaeology"
+      },
+      {
+        "@language": "en",
+        "@value": "art"
+      },
+      {
+        "@language": "en",
+        "@value": "literature"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Rosetta"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "082E"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N2ea919648ab2459eb5f3ba6c4e21e112"
+      },
+      {
+        "@id": "_:N1986b3a1637946638c9a1451e0b12d9f"
+      },
+      {
+        "@id": "_:N66164ad05f8d4b1fa940b29813661807"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2020-12-21"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@language": "en",
+        "@value": "3rd millennium BCE to modern time"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N4fd99c25c664481e905b47330497a3f2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c1605540f284ee09305870ecc9d3308",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N10470309ebc2469199d5357629edee6c"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/570107"
+      }
+    ]
+  },
+  {
+    "@id": "_:N10470309ebc2469199d5357629edee6c",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Language and literature"
+      }
+    ]
+  },
+  {
+    "@id": "_:N06bf2ca8f20142d48723b01c8d821993",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N69a55bb09e4948568e870b154e6c85af"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/620303"
+      }
+    ]
+  },
+  {
+    "@id": "_:N69a55bb09e4948568e870b154e6c85af",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Decorative arts"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neaf0f724942f4a1585111c9c984f5730",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nb08cbf365c664032a90f4dde7203f7a6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/550501"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb08cbf365c664032a90f4dde7203f7a6",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Archaeology"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2ea919648ab2459eb5f3ba6c4e21e112",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N897c1e44d6614a46b7f0ccc59a06a179"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255146"
+      }
+    ]
+  },
+  {
+    "@id": "_:N897c1e44d6614a46b7f0ccc59a06a179",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Africa"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1986b3a1637946638c9a1451e0b12d9f",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N43168dcb0d6e4ebaacb79575ff7c2ab6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255147"
+      }
+    ]
+  },
+  {
+    "@id": "_:N43168dcb0d6e4ebaacb79575ff7c2ab6",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Asia"
+      }
+    ]
+  },
+  {
+    "@id": "_:N66164ad05f8d4b1fa940b29813661807",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nb9e3ff2b236d4422992a5e31f3ebf060"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255148"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb9e3ff2b236d4422992a5e31f3ebf060",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Europe"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4fd99c25c664481e905b47330497a3f2",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nee74828336fd451d87810982de82f2f3"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://app.test.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nee74828336fd451d87810982de82f2f3",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "app.test.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-082E-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "Rosetta is the sample project of DaSCH. It contains texts, objects, documents and images from different cultures and times. In the future the sample project will be enriched with new types of data such as audio, video and 3D-images. The downloadable file rosetta.zip contains the data model (json-file), the data itself (xml.file) as well as some documentation (pdf and csv-files). You can use these files to start creating your own data model."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAdditional": [
+      {
+        "@language": "en",
+        "@value": "Rosetta is the sample project of DaSCH. It contains texts, objects, documents and images from different cultures and times. In the future the sample project will be enriched with new types of data such as audio, video and 3D-images. The downloadable file rosetta.zip contains the data model (json-file), the data itself (xml.file) as well as some documentation (pdf and csv-files). You can use these files to start creating your own data model."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "DaSCH (2021): Rosetta, DaSCH. http://ark.dasch.swiss/ark:/72163/1/082E/"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "Akkadian"
+      },
+      {
+        "@language": "en",
+        "@value": "Arabic"
+      },
+      {
+        "@language": "en",
+        "@value": "Egyptian"
+      },
+      {
+        "@language": "de",
+        "@value": "Englisch"
+      },
+      {
+        "@language": "en",
+        "@value": "English"
+      },
+      {
+        "@language": "fr",
+        "@value": "anglais"
+      },
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      },
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      },
+      {
+        "@language": "en",
+        "@value": "Greek"
+      },
+      {
+        "@language": "en",
+        "@value": "Hebrew"
+      },
+      {
+        "@language": "en",
+        "@value": "Russian"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:N80da44b2b18c41079fe0d665961eeaf1"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:Nb305f3ee6b8d4411a27c5d7efeb112fc"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Rosetta"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Audio"
+      },
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Video"
+      },
+      {
+        "@value": "Text"
+      },
+      {
+        "@value": "XML"
+      }
+    ]
+  },
+  {
+    "@id": "_:N80da44b2b18c41079fe0d665961eeaf1",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N9e8c2871574f40558b703e63ee9622d4"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9e8c2871574f40558b703e63ee9622d4",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N8178fe19082d4b96b59ebaff385fa329"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8178fe19082d4b96b59ebaff385fa329",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb305f3ee6b8d4411a27c5d7efeb112fc",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "creator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-082E-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N8929e238b75f499cb2a9fa5981bb772c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "info@dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Data and Service Center for the Humanities DaSCH"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N84034e5d86b145c4ad41168dacb83c3e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N84034e5d86b145c4ad41168dacb83c3e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N61af378d72b34f1da473cb6a948803a7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61af378d72b34f1da473cb6a948803a7",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "www.dasch.swiss"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8929e238b75f499cb2a9fa5981bb772c",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Allschwil"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "4123"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Gewerbestrasse 24"
+      }
+    ]
+  }
+]

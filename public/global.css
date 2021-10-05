@@ -180,6 +180,10 @@ button:disabled {
   padding: 4px;
   letter-spacing: 0.4px;
 }
+.warning {
+  /* TODO: could be done better */
+  color: red;
+}
 /* media queries */
 @media screen and (max-width: 991px) {
   input:focus, button:focus {

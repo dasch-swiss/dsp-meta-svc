@@ -1,0 +1,1508 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N4e65094d9212488d9d27ccb20ae577e3"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "bez@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Bernoulli-Euler-Zentrum"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N1b8185f3a13941e3a4036b7c127624a0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1b8185f3a13941e3a4036b7c127624a0",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.bez.unibas.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4e65094d9212488d9d27ccb20ae577e3",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "4056"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Universitätsbibliothek, Schönbeinstrasse 18-20"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@id": "_:N21c38d8e85d7415bbe05ef2fbfc771f0"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "English"
+      },
+      {
+        "@language": "de",
+        "@value": "Englisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "anglais"
+      },
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      },
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      },
+      {
+        "@language": "en",
+        "@value": "Latin"
+      },
+      {
+        "@language": "de",
+        "@value": "Latein"
+      },
+      {
+        "@language": "fr",
+        "@value": "latin"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:N75f55770e5c240b385bab0b09139248c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N3b9ab51325c74743b6f21b7db27a640c"
+      },
+      {
+        "@id": "_:N3235b80e448d437a9b4a9ab8e5054f36"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Finished"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Briefwechsel von Leonhard Euler mit Christian Goldbach"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      },
+      {
+        "@value": "XML"
+      }
+    ]
+  },
+  {
+    "@id": "_:N21c38d8e85d7415bbe05ef2fbfc771f0",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ark.dasch.swiss/ark:/72163/1/0801/18ngnZB9Sgy2PlOl71OJxgl.20191028T094314789Z"
+      }
+    ]
+  },
+  {
+    "@id": "_:N75f55770e5c240b385bab0b09139248c",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N62345803e6244c61be1d0699d453908b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N62345803e6244c61be1d0699d453908b",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N8613bc3fdc274206a2521b92811f90c1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8613bc3fdc274206a2521b92811f90c1",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-NC-ND 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b9ab51325c74743b6f21b7db27a640c",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3235b80e448d437a9b4a9ab8e5054f36",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nb658c0ddd56d431380addb43fb17cb14"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "desk@snf.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerischer Nationalfonds (SNF)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N12b5dbb2bee44adbbdd6526bc1e57de2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N12b5dbb2bee44adbbdd6526bc1e57de2",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.snf.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb658c0ddd56d431380addb43fb17cb14",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Wildhainweg 3, Postfach"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "fritz.nagel@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Nagel"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Fritz"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Leiter Bernoulli-Archiv"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Hug"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Vanja"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Dr. phil. Historikerin"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "Edition of Jacob Bernoulli's Scientific Notebook (Meditationes)."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeTitle": [
+      {
+        "@language": "en",
+        "@value": "Meditationes"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "English"
+      },
+      {
+        "@language": "de",
+        "@value": "Englisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "anglais"
+      },
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      },
+      {
+        "@language": "en",
+        "@value": "Latin"
+      },
+      {
+        "@language": "de",
+        "@value": "Latein"
+      },
+      {
+        "@language": "fr",
+        "@value": "latin"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Ndb539387487d456fb3030ed1df4fc159"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N542ab862015c4710b4e0b0ad684b3bbd"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Finished"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Jacob Bernoulli's Scientific Notebook (Meditationes)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      },
+      {
+        "@value": "XML"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb539387487d456fb3030ed1df4fc159",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N2249117de2754fd9bc64b583c5811661"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2249117de2754fd9bc64b583c5811661",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N20d2e11ff4f74f0aaffa2883b0a298df"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20d2e11ff4f74f0aaffa2883b0a298df",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-NC-ND 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N542ab862015c4710b4e0b0ad684b3bbd",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-000"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Projektförderung (Abt. I-III)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "166072"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Ne71cdbf3fb4745adb8280ccf0dc72c56"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne71cdbf3fb4745adb8280ccf0dc72c56",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/project-166072"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Lemmermeyer"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Franz"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Mathematiker"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@id": "_:N609a50528d1c4e0394fe9d73b4470145"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeTitle": [
+      {
+        "@language": "en",
+        "@value": "Condorcet-Turgot"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Nf1eaa37dab694e81aa14c7463617f25f"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:N3cd31193af544c3e947dd55bdd3751ea"
+      },
+      {
+        "@id": "_:Nf91e865eb27844a5b6a763ae75b3205f"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Finished"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Briefwechsel von Euler mit Condoret und Turgot"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      },
+      {
+        "@value": "XML"
+      }
+    ]
+  },
+  {
+    "@id": "_:N609a50528d1c4e0394fe9d73b4470145",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ark.dasch.swiss/ark:/72163/1/0801/4UDRwNHCQZWhJZdL=JfBSAt.20191028T094815009Z"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf1eaa37dab694e81aa14c7463617f25f",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N33883d8e68f14acfb91ae4893934575c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N33883d8e68f14acfb91ae4893934575c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Na0487387f55f4816845b538884b28f0a"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na0487387f55f4816845b538884b28f0a",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-NC-ND 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3cd31193af544c3e947dd55bdd3751ea",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-005"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf91e865eb27844a5b6a763ae75b3205f",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-004"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-002"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@id": "_:Na5eed28cbe014adcaeb4e31fd22c3f3c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "open"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeTitle": [
+      {
+        "@language": "de",
+        "@value": "BEBB"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-01-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-01-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDatePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-01-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      },
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      },
+      {
+        "@language": "en",
+        "@value": "Latin"
+      },
+      {
+        "@language": "de",
+        "@value": "Latein"
+      },
+      {
+        "@language": "fr",
+        "@value": "latin"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:N2a36afb17f9244d4ad502d31da245c15"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:Nb843ad281dfb4e73a2357a3490a5c99b"
+      },
+      {
+        "@id": "_:Nd3b83d965b5c480b9fe7d764b7d64100"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Basler Edition der Bernoulli-Briefwechsel"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na5eed28cbe014adcaeb4e31fd22c3f3c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://bez.unibas.ch/de/basler-edition-der-bernoulli-briefwechsel/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2a36afb17f9244d4ad502d31da245c15",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nf46c721c689a466a9054ad2fc8441726"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf46c721c689a466a9054ad2fc8441726",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nc8a62381d18646fbbe4388178439c84f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc8a62381d18646fbbe4388178439c84f",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-NC-ND 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb843ad281dfb4e73a2357a3490a5c99b",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-003"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd3b83d965b5c480b9fe7d764b7d64100",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "author"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-002"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "martin.mattmueller@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Mattmüller"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Martin"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Wissenschaftlicher Mitarbeiter"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N991e697ef8af44b6a26cd2d42c31edf6"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "sagw@sagw.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerische Akademie der Geisteswissenschaften (SAGW)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N5411a96440244c31aebb32f5033c9e64"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5411a96440244c31aebb32f5033c9e64",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://sagw.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N991e697ef8af44b6a26cd2d42c31edf6",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Haus der Akademien, Postfach"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Gilan"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Christian"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Professor"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-person-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "sulamith.gehr@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Gehr"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Sulamith"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Wissenschaftliche Mitarbeiterin"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0801-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeName": [
+      {
+        "@language": "en",
+        "@value": "BEOL"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-001"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-002"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-dataset-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "The project Bernoulli-Euler Online (BEOL) integrates the two edition projects Basler Edition der Bernoulli-Briefwechsel (BEBB) and Leonhardi Euleri Opera Omnia (LEOO) into one digital platform available on the web. In addition, Jacob Bernoulli's scientific notebook Meditationes - a document of outstanding significance for the history of mathematics at its turning point around 1700 - is published for the first time in its entirety on the BEOL platform as a region-based multilayer interactive digital edition providing access to facsimiles, transcriptions, translations, indices, and commentaries. Besides being an edition platform, BEOL is a virtual research environment for the study of early modern mathematics and science as a data graph using sophisticated analysis tools. Currently BEOL is connected to two third-party repositories: The Newton Project and the Briefportal Leibniz, initiating the formation of a network of digital editions of the early modern scientific correspondence data. The goal of BEOL is thus twofold: it focuses on the mathematics influenced by the Bernoulli dynasty and Leonhard Euler and undertakes a methodological effort to present these materials to the public and researchers in a highly functional way."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N305f58cd4cbf467bbaa62ee8eb038e95"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-organization-002"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0801-grant-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "Bernoulli"
+      },
+      {
+        "@language": "en",
+        "@value": "Condorcet"
+      },
+      {
+        "@language": "en",
+        "@value": "Euler"
+      },
+      {
+        "@language": "en",
+        "@value": "Goldbach"
+      },
+      {
+        "@language": "de",
+        "@value": "Leibniz"
+      },
+      {
+        "@language": "en",
+        "@value": "Mathematics"
+      },
+      {
+        "@language": "en",
+        "@value": "Newton"
+      },
+      {
+        "@language": "en",
+        "@value": "Science"
+      },
+      {
+        "@language": "en",
+        "@value": "Turgot"
+      },
+      {
+        "@language": "en",
+        "@value": "history of mathematics"
+      },
+      {
+        "@language": "en",
+        "@value": "history of science"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Bernoulli-Euler Online (BEOL)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "0801"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:Ned36cbc1eeec42e79cad2fbc0aabf92a"
+      },
+      {
+        "@id": "_:Ne1287a5801ec40faabaa3d9709f8d555"
+      },
+      {
+        "@id": "_:N98db293d8ac8481da27cb90c8e453ebc"
+      },
+      {
+        "@id": "_:Nb886dade2e5942cfbe22134aa2aa8bc3"
+      },
+      {
+        "@id": "_:N5fcb7ecae5b34677b2bb4af7f8327e6c"
+      },
+      {
+        "@id": "_:N03d4e5f4bbb04efa950dfbb4b64bc57a"
+      },
+      {
+        "@id": "_:N71ae6440025a4a47b979def7d627cfda"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2016-07-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@language": "en",
+        "@value": "17th century and18th century CE"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N3d660703cf1d42f7b2cddb1dd7fb2414"
+      }
+    ]
+  },
+  {
+    "@id": "_:N305f58cd4cbf467bbaa62ee8eb038e95",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N1736bb76e95347c8a3d1686281fff364"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/12"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1736bb76e95347c8a3d1686281fff364",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Mathematics"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ned36cbc1eeec42e79cad2fbc0aabf92a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N4e65bdfbacc045a6944376c26a5ead94"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/3175395"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4e65bdfbacc045a6944376c26a5ead94",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Italy"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne1287a5801ec40faabaa3d9709f8d555",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nea763d4474d04021a732b1739bd24de1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/6255148"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nea763d4474d04021a732b1739bd24de1",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Europe"
+      }
+    ]
+  },
+  {
+    "@id": "_:N98db293d8ac8481da27cb90c8e453ebc",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N8a1e82b78c7e4c7eb0e069537eb7095d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/11961320"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8a1e82b78c7e4c7eb0e069537eb7095d",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "European Russia"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb886dade2e5942cfbe22134aa2aa8bc3",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N1e4bbd37ed914985bbd3716eac17b517"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/2658434"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1e4bbd37ed914985bbd3716eac17b517",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Switzerland"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5fcb7ecae5b34677b2bb4af7f8327e6c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N87798f19c80845e2b87a25745d8152fb"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/2921044"
+      }
+    ]
+  },
+  {
+    "@id": "_:N87798f19c80845e2b87a25745d8152fb",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Germany"
+      }
+    ]
+  },
+  {
+    "@id": "_:N03d4e5f4bbb04efa950dfbb4b64bc57a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N978a01af5c2c484b86d1ddd81f262396"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/3017382"
+      }
+    ]
+  },
+  {
+    "@id": "_:N978a01af5c2c484b86d1ddd81f262396",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "France"
+      }
+    ]
+  },
+  {
+    "@id": "_:N71ae6440025a4a47b979def7d627cfda",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ncf169c7a6f9a404896209f23850772e6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/2635167"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncf169c7a6f9a404896209f23850772e6",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "United Kingdom"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3d660703cf1d42f7b2cddb1dd7fb2414",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://beol.dasch.swiss/"
+      }
+    ]
+  }
+]

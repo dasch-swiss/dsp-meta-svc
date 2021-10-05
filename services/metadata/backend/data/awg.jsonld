@@ -1,0 +1,2182 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-006",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "[2014–2016]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "E13_1003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N1c99f70c01ce4c0eb2c34f17ca43fde0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1c99f70c01ce4c0eb2c34f17ca43fde0",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.evs-musikstiftung.ch/de/preise/preise/foerderprojekte/symposienpublikationen/anton-webern-briefwechsel-mit-der-universal-0"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N5dd6b42e6aa8423aadcff9fe8b55c3d6"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "sagw@sagw.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerische Akademie der Geistes- und Sozialwissenschaften"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N1f53309885804ee69365ebd2936eaa7d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1f53309885804ee69365ebd2936eaa7d",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://sagw.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5dd6b42e6aa8423aadcff9fe8b55c3d6",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Laupenstrasse 7 (Postfach)"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-004"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Editionen [2021–2024]"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-007",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "[2010–2012]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "E09_471"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N6b8a622e9836467e8fe04276d66b0b29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6b8a622e9836467e8fe04276d66b0b29",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.evs-musikstiftung.ch/de/preise/preise/archiv/foerderprojekte/2011/publikationentagungen/historisch-kritische-gesamtausgabe"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N048a9d66fb6f491bb24e90637f78ab02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N9146a45fb1df4e1bb3c3516d3cffd590"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "stefan.muennich@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Münnich"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Stefan"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Research associate"
+      }
+    ]
+  },
+  {
+    "@id": "_:N048a9d66fb6f491bb24e90637f78ab02",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9146a45fb1df4e1bb3c3516d3cffd590",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nc3ef567d32e848e8ae422e71b23dffba"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0002-0744-5374"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc3ef567d32e848e8ae422e71b23dffba",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0002-0744-5374"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N3bcb79ff988a493e8386f91ff2f824d0"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N614b7bbf2bc141c58e6bf11edabce65c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "matthias.schmidt@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Schmidt"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Matthias"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Full professor"
+      },
+      {
+        "@value": "Member of the editorial management"
+      },
+      {
+        "@value": "Project manager"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3bcb79ff988a493e8386f91ff2f824d0",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N614b7bbf2bc141c58e6bf11edabce65c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N831c171f815340fc96b22cb3a52a092e"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://d-nb.info/gnd/12307195X"
+      }
+    ]
+  },
+  {
+    "@id": "_:N831c171f815340fc96b22cb3a52a092e",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "GND URL: http://d-nb.info/gnd/12307195X"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N9a4316da106b45719e64dd4597de5eb4"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "rossnagl@evs-musikstiftung.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "EvS"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nd1c668c0f7bb4b92a06c7ac95796900d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd1c668c0f7bb4b92a06c7ac95796900d",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.evs-musikstiftung.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a4316da106b45719e64dd4597de5eb4",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Zug"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-6300"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Landis + Gyr-Strasse 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N865cd1134ff44a0ea6d3e0ad6c30b4db"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "office-pss@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Paul Sacher Stiftung"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N4740af2cd03148dbbb9cfa5b0f7b5a06"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4740af2cd03148dbbb9cfa5b0f7b5a06",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://paul-sacher-stiftung.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:N865cd1134ff44a0ea6d3e0ad6c30b4db",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Münsterplatz 4"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nf1b835a210ca4769ac935539e81318c2"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "com@snf.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N0c52e7085fb14ba8a5feba13e0157322"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0c52e7085fb14ba8a5feba13e0157322",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.snf.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf1b835a210ca4769ac935539e81318c2",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Wildhainweg 3 (Postfach)"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Editionen [2017–2020]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "157968"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N076a6d9524de4d4481129dfac5fe9034"
+      }
+    ]
+  },
+  {
+    "@id": "_:N076a6d9524de4d4481129dfac5fe9034",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-157968"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nd6ff024e5d1442faa54e63be68a8567b"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "info-awg@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Anton Webern Gesamtausgabe"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Ndb0c87801ed1460d928cb67bcdc4ccc5"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb0c87801ed1460d928cb67bcdc4ccc5",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.anton-webern.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd6ff024e5d1442faa54e63be68a8567b",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N47c7a9f3be224660a10637078b0891f1"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N047ce47a0b2e43838320e2a954be0a7e"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "barbara.schingnitz@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Schingnitz"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Barbara"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Research associate"
+      }
+    ]
+  },
+  {
+    "@id": "_:N47c7a9f3be224660a10637078b0891f1",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N047ce47a0b2e43838320e2a954be0a7e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nc1de3a8c8e2b4fa68ba976009fd50f33"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://d-nb.info/gnd/130219827"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc1de3a8c8e2b4fa68ba976009fd50f33",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "GND URL: http://d-nb.info/gnd/130219827"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Projektförderung (spezial) [2015–2017]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "162871"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nfecc10bf44924f73addd9767162f5658"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfecc10bf44924f73addd9767162f5658",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-162871"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N4d7c96e02f29470fb69a8da555614345"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N888636dc1e5743cd8058951e2362dd38"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "michael.matter@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Matter"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Michael"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Research associate"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d7c96e02f29470fb69a8da555614345",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N888636dc1e5743cd8058951e2362dd38",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nbdae531ce1bb40718081112c08e5f9a5"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://d-nb.info/gnd/1069569267"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbdae531ce1bb40718081112c08e5f9a5",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "GND URL: http://d-nb.info/gnd/1069569267"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "The dataset contains content-related and contextual data created and maintained within the SALSAH database as part of the editorial and documentary work of the Anton Webern Gesamtausgabe."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "restricted"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "https://www.anton-webern.ch/index.php?id=85"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "de",
+        "@value": "Deutsch"
+      },
+      {
+        "@language": "en",
+        "@value": "German"
+      },
+      {
+        "@language": "fr",
+        "@value": "allemand"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Nc29427ea90a04084ba2ea0c12c73a30d"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:Nc306e5084f804874a177f4371f503ff4"
+      },
+      {
+        "@id": "_:N20196eea4d494f3194298abc4053ec1e"
+      },
+      {
+        "@id": "_:Na44d4ccaafd34aa892f524e327128fb7"
+      },
+      {
+        "@id": "_:Nad9b4af0dc494c54a7eccbfb7a085fce"
+      },
+      {
+        "@id": "_:N8c210f7e8cfb42ca9c804bcfad50330f"
+      },
+      {
+        "@id": "_:N480c4b07007242bf98f4a08a4aa86ebd"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Salsah data of the Anton Webern Gesamtausgabe"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      },
+      {
+        "@value": "XML"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc29427ea90a04084ba2ea0c12c73a30d",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N2dc6d2ea07b9489891f4c836b716e0ef"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2dc6d2ea07b9489891f4c836b716e0ef",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N559911e6a3ac44768946ded3bc45e6b8"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+      }
+    ]
+  },
+  {
+    "@id": "_:N559911e6a3ac44768946ded3bc45e6b8",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc306e5084f804874a177f4371f503ff4",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Member of the editorial management"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20196eea4d494f3194298abc4053ec1e",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Creator"
+      },
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-005"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na44d4ccaafd34aa892f524e327128fb7",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      },
+      {
+        "@value": "Creator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-003"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nad9b4af0dc494c54a7eccbfb7a085fce",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Member of the editorial management"
+      },
+      {
+        "@value": "Creator"
+      },
+      {
+        "@value": "Contributor"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-002"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8c210f7e8cfb42ca9c804bcfad50330f",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Project manager"
+      },
+      {
+        "@value": "Member of the editorial management"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N480c4b07007242bf98f4a08a4aa86ebd",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Contributor"
+      },
+      {
+        "@value": "Creator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-004"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nb4deded478d5487aba15d96825e935ac"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-002"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N85b959baedb04ec4804cde37763ec24e"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "simon.obert@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Obert"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Simon"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Curator"
+      },
+      {
+        "@value": "Member of the editorial management"
+      },
+      {
+        "@value": "Research associate (PSS)"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb4deded478d5487aba15d96825e935ac",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Münsterplatz 4"
+      }
+    ]
+  },
+  {
+    "@id": "_:N85b959baedb04ec4804cde37763ec24e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nba632287268045ea84acc700defe2afe"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://d-nb.info/gnd/102645249X"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nba632287268045ea84acc700defe2afe",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "GND URL: http://d-nb.info/gnd/102645249X"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasContactPoint": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataManagementPlan": [
+      {
+        "@id": "_:N37b569ea550149c8ba52c74e1c01c963"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-dataset-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "The Anton Webern Gesamtausgabe (AWG) is a critical-historical edition which aims to make Webern’s entire oeuvre accessible to musical scholarship and practice in a scholarly form. The edition includes not only all the works Webern himself had forwarded to be printed but also their unpublished variants. It also includes compositions that were never made public in his lifetime, works from his youth and student years, as well as fragments, sketches, arrangements and revisions of his and other scores."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N7099f7e6306e419b8d4434af81f24a89"
+      },
+      {
+        "@id": "_:N2d26cb91871845a79bfa14dfd831ec09"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-12-31"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-004"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-005"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-001"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-002"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-003"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-004"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-005"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-006"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-007"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "https://www.anton-webern.ch/index.php?id=85"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "de",
+        "@value": "Anton Webern"
+      },
+      {
+        "@language": "de",
+        "@value": "Gesamtausgabe"
+      },
+      {
+        "@language": "en",
+        "@value": "Viennese school"
+      },
+      {
+        "@language": "en",
+        "@value": "critical edition"
+      },
+      {
+        "@language": "en",
+        "@value": "digital music edition"
+      },
+      {
+        "@language": "en",
+        "@value": "musicology"
+      },
+      {
+        "@language": "en",
+        "@value": "philology"
+      },
+      {
+        "@language": "en",
+        "@value": "semantic web"
+      },
+      {
+        "@language": "en",
+        "@value": "source studies"
+      },
+      {
+        "@language": "en",
+        "@value": "textual criticism"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Anton Webern Gesamtausgabe"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasPublication": [
+      {
+        "@value": "https://www.anton-webern.ch/index.php?id=87"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "0806"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N7f48403f6378485eacf655d5f53d0931"
+      },
+      {
+        "@id": "_:N040ac824e22d44a490d3f6796923ac1b"
+      },
+      {
+        "@id": "_:N9ff904f71bb7472ea8fd213075bed356"
+      },
+      {
+        "@id": "_:N1db712e67f484c639bda8cf999b0babe"
+      },
+      {
+        "@id": "_:N944576c8f7e4467f9a4f079bc79e59c1"
+      },
+      {
+        "@id": "_:Nf018aa84f0c5471fb265f4aeb9be9134"
+      },
+      {
+        "@id": "_:Nf61b5cd664b54d23b482d54cf6ee8145"
+      },
+      {
+        "@id": "_:N7d63b0697d9b4050866d76cd922babae"
+      },
+      {
+        "@id": "_:Nd82b85b94d6841aca1567e944ea471fb"
+      },
+      {
+        "@id": "_:N5d5175c53e0443d5837ca9f6153d0619"
+      },
+      {
+        "@id": "_:N53e69fee3688437387fb6e0ddb08039c"
+      },
+      {
+        "@id": "_:Nd9038911b1ab4738824381ff667fb201"
+      },
+      {
+        "@id": "_:N690b7d81899942c5883b7d620e59e123"
+      },
+      {
+        "@id": "_:N2824cfd9a1534c6ca4c7a166f72986e0"
+      },
+      {
+        "@id": "_:Na3a274c1605242a6b2b96a96a2db5979"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2006-10-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@language": "en",
+        "@value": "1850–today"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N48e196fca0004f64b4ada261aa48e0c2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7099f7e6306e419b8d4434af81f24a89",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nc528d71b225c4642b2782a8f15d55c85"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/620201"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc528d71b225c4642b2782a8f15d55c85",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Criticism of texts"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2d26cb91871845a79bfa14dfd831ec09",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Na58a455a56c54558bc57e14998f053e8"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://skos.um.es/unesco6/620306"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na58a455a56c54558bc57e14998f053e8",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Music, musicology "
+      }
+    ]
+  },
+  {
+    "@id": "_:N7f48403f6378485eacf655d5f53d0931",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N14ba93a6d5664d749da5e48c64945615"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/SK/slovakia.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N14ba93a6d5664d749da5e48c64945615",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Slovakia"
+      }
+    ]
+  },
+  {
+    "@id": "_:N040ac824e22d44a490d3f6796923ac1b",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nebf86b8bf0d64bc6b6bb5163738834b2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/CH/switzerland.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nebf86b8bf0d64bc6b6bb5163738834b2",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Switzerland"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9ff904f71bb7472ea8fd213075bed356",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N011b7e0bd497416bbcde0087ee0b137c"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/US/united-states.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N011b7e0bd497416bbcde0087ee0b137c",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "United States"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1db712e67f484c639bda8cf999b0babe",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nbff18a35dadc4fe5bcb78ba7271478d6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/HR/croatia.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbff18a35dadc4fe5bcb78ba7271478d6",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Croatia"
+      }
+    ]
+  },
+  {
+    "@id": "_:N944576c8f7e4467f9a4f079bc79e59c1",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nebbab9e7a4cd42d79576def3a43cb940"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/SI/slovenia.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nebbab9e7a4cd42d79576def3a43cb940",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Slovenia"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf018aa84f0c5471fb265f4aeb9be9134",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N170afaddea934de2b28ed6b070be9dce"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/FR/france.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N170afaddea934de2b28ed6b070be9dce",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "France"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf61b5cd664b54d23b482d54cf6ee8145",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Neef5be399ef04b0988f99a13f7475229"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/ES/spain.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neef5be399ef04b0988f99a13f7475229",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Spain"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7d63b0697d9b4050866d76cd922babae",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N161b067c3659438ab16f9c1e32801bbb"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/GB/united-kingdom.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N161b067c3659438ab16f9c1e32801bbb",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "United Kingdom"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd82b85b94d6841aca1567e944ea471fb",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N8d29c6397fd140869a57d6530a428d5f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/PL/poland.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8d29c6397fd140869a57d6530a428d5f",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Poland"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5d5175c53e0443d5837ca9f6153d0619",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ne478a1c25e0747f89885fa9e9a1456c9"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/DE/germany.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne478a1c25e0747f89885fa9e9a1456c9",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Germany"
+      }
+    ]
+  },
+  {
+    "@id": "_:N53e69fee3688437387fb6e0ddb08039c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N171c96cef20e44968d15c361b9746cc4"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/AT/austria.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N171c96cef20e44968d15c361b9746cc4",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Austria"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd9038911b1ab4738824381ff667fb201",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N66ab152af012419db1baa2a354e8f919"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/CZ/czechia.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N66ab152af012419db1baa2a354e8f919",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Czechia"
+      }
+    ]
+  },
+  {
+    "@id": "_:N690b7d81899942c5883b7d620e59e123",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N7392b88021dc41f988d89258acf30b59"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/IT/italy.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7392b88021dc41f988d89258acf30b59",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Italy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2824cfd9a1534c6ca4c7a166f72986e0",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N1a1469aac1e84461bd72ca2411f15aaf"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/countries/HU/hungary.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1a1469aac1e84461bd72ca2411f15aaf",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Hungary"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na3a274c1605242a6b2b96a96a2db5979",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N672bc41ff4e244e39515fea49dc13402"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/12217934/baltic-states.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N672bc41ff4e244e39515fea49dc13402",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "https://en.wikipedia.org/wiki/Baltic_states"
+      }
+    ]
+  },
+  {
+    "@id": "_:N48e196fca0004f64b4ada261aa48e0c2",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.anton-webern.ch"
+      }
+    ]
+  },
+  {
+    "@id": "_:N37b569ea550149c8ba52c74e1c01c963",
+    "@type": [
+      "http://ns.dasch.swiss/repository#DataManagementPlan"
+    ],
+    "http://ns.dasch.swiss/repository#isAvailable": [
+      {
+        "@value": true
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Projektförderung (Abt. I-III) [2006–2009]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "113769"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nc511a924cc8d43408850d3de7f8d34d6"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc511a924cc8d43408850d3de7f8d34d6",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-113769"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Projektförderung (Abt. I-III) [2009–2012]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "126789"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N2623b32f2a2d42dea18d36662ca6af77"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2623b32f2a2d42dea18d36662ca6af77",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-126789"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Ndd44d9c00e364a25a709a33630757341"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "sekretariat-mws@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Musikwissenschaftliches Seminar der Universität Basel"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N38e8733e387b40259df3dd7a4b724480"
+      }
+    ]
+  },
+  {
+    "@id": "_:N38e8733e387b40259df3dd7a4b724480",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://mws.unibas.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndd44d9c00e364a25a709a33630757341",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-person-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N30dc28c1bdd64a95aace7073be9ec73c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-000"
+      },
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N05394edd60e0421d893678f8fabd925e"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "thomas.ahrend@unibas.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Ahrend"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Thomas"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Member of the editorial management"
+      },
+      {
+        "@value": "Research associate"
+      }
+    ]
+  },
+  {
+    "@id": "_:N30dc28c1bdd64a95aace7073be9ec73c",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Basel"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "CH-4051"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Petersgraben 27/29"
+      }
+    ]
+  },
+  {
+    "@id": "_:N05394edd60e0421d893678f8fabd925e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nbe3994c20ca7477183602df21e3ac358"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://d-nb.info/gnd/129772429"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbe3994c20ca7477183602df21e3ac358",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "GND URL: http://d-nb.info/gnd/129772429"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0806-grant-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Projektförderung (spezial) [2012–2015]"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "143565"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Ndc48188694c24e3d8ee7dde1bb2a7ad3"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndc48188694c24e3d8ee7dde1bb2a7ad3",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-143565"
+      }
+    ]
+  }
+]

@@ -1,8 +1,12 @@
 {
   "files.insertFinalNewline": true,
   "[svelte]": {
+    // this is related to new version of vscode pluggin which now support Prettier, in order to have it working uncomment line 6 and 9
+    // some svelte related formatting setting scan be added to .prettierrc.json file
+    // "editor.defaultFormatter": "svelte.svelte-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    // "editor.formatOnSave": true
   },
   "[go]": {
     "editor.insertSpaces": false,

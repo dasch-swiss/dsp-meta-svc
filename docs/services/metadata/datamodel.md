@@ -308,7 +308,7 @@ Representation of a license.
 The following UML diagram represents the domain entities:
 
 ![domain entities](./domain-entities.svg)  
-(Click on the image and open `raw` for a reasonable zoom level.)
+Click on the image and open `raw` for a reasonable zoom level.
 
 Note that cases, where the data model supposes a two different types, these are represented as two separate arrays for simplicity; these will be concatenated when the field is requested, and returned as one array through the API.
 
@@ -322,16 +322,47 @@ An example JSON dataset can be found [here](example.json).
 
 
 The JSON representation is "flat", i.e. not nested, so all top-level types are present in the first level of depth of the JSON document tree. All those objects have a unique `@id` property. Wherever this object is referenced further down in the document, this is done so by this ID.  
-(NB: JSON schema does not allow for consistency checks of internal references, so the existence of an object with a given ID can not be guaranteed by JSON validation.)
+(NB: JSON schema does not allow for consistency checks of internal references, so the existence of an object with a given ID can not be guaranteed by JSON validation).
 
 
 
 ## RDF API
 
-An RDF endpoint will be added eventually. The mappings are defined in the tables above.
+Metadata is available in RDF. The mappings are defined in the tables above.
+
+Currently, only `JSON-LD` and `ttl` serializations are available.
+
+Both metadata routes support JSON and RDF at the same time. RDF can be requested by means of content negotiation.
+Adding the header `Content-Type: application/ld+json` or `Content-Type: text/turtle` to the request, respectively will force the response to be RDF.
+
+__Get a single project__
+
+```bash
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects/0806' --header 'Content-Type: text/turtle'
+```
+
+will return the turtle representation of the project with the shortcode `0806`.
 
 
-<!-- TODO: update -->
+__Get all projects__
+
+```bash
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects' --header 'Content-Type: text/turtle'
+```
+
+will return JSON of the following format:
+
+```jsonc
+[
+    {
+        "id": "0806",
+        "name": "Anton Webern Gesamtausgabe",
+        "description": "...",
+        "metadata": "@prefix dsp: ..."  // string containing the turtle serialization
+    },
+    {}  // all other projects
+]
+```
 
 
 ------

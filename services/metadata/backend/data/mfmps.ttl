@@ -1,0 +1,165 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsp:dsp-0116-project a dsp:Project ;
+    dsp:hasAlternativeName "medframes"@en ;
+    dsp:hasContactPoint dsp:dsp-0116-person-000 ;
+    dsp:hasDataset dsp:dsp-0116-dataset-000 ;
+    dsp:hasDescription """This project aims to valorise and better comprehend the various elements surrounding monumental statues of church portals, namely pedestals, canopies, and niches. Their analysis will be integrated within four research axes: cultural transfers, relationships between the central representation and that at the margins, the communication potential of the objects (agency), and their strategic arrangement within the composition (display). Based on a corpus constituted of over a hundred portals located in the Western part of gothic art penetration (Germany, Belgium, England, France, Iberian Peninsula, and Switzerland), the project will aim to determine the conditions within which technological and formal innovations emerged, and to evaluate their local impact and diffusion. Moreover, it will attempt to understand their significance and their function within the visual message developed at the doorstep of sacred buildings.
+The project will create synergies with research concerned by the communicative function of religious building portals, and will allow for a better understanding of the semiological stakes of sculpted pedestals and microarchitecture canopies."""@en ;
+    dsp:hasDiscipline [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "History of art" ] ;
+            sdo:url "https://skos.um.es/unesco6/550602/" ],
+        "Visual arts and Art history"@en ;
+    dsp:hasEndDate "2023-11-30"^^xsd:date ;
+    dsp:hasFunder dsp:dsp-0116-organization-002 ;
+    dsp:hasGrant dsp:dsp-0116-grant-000 ;
+    dsp:hasHowToCite "Terrier Aliferis, L., Acosta, L., Ciardo, S., Rivoal, M., 2020, MedFrameS [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0116."^^xsd:string ;
+    dsp:hasKeyword "Niches"@de,
+        "Agency"@en,
+        "Artistic geography"@en,
+        "Canopies"@en,
+        "Cultural transfers"@en,
+        "Devices"@en,
+        "Display"@en,
+        "Frame"@en,
+        "Gothic sculpture"@en,
+        "Pedestals"@en ;
+    dsp:hasName "The Medieval Frame of Monumental Portal Sculpture (Pedestals, Canopies, Niches) : Cultural Transfers and Agency (12th-13th Centuries)"^^xsd:string ;
+    dsp:hasShortcode "0116"^^xsd:string ;
+    dsp:hasSpatialCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "France" ] ;
+            sdo:url "https://www.geonames.org/3017382/" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Europe" ] ;
+            sdo:url "https://www.geonames.org/6255148/" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Spain" ] ;
+            sdo:url "https://www.geonames.org/2510769/" ] ;
+    dsp:hasStartDate "2018-12-01"^^xsd:date ;
+    dsp:hasTeaser "XX - new property"^^xsd:string ;
+    dsp:hasTemporalCoverage "http://chronontology.dainst.org/period/ROL7rN1qOgMe"@en,
+        "http://n2t.net/ark:/99152/p0qhb66xnj2"@en ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://ark.dasch.swiss/ark:/72163/1/0116" ] .
+
+dsp:dsp-0116-dataset-000 a dsp:Dataset ;
+    dsp:hasAbstract "The database regroups the portals of monuments included in the project’s corpus. It is structured by building, and gives access to the photographs as well as the bibliographic and de-scriptive data of each edifice. The photographs of each portal are pre-sented from general to particular, going from the embrasures to the statues, and to their surrounding ele-ments (pedestals, canopies, capitals). This database is conceived as a work-ing tool allowing for typological groupings to be made between build-ings, as well as to conduct compara-tive analyses. Consequently, the re-search results can be verified and the data reused to other ends if desired."@en ;
+    dsp:hasAccessConditions "open"^^xsd:string ;
+    dsp:hasDateCreated "2020-07-17"^^xsd:date ;
+    dsp:hasDateModified "2021-02-10"^^xsd:date ;
+    dsp:hasDatePublished "2020-07-17"^^xsd:date ;
+    dsp:hasHowToCite "Terrier Aliferis, L., Acosta, L., Ciardo, S., Rivoal, M., 2020, MedFrameS [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0116."^^xsd:string ;
+    dsp:hasLanguage "Französisch"@de,
+        "French"@en,
+        "français"@fr ;
+    dsp:hasLicense [ a dsp:License ;
+            dsp:hasDate "2021-09-02"^^xsd:date ;
+            dsp:hasURL [ a sdo:URL ;
+                    sdo:propertyID [ a sdo:PropertyValue ;
+                            sdo:propertyID "CC BY-SA 4.0" ] ;
+                    sdo:url "https://creativecommons.org/licenses/by-sa/4.0/" ] ] ;
+    dsp:hasQualifiedAttribution [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Data curator"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0116-person-002 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Data curator"^^xsd:string,
+                "Project member"^^xsd:string ;
+            prov:agent dsp:dsp-0116-person-001 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data collector"^^xsd:string,
+                "Data curator"^^xsd:string,
+                "Project leader"^^xsd:string ;
+            prov:agent dsp:dsp-0116-person-000 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "Data curator"^^xsd:string ;
+            prov:agent dsp:dsp-0116-person-003 ] ;
+    dsp:hasStatus "Ongoing"^^xsd:string ;
+    dsp:hasTitle "Base de données MedFrameS"^^xsd:string ;
+    dsp:hasTypeOfData "Image"^^xsd:string,
+        "Text"^^xsd:string .
+
+dsp:dsp-0116-grant-000 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-0116-organization-002 ;
+    dsp:hasName "PRIMA"^^xsd:string ;
+    dsp:hasNumber "179787"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://p3.snf.ch/project-179787" ] .
+
+dsp:dsp-0116-organization-001 a dsp:Organization ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Lausanne"^^xsd:string ;
+            sdo:postalCode "1015"^^xsd:string ;
+            sdo:streetAddress "Unicentre"^^xsd:string ] ;
+    dsp:hasName "Université de Lausanne"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "https://www.unil.ch/" ] .
+
+dsp:dsp-0116-person-001 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0116-organization-000 ;
+    dsp:hasEmail "laura.acosta@unine.ch"^^xsd:string ;
+    dsp:hasFamilyName "Acosta"^^xsd:string ;
+    dsp:hasGivenName "Laura"^^xsd:string ;
+    dsp:hasJobTitle "PhD student"^^xsd:string .
+
+dsp:dsp-0116-person-002 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0116-organization-000 ;
+    dsp:hasEmail "sabrina.ciardo@gmail.com"^^xsd:string ;
+    dsp:hasFamilyName "Ciardo"^^xsd:string ;
+    dsp:hasGivenName "Sabrina"^^xsd:string ;
+    dsp:hasJobTitle "Scientific collaborator"^^xsd:string .
+
+dsp:dsp-0116-person-003 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-0116-organization-001 ;
+    dsp:hasEmail "marion.rivoal@unil.ch"^^xsd:string ;
+    dsp:hasFamilyName "Rivoal"^^xsd:string ;
+    dsp:hasGivenName "Marion"^^xsd:string ;
+    dsp:hasJobTitle "Research manager"^^xsd:string .
+
+dsp:dsp-0116-organization-002 a dsp:Organization ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Berne"^^xsd:string ;
+            sdo:postalCode "3001"^^xsd:string ;
+            sdo:streetAddress "Wildhainweg 3 Postfach"^^xsd:string ] ;
+    dsp:hasEmail "desk@snf.ch"^^xsd:string ;
+    dsp:hasName "Swiss National Science Foundation (SNSF)"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://www.snf.ch/" ] .
+
+dsp:dsp-0116-person-000 a dsp:Person ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Neuchâtel"^^xsd:string ;
+            sdo:postalCode "2000"^^xsd:string ;
+            sdo:streetAddress "Université de Neuchâtel - Faculté des lettres et sciences humaines - Institut d’histoire de l’art et de muséologie - Espace Tilo-Frey 1"^^xsd:string ] ;
+    dsp:hasAffiliation dsp:dsp-0116-organization-000 ;
+    dsp:hasAuthorityFileReference [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "ORCID URL: https://orcid.org/0000-0003-0397-4794" ] ;
+            sdo:url "https://orcid.org/0000-0003-0397-4794" ] ;
+    dsp:hasEmail "laurence.terrier@gmail.com"^^xsd:string ;
+    dsp:hasFamilyName "Terrier Aliferis"^^xsd:string ;
+    dsp:hasGivenName "Laurence"^^xsd:string ;
+    dsp:hasJobTitle "Assistant professor"^^xsd:string .
+
+dsp:dsp-0116-organization-000 a dsp:Organization ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Neuchâtel"^^xsd:string ;
+            sdo:postalCode "2000"^^xsd:string ;
+            sdo:streetAddress "Avenue du 1er-Mars 26"^^xsd:string ] ;
+    dsp:hasName "Université de Neuchâtel"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://www.unine.ch/" ] .
+

@@ -1,0 +1,880 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N5696d48d62864f4db81e8c803096ff58"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Université de Lausanne"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N08369b552ad249c8a6e12c1f42933b45"
+      }
+    ]
+  },
+  {
+    "@id": "_:N08369b552ad249c8a6e12c1f42933b45",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.unil.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5696d48d62864f4db81e8c803096ff58",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lausanne"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "1015"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Unicentre"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N0e106fc8996f450aa3536fe32c5695d7"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "marion.rivoal@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Rivoal"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Marion"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Research manager"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0e106fc8996f450aa3536fe32c5695d7",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N6a06aa4f08664b78955386e18ee65cd3"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0003-4185-7169"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6a06aa4f08664b78955386e18ee65cd3",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0003-4185-7169"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N3e6171c067544b77b1f92561a31f1b5b"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "patrick.clastres@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Clastres"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Patrick"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Associate professor"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3e6171c067544b77b1f92561a31f1b5b",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ncf43c1893274433bb12582f909fb0386"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0001-8353-7855"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncf43c1893274433bb12582f909fb0386",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0001-8353-7855"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N367ef7f6151a4390b64384ed4fef3be7"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "florence.carpentier@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Carpentier"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Florence"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Assistant professor"
+      },
+      {
+        "@value": "Senior SNSF Researcher"
+      }
+    ]
+  },
+  {
+    "@id": "_:N367ef7f6151a4390b64384ed4fef3be7",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Na13a735d19a94fbe9a6a0e6c487ed59b"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0002-5735-5350"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na13a735d19a94fbe9a6a0e6c487ed59b",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0002-5735-5350"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-grant-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Project funding (Div. I-III)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "179043"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N4a8031c551d94c00afb4834fb3d81588"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4a8031c551d94c00afb4834fb3d81588",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/project-179043"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeName": [
+      {
+        "@language": "en",
+        "@value": "elites-cio"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasContactPoint": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-dataset-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "fr",
+        "@value": "Le CIO est la première organisation sportive internationale installée en Suisse, et la plus importante puisqu’elle prétend réguler le système sportif international. Son fondateur, le baron français Pierre de Coubertin (1863-1937), l’a dotée d’un système de valeurs qui emprunte à la culture chevaleresque des élites européennes traditionnelles, à l’humanisme des Lumières, au pacifisme libéral transatlantique du second XIXe siècle, et au conservatisme hygiéniste et social. Percuté par les diplomaties d’Etat qui ont intégré le sport parmi les outils de leur soft power, le CIO a dû affronter les grands enjeux du XXe siècle. Ce projet prévoit de dépasser l’approche institutionnelle classique en étudiant les trajectoires de ses membres qui, pour la plupart, restent méconnus.\n\nDans un premier temps, ce projet reconstituera les trajectoires familiales, professionnelles, sociales et politiques des 213 membres du CIO cooptés avant 1972. Dans un deuxième temps, il décryptera les mécanismes de cooptation ainsi que les modalités de prise de décision propres au CIO. Enfin, il s’agira d’évaluer « le plus petit dénominateur social, culturel et politique » commun à tous ces leaders qui définit leur vision du monde, et de questionner les concepts d’apolitisme (du sport) et de neutralité diplomatique (du CIO).\nFondé sur une approche prosopographique (croisement et mise en série de micro-biographies), le projet se situe au point d’intersection de l’histoire du sport, de la diplomatie culturelle, des cultures politiques, de la circulation des élites à l’échelle mondiale et du cosmopolitisme. Il contribue ainsi à l’histoire des organisations internationales installées en Suisse et à une meilleure compréhension des concepts de pacifisme et de neutralité."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N4ab98c396bb942898e02fcd0a1c7b390"
+      },
+      {
+        "@language": "en",
+        "@value": "General history (without pre-and early history)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-08-31"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-grant-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH http://ark.dasch.swiss/ark:/72163/1/0114."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "Apolitism"
+      },
+      {
+        "@language": "en",
+        "@value": "International Olympic Committee"
+      },
+      {
+        "@language": "en",
+        "@value": "International organisations"
+      },
+      {
+        "@language": "en",
+        "@value": "Leaders and elites"
+      },
+      {
+        "@language": "en",
+        "@value": "Neutrality"
+      },
+      {
+        "@language": "en",
+        "@value": "Pacifism"
+      },
+      {
+        "@language": "en",
+        "@value": "Sport history"
+      },
+      {
+        "@language": "en",
+        "@value": "Transnational political cultures"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "The International Olympic Committee members (1894-1972). A transnational elite prosopography"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "0114"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:N0393fb2b68414dd598b151bca3565bc6"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-09-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@language": "de",
+        "@value": "1894-1972"
+      },
+      {
+        "@language": "en",
+        "@value": "1894-1972"
+      },
+      {
+        "@language": "fr",
+        "@value": "1894-1972"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nbaa2630ce91c4b988d6d3e5150b7de6a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4ab98c396bb942898e02fcd0a1c7b390",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Ne148d08c920a4be2bdb8e0e22c176cff"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://skos.um.es/unesco6/5502/html"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne148d08c920a4be2bdb8e0e22c176cff",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "General History"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0393fb2b68414dd598b151bca3565bc6",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://vocab.getty.edu/page/tgn/7029392"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbaa2630ce91c4b988d6d3e5150b7de6a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ark.dasch.swiss/ark:/72163/1/0114"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "fabien.def@gmail.com"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Défayes"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Fabien"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Scientif collaborator"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:Nf29b921eaf984ac1ae25dd2cc4c284e3"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "desk@snf.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Swiss National Science Foundation (SNSF)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N7fdf6b3368b84e2a9ec0a31fe5380074"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7fdf6b3368b84e2a9ec0a31fe5380074",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.snf.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf29b921eaf984ac1ae25dd2cc4c284e3",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Wildhainweg 3 Postfach"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "fr",
+        "@value": "Si la ville de Lausanne a une existence à l'échelle-monde, c'est largement dû à son statut de capitale du sport international. Mais qui sont vraiment les membres du Comité international olympique (CIO) installé sur les bords du Léman depuis 1915 ? De quelle élite transnationale sont-ils le nom ? Constitué en Sorbonne en 1894, le CIO a été doté par son fondateur, le baron français Pierre de Coubertin (1863-1937), d'un système de valeurs qui mêle la culture chevaleresque des aristocraties européennes, l'humanisme de la Renaissance plutôt que celui des Lumières, l'hygiénisme social, l'éducation britannique au struggleforlife, le dogme élitaire de l'amateurisme, et le liberal pacifism transatlantique du second XIXe siècle. Que ce corpus de valeurs ait survécu jusqu'à nos jours s'explique par le principe de cooptation qui prévaut dès l'origine pour le recrutement des membres du CIO. Cela tient également au règlement adopté en 1908 qui stipule que ses membres représentent le CIO dans leurs pays respectifs, et non l'inverse. Au croisement de l'histoire, des sciences politiques, et de la sociologie des élites, notre projet vise donc à connaître les facteurs socio-culturels, économiques et politiques qui ont prévalu dans le self recruitment des 300 membres cooptés avant la mutation commerciale du CIO dans les années 1970-1980. Nous allons reconstituer leurs trajectoires familiales et professionnelles, identifier leurs formes de sociabilité et leurs pratiques culturelles, préciser leurs orientations idéologiques et leurs engagements politiques, et dessiner leurs réseaux. La méthode prosopographique, ou « biographie collective », est accompagnée par l'utilisation d’une base de données comprenant quelque 300 notices biographiques, qui sont mises en ligne à destination des chercheurs et du grand public."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "XX - Access Conditions should be one of 'open', 'restricted' or 'closed', but found: mainly open (only information related to the political career and political convictions of members is restricted)."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2020-05-21"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-01-28"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDatePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2020-05-21"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH http://ark.dasch.swiss/ark:/72163/1/0114."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Naa43579a5d5d440385cb2dbe4e3f5f78"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:Nc153f0e1687f454cbb347b24f6ed270a"
+      },
+      {
+        "@id": "_:N72155f4b4fa5440285232a00586f830e"
+      },
+      {
+        "@id": "_:Nd7ce3ac0e96d4ace8f54ce586c47e0de"
+      },
+      {
+        "@id": "_:N1f4d7d7781554fcfaf7e0ce883865c19"
+      },
+      {
+        "@id": "_:N693d227baf1344049f2b58202078dcd1"
+      },
+      {
+        "@id": "_:Nefb12ba2f1544437a59de643dcbf6cc3"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Ongoing"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Base de données Les membres du Comité international olympique (CIO) de 1894 à 1972"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Text"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naa43579a5d5d440385cb2dbe4e3f5f78",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nae8ffcf649984cdf9a051eaa65ca6b5b"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nae8ffcf649984cdf9a051eaa65ca6b5b",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N9ddaefef3dce4ec0a52057cb5e9f4214"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9ddaefef3dce4ec0a52057cb5e9f4214",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc153f0e1687f454cbb347b24f6ed270a",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-004"
+      }
+    ]
+  },
+  {
+    "@id": "_:N72155f4b4fa5440285232a00586f830e",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-003"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd7ce3ac0e96d4ace8f54ce586c47e0de",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      },
+      {
+        "@value": "Project member"
+      },
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-002"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1f4d7d7781554fcfaf7e0ce883865c19",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Project leader"
+      },
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N693d227baf1344049f2b58202078dcd1",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-005"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nefb12ba2f1544437a59de643dcbf6cc3",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      },
+      {
+        "@value": "Project member"
+      },
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "helena.klima@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Klima"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Helena"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "PhD student"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0114-person-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0114-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "christophe.metzger@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Metzger"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Christophe"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Scientific collaborator"
+      }
+    ]
+  }
+]

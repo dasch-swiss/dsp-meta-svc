@@ -1,30 +1,32 @@
 <script lang="ts">
   import DefaultTabComponent from "./DefaultTabComponent.svelte";
+  import type { Dataset } from "../interfaces";
 
-  export let tabs = [] as any[];
+  export let datasets = [] as Dataset[];
   export let activeTabValue = 0;
 
   const handleTabsBrowsing = (tabValue: number) => () => (activeTabValue = tabValue);
 </script>
 
 <ul>
-  {#each tabs as tab}
-    <li class={activeTabValue === tab.value ? 'active' : ''}>
-      {#if tabs.length > 1 && activeTabValue !== tab.value}
-        <span on:click={handleTabsBrowsing(tab.value)} title={tab.label}>{`${tab.label.substring(0,5)}...`}</span>
+  {#each datasets as dataset, i}
+    <li class={activeTabValue === i ? 'active' : ''}>
+      {#if datasets.length > 1 && activeTabValue !== i}
+        <span on:click={handleTabsBrowsing(i)} title={dataset.title}>{`${dataset.title.substring(0,12)}...`}</span>
       {:else}
-        <span on:click={handleTabsBrowsing(tab.value)}>{tab.label}</span>
+        <span on:click={handleTabsBrowsing(i)}>{dataset.title}</span>
       {/if}
     </li>
   {/each}
 </ul>
-{#each tabs as tab}
-	{#if activeTabValue === tab.value}
+{#each datasets as dataset, i}
+  {#if activeTabValue === i}
     <div class=box>
-      <svelte:component this={DefaultTabComponent} dataset={tab} />
+      <svelte:component this={DefaultTabComponent} dataset={dataset} />
     </div>
-	{/if}
+  {/if}
 {/each}
+
 
 <style>
   .box {

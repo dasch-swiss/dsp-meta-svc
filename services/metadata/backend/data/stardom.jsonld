@@ -1,0 +1,1002 @@
+[
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N94a5721ad07043bb8163cc511403df0c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Université de Lausanne"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Ne9f386bdbd034b8084e51eced0e052bb"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne9f386bdbd034b8084e51eced0e052bb",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.unil.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N94a5721ad07043bb8163cc511403df0c",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lausanne"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "1015"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Unicentre"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-grant-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Grant"
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Project funding (Div. I-III)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasNumber": [
+      {
+        "@value": "166366"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Nc4386117c2e7466c9f4d73b0600b353c"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc4386117c2e7466c9f4d73b0600b353c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://p3.snf.ch/Project-166366"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-003",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "laure.cordonier@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Cordonier"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Laure"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "PhD student"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N98059541c2144607829b9d7d1492fd6e"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "alain.boillat@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Boillat"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Alain"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Full professor"
+      }
+    ]
+  },
+  {
+    "@id": "_:N98059541c2144607829b9d7d1492fd6e",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N5fc57bc30e184cee815b5a4679cec200"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0002-2342-395X"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5fc57bc30e184cee815b5a4679cec200",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0002-2342-395X"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-dataset-000",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Dataset"
+    ],
+    "http://ns.dasch.swiss/repository#hasAbstract": [
+      {
+        "@language": "en",
+        "@value": "The ontology of the project comprises 15 distinct classes, 68 properties, mainly describing archive documents (Piece) divided into 7 distinct categories (contractual and legal documents, personal correspondence, published articles, documents related to the organisation of work, script documents, personal documents, documents related to promotion), and listing, for each piece, the natural or legal persons concerned by the writing of the document and, for each page of document, the persons, works and film projects mentioned.\r Some images (pages) are annotated (regions of interest)."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAccessConditions": [
+      {
+        "@value": "XX - Access Conditions should be one of 'open', 'restricted' or 'closed', but found: partly restricted due to copyright issue."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-02-16"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-02-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDatePublished": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2018-02-16"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0107."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLanguage": [
+      {
+        "@language": "en",
+        "@value": "French"
+      },
+      {
+        "@language": "de",
+        "@value": "Französisch"
+      },
+      {
+        "@language": "fr",
+        "@value": "français"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasLicense": [
+      {
+        "@id": "_:Nee4c9d8bc88f480f8f841e55c960f85b"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasQualifiedAttribution": [
+      {
+        "@id": "_:Nc2cb2e9551b34b4dad6579e9bc51f1c2"
+      },
+      {
+        "@id": "_:Nba4fddeec74d410d94ab069b3769b0b9"
+      },
+      {
+        "@id": "_:N11cf8837b0694789a890ed4bd0dec52c"
+      },
+      {
+        "@id": "_:N71b98594bbf94cab9852a49ec7f1bc6b"
+      },
+      {
+        "@id": "_:Nfb2c2d6e43e44b4a97db2cfeedae1171"
+      },
+      {
+        "@id": "_:N1f9b826b528a415bb755c04cd56883a8"
+      },
+      {
+        "@id": "_:N26045323415741599eebf081e76920d6"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStatus": [
+      {
+        "@value": "Finished"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTitle": [
+      {
+        "@value": "Base de données Personnage et vedettariat au prisme du genre"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTypeOfData": [
+      {
+        "@value": "Image"
+      },
+      {
+        "@value": "Text"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nee4c9d8bc88f480f8f841e55c960f85b",
+    "@type": [
+      "http://ns.dasch.swiss/repository#License"
+    ],
+    "http://ns.dasch.swiss/repository#hasDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2021-09-02"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N3b92cd5584e54056afb211373f0dc132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b92cd5584e54056afb211373f0dc132",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N20f809336dc845a9b3dfab33d3110f9f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N20f809336dc845a9b3dfab33d3110f9f",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc2cb2e9551b34b4dad6579e9bc51f1c2",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data curator"
+      },
+      {
+        "@value": "Data collector"
+      },
+      {
+        "@value": "Project member"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-001"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nba4fddeec74d410d94ab069b3769b0b9",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Project member"
+      },
+      {
+        "@value": "Data collector"
+      },
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-002"
+      }
+    ]
+  },
+  {
+    "@id": "_:N11cf8837b0694789a890ed4bd0dec52c",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data curator"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-006"
+      }
+    ]
+  },
+  {
+    "@id": "_:N71b98594bbf94cab9852a49ec7f1bc6b",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Project leader"
+      },
+      {
+        "@value": "Data collector"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-000"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfb2c2d6e43e44b4a97db2cfeedae1171",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Other"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-005"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1f9b826b528a415bb755c04cd56883a8",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-003"
+      }
+    ]
+  },
+  {
+    "@id": "_:N26045323415741599eebf081e76920d6",
+    "@type": [
+      "http://www.w3.org/ns/prov#Attribution"
+    ],
+    "http://ns.dasch.swiss/repository#hasRole": [
+      {
+        "@value": "Data collector"
+      }
+    ],
+    "http://www.w3.org/ns/prov#agent": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-004"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Organization"
+    ],
+    "http://ns.dasch.swiss/repository#hasAddress": [
+      {
+        "@id": "_:N2a66a1f324724eb28c87b29fdb32ab6c"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "desk@snf.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "Swiss National Science Foundation (SNSF)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:Na1cd6c4ab5a34b08954b5c5de4d33abf"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1cd6c4ab5a34b08954b5c5de4d33abf",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.snf.ch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2a66a1f324724eb28c87b29fdb32ab6c",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Switzerland"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bern"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "3001"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Wildhainweg 3 Postfach"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-001",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N28c3d5e46d814ed1a3b97100115f1de5"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "delphine.chedaleux@utc.fr"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Chedaleux"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Delphine"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Post-doctoral researcher"
+      }
+    ]
+  },
+  {
+    "@id": "_:N28c3d5e46d814ed1a3b97100115f1de5",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Nb6a82998e1264295b6a967cd3e08e967"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0002-5080-8409"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb6a82998e1264295b6a967cd3e08e967",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0002-5080-8409"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-004",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Gaillard"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Adrien"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "PhD student"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-006",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N3fbb7df6a9a4441dbcfb49cf67bd5b5a"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "marion.rivoal@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Rivoal"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Marion"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "Research manager"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3fbb7df6a9a4441dbcfb49cf67bd5b5a",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N99feb11a4285453eae235a9b4e76056a"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0003-4185-7169"
+      }
+    ]
+  },
+  {
+    "@id": "_:N99feb11a4285453eae235a9b4e76056a",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0003-4185-7169"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-002",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasAuthorityFileReference": [
+      {
+        "@id": "_:N7b282603a58443a29cd22c35b56eabba"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "jeanne.rohner@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Rohner"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Jeanne"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "PhD student"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7b282603a58443a29cd22c35b56eabba",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N40ad1942306446f78c5d576e35df7eb7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://orcid.org/0000-0002-1537-8140"
+      }
+    ]
+  },
+  {
+    "@id": "_:N40ad1942306446f78c5d576e35df7eb7",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "ORCID URL: https://orcid.org/0000-0002-1537-8140"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-project",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Project"
+    ],
+    "http://ns.dasch.swiss/repository#hasAlternativeName": [
+      {
+        "@language": "en",
+        "@value": "stardom"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasContactPoint": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDataset": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-dataset-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDescription": [
+      {
+        "@language": "en",
+        "@value": "This project aims to study the mechanisms of the construction of genre representations in the French cinematographic production of the 1940s. The aim is to establish links between the work of different contributors, the status of the stars involved, and the characters they portray on the screen. The genre study is rooted in the examination of various historical sources, particularly screenplays at various stages of writing. The production context of films such as Le Mariage de Chiffon (1942), Occupe-toi d’Amélie (1949) or Le Bon Dieu sans confession (1953) is reconstructed and examined on the basis of documents from the Claude Autant-Lara archive of the Swiss Filmrachives, and considered in the light of the tools forged by film narratology, gender studies, star studies and cultural history. The objective is to develop a “genetic” approach that will make it possible to document the stages of creation by placing them in their socio-historical context.\n\nThe main periodization (1942-1949) corresponds both to the first films officially attributed to Claude Autant-Lara as sole director, to the birth of the trio he formed with his two screenwriters Jean Aurenche and Pierre Bost, and to a pivotal moment for the French star system, which was undergoing a feminization and rejuvenation in the context of occupied France. The stars of our corpus (Odette Joyeux, Micheline Presle or Gérard Philipe) offer emblematic case studies. The initial filmic corpus has been expanded to include Le Bon Dieu sans confession (1953), Le Rouge et le Noir (1954) and Love is my Profession (En cas de malheur, 1958)."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasDiscipline": [
+      {
+        "@id": "_:N4dffb7823c504d31b7ee628bcd601083"
+      },
+      {
+        "@language": "en",
+        "@value": "Theatre and Cinema"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEndDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2020-08-31"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFunder": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-001"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGrant": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-grant-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasHowToCite": [
+      {
+        "@value": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0107."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasKeyword": [
+      {
+        "@language": "en",
+        "@value": "Cultural studies"
+      },
+      {
+        "@language": "en",
+        "@value": "Film character"
+      },
+      {
+        "@language": "en",
+        "@value": "Film history"
+      },
+      {
+        "@language": "en",
+        "@value": "France in the Forties"
+      },
+      {
+        "@language": "en",
+        "@value": "Gender"
+      },
+      {
+        "@language": "en",
+        "@value": "Narratology"
+      },
+      {
+        "@language": "en",
+        "@value": "Popular culture"
+      },
+      {
+        "@language": "en",
+        "@value": "Star studies"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasName": [
+      {
+        "@value": "A Gender Perspective on Film Character and Stardom: Studying the Production of Film Representations in the Forties (Claude Autant-Lara Collection, Swiss Film Archive)"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasPublication": [
+      {
+        "@value": "Boillat Alain (2019), Jean-Pierre Bleys, Claude Autant-Lara, in 1895. Revue de l’association française de recherche sur l’histoire du cinéma, 88, 167-176."
+      },
+      {
+        "@value": "Boillat Alain (2020), L'adaptation d'En cas de malheur par Autant-Lara, Aurenche et Bost : une génère scénaristique en contexte, in TRACES, 3, 23-40."
+      },
+      {
+        "@value": "Boillat Alain (2020), « Dans les coulisses de la fabrique du personnage : les archives scénaristiques au service des star studies », dans Manon Billaud et Mélissa Gignac (dir.), Quel(s) scénario(s) pour quelle(s) approche(s) du cinéma ?, Paris, AFRHC, chapitre 7."
+      },
+      {
+        "@value": "Boillat Alain, Maire Frédéric (2019), Sharing Knowledge between University and Cinémathèque, in Iluminace. The Journal of Film Theory, History, and Aesthetics, 31(1), 45-57."
+      },
+      {
+        "@value": "Boillat, Alain (2020), En En cas de malheur de Simenon à Autant-Lara. Essai de génétique scénaristique, Genève, Droz."
+      },
+      {
+        "@value": "Chedaleux Delphine (2020), Fabrique et réceptions du pouvoir féminin : Danielle Darrieux dans Le Bon Dieu sans confession, in LeGras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 203-218."
+      },
+      {
+        "@value": "Rohner Jeanne (2018), Les états du personnage : du scénario au film, in Fabula : la recherche en littérature, https://www.fabula.org/atelier.php?Personnage_filmique."
+      },
+      {
+        "@value": "Rohner Jeanne (2018), « Occupe-toi d'Amélie! (Claude Autant-Lara, 1949): le théâtre à l'écran », in Philippe Gilles, Boillat Alain (ed.), Impressions Nouvelles, Bruxelles, 205-229."
+      },
+      {
+        "@value": "Rohner Jeanne (2020), Danielle Darrieux dans Occupe-toi d’Amélie..! Genèse d’une résurrection, in Le Gras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 163-174."
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasShortcode": [
+      {
+        "@value": "0107"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasSpatialCoverage": [
+      {
+        "@id": "_:Nea2acb4b1ef347529228af3722381105"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasStartDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2016-07-01"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTeaser": [
+      {
+        "@value": "XX - new property"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasTemporalCoverage": [
+      {
+        "@language": "de",
+        "@value": "1942-1949"
+      },
+      {
+        "@language": "en",
+        "@value": "1942-1949"
+      },
+      {
+        "@language": "fr",
+        "@value": "1942-1949"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasURL": [
+      {
+        "@id": "_:N58432eaaada34c5c9420d6b7c16a5e0c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4dffb7823c504d31b7ee628bcd601083",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:Na3d087a1a36b450d94a9831c95ee4f64"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://skos.um.es/unesco6/620301"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na3d087a1a36b450d94a9831c95ee4f64",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "Cinematography "
+      }
+    ]
+  },
+  {
+    "@id": "_:Nea2acb4b1ef347529228af3722381105",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@id": "_:N17205183a4dd468bb42c07eacd11ef3b"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.geonames.org/3017382"
+      }
+    ]
+  },
+  {
+    "@id": "_:N17205183a4dd468bb42c07eacd11ef3b",
+    "@type": [
+      "http://schema.org/PropertyValue"
+    ],
+    "http://schema.org/propertyID": [
+      {
+        "@value": "France"
+      }
+    ]
+  },
+  {
+    "@id": "_:N58432eaaada34c5c9420d6b7c16a5e0c",
+    "@type": [
+      "http://schema.org/URL"
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ark.dasch.swiss/ark:/72163/1/0107"
+      }
+    ]
+  },
+  {
+    "@id": "http://ns.dasch.swiss/repository#dsp-0107-person-005",
+    "@type": [
+      "http://ns.dasch.swiss/repository#Person"
+    ],
+    "http://ns.dasch.swiss/repository#hasAffiliation": [
+      {
+        "@id": "http://ns.dasch.swiss/repository#dsp-0107-organization-000"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasEmail": [
+      {
+        "@value": "loic.jaouen@unil.ch"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasFamilyName": [
+      {
+        "@value": "Jaouen"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasGivenName": [
+      {
+        "@value": "Loïc"
+      }
+    ],
+    "http://ns.dasch.swiss/repository#hasJobTitle": [
+      {
+        "@value": "IT support"
+      }
+    ]
+  }
+]

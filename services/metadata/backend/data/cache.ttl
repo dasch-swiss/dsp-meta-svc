@@ -1,0 +1,201 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsp:dsp-082B-project a dsp:Project ;
+    dsp:hasContactPoint dsp:dsp-082B-organization-002 ;
+    dsp:hasDataset dsp:dsp-082B-dataset-001 ;
+    dsp:hasDescription "cache is a hybrid publication tool for research groups in the humanities."@en ;
+    dsp:hasDiscipline "10301 Allgemeine Geschichte (ohne Ur- und Frühgeschichte)"@de,
+        "10302 Schweizer Geschichte"@de,
+        "10400 Ethnologie, Sozial- und Humangeographie"@de,
+        "10600 Soziologie, Soziale Arbeit, Politikwissenschaften, Medien- und Kommunikationswissenschaften, Gesundheit"@de ;
+    dsp:hasFunder dsp:dsp-082B-organization-003 ;
+    dsp:hasGrant dsp:dsp-082B-grant-001 ;
+    dsp:hasHowToCite "Gegen|Wissen, intercom: Zürich (2020)"^^xsd:string ;
+    dsp:hasKeyword "academic publishing"@en,
+        "humanities"@en ;
+    dsp:hasName "cache"^^xsd:string ;
+    dsp:hasPublication "Gegen|Wissen (cache 01)"^^xsd:string ;
+    dsp:hasShortcode "082B"^^xsd:string ;
+    dsp:hasSpatialCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "XX: Geonames URL: https://www.geonames.org/countries" ] ;
+            sdo:url "https://www.geonames.org/countries/" ] ;
+    dsp:hasStartDate "2018-12-01"^^xsd:date ;
+    dsp:hasTeaser "XX - new property"^^xsd:string ;
+    dsp:hasTemporalCoverage "16th Century"@en,
+        "17th Century"@en,
+        "18th Century"@en,
+        "19th Century"@en,
+        "20th Century"@en ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "www.cache.ch" ] ;
+            sdo:url "http://www.cache.ch" ] .
+
+dsp:dsp-082B-dataset-001 a dsp:Dataset ;
+    dsp:hasAbstract "Genetic engineering, acid rain, nuclear accidents, ozone depletion, computerization — in the years around 1980, science moved center-stage as a socio-political quandary. First and foremost, it were the new social movements that cultivated critiques of science and technology; but soon enough, the desire for an alternative science, or a “counter-knowledge”, diffused into the broader realms of politics, economics and, not least, establishment science. What was this “counter\"-science? Where did it succeed? Where did it fail? And why is this relevant again today?"@en ;
+    dsp:hasAccessConditions "open"^^xsd:string ;
+    dsp:hasDatePublished "2020-10-01"^^xsd:date ;
+    dsp:hasHowToCite "Gegen|Wissen, intercom: Zürich (2020)"^^xsd:string ;
+    dsp:hasLanguage "Deutsch"@de,
+        "Englisch"@de,
+        "English"@en,
+        "German"@en,
+        "allemand"@fr,
+        "anglais"@fr ;
+    dsp:hasLicense [ a dsp:License ;
+            dsp:hasDate "2021-09-02"^^xsd:date ;
+            dsp:hasURL [ a sdo:URL ;
+                    sdo:url "https://creativecommons.org/licenses/by-nc-nd/4.0/" ] ] ;
+    dsp:hasQualifiedAttribution [ a prov:Attribution ;
+            dsp:hasRole "project lead"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-001 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-011 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-008 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-006 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-004 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-005 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-010 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "scientific direction"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-003 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-012 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-009 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "publisher"^^xsd:string ;
+            prov:agent dsp:dsp-082B-organization-002 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "author"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-007 ],
+        [ a prov:Attribution ;
+            dsp:hasRole "editorial management"^^xsd:string ;
+            prov:agent dsp:dsp-082B-person-002 ] ;
+    dsp:hasStatus "Finished"^^xsd:string ;
+    dsp:hasTitle "Gegen|Wissen (cache 01)"^^xsd:string ;
+    dsp:hasTypeOfData "Text"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "www.cache.ch/gegenwissen" ] ;
+            sdo:url "http://www.cache.ch/gegenwissen" ] .
+
+dsp:dsp-082B-grant-001 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-082B-organization-003 ;
+    dsp:hasName "Digital Lives SNF"^^xsd:string ;
+    dsp:hasNumber "http://p3.snf.ch/Project-183057"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "183057" ] ;
+            sdo:url "http://183057" ] .
+
+dsp:dsp-082B-person-001 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasEmail "nils.guettler@wiss.gess.ethz.ch"^^xsd:string ;
+    dsp:hasFamilyName "Güttler"^^xsd:string ;
+    dsp:hasGivenName "Nils"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-002 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasEmail "niki.rhyner@wiss.gess.ethz.ch"^^xsd:string ;
+    dsp:hasFamilyName "Rhyner"^^xsd:string ;
+    dsp:hasGivenName "Niki"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-003 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasEmail "mxmlnstdlr@gmail.com"^^xsd:string ;
+    dsp:hasFamilyName "Stadler"^^xsd:string ;
+    dsp:hasGivenName "Max"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-004 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Grote"^^xsd:string ;
+    dsp:hasGivenName "Mathias"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-005 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Grütter"^^xsd:string ;
+    dsp:hasGivenName "Fabian"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-006 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Scheidegger"^^xsd:string ;
+    dsp:hasGivenName "Tobias"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-007 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Schlünder"^^xsd:string ;
+    dsp:hasGivenName "Martina"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-008 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Schmidt"^^xsd:string ;
+    dsp:hasGivenName "Anna Maria"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-009 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Schmidt"^^xsd:string ;
+    dsp:hasGivenName "Susanne"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-010 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "von Schwerin"^^xsd:string ;
+    dsp:hasGivenName "Alexander"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-011 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Wulz"^^xsd:string ;
+    dsp:hasGivenName "Monika"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-person-012 a dsp:Person ;
+    dsp:hasAffiliation dsp:dsp-082B-organization-001 ;
+    dsp:hasFamilyName "Zberg"^^xsd:string ;
+    dsp:hasGivenName "Nadine"^^xsd:string ;
+    dsp:hasJobTitle "Historian"^^xsd:string .
+
+dsp:dsp-082B-organization-002 a dsp:Organization ;
+    dsp:hasEmail "info@intercomverlag.ch"^^xsd:string ;
+    dsp:hasName "intercom Verlag"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "www.intercomverlag.ch" ] ;
+            sdo:url "http://www.intercomverlag.ch" ] .
+
+dsp:dsp-082B-organization-003 a dsp:Organization ;
+    dsp:hasName "SNSF"^^xsd:string .
+
+dsp:dsp-082B-organization-001 a dsp:Organization ;
+    dsp:hasName "ETH Zurich"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "www.ethz.ch" ] ;
+            sdo:url "http://www.ethz.ch" ] .
+

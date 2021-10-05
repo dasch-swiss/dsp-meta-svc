@@ -22,11 +22,9 @@ package Entities {
     +Dataset[] datasets
     +MultiLanguageText[] keywords
     +MultiLanguageText|URL[] disciplines
-    +URL[] disciplineRefs
     +MultiLanguageText|URL[] temporalCoverage
     +URL[] spatialCoverages
-    +Person[] funderPersons
-    +Organization[] funderOrganizations
+    +Person[]|Organization[] funders
 
     -- Optional Fields --
     .. (0 - 1) ..
@@ -153,6 +151,7 @@ package Entities {
     -String type
     -Date createdAt
     -UUID createdBy
+    -Email email
 
     .. (1 - n) ..
     +String[] jobTitles
@@ -167,9 +166,7 @@ package Entities {
     -Date deletedAt
     -UUID deletedBy
     +Address address
-
-    .. (0 - 2) ..
-    +Email[] emails
+    +Email secondaryEmail
 
     .. (0 - n) ..
     +URL[] authorityRefs
@@ -214,16 +211,10 @@ package Entities {
     Entity holding information on how work on a dataset can be attributed to a person.
     -- Required Fields --
     .. (1 - n) ..
-    +Person agentPerson
-    +Organization agentOrganization
+    +Person|Organization agent
     +String[] roles
 
   }
-
-  note left of Attribution::agentPerson
-    `agentPerson` and `agentOrganization`
-    together are `agent` (1)
-  end note
   
 }
 

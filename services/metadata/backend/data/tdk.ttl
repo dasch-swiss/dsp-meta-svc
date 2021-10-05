@@ -1,0 +1,126 @@
+@prefix dsp: <http://ns.dasch.swiss/repository#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dsp:dsp-0805-project a dsp:Project ;
+    dsp:hasAlternativeName "UBKVP"@en ;
+    dsp:hasDataset dsp:dsp-0805-dataset-000 ;
+    dsp:hasDescription "Archaeological Project exploring undecorated tombs in the Valley of the Kings, Egypt"@en ;
+    dsp:hasDiscipline "Archaeology"@en,
+        "Egyptian Archaeology"@en,
+        "Funerary Archaeology"@en ;
+    dsp:hasFunder dsp:dsp-0805-organization-001 ;
+    dsp:hasGrant dsp:dsp-0805-grant-000 ;
+    dsp:hasHowToCite "University of Basel Kings’ Valley Project Online (UBKVP), 2021, DaSCH. ark.dasch.swiss/ark:/72163/1/0805"^^xsd:string ;
+    dsp:hasKeyword "Archaeology"@en,
+        "Egypt"@en,
+        "Valley of the Kings"@en,
+        "funerary culture"@en,
+        "royal family"@en,
+        "tomb"@en ;
+    dsp:hasName "University of Basel Kings’ Valley Project"^^xsd:string ;
+    dsp:hasPublication "Adrom, Faried; Bickel, Susanne; Münch, Hans-Hubertus and Peintner, Erico, «Die Holzstele der Nehemesbastet aus KV 64», in: Mitteilungen des Deutschen Archäologischen Instituts Kairo 67, 2011/2013, 1–15."^^xsd:string,
+        "Bickel Susanne, «Retrieving the king’s treasure – reburying the king’s body: Contexts of 21st Dynasty activities in the Valley of the Kings» in: Rogério Sousa, Alessia Amenta, Kathlyn M. Cooney (ed.), Bab el-Gasus in Context. Rediscovering the Tomb of the Priests of Amun, Rom/Bristol, 2020, 69–79."^^xsd:string,
+        "Bickel, Susanne (ed.), Priester – Räuber – Königskinder. Die Gräber KV 40 und KV 64 im Tal der Könige.\r vol. 1. Die beschrifteten Objekte der 18. Dynastie und die Keramik\r Swiss Egyptological Studies 2.1, Basel 2021."^^xsd:string,
+        "Bickel, Susanne, «Das Grab KV 40 im Tal der Könige. Eine Familiengruft Amenophis’ III.», Sokar, Geschichte & Archäologie Altägyptens 30, 2015, 78–89."^^xsd:string,
+        "Bickel, Susanne, «Ein neues Grab im Tal der Könige. Untersuchungen zu nicht-königlichen Grabstätten in der Pharaonen-Nekropole», Antike Welt 1/2013, 75–82."^^xsd:string,
+        "Bickel, Susanne, «KV 40. The Tomb of 18th Dynasty Princesses and Princes», Kmt. A Modern Journal of Ancient Egypt 25/3, 2014, 22–32."^^xsd:string,
+        "Bickel, Susanne, «KV 64. An intact 22nd dynasty burial in the Valley of the Kings. Preliminary description», in Alessia Amenta (ed.), Acts of the First Vatican Coffin Conference, Rome, 2017, 79–84."^^xsd:string,
+        "Bickel, Susanne, «Konstruktion und Praxis einer Sakrallandschaft: das Beispiel Tal der Könige», in: Susanne Beck, Burkhard Backes, I-Ting Liao, Heike Simon, Alexandra Verbovsek (ed.), Gebauter Raum: Architektur – Landschaft – Mensch, Göttinger Orientforschungen 62, 2016, 11–26."^^xsd:string,
+        "Bickel, Susanne, «Les tombes non-décorées de la Vallée des Rois: perspectives sociales et historiques», Bulletin de la Société française d’égyptologie 197, 2017, 12–28."^^xsd:string,
+        "Bickel, Susanne, «Nicht nur Pharaonen. Neue Untersuchungen zu nicht-königlichen Gräbern im Tal der Könige», Susanne Bickel, Sokar 26/1, 2013, 60¬–71."^^xsd:string,
+        "Bickel, Susanne, «Other tombs: queens and commoners in KV», in: Richard H. Wilkinson & Kent R. Weeks (ed.), The Oxford Handbook of the Valley of the Kings, Oxford, 2016, 230–242."^^xsd:string,
+        "Bickel, Susanne, «Prinsessen, plunderaars en priesters. Nieuwe onderzoeken naar de niet-koninklijke graven in het Dal der Koningen», Mehen. Essays over het oude Egypte 2015, 160-175."^^xsd:string,
+        "Bickel, Susanne, «Waking an Egyptian Chantress», Current World Archaeology 56, 2013, 16–19."^^xsd:string,
+        "Bickel, Susanne; Gautschy, Rita, «A Sundial found in the Egyptian Valley of the Kings», British Sundial Society 	Bulletin 25/4, 2013, 2-7."^^xsd:string,
+        "Bickel, Susanne; Gautschy, Rita, «Eine Ramessidische Sonnenuhr im Tal der Könige», Zeitschrift für ägyptische Sprache und Altertumskunde 141, 2014, 3–14."^^xsd:string,
+        "Bickel, Susanne; Paulin-Grothe, Elina, «A New Tomb in the VoK: KV 64», in: Kmt. A Modern Journal of Ancient Egypt 23/2, 2012, 18–31."^^xsd:string,
+        "Bickel, Susanne; Paulin-Grothe, Elina, «KV 40: a burial place for the royal entourage», Egyptian Archaeology 45, 2014, 21–24."^^xsd:string,
+        "Bickel, Susanne; Paulin-Grothe, Elina, «KV 64: Two Burials in one Tomb», Egyptian Archaeology 41, 2012, 36–40."^^xsd:string,
+        "Gamma, Claudia; Schlick-Nolte, Birgit, «Ein gläserner Krateriskos aus dem Tal der Könige», Antike Kunst 62, 2019, 3–12."^^xsd:string,
+        "Hunkeler, Charlotte, «New results on the manufacture and durability of cartonnage: experimental archaeology as a method to understand the history of 22nd Dynasty cartonnage cases from KV40 (Thebes, Egypt)», Journal of Archaeological Science: Reports 36, 2021,\r https://doi.org/10.1016/j.jasrep.2021.102836"^^xsd:string,
+        "Meyer Sabrina; Galassi Francesco; Böni Thomas; Seiler Roger; Bickel Susanne; Ruehli, Frank J., «Mummified proportionate dwarfs from the Valley of the Kings», in: The Lancet: Diabetes -Endocrinology, 7/1, 2019, 173 – 174."^^xsd:string,
+        "Meyer, Sabrina; Frater, Nakita; Seiler, Roger; Bickel, Susanne; Böni, Thomas; Eppenberger, Patrick; Ruehli, Frank J., «Multidisciplinary studies of heavily fragmented and commingled ancient Egyptian human remains found in tomb KV 40 (Valley of the Kings, Luxor, Egypt): A pragmatic workflow and first results», Journal of Archaeological Science: Reports 29, 2020 \r https://doi.org/10.1016/j.jasrep.2019.102069"^^xsd:string,
+        "Münch, Hans-Hubertus, «Noble Burials? Notes on the Use of Black Coffins in KV40», in: Strudwick Helen, Dawson Julie (ed.), Ancient Egyptian Coffins: Past – Present – Future, Oxbow: Oxford, 2018, 52 – 57."^^xsd:string,
+        "Rühli, Frank; Ikram, Salima; Bickel, Susanne, «New Ancient Egyptian Human Mummies from the Valley of the Kings, Luxor: Anthropological, Radiological, and Egyptological Investigations», BioMed Research International, 2015, 8p.   http://dx.doi.org/10.1155/2015/530362"^^xsd:string ;
+    dsp:hasShortcode "0805"^^xsd:string ;
+    dsp:hasSpatialCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "Valley of the Kings" ] ;
+            sdo:url "https://pleiades.stoa.org/places/384697574" ] ;
+    dsp:hasStartDate "2015-03-01"^^xsd:date ;
+    dsp:hasTeaser "Assessment of tombs in the Kings’ Valley used for burials of royal family and entourage (ca. 1350 BCE), looted (ca. 1000 BCE), and reused for burials of members of priestly families (ca. 800–700 BCE)."^^xsd:string ;
+    dsp:hasTemporalCoverage [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "22nd dynasty" ] ;
+            sdo:url "https://chronontology.dainst.org/period/eY4hrsm2FVJs" ],
+        [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "18th dynasty" ] ;
+            sdo:url "https://chronontology.dainst.org/period/K5glD8hjpaZB" ] ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "University of Basel Kings’ Valley Project Online (UBKVP)" ] ;
+            sdo:url "https://aegyptologie.philhist.unibas.ch/de/forschung/forschungsprojekte/university-of-basel-kings-valley-project/" ] .
+
+dsp:dsp-0805-dataset-000 a dsp:Dataset ;
+    dsp:hasAbstract "Archaeological Project exploring undecorated tombs in the Valley of the Kings, Egypt"@en ;
+    dsp:hasAccessConditions "open"^^xsd:string ;
+    dsp:hasAlternativeTitle "UBKVP"@en ;
+    dsp:hasHowToCite "University of Basel Kings’ Valley Project Online (UBKVP), 2021, DaSCH. ark.dasch.swiss/ark:/72163/1/0805"^^xsd:string ;
+    dsp:hasLanguage "Deutsch"@de,
+        "Englisch"@de,
+        "English"@en,
+        "German"@en,
+        "allemand"@fr,
+        "anglais"@fr ;
+    dsp:hasLicense [ a dsp:License ;
+            dsp:hasDate "2021-09-30"^^xsd:date ;
+            dsp:hasURL [ a sdo:URL ;
+                    sdo:propertyID [ a sdo:PropertyValue ;
+                            sdo:propertyID "CC BY-NC 4.0" ] ;
+                    sdo:url "https://creativecommons.org/licenses/by-nc/4.0/legalcode" ] ] ;
+    dsp:hasQualifiedAttribution [ a prov:Attribution ;
+            dsp:hasRole "Project Director"^^xsd:string ;
+            prov:agent dsp:dsp-0805-person-000 ] ;
+    dsp:hasStatus "Ongoing"^^xsd:string ;
+    dsp:hasTitle "Dataset of University of Basel Kings’ Valley Project"^^xsd:string ;
+    dsp:hasTypeOfData "Image"^^xsd:string,
+        "Text"^^xsd:string .
+
+dsp:dsp-0805-grant-000 a dsp:Grant ;
+    dsp:hasFunder dsp:dsp-0805-organization-001 ;
+    dsp:hasName "SNF Project"^^xsd:string ;
+    dsp:hasNumber "SNF 100011_156046"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "http://p3.snf.ch/project-156046" ] .
+
+dsp:dsp-0805-organization-000 a dsp:Organization ;
+    dsp:hasName "University of Basel"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:url "https://www.unibas.ch/" ] .
+
+dsp:dsp-0805-person-000 a dsp:Person ;
+    dsp:hasAddress [ a sdo:PostalAddress ;
+            sdo:addressCountry "Switzerland"^^xsd:string ;
+            sdo:addressLocality "Basel"^^xsd:string ;
+            sdo:postalCode "4051"^^xsd:string ;
+            sdo:streetAddress "Petersgraben 51"^^xsd:string ] ;
+    dsp:hasAffiliation dsp:dsp-0805-organization-000 ;
+    dsp:hasAuthorityFileReference [ a sdo:URL ;
+            sdo:url "https://aegyptologie.philhist.unibas.ch/de/personen/susanne-bickel/" ],
+        [ a sdo:URL ;
+            sdo:url "https://orcid.org/0000-0002-0213-1069" ] ;
+    dsp:hasEmail "s.bickel@unibas.ch"^^xsd:string ;
+    dsp:hasFamilyName "Bickel"^^xsd:string ;
+    dsp:hasGivenName "Susanne"^^xsd:string ;
+    dsp:hasJobTitle "Professor of Egyptology"^^xsd:string .
+
+dsp:dsp-0805-organization-001 a dsp:Organization ;
+    dsp:hasName "SNF"^^xsd:string ;
+    dsp:hasURL [ a sdo:URL ;
+            sdo:propertyID [ a sdo:PropertyValue ;
+                    sdo:propertyID "www.snf.ch" ] ;
+            sdo:url "http://www.snf.ch" ] .
+

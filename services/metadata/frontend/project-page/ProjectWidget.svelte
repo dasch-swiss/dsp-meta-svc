@@ -32,19 +32,11 @@
 
   <!-- DMP -->
   <div class=label>Data Management Plan</div>
-  {#if $projectMetadata?.project.dataManagementPlan}
-    {#if $projectMetadata?.project.dataManagementPlan.url}
-      <a class="data external-link" href="{$projectMetadata?.project.dataManagementPlan.url.url}" target=_>
-        {$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}
-      </a>
-    {:else}
-      <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
-    {/if}
-  {/if}
+  <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
 
   <!-- How to Cite -->
   <div class=label>
-    <span class=label style="display:inline">
+    <span style="display:inline">
       How To Cite
       {#if $projectMetadata?.project.howToCite}
         <button on:click={copyToClipboard} title="copy citation to the clipboard">

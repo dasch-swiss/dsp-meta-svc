@@ -18,7 +18,6 @@
     window.getSelection().removeAllRanges();
     handleSnackbar.set({isSnackbar: true, message: 'Citation copied succesfully!'});
   };
-
 </script>
 
 
@@ -209,10 +208,6 @@
 {/if}
 
 <style>
-  .warning {
-    /* TODO: could be done better */
-    color: red;
-  }
   a {
     display: block;
     color: var(--lead-colour);

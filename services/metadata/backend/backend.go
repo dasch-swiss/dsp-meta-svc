@@ -335,7 +335,7 @@ func main() {
 
 	// load Data
 	projects = loadProjectData()
-	log.Printf("Loaded %v files (%v JSON + %v JSON-LD + %v Turtle)",
+	log.Printf("Loaded %v files (%v JSON + %v JSON-LD + %v TTL)",
 		len(projects.dataJSON)+len(projects.dataJSONLD)+len(projects.dataTTL),
 		len(projects.dataJSON),
 		len(projects.dataJSONLD),

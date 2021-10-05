@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import { handleSnackbar } from "../store";
-  import { getText, findPersonByID, findOrganizationByID, findObjectByID } from "../functions";
-  import type { Dataset, Grant, Person, Organization, Text } from "../interfaces";
+  import { getText, findOrganizationByID, findObjectByID } from "../functions";
+  import type { Dataset } from "../interfaces";
 
   export let dataset: Dataset;
 
@@ -54,7 +54,6 @@
     {/if}
 
     <div class="grid-wrapper">
-
       <!-- Access conditions -->
       <div>
         <span class=label>Access</span>
@@ -247,10 +246,6 @@
 </div>
 
 <style>
-  .warning{
-    /* TODO: could be done better */
-    color: red;
-  }
   a {color: var(--lead-colour);}
   button {
     border: none;

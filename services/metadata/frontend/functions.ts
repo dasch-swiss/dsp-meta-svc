@@ -1,4 +1,4 @@
-
+//  TODO: find better name for this file
 import {get} from "svelte/store";
 import {projectMetadata as ProjectMetadata} from "./store";
 import type {Grant, Person, Organization, Text} from "./interfaces";

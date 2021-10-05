@@ -3,7 +3,6 @@
   import type { ProjectMetadata } from '../interfaces';
 
   export let metadata: ProjectMetadata;
-
 </script>
 
 <section>

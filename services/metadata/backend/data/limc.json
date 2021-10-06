@@ -6,7 +6,7 @@
         "__createdAt": "1630601343620252000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Digital LIMC (2021): Digital LIMC, DaSCH. https://weblimc.org/page/home/Basel",
-        "teaserText": "XX - new property",
+        "teaserText": "Digital LIMC contains what we know about the iconography of Greek, Etruscan and Roman mythology, both in ancient Greek, Etruscan and Roman art as well as in neighbouring Mediterranean cultures.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-080E-dataset-000"
         ],

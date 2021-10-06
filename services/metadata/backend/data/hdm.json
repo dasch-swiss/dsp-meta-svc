@@ -6,7 +6,7 @@
         "__createdAt": "1630601274523025000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "HdM-Bern",
-        "teaserText": "XX - new property",
+        "teaserText": "The database documents the different kinds of spectacles such as theatre plays, operas, ballets, or concerts that took place in the Hôtel de Musique in Bern between 1766 and 1905.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-081C-dataset-000"
         ],

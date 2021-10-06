@@ -6,7 +6,7 @@
         "__createdAt": "1630601402366019000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "https://geoarchI-GEOARCHive.dasch.swiss",
-        "teaserText": "XX - new property",
+        "teaserText": "The „I-GEOARCHive“ image database of thin section scans (and corresponding microscope photos) makes the collection digitally accessible to the public and in particular to research and teaching.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0838-dataset-001"
         ],

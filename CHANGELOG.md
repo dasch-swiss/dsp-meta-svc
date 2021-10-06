@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.4.3...v1.5.0) (2021-10-06)
+
+
+### Documentation
+
+* **datamodel:** add example file mapped to RDF and SHACL ontology for RDF validation ([#14](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/14)) ([9f96ded](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/9f96deda97161ac577562fce32898f75de59edfd))
+* **metadata-model:** change structure of `additional` in JSON-Schema (DSP-1677) ([#13](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/13)) ([cb305d9](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/cb305d964fc4aa65a983751c166c918840ccb993))
+* update metadata datamodel in documentation (DSP-1677) ([#3](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/3)) ([2b40a06](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/2b40a065b608d4a97166bcb08640ec57edb81c6f))
+
+
+### Enhancements
+
+* **datamodel:** update frontend to support new data model (DSP-1677) (DEV-3) ([#15](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/15)) ([c028685](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c028685f8653229670e4f1ff6e344afad2cdaa04))
+
 ### [1.4.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.4.2...v1.4.3) (2021-08-23)
 
 

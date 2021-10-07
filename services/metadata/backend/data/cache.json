@@ -52,7 +52,7 @@
                 "__type": "URL",
                 "type": "Geonames",
                 "url": "https://www.geonames.org/countries/",
-                "text": "XX: Geonames URL: https://www.geonames.org/countries"
+                "text": "Countries"
             }
         ],
         "startDate": "2018-12-01",
@@ -497,7 +497,7 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://183057",
+                "url": "http://p3.snf.ch/Project-183057",
                 "text": "183057"
             }
         }

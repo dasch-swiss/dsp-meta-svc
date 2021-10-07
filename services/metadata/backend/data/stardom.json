@@ -27,7 +27,7 @@
                 "text": "Cinematography "
             },
             {
-                "en": "Theatre and Cinema"
+                "en": "10406 Theatre and Cinema"
             }
         ],
         "endDate": "2020-08-31",
@@ -110,7 +110,7 @@
                     "en": "The ontology of the project comprises 15 distinct classes, 68 properties, mainly describing archive documents (Piece) divided into 7 distinct categories (contractual and legal documents, personal correspondence, published articles, documents related to the organisation of work, script documents, personal documents, documents related to promotion), and listing, for each piece, the natural or legal persons concerned by the writing of the document and, for each page of document, the persons, works and film projects mentioned.\r Some images (pages) are annotated (regions of interest)."
                 }
             ],
-            "accessConditions": "XX - Access Conditions should be one of 'open', 'restricted' or 'closed', but found: partly restricted due to copyright issue.",
+            "accessConditions": "restricted",
             "dateCreated": "2018-02-16",
             "dateModified": "2021-02-02",
             "datePublished": "2018-02-16",

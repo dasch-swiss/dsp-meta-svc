@@ -69,13 +69,7 @@
                 "url": "https://chronontology.dainst.org/period/IOGdcZ2CU1tz",
                 "text": "18th and 19th Centuries"
             }
-        ],
-        "url": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "https://delille.dasch.swiss/",
-            "text": "https://delille.dasch.swiss/"
-        }
+        ]
     },
     "datasets": [
         {
@@ -96,18 +90,11 @@
             "accessConditions": "restricted",
             "dateCreated": "2021-02-28",
             "dateModified": "2021-02-28",
-            "distribution": {
-                "__type": "URL",
-                "type": "URL",
-                "url": "https://delille.dasch.swiss",
-                "text": "https://delille.dasch.swiss"
-            },
             "additional": [
                 {
                     "en": "NIE-INE Documentation for the Delille Project"
                 }
             ],
-            "howToCite": "Reconstruire Delille, 2021, https://delille.dasch.swiss",
             "languages": [
                 {
                     "en": "English",

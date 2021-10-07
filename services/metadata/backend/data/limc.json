@@ -359,7 +359,13 @@
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-002"
             ],
             "name": "Gesuch im Bereich Bildung und Wissenschaft",
-            "number": "2015-2371/1.2"
+            "number": "2015-2371/1.2",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "http://www.ernst-goehner-stiftung.ch/index.php/de",
+                "text": "http://www.ernst-goehner-stiftung.ch/index.php/de"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-080E-grant-003",
@@ -369,7 +375,14 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-003"
             ],
-            "number": "14/17-18"
+            "name": "Ceramica Stiftung",
+            "number": "14/17-18",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://ceramica-ch.ch/",
+                "text": "https://ceramica-ch.ch/"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-080E-grant-004",
@@ -380,7 +393,13 @@
                 "http://ns.dasch.swiss/repository#dsp-080E-organization-004"
             ],
             "name": "Gesuch im Bereich Kultur",
-            "number": "19-109"
+            "number": "19-109",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://www.binding-stiftung.ch/",
+                "text": "https://www.binding-stiftung.ch/"
+            }
         }
     ]
 }

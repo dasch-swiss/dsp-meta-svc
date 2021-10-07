@@ -27,10 +27,13 @@
                 "text": "Language and literature"
             },
             {
-                "en": "Romance languages and literature"
+                "en": "10502 Romance languages and literature"
             },
             {
-                "fr": "http://skos.um.es/unesco6/550613 \r  \r http://skos.um.es/unesco6/550613 \r  \r http://skos.um.es/unesco6/550613"
+                "__type": "URL",
+                "type": "Skos",
+                "url": "http://skos.um.es/unesco6/550613",
+                "text": "History of Literature"
             }
         ],
         "endDate": "2021-12-31",

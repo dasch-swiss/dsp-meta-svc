@@ -27,7 +27,7 @@
                 "text": "History of art"
             },
             {
-                "en": "Visual arts and Art history"
+                "en": "10404 Visual arts and Art history"
             }
         ],
         "endDate": "2023-11-30",
@@ -94,10 +94,16 @@
         "startDate": "2018-12-01",
         "temporalCoverage": [
             {
-                "en": "http://chronontology.dainst.org/period/ROL7rN1qOgMe"
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/ROL7rN1qOgMe",
+                "text": "Gothic (Medieval)"
             },
             {
-                "en": "http://n2t.net/ark:/99152/p0qhb66xnj2"
+                "__type": "URL",
+                "type": "Periodo",
+                "url": "http://n2t.net/ark:/99152/p0qhb66xnj2",
+                "text": "Moyen Âge classique"
             }
         ],
         "url": {

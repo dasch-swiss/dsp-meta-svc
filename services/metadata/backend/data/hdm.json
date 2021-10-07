@@ -101,8 +101,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "http://www.salsah.org",
-            "text": "www.salsah.org"
+            "url": "https://data.dasch.swiss/hdm/",
+            "text": "https://data.dasch.swiss/hdm/"
         }
     },
     "datasets": [

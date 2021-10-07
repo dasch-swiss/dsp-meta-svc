@@ -21,16 +21,16 @@
         },
         "disciplines": [
             {
-                "en": "Ecclesiastical history"
+                "en": "10103 Ecclesiastical history"
             },
             {
-                "en": "General history (without pre-and early history)"
+                "en": "10301 General history (without pre-and early history)"
             },
             {
-                "en": "Religious studies, Theology"
+                "en": "10102 Religious studies, Theology"
             },
             {
-                "en": "Swiss history"
+                "en": "10302 Swiss history"
             }
         ],
         "endDate": "2018-03-31",
@@ -87,7 +87,8 @@
             {
                 "__type": "URL",
                 "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0367jz"
+                "url": "http://n2t.net/ark:/99152/p0367jz",
+                "text": "Century of Reformation (Europe)"
             }
         ],
         "url": {

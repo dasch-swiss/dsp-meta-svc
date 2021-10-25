@@ -2,6 +2,8 @@
   import { projectMetadata, handleSnackbar } from "../store";
   import { getText, findObjectByID, findGrantByID, findOrganizationByID } from "../functions";
 
+  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
+
   const truncateString = (s: string) => {
     // TODO: can this be improved? 1. dynamic langth depending on space; 2. show full text on hover
     if (s.length > 35) {
@@ -23,10 +25,11 @@
 
 {#if $projectMetadata}
   <!-- Shortcode -->
-  <div class=label>DSP Internal Shortcode</div>
   {#if $projectMetadata?.project.shortcode}
+    <div class=label>DSP Internal Shortcode</div>
     <div class=data>{$projectMetadata?.project.shortcode}</div>
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>DSP Internal Shortcode</div>
     <div class=warning>Shortcode missing</div>
   {/if}
 
@@ -35,26 +38,27 @@
   <div class=data>{$projectMetadata?.project.dataManagementPlan ? "available" : "unavailable"}</div>
 
   <!-- How to Cite -->
-  <div class=label>
-    <span style="display:inline">
-      How To Cite
-      {#if $projectMetadata?.project.howToCite}
-        <button on:click={copyToClipboard} title="copy citation to the clipboard">
-          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-        </button>
-      {/if}
-    </span>
-  </div>
   {#if $projectMetadata?.project.howToCite}
+    <div class=label>
+      <span style="display:inline">
+        How To Cite
+        {#if $projectMetadata?.project.howToCite}
+          <button on:click={copyToClipboard} title="copy citation to the clipboard">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          </button>
+        {/if}
+      </span>
+    </div>
     <div class=data>{$projectMetadata?.project.howToCite}</div>
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>How To Cite</div>
     <div class=warning>How-to-cite missing</div>
   {/if}
 
 
   <!-- Disciplines -->
-  <div class=label>Disciplines</div>
   {#if $projectMetadata?.project.disciplines}
+    <div class=label>Disciplines</div>
     {#each $projectMetadata?.project.disciplines as d}
       {#if d.__type === "URL"}
         <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
@@ -66,13 +70,14 @@
         {/if}
       {/if}
     {/each}
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Disciplines</div>
     <div class=warning>Disciplines missing</div>
   {/if}
 
   <!-- Temporal Coverage -->
-  <div class=label>Temporal Coverage</div>
   {#if $projectMetadata?.project.temporalCoverage}
+    <div class=label>Temporal Coverage</div>
     {#each $projectMetadata?.project.temporalCoverage as t}
       {#if t.__type === "URL"}
         <a class="data external-link" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
@@ -80,26 +85,29 @@
         <div class=data>{getText(t)}</div>
       {/if}
     {/each}
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Temporal Coverage</div>
     <div class=warning>Temporal coverage missing</div>
   {/if}
 
 
   <!-- Spatial Coverage -->
-  <div class=label>Spatial Coverage</div>
   {#if $projectMetadata?.project.spatialCoverage}
+    <div class=label>Spatial Coverage</div>
     {#each $projectMetadata?.project.spatialCoverage as s}
       <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
     {/each}
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Spatial Coverage</div>
     <div class=warning>Spatial coverage missing</div>
   {/if}
 
   <!-- Start Date -->
-  <div class=label>Start date</div>
   {#if $projectMetadata?.project.startDate}
+    <div class=label>Start date</div>
     <div class=data>{$projectMetadata?.project.startDate}</div>
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Start date</div>
     <div class=warning>Start date missing</div>
   {/if}
   
@@ -110,10 +118,9 @@
   {/if}
 
   <!-- Funders -->
-  <div class=label>Funder</div>
-  {#if $projectMetadata?.project.funders}
+  {#if $projectMetadata?.project.funders && $projectMetadata?.project.funders.map((o) => {return findObjectByID(o)}).filter(e => e).length>0 }
+    <div class=label>Funder</div>
     {#each $projectMetadata?.project.funders.map((o) => {return findObjectByID(o)}) as f}
-      {#if f}
         {#if f.__type === "Person"}
           {console.log('person',f)}
           <!-- TODO: handle funding person - need to find example -->
@@ -121,11 +128,9 @@
         {:else if f.__type === "Organization"}
           <div class=data>{f.name}</div>
         {/if}
-      {:else}
-        <div class=warning>funders missing</div>
-      {/if}
     {/each}
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Funder</div>
     <div class=warning>funders missing</div>
   {/if}
   
@@ -175,10 +180,11 @@
   {/if}
 
   <!-- URLs -->
-  <div class=label>Project Website</div>
   {#if $projectMetadata?.project.url}
+    <div class=label>Project Website</div>
     <a class="data external-link" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Project Website</div>
     <div class=warning>URL missing</div>
   {/if}
   <!-- Secondary URL -->
@@ -187,15 +193,16 @@
   {/if}
 
   <!-- Keywords -->
-  <div class=label>Keywords</div>
   {#if $projectMetadata?.project.keywords}
+    <div class=label>Keywords</div>
     <span class="keyword">{$projectMetadata?.project.keywords.map(t => {return getText(t)}).join(", ")}</span>
-  {:else}
+  {:else if isTestEnvironment}
+    <div class=label>Keywords</div>
     <div class=warning>keywords missing</div>
   {/if}
 
-{:else}
-  <div class=warning>Project not available</div>
+  {:else if isTestEnvironment}
+    <div class=warning>Project not available</div>
 {/if}
 
 <style>

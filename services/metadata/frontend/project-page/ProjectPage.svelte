@@ -15,6 +15,7 @@
   let isDescriptionExpanded: boolean;
   let descriptionLinesNumber: number;
   let arePublicationsExpanded: boolean;
+  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
 
   onMount(async () => {
     // wait with component creation for the data to be fetched
@@ -55,11 +56,16 @@
   };
 
   const getDivHeight = () => {
-    const el = document.getElementById("description");
-    const lineHeight = parseInt(
-      window.getComputedStyle(el).getPropertyValue("line-height")
-    );
-    const divHeight = el.scrollHeight;
+    let lineHeight: number;
+    let divHeight: number;
+    try {
+      const el = document.getElementById("description");
+      divHeight = el.scrollHeight;
+      lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
+    } catch (error) {
+      lineHeight = 20;
+      divHeight = 19;
+    }
     descriptionLinesNumber = divHeight / lineHeight;
     isDescriptionExpanded = descriptionLinesNumber > 6 ? false : true;
   };
@@ -88,7 +94,7 @@
         <h1 class="title top-heading">
           {$projectMetadata?.project.name}
         </h1>
-      {:else}
+      {:else if isTestEnvironment}
         <div class="warning top-heading">Project Name missing</div>
       {/if}
       {#if $projectMetadata?.project.alternativeNames}
@@ -116,7 +122,7 @@
                 show {isDescriptionExpanded ? "less" : "more"}
               </div>
             {/if}
-          {:else}
+          {:else if isTestEnvironment}
             <div class="warning" id="description">Description missing</div>
           {/if}
         </div>

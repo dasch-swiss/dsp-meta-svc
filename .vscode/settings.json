@@ -6,7 +6,8 @@
     // "editor.defaultFormatter": "svelte.svelte-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-    // "editor.formatOnSave": true
+    // "editor.defaultFormatter": "svelte.svelte-vscode",
+    "editor.formatOnSave": false
   },
   "[go]": {
     "editor.insertSpaces": false,

@@ -9,15 +9,23 @@
 
   let isAbstractExpanded: boolean;
   let abstractLinesNumber: number;
+  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
 
   const toggleExpand = () => {
     isAbstractExpanded = !isAbstractExpanded;
   };
 
   onMount(() => {
-    const el = document.getElementById('abstract');
-    const lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
-    const divHeight = el.scrollHeight;
+    let lineHeight: number;
+    let divHeight: number;
+    try {
+      const el = document.getElementById("abstract");
+      divHeight = el.scrollHeight;
+      lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
+    } catch (error) {
+      lineHeight = 20;
+      divHeight = 19;
+    }
     abstractLinesNumber = divHeight / lineHeight;
     isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
   });
@@ -44,7 +52,7 @@
 
 <div id=dataset in:fade={{duration: 200}}>
   {#if dataset}
-  <!-- Alternative titles -->
+    <!-- Alternative titles -->
     {#if dataset?.alternativeTitles}
       <div>
         <span class=label>Alternative Title</span>
@@ -54,24 +62,30 @@
 
     <div class=grid-wrapper>
       <!-- Access conditions -->
-      <div>
-        <span class=label>Access</span>
-          {#if dataset?.accessConditions}
-            <span class=data>{dataset?.accessConditions}</span>
-          {:else}
-            <span class="warning data">access conditions missing</span>
-          {/if}
-      </div>
+      {#if dataset?.accessConditions}
+        <div>
+          <span class=label>Access</span>
+          <span class=data>{dataset?.accessConditions}</span>
+        </div>
+      {:else if isTestEnvironment}
+        <div>
+          <span class=label>Access</span>
+          <span class="warning data">access conditions missing</span>
+        </div>
+      {/if}
 
       <!-- Status -->
-      <div>
-        <span class=label>Status</span>
-          {#if dataset?.status}
-            <span class=data>{dataset?.status}</span>
-          {:else}
-            <span class="warning data">status missing</span>
-          {/if}
-      </div>
+      {#if dataset?.status}
+        <div>
+          <span class=label>Status</span>
+          <span class=data>{dataset?.status}</span>
+        </div>
+      {:else if isTestEnvironment}
+        <div>
+          <span class=label>Status</span>
+          <span class="warning data">status missing</span>
+        </div>
+      {/if}
 
       <!-- Dates -->
       {#if dataset.dateCreated}
@@ -94,14 +108,17 @@
       {/if}
 
       <!-- Type of Data -->
-      <div>
-        <span class=label>Type of Data</span>
-          {#if dataset?.typeOfData}
-            <span class=data>{dataset?.typeOfData.join(', ')}</span>
-          {:else}
-            <span class="warning data">type of data missing</span>
-          {/if}
-      </div>
+      {#if dataset?.typeOfData}
+        <div>
+          <span class=label>Type of Data</span>
+          <span class=data>{dataset?.typeOfData.join(', ')}</span>
+        </div>
+      {:else if isTestEnvironment}
+        <div>
+          <span class=label>Type of Data</span>
+          <span class="warning data">type of data missing</span>
+        </div>
+      {/if}
 
       <!-- Additional -->
       {#if dataset?.additional}
@@ -121,34 +138,42 @@
 
     <!-- License -->
     <!-- TODO: check how this looks with multiple licenses -->
-    <div>
-      <span class=label>License</span>
-        {#if dataset?.licenses}
-          {#each dataset?.licenses as l}
-            <div class=data>
-              <a href={l.license.url} class=external-link target=_>{l.license.text}</a>
-              {#if l.details}
-                <div>{l.details}</div>
-              {/if}
-              <div>({l.date})</div>
-            </div>
-          {/each}
-        {:else}
-          <span class="warning data">licenses missing</span>
-        {/if}
-    </div>
+    {#if dataset?.licenses}
+      <div>
+        <span class=label>License</span>
+        {#each dataset?.licenses as l}
+          <div class=data>
+            <a href={l.license.url} class=external-link target=_>{l.license.text}</a>
+            {#if l.details}
+              <div>{l.details}</div>
+            {/if}
+            <div>({l.date})</div>
+          </div>
+        {/each}
+      </div>
+    {:else if isTestEnvironment}
+      <div>
+        <span class=label>License</span>
+        <span class="warning data">licenses missing</span>
+      </div>
+    {/if}
 
     <!-- Languages -->
-    <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
-      <div>
-        <span class=label>Languages</span>
-        {#if dataset?.languages}
+    {#if dataset?.languages}
+      <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
+        <div>
+          <span class=label>Languages</span>
           <span class=data>{dataset?.languages.map(l => {return getText(l)}).join(', ')}</span>
-        {:else}
-          <span class="warning data">languages missing</span>
-        {/if}
+        </div>
       </div>
-    </div>
+    {:else if isTestEnvironment}
+      <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
+        <div>
+          <span class=label>Languages</span>
+          <span class="warning data">languages missing</span>
+        </div>
+      </div>
+    {/if}
 
     <!-- URLs -->
     {#if dataset?.urls}
@@ -165,26 +190,29 @@
     {/if}
 
     <!-- How To Cite -->
-    <div class="property-row">
-      <span class=label style="display:inline">
-        How To Cite
-        {#if dataset?.howToCite}
-          <button on:click={copyToClipboard} title="copy citation to the clipboard">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-          </button>
-        {/if}
-      </span>
-      {#if dataset?.howToCite}
+    {#if dataset?.howToCite}
+      <div class="property-row">
+        <span class=label style="display:inline">
+          How To Cite
+          {#if dataset?.howToCite}
+            <button on:click={copyToClipboard} title="copy citation to the clipboard">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            </button>
+          {/if}
+        </span>
         <span id=how-to-cite class=data>{dataset?.howToCite}</span>
-      {:else}
+      </div>
+    {:else if isTestEnvironment}
+      <div class="property-row">
+        <span class=label style="display:inline">How To Cite</span>
         <span class="warning data">how to cite missing</span>
-      {/if}
-    </div>
+      </div>
+    {/if}
 
     <!-- Abstract -->
-    <div>
-      <span class=label>Abstract</span>
-      {#if dataset?.abstracts}
+    {#if dataset?.abstracts}
+      <div>
+        <span class=label>Abstract</span>
         <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
           {#each dataset?.abstracts as a}
             {#if a.__type === "URL"}
@@ -194,18 +222,21 @@
             {/if}
           {/each}
         </div>
-      {:else}
-        <span class="warning data" id="abstract">abstract missing</span>
+      </div>
+      {#if abstractLinesNumber > 6}
+        <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
       {/if}
-    </div>
-    {#if abstractLinesNumber > 6}
-      <div on:click={toggleExpand} class=expand-button>show {isAbstractExpanded ? "less" : "more"}</div>
+    {:else if isTestEnvironment}
+      <div>
+        <span class=label>Abstract</span>
+        <span class="warning data" id="abstract">abstract missing</span>
+      </div>
     {/if}
 
     <!-- Attribution -->
-    <span class=label>Attributions</span>
-    <div class=grid-wrapper>
-      {#if dataset?.attributions}
+    {#if dataset?.attributions}
+      <span class=label>Attributions</span>
+      <div class=grid-wrapper>
         {#each dataset?.attributions as a}
           <div class="attributions data">
             <div class=role>{a.roles.join(", ")}</div>
@@ -236,10 +267,13 @@
             {/each}
           </div>
         {/each}
-      {:else}
+      </div>
+    {:else if isTestEnvironment}
+      <span class=label>Attributions</span>
+      <div class=grid-wrapper>
         <span class="warning data">attributions missing</span>
-      {/if}
-    </div>
+      </div>
+    {/if}
 
   {/if}
 </div>

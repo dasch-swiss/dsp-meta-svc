@@ -16,8 +16,8 @@ jobs:
           fetch-depth: 1
       - uses: joschi/setup-jdk@v2
         with:
-          java-version: '11' # The OpenJDK version to make available on the path
-          architecture: 'x64' # defaults to 'x64'
+          java-version: "11" # The OpenJDK version to make available on the path
+          architecture: "x64" # defaults to 'x64'
       - name: install requirements
         run: sudo apt-get install ca-certificates-java expect
       - name: Set up Python 3.8
@@ -27,10 +27,16 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: "14"
       - name: Install dependencies
         run: |
           npm install --global @bazel/bazelisk
+      - name: Install Metadata Python Tool
+        run: |
+          make install-metadata-tool
+      - name: Run Metadata Conversion
+        run: |
+          make convert-metadata
       - name: cache maven artifacts
         uses: actions/cache@v1
         with:

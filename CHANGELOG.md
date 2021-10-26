@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.5.0...v1.6.0) (2021-10-25)
+
+
+### Bug Fixes
+
+* bing back Fathom analytics ([#21](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/21)) ([048ef38](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/048ef385e619d5bf6a88a09a0d6a9bb1c2fc7e71))
+
+
+### Enhancements
+
+* hide warnings for missing fields on prod environment (DEV-120) ([#19](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/19)) ([c7a3675](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c7a3675bf1c0162666cd3826116789b2abb2ad69))
+
 ## [1.5.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.4.3...v1.5.0) (2021-10-06)
 
 

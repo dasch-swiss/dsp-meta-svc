@@ -6,5 +6,6 @@ filegroup(
         "*.json",
         "*.jsonld",
         "*.ttl",
+        "*.xml",
     ]),
 )

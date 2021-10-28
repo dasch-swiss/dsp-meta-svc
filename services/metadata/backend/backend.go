@@ -30,6 +30,7 @@ type Projects struct {
 	dataJSON   []Project
 	dataJSONLD []Project
 	dataTTL    []Project
+	dataXML    []Project
 }
 
 // All projects that are being served
@@ -116,7 +117,9 @@ func loadProjectData() Projects {
 			filename := strings.TrimSuffix(file, filepath.Ext(file))
 			pathLD := pathPrefix + filename + ".jsonld"
 			pathTTL := pathPrefix + filename + ".ttl"
+			pathXML := pathPrefix + filename + ".xml"
 
+			// load JSON-LD
 			byteValueLD, err := ioutil.ReadFile(pathLD)
 			if err == nil {
 				jsonMap := make([]map[string]interface{}, 100)
@@ -133,6 +136,7 @@ func loadProjectData() Projects {
 				}
 			}
 
+			// load Turtle
 			byteValueTTL, err := ioutil.ReadFile(pathTTL)
 			if err == nil {
 				ttl := string(byteValueTTL)
@@ -141,6 +145,18 @@ func loadProjectData() Projects {
 					Name:        project.Name,
 					Description: project.Description,
 					Metadata:    ttl,
+				})
+			}
+
+			// load RDF/XML
+			byteValueXML, err := ioutil.ReadFile(pathXML)
+			if err == nil {
+				xml := string(byteValueXML)
+				res.dataXML = append(res.dataXML, Project{
+					ID:          project.ID,
+					Name:        project.Name,
+					Description: project.Description,
+					Metadata:    xml,
 				})
 			}
 		}
@@ -166,6 +182,11 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 		matches = make([]Project, len(projects.dataTTL))
 		copy(matches, projects.dataTTL)
 		log.Printf("TURTLE request for: %v", r.URL)
+	} else if contentType == "application/rdf+xml" {
+		w.Header().Set("Content-Type", "application/json")
+		matches = make([]Project, len(projects.dataTTL))
+		copy(matches, projects.dataXML)
+		log.Printf("RDF-XML request for: %v", r.URL)
 	} else {
 		w.Header().Set("Content-Type", "application/json")
 
@@ -215,33 +236,62 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 	// depends on the Content-Type, return JSON or JSON-LD data
 	contentType := r.Header.Get("Content-Type")
 	if contentType == "application/ld+json" {
-		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSONLD
 		log.Printf("JSON-LD request for: %v", r.URL)
+		for _, item := range data {
+			for item.ID == params["id"] {
+				w.Header().Set("Content-Type", "application/json")
+				json.NewEncoder(w).Encode(item.Metadata)
+				return
+			}
+		}
+		w.WriteHeader(http.StatusNotFound)
+		message := fmt.Sprintf("No JSON-LD serialization available for project %v", params["id"])
+		w.Write([]byte(message))
+		return
 	} else if contentType == "text/turtle" {
-		w.Header().Set("Content-Type", "text/turtle")
 		data = projects.dataTTL
 		log.Printf("TURTLE request for: %v", r.URL)
 		for _, item := range data {
 			for item.ID == params["id"] {
+				w.Header().Set("Content-Type", "text/turtle")
 				w.Write([]byte(item.Metadata.(string)))
 				return
 			}
 		}
+		w.WriteHeader(http.StatusNotFound)
+		message := fmt.Sprintf("No Turtle serialization available for project %v", params["id"])
+		w.Write([]byte(message))
+		return
+	} else if contentType == "application/rdf+xml" {
+		data = projects.dataXML
+		log.Printf("RDF-XML request for: %v", r.URL)
+		for _, item := range data {
+			for item.ID == params["id"] {
+				w.Header().Set("Content-Type", "application/rdf+xml")
+				w.Write([]byte(item.Metadata.(string)))
+				return
+			}
+		}
+		w.WriteHeader(http.StatusNotFound)
+		message := fmt.Sprintf("No RDF-XML serialization available for project %v", params["id"])
+		w.Write([]byte(message))
+		return
 	} else {
-		w.Header().Set("Content-Type", "application/json")
 		data = projects.dataJSON
 		log.Printf("JSON request for: %v", r.URL)
-	}
-
-	for _, item := range data {
-		for item.ID == params["id"] {
-			json.NewEncoder(w).Encode(item.Metadata)
-			return
+		for _, item := range data {
+			for item.ID == params["id"] {
+				w.Header().Set("Content-Type", "application/json")
+				json.NewEncoder(w).Encode(item.Metadata)
+				return
+			}
 		}
+		w.WriteHeader(http.StatusNotFound)
+		message := fmt.Sprintf("No project %v available", params["id"])
+		w.Write([]byte(message))
+		return
 	}
-
-	json.NewEncoder(w).Encode(&Project{})
 }
 
 // getSitemap returns the sitemap.xml containing routes to all project pages.
@@ -335,11 +385,12 @@ func main() {
 
 	// load Data
 	projects = loadProjectData()
-	log.Printf("Loaded %v files (%v JSON + %v JSON-LD + %v TTL)",
+	log.Printf("Loaded %v files (%v JSON + %v JSON-LD + %v TTL + %v RDF-XML)",
 		len(projects.dataJSON)+len(projects.dataJSONLD)+len(projects.dataTTL),
 		len(projects.dataJSON),
 		len(projects.dataJSONLD),
-		len(projects.dataTTL))
+		len(projects.dataTTL),
+		len(projects.dataXML))
 
 	// init Router
 	router := mux.NewRouter()

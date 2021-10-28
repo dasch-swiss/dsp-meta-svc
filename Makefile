@@ -3,6 +3,14 @@
 # THIS_FILE := $(lastword $(MAKEFILE_LIST))
 THIS_FILE := $(abspath $(lastword $(MAKEFILE_LIST)))
 CURRENT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+PYTHON_VERSION := $(wordlist 2,4,$(subst ., ,$(shell python --version 2>&1)))
+PYTHON_VERSION_MAJOR := $(word 1,${PYTHON_VERSION})
+
+ifeq (${PYTHON_VERSION_MAJOR}, 2)
+	PYTHON := $(shell which python3)
+else
+	PYTHON := $(shell which python)
+endif
 
 include vars.mk
 
@@ -62,6 +70,18 @@ metadata-service-run: build ## start the metadata-service
 .PHONY: metadata-service-test
 metadata-service-test: ## run all metadata-service tests
 	@bazel test //services/metadata/go_ca_backend/...
+
+#################################
+# Metadata conversion targets
+#################################
+
+.PHONY: install-metadata-tool
+install-metadata-tool: ## install the metadata python tool
+	${PYTHON} -m pip install dsp-metadata-conversion
+
+.PHONY: convert-metadata
+convert-metadata: ## convert metadata from JSON to RDF
+	convert-metadata services/metadata/backend/data -d
 
 #################################
 # Other targets

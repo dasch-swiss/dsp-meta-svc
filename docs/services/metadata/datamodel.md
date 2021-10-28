@@ -330,10 +330,10 @@ The JSON representation is "flat", i.e. not nested, so all top-level types are p
 
 Metadata is available in RDF. The mappings are defined in the tables above.
 
-Currently, only `JSON-LD` and `ttl` serializations are available.
+Currently, `JSON-LD`, `ttl` and `RDF-XML` serializations are available.
 
 Both metadata routes support JSON and RDF at the same time. RDF can be requested by means of content negotiation.
-Adding the header `Content-Type: application/ld+json` or `Content-Type: text/turtle` to the request, respectively will force the response to be RDF.
+Adding the header `Content-Type: application/ld+json`, `Content-Type: application/rdf+xml` or `Content-Type: text/turtle` to the request, respectively will force the response to be RDF.
 
 __Get a single project__
 

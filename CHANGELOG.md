@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.6.0...v1.7.0) (2021-10-28)
+
+
+### Enhancements
+
+* automate metadata conversion (DEV-164) ([#22](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/22)) ([54cd0ac](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/54cd0acffa006a1dee920c2999282e2c4f0ffde6))
+
 ## [1.6.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.5.0...v1.6.0) (2021-10-25)
 
 

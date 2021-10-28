@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install --global @bazel/bazelisk
-      - name: Install Metadata Python Tool
+      - name: Install Metadata Converter
         run: |
           make install-metadata-tool
       - name: Run Metadata Conversion

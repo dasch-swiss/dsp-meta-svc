@@ -77,11 +77,11 @@ metadata-service-test: ## run all metadata-service tests
 
 .PHONY: install-metadata-tool
 install-metadata-tool: ## install the metadata python tool
-	${PYTHON} -m pip install dsp-metadata-gui
+	${PYTHON} -m pip install dsp-metadata-conversion
 
 .PHONY: convert-metadata
 convert-metadata: ## convert metadata from JSON to RDF
-	dsp-metadata-convert services/metadata/backend/data -d
+	convert-metadata services/metadata/backend/data -d
 
 #################################
 # Other targets

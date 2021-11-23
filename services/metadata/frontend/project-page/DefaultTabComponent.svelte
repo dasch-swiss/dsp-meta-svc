@@ -252,7 +252,11 @@
                     <div>{org.name}</div>
                   {/each}
                 {/if}
-                <div>{p.jobTitles[0]}</div>
+                {#if p.jobTitles && p.jobTitles[0]}
+                  <div>{p.jobTitles[0]}</div>
+                {:else if isTestEnvironment}
+                  <dif class="warning">Job Title missing</dif>
+                {/if}
                 {#if p.email}
                   <a class=email href="mailto:{p.email}">{p.email}</a>
                 {/if}

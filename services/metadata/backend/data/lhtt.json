@@ -1,0 +1,636 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-meta-svc/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "__id": "http://ns.dasch.swiss/repository#dsp-0820-project",
+        "__type": "Project",
+        "__createdAt": "1637624194861666000",
+        "__createdBy": "dsp-metadata-gui",
+        "teaserText": "The project focuses on a burial group of mostly unfinished rock tombs at the hill of Sheikh Abd el-Qurna in Thebes-West (Luxor/Egypt).",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-0820-dataset-000"
+        ],
+        "description": {
+            "de": "Im Fokus des Projekts steht eine Gräbergruppe von meistens unfertig gebliebenen Felsgräbern am Berghügel von Sheikh Abd el-Qurna in Theben-West (Luxor/Ägypten). Sie waren Teil eines Planfriedhofes, der für eine kleine, in enger Beziehung mit dem regierenden König stehende Elite zwischen 1450-1400 v.Chr. angelegt worden war. Ihre Nutzungsgeschichte reicht, mit langen Unterbrechungen, von der späten Bronzezeit bis in das frühe 19. Jahrhundert.\n\nInhalt und Ziel des Forschungsprojekts\n\n Der Friedhof ist Ausgangsbasis für Untersuchungen der Landschaftsüberbauung, des Felsgrabbaus und -verfalls sowie der Nutzung monumentaler Grabanlagen in Theben über lange Zeiträume hinweg. Das Projekt hat sich zur Aufgabe gestellt, Lebensgeschichten des Gräber-Clusters nachzuzeichnen und der Frage nachzugehen, wie die Felsanlagen im Laufe ihrer Nutzungsgeschichte mit ihrer natürlichen und gebauten Umgebung, mit Institutionen, Menschen und Dingen interagierten und auf welche Weise sich dabei Handlungen und Ereignisse in der Materialiät der Gräber niederschlugen. Die Entwicklung eines interaktiven Datenbanksystems trägt dieser auf grossen Datensätzen basierenden Forschungsausrichtung Rechnung.\n\nWissenschaftlicher und gesellschaftlicher Kontext\n\nDas Projekt sieht sich einem integrativen Forschungsmodell verpflichtet, das moderne archäologische, historische und naturwissenschaftliche Fragestellungen gleichermassen berücksichtigt und bestrebt ist, neue Technologien und Forschungsmethoden aus der Archäometrie, Geologie, Geomatik, Photogrammetrie, Anthropologie, Medizin und Biologie auch in der ägyptischen Archäologie zur Anwendung zu bringen. Neben der zügigen Veröffentlichung aktueller multidisziplinärer Forschungsergebnisse in Zeitschriftenartikeln werden der Fachwelt durch Internetzugang ausgewählte Datensätze zur Verfügung gestellt; als weiterer Schritt ist eine eingeschränkte öffentliche Nutzung der Datenbank geplant. Das Projekt gewährleistet den professionellen Umgang mit antiken Objekten und deren nachhaltige Konservierung, ein prioritäres Anliegen auch der ägyptischen Behörden, und ermöglicht die Ausbildung lokaler Spezialisten in Archäologie und Restaurierung."
+        },
+        "disciplines": [
+            {
+                "en": "10402 Archaeology"
+            },
+            {
+                "en": "20801 Geology"
+            },
+            {
+                "en": "30204 Anthropology, Primatology"
+            },
+            {
+                "en": "30717 Clinical Pathophysiology"
+            }
+        ],
+        "endDate": "2019-08-31",
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-0820-organization-000"
+        ],
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-0820-grant-000"
+        ],
+        "keywords": [
+            {
+                "en": "burial archaeology"
+            },
+            {
+                "en": "geological setting of Theban tombs"
+            },
+            {
+                "en": "inhabitation of Theban tombs"
+            },
+            {
+                "en": "landscape archaeology"
+            },
+            {
+                "en": "physical biographies"
+            },
+            {
+                "en": "rock tomb construction"
+            },
+            {
+                "en": "tomb decoration techniques and styles"
+            },
+            {
+                "en": "use and reuse of Theban tombs"
+            }
+        ],
+        "name": "Life Histories of Theban Tombs",
+        "publications": [
+            "FriedliEphraim, BanzJonathan, GojcicZan, WieserAndreas (2018), Fusion of laser scanning and photogrammetric data for the documentation and VR visualization of an archaeological tomb complex, in FIG 2018 Embracing our smart world where the continents connect Proceedings, IstanbulInternational Federation of Surveyors (FIG), Copenhagen.",
+            "HunkelerCharlotte (2019), Rest in pieces. Fragments of a Twenty-fifth/Twenty-sixth Dynasty burial ensemble, in Strudwick Helen, Dawson J. (ed.), Oxbow Books, Oxford, 203-203.",
+            "HunkelerCharlotte, A Ramesside coffin ensemble: what information can be gained from fragmented and incomplete material?, in Excavating the Extraordinary. Challenges and Merit of Working with Small Finds , University of Heidelberg, Heidelberg.",
+            "Loprieno-Gnirs Andrea (ed.), Life Histories of Theban Tombs. Transdisciplinary Investigations of a Cluster of Rock-Cut Tombs at Sheikh 'Abd el-Qurna, American University Press, Cairo.",
+            "Loprieno-Gnirs Andrea, Ziegler Martin, Colldeweih Rachael, Powroznik Klaus, The Swiss Mission at Sheikh Abd el-Qurna: Report on the Winter-Spring Season 2015/2016, in Annales du Service des Antiquités de l’Égypte.",
+            "Loprieno-GnirsAndrea (2018), Creuser une tombe dans la colline thébaine: le projet archéologique Life Histories of Theban Tombs de l'université de Bâle, in Bulletin de la société française d'égyptologie, 199, 100-126.",
+            "Loprieno-GnirsAndrea, ZieglerMartin, The Role of Geology in the Construction of Rock-Cut Tombs at Sheikh 'Abd el-Qurna, in Hagen Fredrik, Olsen Rune, Soliman Daniel (ed.), Cambridge University Press, Cambridge.",
+            "MüllerMatthias, Monastery, village, or garbage heap? Texts and contexts mainly from the South Asasif, in Mihálykó Á. T. , Maravela A. (ed.), University of Michigan Press, Ann Arbor.",
+            "SartoriMarina, Art as writing, writing as art. Case studies from selected New Kingdom Theban tombs, in Proceedings of the 4th British Egyptology Congress, ManchesterEgypt Exploration Society, London.",
+            "SartoriMarina, Die visuelle Komposition „Gard. R4” („Brot auf Schilfmatte“) zwischen schriftlicher und bildlicher Repräsentation, in (Un)Sterblichkeit: Schrift–Körper–Kult: Beiträge des neunten Berliner Arbeitskreises Junge Aegyptolo, BerlinHarrassowitz, Wiesbaden.",
+            "Underwood Matthew (2017), Domestic Occupation of TT 95 in Southern Sheikh Abd el-Qurna in the 1st millennium AD, in Donovan L., di Biase-Dyson C. (ed.), Ugarit Verlag, Münster, 225-240.",
+            "Underwood Matthew, Christian Era Occupation of TT 95 in Southern Sheikh Abd el-Qurna in the 1st millennium AD, in Tristan Yann (ed.), Macquary University, Sydney.",
+            "Ziegler Martin, Colldeweih Rachael, Wolter Andrea, Loprieno-Gnirs Andrea (2019), Rock mass quality and preliminary analysis of the stability of ancient rock-cut Theban tombs at Sheikh ‘Abd el-Qurna, Egypt, in Bulletin of Engineering Geology and the Environment, 1-27."
+        ],
+        "shortcode": "0820",
+        "startDate": "2015-11-01"
+    },
+    "datasets": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-dataset-000",
+            "__type": "Dataset",
+            "__createdAt": "1637624195460923000",
+            "__createdBy": "dsp-metadata-gui",
+            "abstracts": [
+                {
+                    "en": "The project originates in the study of a group of mostly unfinished rock cut tombs and their mutual relations at the hillside of Sheikh Abd el-Qurna in Western Thebes and understands this cluster as part of a planned cemetery opened up for a small elite with close personal links to the king around 1450-1400 BC. It draws on an integrative archaeological perspective, which combines cultural historical and scientific investigation methods and questions, and aims at retracing the materialized life histories of tombs, i.e. how they interacted with their built and natural environment, with institutions and with people from their construction to modern times. The project seeks to re-personalize human activities in the past such as operations and procedures related to tomb building and decoration, funerary practices, inhabitation, looting, etc., it will therefore prioritize research techniques and procedures that give relevance to the detail and variation. The digital collection and processing of data and the development of an open source interactive database system will support this research strategy. Excavations of TT K555, a tomb of the cluster still buried under debris, are archaeologically promising as the debris may have protected deposits and structures from modern continuity disruptions."
+                }
+            ],
+            "attributions": [
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-011",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-015",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-006",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-012",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-013",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-004",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-019",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-001",
+                    "roles": [
+                        "Co-applicant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-008",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-007",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-016",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-003",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-009",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-000",
+                    "roles": [
+                        "Applicant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-023",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-020",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-014",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-018",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-021",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-002",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-022",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-005",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-010",
+                    "roles": [
+                        "Employee"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0820-person-017",
+                    "roles": [
+                        "Employee"
+                    ]
+                }
+            ],
+            "title": "Life Histories of Theban Tombs"
+        }
+    ],
+    "persons": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-000",
+            "__type": "Person",
+            "__createdAt": "1637624195513820000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Bickel"
+            ],
+            "givenNames": [
+                "Susanne"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-001"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-001",
+            "__type": "Person",
+            "__createdAt": "1637624195513914000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Rühli"
+            ],
+            "givenNames": [
+                "Frank"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-002"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-002",
+            "__type": "Person",
+            "__createdAt": "1637624195513998000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Villars"
+            ],
+            "givenNames": [
+                "Noémi"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-003"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-003",
+            "__type": "Person",
+            "__createdAt": "1637624195514080000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Loprieno-Gnirs"
+            ],
+            "givenNames": [
+                "Andrea"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-001"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-004",
+            "__type": "Person",
+            "__createdAt": "1637624195514161000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Arpagaus"
+            ],
+            "givenNames": [
+                "Daniel"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-004"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-005",
+            "__type": "Person",
+            "__createdAt": "1637624195514242000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Paksi"
+            ],
+            "givenNames": [
+                "Julianna Kitti"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-005"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-006",
+            "__type": "Person",
+            "__createdAt": "1637624195514323000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Kurmann"
+            ],
+            "givenNames": [
+                "Lara Selina"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-007",
+            "__type": "Person",
+            "__createdAt": "1637624195514392000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Aeschlimann-Langer"
+            ],
+            "givenNames": [
+                "Martina"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-008",
+            "__type": "Person",
+            "__createdAt": "1637624195514460000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Peintner"
+            ],
+            "givenNames": [
+                "Erico"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-009",
+            "__type": "Person",
+            "__createdAt": "1637624195514563000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Unter"
+            ],
+            "givenNames": [
+                "Stephan"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-010",
+            "__type": "Person",
+            "__createdAt": "1637624195514631000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Richner"
+            ],
+            "givenNames": [
+                "Lukas"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-011",
+            "__type": "Person",
+            "__createdAt": "1637624195514696000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Marty"
+            ],
+            "givenNames": [
+                "Evelyne"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-012",
+            "__type": "Person",
+            "__createdAt": "1637624195514760000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Kozieradzka-Ogunmakin"
+            ],
+            "givenNames": [
+                "Iwona J."
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-013",
+            "__type": "Person",
+            "__createdAt": "1637624195514823000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Sartori"
+            ],
+            "givenNames": [
+                "Marina"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-014",
+            "__type": "Person",
+            "__createdAt": "1637624195514889000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Müller"
+            ],
+            "givenNames": [
+                "Matthias"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-015",
+            "__type": "Person",
+            "__createdAt": "1637624195514962000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Zalunardo"
+            ],
+            "givenNames": [
+                "Alina Alessa"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-016",
+            "__type": "Person",
+            "__createdAt": "1637624195515028000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Kacicnik"
+            ],
+            "givenNames": [
+                "Matjaz"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-017",
+            "__type": "Person",
+            "__createdAt": "1637624195515092000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Gieben"
+            ],
+            "givenNames": [
+                "Charlotte Elisabeth"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-018",
+            "__type": "Person",
+            "__createdAt": "1637624195515156000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Freijo"
+            ],
+            "givenNames": [
+                "Stephan"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-019",
+            "__type": "Person",
+            "__createdAt": "1637624195515219000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Gojcic"
+            ],
+            "givenNames": [
+                "Zan"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-020",
+            "__type": "Person",
+            "__createdAt": "1637624195515300000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Barahona-Mendieta"
+            ],
+            "givenNames": [
+                "Zulema"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-021",
+            "__type": "Person",
+            "__createdAt": "1637624195515369000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Colldeweih"
+            ],
+            "givenNames": [
+                "Rachael Marie"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-022",
+            "__type": "Person",
+            "__createdAt": "1637624195515434000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Meyer"
+            ],
+            "givenNames": [
+                "Sabrina"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-person-023",
+            "__type": "Person",
+            "__createdAt": "1637624195515498000",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Powroznik"
+            ],
+            "givenNames": [
+                "Klaus"
+            ]
+        }
+    ],
+    "organizations": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-002",
+            "__type": "Organization",
+            "__createdAt": "1637624195515588000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "Institut für Evolutionäre Medizin IEM Medizinische Fakultät Universität Zürich"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-003",
+            "__type": "Organization",
+            "__createdAt": "1637624195515631000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "Ägyptologisches Seminar Universität Basel"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-004",
+            "__type": "Organization",
+            "__createdAt": "1637624195515670000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "NCCR Iconic Criticism eikones Universität Basel"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-005",
+            "__type": "Organization",
+            "__createdAt": "1637624195515712000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "Fachbereich Ägyptologie Departement Altertumswissenschaften Universität Basel"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-000",
+            "__type": "Organization",
+            "__createdAt": "1637624195515751000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "Swiss National Science Foundation (SNSF)"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-organization-001",
+            "__type": "Organization",
+            "__createdAt": "1637624195515789000",
+            "__createdBy": "dsp-metadata-gui",
+            "name": "Departement Altertumswissenschaften Universität Basel"
+        }
+    ],
+    "grants": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0820-grant-000",
+            "__type": "Grant",
+            "__createdAt": "1637624195515863000",
+            "__createdBy": "dsp-metadata-gui",
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-0820-organization-000"
+            ],
+            "name": "Project funding (Div. I-III)",
+            "number": "162967",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://p3.snf.ch/project-162967",
+                "text": "https://p3.snf.ch/project-162967"
+            }
+        }
+    ]
+}

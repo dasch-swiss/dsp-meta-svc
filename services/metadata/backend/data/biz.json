@@ -5,7 +5,6 @@
         "__type": "Project",
         "__createdAt": "1637624098376694000",
         "__createdBy": "dsp-metadata-gui",
-        // "howToCite": "XX - new property on project level",
         "teaserText": "Long-term statistical series on the development of cantonal school structures in Switzerland in the 19th and 20th centuries are being generated, annotated and contextualised since September 2010.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0828-dataset-000"

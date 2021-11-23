@@ -5,14 +5,13 @@
         "__type": "Project",
         "__createdAt": "1637624150548721000",
         "__createdBy": "dsp-metadata-gui",
-        // "howToCite": "XX - new property on project level",
         "teaserText": "An art-scientific monograph of the richly illustrated early prints in Basel - the most important center of early letterpress printing in the territory of present-day Switzerland.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0803-dataset-000"
         ],
         "alternativeNames": [
             {
-                "XX": "Incunabula"
+                "en": "Incunabula"
             }
         ],
         "description": {

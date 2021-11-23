@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.7.0...v1.8.0) (2021-11-23)
+
+
+### Enhancements
+
+* **project-data:** decoso, incunabula, nietzsche, biz, lhtt, lenzburg ([#24](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/24)) ([c1e701a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c1e701a2625b92fc353f52c9a21717d85de73775))
+
 ## [1.7.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.6.0...v1.7.0) (2021-10-28)
 
 

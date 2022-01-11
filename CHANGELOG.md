@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.8.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.8.0...v1.8.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* incorrect header is expected for content negotiation (DEV-267) ([#27](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/27)) ([fed8007](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/fed8007c86ee6fda87e9daec904e365701a32c54))
+
 ## [1.8.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.7.0...v1.8.0) (2021-11-23)
 
 

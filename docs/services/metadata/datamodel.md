@@ -333,12 +333,12 @@ Metadata is available in RDF. The mappings are defined in the tables above.
 Currently, `JSON-LD`, `ttl` and `RDF-XML` serializations are available.
 
 Both metadata routes support JSON and RDF at the same time. RDF can be requested by means of content negotiation.
-Adding the header `Content-Type: application/ld+json`, `Content-Type: application/rdf+xml` or `Content-Type: text/turtle` to the request, respectively will force the response to be RDF.
+Adding the header `Accept: application/ld+json`, `Accept: application/rdf+xml` or `Accept: text/turtle` to the request, respectively will force the response to be RDF.
 
 __Get a single project__
 
 ```bash
-curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects/0806' --header 'Content-Type: text/turtle'
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects/0806' --header 'Accept: text/turtle'
 ```
 
 will return the turtle representation of the project with the shortcode `0806`.
@@ -347,7 +347,7 @@ will return the turtle representation of the project with the shortcode `0806`.
 __Get all projects__
 
 ```bash
-curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects' --header 'Content-Type: text/turtle'
+curl --location --request GET 'http://meta.dasch.swiss/api/v1/projects' --header 'Accept: text/turtle'
 ```
 
 will return JSON of the following format:

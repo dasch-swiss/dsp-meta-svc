@@ -170,19 +170,19 @@ func loadProjectData() Projects {
 func getProjects(w http.ResponseWriter, r *http.Request) {
 	var matches []Project
 
-	// depends on the Content-Type, return JSON or JSON-LD data
-	contentType := r.Header.Get("Content-Type")
-	if contentType == "application/ld+json" {
+	// depending on the Accept header, return JSON or RDF data
+	accept := r.Header.Get("Accept")
+	if accept == "application/ld+json" {
 		w.Header().Set("Content-Type", "application/json")
 		matches = make([]Project, len(projects.dataJSONLD))
 		copy(matches, projects.dataJSONLD)
 		log.Printf("JSON-LD request for: %v", r.URL)
-	} else if contentType == "text/turtle" {
+	} else if accept == "text/turtle" {
 		w.Header().Set("Content-Type", "application/json")
 		matches = make([]Project, len(projects.dataTTL))
 		copy(matches, projects.dataTTL)
 		log.Printf("TURTLE request for: %v", r.URL)
-	} else if contentType == "application/rdf+xml" {
+	} else if accept == "application/rdf+xml" {
 		w.Header().Set("Content-Type", "application/json")
 		matches = make([]Project, len(projects.dataTTL))
 		copy(matches, projects.dataXML)
@@ -233,9 +233,9 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 	var data []Project
 	params := mux.Vars(r)
 
-	// depends on the Content-Type, return JSON or JSON-LD data
-	contentType := r.Header.Get("Content-Type")
-	if contentType == "application/ld+json" {
+	// depending on the Accept header, return JSON or RDF data
+	accept := r.Header.Get("Accept")
+	if accept == "application/ld+json" {
 		data = projects.dataJSONLD
 		log.Printf("JSON-LD request for: %v", r.URL)
 		for _, item := range data {
@@ -249,7 +249,7 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 		message := fmt.Sprintf("No JSON-LD serialization available for project %v", params["id"])
 		w.Write([]byte(message))
 		return
-	} else if contentType == "text/turtle" {
+	} else if accept == "text/turtle" {
 		data = projects.dataTTL
 		log.Printf("TURTLE request for: %v", r.URL)
 		for _, item := range data {
@@ -263,7 +263,7 @@ func getProject(w http.ResponseWriter, r *http.Request) {
 		message := fmt.Sprintf("No Turtle serialization available for project %v", params["id"])
 		w.Write([]byte(message))
 		return
-	} else if contentType == "application/rdf+xml" {
+	} else if accept == "application/rdf+xml" {
 		data = projects.dataXML
 		log.Printf("RDF-XML request for: %v", r.URL)
 		for _, item := range data {

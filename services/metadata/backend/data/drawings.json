@@ -5,8 +5,8 @@
         "__type": "Project",
         "__createdAt": "1630601291043795000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
-        "teaserText": "Basé sur plusieurs centaines de dessins dans diverses régions du monde, ce projet étudie l’évolution de la représentation de Dieu ou d’autres êtres surnaturels chez des enfants et des adolescents.",
+        "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
+        "teaserText": "Fondé sur plusieurs centaines de dessins dans diverses régions du monde, ce projet étudie l’évolution de la représentation de Dieu ou d’autres êtres surnaturels chez des enfants et des adolescents.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0105-dataset-000"
         ],
@@ -17,7 +17,7 @@
         ],
         "contactPoint": "http://ns.dasch.swiss/repository#dsp-0105-person-000",
         "description": {
-            "fr": "La récolte de dessins constitue une technique largement éprouvée pour étudier les représentations imaginaires des enfants. Sur la base d’une collecte de plusieurs centaines de dessins dans diverses régions du monde, notamment au Brésil, en Iran, au Japon, aux Pays-Bas, en Roumanie, en Russie et en Suisse, ce projet prévoit d’étudier l’évolution de la représentation de Dieu ou d’autres êtres surnaturels (dieux, esprits, génies, etc) chez des enfants et des adolescents entre 5 et 18 ans. Il s’intéressera tout spécialement aux stratégies mises en place par les enfants : recours à des représentations religieuses traditionnelles, à des images d’êtres surnaturels véhiculées par des films d’animation ou des bandes dessinées. Au terme du projet, l’objectif est d’avoir pu décrire les stratégies principales utilisées les enfants en ayant pu mettre en évidence comment le choix d’une stratégie plutôt qu’une autre est influencé par l’âge, le sexe, l’éducation religieuse et l’environnement culturel de l’enfant.\nLe contexte de travail est interdisciplinaire. L’analyse du matériel récolté combinera traitement informatique des images et descriptions fournies par des spécialistes du développement de l’enfant, de l’étude des religions et des contextes culturels de provenance des dessins. Ces analyses d’images seront complétées par des analyses textuelles des commentaires fournis par les enfants pour expliquer ce qu’ils ont dessiné."
+            "fr": "The pictorial representations of the gods are very widely present in various religious traditions. The imagination of children is also impacted by this theme. Their representations vary according to age, of course, but are also influenced by the religious education received and the cultural environment. Collecting drawings is a widely proven technique for studying imaginary representations of children. Based on a collection of several hundred drawings in various regions of the world, including Brazil, Iran, Japan, the Netherlands, Romania, Russia and Switzerland, this project studies the evolution of the representation of God or other supernatural beings (gods, spirits, geniuses, etc.) in children and adolescents between 5 and 18 years old. A focus is put on the strategies implemented by children: recourse to traditional religious representations, to images of supernatural beings conveyed by animated films or comics. At the end of the project, the objective is to have been able to describe the main strategies used by the children while being able to highlight how the choice of one strategy rather than another is influenced by age, sex, religious education and the cultural environment of the child. The work context is interdisciplinary. The analysis of the collected material combines computer processing of images and descriptions provided by specialists in child development, the study of religions and the cultural contexts of origin of the drawings. These image analyzes will be supplemented by textual analyzes of comments provided by the children to explain what they have drawn."
         },
         "disciplines": [
             {
@@ -42,9 +42,9 @@
                 "text": "Sociology of religion"
             }
         ],
-        "endDate": "2019-02-28",
         "funders": [
-            "http://ns.dasch.swiss/repository#dsp-0105-organization-000"
+            "http://ns.dasch.swiss/repository#dsp-0105-organization-000",
+            "http://ns.dasch.swiss/repository#dsp-0105-organization-001"
         ],
         "grants": [
             "http://ns.dasch.swiss/repository#dsp-0105-grant-000"
@@ -74,14 +74,17 @@
         ],
         "name": "Drawings of gods: A Multicultural and Interdisciplinary Approach of Children’s Representations of Supernatural Agents",
         "publications": [
-            "Brandt Pierre-Yves (2016), Représentations enfantines de dieux : comparaison interculturelle, in Rainotte Guy (ed.), Academia-L’Harmattan, Louvain-la-Neuve, 39-59.",
-            "Brandt Pierre-Yves, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Représentations de dieux dans des dessins d’enfants, in Représenter dieux et hommes dans le Proche-Orient ancien, Collège de France, Paris.",
-            "Cocco Christelle, Ceré Raphaël, Xanthos Aris, Brandt Pierre-Yves (2019), Identification and quantification of colours in children’s drawings., in Proceedings of the Workshop on Computational Methods in the Humanities 2018, Lausanne http://ceur-ws.org/, Lausanne.",
-            "Cocco Christelle, Dessart Grégory, Serbaeva Olga, Brandt Pierre-Yves, Vinck Dominique, Darbellay Frédéric (2018), Potentialités et difficultés d’un projet en humanités numériques (DH) : confrontation aux outils et réorientations de recherche, in Digital Humanities Quarterly, 12(1).",
+            "Brandt, Pierre-Yves, Dandarova Robert, Zhargalma, Cocco, Christelle, Vinck, Dominique, & Darbellay, Frédéric (Eds) (in press), When children draw gods: A multicultural and interdisciplinary approach to children's representations of supernatural agents. Cham : Springer.",
             "Dandarova Robert Zhargalma, Dessart Grégory, Serbaeva Olga, Puzdriac Camelia, Khodayarifard Mohammad, Akbari Zardkhaneh Saeed, Zandi Saeid, Petanova Elena, Ladd Kevin, Brandt Pierre-Yves (2016), A Web-based Database for Drawings of Gods: When the Digitals Go Multicultural, in Archive for the Psychology of Religion, (3), 345-352.",
+            "Cocco Christelle, Ceré Raphaël, Xanthos Aris, Brandt Pierre-Yves (2019), Identification and quantification of colours in children’s drawings., in Proceedings of the Workshop on Computational Methods in the Humanities 2018, Lausanne http://ceur-ws.org/, Lausanne.",
+            "Brandt Pierre-Yves, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Représentations de dieux dans des dessins d’enfants, in Représenter dieux et hommes dans le Proche-Orient ancien, Collège de France, Paris.",
             "Darbellay Frédéric, Vinck Dominique, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Brandt Pierre-Yves (2018), L'interdisciplinarité en partage: collaborer pour innover - Le projet \"dessins de dieu\", in InnovatiO, (5), NA.",
+            "Vinck Dominique, Camus Alexandre, Jaton Florian, Oberhauser Pierre-Nicolas (2018), Localités distribuées, globalités localisées: actions, actants et médiations au service de l’ethnographie du numérique, in Symposium, 22(1), 41-60.",
+            "Cocco Christelle, Dessart Grégory, Serbaeva Olga, Brandt Pierre-Yves, Vinck Dominique, Darbellay Frédéric (2018), Potentialités et difficultés d’un projet en humanités numériques (DH) : confrontation aux outils et réorientations de recherche, in Digital Humanities Quarterly, 12(1).",
             "Oberhauser Pierre-Nicolas (2016), Des collaborations équivoques. La participation de spécialistes en sciences et techniques informatiques à un projet de recherche en humanités numériques, in Revue d'anthropologie des connaissances, 10(4), 557-586.",
-            "Vinck Dominique, Camus Alexandre, Jaton Florian, Oberhauser Pierre-Nicolas (2018), Localités distribuées, globalités localisées: actions, actants et médiations au service de l’ethnographie du numérique, in Symposium, 22(1), 41-60."
+            "Brandt, Pierre-Yves, Cocco, Christelle, Dessart, Grégory & Dandarova, Zhargalma (2019). Représentations de dieux dans des dessins d’enfants. In T. Römer, H. Gonzalez et L. Marti (Eds). Représenter dieux et hommes dans le Proche-Orient ancien et dans la Bible (OBO 287, pp. 347-370). Leuven/Paris/Bristol : Peeters."
+            
+            
         ],
         "shortcode": "0105",
         "spatialCoverage": [
@@ -174,9 +177,9 @@
             ],
             "accessConditions": "restricted",
             "dateCreated": "2018-07-02",
-            "dateModified": "2021-02-24",
+            "dateModified": "2021-11-30",
             "datePublished": "2018-07-02",
-            "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
+            "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
             "languages": [
                 {
                     "en": "French",
@@ -202,7 +205,8 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-005",
                     "roles": [
                         "Data curator",
-                        "Project member"
+                        "Project member",
+                        "Researcher"
                     ]
                 },
                 {
@@ -266,7 +270,7 @@
                     ]
                 }
             ],
-            "status": "Finished",
+            "status": "Ongoing",
             "title": "Base de données Dessins de dieux",
             "typeOfData": [
                 "Image",
@@ -283,24 +287,6 @@
         }
     ],
     "persons": [
-        {
-            "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-009",
-            "__type": "Person",
-            "__createdAt": "1630601297440249000",
-            "__createdBy": "dsp-metadata-gui",
-            "familyNames": [
-                "Laubscher"
-            ],
-            "givenNames": [
-                "Karine"
-            ],
-            "jobTitles": [
-                "Psychologist"
-            ],
-            "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-0105-organization-001"
-            ]
-        },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-001",
             "__type": "Person",
@@ -326,7 +312,14 @@
                     "url": "https://orcid.org/0000-0001-7835-7008",
                     "text": "ORCID URL: https://orcid.org/0000-0001-7835-7008"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "ISS Unil, Quartier UNIL-Mouline, Bâtiment Géopolis",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-002",
@@ -353,7 +346,14 @@
                     "url": "https://orcid.org/0000-0003-3979-4859",
                     "text": "ORCID URL: https://orcid.org/0000-0003-3979-4859"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "ISSR/FTSR Unil, Quartier Unil-Chamberonne, Bâtiment Anthropole",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-003",
@@ -380,7 +380,14 @@
                     "url": "https://orcid.org/0000-0003-1321-7105",
                     "text": "ORCID URL: https://orcid.org/0000-0003-1321-7105"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "Centre interfacultaire en droits de l’enfant (CIDE), Université de Genève (Valais Campus), Chemin de l'Institut 18",
+                "postalCode": "1967",
+                "locality": "Bramois",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-007",
@@ -433,7 +440,7 @@
             "__type": "Person",
             "__createdAt": "1630601297442178000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "pierre-yves.Brandt@unil.ch",
+            "email": "pierre-yves.brandt@unil.ch",
             "familyNames": [
                 "Brandt"
             ],
@@ -453,7 +460,14 @@
                     "url": "https://orcid.org/0000-0002-4485-5807",
                     "text": "ORCID URL: https://orcid.org/0000-0002-4485-5807"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "ISSR/FTSR Unil, Quartier Unil-Chamberonne, Bâtiment Anthropole",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-005",
@@ -468,8 +482,7 @@
                 "Christelle"
             ],
             "jobTitles": [
-                "Post-doctoral researcher",
-                "Senior SNSF researcher"
+                "Post-doctoral researcher"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0105-organization-001"
@@ -481,7 +494,14 @@
                     "url": "https://orcid.org/0000-0001-6684-9806",
                     "text": "ORCID URL: https://orcid.org/0000-0001-6684-9806"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "FTSR Unil, Quartier Unil-Chamberonne, Bâtiment Anthropole",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-004",
@@ -501,7 +521,14 @@
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0105-organization-001"
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "Institute of Asian and oriental Studies, University of Zurich, Rämistr. 59",
+                "postalCode": "8001",
+                "locality": "Zürich",
+                "country": "Switzerland"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0105-person-006",
@@ -528,7 +555,14 @@
                     "url": "https://orcid.org/0000-0003-1986-9702",
                     "text": "ORCID URL: https://orcid.org/0000-0003-1986-9702"
                 }
-            ]
+            ],
+            "address": {
+                "__type": "Address",
+                "street": "ISSR/FTSR Unil, Quartier Unil-Chamberonne, Bâtiment Anthropole",
+                "postalCode": "1015",
+                "locality": "Lausanne",
+                "country": "Switzerland"
+            }
         }
     ],
     "organizations": [

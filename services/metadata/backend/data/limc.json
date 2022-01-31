@@ -209,16 +209,16 @@
                 "__type": "Address",
                 "street": "14, Avenue de Grande Bretagne, \"Le George V\" 4eme étage",
                 "postalCode": "98000",
-                "locality": "Monte Carlo, Monaco",
-                "country": "XX - Switzerland?"
+                "locality": "Monte Carlo",
+                "country": "Monaco"
             },
             "email": "info@snf.org",
             "name": "Stavros Niarchos Foundation",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://httpS://www.snf.org/en",
-                "text": "httpS://www.snf.org/en"
+                "url": "https://www.snf.org/en",
+                "text": "https://www.snf.org/en"
             }
         },
         {

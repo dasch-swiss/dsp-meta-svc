@@ -6,7 +6,7 @@
         "__createdAt": "1630601286237202000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Gonzalez, Ph., Roca Escoda, M., Stavo Debauge, J., Evequoz, Y., Ben Amor, S., Rivoal, M., 2019, Embarras de la parole religieuse [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0101.",
-        "teaserText": "Ce projet étudie comment les mobilisations religieuses sur des questions de genre et de sexualités redéfinissent les règles d’interlocution des espaces publics sécularisés et modifient les paroles.",
+        "teaserText": "Ce projet étudie les mobilisations religieuses sur des questions de genre et de sexualités et comment elles transforment les règles d’interlocution des espaces publics sécularisés et la parole des acteurs religieux.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0101-dataset-000"
         ],
@@ -118,7 +118,7 @@
                     "en": "The ontology of the project comprises 15 distinct classes, 68 properties, mainly describing sequences (Sequence) from radio broadcasts (Program), and listing for each sequence the speakers (Intervention, Actor, Nationality), the title in which they intervene (Quality, Institution) and their origin (Place).  The subjects (Gender and Religion) covered by the programs are informed at the program level, then explained at the sequence level, using different concepts related to current events: Event, Common Name or Movement, Phenomenon or controversial subject, Person in the news, Place. 10 controlled vocabularies with 104 entries ensure the quality control of the data entered. The controlled vocabulary Controversial issues' trajectory includes 31 entries. Finally, transcriptions (Transcription) are associated with certain sequences."
                 }
             ],
-            "accessConditions": "restricted",
+            "accessConditions": "open",
             "dateCreated": "2017-07-04",
             "dateModified": "2020-02-10",
             "datePublished": "2017-07-04",

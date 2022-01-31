@@ -304,10 +304,11 @@
             "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
-                "street": "Rue de l'Hôtel-de-Ville 1 Case postale 3964",
+                "street": "Rue de l'Hôtel-de-Ville 1",
+                "additional": "Case postale 3964",
                 "postalCode": "1211 ",
-                "locality": "Genève 3 ",
-                "country": "XX - Switzerland?"
+                "locality": "Genève",
+                "country": "Switzerland"
             },
             "name": "Archives d’État de Genève",
             "url": {

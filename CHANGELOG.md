@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.9.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.8.0...v1.9.0) (2022-01-31)
+
+
+### Bug Fixes
+
+* incorrect header is expected for content negotiation (DEV-267) ([#27](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/27)) ([fed8007](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/fed8007c86ee6fda87e9daec904e365701a32c54))
+
+
+### Enhancements
+
+* add more data and fix minor issues ([#26](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/26)) ([8abe95e](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/8abe95e9e8234257f33be4b4f2cd5aeaf7c18ca8))
+* **frontend:** update logo and colors (DEV-423) ([#29](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/29)) ([17cea0d](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/17cea0d2f7d2bf1e96be0e4ce3b224e91ef47624))
+
 ## [1.8.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.7.0...v1.8.0) (2021-11-23)
 
 

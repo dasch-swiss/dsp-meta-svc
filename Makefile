@@ -49,6 +49,7 @@ docker-publish: metadata-docker-publish ## publish all docker images
 
 .PHONY: metadata
 metadata: ## start Go mock backend on port 3000
+	@yarn run build
 	@go run services/metadata/backend/backend.go
 
 .PHONY: metadata-docker-build

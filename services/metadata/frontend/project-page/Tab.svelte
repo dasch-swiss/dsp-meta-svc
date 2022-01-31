@@ -58,7 +58,7 @@
     cursor: pointer;
   }
   span:hover {
-    background-color: var(--dasch-light-violet);
+    background-color: var(--dasch-hover);
   }
   li.active > span {
     color: #fff;

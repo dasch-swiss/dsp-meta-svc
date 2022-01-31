@@ -78,7 +78,7 @@
     border: 1px solid var(--lead-colour);
   }
   button:hover:not(.active), button:hover:not:disabled {
-    background-color: var(--dasch-light-violet);
+    background-color: var(--dasch-hover);
   }
   button:first-child {
     border-top-left-radius: 5px;

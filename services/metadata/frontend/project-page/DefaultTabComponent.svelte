@@ -297,7 +297,7 @@
     margin: -1rem 0 0.25rem;
   }
   .icon:hover {
-    color: var(--dasch-light-violet);
+    color: var(--dasch-hover);
   }
   .role {
     color: var(--secondary-colour);

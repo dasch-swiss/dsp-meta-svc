@@ -1,8 +1,8 @@
 @import url(../assets/fonts/Roboto/stylesheet.css);
 
 :root {
-  --dasch-violet: #5949a7;
-  --dasch-light-violet: #D6D2E9;
+  --dasch-primary: #1D4ED8;
+  --dasch-hover: #A3C0FF;
   --dasch-text: #3f3f40;
   --text-darker: #282828;
   --dasch-grey-1: #888b8d;
@@ -19,7 +19,7 @@
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0px 2px 4px -1px rgba(0,0,0,0.3);
 
-  --lead-colour: var(--dasch-violet);
+  --lead-colour: var(--dasch-primary);
   --secondary-colour: #00343D;
 }
 
@@ -98,7 +98,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: var(--dasch-light-violet);
+  background-color: var(--dasch-hover);
 }
 button:focus {
   color: #fff;

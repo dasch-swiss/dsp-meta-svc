@@ -29,7 +29,7 @@
 {/if}
 
 <style>
-a {color: var(--dasch-violet)}
+a {color: var(--dasch-primary)}
 #cookieConsent {
   position: fixed;
   bottom: 0;
@@ -63,13 +63,13 @@ button {
   margin: 0 0.5rem 0.5rem;
 }
 .btn-accept-all:hover {
-  border: 1px solid var(--dasch-violet);
+  border: 1px solid var(--dasch-primary);
   background-color: #fff;
-  color: var(--dasch-violet);
+  color: var(--dasch-primary);
 }
 .btn-accept-all {
   border: 1px solid transparent;
-  background-color: var(--dasch-violet);
+  background-color: var(--dasch-primary);
   color: white;
 }
 @media screen and (min-width: 768px) {

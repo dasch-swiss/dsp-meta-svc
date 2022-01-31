@@ -45,8 +45,8 @@
   <div class="header-container">
     <Router>
       <Link to="/" class="header-left regular-link">
-        <img class="logo s-inline-block" src="assets/logo/DaSCH-Logo-black.svg" alt="DaSCH logo" />
-        <img class="icon-logo s-hidden" src="assets/icon/DaSCH-Icon-black-64.svg" alt="DaSCH logo" />
+        <img class="logo s-inline-block" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
+        <img class="icon-logo s-hidden" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
       </Link>
     </Router>
     <h1 class="title">DaSCH Metadata Browser</h1>

@@ -46,15 +46,18 @@
     </div>
   </div>
   <div class="pagination">
-    <button on:click={handlePagination} id="first" title="First Page" disabled={$pagination.currentPage === 1}>&laquo;</button>
+    <button on:click={handlePagination} class="arrow" id="first" title="First Page" disabled={$pagination.currentPage === 1}>&laquo;</button>
     {#each Array($pagination.totalPages) as _, i}
       <button on:click={handlePagination} id={(i + 1).toString()} class={i + 1 === $pagination.currentPage ? 'active' : ''}>{i + 1}</button>
     {/each}
-    <button on:click={handlePagination} id="last" title="Last Page" disabled={$pagination.currentPage === $pagination.totalPages}>&raquo;</button>
+    <button on:click={handlePagination} class="arrow" id="last" title="Last Page" disabled={$pagination.currentPage === $pagination.totalPages}>&raquo;</button>
   </div>
 </div>
 
 <style>
+  .stats {
+    font-size: 0.75rem;
+  }
   .pagination-container {
     display: grid;
     text-align: center;
@@ -72,10 +75,13 @@
     text-decoration: none;
     border: 1px solid #ddd;
   }
+  .arrow {
+    color: var(--lead-colour);
+  }
   button.active {
-    background-color: var(--lead-colour);
+    background-color: var(--dasch-secondary);
     color: white;
-    border: 1px solid var(--lead-colour);
+    border: 1px solid var(--dasch-secondary);
   }
   button:hover:not(.active), button:hover:not:disabled {
     background-color: var(--dasch-hover);

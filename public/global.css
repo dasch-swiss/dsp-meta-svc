@@ -2,6 +2,7 @@
 
 :root {
   --dasch-primary: #1D4ED8;
+  --dasch-secondary: #130075;
   --dasch-hover: #A3C0FF;
   --dasch-text: #3f3f40;
   --text-darker: #282828;
@@ -48,29 +49,9 @@ a {
   white-space: nowrap;
   color: var(--color-text);
 }
-a::before,
-a::after {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: currentColor;
-  top: 100%;
-  left: 0;
-  pointer-events: none;
-}
-a::before {
-  content: '';
-  transform-origin: 100% 50%;
-  transform: scale3d(0, 1, 1);
-  transition: transform 0.3s;
-}
-a:hover::before {
-  transform-origin: 0% 50%;
-  transform: scale3d(1, 1, 1);
-}
 a.email {
   color: var(--dasch-text) !important;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 a:visited {
   color: inherit;
@@ -89,10 +70,6 @@ a:visited {
   padding: 5px 20px;
   color: var(--lead-colour);
   box-shadow: var(--shadow-1);
-}
-.read-more.regular-link:hover {
-  color: #fff;
-  background-color: var(--lead-colour);
 }
 button {
   cursor: pointer;
@@ -181,7 +158,6 @@ button:disabled {
   letter-spacing: 0.4px;
 }
 .warning {
-  /* TODO: could be done better */
   color: red;
 }
 /* media queries */

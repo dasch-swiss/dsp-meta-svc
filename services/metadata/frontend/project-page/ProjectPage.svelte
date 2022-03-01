@@ -202,10 +202,13 @@
     margin-top: 10px;
     width: 100%;
     font-size: 1rem;
-    font-family: robotobold;
     text-align: left;
     margin-bottom: 6px;
     padding: 10px 10px 8px;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    color: var(--dasch-text);
   }
   .button-label {
     position: relative;
@@ -214,15 +217,17 @@
   button.gototop-button {
     display: inline-block;
     vertical-align: middle;
-    background-color: var(--dasch-grey-3);
+    background-color: #fff;
     padding: 10px;
     width: 3.5rem;
     height: 3.5rem;
+    border: 1px solid var(--lead-colour);
+    box-shadow: none;
+    color: var(--lead-colour);
   }
   button.gototop-button:hover,
   button.goback-button:hover {
-    color: #fff;
-    background-color: var(--lead-colour);
+    background-color: #fff;
   }
   .container {
     padding: 0 10px;

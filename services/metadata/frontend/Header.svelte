@@ -43,13 +43,19 @@
 
 <header>
   <div class="header-container">
-    <Router>
-      <Link to="/" class="header-left regular-link">
-        <img class="logo s-inline-block" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
-        <img class="icon-logo s-hidden" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
-      </Link>
-    </Router>
-    <h1 class="title">DaSCH Metadata Browser</h1>
+    <div class="header-left">
+      <Router>
+        <Link to="/" class="regular-link">
+          <img class="logo s-inline-block" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
+          <img class="icon-logo s-hidden" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
+        </Link>
+      </Router>
+      <Router>
+        <Link to="/" class="regular-link">
+          <h1 class="title">DaSCH Metadata Browser</h1>
+        </Link>
+      </Router>
+    </div>
     <div class="header-right">
       <input on:change={search} bind:value={enteredString} class="searchbar-in-header xs-inline-block" type="text" name="searchbar" placeholder="search..." />
       <!-- searchbar button -->
@@ -66,7 +72,7 @@
         </svg>
       </button>
       <!-- menu button -->
-      <button on:click="{toggleMenu}">
+      <button class="menu-button" on:click="{toggleMenu}">
         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -89,20 +95,25 @@
 
 <style>
   header {
-    background-color: var(--cl-background);
+    /* background-color: var(--cl-background); */
+    background-color: white;
     position: sticky;
     top: 0px;
     z-index: 1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
   }
+
   .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .header-left {
-    padding: 0px;
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
   }
+
   .header-right {
     padding: 0.5rem 0rem;
     margin-right: 0.25rem;
@@ -158,7 +169,10 @@
   }
   button:hover {
     color: var(--lead-colour);
-    background-color: var(--cl-transparent-dark);
+  }
+
+  .menu-button {
+    color: var(--lead-colour);
   }
   .menu {
     background-color: var(--cl-background-light);

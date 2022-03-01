@@ -83,8 +83,6 @@
             "Cocco Christelle, Dessart Grégory, Serbaeva Olga, Brandt Pierre-Yves, Vinck Dominique, Darbellay Frédéric (2018), Potentialités et difficultés d’un projet en humanités numériques (DH) : confrontation aux outils et réorientations de recherche, in Digital Humanities Quarterly, 12(1).",
             "Oberhauser Pierre-Nicolas (2016), Des collaborations équivoques. La participation de spécialistes en sciences et techniques informatiques à un projet de recherche en humanités numériques, in Revue d'anthropologie des connaissances, 10(4), 557-586.",
             "Brandt, Pierre-Yves, Cocco, Christelle, Dessart, Grégory & Dandarova, Zhargalma (2019). Représentations de dieux dans des dessins d’enfants. In T. Römer, H. Gonzalez et L. Marti (Eds). Représenter dieux et hommes dans le Proche-Orient ancien et dans la Bible (OBO 287, pp. 347-370). Leuven/Paris/Bristol : Peeters."
-            
-            
         ],
         "shortcode": "0105",
         "spatialCoverage": [
@@ -576,7 +574,7 @@
                 "street": "24 rue du Général-Dufour",
                 "postalCode": "1211",
                 "locality": "Genève 4",
-                "country": "XX - Switzerland?"
+                "country": "Switzerland"
             },
             "name": "Université de Genève",
             "url": {

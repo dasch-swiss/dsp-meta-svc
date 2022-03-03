@@ -86,10 +86,10 @@
     <Category />
   </div>
   <div class="menu" class:hidden={!showMenu}>
-    <a class="menu-item" href="https://dasch.swiss/">dasch.swiss</a>
-    <a class="menu-item" href="{`https://app.${getEnv()}dasch.swiss/`}">{`app.${getEnv()}dasch.swiss`}</a>
-    <a class="menu-item" href="{`https://admin.${getEnv()}dasch.swiss/`}">{`admin.${getEnv()}dasch.swiss`}</a>
-    <a class="menu-item" href="https://docs.dasch.swiss/">docs.dasch.swiss</a>
+    <a class="menu-item" href="https://dasch.swiss/">DaSCH Website</a>
+    <a class="menu-item" href="{`https://admin.${getEnv()}dasch.swiss/`}">DSP-APP { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
+    <a class="menu-item" href="{`https://app.${getEnv()}dasch.swiss/`}">DSP-Tangoh { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
+    <a class="menu-item" href="https://docs.dasch.swiss/">Documentation</a>
   </div>
 </header>
 
@@ -176,13 +176,13 @@
   }
   .menu {
     background-color: #fff;
-    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.06);
   }
   a.menu-item {
     display: block;
     padding: 1rem 1.5rem;
     width: calc(100% - 3rem);
-    font-family: robotobold;
+    font-weight: 500;
     color: var(--dasch-text);
     text-decoration: none;
   }

@@ -2,6 +2,33 @@
 
 Service for providing users with project and dataset specific metadata.
 
+## Requirements
+
+The following programs need to be installed to run the metadata browser locally:
+
+- Go
+- Node
+- Yarn
+- Bazel/Bazelisk
+- Docker
+
+Ensure that all dependencies are installt, running `yarn install`.
+
+
+## Run locally
+
+To run both front-end and back-end locally, there are two options:
+
+- `make metadata` (requires Node, Yarn and Go installed)
+- `make metadata-docker-run` (requires Docker and Bazel installed)
+
+Neither of those commands will update automatically when changes are made to the data served by the backend.
+In this case, manually stop and restart the service using the same command.
+
+To auto-rebuild after changes were made to the frontend, you can in a separate terminal run `yarn run dev`.
+However, the changes will only apply when you run the service without docker (i.e. `make metadata`),
+if you run it inside docker, you will have to re-run the service for the changes to apply.
+
 ## Front-end
 
 The front-end part is basing on [Svelte](https://svelte.dev). To run it, `yarn` and/or `make` need to be installed. 
@@ -44,7 +71,7 @@ The server serves the frontend (static file serving on `./public/`) and the meta
 The route `/` serves the frontend.
 
 The routes `/projects` and `/projects/:id` form a simple metadata API.  
-The server serves all data found in `./services/metadata/go_ca_backend/data/*.json`, where the JSON file follows the data structure as currently provided by DSP-JS-LIB.  
+The server serves all data found in `./services/metadata/backend/data/*.json`, where the JSON file follows the data structure as currently provided by DSP-JS-LIB.  
 __Note:__ Files starting with underscore (`_`) are excluded. This provides a simple means to leave out files that are not supposed to be public.  
 The server supports pagination and full text search.
 

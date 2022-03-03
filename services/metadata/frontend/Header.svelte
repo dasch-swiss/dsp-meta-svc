@@ -86,10 +86,10 @@
     <Category />
   </div>
   <div class="menu" class:hidden={!showMenu}>
-    <a class="menu-item" href="https://dasch.swiss/">DaSCH Website</a>
-    <a class="menu-item" href="{`https://admin.${getEnv()}dasch.swiss/`}">DSP-APP { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
-    <a class="menu-item" href="{`https://app.${getEnv()}dasch.swiss/`}">DSP-Tangoh { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
-    <a class="menu-item" href="https://docs.dasch.swiss/">Documentation</a>
+    <a class="menu-item" href="https://dasch.swiss/" target="_blank">DaSCH Website</a>
+    <a class="menu-item" href="{`https://admin.${getEnv()}dasch.swiss/`}" target="_blank">DSP-APP { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
+    <a class="menu-item" href="{`https://app.${getEnv()}dasch.swiss/`}" target="_blank">DSP-Tangoh { getEnv() ? `(${getEnv().slice(0, -1)} server)` : ''}</a>
+    <a class="menu-item" href="https://docs.dasch.swiss/" target="_blank">Documentation</a>
   </div>
 </header>
 

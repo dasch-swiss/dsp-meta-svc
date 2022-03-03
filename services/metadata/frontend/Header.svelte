@@ -175,7 +175,8 @@
     color: var(--lead-colour);
   }
   .menu {
-    background-color: var(--cl-background-light);
+    background-color: #fff;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.06);
   }
   a.menu-item {
     display: block;

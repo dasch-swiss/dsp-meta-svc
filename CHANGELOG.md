@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.9.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.0...v1.9.1) (2022-03-04)
+
+
+### Bug Fixes
+
+* minor changes in data and CD colour scheme ([#31](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/31)) ([0141b43](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/0141b4358cd38fee6ceacb1b4b33096ae5a5c7e5))
+
 ## [1.9.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.8.0...v1.9.0) (2022-01-31)
 
 

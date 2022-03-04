@@ -61,10 +61,10 @@
     <div class=label>Disciplines</div>
     {#each $projectMetadata?.project.disciplines as d}
       {#if d.__type === "URL"}
-        <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
+        <a class="data" href={d.url} target=_>{truncateString(d.text)}</a>
       {:else}
         {#if getText(d).match(/^\d+ /)}
-          <a class="data external-link" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(getText(d))}</a>
+          <a class="data" href=http://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf target=_>{truncateString(getText(d))}</a>
         {:else}
           <div class=data>{getText(d)}</div>
         {/if}
@@ -80,7 +80,7 @@
     <div class=label>Temporal Coverage</div>
     {#each $projectMetadata?.project.temporalCoverage as t}
       {#if t.__type === "URL"}
-        <a class="data external-link" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
+        <a class="data" href={t.url} target=_>{t.text ? truncateString(t.text) : truncateString(t.url)}</a>
       {:else}
         <div class=data>{getText(t)}</div>
       {/if}
@@ -95,7 +95,7 @@
   {#if $projectMetadata?.project.spatialCoverage}
     <div class=label>Spatial Coverage</div>
     {#each $projectMetadata?.project.spatialCoverage as s}
-      <a class="data external-link" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
+      <a class="data" style="text-transform: capitalize" href={s.url} target=_>{truncateString(s.text)}</a>
     {/each}
   {:else if isTestEnvironment}
     <div class=label>Spatial Coverage</div>
@@ -139,9 +139,9 @@
     <div class=label>Grant</div>
     {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
       {#if g?.number && g?.url && g?.name}
-        <a class="data external-link" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+        <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
       {:else if g?.number && g?.url}
-        <a class="data external-link" href={g?.url.url} target=_>{g?.number}</a>
+        <a class="data" href={g?.url.url} target=_>{g?.number}</a>
       {:else if g?.number}
         <span class=data>{g?.number}</span>
       {:else}
@@ -182,14 +182,14 @@
   <!-- URLs -->
   {#if $projectMetadata?.project.url}
     <div class=label>Project Website</div>
-    <a class="data external-link" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
+    <a class="data" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
   {:else if isTestEnvironment}
     <div class=label>Project Website</div>
     <div class=warning>URL missing</div>
   {/if}
   <!-- Secondary URL -->
   {#if $projectMetadata?.project.secondaryURL}
-    <a class="data external-link" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
+    <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
   {/if}
 
   <!-- Keywords -->
@@ -212,21 +212,8 @@
   }
   .keyword {
     padding: 0;
-    /* display: inline;
-    border: 1px solid #cdcdcd;
-    border-radius: 0.25rem;
-    color: #fff;
-    background-color: var(--third);
-		box-shadow: var(--shadow-1);
-    white-space: pre;
-    line-height: 2em;
-    padding: 4px; */
+    
   }
-  /* .keyword:hover {
-    color: var(--third);
-    background-color: #fff;
-    border-color: var(--third);
-  } */
   .label, .data {
     margin: 5px 0;
   }

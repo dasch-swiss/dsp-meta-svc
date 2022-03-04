@@ -126,7 +126,7 @@
           <span class=label>Additional documentation</span>
           {#each dataset?.additional as d}
             {#if d.__type === "URL"}
-              <a class="data external-link" href={d.url} target=_>{truncateString(d.text)}</a>
+              <a class="data" href={d.url} target=_>{truncateString(d.text)}</a>
             {:else}
               <span class=data>{getText(d)}</span>
             {/if}
@@ -143,7 +143,7 @@
         <span class=label>License</span>
         {#each dataset?.licenses as l}
           <div class=data>
-            <a href={l.license.url} class=external-link target=_>{l.license.text}</a>
+            <a href={l.license.url} target=_>{l.license.text}</a>
             {#if l.details}
               <div>{l.details}</div>
             {/if}
@@ -182,7 +182,7 @@
           <span class=label>Dataset Website</span>
           {#each dataset?.urls as u}
             {#if u.__type === 'URL'}
-              <div><a class="data external-link" href={u.url} target=_>{truncateString(u.text)}</a></div>
+              <div><a class="data" href={u.url} target=_>{truncateString(u.text)}</a></div>
             {/if}
           {/each}
         </div>
@@ -216,7 +216,7 @@
         <div id=abstract class="data {isAbstractExpanded ? '' : 'abstract-short'}">
           {#each dataset?.abstracts as a}
             {#if a.__type === "URL"}
-              <div><a class="data external-link" href={a.url} target=_>{truncateString(a.text)}</a></div>
+              <div><a class="data" href={a.url} target=_>{truncateString(a.text)}</a></div>
             {:else}
               <div>{getText(a)}</div>
             {/if}
@@ -243,17 +243,17 @@
             {#each [findObjectByID(a.agent)] as p}
               {#if p.__type === 'Person'}
                 {#if p.authorityRefs}
-                  <a href={p.authorityRefs[0].url} target=_ class="external-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+                  <a href={p.authorityRefs[0].url} target=_ class="attribution-name">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
                 {:else}
-                  <div>{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
+                  <div class="attribution-name">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
                 {/if}
                 {#if p.affiliation}
                   {#each p.affiliation.map(o => {return findOrganizationByID(o)}) as org}
-                    <div>{org.name}</div>
+                    <div class="attribution-additional">{org.name}</div>
                   {/each}
                 {/if}
                 {#if p.jobTitles && p.jobTitles[0]}
-                  <div>{p.jobTitles[0]}</div>
+                  <div class="attribution-additional">{p.jobTitles[0]}</div>
                 {:else if isTestEnvironment}
                   <dif class="warning">Job Title missing</dif>
                 {/if}
@@ -262,7 +262,7 @@
                 {/if}
               {:else if p.__type === 'Organization'}
                 {#if p.url}
-                  <a href={p.url.url} target=_ class="external-link">{p.name}</a>
+                  <a href={p.url.url} target=_ class="attribution-name">{p.name}</a>
                 {/if}
                 {#if p.email}
                   <a class=email href="mailto:{p.email}">{p.email}</a>
@@ -300,8 +300,19 @@
     color: var(--dasch-hover);
   }
   .role {
-    color: var(--secondary-colour);
+    color: var(--dasch-secondary);
+    font-weight: 700;
   }
+
+  .attribution-name {
+    font-weight: 500;
+    color: var(--lead-colour);
+  }
+
+  .attribution-additional {
+    font-weight: 400;
+  }
+
   .abstract-short {
     display: -webkit-box;
     -webkit-line-clamp: 6;

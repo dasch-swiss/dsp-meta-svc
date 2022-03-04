@@ -24,17 +24,22 @@
 <style>
   footer {
     flex-shrink: 0;
-    background-color: var(--cl-background);
-    font-weight: bold;
+    background-color: var(--dasch-secondary);
+    font-weight: 500;
+    font-size: 0.875rem;
     width: 100%;
     padding: 0.75rem;
     box-sizing: border-box;
     text-align: center;
+    color: #fff;
   }
   .version {
     position: absolute;
-    font-size: 0.75rem;
     line-height: 1.75;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 14px;
   }
   @media screen and (min-width: 768px){
     footer {

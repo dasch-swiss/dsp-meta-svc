@@ -1,0 +1,81 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-meta-svc/main/docs/services/metadata/schema-metadata.json",
+    "project": {
+        "__id": "http://ns.dasch.swiss/repository#dsp-0811-project",
+        "__type": "Project",
+        "__createdAt": "1652361078113030000",
+        "__createdBy": "dsp-metadata-gui",
+        "teaserText": "Die umfangreiche Postkartensammlung wie die der russischen Familie Radzievsky hat den Weg in den Besitz des Lehrstuhls für Osteuropäische Geschichte der Universität Basel gefunden.",
+        "datasets": [
+            "http://ns.dasch.swiss/repository#dsp-0811-dataset-000"
+        ],
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-0811-person-000",
+        "description": {
+            "de": "Die Erfindung der Fotografie und die weltweite Professionalisierung und Vereinheitlichung des Postwesens veränderten die Kommunikation in der Mitte des 19. Jahrhunderts grundlegend. 1872, nur drei Jahre nachdem die ersten – noch bildlosen – Postkarten in Österreich-Ungarn zirkulierten, wurden sie auch im russischen Postwesen zugelassen. Durch den ersten Weltpostkongress, der 1874 in Bern abgehalten wurde und dem sich über 22 Staaten anschlossen, wurde das neue Medium schliesslich vereinheitlicht und ab den 1880er Jahren zunehmend mit fotografischen Motiven bedruckt. Sie erst machten diese billige Form der Nachrichtenübermittlung zu einem beliebten Massenmedium. Die moderne Postkarte war geboren. 1875 wurden über 231 Millionen Postkarten verschickt – um 1900 sollten es bereits 2,8 Milliarden sein.1\n\nDer russische Markt hinkte dieser Entwicklung jedoch hinterher. Aufgrund staatlicher Monopole, die erst kurz vor der Wende zum 20. Jahrhundert langsam abgebaut wurden, dominierten lange Zeit ausländische Firmen den russischen Markt. Erst langsam, aber dann immer erfolgreicherer, erkämpften sich russische Unternehmen stabile Marktanteile – Marktgiganten wie die schwedische Firma Granberg mussten sich damit abfinden, dass nun Firmen wie das Moskauer Fotoatelier Nabholz, Scherer und Co qualitativ ebenbürtige Postkarten anboten. Daneben sorgten jedoch gerade viele kleine und lokale Druck- und Fotoateliers dafür, dass das Angebot auch im Russländischen Reich immer vielfältiger wurde. Ein Beispiel hierfür ist das Taschkenter Unternehmen des vermutlich aus Transkaukasien stammenden Fotografen I. A. Bek-Nazarov.\n\nDoch Postkarten können sich nicht nur als Sinnbilder von zunehmend globalisierten Märkten und internationalen Vereinheitlichungsprozessen gelesen werden. Gerade sie demonstrieren, wie schnell sich Privatpersonen und verschiedene Gruppen dieses Medium aneigneten und über seinen kommerziellen oder propagandistischen Verwendungszweck hinaus veränderten: Zahlreiche kulturelle und soziale Praktiken bildeten sich heraus: Postkarten wurden verschickt, beschrieben, bekritzelt, gesammelt, getauscht, gerahmt, zerstört oder zum Lesezeichen umfunktioniert. So wurden Karten mit dem Motiv der kaiserlichen Familie wahrscheinlich teilweise respektvoll in der Ikonenecke in Ehren gehalten – in anderen Kontexten drückte jedoch die gezielte Beschädigung des kaiserlichen Papier-Konterfeis Widerstand oder Ablehnung aus.2\n\nDamals wie heute schieden sich Geister wie Geschmäcker an den unterschiedlichen Motiven und Aufmachungen – und weckten zum Teil sogar den nationalen Stolz oder die Berufsehre der Betrachtenden: So bemerkte der russische Fotograf Sergej Prokudin-Gorskij, der selbst in Sankt Petersburg Postkarten herausgab, während eines Aufenthaltes im russischen Zentralasien: \"Heute habe ich eine Postkarte der Stadt Samarkand gekauft. Der Verkäufer erklärte mir mit einigem Stolz, dass der Brief mit einer fotografischen Methode im Ausland gedruckt worden war, wie als ob es in Russland unmöglich wäre, eine solche Reproduktion herzustellen. Teilweise ist dies vielleicht richtig – doch solch einen schlechten Druck habe ich selten gesehen, nicht einmal in miserablen Druckanstalten – doch das war ein besonderer Fall.\"3\n\nBeispiele wie diese sind es, die anschaulich den Quellenwert des Mediums für die modernen Geschichtswissenschaften demonstrieren, indem sie über eine rein kunst- oder technikgeschichtliche Leseweise dieser bisher meist als seriell verstandenen Quelle hinwegweisen und die individuellen materiellen Biografien von Einzelstücken oder kulturgeschichtlich deutbare soziale Praktiken bestimmter Akteure andeuten.\n\nAus diesem Grund hat sich der Lehrstuhl für Neuere und Osteuropäische Geschichte der Universität Basel entschlossen, seine Sammlung von Postkarten aus dem Russländischen Reich für ein breites Publikum zugänglich zu machen."
+        },
+        "name": "Postkarten Russland",
+        "shortcode": "0811",
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://www.salsah.org/postcards/",
+            "text": "https://www.salsah.org/postcards/"
+        }
+    },
+    "datasets": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0811-dataset-000",
+            "__type": "Dataset",
+            "__createdAt": "1652361078207182000",
+            "__createdBy": "dsp-metadata-gui",
+            "abstracts": [
+                {
+                    "de": "Die Erfindung der Fotografie und die weltweite Professionalisierung und Vereinheitlichung des Postwesens veränderten die Kommunikation in der Mitte des 19. Jahrhunderts grundlegend. 1872, nur drei Jahre nachdem die ersten – noch bildlosen – Postkarten in Österreich-Ungarn zirkulierten, wurden sie auch im russischen Postwesen zugelassen. Durch den ersten Weltpostkongress, der 1874 in Bern abgehalten wurde und dem sich über 22 Staaten anschlossen, wurde das neue Medium schliesslich vereinheitlicht und ab den 1880er Jahren zunehmend mit fotografischen Motiven bedruckt. Sie erst machten diese billige Form der Nachrichtenübermittlung zu einem beliebten Massenmedium. Die moderne Postkarte war geboren. 1875 wurden über 231 Millionen Postkarten verschickt – um 1900 sollten es bereits 2,8 Milliarden sein.1  Der russische Markt hinkte dieser Entwicklung jedoch hinterher. Aufgrund staatlicher Monopole, die erst kurz vor der Wende zum 20. Jahrhundert langsam abgebaut wurden, dominierten lange Zeit ausländische Firmen den russischen Markt. Erst langsam, aber dann immer erfolgreicherer, erkämpften sich russische Unternehmen stabile Marktanteile – Marktgiganten wie die schwedische Firma Granberg mussten sich damit abfinden, dass nun Firmen wie das Moskauer Fotoatelier Nabholz, Scherer und Co qualitativ ebenbürtige Postkarten anboten. Daneben sorgten jedoch gerade viele kleine und lokale Druck- und Fotoateliers dafür, dass das Angebot auch im Russländischen Reich immer vielfältiger wurde. Ein Beispiel hierfür ist das Taschkenter Unternehmen des vermutlich aus Transkaukasien stammenden Fotografen I. A. Bek-Nazarov.  Doch Postkarten können sich nicht nur als Sinnbilder von zunehmend globalisierten Märkten und internationalen Vereinheitlichungsprozessen gelesen werden. Gerade sie demonstrieren, wie schnell sich Privatpersonen und verschiedene Gruppen dieses Medium aneigneten und über seinen kommerziellen oder propagandistischen Verwendungszweck hinaus veränderten: Zahlreiche kulturelle und soziale Praktiken bildeten sich heraus: Postkarten wurden verschickt, beschrieben, bekritzelt, gesammelt, getauscht, gerahmt, zerstört oder zum Lesezeichen umfunktioniert. So wurden Karten mit dem Motiv der kaiserlichen Familie wahrscheinlich teilweise respektvoll in der Ikonenecke in Ehren gehalten – in anderen Kontexten drückte jedoch die gezielte Beschädigung des kaiserlichen Papier-Konterfeis Widerstand oder Ablehnung aus.2  Damals wie heute schieden sich Geister wie Geschmäcker an den unterschiedlichen Motiven und Aufmachungen – und weckten zum Teil sogar den nationalen Stolz oder die Berufsehre der Betrachtenden: So bemerkte der russische Fotograf Sergej Prokudin-Gorskij, der selbst in Sankt Petersburg Postkarten herausgab, während eines Aufenthaltes im russischen Zentralasien: \"Heute habe ich eine Postkarte der Stadt Samarkand gekauft. Der Verkäufer erklärte mir mit einigem Stolz, dass der Brief mit einer fotografischen Methode im Ausland gedruckt worden war, wie als ob es in Russland unmöglich wäre, eine solche Reproduktion herzustellen. Teilweise ist dies vielleicht richtig – doch solch einen schlechten Druck habe ich selten gesehen, nicht einmal in miserablen Druckanstalten – doch das war ein besonderer Fall.\"3  Beispiele wie diese sind es, die anschaulich den Quellenwert des Mediums für die modernen Geschichtswissenschaften demonstrieren, indem sie über eine rein kunst- oder technikgeschichtliche Leseweise dieser bisher meist als seriell verstandenen Quelle hinwegweisen und die individuellen materiellen Biografien von Einzelstücken oder kulturgeschichtlich deutbare soziale Praktiken bestimmter Akteure andeuten.  Aus diesem Grund hat sich der Lehrstuhl für Neuere und Osteuropäische Geschichte der Universität Basel entschlossen, seine Sammlung von Postkarten aus dem Russländischen Reich für ein breites Publikum zugänglich zu machen."
+                }
+            ],
+            "status": "Finished",
+            "title": "Postkarten aus dem Russländischen Reich: Die Sammlung Radzievsky in der Online-Datenbank SALSAH",
+            "typeOfData": [
+                "Image"
+            ]
+        }
+    ],
+    "persons": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0811-person-000",
+            "__type": "Person",
+            "__createdAt": "1652361078368442000",
+            "__createdBy": "dsp-metadata-gui",
+            "email": "benjamin.schenk@unibas.ch",
+            "familyNames": [
+                "Schenk"
+            ],
+            "givenNames": [
+                "Frithjof",
+                "Benjamin"
+            ],
+            "jobTitles": [
+                "Professor für Osteuropäische Geschichte"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0811-organization-000"
+            ]
+        }
+    ],
+    "organizations": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0811-organization-000",
+            "__type": "Organization",
+            "__createdAt": "1652361078368625000",
+            "__createdBy": "dsp-metadata-gui",
+            "address": {
+                "__type": "Address",
+                "street": "",
+                "postalCode": "",
+                "locality": "Basel",
+                "country": "Switzerland"
+            },
+            "name": "Universität Basel, Departement Geschichte"
+        }
+    ]
+}

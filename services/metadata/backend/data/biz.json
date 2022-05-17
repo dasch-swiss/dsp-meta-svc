@@ -3,7 +3,7 @@
     "project": {
         "__id": "http://ns.dasch.swiss/repository#dsp-0828-project",
         "__type": "Project",
-        "__createdAt": "1637624098376694000",
+        "__createdAt": "1652201317458036000",
         "__createdBy": "dsp-metadata-gui",
         "teaserText": "Long-term statistical series on the development of cantonal school structures in Switzerland in the 19th and 20th centuries are being generated, annotated and contextualised since September 2010.",
         "datasets": [
@@ -51,56 +51,32 @@
             {
                 "__type": "URL",
                 "type": "Geonames",
+                "url": "https://www.geonames.org/2660207/jura.html",
+                "text": "Jura"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2658372/kanton-thurgau.html",
+                "text": "Thurgau"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
                 "url": "https://www.geonames.org/2658205/canton-du-valais.html",
                 "text": "Valais"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2661602/kanton-basel-stadt.html",
-                "text": "Basel-City"
+                "url": "https://www.geonames.org/2660645/geneve.html",
+                "text": "Geneva"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2661551/canton-de-berne.html",
-                "text": "Bern"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2660717/canton-de-fribourg.html",
-                "text": "Fribourg"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2659495/neuchatel.html",
-                "text": "Neuchâtel"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2659315/kanton-obwalden.html",
-                "text": "Obwalden"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2658664/kanton-schwyz.html",
-                "text": "Schwyz"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2658434/switzerland.html",
-                "text": "Switzerland"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2660207/jura.html",
-                "text": "Jura"
+                "url": "https://www.geonames.org/2660593/kanton-glarus.html",
+                "text": "Glarus"
             },
             {
                 "__type": "URL",
@@ -111,32 +87,50 @@
             {
                 "__type": "URL",
                 "type": "Geonames",
+                "url": "https://www.geonames.org/2658182/canton-de-vaud.html",
+                "text": "Vaud"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2661739/kanton-appenzell-ausserrhoden.html",
+                "text": "Appenzell Ausserrhoden"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2658434/switzerland.html",
+                "text": "Switzerland"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2660717/canton-de-fribourg.html",
+                "text": "Fribourg"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
                 "url": "https://www.geonames.org/2657895/kanton-zuerich.html",
                 "text": "Zurich"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2661876/kanton-aargau.html",
-                "text": "Aargau"
+                "url": "https://www.geonames.org/2658563/kanton-solothurn.html",
+                "text": "Solothurn"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2658760/kanton-schaffhausen.html",
-                "text": "Schaffhausen"
+                "url": "https://www.geonames.org/2659810/kanton-luzern.html",
+                "text": "Lucerne"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
                 "url": "https://www.geonames.org/2661741/kanton-appenzell-innerrhoden.html",
                 "text": "Appenzell Innerrhoden"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
-                "url": "https://www.geonames.org/2658563/kanton-solothurn.html",
-                "text": "Solothurn"
             },
             {
                 "__type": "URL",
@@ -153,20 +147,20 @@
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2659810/kanton-luzern.html",
-                "text": "Lucerne"
+                "url": "https://www.geonames.org/2661876/kanton-aargau.html",
+                "text": "Aargau"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2660645/geneve.html",
-                "text": "Geneva"
+                "url": "https://www.geonames.org/2661551/canton-de-berne.html",
+                "text": "Bern"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2661603/kanton-basel-landschaft.html",
-                "text": "Basel-Landschaft"
+                "url": "https://www.geonames.org/2659315/kanton-obwalden.html",
+                "text": "Obwalden"
             },
             {
                 "__type": "URL",
@@ -177,20 +171,20 @@
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2658182/canton-de-vaud.html",
-                "text": "Vaud"
-            },
-            {
-                "__type": "URL",
-                "type": "Geonames",
                 "url": "https://www.geonames.org/2658370/ticino.html",
                 "text": "Ticino"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2658372/kanton-thurgau.html",
-                "text": "Thurgau"
+                "url": "https://www.geonames.org/2661603/kanton-basel-landschaft.html",
+                "text": "Basel-Landschaft"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2661602/kanton-basel-stadt.html",
+                "text": "Basel-City"
             },
             {
                 "__type": "URL",
@@ -201,14 +195,20 @@
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2660593/kanton-glarus.html",
-                "text": "Glarus"
+                "url": "https://www.geonames.org/2658664/kanton-schwyz.html",
+                "text": "Schwyz"
             },
             {
                 "__type": "URL",
                 "type": "Geonames",
-                "url": "https://www.geonames.org/2661739/kanton-appenzell-ausserrhoden.html",
-                "text": "Appenzell Ausserrhoden"
+                "url": "https://www.geonames.org/2658760/kanton-schaffhausen.html",
+                "text": "Schaffhausen"
+            },
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2659495/neuchatel.html",
+                "text": "Neuchâtel"
             }
         ],
         "startDate": "2010-09-01",
@@ -231,16 +231,9 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-dataset-000",
             "__type": "Dataset",
-            "__createdAt": "1637624101612010000",
+            "__createdAt": "1652201322251500000",
             "__createdBy": "dsp-metadata-gui",
             "attributions": [
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-001",
-                    "roles": [
-                        "Operational project management (2021–to-date)"
-                    ]
-                },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-005",
@@ -257,9 +250,16 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-001",
                     "roles": [
-                        "Student assistant (2017–to-date)"
+                        "Operational project management (2021–to-date)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-003",
+                    "roles": [
+                        "Project assistant (2020–to-date)"
                     ]
                 },
                 {
@@ -278,9 +278,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-004",
                     "roles": [
-                        "Project assistant (2020–to-date)"
+                        "Student assistant (2017–2022)"
                     ]
                 }
             ],
@@ -291,7 +291,7 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-001",
             "__type": "Person",
-            "__createdAt": "1637624101612438000",
+            "__createdAt": "1652201322251879000",
             "__createdBy": "dsp-metadata-gui",
             "email": "lea.haegi@ife.uzh.ch",
             "familyNames": [
@@ -310,15 +310,15 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/h%C3%A4gilea.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/h%C3%A4gilea.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/h%C3%A4gilea.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/h%C3%A4gilea.html"
                 }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-002",
             "__type": "Person",
-            "__createdAt": "1637624101612575000",
+            "__createdAt": "1652201322252000000",
             "__createdBy": "dsp-metadata-gui",
             "email": "stefan.kessler@ife.uzh.ch",
             "familyNames": [
@@ -337,15 +337,15 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/kesslerstefan.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/kesslerstefan.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/kesslerstefan.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/kesslerstefan.html"
                 }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-003",
             "__type": "Person",
-            "__createdAt": "1637624101612721000",
+            "__createdAt": "1652201322252116000",
             "__createdBy": "dsp-metadata-gui",
             "email": "nathalie.pfiffner@ife.uzh.ch",
             "familyNames": [
@@ -364,17 +364,17 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/pfiffnernathalie.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/pfiffnernathalie.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/pfiffnernathalie.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/pfiffnernathalie.html"
                 }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-004",
             "__type": "Person",
-            "__createdAt": "1637624101612849000",
+            "__createdAt": "1652201322252230000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "lars.heinzer@ife.uzh.ch",
+            "email": "lars.heinzer@uzh.ch",
             "familyNames": [
                 "Heinzer"
             ],
@@ -386,22 +386,14 @@
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-000"
-            ],
-            "authorityRefs": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/heinzerlarsthomas.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/heinzerlarsthomas.html"
-                }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-005",
             "__type": "Person",
-            "__createdAt": "1637624101612977000",
+            "__createdAt": "1652201322252298000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "jennifer.mazzarella@ife.uzh.ch",
+            "email": "jennifer.mazzarella@uzh.ch",
             "familyNames": [
                 "Mazzarella"
             ],
@@ -418,15 +410,15 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/mazzarellajennifer.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/mazzarellajennifer.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/mazzarellajennifer.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/mazzarellajennifer.html"
                 }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-006",
             "__type": "Person",
-            "__createdAt": "1637624101613103000",
+            "__createdAt": "1652201322252414000",
             "__createdBy": "dsp-metadata-gui",
             "email": "raffaelachristina.devries@ife.uzh.ch",
             "familyNames": [
@@ -445,15 +437,15 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/devriesrapphaela.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/devriesrapphaela.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/devriesrapphaela.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/devriesrapphaela.html"
                 }
             ]
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-person-000",
             "__type": "Person",
-            "__createdAt": "1637624101613228000",
+            "__createdAt": "1652201322252529000",
             "__createdBy": "dsp-metadata-gui",
             "email": "lcriblez@ife.uzh.ch",
             "familyNames": [
@@ -472,8 +464,8 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/criblezlucien.html",
-                    "text": "https://www.ife.uzh.ch/de/research/hbs/mitarbeitende2/criblezlucien.html"
+                    "url": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/criblezlucien.html",
+                    "text": "https://www.ife.uzh.ch/de/research/criblez/mitarbeitende2/criblezlucien.html"
                 }
             ]
         }
@@ -482,7 +474,7 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-organization-001",
             "__type": "Organization",
-            "__createdAt": "1637624101613368000",
+            "__createdAt": "1652201322252657000",
             "__createdBy": "dsp-metadata-gui",
             "name": "Swiss National Science Foundation (SNSF)",
             "url": {
@@ -495,7 +487,7 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-organization-000",
             "__type": "Organization",
-            "__createdAt": "1637624101613437000",
+            "__createdAt": "1652201322252721000",
             "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
@@ -517,16 +509,24 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-grant-000",
             "__type": "Grant",
-            "__createdAt": "1637624101773298000",
+            "__createdAt": "1652201322483593000",
             "__createdBy": "dsp-metadata-gui",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"
-            ]
+            ],
+            "name": "Project funding (Div. I-III)",
+            "number": "130398",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://p3.snf.ch/Project-130398",
+                "text": "https://p3.snf.ch/Project-130398"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-grant-001",
             "__type": "Grant",
-            "__createdAt": "1637624101773354000",
+            "__createdAt": "1652201322483779000",
             "__createdBy": "dsp-metadata-gui",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"
@@ -543,16 +543,24 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-grant-002",
             "__type": "Grant",
-            "__createdAt": "1637624101773526000",
+            "__createdAt": "1652201322483961000",
             "__createdBy": "dsp-metadata-gui",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"
-            ]
+            ],
+            "name": "Research Infrastructure",
+            "number": "170407",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://p3.snf.ch/Project-170407",
+                "text": "https://p3.snf.ch/Project-170407"
+            }
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0828-grant-003",
             "__type": "Grant",
-            "__createdAt": "1637624101773575000",
+            "__createdAt": "1652201322484133000",
             "__createdBy": "dsp-metadata-gui",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"

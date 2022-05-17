@@ -94,6 +94,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://admin.ls-prod-server.dasch.swiss/project/0111/info",
+            "text": "https://admin.ls-prod-server.dasch.swiss/project/0111/info"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "https://ark.dasch.swiss/ark:/72163/1/0111",
             "text": "https://ark.dasch.swiss/ark:/72163/1/0111"
         }

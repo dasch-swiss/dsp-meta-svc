@@ -90,8 +90,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://data.dasch.swiss/bmf/",
-            "text": "https://data.dasch.swiss/bmf/"
+            "url":
+            "text":
         }
     },
     "datasets": [

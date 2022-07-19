@@ -1,21 +1,21 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-meta-svc/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-REMA-project",
+        "__id": "http://ns.dasch.swiss/repository#dsp-0117-project",
         "__type": "Project",
         "__createdAt": "1657709544615698000",
         "__createdBy": "dsp-metadata-gui",
         "howToCite": "Croci, C., Quadri, I, Gianandrea, M., Romano, S., Tosti, E., Chiaraella, M., Ventura, D., Rivoal, M., 2022, Rome in the Early Middle Ages: Arts and Culture [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0118",
         "teaserText": "The project addresses the visual culture of the city of Rome (Vth-XIth ct.) by means of an interdisciplinary approach (art history, architecture, archaeology archaeometry, liturgy, epigraphy).",
         "datasets": [
-            "http://ns.dasch.swiss/repository#dsp-REMA-dataset-000"
+            "http://ns.dasch.swiss/repository#dsp-0117-dataset-000"
         ],
         "alternativeNames": [
             {
                 "fr": "rome-siecles-obscurs"
             }
         ],
-        "contactPoint": "http://ns.dasch.swiss/repository#dsp-REMA-person-000",
+        "contactPoint": "http://ns.dasch.swiss/repository#dsp-0117-person-000",
         "dataManagementPlan": {
             "__type": "DataManagementPlan",
             "available": true
@@ -33,10 +33,10 @@
         ],
         "endDate": "2023-08-31",
         "funders": [
-            "http://ns.dasch.swiss/repository#dsp-REMA-organization-001"
+            "http://ns.dasch.swiss/repository#dsp-0117-organization-001"
         ],
         "grants": [
-            "http://ns.dasch.swiss/repository#dsp-REMA-grant-000"
+            "http://ns.dasch.swiss/repository#dsp-0117-grant-000"
         ],
         "keywords": [
             {
@@ -44,7 +44,7 @@
             }
         ],
         "name": "Rome in the Early Middle Ages: Arts and Culture",
-        "shortcode": "REMA",
+        "shortcode": "0117",
         "spatialCoverage": [
             {
                 "__type": "URL",
@@ -65,7 +65,7 @@
     },
     "datasets": [
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-dataset-000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-dataset-000",
             "__type": "Dataset",
             "__createdAt": "1657709546374431000",
             "__createdBy": "dsp-metadata-gui",
@@ -103,56 +103,56 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-000",
                     "roles": [
                         "Project Leader"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-004",
                     "roles": [
                         "Data Collector"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-002",
                     "roles": [
                         "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-007",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-007",
                     "roles": [
                         "Data Collector"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-003",
                     "roles": [
                         "Data Collector"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-006",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-006",
                     "roles": [
                         "Project Member"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-005",
                     "roles": [
                         "Researcher"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0117-person-001",
                     "roles": [
                         "Project Leader"
                     ]
@@ -176,7 +176,7 @@
     ],
     "persons": [
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-001",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-001",
             "__type": "Person",
             "__createdAt": "1657709547134209000",
             "__createdBy": "dsp-metadata-gui",
@@ -192,11 +192,11 @@
                 "Project Leader"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-002",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-002",
             "__type": "Person",
             "__createdAt": "1657709547134310000",
             "__createdBy": "dsp-metadata-gui",
@@ -211,11 +211,11 @@
                 "Data Curator"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-003",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-003",
             "__type": "Person",
             "__createdAt": "1657709547134410000",
             "__createdBy": "dsp-metadata-gui",
@@ -231,11 +231,11 @@
                 "Project Member"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-004",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-004",
             "__type": "Person",
             "__createdAt": "1657709547134507000",
             "__createdBy": "dsp-metadata-gui",
@@ -251,11 +251,11 @@
                 "Project Member"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-005",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-005",
             "__type": "Person",
             "__createdAt": "1657709547134588000",
             "__createdBy": "dsp-metadata-gui",
@@ -271,11 +271,11 @@
                 "Researcher"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-006",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-006",
             "__type": "Person",
             "__createdAt": "1657709547134672000",
             "__createdBy": "dsp-metadata-gui",
@@ -290,12 +290,12 @@
                 "Project Member"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000",
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-002"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000",
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-002"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-007",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-007",
             "__type": "Person",
             "__createdAt": "1657709547134778000",
             "__createdBy": "dsp-metadata-gui",
@@ -310,11 +310,11 @@
                 "Data Collector"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-person-000",
             "__type": "Person",
             "__createdAt": "1657709547134887000",
             "__createdBy": "dsp-metadata-gui",
@@ -330,13 +330,13 @@
                 "Project Leader"
             ],
             "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-000"
             ]
         }
     ],
     "organizations": [
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-organization-002",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-organization-002",
             "__type": "Organization",
             "__createdAt": "1657709547135008000",
             "__createdBy": "dsp-metadata-gui",
@@ -350,7 +350,7 @@
             "name": "University of Rome"
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-organization-001",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-organization-001",
             "__type": "Organization",
             "__createdAt": "1657709547222387000",
             "__createdBy": "dsp-metadata-gui",
@@ -371,7 +371,7 @@
             }
         },
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-organization-000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-organization-000",
             "__type": "Organization",
             "__createdAt": "1657709547268009000",
             "__createdBy": "dsp-metadata-gui",
@@ -393,12 +393,12 @@
     ],
     "grants": [
         {
-            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-grant-000",
+            "__id": "http://ns.dasch.swiss/repository#dsp-0117-grant-000",
             "__type": "Grant",
             "__createdAt": "1657709547313726000",
             "__createdBy": "dsp-metadata-gui",
             "funders": [
-                "http://ns.dasch.swiss/repository#dsp-REMA-organization-001"
+                "http://ns.dasch.swiss/repository#dsp-0117-organization-001"
             ],
             "name": "Div. I-III",
             "number": "192854",

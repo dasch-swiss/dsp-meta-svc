@@ -50,7 +50,7 @@
                 "__type": "URL",
                 "type": "URL",
                 "url": "http://vocab.getty.edu/page/tgn/7000874",
-                "text": "http://vocab.getty.edu/page/tgn/7000874"
+                "text": "Rome"
             }
         ],
         "startDate": "2020-09-01",
@@ -406,7 +406,7 @@
                 "__type": "URL",
                 "type": "URL",
                 "url": "https://p3.snf.ch/Project-192854",
-                "text": "https://p3.snf.ch/Project-192854"
+                "text": "Projektförderung 192854"
             }
         }
     ]

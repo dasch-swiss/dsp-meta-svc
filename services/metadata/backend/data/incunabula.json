@@ -119,8 +119,8 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "http://data.dasch.swiss/incunabula",
-                    "text": "http://data.dasch.swiss/incunabula"
+                    "url": "https://admin.dasch.swiss/beta/project/0803",
+                    "text": "https://admin.dasch.swiss/beta/project/0803"
                 }
             ]
         }

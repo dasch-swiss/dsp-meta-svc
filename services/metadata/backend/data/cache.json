@@ -79,7 +79,7 @@
             "url": "https://admin.dasch.swiss/beta/project/082B",
             "text": "https://admin.dasch.swiss/beta/project/082B"
         },
-        "url": {
+        "secondaryURL": {
             "__type": "URL",
             "type": "URL",
             "url": "http://www.cache.ch",

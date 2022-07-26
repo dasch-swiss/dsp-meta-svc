@@ -192,7 +192,7 @@
             "url": "https://admin.dasch.swiss/beta/project/0807",
             "text": "https://admin.dasch.swiss/beta/project/0807"
         },
-        "url": {
+        "secondaryURL": {
             "__type": "URL",
             "type": "URL",
             "url": "https://mls.0807.dasch.swiss/home",
@@ -256,20 +256,6 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-0807-person-001",
                     "roles": [
                         "Responsible for the Dataset, Contact with DaSCH"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0807-organization-003",
-                    "roles": [
-                        "Patron"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0807-organization-004",
-                    "roles": [
-                        "Maintainer"
                     ]
                 },
                 {

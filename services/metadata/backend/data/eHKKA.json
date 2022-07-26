@@ -124,13 +124,6 @@
                     "roles": [
                         "1991-2012: Vollberuflicher Mitarbeiter der HKKA  Initiant des Projekts und Leiter des Herausgeberteams"
                     ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083C-organization-000",
-                    "roles": [
-                        "Creator of Dataset"
-                    ]
                 }
             ],
             "status": "Finished",
@@ -155,7 +148,7 @@
                 "Ursula"
             ],
             "jobTitles": [
-                "Mitglied des Stiftungsrates HKKA"
+                "Prof. Dr. phil."
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-083C-organization-000",
@@ -174,7 +167,7 @@
                 "Walter"
             ],
             "jobTitles": [
-                "1991-2012: Vollberuflicher Mitarbeiter der HKKA  Initiant des Projekts und Leiter des Herausgeberteams"
+                "Dr. phil."
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-083C-organization-000",
@@ -193,7 +186,7 @@
                 "Karl"
             ],
             "jobTitles": [
-                "2000-2013 vollberuflicher Mitarbeiter der HKKA 2000-2013 Mitglied des Herausgeberteams, zuständig für EDV"
+                "Dr. phil."
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-083C-organization-000"
@@ -212,7 +205,7 @@
                 "Dominik"
             ],
             "jobTitles": [
-                "Bis 2018: Maître d’enseignement et de recherche, Départemet de langue et de littérature allemandes, Faculté des Lettres, Université de Genève 1991-2013 Beratendes Mitglied des Herausgeberteams; seit 2016 Präsident der Stiftung für eine Historisch-Kritische Gottfried Keller-Ausgabe"
+                "Dr. phil."
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-083C-organization-000",

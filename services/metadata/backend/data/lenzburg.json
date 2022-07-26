@@ -96,7 +96,7 @@
             "url": "https://admin.dasch.swiss/beta/project/082A",
             "text": "https://admin.dasch.swiss/beta/project/082A"
         },
-        "url": {
+        "secondaryURL": {
             "__type": "URL",
             "type": "URL",
             "url": "https://www.volkskunde.ch/sgv/archive-und-sammlungen/volksliederarchiv",

@@ -414,8 +414,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/project-198240",
-                "text": "http://p3.snf.ch/project-198240"
+                "url": "https://data.snf.ch/grants/grant/198240",
+                "text": "https://data.snf.ch/grants/grant/198240"
             }
         }
     ]

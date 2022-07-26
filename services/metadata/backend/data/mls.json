@@ -189,6 +189,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/0807",
+            "text": "https://admin.dasch.swiss/beta/project/0807"
+        },
+        "url": {
+            "__type": "URL",
+            "type": "URL",
             "url": "https://mls.0807.dasch.swiss/home",
             "text": "https://mls.0807.dasch.swiss/home"
         }

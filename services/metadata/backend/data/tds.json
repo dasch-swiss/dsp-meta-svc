@@ -162,8 +162,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "http://theatresdesociete.unil.ch/",
-            "text": "http://theatresdesociete.unil.ch/"
+            "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0103",
+            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0103"
         },
         "secondaryURL": {
             "__type": "URL",
@@ -536,8 +536,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-157392",
-                "text": "http://p3.snf.ch/Project-157392"
+                "url": "https://data.snf.ch/grants/grant/157392",
+                "text": "https://data.snf.ch/grants/grant/157392"
             }
         },
         {
@@ -553,8 +553,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-190070",
-                "text": "http://p3.snf.ch/Project-190070"
+                "url": "https://data.snf.ch/grants/grant/190070",
+                "text": "https://data.snf.ch/grants/grant/190070"
             }
         }
     ]

@@ -95,8 +95,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://admin.ls-prod-server.dasch.swiss/project/0107/info",
-            "text": "https://admin.ls-prod-server.dasch.swiss/project/0107/info"
+            "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0107",
+            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0107"
         },
         "secondaryURL": {
             "__type": "URL",
@@ -427,8 +427,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-166366",
-                "text": "http://p3.snf.ch/Project-166366"
+                "url": "https://data.snf.ch/grants/grant/166366",
+                "text": "https://data.snf.ch/grants/grant/166366"
             }
         }
     ]

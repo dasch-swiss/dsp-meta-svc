@@ -86,13 +86,7 @@
                 "en": "1984 - 2000",
                 "fr": "1984 - 2000"
             }
-        ],
-        "url": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "https://data.dasch.swiss/bmf/",
-            "text": "https://data.dasch.swiss/bmf/"
-        }
+        ]
     },
     "datasets": [
         {

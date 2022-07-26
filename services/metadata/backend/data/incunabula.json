@@ -56,6 +56,12 @@
             "Schweizer Tobias u. Rosenthaler Lukas (2011), SALSAH - eine virtuelle Forschungsumgebung für die Geisteswissenschaften, in Bienert Andreas u.a. (ed.), GFaI, Berlin, 147-153.",
             "Schweizer Tobias, Development of a Topographical Transcription Method, in Clivaz Claire u. a. (ed.), ebook, auf der Plattform http://www.ppur.info/lire-demain.html, Lausanne, 671-680."
         ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/0803",
+            "text": "https://admin.dasch.swiss/beta/project/0803"
+        },
         "shortcode": "0803",
         "startDate": "2008-06-01"
     },
@@ -113,8 +119,8 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "http://data.dasch.swiss/incunabula",
-                    "text": "http://data.dasch.swiss/incunabula"
+                    "url": "https://admin.dasch.swiss/beta/project/0803",
+                    "text": "https://admin.dasch.swiss/beta/project/0803"
                 }
             ]
         }
@@ -234,8 +240,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "https://p3.snf.ch/project-120378",
-                "text": "https://p3.snf.ch/project-120378"
+                "url": "https://data.snf.ch/grants/grant/120378",
+                "text": "https://data.snf.ch/grants/grant/120378"
             }
         }
     ]

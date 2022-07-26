@@ -76,6 +76,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/082B",
+            "text": "https://admin.dasch.swiss/beta/project/082B"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "http://www.cache.ch",
             "text": "www.cache.ch"
         }
@@ -493,12 +499,12 @@
                 "http://ns.dasch.swiss/repository#dsp-082B-organization-003"
             ],
             "name": "Digital Lives SNF",
-            "number": "http://p3.snf.ch/Project-183057",
+            "number": "183057",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-183057",
-                "text": "183057"
+                "url": "https://data.snf.ch/grants/grant/183057",
+                "text": "https://data.snf.ch/grants/grant/183057"
             }
         }
     ]

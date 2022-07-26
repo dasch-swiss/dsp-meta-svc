@@ -251,13 +251,13 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0805-organization-001"
             ],
-            "name": "SNF Project",
-            "number": "SNF 100011_156046",
+            "name": "Project funding",
+            "number": "156046",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/project-156046",
-                "text": "http://p3.snf.ch/project-156046"
+                "url": "https://data.snf.ch/grants/grant/156046",
+                "text": "https://data.snf.ch/grants/grant/156046    "
             }
         }
     ]

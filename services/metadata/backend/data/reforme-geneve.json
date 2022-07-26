@@ -94,8 +94,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://admin.ls-prod-server.dasch.swiss/project/0111/info",
-            "text": "https://admin.ls-prod-server.dasch.swiss/project/0111/info"
+            "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0111",
+            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0111"
         },
         "secondaryURL": {
             "__type": "URL",

@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601383511170000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Reconstruire Delille, 2021, https://delille.dasch.swiss",
+        "howToCite": "Reconstruire Delille, 2021",
         "teaserText": "NIE-INE outcome for the project `Reconstruire Delille' in relation to the scholarly `reverse' edition of the reception of the third canto of Jacques Delille's L'homme des champs.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-081B-dataset-001"
@@ -132,14 +132,6 @@
             "title": "Delille",
             "typeOfData": [
                 "XML"
-            ],
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://delille.dasch.swiss/",
-                    "text": "https://delille.dasch.swiss/"
-                }
             ]
         }
     ],
@@ -222,8 +214,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/project-153189",
-                "text": "http://p3.snf.ch/project-153189"
+                "url": "https://data.snf.ch/grants/grant/153189",
+                "text": "https://data.snf.ch/grants/grant/153189"
             }
         }
     ]

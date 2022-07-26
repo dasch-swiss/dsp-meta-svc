@@ -76,6 +76,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/082D",
+            "text": "https://admin.dasch.swiss/beta/project/082D"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "http://www.unine.ch/geographie/en/home/recherche/--espace-et-pouvoir-a-lere-du-nu/research-projects/smart-farming.html",
             "text": "http://www.unine.ch/geographie/en/home/recherche/--espace-et-pouvoir-a-lere-du-nu/research-projects/smart-farming.html"
         }
@@ -247,12 +253,12 @@
                 "http://ns.dasch.swiss/repository#dsp-082D-organization-001"
             ],
             "name": "Digital Lives",
-            "number": "FN 10DL1A_183037",
+            "number": "183037",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://www.snf.ch/de/foerderung/projekte/digital-lives/Seiten/default.aspx",
-                "text": "http://www.snf.ch/de/foerderung/projekte/digital-lives/Seiten/default.aspx"
+                "url": "https://data.snf.ch/grants/grant/183037",
+                "text": "https://data.snf.ch/grants/grant/183037"
             }
         }
     ]

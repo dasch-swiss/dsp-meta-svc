@@ -519,8 +519,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "https://p3.snf.ch/Project-130398",
-                "text": "https://p3.snf.ch/Project-130398"
+                "url": "https://data.snf.ch/grants/grant/130398",
+                "text": "https://data.snf.ch/grants/grant/130398"
             }
         },
         {
@@ -536,8 +536,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-146239",
-                "text": "http://p3.snf.ch/Project-146239"
+                "url": "https://data.snf.ch/grants/grant/146239",
+                "text": "https://data.snf.ch/grants/grant/146239"
             }
         },
         {
@@ -553,8 +553,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "https://p3.snf.ch/Project-170407",
-                "text": "https://p3.snf.ch/Project-170407"
+                "url": "https://data.snf.ch/grants/grant/170407",
+                "text": "https://data.snf.ch/grants/grant/170407"
             }
         },
         {
@@ -570,8 +570,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-198049",
-                "text": "http://p3.snf.ch/Project-198049"
+                "url": "https://data.snf.ch/grants/grant/198049",
+                "text": "https://data.snf.ch/grants/grant/198049"
             }
         }
     ]

@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.9.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.1...v1.9.2) (2022-07-26)
+
+
+### Bug Fixes
+
+* broken website links (DEV-1100) ([#40](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/40)) ([802639c](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/802639cdc64090fc41d147cdfb6724690b9051b9))
+
 ### [1.9.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.0...v1.9.1) (2022-03-04)
 
 

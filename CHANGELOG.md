@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.10.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.2...v1.10.2) (2022-07-27)
+
+
+### Maintenance
+
+* change release versionnumber to 1.10.2 ([9c0ff66](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/9c0ff6660b2fc540984aba657dd162a826e79835))
+
 ### [1.9.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.1...v1.9.2) (2022-07-26)
 
 

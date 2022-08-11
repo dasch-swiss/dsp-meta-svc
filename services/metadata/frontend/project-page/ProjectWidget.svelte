@@ -152,7 +152,6 @@
     <div class=label>Grant</div>
     {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
       {#if g?.number && g?.url && g?.name}
-        <!-- <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a> -->
         <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.name}: ${g?.number}`)}</a>
       {:else if g?.number && g?.url}
         <a class="data" href={g?.url.url} target=_>{g?.number}</a>

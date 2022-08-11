@@ -78,7 +78,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://nietzsche.philhist.unibas.ch",
-            "text": "https://nietzsche.philhist.unibas.ch"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -201,14 +201,6 @@
             "typeOfData": [
                 "Image",
                 "Text"
-            ],
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://nietzsche.philhist.unibas.ch/home",
-                    "text": "https://nietzsche.philhist.unibas.ch/home"
-                }
             ]
         }
     ],
@@ -390,8 +382,8 @@
                 "locality": "Bern",
                 "country": "Switzerland"
             },
-            "email": "com@snf.ch",
-            "name": "Schweizerischer Nationalfonds (SNF)",
+            "email": "desk@snf.ch",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -409,7 +401,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0836-organization-000"
             ],
-            "name": "Editionen",
+            "name": "Editions",
             "number": "198240",
             "url": {
                 "__type": "URL",

@@ -54,7 +54,7 @@
                 "en": "Shakespeare"
             }
         ],
-        "name": "WordWeb / IDEM: A new way of representing Intertextuality in Drama of the Early\r Modern Period",
+        "name": "WordWeb / IDEM: A new way of representing Intertextuality in Drama of the Early Modern Period",
         "shortcode": "0826",
         "spatialCoverage": [
             {
@@ -194,6 +194,20 @@
                     "roles": [
                         "Editor"
                     ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-004",
+                    "roles": [
+                        "Programmer"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-005",
+                    "roles": [
+                        "Applicant"
+                    ]
                 }
             ],
             "status": "Ongoing",
@@ -257,6 +271,38 @@
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-0826-organization-001"
             ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0826-person-004",
+            "__type": "Person",
+            "familyNames": [
+                "Tissaveerasingham"
+            ],
+            "givenNames": [
+                "Vijeinath"
+            ],
+            "jobTitles": [
+                "Scientific collaborator"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0826-organization-002"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0826-person-005",
+            "__type": "Person",
+            "familyNames": [
+                "Rosenthaler"
+            ],
+            "givenNames": [
+                "Lukas"
+            ],
+            "jobTitles": [
+                "Prof. Dr."
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-0826-organization-002"
+            ]
         }
     ],
     "organizations": [
@@ -273,7 +319,7 @@
                 "country": "Switzerland"
             },
             "email": "desk@snf.ch",
-            "name": "Schweizerischer Nationalfonds (SNF)",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -293,6 +339,17 @@
                 "url": "http://www.unibas.ch",
                 "text": "www.unibas.ch"
             }
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-0826-organization-002",
+            "__type": "Organization",
+            "name": "Digital Humanities Lab, University of Basel",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://dhlab.philhist.unibas.ch/de/",
+                "text": "https://dhlab.philhist.unibas.ch/de/"
+            }
         }
     ],
     "grants": [
@@ -309,8 +366,8 @@
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "http://p3.snf.ch/Project-183259",
-                "text": "http://p3.snf.ch/Project-183259"
+                "url": "https://data.snf.ch/grants/grant/183259",
+                "text": "https://data.snf.ch/grants/grant/183259"
             }
         }
     ]

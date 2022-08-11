@@ -186,8 +186,14 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://data.dasch.swiss/webern/",
+            "text": "DaSCH Project Website (SALSAH)"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "https://www.anton-webern.ch",
-            "text": "https://www.anton-webern.ch"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -554,7 +560,7 @@
                 "country": "Switzerland"
             },
             "email": "rossnagl@evs-musikstiftung.ch",
-            "name": "EvS",
+            "name": "Ernst von Siemens Musikstiftung",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -595,8 +601,8 @@
                 "locality": "Bern",
                 "country": "Switzerland"
             },
-            "email": "com@snf.ch",
-            "name": "Schweizerischer Nationalfonds zur Förderung der wissenschaftlichen Forschung",
+            "email": "desk@snf.ch",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -645,7 +651,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
-            "name": "Editionen [2017–2020]",
+            "name": "Editions",
             "number": "157968",
             "url": {
                 "__type": "URL",
@@ -662,7 +668,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
-            "name": "Projektförderung (spezial) [2015–2017]",
+            "name": "Project funding",
             "number": "162871",
             "url": {
                 "__type": "URL",
@@ -679,7 +685,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
-            "name": "Projektförderung (spezial) [2012–2015]",
+            "name": "Project funding",
             "number": "143565",
             "url": {
                 "__type": "URL",
@@ -696,7 +702,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
-            "name": "Projektförderung (Abt. I-III) [2009–2012]",
+            "name": "Project funding",
             "number": "126789",
             "url": {
                 "__type": "URL",
@@ -713,7 +719,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0806-organization-003"
             ],
-            "name": "Projektförderung (Abt. I-III) [2006–2009]",
+            "name": "Project funding",
             "number": "113769",
             "url": {
                 "__type": "URL",

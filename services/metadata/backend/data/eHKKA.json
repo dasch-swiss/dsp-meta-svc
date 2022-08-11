@@ -83,7 +83,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://www.ehkka.ch/ehkka/",
-            "text": "https://www.ehkka.ch/ehkka/"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -226,7 +226,7 @@
                 "locality": "Bern",
                 "country": "Switzerland"
             },
-            "name": "Schweizerischer Nationalfonds"
+            "name": "Swiss National Science Foundation (SNSF)"
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083C-organization-006",

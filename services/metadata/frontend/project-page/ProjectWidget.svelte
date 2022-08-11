@@ -24,6 +24,19 @@
 
 
 {#if $projectMetadata}
+  <!-- URLs -->
+  {#if $projectMetadata?.project.url}
+    <div class=label>Discover Project Data</div>
+    <a class="data" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
+  {:else if isTestEnvironment}
+    <div class=label>Discover Project Data</div>
+    <div class=warning>URL missing</div>
+  {/if}
+  <!-- Secondary URL -->
+  {#if $projectMetadata?.project.secondaryURL}
+    <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
+  {/if}
+
   <!-- Shortcode -->
   {#if $projectMetadata?.project.shortcode}
     <div class=label>DSP Internal Shortcode</div>
@@ -139,7 +152,8 @@
     <div class=label>Grant</div>
     {#each $projectMetadata?.project.grants.map(id => {return findGrantByID(id)}) as g}
       {#if g?.number && g?.url && g?.name}
-        <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a>
+        <!-- <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.number}: ${g?.name}`)}</a> -->
+        <a class="data" href={g?.url.url} target=_>{truncateString(`${g?.name}: ${g?.number}`)}</a>
       {:else if g?.number && g?.url}
         <a class="data" href={g?.url.url} target=_>{g?.number}</a>
       {:else if g?.number}
@@ -177,19 +191,6 @@
         {/if}
       {/if}
     {/each}
-  {/if}
-
-  <!-- URLs -->
-  {#if $projectMetadata?.project.url}
-    <div class=label>Project Website</div>
-    <a class="data" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
-  {:else if isTestEnvironment}
-    <div class=label>Project Website</div>
-    <div class=warning>URL missing</div>
-  {/if}
-  <!-- Secondary URL -->
-  {#if $projectMetadata?.project.secondaryURL}
-    <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
   {/if}
 
   <!-- Keywords -->

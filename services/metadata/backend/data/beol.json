@@ -128,13 +128,13 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.dasch.swiss/beta/project/0801",
-            "text": "https://admin.dasch.swiss/beta/project/0801"
+            "text": "Discover Project Data on DSP"
         },
         "secondaryURL": {
             "__type": "URL",
             "type": "URL",
             "url": "https://beol.dasch.swiss/",
-            "text": "https://beol.dasch.swiss/"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -148,7 +148,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "http://ark.dasch.swiss/ark:/72163/1/0801/18ngnZB9Sgy2PlOl71OJxgl.20191028T094314789Z",
-                    "text": "http://ark.dasch.swiss/ark:/72163/1/0801/18ngnZB9Sgy2PlOl71OJxgl.20191028T094314789Z"
+                    "text": "Read the full abstract here"
                 }
             ],
             "accessConditions": "open",
@@ -221,7 +221,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "http://ark.dasch.swiss/ark:/72163/1/0801/4UDRwNHCQZWhJZdL=JfBSAt.20191028T094815009Z",
-                    "text": "http://ark.dasch.swiss/ark:/72163/1/0801/4UDRwNHCQZWhJZdL=JfBSAt.20191028T094815009Z"
+                    "text": "Read the full abstract here"
                 }
             ],
             "alternativeTitles": [
@@ -347,7 +347,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://bez.unibas.ch/de/basler-edition-der-bernoulli-briefwechsel/",
-                    "text": "https://bez.unibas.ch/de/basler-edition-der-bernoulli-briefwechsel/"
+                    "text": "Read the full abstract here"
                 }
             ],
             "alternativeTitles": [
@@ -540,7 +540,7 @@
                 "country": "Switzerland"
             },
             "email": "desk@snf.ch",
-            "name": "Schweizerischer Nationalfonds (SNF)",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -600,7 +600,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0801-organization-000"
             ],
-            "name": "Projektförderung (Abt. I-III)",
+            "name": "Project funding",
             "number": "166072",
             "url": {
                 "__type": "URL",

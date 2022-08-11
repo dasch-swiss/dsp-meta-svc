@@ -623,7 +623,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0820-organization-000"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "162967",
             "url": {
                 "__type": "URL",

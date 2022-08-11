@@ -224,7 +224,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "http://www.bildungsgeschichte.uzh.ch",
-            "text": "www.bildungsgeschichte.uzh.ch"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -514,7 +514,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "130398",
             "url": {
                 "__type": "URL",
@@ -531,7 +531,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0828-organization-001"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "146239",
             "url": {
                 "__type": "URL",

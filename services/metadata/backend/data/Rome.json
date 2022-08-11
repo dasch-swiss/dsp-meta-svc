@@ -163,14 +163,6 @@
             "typeOfData": [
                 "Image",
                 "Text"
-            ],
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "http://ark.dasch.swiss/ark:/72163/1/0118",
-                    "text": "http://ark.dasch.swiss/ark:/72163/1/0118"
-                }
             ]
         }
     ],
@@ -400,13 +392,13 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-001"
             ],
-            "name": "Div. I-III",
+            "name": "Project funding",
             "number": "192854",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "https://p3.snf.ch/Project-192854",
-                "text": "https://p3.snf.ch/Project-192854"
+                "url": "https://data.snf.ch/grants/grant/192854",
+                "text": "https://data.snf.ch/grants/grant/192854"
             }
         }
     ]

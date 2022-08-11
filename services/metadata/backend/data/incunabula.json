@@ -60,7 +60,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.dasch.swiss/beta/project/0803",
-            "text": "https://admin.dasch.swiss/beta/project/0803"
+            "text": "Discover Project Data on DSP"
         },
         "shortcode": "0803",
         "startDate": "2008-06-01"
@@ -114,15 +114,7 @@
                 }
             ],
             "status": "Finished",
-            "title": "Die Bilderfolgen der Basler Frühdrucke: Spätmittelalterliche Didaxe als Bild-Text-Lektüre",
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://admin.dasch.swiss/beta/project/0803",
-                    "text": "https://admin.dasch.swiss/beta/project/0803"
-                }
-            ]
+            "title": "Die Bilderfolgen der Basler Frühdrucke: Spätmittelalterliche Didaxe als Bild-Text-Lektüre"
         }
     ],
     "persons": [
@@ -235,7 +227,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0803-organization-000"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "120378",
             "url": {
                 "__type": "URL",

@@ -98,13 +98,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0112",
-            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0112"
-        },
-        "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0112",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0112"
+            "text": "Discover Project Data on DSP"
         }
     },
     "datasets": [
@@ -122,11 +116,6 @@
             "dateCreated": "2018-08-31",
             "dateModified": "2021-02-03",
             "datePublished": "2018-08-31",
-            "additional": [
-                {
-                    "en": "https://github.com/gustaveroudproject/SalsahModeEmploi/blob/master/SalsahModeEmploi.md"
-                }
-            ],
             "howToCite": "Maggetti, D., Jacquier Kaempfer, C., Spadini, E., Pellegrino, B., Burri, J., Lacord, R., Peterman, S., Christen, A., Jaouen, L., Rivoal, M., 2020, Gustave Roud, oeuvres [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0112.",
             "languages": [
                 {
@@ -225,6 +214,14 @@
                 "Image",
                 "Text",
                 "XML"
+            ],
+            "urls": [
+                {
+                    "__type": "URL",
+                    "type": "URL",
+                    "url": "https://github.com/gustaveroudproject/SalsahModeEmploi/blob/master/SalsahModeEmploi.md",
+                    "text": "Find additional documentation on Github here"
+                }
             ]
         }
     ],
@@ -493,7 +490,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0112-organization-001"
             ],
-            "name": "Editionen",
+            "name": "Editions",
             "number": "157970",
             "url": {
                 "__type": "URL",

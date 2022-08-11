@@ -95,13 +95,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0111",
-            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0111"
-        },
-        "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "https://ark.dasch.swiss/ark:/72163/1/0111",
-            "text": "https://ark.dasch.swiss/ark:/72163/1/0111"
+            "text": "Discover Project Data on DSP"
         }
     },
     "datasets": [
@@ -184,7 +178,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://sitg.maps.arcgis.com/apps/MapSeries/index.html?appid=5accafa5fd7a429abe7b2cb9a6fa017a",
-                    "text": "https://sitg.maps.arcgis.com/apps/MapSeries/index.html?appid=5accafa5fd7a429abe7b2cb9a6fa017a"
+                    "text": "Find the Web Application StoryMap here"
                 }
             ]
         }

@@ -110,7 +110,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://aegyptologie.philhist.unibas.ch/de/forschung/forschungsprojekte/university-of-basel-kings-valley-project/",
-            "text": "University of Basel Kings’ Valley Project Online (UBKVP)"
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -233,7 +233,7 @@
             "__type": "Organization",
             "__createdAt": "1632994715914050000",
             "__createdBy": "dsp-metadata-gui",
-            "name": "SNF",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",

@@ -76,8 +76,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://vitrocentre.ch/en/documentation/database-vitrosearch.html https://vitrosearch.ch/en",
-            "text": "https://vitrocentre.ch/en/documentation/database-vitrosearch.html https://vitrosearch.ch/en"
+            "url": "https://vitrosearch.ch/en",
+            "text": "External Project Website"
         }
     },
     "datasets": [
@@ -132,8 +132,8 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://vitrosearch.ch/en",
-                    "text": "https://vitrosearch.ch/en"
+                    "url": "https://vitrocentre.ch/en/documentation/database-vitrosearch.html",
+                    "text": "Find more information about the database here"
                 }
             ]
         }

@@ -191,7 +191,7 @@
                 "country": "Switzerland"
             },
             "email": "desk@snf.ch",
-            "name": "SNSF",
+            "name": "Swiss National Science Foundation (SNSF)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
@@ -209,7 +209,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-081B-organization-001"
             ],
-            "name": "Reconstruire Delille",
+            "name": "Project funding",
             "number": "153189",
             "url": {
                 "__type": "URL",

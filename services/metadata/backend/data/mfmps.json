@@ -110,13 +110,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0116",
-            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0116"
-        },
-        "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0116",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0116"
+            "text": "Discover Project Data on DSP"
         }
     },
     "datasets": [

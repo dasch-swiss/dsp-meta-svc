@@ -18,6 +18,12 @@
                 "en": "10501 German and English languages and literature"
             }
         ],
+        "funders": [
+            "http://ns.dasch.swiss/repository#dsp-083B-organization-002"
+        ],
+        "grants": [
+            "http://ns.dasch.swiss/repository#dsp-083B-grant-001"
+        ],
         "endDate": "2024-12-31",
         "keywords": [
             {
@@ -156,6 +162,28 @@
                 "country": "Switzerland"
             },
             "name": "Department of English"
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-083B-organization-002",
+            "__type": "Organization",
+            "name": "Swiss National Science Foundation (SNSF)"
+        }
+    ],
+    "grants": [
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-083B-grant-001",
+            "__type": "Grant",
+            "funders": [
+                "http://ns.dasch.swiss/repository#dsp-083B-organization-002"
+            ],
+            "name": "Eccellenza",
+            "number": "181097",
+            "url": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://data.snf.ch/grants/grant/181097",
+                "text": "https://data.snf.ch/grants/grant/181097"
+            }
         }
     ]
 }

@@ -175,19 +175,6 @@
       </div>
     {/if}
 
-    <!-- URLs -->
-    {#if dataset?.urls}
-      <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
-        <div>
-          <span class=label>Dataset Website</span>
-          {#each dataset?.urls as u}
-            {#if u.__type === 'URL'}
-              <div><a class="data" href={u.url} target=_>{truncateString(u.text)}</a></div>
-            {/if}
-          {/each}
-        </div>
-      </div>
-    {/if}
 
     <!-- How To Cite -->
     {#if dataset?.howToCite}
@@ -230,6 +217,20 @@
       <div>
         <span class=label>Abstract</span>
         <span class="warning data" id="abstract">abstract missing</span>
+      </div>
+    {/if}
+
+      <!-- URLs -->
+      {#if dataset?.urls}
+      <div class=grid-wrapper style="grid-template-columns: repeat(1, 1fr)">
+        <div>
+          <span class=label>Additional Links</span>
+          {#each dataset?.urls as u}
+            {#if u.__type === 'URL'}
+              <div><a class="data" href={u.url} target=_>{truncateString(u.text)}</a></div>
+            {/if}
+          {/each}
+        </div>
       </div>
     {/if}
 

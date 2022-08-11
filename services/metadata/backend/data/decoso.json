@@ -30,6 +30,18 @@
         "grants": [
             "http://ns.dasch.swiss/repository#dsp-082C-grant-000"
         ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/082C",
+            "text": "Discover Project Data on DSP"
+        },
+        "secondaryURL": {
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://entangledinternationalism.org/",
+                "text": "External Project Website"
+            },
         "keywords": [
             {
                 "en": "Europe"
@@ -125,15 +137,7 @@
                 }
             ],
             "status": "Ongoing",
-            "title": "Decolonizing Socialism: Entangled Internationalism. An Intersectional Study of Cold War Projects from East Germany in Cinema and Cybernetics with Relevance for the 21st Century",
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://entangledinternationalism.org/",
-                    "text": "https://entangledinternationalism.org/"
-                }
-            ]
+            "title": "Decolonizing Socialism: Entangled Internationalism. An Intersectional Study of Cold War Projects from East Germany in Cinema and Cybernetics with Relevance for the 21st Century"
         }
     ],
     "persons": [
@@ -271,7 +275,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-082C-organization-000"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "184864",
             "url": {
                 "__type": "URL",

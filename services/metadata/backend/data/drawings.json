@@ -159,14 +159,14 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0105",
-            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0105"
+            "text": "Discover Project Data on DSP"
         },
         "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0105",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0105"
-        }
+                "__type": "URL",
+                "type": "URL",
+                "url": "https://ddd.unil.ch/",
+                "text": "External Project Website"
+            }
     },
     "datasets": [
         {
@@ -279,14 +279,6 @@
             "typeOfData": [
                 "Image",
                 "Text"
-            ],
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://ddd.unil.ch/",
-                    "text": "https://ddd.unil.ch/"
-                }
             ]
         }
     ],
@@ -641,7 +633,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0105-organization-000"
             ],
-            "name": "Interdisciplinary projects",
+            "name": "Interdisciplinary Projects",
             "number": "156383",
             "url": {
                 "__type": "URL",

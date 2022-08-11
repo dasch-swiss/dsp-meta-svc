@@ -18,8 +18,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://www.salsah.org/postcards/",
-            "text": "https://www.salsah.org/postcards/"
+            "url": "https://data.dasch.swiss/postcards/",
+            "text": "DaSCH Project Website (SALSAH)"
         }
     },
     "datasets": [

@@ -85,13 +85,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0114",
-            "text": "https://admin.ls-prod-server.dasch.swiss/beta/project/0114"
-        },
-        "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0114",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0114"
+            "text": "Discover Project Data on DSP"
         }
     },
     "datasets": [
@@ -378,7 +372,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0114-organization-000"
             ],
-            "name": "Project funding (Div. I-III)",
+            "name": "Project funding",
             "number": "179043",
             "url": {
                 "__type": "URL",

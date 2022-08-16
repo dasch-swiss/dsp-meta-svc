@@ -10,6 +10,11 @@
     <h5>{ metadata.name }</h5>
   </div>
   <div class=content>{ metadata.description }</div>
+  <div class=status>
+    Project Status: 
+    
+    {metadata.status}
+  </div>
   <div class=footer>
     <Router>
       <Link to={`/projects/${metadata.id}`} class="read-more regular-link">
@@ -46,7 +51,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 0.8em;
-    height: 45x;
+    height: 45px;
     margin: 10px 0 25px;
   }
   .footer {
@@ -55,10 +60,16 @@
     font-size: 0.8em;
     text-align: center;
   }
+
+  .status {
+    font-size: 0.7em;
+    height: 20px;
+  }
+
   @media screen and (min-width: 768px) {
     section {
       width: 240px;
-      height: 208px;
+      height: 238px;
       padding: 10px 30px;
       margin: 5px;
     }

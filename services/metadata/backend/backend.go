@@ -23,6 +23,7 @@ type Project struct {
 	ID          string      `json:"id"`
 	Name        string      `json:"name"`
 	Description string      `json:"description"`
+	Status      string      `json:"status"`
 	Metadata    interface{} `json:"metadata"`
 }
 
@@ -56,6 +57,24 @@ func searchProjects(query string) []Project {
 	return res
 }
 
+func getStatus(shortcode string) string {
+	projectFinishedTable := map[string]bool{
+		"0118": true,
+	}
+	projectOngoingTable := map[string]bool{
+		"083B": true,
+	}
+	_, isFinished := projectFinishedTable[shortcode]
+	if isFinished {
+		return "finished"
+	}
+	_, isOngoing := projectOngoingTable[shortcode]
+	if isOngoing {
+		return "ongoing"
+	}
+	return "in planning"
+}
+
 // Loads a project from a JSON files
 // Expects this file to be located in ./data/*.json
 func loadProject(path string) Project {
@@ -83,10 +102,12 @@ func loadProject(path string) Project {
 		id := projectMap["shortcode"].(string)
 		name := projectMap["name"].(string)
 		description := projectMap["teaserText"].(string)
+		status := getStatus(id)
 		return Project{
 			ID:          id,
 			Name:        name,
 			Description: description,
+			Status:      status,
 			Metadata:    jsonMap,
 		}
 	} else {

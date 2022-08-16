@@ -52,7 +52,7 @@
     overflow: hidden;
     font-size: 0.8em;
     height: 45px;
-    margin: 10px 0 25px;
+    margin: 10px 0 5px;
   }
   .footer {
     margin: 10px 0;
@@ -69,14 +69,14 @@
   @media screen and (min-width: 768px) {
     section {
       width: 240px;
-      height: 238px;
+      height: 218px;
       padding: 10px 30px;
       margin: 5px;
     }
     .content {
       -webkit-line-clamp: 7;
       height: 107px;
-      margin: 5px 0 25px;
+      margin: 5px 0 5px;
     }
   }
   @media screen and (min-width: 1200px) {

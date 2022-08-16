@@ -65,8 +65,7 @@
         </svg>
       </button>
       <!-- filter button -->
-      <!-- TODO: temp hidden faceated search -->
-      <button style="display:none" class="m-hidden" on:click="{toggleFilters}">
+      <button class="filter-button" on:click="{toggleFilters}">
         <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
         </svg>
@@ -157,8 +156,6 @@
     background-color: var(--cl-background-light);
     padding: 12px;
   }
-  /* TODO: temp hidden faceated search */
-  .filter-container{display: none}
   button {
     display: inline-block;
     vertical-align: middle;
@@ -172,6 +169,10 @@
   }
 
   .menu-button {
+    color: var(--lead-colour);
+  }
+
+  .filter-button {
     color: var(--lead-colour);
   }
   .menu {

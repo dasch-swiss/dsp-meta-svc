@@ -3,7 +3,7 @@
   import Category from './Category.svelte';
   import { onMount } from 'svelte';
   import Pagination from './Pagination.svelte';
-  import { getProjectsMetadata, handleSnackbar, pagedResults } from '../store';
+  import { getProjectsMetadata, handleSnackbar, pagedResults, statusFilter } from '../store';
   import { fade } from 'svelte/transition';
   import Snackbar from '../Snackbar.svelte';
 
@@ -36,6 +36,13 @@
       await getProjectsMetadata(page, query);
     }
   });
+
+  const showStatus = (status: string) => {
+    if (status === 'in planning') return $statusFilter.showInPlanning;
+    if (status === 'ongoing') return $statusFilter.showOngoing;
+    if (status === 'finished') return $statusFilter.showFinished;
+    return false;
+  }
 </script>
 
 <nav>
@@ -55,7 +62,9 @@
     {#if $pagedResults && $pagedResults.length}
       {#each $pagedResults as project}
         <!-- LATER: remove actual metadata content from BE response on /projects endpoint, and see what that would break -->
-        <Tile metadata={project}/>
+        {#if showStatus(project.status)}
+          <Tile metadata={project}/>
+        {/if}
       {/each}
     {:else}
       <p>{message}</p>
@@ -80,8 +89,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  /* TODO: temp hidden faceated search */
-  display: none;
 }
 .category-container {
   padding-top: 45px;

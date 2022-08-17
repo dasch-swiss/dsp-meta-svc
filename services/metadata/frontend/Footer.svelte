@@ -24,7 +24,7 @@
 <style>
   footer {
     flex-shrink: 0;
-    background-color: var(--dasch-secondary);
+    background-color: var(--dasch-third);
     font-weight: 500;
     font-size: 0.875rem;
     width: 100%;

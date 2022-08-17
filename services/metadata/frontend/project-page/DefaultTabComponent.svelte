@@ -37,7 +37,7 @@
     window.getSelection().addRange(text);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
-    handleSnackbar.set({isSnackbar: true, message: 'Citation copied succesfully!'});
+    handleSnackbar.set({isSnackbar: true, message: 'Copied successfully!'});
   };
 
   const truncateString = (s: string) => {
@@ -244,7 +244,7 @@
             {#each [findObjectByID(a.agent)] as p}
               {#if p.__type === 'Person'}
                 {#if p.authorityRefs}
-                  <a href={p.authorityRefs[0].url} target=_ class="attribution-name">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
+                  <a href={p.authorityRefs[0].url} target=_ class="attribution-name-link">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</a>
                 {:else}
                   <div class="attribution-name">{p.givenNames.join(" ")} {p.familyNames.join(" ")}</div>
                 {/if}
@@ -263,7 +263,7 @@
                 {/if}
               {:else if p.__type === 'Organization'}
                 {#if p.url}
-                  <a href={p.url.url} target=_ class="attribution-name">{p.name}</a>
+                  <a href={p.url.url} target=_ class="attribution-name-link">{p.name}</a>
                 {/if}
                 {#if p.email}
                   <a class=email href="mailto:{p.email}">{p.email}</a>
@@ -301,12 +301,16 @@
     color: var(--dasch-hover);
   }
   .role {
-    color: var(--dasch-secondary);
     font-weight: 700;
   }
 
   .attribution-name {
-    font-weight: 500;
+    font-family: robotobold;
+    color: var(--text-darker);
+  }
+
+  .attribution-name-link {
+    font-family: robotobold;
     color: var(--lead-colour);
   }
 

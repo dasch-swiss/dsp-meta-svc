@@ -1,5 +1,5 @@
 <script>
-  let src = "assets/icon/Icon-Logo-coloured.svg";
+  let src = "assets/icon/Fingerprint_Logo.svg";
 </script>
 
 <img {src} alt="animated DaSCH icon" />

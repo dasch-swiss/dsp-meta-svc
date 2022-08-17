@@ -29,7 +29,7 @@
     text-align: center;
     padding: 20px 5px;
     color: #fff;
-    background-color: var(--dasch-secondary);
+    background-color: var(--dasch-primary);
     z-index: 5;
     opacity: 0.95;
   }

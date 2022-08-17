@@ -79,9 +79,9 @@
     color: var(--lead-colour);
   }
   button.active {
-    background-color: var(--dasch-secondary);
+    background-color: var(--dasch-primary);
     color: white;
-    border: 1px solid var(--dasch-secondary);
+    border: 1px solid var(--dasch-primary);
   }
   button:hover:not(.active), button:hover:not:disabled {
     background-color: var(--dasch-hover);

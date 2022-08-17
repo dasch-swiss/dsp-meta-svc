@@ -101,7 +101,7 @@
         <div class=row>
           <h4 class="title new-title">
             Also known as:&nbsp;
-            <span style="color:var(--secondary-colour)">
+            <span style="font-style: italic">
               {$projectMetadata?.project.alternativeNames.map((t) => {return getText(t)}).join(", ")}
             </span>
           </h4>

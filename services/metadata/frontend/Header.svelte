@@ -46,8 +46,8 @@
     <div class="header-left">
       <Router>
         <Link to="/" class="regular-link">
-          <img class="logo s-inline-block" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
-          <img class="icon-logo s-hidden" src="assets/icon/Icon-Logo-coloured.svg" alt="DaSCH logo" />
+          <img class="logo s-inline-block" src="assets/icon/Fingerprint_Logo.svg" alt="DaSCH logo" />
+          <img class="icon-logo s-hidden" src="assets/icon/Fingerprint_Logo.svg" alt="DaSCH logo" />
         </Link>
       </Router>
       <Router>

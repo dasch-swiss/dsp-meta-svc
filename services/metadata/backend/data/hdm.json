@@ -101,7 +101,7 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://admin.081c-test-server.dasch.swiss/beta/project/081C",
+            "url": "https://admin.dasch.swiss/beta/project/081C",
             "text": "Discover Project Data on DSP"
         }
     },

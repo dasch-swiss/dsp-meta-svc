@@ -1,8 +1,9 @@
 @import url(../assets/fonts/Roboto/stylesheet.css);
 
 :root {
-  --dasch-primary: #1D4ED8;
-  --dasch-secondary: #130075;
+  --dasch-primary: #336790;
+  --dasch-secondary: #74A2CF;
+  --dasch-third: #112230;
   --dasch-hover: #A3C0FF;
   --dasch-text: #3f3f40;
   --text-darker: #282828;

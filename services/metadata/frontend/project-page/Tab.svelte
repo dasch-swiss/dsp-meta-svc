@@ -62,7 +62,7 @@
   }
   li.active > span {
     color: #fff;
-    background-color: var(--dasch-secondary);
+    background-color: var(--dasch-primary);
     border-color: #dee2e6 #dee2e6 #fff;
   }
 </style>

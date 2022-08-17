@@ -2,7 +2,7 @@
   interface Status {
 
   }
-  import { statusFilter, pagedResults } from '../store';
+  import { statusFilter, query, getProjectsMetadata } from '../store';
   // import type { Category } from '../interfaces';
 //   import { getProjectsMetadata } from '../store';
 
@@ -45,17 +45,17 @@ interface Category {
 
   const toggleShowInPlanning = () => {
     $statusFilter.showInPlanning = !$statusFilter.showInPlanning;
-    $pagedResults = $pagedResults;
+    getProjectsMetadata(1, $query)
   };
 
   const toggleShowOngoing = () => {
     $statusFilter.showOngoing = !$statusFilter.showOngoing;
-    $pagedResults = $pagedResults;
+    getProjectsMetadata(1, $query)
   };
 
   const toggleShowFinished = () => {
     $statusFilter.showFinished = !$statusFilter.showFinished;
-    $pagedResults = $pagedResults;
+    getProjectsMetadata(1, $query)
   };
   
 </script>

@@ -57,6 +57,27 @@ func searchProjects(query string) []Project {
 	return res
 }
 
+func filterProjectsByStatus(projects []Project, filter string) []Project {
+	if filter == "" {
+		return projects
+	}
+	showInPlanning := !strings.Contains(filter, "p")
+	showOngoing := !strings.Contains(filter, "o")
+	showFinished := !strings.Contains(filter, "f")
+	var res []Project
+	for _, project := range projects {
+		if project.Status == "in planning" && showInPlanning {
+			res = append(res, project)
+		} else if project.Status == "ongoing" && showOngoing {
+			res = append(res, project)
+		} else if project.Status == "finished" && showFinished {
+			res = append(res, project)
+		}
+	}
+
+	return res
+}
+
 func getStatus(shortcode string) string {
 	projectFinishedTable := map[string]bool{
 		"0118": true,
@@ -216,6 +237,7 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 		// TODO: does page start at 0 or 1?
 		page, _ := strconv.Atoi(r.URL.Query().Get("_page"))
 		limit, _ := strconv.Atoi(r.URL.Query().Get("_limit"))
+		filter := r.URL.Query().Get("filter")
 
 		matches = make([]Project, len(projects.dataJSON))
 
@@ -226,6 +248,9 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 			// reduce projects by search
 			matches = searchProjects(query)
 		}
+
+		matches = filterProjectsByStatus(matches, filter)
+
 		w.Header().Set("X-Total-Count", strconv.Itoa(len(matches)))
 
 		// paginate

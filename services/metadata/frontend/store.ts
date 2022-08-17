@@ -28,6 +28,13 @@ export async function getProjectsMetadata(page: number, q?: string): Promise<voi
     route = `projects?_page=${page}&_limit=${baseResultsRange[1]}`;
   }
 
+  statusFilter.subscribe(f => {
+    if (!f.showFinished || !f.showInPlanning || !f.showOngoing) {
+      const filter = `&filter=${!f.showInPlanning ? 'p' : ''}${!f.showOngoing ? 'o' : ''}${!f.showFinished ? 'f' : ''}`
+      route += filter
+    }
+  })
+
   console.log(baseUrl, route);
   navigate(`/${route}`);
 

@@ -7,22 +7,17 @@
   --dasch-hover: #A3C0FF;
   --dasch-text: #3f3f40;
   --text-darker: #282828;
-  --dasch-grey-1: #888b8d;
   --dasch-grey-2: #dddede;
   --dasch-grey-3: #f1f1f1;
-  --dasch-grey-4: #fcfcfc;
   --cl-background: #ccc;
   --cl-background-light: #ddd;
-  --cl-background-dark: #aaa;
   
-  --cl-transparent-dark: rgba(0, 0, 0, 0.2);
   --cl-transparent-light: rgba(255, 255, 255, 0.3);
 
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0px 2px 4px -1px rgba(0,0,0,0.3);
 
   --lead-colour: var(--dasch-primary);
-  --secondary-colour: #00343D;
 }
 
 html, body {
@@ -51,7 +46,7 @@ a {
   color: var(--color-text);
 }
 a.email {
-  color: var(--dasch-text) !important;
+  color: var(--dasch-primary) !important;
   font-size: 0.85rem;
 }
 a:visited {

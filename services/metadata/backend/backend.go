@@ -80,10 +80,40 @@ func filterProjectsByStatus(projects []Project, filter string) []Project {
 
 func getStatus(shortcode string) string {
 	projectFinishedTable := map[string]bool{
-		"0118": true,
+		"082D": true,
+		"082B": true,
+		"081C": true,
+		"0803": true,
+		"0820": true,
+		"0811": true,
+		"0111": true,
+		"0101": true,
+		"0112": true,
+		"0107": true,
+		"082A": true,
+		"0103": true,
 	}
 	projectOngoingTable := map[string]bool{
+		"0118": true,
+		"0806": true,
+		"0801": true,
+		"083A": true,
+		"0813": true,
 		"083B": true,
+		"082C": true,
+		"081B": true,
+		"0105": true,
+		"080E": true,
+		"0116": true,
+		"0807": true,
+		"0836": true,
+		"0114": true,
+		"0827": true,
+		"0812": true,
+		"0805": true,
+		"0816": true,
+		"0828": true,
+		"083C": true,
 	}
 	_, isFinished := projectFinishedTable[shortcode]
 	if isFinished {

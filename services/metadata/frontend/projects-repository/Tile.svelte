@@ -3,6 +3,13 @@
   import type { ProjectMetadata } from '../interfaces';
 
   export let metadata: ProjectMetadata;
+
+  const displayStatus = (status: string) => {
+    if (status === 'in planning') return '❓';
+    if (status === 'ongoing') return 'Ongoing 🐾';
+    if (status === 'finished') return 'Finished ✅';
+    return ''
+  }
 </script>
 
 <section>
@@ -11,9 +18,7 @@
   </div>
   <div class=content>{ metadata.description }</div>
   <div class=status>
-    Project Status: 
-    
-    {metadata.status}
+    Project Status: {displayStatus(metadata.status)}
   </div>
   <div class=footer>
     <Router>

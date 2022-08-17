@@ -14,6 +14,7 @@ export interface PaginationData {
 export interface ProjectMetadata {
   description: string;
   id: string;
+  status: string;
   name: string;
 }
 

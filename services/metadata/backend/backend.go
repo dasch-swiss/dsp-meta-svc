@@ -23,6 +23,7 @@ type Project struct {
 	ID          string      `json:"id"`
 	Name        string      `json:"name"`
 	Description string      `json:"description"`
+	Status      string      `json:"status"`
 	Metadata    interface{} `json:"metadata"`
 }
 
@@ -56,6 +57,54 @@ func searchProjects(query string) []Project {
 	return res
 }
 
+func filterProjectsByStatus(projects []Project, filter string) []Project {
+	if filter == "" {
+		return projects
+	}
+	showOngoing := !strings.Contains(filter, "o")
+	showFinished := !strings.Contains(filter, "f")
+	var res []Project
+	for _, project := range projects {
+		if project.Status == "ongoing" && showOngoing {
+			res = append(res, project)
+		} else if project.Status == "finished" && showFinished {
+			res = append(res, project)
+		}
+	}
+
+	return res
+}
+
+func getStatus(shortcode string) string {
+	projectOngoingTable := map[string]bool{
+		"0118": true,
+		"0806": true,
+		"0801": true,
+		"083A": true,
+		"0813": true,
+		"083B": true,
+		"082C": true,
+		"081B": true,
+		"0105": true,
+		"080E": true,
+		"0116": true,
+		"0807": true,
+		"0836": true,
+		"0114": true,
+		"0827": true,
+		"0812": true,
+		"0805": true,
+		"0816": true,
+		"0828": true,
+		"083C": true,
+	}
+	_, isOngoing := projectOngoingTable[shortcode]
+	if isOngoing {
+		return "ongoing"
+	}
+	return "finished"
+}
+
 // Loads a project from a JSON files
 // Expects this file to be located in ./data/*.json
 func loadProject(path string) Project {
@@ -83,10 +132,12 @@ func loadProject(path string) Project {
 		id := projectMap["shortcode"].(string)
 		name := projectMap["name"].(string)
 		description := projectMap["teaserText"].(string)
+		status := getStatus(id)
 		return Project{
 			ID:          id,
 			Name:        name,
 			Description: description,
+			Status:      status,
 			Metadata:    jsonMap,
 		}
 	} else {
@@ -195,6 +246,7 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 		// TODO: does page start at 0 or 1?
 		page, _ := strconv.Atoi(r.URL.Query().Get("_page"))
 		limit, _ := strconv.Atoi(r.URL.Query().Get("_limit"))
+		filter := r.URL.Query().Get("filter")
 
 		matches = make([]Project, len(projects.dataJSON))
 
@@ -205,6 +257,9 @@ func getProjects(w http.ResponseWriter, r *http.Request) {
 			// reduce projects by search
 			matches = searchProjects(query)
 		}
+
+		matches = filterProjectsByStatus(matches, filter)
+
 		w.Header().Set("X-Total-Count", strconv.Itoa(len(matches)))
 
 		// paginate

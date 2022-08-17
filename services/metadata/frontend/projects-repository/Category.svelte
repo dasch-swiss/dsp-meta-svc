@@ -1,25 +1,67 @@
 <script lang="ts">
-  import type { Category } from '../interfaces';
-  import { getProjectsMetadata } from '../store';
+  interface Status {
 
-  let categories = [
-    { id: 1, isOpen: false, name: 'Discipline', sub: ['Agriculture', 'Antropology', 'Geography', 'History'] },
-    { id: 2, isOpen: false, name: 'Type of data', sub: ['First', 'Second'] },
-    { id: 3, isOpen: false, name: 'Temporal coverage', sub: [] },
-    { id: 4, isOpen: false, name: 'Spatial coverage', sub: [] },
-    { id: 5, isOpen: false, name: 'Language', sub: [] },
-    { id: 6, isOpen: false, name: 'Keywords', sub: [] },
-    { id: 7, isOpen: false, name: 'Person', sub: [] },
-    { id: 8, isOpen: false, name: 'Organization', sub: ['Last', 'Not least'] },
-  ];
+  }
+  import { statusFilter, query, getProjectsMetadata } from '../store';
+  // import type { Category } from '../interfaces';
+//   import { getProjectsMetadata } from '../store';
 
-  const toggleCetegory = (cat: Category) => (event: MouseEvent) => {
-    let bool = cat.isOpen;
-    categories[cat.id - 1].isOpen = !bool;
+//   let categories = [
+//     { id: 1, isOpen: false, name: 'Discipline', sub: ['Agriculture', 'Antropology', 'Geography', 'History'] },
+//     { id: 2, isOpen: false, name: 'Type of data', sub: ['First', 'Second'] },
+//     { id: 3, isOpen: false, name: 'Temporal coverage', sub: [] },
+//     { id: 4, isOpen: false, name: 'Spatial coverage', sub: [] },
+//     { id: 5, isOpen: false, name: 'Language', sub: [] },
+//     { id: 6, isOpen: false, name: 'Keywords', sub: [] },
+//     { id: 7, isOpen: false, name: 'Person', sub: [] },
+//     { id: 8, isOpen: false, name: 'Organization', sub: ['Last', 'Not least'] },
+//   ];
+
+interface Category {
+    id: number;
+    isOpen: boolean;
+    name: string;
+    sub: SubCategory[];
+  }
+  interface SubCategory {
+    isSelected: boolean;
+    name: string;
+  }
+
+  let showFilters = false;
+
+  // const toggleCetegory = (cat: Category) => (event: MouseEvent) => {
+  //   let bool = cat.isOpen;
+  //   categories[cat.id - 1].isOpen = !bool;
+  // };
+
+  const toggleShowOngoing = () => {
+    $statusFilter.showOngoing = !$statusFilter.showOngoing;
+    getProjectsMetadata(1, $query)
   };
+
+  const toggleShowFinished = () => {
+    $statusFilter.showFinished = !$statusFilter.showFinished;
+    getProjectsMetadata(1, $query)
+  };
+  
 </script>
 
-{#each categories as category }
+  <button on:click={() => {showFilters = !showFilters}}>
+    Project Status
+  </button>
+  <div class={showFilters ? 'visible' : 'hidden'}>
+    <label class=subcategory>
+      <input on:click={toggleShowOngoing} value={0} type=checkbox name=subcategory checked={$statusFilter.showOngoing} />
+      Ongoing
+    </label>
+    <label class=subcategory>
+      <input on:click={toggleShowFinished} value={0} type=checkbox name=subcategory checked={$statusFilter.showFinished} />
+      Finished
+    </label>
+  </div>
+
+<!-- {#each categories as category }
   <button on:click={toggleCetegory(category)} disabled={!category.sub.length}>
     {category.name}
   </button>
@@ -33,7 +75,7 @@
       {/each}
     </div>
   {/if}
-{/each}
+{/each} -->
 
 <style>
   button {

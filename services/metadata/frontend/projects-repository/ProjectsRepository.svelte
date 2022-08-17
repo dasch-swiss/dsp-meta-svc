@@ -36,6 +36,7 @@
       await getProjectsMetadata(page, query);
     }
   });
+  
 </script>
 
 <nav>
@@ -80,8 +81,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  /* TODO: temp hidden faceated search */
-  display: none;
 }
 .category-container {
   padding-top: 45px;

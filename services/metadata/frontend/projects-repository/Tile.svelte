@@ -3,9 +3,13 @@
   import type { ProjectMetadata } from '../interfaces';
 
   export let metadata: ProjectMetadata;
+
 </script>
 
 <section>
+  <div class="status">
+    <img src="assets/icon/{metadata.status === 'ongoing' ? 'Badge_Ongoing.svg' : 'Badge_Finished.svg'}" alt="Status {metadata.status}" />
+  </div>
   <div class=header>
     <h5>{ metadata.name }</h5>
   </div>
@@ -46,8 +50,8 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 0.8em;
-    height: 45x;
-    margin: 10px 0 25px;
+    height: 45px;
+    margin: 10px 0 5px;
   }
   .footer {
     margin: 10px 0;
@@ -55,17 +59,25 @@
     font-size: 0.8em;
     text-align: center;
   }
+
+  .status {
+    height: 20px;
+    padding: 5px 0px;
+    text-align: right;
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     section {
       width: 240px;
-      height: 208px;
+      height: 228px;
       padding: 10px 30px;
       margin: 5px;
     }
     .content {
       -webkit-line-clamp: 7;
       height: 107px;
-      margin: 5px 0 25px;
+      margin: 5px 0 5px;
     }
   }
   @media screen and (min-width: 1200px) {

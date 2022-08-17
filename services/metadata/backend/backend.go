@@ -61,14 +61,11 @@ func filterProjectsByStatus(projects []Project, filter string) []Project {
 	if filter == "" {
 		return projects
 	}
-	showInPlanning := !strings.Contains(filter, "p")
 	showOngoing := !strings.Contains(filter, "o")
 	showFinished := !strings.Contains(filter, "f")
 	var res []Project
 	for _, project := range projects {
-		if project.Status == "in planning" && showInPlanning {
-			res = append(res, project)
-		} else if project.Status == "ongoing" && showOngoing {
+		if project.Status == "ongoing" && showOngoing {
 			res = append(res, project)
 		} else if project.Status == "finished" && showFinished {
 			res = append(res, project)
@@ -79,20 +76,6 @@ func filterProjectsByStatus(projects []Project, filter string) []Project {
 }
 
 func getStatus(shortcode string) string {
-	projectFinishedTable := map[string]bool{
-		"082D": true,
-		"082B": true,
-		"081C": true,
-		"0803": true,
-		"0820": true,
-		"0811": true,
-		"0111": true,
-		"0101": true,
-		"0112": true,
-		"0107": true,
-		"082A": true,
-		"0103": true,
-	}
 	projectOngoingTable := map[string]bool{
 		"0118": true,
 		"0806": true,
@@ -115,15 +98,11 @@ func getStatus(shortcode string) string {
 		"0828": true,
 		"083C": true,
 	}
-	_, isFinished := projectFinishedTable[shortcode]
-	if isFinished {
-		return "finished"
-	}
 	_, isOngoing := projectOngoingTable[shortcode]
 	if isOngoing {
 		return "ongoing"
 	}
-	return "in planning"
+	return "finished"
 }
 
 // Loads a project from a JSON files

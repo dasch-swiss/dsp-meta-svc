@@ -30,23 +30,10 @@ interface Category {
 
   let showFilters = false;
 
-  // let categories = [
-  //   {id: 1, isOpen: true, name: 'Status', sub: [
-  //     {isSelected: $statusFilter.showInPlanning, name: 'In Planning'},
-  //     {isSelected: $statusFilter.showOngoing, name: 'Ongoing'},
-  //     {isSelected: $statusFilter.showFinished, name: 'Finished'}
-  //   ]}
-  // ]
-
   // const toggleCetegory = (cat: Category) => (event: MouseEvent) => {
   //   let bool = cat.isOpen;
   //   categories[cat.id - 1].isOpen = !bool;
   // };
-
-  const toggleShowInPlanning = () => {
-    $statusFilter.showInPlanning = !$statusFilter.showInPlanning;
-    getProjectsMetadata(1, $query)
-  };
 
   const toggleShowOngoing = () => {
     $statusFilter.showOngoing = !$statusFilter.showOngoing;
@@ -64,10 +51,6 @@ interface Category {
     Project Status
   </button>
   <div class={showFilters ? 'visible' : 'hidden'}>
-    <label class=subcategory>
-      <input on:click={toggleShowInPlanning} value={0} type=checkbox name=subcategory checked={$statusFilter.showInPlanning} />
-      In Planning
-    </label>
     <label class=subcategory>
       <input on:click={toggleShowOngoing} value={0} type=checkbox name=subcategory checked={$statusFilter.showOngoing} />
       Ongoing

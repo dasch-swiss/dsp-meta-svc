@@ -8,7 +8,7 @@ export const projectMetadata = writable(undefined as Metadata);
 export const query = writable('');
 export const previousRoute = writable('');
 export const handleSnackbar = writable({isSnackbar: false, message: ''});
-export const statusFilter = writable({showInPlanning: true, showOngoing: true, showFinished: true})
+export const statusFilter = writable({showOngoing: true, showFinished: true})
 
 export async function getProjectsMetadata(page: number, q?: string): Promise<void> {
   // const baseUrl = process.env.BASE_URL;
@@ -29,8 +29,8 @@ export async function getProjectsMetadata(page: number, q?: string): Promise<voi
   }
 
   statusFilter.subscribe(f => {
-    if (!f.showFinished || !f.showInPlanning || !f.showOngoing) {
-      const filter = `&filter=${!f.showInPlanning ? 'p' : ''}${!f.showOngoing ? 'o' : ''}${!f.showFinished ? 'f' : ''}`
+    if (!f.showFinished || !f.showOngoing) {
+      const filter = `&filter=${!f.showOngoing ? 'o' : ''}${!f.showFinished ? 'f' : ''}`
       route += filter
     }
   })

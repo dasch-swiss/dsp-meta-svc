@@ -4,22 +4,16 @@
 
   export let metadata: ProjectMetadata;
 
-  const displayStatus = (status: string) => {
-    if (status === 'in planning') return '❓';
-    if (status === 'ongoing') return 'Ongoing 🐾';
-    if (status === 'finished') return 'Finished ✅';
-    return ''
-  }
 </script>
 
 <section>
+  <div class="status">
+    <img src="assets/icon/{metadata.status === 'ongoing' ? 'Badge_Ongoing.svg' : 'Badge_Finished.svg'}" alt="Status {metadata.status}" />
+  </div>
   <div class=header>
     <h5>{ metadata.name }</h5>
   </div>
   <div class=content>{ metadata.description }</div>
-  <div class=status>
-    Project Status: {displayStatus(metadata.status)}
-  </div>
   <div class=footer>
     <Router>
       <Link to={`/projects/${metadata.id}`} class="read-more regular-link">
@@ -67,14 +61,16 @@
   }
 
   .status {
-    font-size: 0.7em;
     height: 20px;
+    padding: 5px 0px;
+    text-align: right;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
     section {
       width: 240px;
-      height: 218px;
+      height: 228px;
       padding: 10px 30px;
       margin: 5px;
     }

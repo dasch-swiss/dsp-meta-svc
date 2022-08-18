@@ -48,6 +48,9 @@
       z-index: 1;
     }
     .version{padding-left: 12px;}
+    .copyright {
+      padding-left: 200px;
+    }
   }
   @media screen and (min-width: 1200px) {
   .footer-container {

@@ -26,25 +26,6 @@
 </script>
 
 <div class={pagedResults ? 'pagination-container' : 'hidden'}>
-  <div class="stats">
-    <div>
-      <p>
-        Showing
-        <span>{$pagination.currentResultsRange[0]}</span>
-        to
-        <span>{$pagination.currentResultsRange[1] > $pagination.totalCount ? $pagination.totalCount : $pagination.currentResultsRange[1]}</span>
-        of
-        <span>{$pagination.totalCount}</span>
-        results
-        <!-- TODO: alternative for displaying entered query with snackbar: -->
-        <!-- {#if $query}
-          <span style="flex: 2">
-            {` for query: ${$query}`}
-          </span>
-        {/if} -->
-      </p>
-    </div>
-  </div>
   <div class="pagination">
     <button on:click={handlePagination} class="arrow" id="first" title="First Page" disabled={$pagination.currentPage === 1}>&laquo;</button>
     {#each Array($pagination.totalPages) as _, i}
@@ -55,9 +36,6 @@
 </div>
 
 <style>
-  .stats {
-    font-size: 0.75rem;
-  }
   .pagination-container {
     display: grid;
     text-align: center;
@@ -68,7 +46,7 @@
     margin: 0 auto;
   }
   button {
-    color: black;
+    color: var(--dasch-primary);
     background-color: #fff;
     float: left;
     padding: 8px 16px;
@@ -79,7 +57,7 @@
     color: var(--lead-colour);
   }
   button.active {
-    background-color: var(--dasch-primary);
+    background-color: var(--dasch-secondary);
     color: white;
     border: 1px solid var(--dasch-primary);
   }
@@ -96,9 +74,9 @@
   }
   @media screen and (min-width: 768px) {
     .pagination-container {
-      /* display: flex;
+      display: flex;
       justify-content: center;
-      align-items: flex-start; */
+      align-items: flex-start;
       text-align: right;
       grid-template-columns: repeat(2, 1fr);
     }

@@ -101,7 +101,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "http://ark.dasch.swiss/ark:/72163/1/0826",
-            "text": "ark.dasch.swiss/ark:/72163/1/0826"
+            "text": "DaSCH Project Website (DSP)"
         }
     },
     "datasets": [
@@ -210,7 +210,7 @@
                     ]
                 }
             ],
-            "status": "Ongoing",
+            "status": "Finished",
             "title": "WordWeb / IDEM: A new way of representing Intertextuality in Drama of the Early Modern Period",
             "typeOfData": [
                 "Text"

@@ -98,7 +98,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.ls-prod-server.dasch.swiss/beta/project/0112",
-            "text": "Discover Project Data on DSP"
+            "text": "Project Data on DSP"
         }
     },
     "datasets": [
@@ -208,7 +208,7 @@
                     ]
                 }
             ],
-            "status": "Ongoing",
+            "status": "Finished",
             "title": "Base de données Gustave Roud",
             "typeOfData": [
                 "Image",

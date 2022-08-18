@@ -35,6 +35,7 @@
     box-shadow: var(--shadow-2);
   }
   .header{
+    font-family: 'robotomedium';
     height: 30px;
     padding-top: 10px;
   }

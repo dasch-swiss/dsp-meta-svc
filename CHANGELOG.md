@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.11.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.10.2...v1.11.0) (2022-08-18)
+
+
+### Bug Fixes
+
+* clean-up, renaming and repositioning links (DEV-1175) ([#43](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/43)) ([66f1564](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/66f15649e9bcd61d9a94f0d8c8837f23781845d2))
+* cleanup and more metadata (DEV-1177) ([#48](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/48)) ([c850550](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c8505506d52cea31101f53d3e64565bfa4118c44))
+
+
+### Enhancements
+
+* add project status and filter (DEV-1205) ([#46](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/46)) ([2d583dd](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/2d583dd6edd712c88bf1cdc8865b078fd4abe530))
+
 ### [1.10.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.9.2...v1.10.2) (2022-07-27)
 
 

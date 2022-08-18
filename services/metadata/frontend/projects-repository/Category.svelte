@@ -28,7 +28,7 @@ interface Category {
     name: string;
   }
 
-  let showFilters = false;
+  let showFilters = true;
 
   // const toggleCetegory = (cat: Category) => (event: MouseEvent) => {
   //   let bool = cat.isOpen;
@@ -48,7 +48,7 @@ interface Category {
 </script>
 
   <button on:click={() => {showFilters = !showFilters}}>
-    Project Status
+    Filter by Project Status
   </button>
   <div class={showFilters ? 'visible' : 'hidden'}>
     <label class=subcategory>
@@ -79,10 +79,12 @@ interface Category {
 
 <style>
   button {
+    color: var(--dasch-primary);
+    background-color: white;
     width: 100%;
     margin: 2px 0;
     padding: 10px;
-    border: 1px solid #aaa;
+    border: 1px solid var(--dasch-primary);
     border-radius: 3px;
     text-align: left;
   }
@@ -90,15 +92,19 @@ interface Category {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 25px;
     padding: 5px;
+    border: 1px solid var(--dasch-primary);
     border-radius: 3px;
-    background-color: #f2f2f2;
+    background-color: white;
     font-size: 0.8em;
   }
   input[type=checkbox] {
     margin: 5px 10px;
     display: flex;
+  }
+  input[type=checkbox]:checked {
+    accent-color: var(--dasch-primary);
   }
   @media screen and (min-width: 992px) {
     button {

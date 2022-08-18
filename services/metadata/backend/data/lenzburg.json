@@ -94,7 +94,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://admin.dasch.swiss/beta/project/082A",
-            "text": "Discover Project Data on DSP"
+            "text": "Project Data on DSP"
         },
         "secondaryURL": {
             "__type": "URL",
@@ -175,7 +175,7 @@
                     ]
                 }
             ],
-            "status": "Ongoing",
+            "status": "Finished",
             "title": "Tonbandsammlung Folkfestival auf der Lenzburg",
             "typeOfData": [
                 "Audio"

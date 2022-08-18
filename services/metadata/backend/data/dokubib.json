@@ -73,13 +73,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://www.salsah.org/dokubib/",
-            "text": "https://www.salsah.org/dokubib/"
-        },
-        "secondaryURL": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://www.biblio-stmoritz.ch",
-            "text": "www.biblio-stmoritz.ch"
+            "text": "DaSCH Project Website (SALSAH)"
         }
     },
     "datasets": [
@@ -123,7 +117,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://www.salsah.org/dokubib/",
-                    "text": "https://www.salsah.org/dokubib/"
+                    "text": "Find more information about the database here"
                 }
             ]
         }

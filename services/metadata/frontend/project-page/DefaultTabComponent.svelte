@@ -75,7 +75,7 @@
       {/if}
 
       <!-- Status -->
-      {#if dataset?.status}
+    <!--   {#if dataset?.status}
         <div>
           <span class=label>Status</span>
           <span class=data>{dataset?.status}</span>
@@ -85,7 +85,7 @@
           <span class=label>Status</span>
           <span class="warning data">status missing</span>
         </div>
-      {/if}
+      {/if} -->
 
       <!-- Dates -->
       {#if dataset.dateCreated}

@@ -50,7 +50,8 @@
     margin-bottom: -1px;
   }
   span {
-    border: 1px solid #e9ecef;
+    color: var(--dasch-primary);
+    border: 1px solid var(--dasch-primary);
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     display: block;
@@ -58,11 +59,12 @@
     cursor: pointer;
   }
   span:hover {
-    background-color: var(--dasch-hover);
+    color: white;
+    background-color: var(--dasch-primary);
   }
   li.active > span {
-    color: #fff;
-    background-color: var(--dasch-primary);
+    color: white;
+    background-color: var(--dasch-secondary);
     border-color: #dee2e6 #dee2e6 #fff;
   }
 </style>

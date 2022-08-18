@@ -33,14 +33,20 @@
     <!-- URLs -->
     {#if $projectMetadata?.project.url}
       <div class=label>Discover Project Data</div>
-      <a class="data" href={$projectMetadata?.project.url.url} target=_>{truncateString($projectMetadata?.project.url.text)}</a>
+      <a class="data" href={$projectMetadata?.project.url.url} target=_>
+        {truncateString($projectMetadata?.project.url.text)}
+        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+      </a>
     {:else if isTestEnvironment}
       <div class=label>Discover Project Data</div>
       <div class=warning>URL missing</div>
     {/if}
     <!-- Secondary URL -->
     {#if $projectMetadata?.project.secondaryURL}
-      <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>{truncateString($projectMetadata?.project.secondaryURL.text)}</a>
+      <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>
+        {truncateString($projectMetadata?.project.secondaryURL.text)}
+        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+      </a>
     {/if}
   </div>
 
@@ -230,6 +236,14 @@
     display: block;
     color: var(--lead-colour);
   }
+  /* a::after {
+    display: block;
+    content: ' ';
+    background-image: url('assets/icon/chevron.svg');
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+  } */
   .keyword {
     padding: 0;
     
@@ -262,5 +276,10 @@
     margin: 15px 0;
     padding: 0 10px 10px;
     box-shadow: var(--shadow-1);
+  }
+  .chevron {
+    padding: 0;
+    height: 100%;
+    vertical-align: text-bottom;
   }
 </style>

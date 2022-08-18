@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601301674969000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "https://www.anton-webern.ch/index.php?id=85",
+        "howToCite": "See https://www.anton-webern.ch/index.php?id=85",
         "teaserText": "The Anton Webern Gesamtausgabe (AWG) is a critical-historical edition which aims to make Webern’s entire oeuvre accessible to musical scholarship and practice in a scholarly form.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0806-dataset-000"
@@ -82,7 +82,7 @@
         ],
         "name": "Anton Webern Gesamtausgabe",
         "publications": [
-            "https://www.anton-webern.ch/index.php?id=87"
+            "See https://www.anton-webern.ch/index.php?id=87"
         ],
         "shortcode": "0806",
         "spatialCoverage": [
@@ -208,7 +208,7 @@
                 }
             ],
             "accessConditions": "restricted",
-            "howToCite": "https://www.anton-webern.ch/index.php?id=85",
+            "howToCite": "See https://www.anton-webern.ch/index.php?id=85",
             "languages": [
                 {
                     "de": "Deutsch",

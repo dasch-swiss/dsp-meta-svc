@@ -24,21 +24,25 @@
 
 <style>
   div {
-    position: fixed;
-    min-width: 100%;
+    position: absolute;
+    /* min-width: 100%; */
     text-align: center;
     padding: 20px 5px;
     color: #fff;
     background-color: var(--dasch-primary);
     z-index: 5;
     opacity: 0.95;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     div {
-      left: 50%;
+      top: 0;
+      left: 0;
+      /* left: 50%;
       min-width: 250px;
-      margin-left: -165px;
+      margin-left: -165px; */
       padding: 20px;
+      margin-top: 80px;
     }
   }
 </style>

@@ -62,7 +62,7 @@
       <p>{message}</p>
     {/if}
   </div>
-  {#if $pagedResults && $pagedResults.length}
+  {#if $pagedResults && $pagedResults.length && $pagedResults.length > 1}
     <Pagination />
   {/if}
 </main>
@@ -71,25 +71,19 @@
 * {
   box-sizing: border-box;
 }
+
 nav, main {
-  width: 100%;
+  width: fit-content;
   min-height: auto;
-  padding: 10px 24px;
 }
 nav {
-  flex: 0 0 20%;
-  display: flex;
-  justify-content: flex-end;
   padding: 0;
 }
 .category-container {
-  padding-top: 45px;
   max-width: 210px;
 }
 main {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  padding: 0, 0, 10px, 10px;
 }
 .tile-container {
   padding: 10px 5px;
@@ -99,14 +93,11 @@ main {
   max-width: 1200px;
 }
 @media screen and (min-width: 992px) {
-  nav, main {
-    /* min-height: 950px; */
-  }
+
   nav {
-    padding: 10px;
+    padding: 10px 0;
   }
   .tile-container {
-    padding: 40px 0;
     min-width: 742px;
   }
 }

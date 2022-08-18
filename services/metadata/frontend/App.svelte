@@ -33,14 +33,14 @@
   }
 @media screen and (min-width: 992px) {
   .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
   }
   .content-container {
     display: flex;
     flex-direction: row;
-    max-width: 1920px;
+    justify-content: center;
+    max-width: 1140px;
   }
 }
 </style>

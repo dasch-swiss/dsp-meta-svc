@@ -47,7 +47,7 @@ interface Category {
   
 </script>
 
-  <button on:click={() => {showFilters = !showFilters}}>
+  <button class=status-button on:click={() => {showFilters = !showFilters}}>
     Filter by Project Status
   </button>
   <div class={showFilters ? 'visible' : 'hidden'}>
@@ -81,12 +81,15 @@ interface Category {
   button {
     color: var(--dasch-primary);
     background-color: white;
-    width: 100%;
     margin: 2px 0;
     padding: 10px;
     border: 1px solid var(--dasch-primary);
     border-radius: 3px;
     text-align: left;
+  }
+
+  .status-button {
+    min-width: 180px;
   }
   .subcategory {
     display: flex;
@@ -110,11 +113,9 @@ interface Category {
     button {
       padding: 5px 20px;
       margin: 5px;
-      min-width: 200px;
     }
     .visible {
       display: block;
-      width: 220px;
     }
   }
 </style>

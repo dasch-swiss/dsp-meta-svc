@@ -259,14 +259,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .widget {
-    border: 1px solid #cdcdcd;
-    border-radius: 3px;
-    background-color: var(--dasch-grey-3);
-    margin-bottom: 6px;
-    padding: 0 10px 10px;
-    box-shadow: var(--shadow-1);
-  }
+
   @supports (-moz-appearance: none) {
     button.gototop-button {margin-bottom: 40px;}
   }

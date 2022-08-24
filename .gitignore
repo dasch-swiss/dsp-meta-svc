@@ -12,3 +12,4 @@ env/
 **/backend/data/*.xml
 **/backend/data/*.ttl
 **/backend/data/*.jsonld
+.vscode

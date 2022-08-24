@@ -37,7 +37,7 @@ a {color: var(--dasch-primary)}
   left: 0;
   z-index: 2;
   width: 100%;
-  background-color: var(--dasch-grey-2);;
+  background-color: #3B4856;
 }
 .modal-wrapper {
   display: flex;

@@ -35,7 +35,7 @@
       <div class=label>Discover Project Data</div>
       <a class="data" href={$projectMetadata?.project.url.url} target=_>
         {truncateString($projectMetadata?.project.url.text)}
-        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+        <img class=chevron src="assets/icon/Chevron_right.svg" alt="chevron right indicating a link" />
       </a>
     {:else if isTestEnvironment}
       <div class=label>Discover Project Data</div>
@@ -45,7 +45,7 @@
     {#if $projectMetadata?.project.secondaryURL}
       <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>
         {truncateString($projectMetadata?.project.secondaryURL.text)}
-        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+        <img class=chevron src="assets/icon/Chevron_right.svg" alt="chevron right indicating a link" />
       </a>
     {/if}
   </div>

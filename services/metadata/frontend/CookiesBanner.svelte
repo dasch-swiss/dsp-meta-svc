@@ -2,7 +2,7 @@
   import { getCookie, setCookie } from "./cookies-service";
 
   // prevents display modal locally
-  const noLocalhost = window.location.hostname !== 'localhost';
+  const noLocalhost = window.location.hostname !== 'lalala';
   let modalOn = getCookie('cookiesAccepted') ? false : true;
 
   const handleModal = () => {
@@ -38,6 +38,7 @@ a {color: var(--dasch-primary)}
   z-index: 2;
   width: 100%;
   background-color: #3B4856;
+  color: #fff
 }
 .modal-wrapper {
   display: flex;
@@ -49,6 +50,11 @@ a {color: var(--dasch-primary)}
   padding: 1rem 1.5rem;
   line-height: 1.3;
   align-self: center;
+}
+.modal-text a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #fff
 }
 .modal-buttons {
   padding: 0 1rem 1rem 1rem;
@@ -63,14 +69,14 @@ button {
   margin: 0 0.5rem 0.5rem;
 }
 .btn-accept-all:hover {
-  border: 1px solid var(--dasch-primary);
-  background-color: #fff;
-  color: var(--dasch-primary);
+  border: 1px solid #fff;
+  background-color: #3B4856;
+  color: #fff;
 }
 .btn-accept-all {
   border: 1px solid transparent;
-  background-color: var(--dasch-primary);
-  color: white;
+  background-color: #fff;
+  color: #3B4856;
 }
 @media screen and (min-width: 768px) {
   .modal-wrapper {flex-direction: row;}

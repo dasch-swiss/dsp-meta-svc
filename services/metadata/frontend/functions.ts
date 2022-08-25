@@ -1,7 +1,27 @@
 //  TODO: find better name for this file
 import {get} from "svelte/store";
 import {projectMetadata as ProjectMetadata} from "./store";
+import {handleSnackbar} from "./store";
 import type {Grant, Person, Organization, Text} from "./interfaces";
+
+export const copyToClipboard = (what: string) => {
+  let text = document.createRange();
+  text.selectNode(document.getElementById(what));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(text);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+  what = what.split('-').map(word => word.charAt(0).toUpperCase() + word.substring(1)).join(' ')
+  handleSnackbar.set({isSnackbar: true, message: `${what} copied successfully!`});
+};
+
+export const copyHowToCite = () => {
+  copyToClipboard('how-to-cite')
+}
+
+export const copyPermalink = () => {
+  copyToClipboard('permalink')
+}
 
 export function findPersonByID(id: string): Person {
   let persons = get(ProjectMetadata).persons;

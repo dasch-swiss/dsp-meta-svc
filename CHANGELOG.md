@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.0...v1.11.1) (2022-08-26)
+
+
+### Bug Fixes
+
+* minor styling fixes + data fixes ([#49](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/49)) ([bc4abf9](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/bc4abf964dd1b5b4847b8f7bbbe563874f6a3789))
+
 ## [1.11.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.10.2...v1.11.0) (2022-08-18)
 
 

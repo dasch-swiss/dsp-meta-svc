@@ -2,7 +2,7 @@
   import { getCookie, setCookie } from "./cookies-service";
 
   // prevents display modal locally
-  const noLocalhost = window.location.hostname !== 'lalala';
+  const noLocalhost = window.location.hostname !== 'localhost';
   let modalOn = getCookie('cookiesAccepted') ? false : true;
 
   const handleModal = () => {

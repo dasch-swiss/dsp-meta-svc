@@ -1,8 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { handleSnackbar } from "../store";
-  import { getText, findOrganizationByID, findObjectByID } from "../functions";
+  import { getText, findOrganizationByID, findObjectByID, copyHowToCite } from "../functions";
   import type { Dataset } from "../interfaces";
 
   export let dataset: Dataset;
@@ -29,16 +28,6 @@
     abstractLinesNumber = divHeight / lineHeight;
     isAbstractExpanded = abstractLinesNumber > 6 ? false : true;
   });
-
-  const copyToClipboard = () => {
-    let text = document.createRange();
-    text.selectNode(document.getElementById('how-to-cite'));
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(text);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-    handleSnackbar.set({isSnackbar: true, message: 'Copied successfully!'});
-  };
 
   const truncateString = (s: string) => {
     const browserWidth = window.innerWidth;
@@ -182,7 +171,7 @@
         <span class=label style="display:inline">
           How To Cite
           {#if dataset?.howToCite}
-            <button on:click={copyToClipboard} title="copy citation to the clipboard">
+            <button on:click={copyHowToCite} title="copy citation to the clipboard">
               <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
             </button>
           {/if}
@@ -293,8 +282,6 @@
     top: 10px;
     color: var(--lead-colour);
     z-index: 0;
-  }
-  .icon {
     margin: -1rem 0 0.25rem;
   }
   .icon:hover {

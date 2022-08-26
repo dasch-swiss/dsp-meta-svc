@@ -26,6 +26,25 @@
 </script>
 
 <div class={pagedResults ? 'pagination-container' : 'hidden'}>
+  <div class="stats">
+    <div>
+      <p>
+        Showing
+        <span>{$pagination.currentResultsRange[0]}</span>
+        to
+        <span>{$pagination.currentResultsRange[1] > $pagination.totalCount ? $pagination.totalCount : $pagination.currentResultsRange[1]}</span>
+        of
+        <span>{$pagination.totalCount}</span>
+        <!-- results
+        TODO: alternative for displaying entered query with snackbar: -->
+        <!-- {#if $query}
+          <span style="flex: 2">
+            {` for query: ${$query}`}
+          </span>
+        {/if} -->
+      </p>
+    </div>
+  </div>
   <div class="pagination">
     <button on:click={handlePagination} class="arrow" id="first" title="First Page" disabled={$pagination.currentPage === 1}>&laquo;</button>
     {#each Array($pagination.totalPages) as _, i}
@@ -71,17 +90,5 @@
   button:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-  }
-  @media screen and (min-width: 768px) {
-    .pagination-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: right;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .pagination {
-      margin: 0 20px;
-    }
   }
 </style>

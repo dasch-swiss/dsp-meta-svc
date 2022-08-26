@@ -1,6 +1,6 @@
 <script lang='ts'>
   import { projectMetadata, handleSnackbar } from "../store";
-  import { getText, findObjectByID, findGrantByID, findOrganizationByID } from "../functions";
+  import { getText, findObjectByID, findGrantByID, findOrganizationByID, copyPermalink, copyHowToCite } from "../functions";
 
   let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
 
@@ -9,16 +9,6 @@
     if (s.length > 35) {
       return `${s.slice(0, 35)}...`;
     } else return s;
-  };
-
-  const copyToClipboard = () => {
-    let text = document.createRange();
-    text.selectNode(document.getElementById('how-to-cite'));
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(text);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-    handleSnackbar.set({isSnackbar: true, message: 'Copied successfully!'});
   };
 
   const getARK = () => {
@@ -35,7 +25,7 @@
       <div class=label>Discover Project Data</div>
       <a class="data" href={$projectMetadata?.project.url.url} target=_>
         {truncateString($projectMetadata?.project.url.text)}
-        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+        <img class=chevron src="assets/icon/Chevron_right.svg" alt="chevron right indicating a link" />
       </a>
     {:else if isTestEnvironment}
       <div class=label>Discover Project Data</div>
@@ -45,22 +35,22 @@
     {#if $projectMetadata?.project.secondaryURL}
       <a class="data" href={$projectMetadata?.project.secondaryURL.url} target=_>
         {truncateString($projectMetadata?.project.secondaryURL.text)}
-        <img class=chevron src="assets/icon/chevron.svg" alt="chevron right indicating a link" />
+        <img class=chevron src="assets/icon/Chevron_right.svg" alt="chevron right indicating a link" />
       </a>
     {/if}
   </div>
 
   <div class="widget">
-    <!-- ARK URLs -->
+    <!-- Permalink -->
     <div class=label>
       <span style="display:inline">
         Permalink
-          <button on:click={copyToClipboard} title="copy permalink to the clipboard">
+          <button on:click={copyPermalink} title="copy permalink to the clipboard">
             <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
           </button>
       </span>
     </div>
-    <a class="data" href={getARK()} target=_>{getARK()}</a>
+    <a id="permalink" href={getARK()} target=_>{getARK()}</a>
 
     <!-- Shortcode -->
     {#if $projectMetadata?.project.shortcode}
@@ -81,7 +71,7 @@
         <span style="display:inline">
           How To Cite
           {#if $projectMetadata?.project.howToCite}
-            <button on:click={copyToClipboard} title="copy citation to the clipboard">
+            <button on:click={copyHowToCite} title="copy citation to the clipboard">
               <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
             </button>
           {/if}
@@ -262,8 +252,6 @@
     top: 10px;
     color: var(--lead-colour);
     z-index: 0;
-  }
-  .icon {
     margin: -1rem 0 0.25rem;
   }
   .icon:hover {

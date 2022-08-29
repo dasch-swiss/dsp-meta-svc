@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.1...v1.11.2) (2022-08-29)
+
+
+### Bug Fixes
+
+* **project-data:** fix typos in decoso ([#53](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/53)) ([9067ee9](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/9067ee9e6a13bb6b7a39439ffabfe28b9691b2fd))
+
 ### [1.11.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.0...v1.11.1) (2022-08-26)
 
 

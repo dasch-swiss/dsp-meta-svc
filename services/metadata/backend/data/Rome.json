@@ -61,7 +61,13 @@
                 "url": "https://chronontology.dainst.org/period/ZkwNN4oimUDM",
                 "text": "Middle Ages, 500-1500"
             }
-        ]
+        ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://admin.dasch.swiss/beta/project/0118",
+            "text": "Project Data on DSP"
+        }
     },
     "datasets": [
         {

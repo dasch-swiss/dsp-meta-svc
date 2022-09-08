@@ -150,7 +150,7 @@
                     "license": {
                         "__type": "URL",
                         "type": "Creative Commons",
-                        "url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+                        "url": "https://creativecommons.org/licenses/by-nc/4.0/",
                         "text": "CC BY-NC 4.0"
                     }
                 }
@@ -202,8 +202,8 @@
                 {
                     "__type": "URL",
                     "type": "URL",
-                    "url": "https://aegyptologie.philhist.unibas.ch/de/personen/susanne-bickel/",
-                    "text": "https://aegyptologie.philhist.unibas.ch/de/personen/susanne-bickel/"
+                    "url": "https://daw.philhist.unibas.ch/de/personen/susanne-bickel/",
+                    "text": "https://daw.philhist.unibas.ch/de/personen/susanne-bickel/"
                 },
                 {
                     "__type": "URL",

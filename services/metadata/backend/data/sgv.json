@@ -1200,7 +1200,7 @@
             "__createdAt": "1643065759651365000",
             "__createdBy": "dsp-metadata-gui",
             "familyNames": [
-                "Allassi"
+                "Alassi"
             ],
             "givenNames": [
                 "Sepideh"
@@ -1470,8 +1470,8 @@
                 {
                     "__type": "URL",
                     "type": "ORCID",
-                    "url": "https://orcid.org/0000-0003-1485-49 23",
-                    "text": "ORCID URL: https://orcid.org/0000-0003-1485-49 23"
+                    "url": "https://orcid.org/0000-0003-1485-4923",
+                    "text": "ORCID URL: https://orcid.org/0000-0003-1485-4923"
                 }
             ]
         },

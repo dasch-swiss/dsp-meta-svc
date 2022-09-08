@@ -72,7 +72,7 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://www.salsah.org/dokubib/",
+            "url": "https://data.dasch.swiss/dokubib/",
             "text": "DaSCH Project Website (SALSAH)"
         }
     },
@@ -111,14 +111,6 @@
             "typeOfData": [
                 "Image",
                 "Text"
-            ],
-            "urls": [
-                {
-                    "__type": "URL",
-                    "type": "URL",
-                    "url": "https://www.salsah.org/dokubib/",
-                    "text": "Find more information about the database here"
-                }
             ]
         }
     ],

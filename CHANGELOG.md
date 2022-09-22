@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.4](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.3...v1.11.4) (2022-09-22)
+
+
+### Bug Fixes
+
+* rome proejct data (DSP-1347) ([#57](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/57)) ([20a1b5d](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/20a1b5d7691d99164a4e9ac5e4e0d5112fd0a0db))
+
 ### [1.11.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.2...v1.11.3) (2022-09-08)
 
 

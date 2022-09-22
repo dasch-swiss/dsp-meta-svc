@@ -21,7 +21,7 @@
             "available": true
         },
         "description": {
-            "en": "The ontology of the database comprises three main classes, making it possible to describe paintings and mosaics in the buildings where they are found. The class “Oggetto” (i.e.: mosaic, painting) falls under the class “Cappella” and/or the class “Edificio”. Each of these three classes contains properties (custom controlled vocabularies and text fields), making it possible to characterize the building, chapel, paintings or mosaic using names, location, description, state of preservation, analysis, dating, patrons, inscriptions, sources, critical commentary, bibliography. Illustrations can be added to the three main categories using two further classes, ‘Illustrazioni’ and ‘Illustrazioni ad accesso limitato’, whose properties (also text fields and controlled vocabularies) include information on the type of image and photograph credits."
+            "en": "The project addresses the visual culture of the city of Rome (Vth-XIth ct.) by means of an interdisciplinary approach (art history, architecture, archaeology archaeometry, liturgy, epigraphy)."
         },
         "disciplines": [
             {
@@ -77,7 +77,7 @@
             "__createdBy": "dsp-metadata-gui",
             "abstracts": [
                 {
-                    "en": "The project addresses the visual culture of the city of Rome (Vth-XIth ct.) by means of an interdisciplinary approach (art history, architecture, archaeology archaeometry, liturgy, epigraphy)."
+                    "en": "The ontology of the database comprises three main classes, making it possible to describe paintings and mosaics in the buildings where they are found. The class “Oggetto” (i.e.: mosaic, painting) falls under the class “Cappella” and/or the class “Edificio”. Each of these three classes contains properties (custom controlled vocabularies and text fields), making it possible to characterize the building, chapel, paintings or mosaic using names, location, description, state of preservation, analysis, dating, patrons, inscriptions, sources, critical commentary, bibliography. Illustrations can be added to the three main categories using two further classes, ‘Illustrazioni’ and ‘Illustrazioni ad accesso limitato’, whose properties (also text fields and controlled vocabularies) include information on the type of image and photograph credits."
                 }
             ],
             "alternativeTitles": [

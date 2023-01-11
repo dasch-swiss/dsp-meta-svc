@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601291043795000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
+        "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0105.",
         "teaserText": "Fondé sur plusieurs centaines de dessins dans diverses régions du monde, ce projet étudie l’évolution de la représentation de Dieu ou d’autres êtres surnaturels chez des enfants et des adolescents.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0105-dataset-000"
@@ -162,11 +162,11 @@
             "text": "Project Data on DSP"
         },
         "secondaryURL": {
-                "__type": "URL",
-                "type": "URL",
-                "url": "https://ddd.unil.ch/",
-                "text": "External Project Website"
-            }
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://ddd.unil.ch/",
+            "text": "External Project Website"
+        }
     },
     "datasets": [
         {
@@ -183,7 +183,7 @@
             "dateCreated": "2018-07-02",
             "dateModified": "2021-11-30",
             "datePublished": "2018-07-02",
-            "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0105.",
+            "howToCite": "Brandt, P.-Y., Serbaeva O.,  Cocco, Ch., Dessart, G., Dandarova Robert, Z., Rivoal, M.,  2019, Dessins de dieux [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0105.",
             "languages": [
                 {
                     "en": "French",

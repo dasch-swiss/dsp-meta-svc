@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601286237202000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Gonzalez, Ph., Roca Escoda, M., Stavo Debauge, J., Evequoz, Y., Ben Amor, S., Rivoal, M., 2019, Embarras de la parole religieuse [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0101.",
+        "howToCite": "Gonzalez, Ph., Roca Escoda, M., Stavo Debauge, J., Evequoz, Y., Ben Amor, S., Rivoal, M., 2019, Embarras de la parole religieuse [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0101.",
         "teaserText": "Ce projet étudie les mobilisations religieuses sur des questions de genre et de sexualités et comment elles transforment les règles d’interlocution des espaces publics sécularisés et la parole des acteurs religieux.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0101-dataset-000"
@@ -122,7 +122,7 @@
             "dateCreated": "2017-07-04",
             "dateModified": "2020-02-10",
             "datePublished": "2017-07-04",
-            "howToCite": "Gonzalez, Ph., Roca Escoda, M., Stavo Debauge, J., Evequoz, Y., Ben Amor, S., Rivoal, M., 2019, Embarras de la parole religieuse [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0101.",
+            "howToCite": "Gonzalez, Ph., Roca Escoda, M., Stavo Debauge, J., Evequoz, Y., Ben Amor, S., Rivoal, M., 2019, Embarras de la parole religieuse [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0101.",
             "languages": [
                 {
                     "en": "French",

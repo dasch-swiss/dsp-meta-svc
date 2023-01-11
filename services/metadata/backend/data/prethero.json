@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1660830383338024000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Wawrzyniak, N., Doudet, E., Rivoal, M., Premiers théâtres romands [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0119. Wawrzyniak, N., Doudet, E., Rivoal, M., Early French-Swiss Theater [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0119.",
+        "howToCite": "Wawrzyniak, N., Doudet, E., Rivoal, M., Premiers théâtres romands [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0119. Wawrzyniak, N., Doudet, E., Rivoal, M., Early French-Swiss Theater [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0119.",
         "teaserText": "The project documents theatrical practices in the French-Swiss regions between the 15th and 16th c. It is a part of the SNSF project focused on versified public communication in French (15th-16th c.)",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0119-dataset-000"
@@ -108,7 +108,7 @@
                 }
             ],
             "accessConditions": "open",
-            "howToCite": "Wawrzyniak, N., Doudet, E., Rivoal, M., Premiers théâtres romands [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0119.\r \r Wawrzyniak, N., Doudet, E., Rivoal, M., Early French-Swiss Theater [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0119.",
+            "howToCite": "Wawrzyniak, N., Doudet, E., Rivoal, M., Premiers théâtres romands [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0119.\r \r Wawrzyniak, N., Doudet, E., Rivoal, M., Early French-Swiss Theater [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0119.",
             "languages": [
                 {
                     "en": "French",

@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601387381347000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH http://ark.dasch.swiss/ark:/72163/1/0114.",
+        "howToCite": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH https://ark.dasch.swiss/ark:/72163/1/0114.",
         "teaserText": "Ce projet reconstituera les trajectoires familiales, professionnelles, sociales et politiques des 213 membres du CIO cooptés avant 1972.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0114-dataset-000"
@@ -103,7 +103,7 @@
             "dateCreated": "2020-05-21",
             "dateModified": "2021-01-28",
             "datePublished": "2020-05-21",
-            "howToCite": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH http://ark.dasch.swiss/ark:/72163/1/0114.",
+            "howToCite": "Clastres, P., Carpentier, F., Klima, H., Défayes, F., Metzger, C., Rivoal, M., 2020, Les membres du Comité international olympique (CIO) de 1894 à 1972 [database]. DaSCH https://ark.dasch.swiss/ark:/72163/1/0114.",
             "languages": [
                 {
                     "en": "French",

@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1662621516859596000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Boillat, A., Annen, V, Modoux, J., Jaouen, L., Rivoal, M., 2022, « Le scénario chez Alain Tanner : discours et pratiques » [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0102.",
+        "howToCite": "Boillat, A., Annen, V, Modoux, J., Jaouen, L., Rivoal, M., 2022, « Le scénario chez Alain Tanner : discours et pratiques » [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0102.",
         "teaserText": "Ce projet étudie, dans une perspective narratologique/genre studies, la genèse des scénarios des films d’Alain Tanner, ainsi que les discours sur cette question tenus par le cinéaste.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0102-dataset-000"
@@ -130,7 +130,7 @@
             "accessConditions": "restricted",
             "dateCreated": "2022-09-01",
             "datePublished": "2022-09-01",
-            "howToCite": "Boillat, A., Annen, V, Modoux, J., Jaouen, L., Rivoal, M., 2022, « Le scénario chez Alain Tanner : discours et pratiques » [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0102.",
+            "howToCite": "Boillat, A., Annen, V, Modoux, J., Jaouen, L., Rivoal, M., 2022, « Le scénario chez Alain Tanner : discours et pratiques » [base de données] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0102.",
             "languages": [
                 {
                     "XX": "Français"

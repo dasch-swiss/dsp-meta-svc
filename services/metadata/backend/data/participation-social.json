@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1660773937664037000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Obrist B, Dillip A, Mayumana I, Rutishauser M, Simon V (2022). Participation in Social Health Protection: An Anthropological Case Study in Tanzania [Dataset]. DaSCH. http://ark.dasch.swiss/ark:/72163/1/083D.",
+        "howToCite": "Obrist B, Dillip A, Mayumana I, Rutishauser M, Simon V (2022). Participation in Social Health Protection: An Anthropological Case Study in Tanzania [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083D.",
         "teaserText": "This project calls for a broad view of social health protection, comprising health care funding and people’s ubiquitous but less visible strife for participation in self-organized groups and networks.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-083D-dataset-000"
@@ -90,7 +90,7 @@
             "accessConditions": "open",
             "dateCreated": "2022-08-31",
             "datePublished": "2022-08-31",
-            "howToCite": "Obrist B, Dillip A, Mayumana I, Rutishauser M, Simon V (2022). Participation in Social Health Protection: An Anthropological Case Study in Tanzania [Dataset]. DaSCH. http://ark.dasch.swiss/ark:/72163/1/083D.",
+            "howToCite": "Obrist B, Dillip A, Mayumana I, Rutishauser M, Simon V (2022). Participation in Social Health Protection: An Anthropological Case Study in Tanzania [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083D.",
             "languages": [
                 {
                     "en": "English",

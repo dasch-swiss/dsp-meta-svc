@@ -13,7 +13,7 @@
 
   const getARK = () => {
     const shortcode = $projectMetadata?.project.shortcode
-    return `http://ark.dasch.swiss/ark:/72163/1/${shortcode}`
+    return `https://ark.dasch.swiss/ark:/72163/1/${shortcode}`
   };
 </script>
 

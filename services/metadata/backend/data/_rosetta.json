@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601349756338000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "DaSCH (2021): Rosetta, DaSCH. http://ark.dasch.swiss/ark:/72163/1/082E/",
+        "howToCite": "DaSCH (2021): Rosetta, DaSCH. https://ark.dasch.swiss/ark:/72163/1/082E/",
         "teaserText": "Rosetta is the sample project of DaSCH.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-082E-dataset-000"
@@ -100,7 +100,7 @@
                     "en": "Added as zip-file to project (rosetta.zip)"
                 }
             ],
-            "howToCite": "DaSCH (2021): Rosetta, DaSCH. http://ark.dasch.swiss/ark:/72163/1/082E/",
+            "howToCite": "DaSCH (2021): Rosetta, DaSCH. https://ark.dasch.swiss/ark:/72163/1/082E/",
             "languages": [
                 {
                     "en": "Akkadian"

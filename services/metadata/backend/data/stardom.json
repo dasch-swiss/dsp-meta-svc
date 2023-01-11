@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1630601357396935000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0107.",
+        "howToCite": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0107.",
         "teaserText": "This project studies the mechanisms of the construction of genre representations in the French cinematographic production of the 1940s.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0107-dataset-000"
@@ -114,7 +114,7 @@
             "dateCreated": "2018-02-16",
             "dateModified": "2021-02-02",
             "datePublished": "2018-02-16",
-            "howToCite": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0107.",
+            "howToCite": "Boillat, A., Chedaleux, D., Rohner, J., Cordonier, L., Gaillard, A., Jaouen, L., Rivoal, M., 2018, Personnage et vedettariat au prisme du genre [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0107.",
             "languages": [
                 {
                     "en": "French",

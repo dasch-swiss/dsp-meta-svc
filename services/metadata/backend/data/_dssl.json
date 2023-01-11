@@ -119,8 +119,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0824",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0824"
+            "url": "https://ark.dasch.swiss/ark:/72163/1/0824",
+            "text": "https://ark.dasch.swiss/ark:/72163/1/0824"
         },
         "secondaryURL": {
             "__type": "URL",

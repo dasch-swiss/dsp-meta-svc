@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.5](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.4...v1.11.5) (2023-01-11)
+
+
+### Bug Fixes
+
+* change HTTP to HTTPS on ARK URLs (DEV-1604) ([#60](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/60)) ([3e40b61](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/3e40b61c4dc13be16d37b36c73a5fc36fc609164))
+
 ### [1.11.4](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.3...v1.11.4) (2022-09-22)
 
 

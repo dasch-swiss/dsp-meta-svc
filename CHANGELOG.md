@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.11.6](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.5...v1.11.6) (2023-01-26)
+
+
+### Bug Fixes
+
+* broken BEOL link ([#62](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/62)) ([4c008eb](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/4c008eb523d01156f5a41ef1e887aaa436ad4aa0))
+
 ### [1.11.5](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.4...v1.11.5) (2023-01-11)
 
 

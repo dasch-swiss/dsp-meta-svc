@@ -153,7 +153,7 @@
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-005",
                     "roles": [
-                        "Researcher"
+                        "Project Member"
                     ]
                 },
                 {
@@ -161,6 +161,13 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-001",
                     "roles": [
                         "Project Leader"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-008",
+                    "roles": [
+                        "Data Collector"
                     ]
                 }
             ],
@@ -186,8 +193,7 @@
                 "Irene"
             ],
             "jobTitles": [
-                "Data Collector",
-                "Project Leader"
+                "Post-doctoral researcher"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -206,7 +212,7 @@
                 "Marion"
             ],
             "jobTitles": [
-                "Data Curator"
+                "Research Manager"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -225,8 +231,7 @@
                 "Maria Elena"
             ],
             "jobTitles": [
-                "Data Collector",
-                "Project Member"
+                "PhD Student"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -245,8 +250,7 @@
                 "Eleonora"
             ],
             "jobTitles": [
-                "Data Collector",
-                "Project Member"
+                "Post-doctoral researcher"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -265,8 +269,7 @@
                 "Serena"
             ],
             "jobTitles": [
-                "Project Member",
-                "Researcher"
+                "Professor Emeritus"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -285,7 +288,7 @@
                 "Manuela"
             ],
             "jobTitles": [
-                "Project Member"
+                "Associate Professor"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000",
@@ -305,7 +308,7 @@
                 "Domenico"
             ],
             "jobTitles": [
-                "Data Collector"
+                "Freelance photographer"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
@@ -318,14 +321,30 @@
             "__createdBy": "dsp-metadata-gui",
             "email": "Chiara.Croci@unil.ch",
             "familyNames": [
-                "Chiara"
-            ],
-            "givenNames": [
                 "Croci"
             ],
+            "givenNames": [
+                "Chiara"
+            ],
             "jobTitles": [
-                "Data Collector",
-                "Project Leader"
+                "Post-doctoral researcher"
+            ],
+            "affiliation": [
+                "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"
+            ]
+        },
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-REMA-person-008",
+            "__type": "Person",
+            "email": "Cassandre.Lejosne@unil.ch",
+            "familyNames": [
+                "Cassandre"
+            ],
+            "givenNames": [
+                "Lejosne"
+            ],
+            "jobTitles": [
+                "PhD student"
             ],
             "affiliation": [
                 "http://ns.dasch.swiss/repository#dsp-REMA-organization-000"

@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.12.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.6...v1.12.0) (2023-02-22)
+
+
+### Bug Fixes
+
+* link of project biz (DEV-1697) ([#67](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/67)) ([45e6432](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/45e643200e4531473f865d4a3199f0f457b9e599))
+
+
+### Enhancements
+
+* add metadata for societesavoie and woposs (DEV-1668) ([#65](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/65)) ([f8acb3a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/f8acb3a0b87e570b31855ed1defcb2d7900945dc))
+
 ### [1.11.6](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.5...v1.11.6) (2023-01-26)
 
 

@@ -14,5 +14,5 @@ require (
 	github.com/snabb/sitemap v1.0.0
 	github.com/stretchr/testify v1.7.0
 	github.com/urfave/negroni v1.0.0
-	golang.org/x/net v0.0.0-20201021035429-f5854403a974 // indirect
+	golang.org/x/net v0.7.0 // indirect
 )

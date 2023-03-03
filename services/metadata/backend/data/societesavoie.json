@@ -145,16 +145,16 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0121-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0121-person-000",
                     "roles": [
-                        "Project Member, Data Collector"
+                        "Project Leader"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0121-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0121-person-002",
                     "roles": [
-                        "Project Leader"
+                        "Project Member, Data Collector"
                     ]
                 },
                 {

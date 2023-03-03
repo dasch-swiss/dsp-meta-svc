@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.12.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.12.0...v1.12.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* order of attribution in societe (DEV-1769) ([#68](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/68)) ([58e37da](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/58e37dadbde915c5f5d2babd106fcfca76b9243c))
+
 ## [1.12.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.11.6...v1.12.0) (2023-02-22)
 
 

@@ -81,7 +81,7 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://admin.dasch.swiss/beta/project/0119",
+            "url": "https://admin.dasch.swiss/project/0119",
             "text": "Project Data on DSP"
         },
         "secondaryURL": {

@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.12.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.12.1...v1.12.2) (2023-03-30)
+
+
+### Bug Fixes
+
+* remove beta from path (DEV-1973) ([#72](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/72)) ([b3c1cd2](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/b3c1cd2e42f1faedbc4501cfa8401cdf99103670))
+
 ### [1.12.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.12.0...v1.12.1) (2023-03-03)
 
 

@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1682679735674579000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "SNSF MARK16 (2023). MARK16 Manuscript Data [Dataset]. DaSCH. Persistent identifier.",
+        "howToCite": "SNSF MARK16 (2023). MARK16 Manuscript Data [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/0844.",
         "teaserText": "MARK16 is a SNSF PRIMA project. It reassesses the diverse endings of the Gospel of Mark through manuscript data, available on its Virtual Research Environment ISSN 2673-9836, https://mark16.sib.swiss.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0844-dataset-000"
@@ -180,6 +180,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://admin.dasch.swiss/project/n47nDVTHR2W9U8yjEIcj2Q",
+            "text": "Project Data on DSP"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "https://mark16.sib.swiss/",
             "text": "External Project Website"
         }
@@ -190,6 +196,11 @@
             "__type": "Dataset",
             "__createdAt": "1682679739147130000",
             "__createdBy": "dsp-metadata-gui",
+            "abstracts": [
+                {
+                    "en": "58 datasets of folios with Mark 16 in 58 manuscripts and 11 languages "
+                }
+            ],
             "accessConditions": "open",
             "dateCreated": "2019-03-01",
             "howToCite": "SNSF MARK16 (2023). MARK16 Manuscript Data [Dataset]. DaSCH. Persistent identifier.",

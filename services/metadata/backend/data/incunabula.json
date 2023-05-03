@@ -59,7 +59,7 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://admin.dasch.swiss/beta/project/0803",
+            "url": "https://admin.dasch.swiss/project/0803",
             "text": "Project Data on DSP"
         },
         "shortcode": "0803",

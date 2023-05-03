@@ -109,6 +109,7 @@ func getStatus(shortcode string) string {
 		"0102": true,
 		"0843": true,
 		"0121": true,
+    "0844": true,
 		"0810": true,
 	}
 	_, isOngoing := projectOngoingTable[shortcode]

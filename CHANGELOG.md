@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.13.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.12.3...v1.13.0) (2023-05-09)
+
+
+### Bug Fixes
+
+* rename links and add postkarten russland data link (DEV-2112) ([#79](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/79)) ([f8bfd2e](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/f8bfd2ed35e92677e22f5b4c1faea918f013f90b))
+
+
+### Enhancements
+
+* add metadata for fagottino (DEV-2127) ([#78](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/78)) ([71e273f](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/71e273f67508f5aa2e3146946f2c690a4568e06a))
+* add project DaSCH ([#76](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/76)) ([7dadb33](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/7dadb33eb423681b8facda588e0fb2f1a81ea958))
+
 ### [1.12.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.12.2...v1.12.3) (2023-04-28)
 
 

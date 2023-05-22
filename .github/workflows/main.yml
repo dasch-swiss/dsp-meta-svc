@@ -21,7 +21,7 @@ jobs:
           distribution: "temurin"
           java-version: "17"
       - name: install requirements
-        run: sudo apt-get install ca-certificates-java expect
+        run: sudo apt-get update && sudo apt-get install ca-certificates-java expect --fix-missing
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:

@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.13.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.13.1...v1.13.2) (2023-05-22)
+
+
+### Bug Fixes
+
+* license for fagottini project ([#83](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/83)) ([40324f3](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/40324f31ccc1c089a11a424035e035781e30b2c5))
+* update broken links ([#85](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/85)) ([c7e5c3a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c7e5c3ad298c7d1337555b293ea97083c7287b15))
+
 ### [1.13.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.13.0...v1.13.1) (2023-05-22)
 
 

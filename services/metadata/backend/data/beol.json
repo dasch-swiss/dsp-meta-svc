@@ -182,8 +182,8 @@
                     "license": {
                         "__type": "URL",
                         "type": "Creative Commons",
-                        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-                        "text": "CC BY-NC-ND 4.0"
+                        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                        "text": "CC BY-NC-SA 4.0 International"
                     }
                 }
             ],
@@ -245,8 +245,8 @@
                     "license": {
                         "__type": "URL",
                         "type": "Creative Commons",
-                        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-                        "text": "CC BY-NC-ND 4.0"
+                        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                        "text": "CC BY-NC-SA 4.0 International"
                     }
                 }
             ],
@@ -315,8 +315,8 @@
                     "license": {
                         "__type": "URL",
                         "type": "Creative Commons",
-                        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-                        "text": "CC BY-NC-ND 4.0"
+                        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                        "text": "CC BY-NC-SA 4.0"
                     }
                 }
             ],
@@ -384,8 +384,8 @@
                     "license": {
                         "__type": "URL",
                         "type": "Creative Commons",
-                        "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-                        "text": "CC BY-NC-ND 4.0"
+                        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                        "text": "CC BY-NC-SA 4.0"
                     }
                 }
             ],

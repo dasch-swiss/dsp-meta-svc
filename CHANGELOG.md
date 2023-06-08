@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.14.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.13.2...v1.14.0) (2023-06-08)
+
+
+### Bug Fixes
+
+* Update licences for beol.json ([#86](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/86)) ([7cc08ad](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/7cc08adfde01fdc6bbd62603a27360426410a3f0))
+
+
+### Enhancements
+
+* add aura und effizienz ([#87](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/87)) ([64d25a7](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/64d25a7dbdc834c464c77c3bb43668e4f467e362))
+
 ### [1.13.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.13.1...v1.13.2) (2023-05-22)
 
 

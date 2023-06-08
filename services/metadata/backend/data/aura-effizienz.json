@@ -184,13 +184,6 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0846-person-002",
-                    "roles": [
-                        "creator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0846-person-001",
                     "roles": [
                         "creator"
@@ -217,24 +210,6 @@
             ],
             "givenNames": [
                 "Jael"
-            ],
-            "jobTitles": [
-                "M.A."
-            ],
-            "affiliation": [
-                "http://ns.dasch.swiss/repository#dsp-0846-organization-000"
-            ]
-        },
-        {
-            "__id": "http://ns.dasch.swiss/repository#dsp-0846-person-002",
-            "__type": "Person",
-            "__createdAt": "1686169805666968000",
-            "__createdBy": "dsp-metadata-gui",
-            "familyNames": [
-                "Wolf"
-            ],
-            "givenNames": [
-                "Katharina"
             ],
             "jobTitles": [
                 "M.A."

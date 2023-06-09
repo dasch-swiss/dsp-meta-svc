@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.14.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.0...v1.14.1) (2023-06-08)
+
+
+### Bug Fixes
+
+* update metadata aura und effizienz ([#89](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/89)) ([d62a1af](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/d62a1af0eb11112598b8d1357b85c3e59c5a36b1))
+
 ## [1.14.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.13.2...v1.14.0) (2023-06-08)
 
 

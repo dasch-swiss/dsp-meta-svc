@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.14.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.1...v1.14.2) (2023-06-22)
+
+
+### Bug Fixes
+
+* update awg.json ([#91](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/91)) ([0002570](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/0002570d287a7a70070bdf63a3cb098fc3f7881a))
+
 ### [1.14.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.0...v1.14.1) (2023-06-08)
 
 

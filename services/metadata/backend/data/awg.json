@@ -186,8 +186,8 @@
         "url": {
             "__type": "URL",
             "type": "URL",
-            "url": "https://data.dasch.swiss/webern/",
-            "text": "Project Website"
+            "url": "https://admin.dasch.swiss/project/ot7I2nU-SdeXIf17LX_h3g",
+            "text": "Discover Project Data"
         },
         "secondaryURL": {
             "__type": "URL",
@@ -204,7 +204,7 @@
             "__createdBy": "dsp-metadata-gui",
             "abstracts": [
                 {
-                    "en": "The dataset contains content-related and contextual data created and maintained within the SALSAH database as part of the editorial and documentary work of the Anton Webern Gesamtausgabe."
+                    "en": "The Anton Webern Gesamtausgabe (AWG) is a critical-historical edition of Anton Webern’s oeuvre. This edition makes his work freely accessible to the public in a form that is academically appropriate and serves musical practice. The edition includes not only the works that Webern himself brought to print, but also currently unpublished variants of his works, as well as compositions unpublished during his lifetime, fragments, sketches and arrangements. The AWG will be published in hybrid form. The printed volumes will be published by Universal Edition, Vienna, while the components and databases accessible online will be presented in a dedicated web application, as well as within the generic web application developed by DaSCH - Swiss National Data and Service Center for the Humanities with the aim of securing direct long-term access to the data. The AWG is also working on a documentation of the composer's biography, as well as the history of the creation, publication and performance of his works. To achieve this, information of various kinds has been archived and linked in the database, reflecting a chronology that describes Webern’s private and professional life in detail. The documentation of the development of his works is verified by references to material evidence (e.g. correspondence as archived in the letters section). Furthermore, brief, keyword-based information on relevant persons serves to provide a better overview of the composer’s contacts and social environment."
                 }
             ],
             "accessConditions": "restricted",
@@ -279,7 +279,7 @@
                 }
             ],
             "status": "Ongoing",
-            "title": "Salsah data of the Anton Webern Gesamtausgabe",
+            "title": "Anton Webern Gesamtausgabe",
             "typeOfData": [
                 "Image",
                 "Text",

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.2...v1.15.0) (2023-07-13)
+
+
+### Enhancements
+
+* add digitalagenda ([#93](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/93)) ([ebe3832](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/ebe38327675ebd0a377d593907716fd967206503))
+* add project waldau-cinema ([#95](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/95)) ([0050d1c](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/0050d1ce1b4f5dc21fbc8498bcef98da2c003bbc))
+
 ### [1.14.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.1...v1.14.2) (2023-06-22)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.15.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.0...v1.15.1) (2023-08-25)
+
+
+### Maintenance
+
+* **deps:** bump minimist from 1.2.5 to 1.2.8 ([#71](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/71)) ([5112116](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/5112116eede739e9b0a782fa4471ab751c4c37f3))
+
 ## [1.15.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.14.2...v1.15.0) (2023-07-13)
 
 

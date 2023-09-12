@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.15.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.1...v1.15.2) (2023-09-12)
+
+
+### Bug Fixes
+
+* beyondthetext (DEV-2614) ([c59b472](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c59b4729ff88a7692d9e0c6641f11bd4c86bb64b))
+* societe-savoie (DEV-2634) ([35db278](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/35db27836390296e2ca9ef75fd96a07828d43c26))
+
 ### [1.15.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.0...v1.15.1) (2023-08-25)
 
 

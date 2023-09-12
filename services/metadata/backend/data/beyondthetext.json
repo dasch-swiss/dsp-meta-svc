@@ -234,6 +234,13 @@
             "attributions": [
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-000",
+                    "roles": [
+                        "Applicant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-001",
                     "roles": [
                         "Contributor"
@@ -255,9 +262,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-004",
                     "roles": [
-                        "Applicant"
+                        "Contributor"
                     ]
                 }
             ],
@@ -337,6 +344,21 @@
             ],
             "givenNames": [
                 "Pascale"
+            ],
+            "jobTitles": [
+                "HiWi"
+            ]
+        }
+    ,
+        {
+            "__id": "http://ns.dasch.swiss/repository#dsp-083A-person-004",
+            "__type": "Person",
+            "__createdBy": "dsp-metadata-gui",
+            "familyNames": [
+                "Heierli"
+            ],
+            "givenNames": [
+                "Sarah"
             ],
             "jobTitles": [
                 "HiWi"

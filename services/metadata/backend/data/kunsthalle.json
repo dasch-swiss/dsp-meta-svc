@@ -11,7 +11,7 @@
         ],
         "alternativeNames": [
             {
-                "de": "kuhaba"
+                "de": "fotoarchivkunsthalle"
             }
         ],
         "description": {
@@ -71,7 +71,13 @@
             {
                 "en": "1826 - today"
             }
-        ]
+        ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://app.dasch.swiss/project/ExIK4BHPTaejCzk3saF0UQ",
+            "text": "Discover Project Data"
+        }
     },
     "datasets": [
         {

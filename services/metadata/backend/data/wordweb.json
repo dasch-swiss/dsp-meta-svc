@@ -174,9 +174,9 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-005",
                     "roles": [
-                        "Editor"
+                        "Applicant"
                     ]
                 },
                 {
@@ -197,16 +197,16 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-003",
                     "roles": [
-                        "Programmer"
+                        "Editor"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0826-person-004",
                     "roles": [
-                        "Applicant"
+                        "Programmer"
                     ]
                 }
             ],

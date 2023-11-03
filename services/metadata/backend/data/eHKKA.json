@@ -113,16 +113,16 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083C-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083C-person-000",
                     "roles": [
-                        "2000-2013 vollberuflicher Mitarbeiter der HKKA 2000-2013 Mitglied des Herausgeberteams, zuständig für EDV  "
+                        "1991-2012: Vollberuflicher Mitarbeiter der HKKA  Initiant des Projekts und Leiter des Herausgeberteams"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083C-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083C-person-002",
                     "roles": [
-                        "1991-2012: Vollberuflicher Mitarbeiter der HKKA  Initiant des Projekts und Leiter des Herausgeberteams"
+                        "2000-2013 Vollberuflicher Mitarbeiter der HKKA 2000-2013 Mitglied des Herausgeberteams, zuständig für EDV  "
                     ]
                 }
             ],

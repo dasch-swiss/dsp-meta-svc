@@ -342,65 +342,37 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-030",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-000",
                     "roles": [
-                        "Web design and development"
+                        "Head of project"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-032",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-001",
                     "roles": [
-                        "Conservation, restoration, Data Curator"
+                        "Project coordination"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-029",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-002",
                     "roles": [
-                        "Database programming"
+                        "Restoration, Project Consultant"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-039",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-003",
                     "roles": [
-                        "Conservation, restoration"
+                        "Coordination web design and development, Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-040",
-                    "roles": [
-                        "Digitization"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-037",
-                    "roles": [
-                        "Conservation, restoration"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-045",
-                    "roles": [
-                        "ICT Consultant"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-010",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-004",
                     "roles": [
                         "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-036",
-                    "roles": [
-                        "Conservation, restoration"
                     ]
                 },
                 {
@@ -412,56 +384,35 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-013",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-006",
                     "roles": [
                         "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-021",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-007",
                     "roles": [
-                        "Database programming"
+                        "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-046",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-008",
                     "roles": [
-                        "Translation (EN)"
+                        "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-028",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-009",
                     "roles": [
-                        "Database programming"
+                        "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-031",
-                    "roles": [
-                        "Typeface"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-000",
-                    "roles": [
-                        "Head of project"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-025",
-                    "roles": [
-                        "Database programming"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-016",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-010",
                     "roles": [
                         "Data Curator"
                     ]
@@ -475,170 +426,16 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-049",
-                    "roles": [
-                        "Translation (RM)"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-044",
-                    "roles": [
-                        "Digitization"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-038",
-                    "roles": [
-                        "Conservation, restoration"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-033",
-                    "roles": [
-                        "Conservation, restoration"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-019",
-                    "roles": [
-                        "Oral history partner"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-035",
-                    "roles": [
-                        "Conservation, restoration"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-006",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-012",
                     "roles": [
                         "Data Curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-013",
                     "roles": [
                         "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-034",
-                    "roles": [
-                        "Conservation, restoration"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-008",
-                    "roles": [
-                        "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-042",
-                    "roles": [
-                        "Digitization"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-020",
-                    "roles": [
-                        "Database programming"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-050",
-                    "roles": [
-                        "Translation (RM), Data curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-043",
-                    "roles": [
-                        "Digitization"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-003",
-                    "roles": [
-                        "Coordination web design and development, Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-009",
-                    "roles": [
-                        "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-027",
-                    "roles": [
-                        "Database programming"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-018",
-                    "roles": [
-                        "Oral history partner"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-041",
-                    "roles": [
-                        "Digitization"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-007",
-                    "roles": [
-                        "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-023",
-                    "roles": [
-                        "Database programming"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-047",
-                    "roles": [
-                        "Translation (FR), Editor"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-022",
-                    "roles": [
-                        "Database programming"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-001",
-                    "roles": [
-                        "Project coordination"
                     ]
                 },
                 {
@@ -657,6 +454,13 @@
                 },
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-016",
+                    "roles": [
+                        "Data Curator"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-017",
                     "roles": [
                         "Oral history partner, Data Curator"
@@ -664,23 +468,44 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-026",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-018",
+                    "roles": [
+                        "Oral history partner"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-019",
+                    "roles": [
+                        "Oral history partner"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-020",
                     "roles": [
                         "Database programming"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-048",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-021",
                     "roles": [
-                        "Translation (IT)"
+                        "Database programming"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-022",
                     "roles": [
-                        "Restoration, Project Consultant"
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-023",
+                    "roles": [
+                        "Database programming"
                     ]
                 },
                 {
@@ -692,9 +517,184 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-012",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-025",
                     "roles": [
-                        "Data Curator"
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-026",
+                    "roles": [
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-027",
+                    "roles": [
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-028",
+                    "roles": [
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-029",
+                    "roles": [
+                        "Database programming"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-030",
+                    "roles": [
+                        "Web design and development"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-031",
+                    "roles": [
+                        "Typeface"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-032",
+                    "roles": [
+                        "Conservation, restoration, Data Curator"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-033",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-034",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-035",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-036",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-037",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-038",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-039",
+                    "roles": [
+                        "Conservation, restoration"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-040",
+                    "roles": [
+                        "Digitization"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-041",
+                    "roles": [
+                        "Digitization"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-042",
+                    "roles": [
+                        "Digitization"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-043",
+                    "roles": [
+                        "Digitization"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-044",
+                    "roles": [
+                        "Digitization"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-045",
+                    "roles": [
+                        "ICT Consultant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-046",
+                    "roles": [
+                        "Translation (EN)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-047",
+                    "roles": [
+                        "Translation (FR), Editor"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-048",
+                    "roles": [
+                        "Translation (IT)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-049",
+                    "roles": [
+                        "Translation (RM)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0812-person-050",
+                    "roles": [
+                        "Translation (RM), Data curator"
                     ]
                 }
             ],

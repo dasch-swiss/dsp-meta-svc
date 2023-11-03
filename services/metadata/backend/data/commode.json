@@ -75,6 +75,13 @@
             "attributions": [
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083B-person-000",
+                    "roles": [
+                        "Applicant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083B-person-001",
                     "roles": [
                         "Employee"
@@ -85,13 +92,6 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-083B-person-002",
                     "roles": [
                         "Employee"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083B-person-000",
-                    "roles": [
-                        "Applicant"
                     ]
                 }
             ],

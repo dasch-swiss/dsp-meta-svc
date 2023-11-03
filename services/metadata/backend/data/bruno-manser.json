@@ -131,9 +131,9 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
                     "roles": [
-                        "Editor"
+                        "Projektleiter"
                     ]
                 },
                 {
@@ -145,9 +145,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0813-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0813-organization-001",
                     "roles": [
-                        "Projektleiter"
+                        "Editor"
                     ]
                 }
             ],

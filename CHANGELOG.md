@@ -1,5 +1,18 @@
 # Changelog
 
+### [1.15.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.2...v1.15.3) (2023-11-06)
+
+
+### Bug Fixes
+
+* changes and adapt kuhaba ([#106](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/106)) ([d81d359](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/d81d359c21208573ddb42d5105e91ea6e0e6448e))
+
+
+### Maintenance
+
+* add PR title check GH action ([#102](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/102)) ([b07add6](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/b07add6ef03c71cee782bfb4ec15c6b9b21bf811))
+* Update and rename check-pr-title workflow ([#104](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/104)) ([c3fbb28](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c3fbb2847c77c36fc1db14cea5e4e845bb14a131))
+
 ### [1.15.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.1...v1.15.2) (2023-09-12)
 
 

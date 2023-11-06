@@ -248,14 +248,14 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-002",
                     "roles": [
                         "Contributor"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-083A-person-003",
                     "roles": [
                         "Contributor"
                     ]

@@ -134,44 +134,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
-                    "roles": [
-                        "author"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
-                    "roles": [
-                        "author"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
-                    "roles": [
-                        "author"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
-                    "roles": [
-                        "publisher"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-002",
                     "roles": [
                         "editorial management"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
-                    "roles": [
-                        "author"
                     ]
                 },
                 {
@@ -190,7 +155,21 @@
                 },
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-006",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-007",
                     "roles": [
                         "author"
                     ]
@@ -204,7 +183,21 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-009",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-010",
+                    "roles": [
+                        "author"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-011",
                     "roles": [
                         "author"
                     ]
@@ -214,6 +207,13 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-082B-person-012",
                     "roles": [
                         "author"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082B-organization-002",
+                    "roles": [
+                        "publisher"
                     ]
                 }
             ],

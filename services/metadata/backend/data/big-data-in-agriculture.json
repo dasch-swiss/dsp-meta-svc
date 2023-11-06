@@ -131,16 +131,16 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
                     "roles": [
-                        "Senior Research Fellow"
+                        "PI"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082D-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082D-person-002",
                     "roles": [
-                        "PI"
+                        "Senior Research Fellow"
                     ]
                 }
             ],

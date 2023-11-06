@@ -127,7 +127,28 @@
             "attributions": [
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-000",
+                    "roles": [
+                        "Project lead"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-001",
+                    "roles": [
+                        "Transcription and philological comments"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-002",
+                    "roles": [
+                        "Transcription and philological comments"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-003",
                     "roles": [
                         "Transcription and philological comments"
                     ]
@@ -148,28 +169,14 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-000",
-                    "roles": [
-                        "Project lead"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-001",
-                    "roles": [
-                        "Transcription and philological comments"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-007",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-006",
                     "roles": [
                         "Digital edition"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-009",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-007",
                     "roles": [
                         "Digital edition"
                     ]
@@ -183,16 +190,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-006",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-009",
                     "roles": [
                         "Digital edition"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0836-person-003",
-                    "roles": [
-                        "Transcription and philological comments"
                     ]
                 }
             ],

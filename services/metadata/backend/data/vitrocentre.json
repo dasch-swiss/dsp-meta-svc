@@ -109,16 +109,16 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0816-organization-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0816-organization-000",
                     "roles": [
-                        "editor"
+                        "publisher, editor"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0816-organization-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0816-organization-001",
                     "roles": [
-                        "publisher, editor"
+                        "editor"
                     ]
                 }
             ],

@@ -231,25 +231,17 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
                     "roles": [
+                        "Project manager",
                         "Member of the editorial management"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-001",
                     "roles": [
-                        "Creator",
-                        "Contributor"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
-                    "roles": [
-                        "Contributor",
-                        "Creator"
+                        "Member of the editorial management"
                     ]
                 },
                 {
@@ -263,18 +255,26 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-003",
                     "roles": [
-                        "Project manager",
-                        "Member of the editorial management"
+                        "Creator",
+                        "Contributor"
                     ]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-004",
                     "roles": [
-                        "Contributor",
-                        "Creator"
+                        "Creator",
+                        "Contributor"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0806-person-005",
+                    "roles": [
+                        "Creator",
+                        "Contributor"
                     ]
                 }
             ],

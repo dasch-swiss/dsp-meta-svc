@@ -95,6 +95,13 @@
             "attributions": [
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-000",
+                    "roles": [
+                        "Applicant"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-001",
                     "roles": [
                         "Employee"
@@ -109,20 +116,6 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-000",
-                    "roles": [
-                        "Applicant"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-005",
-                    "roles": [
-                        "Project partner"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-003",
                     "roles": [
                         "Employee"
@@ -131,6 +124,13 @@
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-004",
+                    "roles": [
+                        "Project partner"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-082C-person-005",
                     "roles": [
                         "Project partner"
                     ]

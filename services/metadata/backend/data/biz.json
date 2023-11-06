@@ -236,16 +236,9 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-000",
                     "roles": [
-                        "Student assistant (2020–to-date)"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-006",
-                    "roles": [
-                        "Student assistant (2018–to-date)"
+                        "Project lead (2010–to-date)"
                     ]
                 },
                 {
@@ -257,20 +250,6 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-003",
-                    "roles": [
-                        "Project assistant (2020–to-date)"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-000",
-                    "roles": [
-                        "Project lead (2010–to-date)"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-002",
                     "roles": [
                         "Operational project management (2019–to-date)"
@@ -278,9 +257,30 @@
                 },
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-003",
+                    "roles": [
+                        "Project assistant (2020–to-date)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-004",
                     "roles": [
                         "Student assistant (2017–2022)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-005",
+                    "roles": [
+                        "Student assistant (2020–to-date)"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0828-person-006",
+                    "roles": [
+                        "Student assistant (2018–to-date)"
                     ]
                 }
             ],

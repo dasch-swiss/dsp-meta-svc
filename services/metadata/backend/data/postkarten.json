@@ -5,16 +5,46 @@
         "__type": "Project",
         "__createdAt": "1652361078113030000",
         "__createdBy": "dsp-metadata-gui",
-        "teaserText": "Die umfangreiche Postkartensammlung wie die der russischen Familie Radzievsky hat den Weg in den Besitz des Lehrstuhls für Osteuropäische Geschichte der Universität Basel gefunden.",
+        "howToCite": "Postkarten Russland (2023). [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/0811",
+        "teaserText": "The project makes an extensive collection of Russian postcards public which is held by the Chair of Eastern European History at the University of Basel.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0811-dataset-000"
         ],
         "contactPoint": "http://ns.dasch.swiss/repository#dsp-0811-person-000",
         "description": {
-            "de": "Die Erfindung der Fotografie und die weltweite Professionalisierung und Vereinheitlichung des Postwesens veränderten die Kommunikation in der Mitte des 19. Jahrhunderts grundlegend. 1872, nur drei Jahre nachdem die ersten – noch bildlosen – Postkarten in Österreich-Ungarn zirkulierten, wurden sie auch im russischen Postwesen zugelassen. Durch den ersten Weltpostkongress, der 1874 in Bern abgehalten wurde und dem sich über 22 Staaten anschlossen, wurde das neue Medium schliesslich vereinheitlicht und ab den 1880er Jahren zunehmend mit fotografischen Motiven bedruckt. Sie erst machten diese billige Form der Nachrichtenübermittlung zu einem beliebten Massenmedium. Die moderne Postkarte war geboren. 1875 wurden über 231 Millionen Postkarten verschickt – um 1900 sollten es bereits 2,8 Milliarden sein.1\n\nDer russische Markt hinkte dieser Entwicklung jedoch hinterher. Aufgrund staatlicher Monopole, die erst kurz vor der Wende zum 20. Jahrhundert langsam abgebaut wurden, dominierten lange Zeit ausländische Firmen den russischen Markt. Erst langsam, aber dann immer erfolgreicherer, erkämpften sich russische Unternehmen stabile Marktanteile – Marktgiganten wie die schwedische Firma Granberg mussten sich damit abfinden, dass nun Firmen wie das Moskauer Fotoatelier Nabholz, Scherer und Co qualitativ ebenbürtige Postkarten anboten. Daneben sorgten jedoch gerade viele kleine und lokale Druck- und Fotoateliers dafür, dass das Angebot auch im Russländischen Reich immer vielfältiger wurde. Ein Beispiel hierfür ist das Taschkenter Unternehmen des vermutlich aus Transkaukasien stammenden Fotografen I. A. Bek-Nazarov.\n\nDoch Postkarten können sich nicht nur als Sinnbilder von zunehmend globalisierten Märkten und internationalen Vereinheitlichungsprozessen gelesen werden. Gerade sie demonstrieren, wie schnell sich Privatpersonen und verschiedene Gruppen dieses Medium aneigneten und über seinen kommerziellen oder propagandistischen Verwendungszweck hinaus veränderten: Zahlreiche kulturelle und soziale Praktiken bildeten sich heraus: Postkarten wurden verschickt, beschrieben, bekritzelt, gesammelt, getauscht, gerahmt, zerstört oder zum Lesezeichen umfunktioniert. So wurden Karten mit dem Motiv der kaiserlichen Familie wahrscheinlich teilweise respektvoll in der Ikonenecke in Ehren gehalten – in anderen Kontexten drückte jedoch die gezielte Beschädigung des kaiserlichen Papier-Konterfeis Widerstand oder Ablehnung aus.2\n\nDamals wie heute schieden sich Geister wie Geschmäcker an den unterschiedlichen Motiven und Aufmachungen – und weckten zum Teil sogar den nationalen Stolz oder die Berufsehre der Betrachtenden: So bemerkte der russische Fotograf Sergej Prokudin-Gorskij, der selbst in Sankt Petersburg Postkarten herausgab, während eines Aufenthaltes im russischen Zentralasien: \"Heute habe ich eine Postkarte der Stadt Samarkand gekauft. Der Verkäufer erklärte mir mit einigem Stolz, dass der Brief mit einer fotografischen Methode im Ausland gedruckt worden war, wie als ob es in Russland unmöglich wäre, eine solche Reproduktion herzustellen. Teilweise ist dies vielleicht richtig – doch solch einen schlechten Druck habe ich selten gesehen, nicht einmal in miserablen Druckanstalten – doch das war ein besonderer Fall.\"3\n\nBeispiele wie diese sind es, die anschaulich den Quellenwert des Mediums für die modernen Geschichtswissenschaften demonstrieren, indem sie über eine rein kunst- oder technikgeschichtliche Leseweise dieser bisher meist als seriell verstandenen Quelle hinwegweisen und die individuellen materiellen Biografien von Einzelstücken oder kulturgeschichtlich deutbare soziale Praktiken bestimmter Akteure andeuten.\n\nAus diesem Grund hat sich der Lehrstuhl für Neuere und Osteuropäische Geschichte der Universität Basel entschlossen, seine Sammlung von Postkarten aus dem Russländischen Reich für ein breites Publikum zugänglich zu machen."
+            "en": "The invention of photography and the worldwide professionalization and unification of the postal system fundamentally changed communication in the middle of the 19th century. In 1872, only three years after the first - still imageless - postcards circulated in Austria-Hungary, they were also admitted to the Russian postal system. The first Universal Postal Congress, which was held in Berne in 1874 and was followed by over 22 countries, finally unified the new medium and increasingly printed with photographic motifs from the 1880s onwards. They first made this cheap form of communication a popular mass medium. The modern postcard was born. In 1875, more than 231 million postcards were sent - by 1900 it was supposed to be 2.8 billion.\nHowever, the Russian market lagged behind this development. Due to state monopolies, which were only slowly dismantled shortly before the turn of the 20th century, foreign companies dominated the Russian market for a long time. Only slowly, but then more and more successful, Russian companies gained stable market shares - market giants such as the Swedish company Granberg had to accept the fact that companies such as the Moscow photo studio Nabholz, Scherer and Co. now offered postcards of equal quality. In addition, however, many small and local print and photo studios in particular ensured that the range of products and services offered in the Russian Empire became increasingly diverse. One example of this is the Tashkent enterprise of photographer I, who presumably came from Transcaucasia. A. Bek-Nazarov.\n\nBut postcards cannot only be read as symbols of increasingly globalized markets and international standardization processes. They demonstrate just how quickly individuals and various groups of people acquired this medium and changed it beyond its commercial or propaganda purposes: numerous cultural and social practices emerged: postcards were sent, described, scribbled, collected, exchanged, framed, destroyed or transformed into bookmarks. For example, cards with the motif of the imperial family were probably held respectfully in the icon corner - in other contexts, however, the deliberate damage to the imperial paper counterfeit expressed resistance or rejection.\n\nAt that time as well as today, ghosts and tastes differed in their different motives and dressings - and in some cases even aroused national pride or the professional honor of the viewers: The Russian photographer Sergei Prokudin-Gorskij, who himself published postcards in St. Petersburg, remarked during a stay in Central Asia:\"Today I bought a postcard of the city of Samarkand. The seller told me with some pride that the letter had been printed abroad using a photographic method, as if it was impossible to make such a reproduction in Russia. This may be partly true - but I have seldom seen such bad pressure, not even in miserable printing houses - but this was a special case.\"\n\nExamples such as these are the examples that demonstrate the source value of the medium for modern history studies by pointing out a purely art- or technology-historical reading of this source, which up to now has mostly been understood as a serial source, and by suggesting the individual material biographies of individual pieces or social practices of certain actors that can be interpreted in terms of cultural history.\n\nFor this reason, the Chair of Modern and Eastern European History at the University of Basel has decided to make its collection of postcards from the Russian Empire accessible to a broad public."
         },
+        "disciplines": [
+            {
+                "en": "Eastern European History"
+            }
+        ],
+        "keywords": [
+            {
+                "en": "postcards"
+            },
+            {
+                "en": "Russia"
+            },
+            {
+                "en": "history"
+            }
+        ],
         "name": "Postkarten Russland",
         "shortcode": "0811",
+        "spatialCoverage": [
+            {
+                "__type": "URL",
+                "type": "Geonames",
+                "url": "https://www.geonames.org/2017370/russian-federation.html",
+                "text": "Russia"
+            }
+        ],
+        "temporalCoverage": [
+            {
+                "en": "19th century"
+            }
+        ],
         "url": {
             "__type": "URL",
             "type": "URL",
@@ -36,7 +66,28 @@
             "__createdBy": "dsp-metadata-gui",
             "abstracts": [
                 {
-                    "de": "Die Erfindung der Fotografie und die weltweite Professionalisierung und Vereinheitlichung des Postwesens veränderten die Kommunikation in der Mitte des 19. Jahrhunderts grundlegend. 1872, nur drei Jahre nachdem die ersten – noch bildlosen – Postkarten in Österreich-Ungarn zirkulierten, wurden sie auch im russischen Postwesen zugelassen. Durch den ersten Weltpostkongress, der 1874 in Bern abgehalten wurde und dem sich über 22 Staaten anschlossen, wurde das neue Medium schliesslich vereinheitlicht und ab den 1880er Jahren zunehmend mit fotografischen Motiven bedruckt. Sie erst machten diese billige Form der Nachrichtenübermittlung zu einem beliebten Massenmedium. Die moderne Postkarte war geboren. 1875 wurden über 231 Millionen Postkarten verschickt – um 1900 sollten es bereits 2,8 Milliarden sein.1  Der russische Markt hinkte dieser Entwicklung jedoch hinterher. Aufgrund staatlicher Monopole, die erst kurz vor der Wende zum 20. Jahrhundert langsam abgebaut wurden, dominierten lange Zeit ausländische Firmen den russischen Markt. Erst langsam, aber dann immer erfolgreicherer, erkämpften sich russische Unternehmen stabile Marktanteile – Marktgiganten wie die schwedische Firma Granberg mussten sich damit abfinden, dass nun Firmen wie das Moskauer Fotoatelier Nabholz, Scherer und Co qualitativ ebenbürtige Postkarten anboten. Daneben sorgten jedoch gerade viele kleine und lokale Druck- und Fotoateliers dafür, dass das Angebot auch im Russländischen Reich immer vielfältiger wurde. Ein Beispiel hierfür ist das Taschkenter Unternehmen des vermutlich aus Transkaukasien stammenden Fotografen I. A. Bek-Nazarov.  Doch Postkarten können sich nicht nur als Sinnbilder von zunehmend globalisierten Märkten und internationalen Vereinheitlichungsprozessen gelesen werden. Gerade sie demonstrieren, wie schnell sich Privatpersonen und verschiedene Gruppen dieses Medium aneigneten und über seinen kommerziellen oder propagandistischen Verwendungszweck hinaus veränderten: Zahlreiche kulturelle und soziale Praktiken bildeten sich heraus: Postkarten wurden verschickt, beschrieben, bekritzelt, gesammelt, getauscht, gerahmt, zerstört oder zum Lesezeichen umfunktioniert. So wurden Karten mit dem Motiv der kaiserlichen Familie wahrscheinlich teilweise respektvoll in der Ikonenecke in Ehren gehalten – in anderen Kontexten drückte jedoch die gezielte Beschädigung des kaiserlichen Papier-Konterfeis Widerstand oder Ablehnung aus.2  Damals wie heute schieden sich Geister wie Geschmäcker an den unterschiedlichen Motiven und Aufmachungen – und weckten zum Teil sogar den nationalen Stolz oder die Berufsehre der Betrachtenden: So bemerkte der russische Fotograf Sergej Prokudin-Gorskij, der selbst in Sankt Petersburg Postkarten herausgab, während eines Aufenthaltes im russischen Zentralasien: \"Heute habe ich eine Postkarte der Stadt Samarkand gekauft. Der Verkäufer erklärte mir mit einigem Stolz, dass der Brief mit einer fotografischen Methode im Ausland gedruckt worden war, wie als ob es in Russland unmöglich wäre, eine solche Reproduktion herzustellen. Teilweise ist dies vielleicht richtig – doch solch einen schlechten Druck habe ich selten gesehen, nicht einmal in miserablen Druckanstalten – doch das war ein besonderer Fall.\"3  Beispiele wie diese sind es, die anschaulich den Quellenwert des Mediums für die modernen Geschichtswissenschaften demonstrieren, indem sie über eine rein kunst- oder technikgeschichtliche Leseweise dieser bisher meist als seriell verstandenen Quelle hinwegweisen und die individuellen materiellen Biografien von Einzelstücken oder kulturgeschichtlich deutbare soziale Praktiken bestimmter Akteure andeuten.  Aus diesem Grund hat sich der Lehrstuhl für Neuere und Osteuropäische Geschichte der Universität Basel entschlossen, seine Sammlung von Postkarten aus dem Russländischen Reich für ein breites Publikum zugänglich zu machen."
+                    "en": "The invention of photography and the worldwide professionalization and unification of the postal system fundamentally changed communication in the middle of the 19th century. In 1872, postcards were admitted to the Russian postal system. The Russian market was dominated by foreign companies for a long time. Slowly, but then more and more Russian companies gained stable market shares and many small and local print and photo studios in particular ensured that the range of products and services offered in the Russian Empire became increasingly diverse. The project makes the collection of postcards from the Russian Empire of the Chair of Modern and Eastern European History at the University of Basel accessible to a broad public."
+                }
+            ],
+            "accessConditions": "open",
+            "howToCite": "Postkarten Russland (2023). [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/0811",
+            "languages": [
+                {
+                    "en": "Russian",
+                    "en": "French",
+                    "en": "German"
+                }
+            ],
+            "licenses": [
+                {
+                    "__type": "License",
+                    "date": "2023-05-05",
+                    "license": {
+                        "__type": "URL",
+                        "type": "Creative Commons",
+                        "url": "https://creativecommons.org/licenses/by/4.0/",
+                        "text": "CC BY 4.0"
+                    }
                 }
             ],
             "status": "Finished",

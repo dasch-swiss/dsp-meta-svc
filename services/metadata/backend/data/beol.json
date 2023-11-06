@@ -253,14 +253,14 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-004",
                     "roles": [
                         "author"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-005",
                     "roles": [
                         "author"
                     ]
@@ -392,14 +392,14 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-003",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-002",
                     "roles": [
                         "author"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0801-person-003",
                     "roles": [
                         "author"
                     ]

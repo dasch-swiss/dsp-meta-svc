@@ -206,48 +206,21 @@
             "attributions": [
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-005",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-000",
                     "roles": [
-                        "Data curator",
-                        "Project member",
-                        "Researcher"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-006",
-                    "roles": [
-                        "Data collector",
-                        "Project member",
-                        "Data curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-008",
-                    "roles": [
-                        "Data curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-004",
-                    "roles": [
-                        "Data curator",
-                        "Data collector",
-                        "Project member"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-007",
-                    "roles": [
-                        "Other"
+                        "Project leader"
                     ]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-001",
+                    "roles": [
+                        "Project leader"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-002",
                     "roles": [
                         "Project leader"
                     ]
@@ -261,16 +234,43 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-000",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-004",
                     "roles": [
-                        "Project leader"
+                        "Project member",
+                        "Data collector",
+                        "Data curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-005",
                     "roles": [
-                        "Project leader"
+                        "Project member",
+                        "Data curator",
+                        "Researcher"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-006",
+                    "roles": [
+                        "Project member",
+                        "Data collector",
+                        "Data curator"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-008",
+                    "roles": [
+                        "Data curator"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0105-person-007",
+                    "roles": [
+                        "Other"
                     ]
                 }
             ],

@@ -116,30 +116,9 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-004",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-001",
                     "roles": [
-                        "Data Collector"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-002",
-                    "roles": [
-                        "Data Curator"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-007",
-                    "roles": [
-                        "Data Collector"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-003",
-                    "roles": [
-                        "Data Collector"
+                        "Project Leader"
                     ]
                 },
                 {
@@ -158,9 +137,30 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-004",
                     "roles": [
-                        "Project Leader"
+                        "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-003",
+                    "roles": [
+                        "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-007",
+                    "roles": [
+                        "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-REMA-person-002",
+                    "roles": [
+                        "Data Curator"
                     ]
                 },
                 {

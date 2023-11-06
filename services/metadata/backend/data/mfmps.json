@@ -154,23 +154,16 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-0116-person-000",
                     "roles": [
                         "Project leader",
-                        "Data curator",
-                        "Data collector"
+                        "Data collector",
+                        "Data curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0116-person-001",
                     "roles": [
-                        "Data curator",
                         "Project member",
-                        "Data collector"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0116-person-003",
-                    "roles": [
+                        "Data collector",
                         "Data curator"
                     ]
                 },
@@ -179,8 +172,15 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-0116-person-002",
                     "roles": [
                         "Project member",
-                        "Data curator",
-                        "Data collector"
+                        "Data collector",
+                        "Data curator"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0116-person-003",
+                    "roles": [
+                        "Data curator"
                     ]
                 }
             ],

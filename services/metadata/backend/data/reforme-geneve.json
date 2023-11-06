@@ -144,17 +144,17 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0111-person-002",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0111-person-001",
                     "roles": [
-                        "Data curator",
-                        "Project member"
+                        "Project leader",
+                        "Data curator"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0111-person-001",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0111-person-002",
                     "roles": [
-                        "Project leader",
+                        "Project member",
                         "Data curator"
                     ]
                 },

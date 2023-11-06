@@ -208,6 +208,11 @@
             "accessConditions": "open",
             "dateCreated": "2016-01-01",
             "datePublished": "2020-02-13",
+            "abstracts": [
+                {
+                    "de": "Das Musiklexikon der Schweiz bietet Information zur Musikgeschichte der Schweiz über alle Sparten und Musikstile hinweg: von Kirchengesang bis Jodel, vom Luzern- bis zum Gurten-Festival, vom Montreux-Jazz- bis zum Gurten-Festival, von den Glockengiessern bis zur Clubkultur, vom Alphorn bis zum Hang, von der Tonhalle bis zum KKL. Auf der Grundlage der bereits vorhandenen Lexikographie über die Schweiz, die digitalisiert oder über Verlinkungen bereitgestellt wird, erarbeitet das MLS in Kooperation mit den musikalischen Institutionen der Schweiz und unter Einbezug zahlreicher ExpertInnen aus dem In- und Ausland neue Artikel zu bekannten Personen, Orten und Objekten und bereichert das Wissen laufend mit unbekannten Themen. \nDas MLS ist multimedial, es kombiniert Text, Bild und audiovisuelle Medien und bietet dank der Nutzung von Normdaten den Zugang zu allen Ressourcen im World Wide Web, die mit den behandelten Themen und Personen zur Verfügung stehen."
+                }
+            ],
             "howToCite": "AutorIn: Artikelname. MLS, Datum der Abfrage.",
             "languages": [
                 {
@@ -260,13 +265,6 @@
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0807-organization-001",
-                    "roles": [
-                        "Maintainer"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0807-person-002",
                     "roles": [
                         "Coordination, Lead"
@@ -277,6 +275,13 @@
                     "agent": "http://ns.dasch.swiss/repository#dsp-0807-organization-000",
                     "roles": [
                         "Project Leader"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0807-organization-001",
+                    "roles": [
+                        "Maintainer"
                     ]
                 },
                 {

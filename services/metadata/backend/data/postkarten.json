@@ -40,6 +40,7 @@
                 "text": "Russia"
             }
         ],
+        "startDate": "2019-07-04",
         "temporalCoverage": [
             {
                 "en": "19th century"
@@ -91,7 +92,7 @@
                 }
             ],
             "status": "Finished",
-            "title": "Postkarten aus dem Russländischen Reich: Die Sammlung Radzievsky in der Online-Datenbank SALSAH",
+            "title": "Postkarten aus dem Russländischen Reich: Die Sammlung Radzievsky",
             "typeOfData": [
                 "Image"
             ]

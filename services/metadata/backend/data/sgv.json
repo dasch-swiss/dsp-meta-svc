@@ -5,19 +5,19 @@
         "__type": "Project",
         "__createdAt": "1643065731303178000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Photo Archive of the Swiss Society for Folklore Studies (SSFS).",
-        "teaserText": "With its approximately 500,000 photo objects from across the world, the photo archive of the SSFS fosters new approaches to the study and consumption of photographs.",
+        "howToCite": "Photo Archive of the Cultural Anthropology Switzerland (CAS).",
+        "teaserText": "With its approximately 500,000 photo objects from across the world, the photo archive of the CAS fosters new approaches to the study and consumption of photographs.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0812-dataset-000"
         ],
         "alternativeNames": [
             {
-                "en": "Photo Archive of the SSFS"
+                "en": "Photo Archive of the CAS"
             }
         ],
         "contactPoint": "http://ns.dasch.swiss/repository#dsp-0812-person-001",
         "description": {
-            "en": "From the beginning of the photographic project initiated by the Swiss Society for Folklore Studies in 2014 up to now, one hundred twenty thousand photographs from sixteen collections have been processed. Under the direction of Prof. Dr. Walter Leimgruber and in close collaboration with the Digital Humanities Lab of the University of Basel and the restoration studio Anklin & Assen, these objects were conserved, restored, digitized, and documented in a database as well as made digitally accessible through a user-friendly website. Following Memoriav and the Florence Declaration we preserve and make accessible to the broad public both digital and analogue formats. The photo archive contains about 500,000 photographic objects as part of about 40 collections and spanning 150 years of photographic history."
+            "en": "From the beginning of the photographic project initiated by the Cultural Anthropology Switzerland (CAS) in 2014 up to now, one hundred twenty thousand photographs from sixteen collections have been processed. Under the direction of Prof. Dr. Walter Leimgruber and in close collaboration with the Digital Humanities Lab of the University of Basel and the restoration studio Anklin & Assen, these objects were conserved, restored, digitized, and documented in a database as well as made digitally accessible through a user-friendly website. Following Memoriav and the Florence Declaration we preserve and make accessible to the broad public both digital and analogue formats. The photo archive contains about 500,000 photographic objects as part of about 40 collections and spanning 150 years of photographic history."
         },
         "disciplines": [
             {
@@ -84,7 +84,7 @@
                 "en": "Visual Studies"
             }
         ],
-        "name": "Photo Archive of the Swiss Society for Folklore Studies",
+        "name": "Photo Archive of the Cultural Anthropology Switzerland (CAS)",
         "publications": [
             "Graf, Stephan, Huber, Birgit, Oezvegyi, Aila, Peduzzi, Nicole (2019). “Das Fotoarchiv der Schweizerischen Gesellschaft für Volkskunde: Ein Ort der Forschung, der Begegnungen und Affekte”. In: Rundbrief Fotografie 26/1: 31–40.",
             "Peduzzi, Nicole (2016). “Die Wohlfahrt fotografischer Objekte”. In: Bulletin SAGW 3: 44–47.",
@@ -292,16 +292,16 @@
             "__createdBy": "dsp-metadata-gui",
             "abstracts": [
                 {
-                    "en": "The dataset contains the photographic collections of the Swiss Society for Folklore Studies (SSFS) as well as about thirty-five films related to them."
+                    "en": "The dataset contains the photographic collections of the Cultural Anthropology Switzerland (CAS) as well as about thirty-five films related to them."
                 }
             ],
             "alternativeTitles": [
                 {
-                    "en": "SSFS photo collections"
+                    "en": "CAS photo collections"
                 }
             ],
             "accessConditions": "open",
-            "howToCite": "Photo Archive of the Swiss Society for Folklore Studies (SSFS).",
+            "howToCite": "Photo Archive of the Cultural Anthropology Switzerland (CAS).",
             "languages": [
                 {
                     "en": "English",
@@ -699,7 +699,7 @@
                 }
             ],
             "status": "Ongoing",
-            "title": "Photographic collections of the SSFS",
+            "title": "Photographic collections of the CAS",
             "typeOfData": [
                 "Image",
                 "Video"
@@ -1945,7 +1945,7 @@
                 "country": "Switzerland"
             },
             "email": "archiv@sgv-sstp.ch",
-            "name": "Photo Archive of the Swiss Society for Folklore Studies (SSFS)",
+            "name": "Photo Archive of the Cultural Anthropology Switzerland (CAS)",
             "url": {
                 "__type": "URL",
                 "type": "URL",

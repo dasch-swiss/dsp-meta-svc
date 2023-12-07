@@ -46,7 +46,25 @@
         ],
         "keywords": [
             {
-                "en": "Diachronic semantics; Modality; Latin; Digital Humanities; Computational methods and tools; Corpus-based approach; Semantic annotation"
+                "en": "Diachronic semantics"
+            },
+            {
+                "en": "Modality"
+            },
+            {
+                "en": "Latin"
+            },
+            {
+                "en": "Digital Humanities"
+            },
+            {
+                "en": "Computational methods and tools"
+            },
+            {
+                "en": "Corpus-based approach"
+            },
+            {
+                "en": "Semantic annotation"
             }
         ],
         "name": "WoPoss: A world of possibilities. Modal pathways over an extra-long period of time: the diachrony of modality in the Latin language",

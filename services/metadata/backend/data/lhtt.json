@@ -224,44 +224,8 @@
             {
                 "__type": "URL",
                 "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0qk76zgqb7",
-                "text": "Persian Period"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "https://chronontology.dainst.org/period/TyinwInl5SJ0",
-                "text": "Late Period"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "http://chronontology.dainst.org/period/GnjMPsF5f2mQ",
-                "text": "New Kingdom"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "https://chronontology.dainst.org/period/uzwK9AAK8Clj",
-                "text": "Ottoman period"
-            },
-            {
-                "__type": "URL",
-                "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0qk76zh6n2",
-                "text": "Late Period"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "https://chronontology.dainst.org/period/XHRCuCDjtgu5",
-                "text": "Coptic (culture or style)"
-            },
-            {
-                "__type": "URL",
-                "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0qk76zvjkw",
-                "text": "New Kingdom"
+                "url": "http://n2t.net/ark:/99152/p0qk76zkb23",
+                "text": "Middle Kingdom"
             },
             {
                 "__type": "URL",
@@ -272,20 +236,56 @@
             {
                 "__type": "URL",
                 "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0qk76zbv62",
-                "text": "Roman"
-            },
-            {
-                "__type": "URL",
-                "type": "Periodo",
-                "url": "http://n2t.net/ark:/99152/p0qk76zkb23",
-                "text": "Middle Kingdom"
+                "url": "http://n2t.net/ark:/99152/p0qk76zvjkw",
+                "text": "New Kingdom"
             },
             {
                 "__type": "URL",
                 "type": "Periodo",
                 "url": "http://n2t.net/ark:/99152/p0qk76zpmnv",
                 "text": "Third Intermediate Period"
+            },
+            {
+                "__type": "URL",
+                "type": "Periodo",
+                "url": "http://n2t.net/ark:/99152/p0qk76zh6n2",
+                "text": "Late Period"
+            },
+            {
+                "__type": "URL",
+                "type": "Periodo",
+                "url": "http://n2t.net/ark:/99152/p0qk76zgqb7",
+                "text": "Persian Period"
+            },
+            {
+                "__type": "URL",
+                "type": "Periodo",
+                "url": "http://n2t.net/ark:/99152/p0qk76zbv62",
+                "text": "Roman"
+            },
+            {
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/XHRCuCDjtgu5",
+                "text": "Coptic (culture or style)"
+            },
+            {
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/uzwK9AAK8Clj",
+                "text": "Ottoman period"
+            },
+            {
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/GnjMPsF5f2mQ",
+                "text": "New Kingdom"
+            },
+            {
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/TyinwInl5SJ0",
+                "text": "Late Period"
             }
         ],
         "url": {

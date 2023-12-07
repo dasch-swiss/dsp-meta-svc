@@ -241,6 +241,12 @@
             },
             {
                 "__type": "URL",
+                "type": "Chronontology",
+                "url": "http://chronontology.dainst.org/period/GnjMPsF5f2mQ",
+                "text": "New Kingdom (Chronontology)"
+            },
+            {
+                "__type": "URL",
                 "type": "Periodo",
                 "url": "http://n2t.net/ark:/99152/p0qk76zpmnv",
                 "text": "Third Intermediate Period"
@@ -250,6 +256,12 @@
                 "type": "Periodo",
                 "url": "http://n2t.net/ark:/99152/p0qk76zh6n2",
                 "text": "Late Period"
+            },
+            {
+                "__type": "URL",
+                "type": "Chronontology",
+                "url": "https://chronontology.dainst.org/period/TyinwInl5SJ0",
+                "text": "Late Period (Chronontology)"
             },
             {
                 "__type": "URL",
@@ -274,18 +286,6 @@
                 "type": "Chronontology",
                 "url": "https://chronontology.dainst.org/period/uzwK9AAK8Clj",
                 "text": "Ottoman period"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "http://chronontology.dainst.org/period/GnjMPsF5f2mQ",
-                "text": "New Kingdom"
-            },
-            {
-                "__type": "URL",
-                "type": "Chronontology",
-                "url": "https://chronontology.dainst.org/period/TyinwInl5SJ0",
-                "text": "Late Period"
             }
         ],
         "url": {

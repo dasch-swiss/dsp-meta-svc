@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.15.4](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.3...v1.15.4) (2023-12-08)
+
+
+### Bug Fixes
+
+* add locusludi (DEV-3003) ([8eef00e](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/8eef00e4f27796edcbd120317fb3fd2cf973b91c))
+* cleanup ([#110](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/110)) ([80e6313](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/80e63132d658c83fa67e3a6ada1bddd689bb96a1))
+* update lhtt (DEV-3034) ([#109](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/109)) ([02ae9fb](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/02ae9fbe354892354f1977195c18eec4d47c69dc))
+
 ### [1.15.3](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.2...v1.15.3) (2023-11-06)
 
 

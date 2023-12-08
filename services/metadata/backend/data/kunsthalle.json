@@ -68,6 +68,7 @@
                 "text": "Basel"
             }
         ],
+        "startDate": "2017-06-22",
         "temporalCoverage": [
             {
                 "en": "1826 - today"
@@ -133,6 +134,18 @@
                     "roles": [
                         "maintainer, editor"
                     ]
+                }
+            ],
+            "licenses": [
+                {
+                    "__type": "License",
+                    "date": "2023-12-07",
+                    "license": {
+                        "__type": "URL",
+                        "type": "Creative Commons",
+                        "url": "https://creativecommons.org/licenses/by-nc/4.0/deed.en",
+                        "text": "CC BY-NC 4.0"
+                    }
                 }
             ],
             "status": "Ongoing",

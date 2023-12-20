@@ -198,7 +198,7 @@
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0848-person-002",
                     "roles": [
-                        "Postdoctoral researcher, Author/Editor"
+                        "Postdoctoral researcher, Author, Editor"
                     ]
                 },
                 {
@@ -237,7 +237,7 @@
                 "locality": "Zurich",
                 "country": "Switzerland"
             },
-            "email": "Michael.Geiss@phzh.ch",
+            "email": "michael.geiss@phzh.ch",
             "familyNames": [
                 "Geiss"
             ],
@@ -264,8 +264,7 @@
             "__type": "Person",
             "__createdAt": "1688420240477342000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "Carmen.Flury@phzh.ch",
-            "secondaryEmail": "carmen.flury@gmx.net",
+            "email": "carmen.flury@gmx.net",
             "familyNames": [
                 "Flury"
             ],
@@ -292,8 +291,7 @@
             "__type": "Person",
             "__createdAt": "1688420240477806000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "Rosalia.Guerrero@phzh.ch",
-            "secondaryEmail": "Rgc0403@gmail.com",
+            "email": "rgc0403@gmail.com",
             "familyNames": [
                 "Guerrero Cantarell"
             ],

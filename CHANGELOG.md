@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.15.5](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.4...v1.15.5) (2023-12-20)
+
+
+### Bug Fixes
+
+* add operativetv ([#111](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/111)) ([865d56e](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/865d56ec1990ce9411594ac6f8f1ae022a2287a7))
+* update digitalagenda ([#113](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/113)) ([4eab686](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/4eab6865eaa669ed7a321192baf6984c9dade749))
+* update lenzburg ([#114](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/114)) ([f9385d3](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/f9385d37ca565e64d96c46bc11000d7594f1edb7))
+
 ### [1.15.4](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.3...v1.15.4) (2023-12-08)
 
 

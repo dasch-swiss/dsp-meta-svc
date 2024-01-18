@@ -16,10 +16,32 @@
   let descriptionLinesNumber: number;
   let arePublicationsExpanded: boolean;
   let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
+  let descriptionLanguage = "English"
+
+  const descriptionLanguages = new Map<string, string>([
+    ["ar", "Arabic"],
+    ["de", "German"],
+    ["en", "English"],
+    ["fr", "French"]
+  ]);
+
+  const getIso = (language: string) => {
+    return [...descriptionLanguages].find(([key, val]) => val === language)[0]
+  }
+  const changeDescriptionLanguage = () => {
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', () => {
+          const selectedLanguage = button.value;
+          descriptionLanguage = selectedLanguage
+      });
+    });
+  }
 
   onMount(async () => {
     // wait with component creation for the data to be fetched
     await getProjectMetadata();
+    // loads the event, so the first ever click will also work
+    changeDescriptionLanguage()
   });
 
   onDestroy(() => {
@@ -113,9 +135,14 @@
         <!-- Description -->
         <div class="property-row">
           {#if $projectMetadata?.project.description && getText($projectMetadata?.project.description)}
-            <span class="label new-subtitle">Description</span>
+            <span class="label new-subtitle">Description available in 
+              {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
+                <button on:click={changeDescriptionLanguage} value={l}>{l}</button>
+              {/each}
+              <!-- {Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k))}</span> - click on language to load)</span> -->
+              </span>
             <div id="description" class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">
-              {getText($projectMetadata?.project.description)}
+              {$projectMetadata?.project.description[getIso(descriptionLanguage)]}
             </div>
             {#if descriptionLinesNumber > 6}
               <div on:click={toggleDescriptionExpand} class="expand-button">

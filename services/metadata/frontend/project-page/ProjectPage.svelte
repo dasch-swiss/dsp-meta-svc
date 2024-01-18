@@ -295,6 +295,18 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  button.language {
+    width: 80px;
+    margin: 0 5px;
+    border: 1px solid var(--lead-colour);
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    padding: 5px 10px;
+    color: var(--lead-colour);
+    box-shadow: var(--shadow-1);
+  }
 
   @supports (-moz-appearance: none) {
     button.gototop-button {margin-bottom: 40px;}

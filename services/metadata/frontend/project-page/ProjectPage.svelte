@@ -11,13 +11,6 @@
   import Loading from "../Loading.svelte";
 
   const mobileResolution = window.innerWidth < 992;
-
-  let isDescriptionExpanded: boolean;
-  let descriptionLinesNumber: number;
-  let arePublicationsExpanded: boolean;
-  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test')
-  let descriptionLanguage = "English"
-
   const descriptionLanguages = new Map<string, string>([
     ["ar", "Arabic"],
     ["de", "German"],
@@ -25,14 +18,25 @@
     ["fr", "French"]
   ]);
 
+  let isDescriptionExpanded: boolean;
+  let descriptionLinesNumber: number;
+  let arePublicationsExpanded: boolean;
+  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
+  let descriptionIso = "";
+  let availableDescriptionsIso: string[] = [];
+
   const getIso = (language: string) => {
-    return [...descriptionLanguages].find(([key, val]) => val === language)[0]
+    const descriptions = $projectMetadata?.project.description
+    console.log(12345, descriptions)
+    const lang = (availableDescriptionsIso.length === 1) ? availableDescriptionsIso[0] : language
+    return [...descriptionLanguages].find(([key, val]) => val === lang)[0]
   }
   const changeDescriptionLanguage = () => {
     document.querySelectorAll('button').forEach(button => {
       button.addEventListener('click', () => {
           const selectedLanguage = button.value;
-          descriptionLanguage = selectedLanguage
+          console.log(selectedLanguage);
+          descriptionIso = getIso(selectedLanguage)
       });
     });
   }
@@ -42,6 +46,8 @@
     await getProjectMetadata();
     // loads the event, so the first ever click will also work
     changeDescriptionLanguage()
+    availableDescriptionsIso = Object.keys($projectMetadata?.project.description);
+    descriptionIso = availableDescriptionsIso[0]
   });
 
   onDestroy(() => {
@@ -78,18 +84,20 @@
   };
 
   const getDivHeight = () => {
-    let lineHeight: number;
-    let divHeight: number;
-    try {
-      const el = document.getElementById("description");
-      divHeight = el.scrollHeight;
-      lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
-    } catch (error) {
-      lineHeight = 20;
-      divHeight = 19;
-    }
-    descriptionLinesNumber = divHeight / lineHeight;
-    isDescriptionExpanded = descriptionLinesNumber > 6 ? false : true;
+    setTimeout(() => {
+      let lineHeight: number;
+      let divHeight: number;
+      try {
+        const el = document.getElementById("description");
+        divHeight = el.scrollHeight;
+        lineHeight = parseInt(window.getComputedStyle(el).getPropertyValue('line-height'));
+      } catch (error) {
+        lineHeight = 20;
+        divHeight = 19;
+      }
+      descriptionLinesNumber = divHeight / lineHeight;
+      isDescriptionExpanded = descriptionLinesNumber > 6 ? false : true;
+    }, 100);
   };
 </script>
 
@@ -135,14 +143,15 @@
         <!-- Description -->
         <div class="property-row">
           {#if $projectMetadata?.project.description && getText($projectMetadata?.project.description)}
-            <span class="label new-subtitle">Description available in 
-              {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
-                <button on:click={changeDescriptionLanguage} value={l}>{l}</button>
-              {/each}
-              <!-- {Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k))}</span> - click on language to load)</span> -->
+            <span class="label new-subtitle" style="display: block;">Description 
+              <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}>available in 
+                {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
+                  <button class=language on:click={changeDescriptionLanguage} value={l}>{l}</button>
+                {/each}
               </span>
+            </span>
             <div id="description" class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">
-              {$projectMetadata?.project.description[getIso(descriptionLanguage)]}
+              {$projectMetadata?.project.description[descriptionIso]}
             </div>
             {#if descriptionLinesNumber > 6}
               <div on:click={toggleDescriptionExpand} class="expand-button">

@@ -35,7 +35,6 @@
     document.querySelectorAll('button').forEach(button => {
       button.addEventListener('click', () => {
           const selectedLanguage = button.value;
-          console.log(selectedLanguage);
           displayedDescriptionsLanguage = getIso(selectedLanguage)
       });
     });
@@ -49,7 +48,6 @@
     availableDescriptionsIso = Object.keys($projectMetadata?.project.description);
     // initialize iso language to load => assumption is if more than 1 language is available English exists and set as default
     displayedDescriptionsLanguage = availableDescriptionsIso.length === 1 ? availableDescriptionsIso[0] : "en"
-    console.log(displayedDescriptionsLanguage, availableDescriptionsIso)
   });
 
   onDestroy(() => {

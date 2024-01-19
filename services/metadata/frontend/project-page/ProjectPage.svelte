@@ -11,7 +11,9 @@
   import Loading from "../Loading.svelte";
 
   const mobileResolution = window.innerWidth < 992;
+  const isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
   const descriptionLanguages = new Map<string, string>([
+    // contains languages that are presented in provided descriptions, update if necessary
     ["ar", "Arabic"],
     ["de", "German"],
     ["en", "English"],
@@ -21,22 +23,20 @@
   let isDescriptionExpanded: boolean;
   let descriptionLinesNumber: number;
   let arePublicationsExpanded: boolean;
-  let isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
-  let descriptionIso = "";
+  let displayedDescriptionsLanguage: string = "";
   let availableDescriptionsIso: string[] = [];
 
-  const getIso = (language: string) => {
-    const descriptions = $projectMetadata?.project.description
-    console.log(12345, descriptions)
+  const getIso = (language: string): string => {
     const lang = (availableDescriptionsIso.length === 1) ? availableDescriptionsIso[0] : language
     return [...descriptionLanguages].find(([key, val]) => val === lang)[0]
   }
+
   const changeDescriptionLanguage = () => {
     document.querySelectorAll('button').forEach(button => {
       button.addEventListener('click', () => {
           const selectedLanguage = button.value;
           console.log(selectedLanguage);
-          descriptionIso = getIso(selectedLanguage)
+          displayedDescriptionsLanguage = getIso(selectedLanguage)
       });
     });
   }
@@ -47,7 +47,9 @@
     // loads the event, so the first ever click will also work
     changeDescriptionLanguage()
     availableDescriptionsIso = Object.keys($projectMetadata?.project.description);
-    descriptionIso = availableDescriptionsIso[0]
+    // initialize iso language to load => assumption is if more than 1 language is available English exists and set as default
+    displayedDescriptionsLanguage = availableDescriptionsIso.length === 1 ? availableDescriptionsIso[0] : "en"
+    console.log(displayedDescriptionsLanguage, availableDescriptionsIso)
   });
 
   onDestroy(() => {
@@ -151,7 +153,7 @@
               </span>
             </span>
             <div id="description" class="data new-text {isDescriptionExpanded ? '' : 'description-short'}">
-              {$projectMetadata?.project.description[descriptionIso]}
+              {$projectMetadata?.project.description[displayedDescriptionsLanguage]}
             </div>
             {#if descriptionLinesNumber > 6}
               <div on:click={toggleDescriptionExpand} class="expand-button">

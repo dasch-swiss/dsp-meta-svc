@@ -135,7 +135,9 @@
             <span class="label new-subtitle" style="display: block;">Description 
               <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}> in 
                 {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
-                  <button class="language {availableDescriptionsIso.length > 1 && displayedDescriptionsLanguage === getIso(l) ? "active" : ""}" on:click={() => displayedDescriptionsLanguage = getIso(l)}>{l}</button>
+                  <button class="language {availableDescriptionsIso.length > 1 && displayedDescriptionsLanguage === getIso(l) ? "active" : ""}" on:click={() => displayedDescriptionsLanguage = getIso(l)}>
+                    {l}
+                  </button>
                 {/each}
               </span>
             </span>

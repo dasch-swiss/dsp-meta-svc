@@ -5,8 +5,8 @@
         "__type": "Project",
         "__createdAt": "1705921790665346000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "XX - new property on project level",
-        "teaserText": "XX - new property",
+        "howToCite": "Brönnimann, D., Lo Russo, S., Pümpin, Ch., Ismail-Meyer, K., Devos, Y., Kübler, S., Rentzel, Ph. (2024). I-GEOARCHive [Database]. DaSCH. http://ark.dasch.swiss/ark:/72163/1/0838",
+        "teaserText": "I-GEOARCHive provides geoarchaeological data and images (profile photos, thin section scans, microscope photos, layer descriptions, mortar and ceramic samples, etc.) from various archaeological sites.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-0838-dataset-000"
         ],
@@ -29,7 +29,7 @@
                 "__type": "URL",
                 "type": "Skos",
                 "url": "https://skos.um.es/unesco6/550512/html",
-                "text": "Stratigraphy "
+                "text": "Stratigraphy"
             },
             {
                 "__type": "URL",
@@ -41,7 +41,7 @@
                 "__type": "URL",
                 "type": "Skos",
                 "url": "https://skos.um.es/unesco6/2511/html",
-                "text": "Soil Science (Soil Science) "
+                "text": "Soil Science (Soil Science)"
             },
             {
                 "__type": "URL",
@@ -67,10 +67,58 @@
         ],
         "keywords": [
             {
-                "en": "Geoarchaeology, Archaeology, Geology, Micromorphology, Petrography, Thin Section, Microphotographs, Microartifacts, Archaeological Layer"
+                "en": "Geoarchaeology"
             },
             {
-                "de": "Geoarchäologie, Archäologie, Geologie, Mikromorphologie, Petrographie, Dünnschliff, Mikroskopie, Mikroskopfoto, Mikroartefakte, Archäologische Schichten"
+                "en": "Archaeology"
+            },
+            {
+                "en": "Geology"
+            },
+            {
+                "en": "Micromorphology"
+            },
+            {
+                "en": "Petrography" 
+            },
+            {
+                "en": "Thin Section" 
+            },
+            {
+                "en": "Microphotographs" 
+            },
+            {
+                "en": "Microartifacts" 
+            },
+            {
+                "de": "Geoarchäologie"
+            },
+            {
+                "de": "Archäologie"
+            },
+            {
+                "de": "Geologie"
+            },
+            {
+                "de": "Mikromorphologie"
+            },
+            {
+                "de": "Petrographie" 
+            },
+            {
+                "de": "Dünnschliff" 
+            },
+            {
+                "de": "Mikroskopie" 
+            },
+            {
+                "de": "Mikroskopfoto" 
+            },
+            {
+                "de": "Mikroartefakte" 
+            },
+            {   
+                "de": "Archäologische Schichten"
             }
         ],
         "name": "I-GEOARCHive",
@@ -97,13 +145,8 @@
             {
                 "en": "Palaeolithic to Modern"
             }
-        ],
-        "url": {
-            "__type": "URL",
-            "type": "URL",
-            "url": "http://ark.dasch.swiss/ark:/72163/1/0838",
-            "text": "http://ark.dasch.swiss/ark:/72163/1/0838"
-        }
+        ]
+    
     },
     "datasets": [
         {
@@ -122,7 +165,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://zenodo.org/doi/10.5281/zenodo.10514612",
-                    "text": "https://zenodo.org/doi/10.5281/zenodo.10514612"
+                    "text": "Data Model and Data Management Plan"
                 }
             ],
             "howToCite": "Brönnimann, D., Lo Russo, S., Pümpin, Ch., Ismail-Meyer, K., Devos, Y., Kübler, S., Rentzel, Ph. (2024). I-GEOARCHive [Database]. DaSCH. http://ark.dasch.swiss/ark:/72163/1/0838.",
@@ -146,42 +189,22 @@
                         "__type": "URL",
                         "type": "Creative Commons",
                         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-                        "text": "XX: CC URL: https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                        "text": "CC BY-NC-SA 4.0"
                     }
                 }
             ],
             "attributions": [
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-005",
-                    "roles": [
-                        "Data Collector"
-                    ]
-                },
+                
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-000",
-                    "roles": [
-                        "Project Leader, Data collector"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-001",
                     "roles": [
                         "Project Leader, Data Collector"
                     ]
                 },
                 {
                     "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-003",
-                    "roles": [
-                        "Data Collector"
-                    ]
-                },
-                {
-                    "__type": "Attribution",
-                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-006",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-001",
                     "roles": [
                         "Project Leader, Data Collector"
                     ]
@@ -195,9 +218,30 @@
                 },
                 {
                     "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-003",
+                    "roles": [
+                        "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-004",
                     "roles": [
                         "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-005",
+                    "roles": [
+                        "Data Collector"
+                    ]
+                },
+                {
+                    "__type": "Attribution",
+                    "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-006",
+                    "roles": [
+                        "Project Leader, Data Collector"
                     ]
                 }
             ],
@@ -403,8 +447,8 @@
                 "__type": "Address",
                 "street": "Pleinlaan 2",
                 "postalCode": "1050",
-                "locality": "Brussels, Belgium",
-                "country": "XX - Switzerland?"
+                "locality": "Brussels",
+                "country": "Belgium"
             },
             "name": "Archaeology, Environmental Changes & Geo-Chemistry (AMGC)",
             "url": {
@@ -423,8 +467,8 @@
                 "__type": "Address",
                 "street": "Wildhainweg 3",
                 "postalCode": "CH-3001",
-                "locality": "Bern, Switzerland",
-                "country": "XX - Switzerland?"
+                "locality": "Bern",
+                "country": "Switzerland"
             },
             "email": "com@snf.ch",
             "name": "Swiss National Science Foundation (SNSF)",
@@ -444,8 +488,8 @@
                 "__type": "Address",
                 "street": "HOEK 38, Leuvenseweg 38",
                 "postalCode": "1000",
-                "locality": "Brussel, Belgium",
-                "country": "XX - Switzerland?"
+                "locality": "Brussel",
+                "country": "Belgium"
             },
             "name": "Research Foundation – Flanders (FWO)",
             "url": {
@@ -464,15 +508,15 @@
                 "__type": "Address",
                 "street": "Spalenring 145",
                 "postalCode": "4055",
-                "locality": "Basel, Switzerland",
-                "country": "XX - Switzerland?"
+                "locality": "Basel",
+                "country": "Switzerland"
             },
             "name": "Integrative Prehistory and Archaeological Science (IPAS)",
             "url": {
                 "__type": "URL",
                 "type": "URL",
-                "url": "https://ipna.duw.unibas.ch \r\rhttps://ipna.duw.unibas.ch \r\rhttps://ipna.duw.unibas.ch/",
-                "text": "https://ipna.duw.unibas.ch \r\rhttps://ipna.duw.unibas.ch \r\rhttps://ipna.duw.unibas.ch/"
+                "url": "https://ipna.duw.unibas.ch",
+                "text": "https://ipna.duw.unibas.ch"
             }
         }
     ],

@@ -146,7 +146,7 @@
             <span class="label new-subtitle" style="display: block;">Description 
               <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}> in 
                 {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
-                  <button class=language on:click={changeDescriptionLanguage} value={l}>{l}</button>
+                  <button class="language {displayedDescriptionsLanguage === getIso(l) ? "active" : ""}" on:click={changeDescriptionLanguage} value={l}>{l}</button>
                 {/each}
               </span>
             </span>
@@ -306,6 +306,11 @@
     padding: 5px 10px;
     color: var(--lead-colour);
     box-shadow: var(--shadow-1);
+  }
+  button.language.active {
+    color: white;
+    background-color: var(--dasch-secondary);
+    border-color: #dee2e6 #dee2e6 #fff;
   }
 
   @supports (-moz-appearance: none) {

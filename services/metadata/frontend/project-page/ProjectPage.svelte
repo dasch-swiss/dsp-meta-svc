@@ -31,20 +31,9 @@
     return [...descriptionLanguages].find(([key, val]) => val === lang)[0]
   }
 
-  const changeDescriptionLanguage = () => {
-    document.querySelectorAll('button').forEach(button => {
-      button.addEventListener('click', () => {
-          const selectedLanguage = button.value;
-          displayedDescriptionsLanguage = getIso(selectedLanguage)
-      });
-    });
-  }
-
   onMount(async () => {
     // wait with component creation for the data to be fetched
     await getProjectMetadata();
-    // loads the event, so the first ever click will also work
-    changeDescriptionLanguage()
     availableDescriptionsIso = Object.keys($projectMetadata?.project.description);
     // initialize iso language to load => assumption is if more than 1 language is available English exists and set as default
     displayedDescriptionsLanguage = availableDescriptionsIso.length === 1 ? availableDescriptionsIso[0] : "en"
@@ -146,7 +135,7 @@
             <span class="label new-subtitle" style="display: block;">Description 
               <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}> in 
                 {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
-                  <button class="language {displayedDescriptionsLanguage === getIso(l) ? "active" : ""}" on:click={changeDescriptionLanguage} value={l}>{l}</button>
+                  <button class="language {availableDescriptionsIso.length > 1 && displayedDescriptionsLanguage === getIso(l) ? "active" : ""}" on:click={() => displayedDescriptionsLanguage = getIso(l)}>{l}</button>
                 {/each}
               </span>
             </span>

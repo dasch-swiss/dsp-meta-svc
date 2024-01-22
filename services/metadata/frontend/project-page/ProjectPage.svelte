@@ -144,7 +144,7 @@
         <div class="property-row">
           {#if $projectMetadata?.project.description && getText($projectMetadata?.project.description)}
             <span class="label new-subtitle" style="display: block;">Description 
-              <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}>available in 
+              <span style={availableDescriptionsIso.length <= 1 ? "display: none" : "display: contents"}> in 
                 {#each Object.keys($projectMetadata?.project.description).map(k=> descriptionLanguages.get(k)) as l}
                   <button class=language on:click={changeDescriptionLanguage} value={l}>{l}</button>
                 {/each}

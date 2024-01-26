@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.16.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.5...v1.16.0) (2024-01-26)
+
+
+### Bug Fixes
+
+* wip/dev 3209 add metadata to i geoarchive 0838 ([#118](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/118)) ([ff581fd](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/ff581fd3225558e23f17f5eca83ac030e5c6a97c))
+
+
+### Maintenance
+
+* update copyright info ([#115](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/115)) ([9d0390a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/9d0390a1ac738eaa80354d1bf58e43243624d835))
+
+
+### Enhancements
+
+* handle multiple language descriptions (DEV-3181) ([#117](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/117)) ([c967c7d](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/c967c7d5e5e130419fb3d676d837fa943d4df100))
+
 ### [1.15.5](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.4...v1.15.5) (2023-12-20)
 
 

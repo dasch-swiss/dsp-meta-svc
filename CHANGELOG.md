@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.16.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.16.0...v1.16.1) (2024-03-07)
+
+
+### Bug Fixes
+
+* add metadata globalgeschichte ([#120](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/120)) ([fe5b486](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/fe5b4861d986ce5469c75af7a31923652a23f4ab))
+
 ## [1.16.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.15.5...v1.16.0) (2024-01-26)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.16.1...v1.17.0) (2024-03-22)
+
+
+### Enhancements
+
+* redo metadata of biz ([#122](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/122)) ([13cd1a2](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/13cd1a21015464b77fbb7aa489a6fb0c596931c3))
+
 ### [1.16.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.16.0...v1.16.1) (2024-03-07)
 
 

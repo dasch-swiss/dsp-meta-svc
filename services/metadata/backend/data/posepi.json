@@ -31,10 +31,10 @@
         },
         "disciplines": [
             {
-                "de": "10502 Romance languages and literature"
+                "en": "10502 Romance languages and literature"
             },
             {
-                "fr": "10607 Applied linguistics"
+                "en": "10607 Applied linguistics"
             }
         ],
         "endDate": "2024-03-31",
@@ -92,7 +92,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://app.dasch.swiss/project/0120",
-            "text": "Discover Project data"
+            "text": "Discover Project Data"
         }
     },
     "datasets": [
@@ -113,13 +113,13 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "http://clapi.icar.cnrs.fr/Posepi/",
-                    "text": "http://clapi.icar.cnrs.fr/Posepi/"
+                    "text": "Please find more information on CLAPI-POSEPI here"
                 },
                 {
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://zenodo.org/records/7266737",
-                    "text": "https://zenodo.org/records/7266737"
+                    "text": "Please find more on Guide d'annotation du projet POSEPI on zenodo here"
                 }
             ],
             "howToCite": "Jacquin, J., Keck, A., Robin, C., Roh, S., Rivoal, M. (2024). Marqueurs épistémiques et évidentiels du français identifiés et annotés dans un corpus d'interactions relevant de débats politiques et de réunions d’entreprise [Projet FNS 188924, POSEPI] [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0120",
@@ -379,7 +379,7 @@
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-0120-organization-001"
             ],
-            "name": "Project funding (Div.I-III)",
+            "name": "Project funding",
             "number": "188924",
             "url": {
                 "__type": "URL",

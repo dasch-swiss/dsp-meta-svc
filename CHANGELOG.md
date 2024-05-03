@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.17.0...v1.18.0) (2024-05-03)
+
+
+### Enhancements
+
+* adding posepi ([#124](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/124)) ([fe8800e](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/fe8800e80dd62e137595c59436d70126d7ae64b3))
+
 ## [1.17.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.16.1...v1.17.0) (2024-03-22)
 
 

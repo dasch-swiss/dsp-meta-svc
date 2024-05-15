@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.19.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.19.0...v1.19.1) (2024-05-15)
+
+
+### Maintenance
+
+* fix Node.js 16 deprecation issues ([#129](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/129)) ([32bdb45](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/32bdb45b98c4ab6a990ea15d92f962a9db0a8daa))
+
 ## [1.19.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.18.0...v1.19.0) (2024-05-08)
 
 

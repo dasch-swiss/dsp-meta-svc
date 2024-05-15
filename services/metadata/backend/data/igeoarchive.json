@@ -145,9 +145,14 @@
             {
                 "en": "Palaeolithic to Modern"
             }
-        ]
-    
-    },
+        ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://app.dasch.swiss/project/n0eRr0vWTDOArdaBAZ-jQQ",
+            "text": "Discover Project Data"
+        }
+},
     "datasets": [
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0838-dataset-000",

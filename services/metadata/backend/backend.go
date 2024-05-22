@@ -110,7 +110,6 @@ func getStatus(shortcode string) string {
 		"0844": true,
 		"0810": true,
 		"0106": true,
-		"0847": true,
 		"0849": true,
 		"0838": true,
 		"084A": true,

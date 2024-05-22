@@ -12,7 +12,7 @@
         ],
         "alternativeNames": [
             {
-                "XX": "Locus Ludi"
+                "en": "Locus Ludi"
             }
         ],
         "contactPoint": "http://ns.dasch.swiss/repository#dsp-0847-person-001",
@@ -87,8 +87,14 @@
             {
                 "en": "South Italian (Greek pottery style)"
             }
-        ]
-    },
+        ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://app.dasch.swiss/project/sWbpL_RCTWKF6Y3aqxFZfA",
+            "text": "Discover Project Data"
+        }
+},
     "datasets": [
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0847-dataset-000",

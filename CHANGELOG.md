@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.20.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.0...v1.20.1) (2024-05-22)
+
+
+### Bug Fixes
+
+* project locus ludi ([#132](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/132)) ([d7a1d46](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/d7a1d4624639906255c72d073ccc32fec5df2633))
+
 ## [1.20.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.19.0...v1.20.0) (2024-05-15)
 
 

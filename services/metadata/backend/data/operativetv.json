@@ -113,7 +113,13 @@
                 "en": "1930-1990",
                 "fr": "1930-1990"
             }
-        ]
+        ],
+        "url": {
+            "__type": "URL",
+            "type": "URL",
+            "url": "https://app.dasch.swiss/project/8faW0HwsTgGzu98tCYClig",
+            "text": "Discover Project Data"
+        }
     },
     "datasets": [
         {

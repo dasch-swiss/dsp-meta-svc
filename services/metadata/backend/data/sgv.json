@@ -280,6 +280,12 @@
         "url": {
             "__type": "URL",
             "type": "URL",
+            "url": "https://app.dasch.swiss/project/Wacpqk4-SfujXYw5EeUoCw",
+            "text": "Discover Project Data"
+        },
+        "secondaryURL": {
+            "__type": "URL",
+            "type": "URL",
             "url": "https://archiv.sgv-sstp.ch/",
             "text": "External Project Website"
         }
@@ -709,7 +715,7 @@
                     "__type": "URL",
                     "type": "URL",
                     "url": "https://www.volkskunde.ch/",
-                    "text": "Find more information about SGV here"
+                    "text": "Find more information about CAS here"
                 }
             ]
         }
@@ -1660,7 +1666,7 @@
             "__type": "Person",
             "__createdAt": "1643065759653302000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "nicole.peduzzi@volkskunde.ch",
+            "email": "nicole.peduzzi@ekws.ch",
             "secondaryEmail": "nicole.peduzzilonghitano@unibas.ch",
             "familyNames": [
                 "Peduzzi Longhitano"

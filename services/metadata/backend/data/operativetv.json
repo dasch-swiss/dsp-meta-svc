@@ -202,8 +202,7 @@
             "__type": "Person",
             "__createdAt": "1702979876338923000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "lisa.cronjaeger@unibas.ch",
-            "secondaryEmail": "lisa.cronjaeger@unil.ch",
+            "email": "lisa.cronjager@unil.ch",
             "familyNames": [
                 "Cronjäger"
             ],
@@ -230,8 +229,7 @@
             "__type": "Person",
             "__createdAt": "1702979876338998000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "sebastien.scheiwiller@unibas.ch",
-            "secondaryEmail": "sebastien.scheiwiller@unil.ch",
+            "email": "sebastien.scheiwiller@unil.ch",
             "familyNames": [
                 "Scheiwiller"
             ],
@@ -250,8 +248,7 @@
             "__type": "Person",
             "__createdAt": "1702979876339048000",
             "__createdBy": "dsp-metadata-gui",
-            "email": "marie.sandoz@unibas.ch",
-            "secondaryEmail": "marie.sandoz@unil.ch",
+            "email": "marie.sandoz@unil.ch",
             "familyNames": [
                 "Sandoz"
             ],

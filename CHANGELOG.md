@@ -1,5 +1,15 @@
 # Changelog
 
+### [1.20.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.1...v1.20.2) (2024-05-30)
+
+
+### Bug Fixes
+
+* add project link to operative tv ([#134](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/134)) ([33b3aa2](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/33b3aa2f5da379982efdaccfdbcc7469e5aa2a0a))
+* e-mail-addresses operativetv ([#136](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/136)) ([b0499f7](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/b0499f79bed1df2634e9688cb32b9b2986093ce4))
+* ekws project and link and e-mail ([#137](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/137)) ([a4bdbce](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/a4bdbce1e142fb9a229d362857e70b932fe58a68))
+* links ([#138](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/138)) ([4097ac3](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/4097ac3816b5492073484b505775eed580487402))
+
 ### [1.20.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.0...v1.20.1) (2024-05-22)
 
 

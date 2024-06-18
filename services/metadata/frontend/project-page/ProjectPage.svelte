@@ -160,9 +160,17 @@
             <span class="label new-subtitle">Publications</span>
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
-                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p}</span>
+                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
+                {#if p.url}
+                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-text" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
+                {/if}
+                </span>
               {:else}
-                <span class="data new-text">{p}</span>
+                <span class="data new-text">{p.text}
+                {#if p.url}
+                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-text" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
+                {/if}
+                </span>
               {/if}
             {/each}
           </div>

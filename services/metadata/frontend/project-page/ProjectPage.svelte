@@ -162,13 +162,13 @@
               {#if i > 1}
                 <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
                 {#if p.url}
-                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-text" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
+                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-link" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
                 {/if}
                 </span>
               {:else}
                 <span class="data new-text">{p.text}
                 {#if p.url}
-                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-text" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
+                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-link" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
                 {/if}
                 </span>
               {/if}

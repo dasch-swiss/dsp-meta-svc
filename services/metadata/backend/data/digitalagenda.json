@@ -67,20 +67,136 @@
         ],
         "name": "digitalagenda",
         "publications": [
-            "1.\tFlury, Carmen and Michael Geiss, eds., How Computers Entered the Classroom, 1960–2000: Historical Perspectives. Oldenbourg, De Gruyter, 2023. https://doi.org/10.1515/9783110780147.",
-            "2.\tFlury, Carmen and Michael Geiss. Computers in Europe’s Classrooms: An Introduction. In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 1–12. Oldenbourg: De Gruyter, 2023. https://doi.org/10.1515/9783110780147.",
-            "3.\tFlury, Carmen, Michael Geiss, and Rosalía Guerrero Cantarell. “Building the Technological European Community Through Education: European Mobility and Training Programmes in the 1980s.” European Educational Research Journal 20, no. 3 (2020): 348–64. https://doi.org/10.1177/1474904120980973.",
-            "4.\tFlury, Carmen. “Counting on Computers: New Information Technologies and Curricular Change in the GDR.\" PhD diss. University of Zurich, forthcoming.",
-            "5.\tFlury, Carmen. “Joining Forces: The Promotion of Public-private-partnerships to bring Computers into West German Schools in the 1980s.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 123–145. Oldenbourg: De Gruyter, 2023. https://doi.org/10.1515/9783110780147.",
-            "6.\tGeiss, Michael. “Computer Education in Switzerland: Politics and Markets in a Highly Decentralized Country.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 147–170. Berlin: De Gruyter Oldenbourg, 2023. https://doi.org/10.1515/9783110780147.",
-            "7.\tGeiss, Michael. “Der Pakt mit dem Computer.” Geschichte der Gegenwart. February 9, 2022. https://geschichtedergegenwart.ch/der-pakt-mit-dem-computer/.",
-            "8.\tGeiss, Michael, Carmen Flury and Rosalía Guerrero Cantarell. “Beyond the Classroom: Economic Policies and the Past Futures of Education and Training in the European Community, 1970–2000.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 191–216. Berlin: De Gruyter Oldenbourg, 2023. https://doi.org/10.1515/9783110780147.",
-            "9.\tGrütter, Fabian. “After Mainframes: Computer Education and Microcomputers in Western Switzerland During the 1980s and 1990s.” History of Education. (Accepted)",
-            "10.\tGrütter, Fabian. “The Smaky School Computer: Technology and Education in the Ruins of Switzerland’s Watch Industry, 1973–1997.” Learning, Media and Technology. https://doi.org/10.1080/17439884.2023.2216463.",
-            "11.\tGuerrero Cantarell, Rosalía and Carmen Flury. “Making the Computer Fit for School: Efforts to Develop a State-Mandated Educational Computer in Sweden and East Germany (1980s-1990s).” Historical Studies in Education (Accepted).",
-            "12.\tGuerrero Cantarell, Rosalía. “Teachers Translating and Circumventing the Computer in Lower and Upper Secondary Swedish Schools in the 1970s and 1980s.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 99–122. Oldenbourg: De Gruyter, 2023. https://doi.org/10.1515/9783110780147.",
-            "13.\tGuerrero Cantarell, Rosalía. “Technology as a Woman’s Call: The Efforts of the Fredrik Bremer Association to Promote Women’s Education in Technology 1978–1999.” Nordic Journal of Educational History. Special Issue: Exploring the History of Knowledge and Education 9, no. 2 (2022): 125–147. https://doi.org/10.36368/njedh.v9i2.268.",
-            "14.\tGuerrero, Rosalía, Carmen Flury and Michael Geiss. “From Victims to Economic Assets: Training Women in an Emerging Digital Society During the Late 1970s to the Mid-1990s.” History of Media Studies 3 (July 2023). https://doi.org/10.32376/d895a0ea.6e09b010."
+            {
+                "text": "1. Flury, Carmen and Michael Geiss, eds., How Computers Entered the Classroom, 1960–2000: Historical Perspectives. Oldenbourg, De Gruyter, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "2. Flury, Carmen and Michael Geiss. Computers in Europe’s Classrooms: An Introduction. In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 1–12. Oldenbourg: De Gruyter, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "3. Flury, Carmen, Michael Geiss, and Rosalía Guerrero Cantarell. “Building the Technological European Community Through Education: European Mobility and Training Programmes in the 1980s.” European Educational Research Journal 20, no. 3 (2020): 348–64.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1177/1474904120980973",
+                        "text": "DOI: 10.1177/1474904120980973"
+                    }
+                ]
+            },
+            {
+                "text": "4. Flury, Carmen. “Counting on Computers: New Information Technologies and Curricular Change in the GDR.\" PhD diss. University of Zurich, forthcoming."
+            },
+            {
+                "text": "5. Flury, Carmen. “Joining Forces: The Promotion of Public-private-partnerships to bring Computers into West German Schools in the 1980s.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 123–145. Oldenbourg: De Gruyter, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "6. Geiss, Michael. “Computer Education in Switzerland: Politics and Markets in a Highly Decentralized Country.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 147–170. Berlin: De Gruyter Oldenbourg, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "7. Geiss, Michael. “Der Pakt mit dem Computer.” Geschichte der Gegenwart. February 9, 2022.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://geschichtedergegenwart.ch/der-pakt-mit-dem-computer/",
+                        "text": "https://geschichtedergegenwart.ch/der-pakt-mit-dem-computer/"
+                    }
+                ]
+            },
+            {
+                "text": "8. Geiss, Michael, Carmen Flury and Rosalía Guerrero Cantarell. “Beyond the Classroom: Economic Policies and the Past Futures of Education and Training in the European Community, 1970–2000.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 191–216. Berlin: De Gruyter Oldenbourg, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "9. Grütter, Fabian. “After Mainframes: Computer Education and Microcomputers in Western Switzerland During the 1980s and 1990s.” History of Education. (Accepted)"
+            },
+            {
+                "text": "10. Grütter, Fabian. “The Smaky School Computer: Technology and Education in the Ruins of Switzerland’s Watch Industry, 1973–1997.” Learning, Media and Technology.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1080/17439884.2023.2216463",
+                        "text": "DOI: 10.1080/17439884.2023.2216463"
+                    }
+                ]
+            },
+            {
+                "text": "11. Guerrero Cantarell, Rosalía and Carmen Flury. “Making the Computer Fit for School: Efforts to Develop a State-Mandated Educational Computer in Sweden and East Germany (1980s-1990s).” Historical Studies in Education (Accepted)."
+            },
+            {
+                "text": "12. Guerrero Cantarell, Rosalía. “Teachers Translating and Circumventing the Computer in Lower and Upper Secondary Swedish Schools in the 1970s and 1980s.” In How Computers Entered the Classroom, 1960–2000: Historical Perspectives, edited by Carmen Flury and Michael Geiss, 99–122. Oldenbourg: De Gruyter, 2023.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/9783110780147",
+                        "text": "DOI: 10.1515/9783110780147"
+                    }
+                ]
+            },
+            {
+                "text": "13. Guerrero Cantarell, Rosalía. “Technology as a Woman’s Call: The Efforts of the Fredrik Bremer Association to Promote Women’s Education in Technology 1978–1999.” Nordic Journal of Educational History. Special Issue: Exploring the History of Knowledge and Education 9, no. 2 (2022): 125–147.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.36368/njedh.v9i2.268",
+                        "text": "DOI: 10.36368/njedh.v9i2.268"
+                    }
+                ]
+            },
+            {
+                "text": "14. Guerrero, Rosalía, Carmen Flury and Michael Geiss. “From Victims to Economic Assets: Training Women in an Emerging Digital Society During the Late 1970s to the Mid-1990s.” History of Media Studies 3 (July 2023).",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.32376/d895a0ea.6e09b010",
+                        "text": "DOI: 10.32376/d895a0ea.6e09b010"
+                    }
+                ]
+            }
         ],
         "name": "Education and the European Digital Agenda: Switzerland, Germany and Sweden after 1970",
         "shortcode": "0848",

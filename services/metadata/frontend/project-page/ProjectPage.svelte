@@ -9,7 +9,7 @@
   import Snackbar from "../Snackbar.svelte";
   import { getText } from "../functions";
   import Loading from "../Loading.svelte";
-    import {url} from "inspector";
+    import {text} from "svelte/internal";
 
   const mobileResolution = window.innerWidth < 992;
   const isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
@@ -161,7 +161,7 @@
             <span class="label new-subtitle">Publications</span>
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
-                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
+                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text ? p.text : p} <!-- change to p.text after transforming all data -->
                   {#if p.url}
                     {#each p.url as url, n}
                       <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
@@ -172,7 +172,7 @@
                   {/if}
                 </span>
               {:else}
-                <span class="data new-text">{p.text}
+                <span class="data new-text">{p.text ? p.text : p} <!-- change to p.text after transforming all data -->
                   {#if p.url}
                     {#each p.url as url, n}
                       <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>

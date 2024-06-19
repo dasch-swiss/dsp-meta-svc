@@ -54,11 +54,6 @@ export interface Project {
   alternativeNames?: Text[];
 }
 
-export interface Publications {
-  text: string;
-  url?: URL[];
-}
-
 export interface Dataset {
   __type: "Dataset";
   __id: string;
@@ -160,4 +155,9 @@ export interface DataManagementPlan {
   __type: "DataManagementPlan";
   available?: boolean;
   url?: URL;
+}
+
+export interface Publications {
+  text: string;
+  url?: URL[];
 }

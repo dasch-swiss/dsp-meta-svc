@@ -9,6 +9,7 @@
   import Snackbar from "../Snackbar.svelte";
   import { getText } from "../functions";
   import Loading from "../Loading.svelte";
+    import {url} from "inspector";
 
   const mobileResolution = window.innerWidth < 992;
   const isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
@@ -161,15 +162,25 @@
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
                 <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
-                {#if p.url}
-                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-link" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
-                {/if}
+                  {#if p.url}
+                    {#each p.url as url, n}
+                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
+                      {#if p.url.length > 0 && n < p.url.length - 1}
+                        ,&nbsp;
+                      {/if}
+                    {/each}
+                  {/if}
                 </span>
               {:else}
                 <span class="data new-text">{p.text}
-                {#if p.url}
-                  <a href={p.url[0].url} class={arePublicationsExpanded ? "data new-link" : "hidden"} style="display: contents;" target=_>{p.url[0].text}</a>
-                {/if}
+                  {#if p.url}
+                    {#each p.url as url, n}
+                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
+                      {#if p.url.length > 0 && n < p.url.length - 1}
+                        ,&nbsp;
+                      {/if}
+                    {/each}
+                  {/if}
                 </span>
               {/if}
             {/each}

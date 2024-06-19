@@ -49,9 +49,14 @@ export interface Project {
   endDate?: string;
   contactPoint?: string;
   secondaryURL?: URL;
-  publications?: string[];
+  publications?: Publications[];
   grants?: string[];
   alternativeNames?: Text[];
+}
+
+export interface Publications {
+  text: string;
+  url?: URL[];
 }
 
 export interface Dataset {

@@ -74,15 +74,33 @@
         ],
         "name": "Drawings of gods: A Multicultural and Interdisciplinary Approach of Children’s Representations of Supernatural Agents",
         "publications": [
-            "Brandt, Pierre-Yves, Dandarova Robert, Zhargalma, Cocco, Christelle, Vinck, Dominique, & Darbellay, Frédéric (Eds) (in press), When children draw gods: A multicultural and interdisciplinary approach to children's representations of supernatural agents. Cham : Springer.",
-            "Dandarova Robert Zhargalma, Dessart Grégory, Serbaeva Olga, Puzdriac Camelia, Khodayarifard Mohammad, Akbari Zardkhaneh Saeed, Zandi Saeid, Petanova Elena, Ladd Kevin, Brandt Pierre-Yves (2016), A Web-based Database for Drawings of Gods: When the Digitals Go Multicultural, in Archive for the Psychology of Religion, (3), 345-352.",
-            "Cocco Christelle, Ceré Raphaël, Xanthos Aris, Brandt Pierre-Yves (2019), Identification and quantification of colours in children’s drawings., in Proceedings of the Workshop on Computational Methods in the Humanities 2018, Lausanne http://ceur-ws.org/, Lausanne.",
-            "Brandt Pierre-Yves, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Représentations de dieux dans des dessins d’enfants, in Représenter dieux et hommes dans le Proche-Orient ancien, Collège de France, Paris.",
-            "Darbellay Frédéric, Vinck Dominique, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Brandt Pierre-Yves (2018), L'interdisciplinarité en partage: collaborer pour innover - Le projet \"dessins de dieu\", in InnovatiO, (5), NA.",
-            "Vinck Dominique, Camus Alexandre, Jaton Florian, Oberhauser Pierre-Nicolas (2018), Localités distribuées, globalités localisées: actions, actants et médiations au service de l’ethnographie du numérique, in Symposium, 22(1), 41-60.",
-            "Cocco Christelle, Dessart Grégory, Serbaeva Olga, Brandt Pierre-Yves, Vinck Dominique, Darbellay Frédéric (2018), Potentialités et difficultés d’un projet en humanités numériques (DH) : confrontation aux outils et réorientations de recherche, in Digital Humanities Quarterly, 12(1).",
-            "Oberhauser Pierre-Nicolas (2016), Des collaborations équivoques. La participation de spécialistes en sciences et techniques informatiques à un projet de recherche en humanités numériques, in Revue d'anthropologie des connaissances, 10(4), 557-586.",
-            "Brandt, Pierre-Yves, Cocco, Christelle, Dessart, Grégory & Dandarova, Zhargalma (2019). Représentations de dieux dans des dessins d’enfants. In T. Römer, H. Gonzalez et L. Marti (Eds). Représenter dieux et hommes dans le Proche-Orient ancien et dans la Bible (OBO 287, pp. 347-370). Leuven/Paris/Bristol : Peeters."
+            {
+                "text": "Brandt, Pierre-Yves, Dandarova Robert, Zhargalma, Cocco, Christelle, Vinck, Dominique, & Darbellay, Frédéric (Eds) (in press), When children draw gods: A multicultural and interdisciplinary approach to children's representations of supernatural agents. Cham : Springer."
+            },
+            {
+                "text": "Dandarova Robert Zhargalma, Dessart Grégory, Serbaeva Olga, Puzdriac Camelia, Khodayarifard Mohammad, Akbari Zardkhaneh Saeed, Zandi Saeid, Petanova Elena, Ladd Kevin, Brandt Pierre-Yves (2016), A Web-based Database for Drawings of Gods: When the Digitals Go Multicultural, in Archive for the Psychology of Religion, (3), 345-352."
+            },
+            {
+                "text": "Cocco Christelle, Ceré Raphaël, Xanthos Aris, Brandt Pierre-Yves (2019), Identification and quantification of colours in children’s drawings., in Proceedings of the Workshop on Computational Methods in the Humanities 2018, Lausanne http://ceur-ws.org/, Lausanne."
+            },
+            {
+                "text": "Brandt Pierre-Yves, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Représentations de dieux dans des dessins d’enfants, in Représenter dieux et hommes dans le Proche-Orient ancien, Collège de France, Paris."
+            },
+            {
+                "text": "Darbellay Frédéric, Vinck Dominique, Cocco Christelle, Dessart Grégory, Dandarova Robert Zhargalma, Brandt Pierre-Yves (2018), L'interdisciplinarité en partage: collaborer pour innover - Le projet \"dessins de dieu\", in InnovatiO, (5), NA."
+            },
+            {
+                "text": "Vinck Dominique, Camus Alexandre, Jaton Florian, Oberhauser Pierre-Nicolas (2018), Localités distribuées, globalités localisées: actions, actants et médiations au service de l’ethnographie du numérique, in Symposium, 22(1), 41-60."
+            },
+            {
+                "text": "Cocco Christelle, Dessart Grégory, Serbaeva Olga, Brandt Pierre-Yves, Vinck Dominique, Darbellay Frédéric (2018), Potentialités et difficultés d’un projet en humanités numériques (DH) : confrontation aux outils et réorientations de recherche, in Digital Humanities Quarterly, 12(1)."
+            },
+            {
+                "text": "Oberhauser Pierre-Nicolas (2016), Des collaborations équivoques. La participation de spécialistes en sciences et techniques informatiques à un projet de recherche en humanités numériques, in Revue d'anthropologie des connaissances, 10(4), 557-586."
+            },
+            {
+                "text": "Brandt, Pierre-Yves, Cocco, Christelle, Dessart, Grégory & Dandarova, Zhargalma (2019). Représentations de dieux dans des dessins d’enfants. In T. Römer, H. Gonzalez et L. Marti (Eds). Représenter dieux et hommes dans le Proche-Orient ancien et dans la Bible (OBO 287, pp. 347-370). Leuven/Paris/Bristol : Peeters."
+            }
         ],
         "shortcode": "0105",
         "spatialCoverage": [

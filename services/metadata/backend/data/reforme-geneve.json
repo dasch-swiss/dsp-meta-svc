@@ -71,7 +71,9 @@
         ],
         "name": "Côté chaire, côté rue, La Réforme à Genève (1517-1617)",
         "publications": [
-            "Grosse, Ch., Dunant Gonzenbach, A., Fornerod, N., Gross, G., Solfaroli Camillocci, D., Vernhes Rappaz, S., Coté chaire, côté rue. L’impact de la Réforme sur la vie quotidienne à Genève (1517-1617), Genève, La Baconnière, 2018."
+            {
+                "text": "Grosse, Ch., Dunant Gonzenbach, A., Fornerod, N., Gross, G., Solfaroli Camillocci, D., Vernhes Rappaz, S., Coté chaire, côté rue. L’impact de la Réforme sur la vie quotidienne à Genève (1517-1617), Genève, La Baconnière, 2018."
+            }
         ],
         "shortcode": "0111",
         "spatialCoverage": [

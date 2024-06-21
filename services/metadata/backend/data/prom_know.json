@@ -71,13 +71,73 @@
         ],
         "name": "Promoting Knowledge. The Origins of the Science System and the Making of Professional Structures in European States, 1700-1870",
         "publications": [
-            "1.\tRené Sigrist, “The rise of “Academic science” in Europe, 1700-1870: A demographic and geographic approach”, Annali di Storia delle Università Italiane, 21 (2017), p. 203-243. ISSN: 1127-8250, DOI: 10.17396/88314,\r https://www.rivisteweb.it/doi/10.17396/88314",
-            "2.\tRené Sigrist & Alexander Moutchnik, « Les fondements sociaux du premier essor de la botanique en Russie, 1700-1830 » Almagest. International Journal for the History of Scientific Ideas, 8/1 (2017), p. 38-75.\r Print ISSN: 1792-2593 Online ISSN: 2507-0371. https://doi.org/10.1484/J.ALMAGEST.5.113697, https://www.brepolsonline.net/doi/abs/10.1484/J.ALMAGEST.5.113697",
-            "3.\tRené Sigrist & Sonia Zanier, « La botanique dans un contexte local : les jardins de Florence à l’époque des grands-ducs (1569-1859) », Gesnerus, 74/1 (2017), p. 5-52. https://gesnerus.ch/_Resources/Persistent/7c128d18e09b9f004a180b30bb680686bde5ba88/0 01-052_Sigrist.pdf",
-            "4.\tRené Sigrist & Dominique Vinck, « Le rôle des “objets intermédiaires” dans l’étude naturaliste du Mont-Blanc, 1740-1825 », Archives des Sciences, 69 (2017), p. 101-136. https://serval.unil.ch/resource/serval BIB_BFD3ECE440DA.P001/REF",
-            "5.\tRené Sigrist, “The First Generations of Russian Chemists (1700-1830): Between Pharmacy, Technical Know How and Academia”, Almagest. International Journal for the History of Scientific Ideas, 10/2 (2019), p. 7-49.\r DOI: 10.1484/J.ALMAGEST.5.119493 https://www.brepolsonline.net/doi/pdf/10.1484/J.ALMAGEST.5.119493",
-            "6.\tRené Sigrist, « L’innovation technique à Genève à l’époque de la première industrialisation (1750-1850) : discours, attitudes et enjeux », Archives des Sciences, 71, 2020, p. 205-226.",
-            "7.\tRené Sigrist, « Correspondances scientifiques du 18e siècle. Un essai d’analyse statistique », Mélanges de l’école française de Rome, Italie et Méditerranée."
+            {
+                "text": "1. René Sigrist, “The rise of “Academic science” in Europe, 1700-1870: A demographic and geographic approach”, Annali di Storia delle Università Italiane, 21 (2017), p. 203-243. ISSN: 1127-8250,",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://www.rivisteweb.it/doi/10.17396/88314",
+                        "text": "rivisteweb.it/doi/10.17396/88314"
+                    }
+                ]
+            },
+            {
+                "text": "2. René Sigrist & Alexander Moutchnik, « Les fondements sociaux du premier essor de la botanique en Russie, 1700-1830 » Almagest. International Journal for the History of Scientific Ideas, 8/1 (2017), p. 38-75. Print ISSN: 1792-2593 Online ISSN: 2507-0371.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1484/J.ALMAGEST.5.113697",
+                        "text": "DOI: 10.1484/J.ALMAGEST.5.113697"
+                    },
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://www.brepolsonline.net/doi/abs/10.1484/J.ALMAGEST.5.113697",
+                        "text": "brepolsonline.net/doi/abs/10.1484/J.ALMAGEST.5.113697"
+                    }
+                ]
+            },
+            {
+                "text": "3. René Sigrist & Sonia Zanier, « La botanique dans un contexte local : les jardins de Florence à l’époque des grands-ducs (1569-1859) », Gesnerus, 74/1 (2017), p. 5-52. 01-052_Sigrist.pdf",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://gesnerus.ch/_Resources/Persistent/7c128d18e09b9f004a180b30bb680686bde5ba88/0",
+                        "text": "https://gesnerus.ch/_Resources/Persistent/7c128d18e09b9f004a180b30bb680686bde5ba88/0"
+                    }
+                ]
+            },
+            {
+                "text": "4. René Sigrist & Dominique Vinck, « Le rôle des “objets intermédiaires” dans l’étude naturaliste du Mont-Blanc, 1740-1825 », Archives des Sciences, 69 (2017), p. 101-136. BIB_BFD3ECE440DA.P001/REF",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://serval.unil.ch/resource/serval",
+                        "text": "https://serval.unil.ch/resource/serval"
+                    }
+                ]
+            },
+            {
+                "text": "5. René Sigrist, “The First Generations of Russian Chemists (1700-1830): Between Pharmacy, Technical Know How and Academia”, Almagest. International Journal for the History of Scientific Ideas, 10/2 (2019), p. 7-49.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://www.brepolsonline.net/doi/pdf/10.1484/J.ALMAGEST.5.119493",
+                        "text": "brepolsonline.net/doi/pdf/10.1484/J.ALMAGEST.5.119493"
+                    }
+                ]
+            },
+            {
+                "text": "6. René Sigrist, « L’innovation technique à Genève à l’époque de la première industrialisation (1750-1850) : discours, attitudes et enjeux », Archives des Sciences, 71, 2020, p. 205-226."
+            },
+            {
+                "text": "7. René Sigrist, « Correspondances scientifiques du 18e siècle. Un essai d’analyse statistique », Mélanges de l’école française de Rome, Italie et Méditerranée."
+            }
         ],
         "shortcode": "0117",
         "spatialCoverage": [

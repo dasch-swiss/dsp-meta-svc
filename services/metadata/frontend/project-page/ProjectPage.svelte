@@ -161,7 +161,8 @@
             <span class="label new-subtitle">Publications</span>
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
-                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text ? p.text : p} <!-- change to p.text after transforming all data -->
+              <!-- showing string p is a guard related to old data model which has strings instead of objects in the array -->
+                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text ? p.text : p}
                   {#if p.url}
                     {#each p.url as url, n}
                       <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
@@ -172,7 +173,7 @@
                   {/if}
                 </span>
               {:else}
-                <span class="data new-text">{p.text ? p.text : p} <!-- change to p.text after transforming all data -->
+                <span class="data new-text">{p.text ? p.text : p}
                   {#if p.url}
                     {#each p.url as url, n}
                       <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>

@@ -70,8 +70,20 @@
         ],
         "name": "Tonbandsammlung Folkfestival auf der Lenzburg",
         "publications": [
-            "Burckhardt-Seebass, Christine (1987): “Gang, hol d’Gitarre …”: das Folk-Festival auf der Lenzburg 1972–1980 und die schweizerische Folk-Bewegung: eine Skizze. In: Schweizerisches Archiv für Volkskunde, 83 (3–4), 154–168. [DOI: http://doi.org/10.5169/seals-117606]",
-            "Hostettler, Urs (undat.): Lenzburg-Chronik. Die Folkfestivals auf der Lenzburg. URL: https://urs.fatamorgana.ch/lenzburg.html (29.07.2021)"
+            {
+                "text": "Burckhardt-Seebass, Christine (1987): “Gang, hol d’Gitarre …”: das Folk-Festival auf der Lenzburg 1972–1980 und die schweizerische Folk-Bewegung: eine Skizze. In: Schweizerisches Archiv für Volkskunde, 83 (3–4), 154–168."
+            },
+            {
+                "text": "Hostettler, Urs (undat.): Lenzburg-Chronik. Die Folkfestivals auf der Lenzburg. URL: (29.07.2021)",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://urs.fatamorgana.ch/lenzburg.html",
+                        "text": "https://urs.fatamorgana.ch/lenzburg.html"
+                    }
+                ]
+            }
         ],
         "shortcode": "082A",
         "spatialCoverage": [

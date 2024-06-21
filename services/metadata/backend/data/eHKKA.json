@@ -53,7 +53,9 @@
         ],
         "name": "Historische-Kritische Gottfried Keller Ausgabe (HKKA)",
         "publications": [
-            "Gottfried Keller: Sämtliche Werke. Historisch-Kritische Ausgabe. Herausgegeben unter der Leitung von Walter Morgenthaler im Auftrag der Stiftung Historisch-Kritische Gottfried Keller-Ausgabe. 32 Bände. Frankfurt a. M., Basel und Zürich 1996-2013."
+            {
+                "text": "Gottfried Keller: Sämtliche Werke. Historisch-Kritische Ausgabe. Herausgegeben unter der Leitung von Walter Morgenthaler im Auftrag der Stiftung Historisch-Kritische Gottfried Keller-Ausgabe. 32 Bände. Frankfurt a. M., Basel und Zürich 1996-2013."
+            }
         ],
         "shortcode": "083C",
         "spatialCoverage": [

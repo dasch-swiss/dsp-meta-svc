@@ -62,10 +62,34 @@
         ],
         "name": "Locus Ludi database: The Kottabos in the Greek World",
         "publications": [
-            "Attia, A., Delahaye, A., Le jeu du kottabos. Guide illustré, Collection Locus Ludi, Darmstadt, WBG/Mainz, Ph. von Zabern, in preparation (2024).",
-            "Attia, A., Vespa, M., “The Kottabos. Material Play and Cultural Representations”,  in V. Dasen, M. Vespa (eds), The Cambridge Handbook of Ancient Play and Games, Cambridge, Cambridge University Press, , in preparation (2024).",
-            "Attia, A., “Jouer au banquet : le kottabe au féminin en Grande Grèce”, in M.-L., Arnette, V. Dasen (eds), Joueuses ! Clio. Femmes, genre, histoire, 56, 2022, 187-197.\r https://www.cairn.info/revue-clio-femmes-genre-histoire-2022-2-page-187.htm",
-            "Attia, A., Delahaye, A., “Vertiges du banquet : jeux d’habilité et d’équilibre au symposion“, in V. Dasen and T. Haziza (eds.), Dossier thématique Jeux, normes et transgressions, Kentron. Revue pluridisciplinaire du monde antique, 36, 2021, 29-66. https://journals.openedition.org/kentron/4415"
+            {
+                "text": "Attia, A., Delahaye, A., Le jeu du kottabos. Guide illustré, Collection Locus Ludi, Darmstadt, WBG/Mainz, Ph. von Zabern, in preparation (2024)."
+            },
+            {
+                "text": "Attia, A., Vespa, M., “The Kottabos. Material Play and Cultural Representations”, in V. Dasen, M. Vespa (eds), The Cambridge Handbook of Ancient Play and Games, Cambridge, Cambridge University Press, , in preparation (2024)."
+            },
+            {
+                "text": "Attia, A., “Jouer au banquet : le kottabe au féminin en Grande Grèce”, in M.-L., Arnette, V. Dasen (eds), Joueuses ! Clio. Femmes, genre, histoire, 56, 2022, 187-197.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.cairn.info/revue-clio-femmes-genre-histoire-2022-2-page-187.htm",
+                        "text": "https://www.cairn.info/revue-clio-femmes-genre-histoire-2022-2-page-187.htm"
+                    }
+                ]
+            },
+            {
+                "text": "Attia, A., Delahaye, A., “Vertiges du banquet : jeux d’habilité et d’équilibre au symposion“, in V. Dasen and T. Haziza (eds.), Dossier thématique Jeux, normes et transgressions, Kentron. Revue pluridisciplinaire du monde antique, 36, 2021, 29-66.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://journals.openedition.org/kentron/4415",
+                        "text": "https://journals.openedition.org/kentron/4415"
+                    }
+                ]
+            }
         ],
         "shortcode": "0847",
         "spatialCoverage": [
@@ -94,7 +118,7 @@
             "url": "https://app.dasch.swiss/project/sWbpL_RCTWKF6Y3aqxFZfA",
             "text": "Discover Project Data"
         }
-},
+    },
     "datasets": [
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0847-dataset-000",

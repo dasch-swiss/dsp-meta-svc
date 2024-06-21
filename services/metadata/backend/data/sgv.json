@@ -86,10 +86,18 @@
         ],
         "name": "Photo Archive of the Cultural Anthropology Switzerland (CAS)",
         "publications": [
-            "Graf, Stephan, Huber, Birgit, Oezvegyi, Aila, Peduzzi, Nicole (2019). “Das Fotoarchiv der Schweizerischen Gesellschaft für Volkskunde: Ein Ort der Forschung, der Begegnungen und Affekte”. In: Rundbrief Fotografie 26/1: 31–40.",
-            "Peduzzi, Nicole (2016). “Die Wohlfahrt fotografischer Objekte”. In: Bulletin SAGW 3: 44–47.",
-            "Peduzzi, Nicole (2018). “Ein Fotoarchiv zwischen Wissenschaftlichkeit und Intimität”. In: Memoriav Bulletin 25: 38-39.",
-            "Peduzzi, Nicole (2018). “Un archivio tra intimità e rigore scientifico”. In: Memoriav Bulletin 25: 38-39."
+            {
+                "text": "Graf, Stephan, Huber, Birgit, Oezvegyi, Aila, Peduzzi, Nicole (2019). “Das Fotoarchiv der Schweizerischen Gesellschaft für Volkskunde: Ein Ort der Forschung, der Begegnungen und Affekte”. In: Rundbrief Fotografie 26/1: 31–40."
+            },
+            {
+                "text": "Peduzzi, Nicole (2016). “Die Wohlfahrt fotografischer Objekte”. In: Bulletin SAGW 3: 44–47."
+            },
+            {
+                "text": "Peduzzi, Nicole (2018). “Ein Fotoarchiv zwischen Wissenschaftlichkeit und Intimität”. In: Memoriav Bulletin 25: 38-39."
+            },
+            {
+                "text": "Peduzzi, Nicole (2018). “Un archivio tra intimità e rigore scientifico”. In: Memoriav Bulletin 25: 38-39."
+            }
         ],
         "shortcode": "0812",
         "spatialCoverage": [

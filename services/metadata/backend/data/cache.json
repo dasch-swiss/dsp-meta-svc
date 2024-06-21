@@ -44,7 +44,9 @@
         ],
         "name": "cache",
         "publications": [
-            "Gegen|Wissen (cache 01)"
+            {
+                "text": "Gegen|Wissen (cache 01)"
+            }
         ],
         "shortcode": "082B",
         "spatialCoverage": [

@@ -9,7 +9,6 @@
   import Snackbar from "../Snackbar.svelte";
   import { getText } from "../functions";
   import Loading from "../Loading.svelte";
-    import {text} from "svelte/internal";
 
   const mobileResolution = window.innerWidth < 992;
   const isTestEnvironment: boolean = window.location.hostname === 'localhost' || window.location.hostname.startsWith('meta.test');
@@ -161,25 +160,24 @@
             <span class="label new-subtitle">Publications</span>
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
-              <!-- showing string p is a guard related to old data model which has strings instead of objects in the array -->
-                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text ? p.text : p}
+                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
                   {#if p.url}
                     {#each p.url as url, n}
-                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
-                      {#if p.url.length > 0 && n < p.url.length - 1}
-                        ,&nbsp;
-                      {/if}
+                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>
+                        {url.text}
+                        {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
+                      </a>
                     {/each}
                   {/if}
                 </span>
               {:else}
-                <span class="data new-text">{p.text ? p.text : p}
+                <span class="data new-text">{p.text}
                   {#if p.url}
                     {#each p.url as url, n}
-                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>{url.text}</a>
-                      {#if p.url.length > 0 && n < p.url.length - 1}
-                        ,&nbsp;
-                      {/if}
+                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>
+                        {url.text}
+                        {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
+                      </a>
                     {/each}
                   {/if}
                 </span>

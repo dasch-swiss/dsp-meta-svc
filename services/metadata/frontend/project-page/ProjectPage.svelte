@@ -163,7 +163,7 @@
                 <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
                   {#if p.url}
                     {#each p.url as url, n}
-                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>
+                      <a href={url.url} class="publication-link {arePublicationsExpanded ? "data" : "hidden"}" target=_>
                         {url.text}
                         {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
                       </a>
@@ -174,7 +174,7 @@
                 <span class="data new-text">{p.text}
                   {#if p.url}
                     {#each p.url as url, n}
-                      <a href={url.url} class="new-link {arePublicationsExpanded ? "data" : "hidden"}" style="display: contents;" target=_>
+                      <a href={url.url} class="publication-link {arePublicationsExpanded ? "data" : "hidden"}" target=_>
                         {url.text}
                         {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
                       </a>
@@ -303,6 +303,13 @@
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .publication-link {
+    display: contents;
+    color: var(--lead-colour);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   button.language {
     width: 80px;

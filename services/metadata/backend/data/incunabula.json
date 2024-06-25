@@ -45,16 +45,36 @@
         ],
         "name": "Die Bilderfolgen der Basler Frühdrucke: Spätmittelalterliche Didaxe als Bild-Text-Lektüre",
         "publications": [
-            "Graf Kathrin (2011), Klerikersatiren in Bild und Text. Zur Kompilationstechnik im Narrenschiff, in Krause Karin u. Schellewald Barbara (ed.), 205-227.",
-            "Krause Karin u. Schellewald Barbara (ed.) (2011), Bild und Text im Mittelalter.",
-            "Rosenthaler Lukas u. Ryf Patrick (2009), Incunabula Basilea: A Web 2.0 Application as Research Tool to Early Prints, in Archiving, 6, 175-177.",
-            "Rosenthaler Lukas u. Schweizer Tobias (2012), SALSAH - eine webbasierte Forschungsplattform für die Geisteswissenschaften, in SAGW Bulletin, 32-33.",
-            "Rosenthaler Lukas, Virtual Research Environments. A New Approach for Dealing with Digitized Sources in Research in Arts and Humanities, in Clivaz Claire (ed.), ebook auf der Plattform http://www.ppur.info/lire-demain.html, Lausanne, 661-670.",
-            "Ryf Patrick u. Rosenthaler Lukas (2010), SALSAH: System for Annotation and Linkage of Sources in Arts and Humanities. Eine Web 2.0 Applikation zur wissenschaftlichen Betrachtung und Bearbeitung von historischem Bild- und Textmaterial, in Bienert Andreas u.a. (ed.), GFaI, Berlin, 123-126.",
-            "Schmitt Lothar (2009), Sebastian Brant, Albrecht Dürer und das Narrenschiff, in Wolfenbütteler Abhandlungen zur Renaissanceforschung, 26, 347-412.",
-            "Schmitt Lothar (2010), Mehr als Dürer. Die Ilustrationen in Friedrich Riederers \"Spiegel der wahren Rhetorik\", in Knape Joachim u. Luppold Stefanie (ed.), 191-216.",
-            "Schweizer Tobias u. Rosenthaler Lukas (2011), SALSAH - eine virtuelle Forschungsumgebung für die Geisteswissenschaften, in Bienert Andreas u.a. (ed.), GFaI, Berlin, 147-153.",
-            "Schweizer Tobias, Development of a Topographical Transcription Method, in Clivaz Claire u. a. (ed.), ebook, auf der Plattform http://www.ppur.info/lire-demain.html, Lausanne, 671-680."
+            {
+                "text": "Graf Kathrin (2011), Klerikersatiren in Bild und Text. Zur Kompilationstechnik im Narrenschiff, in Krause Karin u. Schellewald Barbara (ed.), 205-227."
+            },
+            {
+                "text": "Krause Karin u. Schellewald Barbara (ed.) (2011), Bild und Text im Mittelalter."
+            },
+            {
+                "text": "Rosenthaler Lukas u. Ryf Patrick (2009), Incunabula Basilea: A Web 2.0 Application as Research Tool to Early Prints, in Archiving, 6, 175-177."
+            },
+            {
+                "text": "Rosenthaler Lukas u. Schweizer Tobias (2012), SALSAH - eine webbasierte Forschungsplattform für die Geisteswissenschaften, in SAGW Bulletin, 32-33."
+            },
+            {
+                "text": "Rosenthaler Lukas, Virtual Research Environments. A New Approach for Dealing with Digitized Sources in Research in Arts and Humanities, in Clivaz Claire (ed.), ebook auf der Plattform http://www.ppur.info/lire-demain.html, Lausanne, 661-670."
+            },
+            {
+                "text": "Ryf Patrick u. Rosenthaler Lukas (2010), SALSAH: System for Annotation and Linkage of Sources in Arts and Humanities. Eine Web 2.0 Applikation zur wissenschaftlichen Betrachtung und Bearbeitung von historischem Bild- und Textmaterial, in Bienert Andreas u.a. (ed.), GFaI, Berlin, 123-126."
+            },
+            {
+                "text": "Schmitt Lothar (2009), Sebastian Brant, Albrecht Dürer und das Narrenschiff, in Wolfenbütteler Abhandlungen zur Renaissanceforschung, 26, 347-412."
+            },
+            {
+                "text": "Schmitt Lothar (2010), Mehr als Dürer. Die Ilustrationen in Friedrich Riederers \"Spiegel der wahren Rhetorik\", in Knape Joachim u. Luppold Stefanie (ed.), 191-216."
+            },
+            {
+                "text": "Schweizer Tobias u. Rosenthaler Lukas (2011), SALSAH - eine virtuelle Forschungsumgebung für die Geisteswissenschaften, in Bienert Andreas u.a. (ed.), GFaI, Berlin, 147-153."
+            },
+            {
+                "text": "Schweizer Tobias, Development of a Topographical Transcription Method, in Clivaz Claire u. a. (ed.), ebook, auf der Plattform http://www.ppur.info/lire-demain.html, Lausanne, 671-680."
+            }
         ],
         "url": {
             "__type": "URL",

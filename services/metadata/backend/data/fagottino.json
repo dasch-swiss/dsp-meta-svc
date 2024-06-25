@@ -71,10 +71,26 @@
         ],
         "name": "Fagottini and tenoroons: small-sized bassoons from the 18th and 19th centuries",
         "publications": [
-            "Agrell, Donna and Domínguez, Áurea, “Fagottini and tenoroons: small, forgotten giants”, The Double Reed 42/2 (2019), 57–68.",
-            "Agrell, Donna and Domínguez, Áurea, “Small-sized bassoons from the eighteenth and nineteenth centuries under investigation”, Glareana 67/2 (2018), 58–74. Full text available: http://www.gefam.ch/uploads/Glareana_67_2018_2.pdf.",
-            "Domínguez, Áurea,“Fagottino in the Philharmonie de Paris: Researching the largest collection of small-sized bassoons”, in: Glareana 68/2, (2019), 6–19.",
-            "Domínguez, Áurea. “The Romantic bassoon understood by 19th century performers.” In Geschichte, Bauweise und Repertoire des Fagotts. Michaelstein: Wissner-Verlag (2020), 153–171."
+            {
+                "text": "Agrell, Donna and Domínguez, Áurea, “Fagottini and tenoroons: small, forgotten giants”, The Double Reed 42/2 (2019), 57–68."
+            },
+           {
+                "text": "Agrell, Donna and Domínguez, Áurea, “Small-sized bassoons from the eighteenth and nineteenth centuries under investigation”, Glareana 67/2 (2018), 58–74. Full text available: ",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "http://www.gefam.ch/uploads/Glareana_67_2018_2.pdf",
+                        "text": "http://www.gefam.ch/uploads/Glareana_67_2018_2.pdf"
+                    }
+                ]
+            },
+            {
+                "text": "Domínguez, Áurea,“Fagottino in the Philharmonie de Paris: Researching the largest collection of small-sized bassoons”, in: Glareana 68/2, (2019), 6–19."
+            },
+            {
+                "text": "Domínguez, Áurea. “The Romantic bassoon understood by 19th century performers.” In Geschichte, Bauweise und Repertoire des Fagotts. Michaelstein: Wissner-Verlag (2020), 153–171."
+            }
         ],
         "shortcode": "0845",
         "spatialCoverage": [

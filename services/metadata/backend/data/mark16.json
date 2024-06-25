@@ -66,32 +66,188 @@
         ],
         "name": "MARK16",
         "publications": [
-            "Burnet, Régis and Claire Clivaz, “The Freer-Logion (Mark 16:14): GA 032, Jerome, and Erasmus”, TC: A Journal of Biblical Textual Criticism 28 (2023), forthcoming.",
-            "Clivaz, Claire, “Marc 15,34 dans le codex de Bèze et le codex Bobbiensis”, dans Jean-Claude Haelewyck et Laurent Pinchard (éd.), Traditions et traductions des textes bibliques. Études en l’hommage de Christian Bernard Amphoux à l’occasion de son 80e anniversaire, Bruxelles: Safran, forthcoming.",
-            "Clivaz, Claire, “Lk 22:43-44 and Judeo-Christian Memories”, Revue des Etudes Juives 182/2 (2023), forthcoming.",
-            "Clivaz, Claire, “New Testament Textual Criticism and Digital Humanities”, in Sidnie White Crawford and Tommy Wasserman (ed.), The Oxford Handbook of the Textual Criticism of the Bible. Oxford & New York: OUP (forthcoming).",
-            "Clivaz, Claire, “New Testament Textual Criticism from the Margins to the Center: Jesus Desire and Manuscripts in Lk 22:43–44”, in J. Keith Elliott and L. Pinchard (eds.), The Variety and Importance of the Scriptural Witnesses to the so-called ‘Western’ Text. Diversité et importance des témoins scripturaires du texte « occidental » (NTTSD 65), Brill, 2023, p. 56-75 ; forthcoming (SNSF OA grant).",
-            "Clivaz, Claire, Monier, Mina and Batovici, Dan (eds.), Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming.",
-            "Clivaz, Claire, “ A Multilingual Turn: Introducing the MARK16 COMSt Bulletin”, in Claire Clivaz, Mina Monier and Dan Batovici (eds.),  Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming.",
-            "Mina Monier, “ ‘According to the Egyptians’: Mark 16 in GA 72”, in Claire Clivaz, Mina Monier and Dan Batovici (eds.),  Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming.",
-            "Monier, Mina and Nury, Elisa, “The SNSF MARK16 Project. The first virtual research environment focused on a biblical chapter”, Poster presented at the 2022 DARIAH-CH study day (Mendrisio, 20.10.22), https://zenodo.org/record/7248296",
-            "Monier, Mina. 2022. “Mark’s Endings in Context: Paratexts and Codicological Remarks” Religions 13, no. 6: 548, https://doi.org/10.3390/rel13060548",
-            "Clivaz, Claire, “Editer le Nouveau Testament à l’heure du numérique”, Bulletin de l’Académie des Sciences humaines et sociales 3 (2021), p. 37-40.",
-            "Monier, Mina, “Mark’s Ending in the Digital Age: Paratextual Evidence, New Findings and Transcription Challenges”, Postscripts: The Journal of Sacred Texts, Cultural Histories, and Contemporary Contexts 12 (2021/1), p. 75-98.",
-            "Clivaz, Claire, and Garrick V. Allen (eds.), “Ancient Manuscripts and Virtual Research Environments” Special issue, Classics@ 18 (2021) https://classics-at.chs.harvard.edu/volume/classics18-ancient-manuscripts-and-virtual-research-environments/",
-            "Clivaz, Claire. “Looking at Scribal Practices in the Endings of Mark 16”, Henoch 42 (2020/2), ed. P. Pouchelle and J.-S. Rey, p. 373-387.",
-            "Clivaz, Claire, “Mk 16 im Codex Bobbiensis. Neue Materialien zur conclusio brevior des Markusevangeliums”, Zeitschrift für Neues Testament 47/24 (2021), p. 59-85.",
-            "Clivaz, Claire, Mina Monier and Jonathan Barda, “MARK16 as Virtual Research Environment. Challenges and Opportunities in New Testament Studies”, Classics@ 18 (2021) [n.p.],  https://classics-at.chs.harvard.edu/classics18-clivaz-monier-barda/.",
-            "Clivaz, Claire, and Garrick V. Allen. “Introduction.” In “Ancient Manuscripts and Virtual Research Environments”, Classics@ 18 (2021), [N.p.] https://classics-at.chs.harvard.edu/classics18-introduction/.",
-            "Clivaz, Claire and Garrick Allen, “Conference report: Ancient Manuscripts and Virtual Research Environments. Lausanne 10-11 September 2020”, COMSt Bulletin 6/2, 2020, p. 205-208; 10.25592/uhhfdm.8477, https://www.fdr.uni-hamburg.de/record/8477",
-            "Clivaz, Claire, “Le Nouveau Testament numérique, un Novum Instrumentum omne ?”, Cahiers bibliques. Foi et Vie 123 (2020/5), p. 4-11; https://www.foi-et-vie.fr/archive/article.php?code=4267.",
-            "Clivaz, Claire, “New Testament and Digital Humanities”, Verkündigung und Forschung 65 (2020/2), p. 98-104; https://www.degruyter.com/document/doi/10.14315/vf-2020-650205/pdf",
-            "Clivaz, Claire, Mina Monier and Jonathan Barda, MARK16 (virtual research environment), DH+, SIB Swiss Institute of Bioinformatics, Lausanne (CH), 2020, ISSN 2673-9836, https://mark16.sib.swiss",
-            "Clivaz, Claire. “Lire la Bible à l’ère du numérique: entre contraintes et nouveaux horizons.” Lumen Vitae LXXV (2020/2), p. 167-177; https://www.cairn.info/revue-lumen-vitae-2020-2-page-167.htm",
-            "Clivaz, Claire, “Der Markusschluss : Narratologie und Traditiongeschichte, written by Andreas Seifert”, Novum Testamentum 62/1 (2019), p. 107-108.",
-            "Clivaz, Claire. “Returning to Mark 16,8: What’s New?” Ephemerides Theologicae Lovanienses 96/4 (2019), p. 645-659; https://dx.doi.org/10.2143/ETL.95.4.3286928",
-            "Monier, Mina, “GA 304, Theophylact’s Commentary and the Ending of Mark”, Filología Neotestamentaria 52 (2019), p. 94-106; https://reader.digitalbooks.pro/book/preview/125526/filo-8?1574842521282",
-            "Clivaz, Claire, “The Impact of Digital Research: Thinking about the MARK16 Project.” Open Theology 5/1 (2019): 1-12;  https://doi.org/10.1515/opth-2019-0001"
+            {
+                "text": "Burnet, Régis and Claire Clivaz, “The Freer-Logion (Mark 16:14): GA 032, Jerome, and Erasmus”, TC: A Journal of Biblical Textual Criticism 28 (2023), forthcoming."
+            },
+            {
+                "text": "Clivaz, Claire, “Marc 15,34 dans le codex de Bèze et le codex Bobbiensis”, dans Jean-Claude Haelewyck et Laurent Pinchard (éd.), Traditions et traductions des textes bibliques. Études en l’hommage de Christian Bernard Amphoux à l’occasion de son 80e anniversaire, Bruxelles: Safran, forthcoming."
+            },
+            {
+                "text": "Clivaz, Claire, “Lk 22:43-44 and Judeo-Christian Memories”, Revue des Etudes Juives 182/2 (2023), forthcoming."
+            },
+            {
+                "text": "Clivaz, Claire, “New Testament Textual Criticism and Digital Humanities”, in Sidnie White Crawford and Tommy Wasserman (ed.), The Oxford Handbook of the Textual Criticism of the Bible. Oxford & New York: OUP (forthcoming)."
+            },
+            {
+                "text": "Clivaz, Claire, “New Testament Textual Criticism from the Margins to the Center: Jesus Desire and Manuscripts in Lk 22:43–44”, in J. Keith Elliott and L. Pinchard (eds.), The Variety and Importance of the Scriptural Witnesses to the so-called ‘Western’ Text. Diversité et importance des témoins scripturaires du texte « occidental » (NTTSD 65), Brill, 2023, p. 56-75 ; forthcoming (SNSF OA grant)."
+            },
+            {
+                "text": "Clivaz, Claire, Monier, Mina and Batovici, Dan (eds.), Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming."
+            },
+            {
+                "text": "Clivaz, Claire, “ A Multilingual Turn: Introducing the MARK16 COMSt Bulletin”, in Claire Clivaz, Mina Monier and Dan Batovici (eds.), Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming."
+            },
+            {
+                "text": "Mina Monier, “ ‘According to the Egyptians’: Mark 16 in GA 72”, in Claire Clivaz, Mina Monier and Dan Batovici (eds.), Mark 16 in its diverse textual traditions and transmissions, COMSt Bulletin 8/2 (2022), forthcoming."
+            },
+            {
+                "text": "Monier, Mina and Nury, Elisa, “The SNSF MARK16 Project. The first virtual research environment focused on a biblical chapter”, Poster presented at the 2022 DARIAH-CH study day (Mendrisio, 20.10.22),",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://zenodo.org/record/7248296",
+                        "text": "https://zenodo.org/record/7248296"
+                    }
+                ]
+            },
+            {
+                "text": "Monier, Mina. 2022. “Mark’s Endings in Context: Paratexts and Codicological Remarks” Religions 13, no. 6: 548,",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.3390/rel13060548",
+                        "text": "DOI: 10.3390/rel13060548"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, “Editer le Nouveau Testament à l’heure du numérique”, Bulletin de l’Académie des Sciences humaines et sociales 3 (2021), p. 37-40."
+            },
+            {
+                "text": "Monier, Mina, “Mark’s Ending in the Digital Age: Paratextual Evidence, New Findings and Transcription Challenges”, Postscripts: The Journal of Sacred Texts, Cultural Histories, and Contemporary Contexts 12 (2021/1), p. 75-98."
+            },
+            {
+                "text": "Clivaz, Claire, and Garrick V. Allen (eds.), “Ancient Manuscripts and Virtual Research Environments” Special issue, Classics@ 18 (2021)",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://classics-at.chs.harvard.edu/volume/classics18-ancient-manuscripts-and-virtual-research-environments/",
+                        "text": "https://classics-at.chs.harvard.edu/volume/..."
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire. “Looking at Scribal Practices in the Endings of Mark 16”, Henoch 42 (2020/2), ed. P. Pouchelle and J.-S. Rey, p. 373-387."
+            },
+            {
+                "text": "Clivaz, Claire, “Mk 16 im Codex Bobbiensis. Neue Materialien zur conclusio brevior des Markusevangeliums”, Zeitschrift für Neues Testament 47/24 (2021), p. 59-85."
+            },
+            {
+                "text": "Clivaz, Claire, Mina Monier and Jonathan Barda, “MARK16 as Virtual Research Environment. Challenges and Opportunities in New Testament Studies”, Classics@ 18 (2021) [n.p.],",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://classics-at.chs.harvard.edu/classics18-clivaz-monier-barda/",
+                        "text": "https://classics-at.chs.harvard.edu/classics18-clivaz-monier-barda/"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, and Garrick V. Allen. “Introduction.” In “Ancient Manuscripts and Virtual Research Environments”, Classics@ 18 (2021), [N.p.]",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://classics-at.chs.harvard.edu/classics18-introduction/",
+                        "text": "https://classics-at.chs.harvard.edu/classics18-introduction/"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire and Garrick Allen, “Conference report: Ancient Manuscripts and Virtual Research Environments. Lausanne 10-11 September 2020”, COMSt Bulletin 6/2, 2020, p. 205-208; 10.25592/uhhfdm.8477,",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.fdr.uni-hamburg.de/record/8477",
+                        "text": "https://www.fdr.uni-hamburg.de/record/8477"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, “Le Nouveau Testament numérique, un Novum Instrumentum omne ?”, Cahiers bibliques. Foi et Vie 123 (2020/5), p. 4-11;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.foi-et-vie.fr/archive/article.php?code=4267",
+                        "text": "https://www.foi-et-vie.fr/archive/article.php?code=4267"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, “New Testament and Digital Humanities”, Verkündigung und Forschung 65 (2020/2), p. 98-104;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://www.degruyter.com/document/doi/10.14315/vf-2020-650205/pdf",
+                        "text": "degruyter.com/document/doi/10.14315/vf-2020-650205/pdf"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, Mina Monier and Jonathan Barda, MARK16 (virtual research environment), DH+, SIB Swiss Institute of Bioinformatics, Lausanne (CH), 2020, ISSN 2673-9836,",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://mark16.sib.swiss",
+                        "text": "https://mark16.sib.swiss"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire. “Lire la Bible à l’ère du numérique: entre contraintes et nouveaux horizons.” Lumen Vitae LXXV (2020/2), p. 167-177;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.cairn.info/revue-lumen-vitae-2020-2-page-167.htm",
+                        "text": "https://www.cairn.info/revue-lumen-vitae-2020-2-page-167.htm"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, “Der Markusschluss : Narratologie und Traditiongeschichte, written by Andreas Seifert”, Novum Testamentum 62/1 (2019), p. 107-108."
+            },
+            {
+                "text": "Clivaz, Claire. “Returning to Mark 16,8: What’s New?” Ephemerides Theologicae Lovanienses 96/4 (2019), p. 645-659;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://dx.doi.org/10.2143/ETL.95.4.3286928",
+                        "text": "dx.doi.org/10.2143/ETL.95.4.3286928"
+                    }
+                ]
+            },
+            {
+                "text": "Monier, Mina, “GA 304, Theophylact’s Commentary and the Ending of Mark”, Filología Neotestamentaria 52 (2019), p. 94-106;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://reader.digitalbooks.pro/book/preview/125526/filo-8?1574842521282",
+                        "text": "https://reader.digitalbooks.pro/book/preview/125526/filo-8?1574842521282"
+                    }
+                ]
+            },
+            {
+                "text": "Clivaz, Claire, “The Impact of Digital Research: Thinking about the MARK16 Project.” Open Theology 5/1 (2019): 1-12;",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1515/opth-2019-0001",
+                        "text": "DOI: 10.1515/opth-2019-0001"
+                    }
+                ]
+            }
         ],
         "shortcode": "0844",
         "spatialCoverage": [

@@ -52,8 +52,28 @@
         ],
         "name": "Big Data in Agriculture: The Making of Smart Farms",
         "publications": [
-            "Klauser, FR.: Surveillance Farms: Towards a Research Agenda on Big Data in Agriculture, Surveillance & Society, 16(3), 370-378, https://doi.org/10.24908/ss.v16i3.12594, 2020.",
-            "Pauschinger, D. and Klauser, F.: Räume des Experimentierens: Die Einführung von Sprühdrohnen in der digitalen Landwirtschaft, Geogr. Helv., 75, 325–336, https://doi.org/10.5194/gh-75-325-2020, 2020."
+            {
+                "text": "Klauser, FR.: Surveillance Farms: Towards a Research Agenda on Big Data in Agriculture, Surveillance & Society, 16(3), 370-378, 2020.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.24908/ss.v16i3.12594",
+                        "text": "DOI: 10.24908/ss.v16i3.12594"
+                    }
+                ]
+            },
+            {
+                "text": "Pauschinger, D. and Klauser, F.: Räume des Experimentierens: Die Einführung von Sprühdrohnen in der digitalen Landwirtschaft, Geogr. Helv., 75, 325–336, 2020.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.5194/gh-75-325-2020",
+                        "text": "DOI: 10.5194/gh-75-325-2020"
+                    }
+                ]
+            }
         ],
         "shortcode": "082D",
         "spatialCoverage": [

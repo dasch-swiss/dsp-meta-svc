@@ -54,7 +54,17 @@
         ],
         "name": "Globalgeschichtliche Perspektiven im Schweizer Geschichtsunterricht",
         "publications": [
-            "https://irf.fhnw.ch/handle/11654/31495"
+            {
+                "text": "",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://irf.fhnw.ch/handle/11654/31495",
+                        "text": "https://irf.fhnw.ch/handle/11654/31495"
+                    }
+                ]
+            }
         ],
         "shortcode": "084A",
         "spatialCoverage": [

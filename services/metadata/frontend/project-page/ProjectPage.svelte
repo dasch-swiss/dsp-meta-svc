@@ -160,9 +160,27 @@
             <span class="label new-subtitle">Publications</span>
             {#each $projectMetadata?.project.publications as p, i}
               {#if i > 1}
-                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p}</span>
+                <span class={arePublicationsExpanded ? "data new-text" : "hidden"}>{p.text}
+                  {#if p.url}
+                    {#each p.url as url, n}
+                      <a href={url.url} class="publication-link {arePublicationsExpanded ? "data" : "hidden"}" target=_>
+                        {url.text}
+                        {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
+                      </a>
+                    {/each}
+                  {/if}
+                </span>
               {:else}
-                <span class="data new-text">{p}</span>
+                <span class="data new-text">{p.text}
+                  {#if p.url}
+                    {#each p.url as url, n}
+                      <a href={url.url} class="publication-link {arePublicationsExpanded ? "data" : "hidden"}" target=_>
+                        {url.text}
+                        {p.url.length > 0 && n < p.url.length - 1 ? "," : ""}
+                      </a>
+                    {/each}
+                  {/if}
+                </span>
               {/if}
             {/each}
           </div>
@@ -285,6 +303,13 @@
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .publication-link {
+    display: contents;
+    color: var(--lead-colour);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   button.language {
     width: 80px;

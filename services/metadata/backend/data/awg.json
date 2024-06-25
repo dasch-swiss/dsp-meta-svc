@@ -82,7 +82,17 @@
         ],
         "name": "Anton Webern Gesamtausgabe",
         "publications": [
-            "See https://www.anton-webern.ch/index.php?id=87"
+            {
+                "text": "See",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.anton-webern.ch/index.php?id=87",
+                        "text": "https://www.anton-webern.ch/index.php?id=87"
+                    }
+                ]
+            }
         ],
         "shortcode": "0806",
         "spatialCoverage": [

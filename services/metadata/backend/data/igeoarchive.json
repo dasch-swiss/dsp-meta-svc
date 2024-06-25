@@ -79,16 +79,16 @@
                 "en": "Micromorphology"
             },
             {
-                "en": "Petrography" 
+                "en": "Petrography"
             },
             {
-                "en": "Thin Section" 
+                "en": "Thin Section"
             },
             {
-                "en": "Microphotographs" 
+                "en": "Microphotographs"
             },
             {
-                "en": "Microartifacts" 
+                "en": "Microartifacts"
             },
             {
                 "de": "Geoarchäologie"
@@ -103,27 +103,29 @@
                 "de": "Mikromorphologie"
             },
             {
-                "de": "Petrographie" 
+                "de": "Petrographie"
             },
             {
-                "de": "Dünnschliff" 
+                "de": "Dünnschliff"
             },
             {
-                "de": "Mikroskopie" 
+                "de": "Mikroskopie"
             },
             {
-                "de": "Mikroskopfoto" 
+                "de": "Mikroskopfoto"
             },
             {
-                "de": "Mikroartefakte" 
+                "de": "Mikroartefakte"
             },
-            {   
+            {
                 "de": "Archäologische Schichten"
             }
         ],
         "name": "I-GEOARCHive",
         "publications": [
-            "Lo Russo, S., Brönnimann, D., Pümpin, C., Ismail-Meyer, K., Rentzel, P., Gautschy, R., Wimmer, J., Devos, Y., Nys, K: Recording, sharing and linking micromorphological data: A two-pillar database system, Open Archaeology (submitted)."
+            {
+                "text": "Lo Russo, S., Brönnimann, D., Pümpin, C., Ismail-Meyer, K., Rentzel, P., Gautschy, R., Wimmer, J., Devos, Y., Nys, K: Recording, sharing and linking micromorphological data: A two-pillar database system, Open Archaeology (submitted)."
+            }
         ],
         "shortcode": "0838",
         "spatialCoverage": [
@@ -152,7 +154,7 @@
             "url": "https://app.dasch.swiss/project/n0eRr0vWTDOArdaBAZ-jQQ",
             "text": "Discover Project Data"
         }
-},
+    },
     "datasets": [
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0838-dataset-000",
@@ -199,7 +201,6 @@
                 }
             ],
             "attributions": [
-                
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-0838-person-000",

@@ -65,15 +65,41 @@
         ],
         "name": "A Gender Perspective on Film Character and Stardom: Studying the Production of Film Representations in the Forties (Claude Autant-Lara Collection, Swiss Film Archive)",
         "publications": [
-            "Boillat Alain (2019), Jean-Pierre Bleys, Claude Autant-Lara, in 1895. Revue de l’association française de recherche sur l’histoire du cinéma, 88, 167-176.",
-            "Boillat Alain (2020), L'adaptation d'En cas de malheur par Autant-Lara, Aurenche et Bost : une génère scénaristique en contexte, in TRACES, 3, 23-40.",
-            "Boillat Alain (2020), « Dans les coulisses de la fabrique du personnage : les archives scénaristiques au service des star studies », dans Manon Billaud et Mélissa Gignac (dir.), Quel(s) scénario(s) pour quelle(s) approche(s) du cinéma ?, Paris, AFRHC, chapitre 7.",
-            "Boillat Alain, Maire Frédéric (2019), Sharing Knowledge between University and Cinémathèque, in Iluminace. The Journal of Film Theory, History, and Aesthetics, 31(1), 45-57.",
-            "Boillat, Alain (2020), En En cas de malheur de Simenon à Autant-Lara. Essai de génétique scénaristique, Genève, Droz.",
-            "Chedaleux Delphine (2020), Fabrique et réceptions du pouvoir féminin : Danielle Darrieux dans Le Bon Dieu sans confession, in LeGras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 203-218.",
-            "Rohner Jeanne (2018), Les états du personnage : du scénario au film, in Fabula : la recherche en littérature, https://www.fabula.org/atelier.php?Personnage_filmique.",
-            "Rohner Jeanne (2018), « Occupe-toi d'Amélie! (Claude Autant-Lara, 1949): le théâtre à l'écran », in Philippe Gilles, Boillat Alain (ed.), Impressions Nouvelles, Bruxelles, 205-229.",
-            "Rohner Jeanne (2020), Danielle Darrieux dans Occupe-toi d’Amélie..! Genèse d’une résurrection, in Le Gras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 163-174."
+            {
+                "text": "Boillat Alain (2019), Jean-Pierre Bleys, Claude Autant-Lara, in 1895. Revue de l’association française de recherche sur l’histoire du cinéma, 88, 167-176."
+            },
+            {
+                "text": "Boillat Alain (2020), L'adaptation d'En cas de malheur par Autant-Lara, Aurenche et Bost : une génère scénaristique en contexte, in TRACES, 3, 23-40."
+            },
+            {
+                "text": "Boillat Alain (2020), « Dans les coulisses de la fabrique du personnage : les archives scénaristiques au service des star studies », dans Manon Billaud et Mélissa Gignac (dir.), Quel(s) scénario(s) pour quelle(s) approche(s) du cinéma ?, Paris, AFRHC, chapitre 7."
+            },
+            {
+                "text": "Boillat Alain, Maire Frédéric (2019), Sharing Knowledge between University and Cinémathèque, in Iluminace. The Journal of Film Theory, History, and Aesthetics, 31(1), 45-57."
+            },
+            {
+                "text": "Boillat, Alain (2020), En En cas de malheur de Simenon à Autant-Lara. Essai de génétique scénaristique, Genève, Droz."
+            },
+            {
+                "text": "Chedaleux Delphine (2020), Fabrique et réceptions du pouvoir féminin : Danielle Darrieux dans Le Bon Dieu sans confession, in LeGras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 203-218."
+            },
+            {
+                "text": "Rohner Jeanne (2018), Les états du personnage : du scénario au film, in Fabula : la recherche en littérature,",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://www.fabula.org/atelier.php?Personnage_filmique",
+                        "text": "https://www.fabula.org/atelier.php?Personnage_filmique"
+                    }
+                ]
+            },
+            {
+                "text": "Rohner Jeanne (2018), « Occupe-toi d'Amélie! (Claude Autant-Lara, 1949): le théâtre à l'écran », in Philippe Gilles, Boillat Alain (ed.), Impressions Nouvelles, Bruxelles, 205-229."
+            },
+            {
+                "text": "Rohner Jeanne (2020), Danielle Darrieux dans Occupe-toi d’Amélie..! Genèse d’une résurrection, in Le Gras Gwénaëlle, Sellier Geneviève (ed.), Presses Universitaires de Bordeaux, Pessac, 163-174."
+            }
         ],
         "shortcode": "0107",
         "spatialCoverage": [

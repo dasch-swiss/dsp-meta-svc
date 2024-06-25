@@ -44,7 +44,17 @@
         ],
         "name": "Delille",
         "publications": [
-            "https://delille.philhist.unibas.ch/dokuwiki/doku.php?id=start"
+            {
+                "text": "",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "URL",
+                        "url": "https://delille.philhist.unibas.ch/dokuwiki/doku.php?id=start",
+                        "text": "https://delille.philhist.unibas.ch/dokuwiki/doku.php?id=start"
+                    }
+                ]
+            }
         ],
         "shortcode": "081B",
         "spatialCoverage": [

@@ -50,7 +50,9 @@
         ],
         "name": "vitrosearch: stained glass and glass art in Switzerland online",
         "publications": [
-            "Amsler, S. (2019). Quoi de neuf? : vitrosearch au service du patrimoine verrier. Annales fribourgeoises, 81, 93–100."
+            {
+                "text": "Amsler, S. (2019). Quoi de neuf? : vitrosearch au service du patrimoine verrier. Annales fribourgeoises, 81, 93–100."
+            }
         ],
         "shortcode": "0816",
         "spatialCoverage": [

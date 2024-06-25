@@ -97,13 +97,27 @@
         ],
         "name": "Aura und Effizienz. Leistungsorientierte Materialisierung und Spiritualisierung in der Literatur der 1920-30er-Jahre: Emmy Hennings, Marieluise Fleisser, Friedrich Glauser und Bruno Goetz",
         "publications": [
-            "Bollag, Jael: „‚Das Brutale kann man nicht bezaubern‘. Emmy Hennings’ literarische Genealogie der Strafe“, in: Hubert Thüring, Ulrich Weber (Hg.): Literatur und Institutionen – Deutschschweizer Literatur zwischen Heteronomie und Autonomie. Zürich: Chronos 2023, S. 27-44.",
-            "Bollag, Jael; Thüring, Hubert; Wolf, Katharina (Hg.): Aura und Effizienz. Materialisierung und Spiritualisierung in literarischen Texten von 1900-1939. München: Fink [2024].",
-            "Bollag, Jael: „Zum Verhältnis von Materialisierung und Spiritualisierung bei Emmy Hennings“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024].",
-            "Thüring, Hubert: “Literatur und Arbeit in der Merkwelt der Moderne. Meinrad Inglins Grand Hotel Excelsior und Walter Benjamins Modernetheorien im Licht von Hannah Arendts ‚Vita activa‘“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024].",
-            "Wolf, Katharina: „Zwischen Alchemie und Radioaktivität. Charisma und Leistungsdenken bei Bruno Goetz“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024].",
-            "Wolf, Katharina: „Bruno Goetz’ Ästhetik der Selbstüberschreitung – ein vergessener Kreuzungspunkt expressionistischen Schreibens“. In: Eichhorn, Kristin / Lorenzen, Johannes S. (Hg.): Internationaler Expressionismus – gestern und heute, Berlin: Neofelis 2023.",
-            "Wolf, Katharina: „Der Künstler und die Zeitkrankheit“. In: Wolfinger, Kay (Hg.): Hugo Ball Handbuch, Stuttgart: Metzler [2024]."
+            {
+                "text": "Bollag, Jael: „‚Das Brutale kann man nicht bezaubern‘. Emmy Hennings’ literarische Genealogie der Strafe“, in: Hubert Thüring, Ulrich Weber (Hg.): Literatur und Institutionen – Deutschschweizer Literatur zwischen Heteronomie und Autonomie. Zürich: Chronos 2023, S. 27-44."
+            },
+            {
+                "text": "Bollag, Jael; Thüring, Hubert; Wolf, Katharina (Hg.): Aura und Effizienz. Materialisierung und Spiritualisierung in literarischen Texten von 1900-1939. München: Fink [2024]."
+            },
+            {
+                "text": "Bollag, Jael: „Zum Verhältnis von Materialisierung und Spiritualisierung bei Emmy Hennings“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024]."
+            },
+            {
+                "text": "Thüring, Hubert: “Literatur und Arbeit in der Merkwelt der Moderne. Meinrad Inglins Grand Hotel Excelsior und Walter Benjamins Modernetheorien im Licht von Hannah Arendts ‚Vita activa‘“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024]."
+            },
+            {
+                "text": "Wolf, Katharina: „Zwischen Alchemie und Radioaktivität. Charisma und Leistungsdenken bei Bruno Goetz“, in: Bollag, Thüring, Wolf (Hg.): Aura und Effizienz [2024]."
+            },
+            {
+                "text": "Wolf, Katharina: „Bruno Goetz’ Ästhetik der Selbstüberschreitung – ein vergessener Kreuzungspunkt expressionistischen Schreibens“. In: Eichhorn, Kristin / Lorenzen, Johannes S. (Hg.): Internationaler Expressionismus – gestern und heute, Berlin: Neofelis 2023."
+            },
+            {
+                "text": "Wolf, Katharina: „Der Künstler und die Zeitkrankheit“. In: Wolfinger, Kay (Hg.): Hugo Ball Handbuch, Stuttgart: Metzler [2024]."
+            }
         ],
         "shortcode": "0846",
         "spatialCoverage": [

@@ -52,8 +52,28 @@
             }
         ],
         "publications": [
-            "Obrist B, Dillip A, Kalolo A, Mayumana IM, Rutishauser M, Simon VT. Savings Groups for Social Health Protection: A Social Resilience Study in Rural Tanzania. Diseases. 2022; 10(3):63. https://doi.org/10.3390/diseases10030063.",
-            "Dillip A, Kalolo A, Mayumana I, Rutishauser M, Simon VT, Obrist B. Linking the Community Health Fund with Accredited Drug Dispensing Outlets in Tanzania: exploring potentials, pitfalls, and modalities. J Pharm Policy Pract. 2022 Dec 29;15(1):106. https://doi.org/10.1186/s40545-022-00507-y. PMID: 36582002; PMCID: PMC9801564."
+            {
+                "text": "Obrist B, Dillip A, Kalolo A, Mayumana IM, Rutishauser M, Simon VT. Savings Groups for Social Health Protection: A Social Resilience Study in Rural Tanzania. Diseases. 2022; 10(3):63.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.3390/diseases10030063",
+                        "text": "DOI: 10.3390/diseases10030063"
+                    }
+                ]
+            },
+            {
+                "text": "Dillip A, Kalolo A, Mayumana I, Rutishauser M, Simon VT, Obrist B. Linking the Community Health Fund with Accredited Drug Dispensing Outlets in Tanzania: exploring potentials, pitfalls, and modalities. J Pharm Policy Pract. 2022 Dec 29;15(1):106. PMID: 36582002; PMCID: PMC9801564.",
+                "url": [
+                    {
+                        "__type": "URL",
+                        "type": "DOI",
+                        "url": "https://doi.org/10.1186/s40545-022-00507-y",
+                        "text": "DOI: 10.1186/s40545-022-00507-y"
+                    }
+                ]
+            }
         ],
         "name": "Participation in Social Health Protection: An Anthropological Case Study in Tanzania",
         "shortcode": "083D",

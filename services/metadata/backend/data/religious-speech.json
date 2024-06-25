@@ -62,20 +62,48 @@
         ],
         "name": "Religious speech embarrassed, radio debates and controversies around gender: Switzerland and France, 2006-2016",
         "publications": [
-            "Douyère David, Gonzalez Philippe (ed.), La religion sous le regard du tiers, Questions de communication, Metz.",
-            "Gonzalez Philippe (2019), Inaugurer une mosquée à Genève: médiatisation ambiguë, dialogue interreligieux et gestion du pluralisme, in Salzbrunn Monika (ed.), Labor et Fides, Genève, 245-275.",
-            "Gonzalez Philippe, Dieu parle en public : la prophétie charismatique, de l’intimité à la politique, in Pragmata, 2, 1.",
-            "Gonzalez Philippe, Kaufmann Laurence, Ces croyances auxquelles nous tenons: l'épistémologie sociale à l'épreuve du créationnisme évanéglique, in Künstler Raphaël, Allouche Aurélien (ed.), Hermann, Paris, 1.",
-            "Gonzalez Philippe, Roca i Escoda Marta, La “liberté de conscience” en croisade contre l’homosexualité : enjeux d’un référendum populaire en Suisse, in Bergeaud-Blackler Florence, Stavo-Debauge Joan (ed.), Presses Universitaires de Rennes, Rennes, 1.",
-            "Gonzalez Philippe, Stavo-Debauge Joan, Roca i Escoda Marta, 2020, S’aventurer en ethnographes dans les arcanes d’une «base de données», in Ethnographiques.org.",
-            "Stavo-Debauge Joan (2018), Introduction à Dewey, Hook et Nagel, in ThéoRèmes, (13), 1-4.",
-            "Stavo-Debauge Joan (2018), Le Divin marché (de dupes). Un fondamentalisme qui ne paie pas de mine mais rapporte gros, in SociologieS, 1.",
-            "Stavo-Debauge Joan (2018), Le naturalisme de John Dewey : un antidote au post-sécularisme contemporain, in ThéoRèmes, (13), 1-34.",
-            "Stavo-Debauge Joan (2018), ‘What I Believe‘ de John Dewey : l’unique autorité de l’expérience, ou la foi en une méthode (scientifique) et en un idéal (démocratique), in Pragmata, 1, 330-346.",
-            "Stavo-Debauge Joan (ed.) (2019), John Dewey: Ecrits sur les religions et le naturalisme, Éditions IES, Genève.",
-            "Stavo-Debauge Joan, Les embarras de la parole religieuse, in Questions de communication, 37.",
-            "Stavo-Debauge Joan, L’hommage (oublié) de John Dewey à Mgr Brown, l’évêque des athées ez bolchéviques, pendant la croisade anti-évolutionniste des années 1920, in Pragmata, 2.",
-            "Stavo-Debauge Joan, Quel retour des religions? L'actualité de John Dewey face à l'absolutisme théologico-politique, Labor et Fides, Genève."
+            {
+                "text": "Douyère David, Gonzalez Philippe (ed.), La religion sous le regard du tiers, Questions de communication, Metz."
+            },
+            {
+                "text": "Gonzalez Philippe (2019), Inaugurer une mosquée à Genève: médiatisation ambiguë, dialogue interreligieux et gestion du pluralisme, in Salzbrunn Monika (ed.), Labor et Fides, Genève, 245-275."
+            },
+            {
+                "text": "Gonzalez Philippe, Dieu parle en public : la prophétie charismatique, de l’intimité à la politique, in Pragmata, 2, 1."
+            },
+            {
+                "text": "Gonzalez Philippe, Kaufmann Laurence, Ces croyances auxquelles nous tenons: l'épistémologie sociale à l'épreuve du créationnisme évanéglique, in Künstler Raphaël, Allouche Aurélien (ed.), Hermann, Paris, 1."
+            },
+            {
+                "text": "Gonzalez Philippe, Roca i Escoda Marta, La “liberté de conscience” en croisade contre l’homosexualité : enjeux d’un référendum populaire en Suisse, in Bergeaud-Blackler Florence, Stavo-Debauge Joan (ed.), Presses Universitaires de Rennes, Rennes, 1."
+            },
+            {
+                "text": "Gonzalez Philippe, Stavo-Debauge Joan, Roca i Escoda Marta, 2020, S’aventurer en ethnographes dans les arcanes d’une «base de données», in Ethnographiques.org."
+            },
+            {
+                "text": "Stavo-Debauge Joan (2018), Introduction à Dewey, Hook et Nagel, in ThéoRèmes, (13), 1-4."
+            },
+            {
+                "text": "Stavo-Debauge Joan (2018), Le Divin marché (de dupes). Un fondamentalisme qui ne paie pas de mine mais rapporte gros, in SociologieS, 1."
+            },
+            {
+                "text": "Stavo-Debauge Joan (2018), Le naturalisme de John Dewey : un antidote au post-sécularisme contemporain, in ThéoRèmes, (13), 1-34."
+            },
+            {
+                "text": "Stavo-Debauge Joan (2018), ‘What I Believe‘ de John Dewey : l’unique autorité de l’expérience, ou la foi en une méthode (scientifique) et en un idéal (démocratique), in Pragmata, 1, 330-346."
+            },
+            {
+                "text": "Stavo-Debauge Joan (ed.) (2019), John Dewey: Ecrits sur les religions et le naturalisme, Éditions IES, Genève."
+            },
+            {
+                "text": "Stavo-Debauge Joan, Les embarras de la parole religieuse, in Questions de communication, 37."
+            },
+            {
+                "text": "Stavo-Debauge Joan, L’hommage (oublié) de John Dewey à Mgr Brown, l’évêque des athées ez bolchéviques, pendant la croisade anti-évolutionniste des années 1920, in Pragmata, 2."
+            },
+            {
+                "text": "Stavo-Debauge Joan, Quel retour des religions? L'actualité de John Dewey face à l'absolutisme théologico-politique, Labor et Fides, Genève."
+            }
         ],
         "shortcode": "0101",
         "spatialCoverage": [

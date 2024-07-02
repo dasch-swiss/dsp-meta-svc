@@ -140,8 +140,8 @@ gazelle_dependencies()
 
 http_archive(
     name = "com_github_bazelbuild_buildtools",
-    strip_prefix = "buildtools-master",
-    url = "https://github.com/bazelbuild/buildtools/archive/master.zip",
+    strip_prefix = "buildtools-main",
+    url = "https://github.com/bazelbuild/buildtools/archive/main.zip",
 )
 
 ##################################

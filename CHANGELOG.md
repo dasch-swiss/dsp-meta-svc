@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.21.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.2...v1.21.0) (2024-07-02)
+
+
+### Bug Fixes
+
+* bazelbuild/buildtools: `master` ~> `main` ([#144](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/144)) ([0c5886c](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/0c5886ce5baf388a71137ba48286da3811eeeb89))
+* cc license for bmf ([#143](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/143)) ([9ec8d33](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/9ec8d3326e6c02e2190c5ce75678bd5f76f602be))
+* project link and cc license for btt ([#141](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/141)) ([3f21eb1](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/3f21eb17e3a7a7205d6c2864b811f4417b586e78))
+* publications in incunabula ([#142](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/142)) ([68709fd](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/68709fd7eb6078766ac3bb39a53c9641f07ea0ec))
+
+
+### Enhancements
+
+* adjust the display of publications ([#139](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/139)) ([90b0338](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/90b0338f9affab95de374edb1f3f351743a2a208))
+
 ### [1.20.2](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.1...v1.20.2) (2024-05-30)
 
 

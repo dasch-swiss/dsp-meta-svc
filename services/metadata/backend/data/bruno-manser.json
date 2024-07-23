@@ -82,7 +82,19 @@
         "en": "1984 - 2000",
         "fr": "1984 - 2000"
       }
-    ]
+    ],
+    "url": {
+      "__type": "URL",
+      "type": "URL",
+      "url": "https://data.dasch.swiss/bmf/",
+      "text": "Bruno Manser Fonds"
+    },
+    "secondaryURL": {
+      "__type": "URL",
+      "type": "URL",
+      "url": "https://www.bmf.ch/",
+      "text": "Bruno Manser Fonds. Fairness im Tropenwald"
+    }
   },
   "datasets": [
     {

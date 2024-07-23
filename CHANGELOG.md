@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.21.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.21.0...v1.21.1) (2024-07-23)
+
+
+### Maintenance
+
+* Update JSON schema to allow text and URL in publications ([#145](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/145)) ([18a125a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/18a125af3920a4358ff25508f6db05f1dc648950))
+
 ## [1.21.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.2...v1.21.0) (2024-07-02)
 
 

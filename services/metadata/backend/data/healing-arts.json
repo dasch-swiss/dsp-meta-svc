@@ -5,7 +5,7 @@
         "__type": "Project",
         "__createdAt": "1721402611087902000",
         "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database] (DaSCH)",
+        "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",  
         "teaserText": "The project explores the entangled histories of botany, art and health. It considers plant images in early medieval herbals as modes of knowledge that articulate and negotiate medical practices.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-083E-dataset-000"
@@ -14,7 +14,7 @@
             "__type": "URL",
             "type": "URL",
             "url": "https://app.dasch.swiss/project/KQs82YDBRei6YGWrT5Y3ig",
-            "text": "Discover Project data"
+            "text": "Discover Project Data"
         },
         "contactPoint": "http://ns.dasch.swiss/repository#dsp-083E-person-000",
         "description": {
@@ -68,10 +68,14 @@
             }
         ],
         "name": "Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries)",
-        "publications": [
-            "Theresa Holler, Andrew Griebeler and Hannah Baader, Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)",
-            "Theresa Holler, “In search of Panacea. Luxury healing roots in western materia medica”, in: Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"
-        ],
+        "publications": [  
+            {  
+                "text": "Theresa Holler, Andrew Griebeler and Hannah Baader, Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"  
+            },  
+            {  
+                "text": "Theresa Holler, “In search of Panacea. Luxury healing roots in western materia medica”, in: Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"  
+            }  
+        ],  
         "shortcode": "083E",
         "spatialCoverage": [
             {
@@ -100,7 +104,7 @@
                 }
             ],
             "accessConditions": "restricted",
-            "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database] (DaSCH)",
+            "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",  
             "languages": [
                 {
                     "en": "English",
@@ -129,23 +133,17 @@
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-000",
-                    "roles": [
-                        "Project Leader"
-                    ]
+                    "roles": ["PI", "Project Leader"]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-002",
-                    "roles": [
-                        "Data Curator"
-                    ]
+                    "roles": ["Data Collector"]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-001",
-                    "roles": [
-                        "Data Curator"
-                    ]
+                    "roles": ["Data Collector"]
                 }
             ],
             "status": "Ongoing",

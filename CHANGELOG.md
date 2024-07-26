@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.22.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.21.0...v1.22.0) (2024-07-25)
+
+
+### Maintenance
+
+* fix minor issues in existing metadata (DEV-3911) ([#148](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/148)) ([3f190fd](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/3f190fd28edf865d7a45566baa4e7067ee44b563))
+* Update JSON schema to allow text and URL in publications ([#145](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/145)) ([18a125a](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/18a125af3920a4358ff25508f6db05f1dc648950))
+
+
+### Enhancements
+
+* add Healing Arts metadata (DEV-3892) ([#146](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/146)) ([51ab0da](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/51ab0da470ce79010fef4433e6161ca54a38dd4c))
+* add metadata for project rich ([#150](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/150)) ([35f7a53](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/35f7a535013852df8264204d68178a7441b11426))
+
 ## [1.21.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.20.2...v1.21.0) (2024-07-02)
 
 

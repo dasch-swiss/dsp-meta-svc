@@ -120,10 +120,6 @@
       "description": "A project on the DSP",
       "type": "object",
       "properties": {
-        "__id": {
-          "type": "string",
-          "description": "Identifier of the project"
-        },
         "__type": {
           "type": "string",
           "description": "Type of this object",
@@ -262,7 +258,6 @@
         }
       },
       "required": [
-        "__id",
         "__type",
         "shortcode",
         "name",

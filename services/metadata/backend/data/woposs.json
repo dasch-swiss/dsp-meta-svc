@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-woposs-project",
         "__type": "Project",
         "howToCite": "The WoPoss modality corpus. University of Neuchâtel. SNSF. Distributed by DaSCH.",
         "teaserText": "The WoPoss project aims at reconstructing the evolution of modal meanings in Latin from the prehistory of the language up to the 7th century CE, through a linguistically annotated, diachronic corpus.",

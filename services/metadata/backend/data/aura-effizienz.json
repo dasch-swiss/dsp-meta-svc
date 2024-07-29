@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0846-project",
         "__type": "Project",
         "howToCite": "Jael Bollag, Katharina Wolf, Hubert Thüring (2018-2023). Aura und Effizienz [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/0846.",
         "teaserText": "Das Projekt untersucht die diskursiven und praktischen Wechselwirkungen zwischen Materialisierung und Spiritualisierung in der deutschsprachigen Literatur der 1920-30er Jahre.",

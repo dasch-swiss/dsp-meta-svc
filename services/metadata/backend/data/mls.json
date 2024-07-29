@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0807-project",
         "__type": "Project",
         "howToCite": "AutorIn: Artikelname. MLS, Datum der Abfrage.",
         "teaserText": "Das MLS stellt fundierte Information über die AkteurInnen, Institutionen, Orte, Objekte und Phänomene zur Verfügung, die für die Musikgeschichte Schweiz über alle Sparten und Stile relevant sind.",

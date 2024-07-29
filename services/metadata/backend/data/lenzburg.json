@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-082A-project",
         "__type": "Project",
         "howToCite": "Schweizerisches Volksliedarchiv, Tonbandsammlung Folkfestival auf der Lenzburg",
         "teaserText": "Folk music enthusiasts gathered between 1972 and 1980 at the picturesque Lenzburg Castle. Discover the audio heritage of the legendary Lenzburg Folk Festival",

@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0838-project",
         "__type": "Project",
         "howToCite": "Brönnimann, D., Lo Russo, S., Pümpin, Ch., Ismail-Meyer, K., Devos, Y., Kübler, S., Rentzel, Ph. (2024). I-GEOARCHive [Database]. DaSCH. http://ark.dasch.swiss/ark:/72163/1/0838",
         "teaserText": "I-GEOARCHive provides geoarchaeological data and images (profile photos, thin section scans, microscope photos, layer descriptions, mortar and ceramic samples, etc.) from various archaeological sites.",

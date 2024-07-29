@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0816-project",
         "__type": "Project",
         "howToCite": "Vitrocentre Romont has to be mentioned, in regards to images: Vitrocentre Romont and where mentioned the photographer has to be mentioned",
         "teaserText": "vitrosearch - Database for stained glass and glass art by the Vitrocentre Romont ",

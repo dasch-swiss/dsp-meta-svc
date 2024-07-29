@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-REMA-project",
         "__type": "Project",
         "howToCite": "Croci, C., Quadri, I, Gianandrea, M., Romano, S., Tosti, E., Chiaraella, M., Ventura, D., Rivoal, M., 2022, Rome in the Early Middle Ages: Arts and Culture [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0118",
         "teaserText": "The project addresses the visual culture of the city of Rome (Vth-XIth ct.) by means of an interdisciplinary approach (art history, architecture, archaeology archaeometry, liturgy, epigraphy).",

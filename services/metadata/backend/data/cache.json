@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-082B-project",
         "__type": "Project",
         "howToCite": "Gegen|Wissen, intercom: Zürich (2020)",
         "teaserText": "cache is a hybrid publication tool for research groups in the humanities.",

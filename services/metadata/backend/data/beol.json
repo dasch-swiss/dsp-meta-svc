@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0801-project",
         "__type": "Project",
         "howToCite": "Bernoulli-Euler Online (BEOL), 2019, DaSCH. https://beol.dasch.swiss",
         "teaserText": "The project Bernoulli-Euler Online (BEOL) focuses on the mathematics influenced by the Bernoulli dynasty and Leonhard Euler and presents these materials to the public and researchers.",

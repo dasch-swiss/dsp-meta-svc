@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-083B-project",
         "__type": "Project",
         "howToCite": "Canonicity, Obscenity, and the Making of Modern Chaucer (COMMode): An Investigation of the Transmission and Audiences of The Canterbury Tales from 1700 to 2020",
         "teaserText": "This project will recover the untold history of how Chaucer became both an icon of literary fame and an icon of obscenity.",

@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0116-project",
         "__type": "Project",
         "howToCite": "Terrier Aliferis, L., Acosta, L., Ciardo, S., Rivoal, M., 2020, MedFrameS [database] (DaSCH), https://ark.dasch.swiss/ark:/72163/1/0116.",
         "teaserText": "This project aims to valorise and better comprehend the various elements surrounding monumental statues of church portals, namely pedestals, canopies, and niches.",

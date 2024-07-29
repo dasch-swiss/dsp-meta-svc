@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0844-project",
         "__type": "Project",
         "howToCite": "SNSF MARK16 (2023). MARK16 Manuscript Data [Dataset]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/0844.",
         "teaserText": "MARK16 is a SNSF PRIMA project. It reassesses the diverse endings of the Gospel of Mark through manuscript data, available on its Virtual Research Environment ISSN 2673-9836, https://mark16.sib.swiss.",

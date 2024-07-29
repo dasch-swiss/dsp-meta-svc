@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0805-project",
         "__type": "Project",
         "howToCite": "University of Basel Kings’ Valley Project Online (UBKVP), 2021, DaSCH. ark.dasch.swiss/ark:/72163/1/0805",
         "teaserText": "Assessment of tombs in the Kings’ Valley used for burials of royal family and entourage (ca. 1350 BCE), looted (ca. 1000 BCE), and reused for burials of members of priestly families (ca. 800–700 BCE).",

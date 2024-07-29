@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0804-project",
         "__type": "Project",
         "howToCite": "Dokumentationsbibliothek St. Moritz",
         "teaserText": "Bibliothek St. Moritz Dokumentation is the local history archive of the community of St. Moritz, Switzerland.",

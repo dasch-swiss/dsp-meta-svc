@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0106-project",
         "__type": "Project",
         "howToCite": "Berton, M., Murtas, E., Tinguely, R., Rivoal, M., Jaouen, L., 2023, Cinéma et psychiatrie en Suisse : les collections Waldau [database] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0106.",
         "teaserText": "Comment les psychiatres et neurologues suisses se sont-ils emparés, au XXe siècle, du médium filmique dans leur pratique de médecins, d’enseignants et de chercheurs ?",

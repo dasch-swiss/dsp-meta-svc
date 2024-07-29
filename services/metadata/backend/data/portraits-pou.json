@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0827-project",
         "__type": "Project",
         "howToCite": "Portraits of Unbelonging (POU), 2021, DaSCH. ark.dasch.swiss/ark:/72163/1/0827",
         "teaserText": "How do photography and statecraft intersect in the making and unmaking of citizens?  How and why did photography become a new media for unmaking subjects in late 19th c Ottoman empire?",

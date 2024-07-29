@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0849-project",
         "__type": "Project",
         "howToCite": "Weber, Anne-Katrin; Cronjäger, Lisa; Sandoz, Marie; Scheiwiller, Sébastien (2024). Operative TV [Database]. DaSCH",
         "teaserText": "The SNSF PRIMA project “Operative TV: Audiovisual Closed-Circuits from the Military to the Classroom, 1930s-1990s” studies the uses of TV in industrial, medical, educational and military contexts.",

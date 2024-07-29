@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0120-project",
         "__type": "Project",
         "howToCite": "Jacquin, J., Keck, A., Robin, C., Roh, S., Rivoal, M. (2024). Marqueurs épistémiques et évidentiels du français identifiés et annotés dans un corpus d'interactions relevant de débats politiques et de réunions d’entreprise [Projet FNS 188924, POSEPI] [base de données] (DaSCH), http://ark.dasch.swiss/ark:/72163/1/0120",
         "teaserText": "A systematic and multimodal study of French epistemic and evidential markers as emerging in various professional/institutional settings documented by “natural“ video-recorded data.",

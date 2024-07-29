@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0847-project",
         "__type": "Project",
         "howToCite": "Attia (2024). Kottabos in the Greek World (2024). DaSCH, https://ark.dasch.swiss/ark:/72163/1/0847.",
         "teaserText": "This database aims to provide a benchmark by compilating all representations of kottabos in the Greek world, including descriptions, images and links to other reference databases.",

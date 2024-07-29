@@ -1,7 +1,6 @@
 {
   "$schema": "../../../../docs/services/metadata/schema-metadata.json",
   "project": {
-    "__id": "http://ns.dasch.swiss/repository#dsp-0813-project",
     "__type": "Project",
     "howToCite": "Bruno Manser/Bruno Manser Fonds",
     "teaserText": "Bruno Manser has left a variety of media in which he documented the nomadic life of the Penan. The project shows and annotates these documents.",

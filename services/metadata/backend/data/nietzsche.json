@@ -1,7 +1,6 @@
 {
     "$schema": "../../../../docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-0836-project",
         "__type": "Project",
         "teaserText": "The digital edition project \"Der späte Nietzsche\" (The Late Nietzsche) publishes Friedrich Nietzsche's late estate digitally congruent to the manuscripts.",
         "datasets": [

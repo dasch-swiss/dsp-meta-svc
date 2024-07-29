@@ -1,7 +1,6 @@
 {
   "$schema": "../../../../docs/services/metadata/schema-metadata.json",
   "project": {
-    "__id": "http://ns.dasch.swiss/repository#dsp-083A-project",
     "__type": "Project",
     "howToCite": "Beyond the Text (BT), University of Basel, 2026",
     "teaserText": "Philological and archaeological project exploring the emergence and evolution of the funerary literature of the Graeco-Roman Period",

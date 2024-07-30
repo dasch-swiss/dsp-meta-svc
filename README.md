@@ -1,3 +1,13 @@
+# Repository Archived
+
+We would like to inform you that this GitHub repository has been archived and is no longer maintained.
+
+Please use the following repository for the latest updates and continued support: [dasch-swiss/dsp-meta](https://github.com/dasch-swiss/dsp-meta-svc).
+
+Thank you for your understanding and cooperation.
+
+---
+
 # Metadata service
 
 Service for providing users with project and dataset specific metadata.
@@ -13,7 +23,6 @@ The following programs need to be installed to run the metadata browser locally:
 - Docker
 
 Ensure that all dependencies are installt, running `yarn install`.
-
 
 ## Run locally
 
@@ -31,14 +40,13 @@ if you run it inside docker, you will have to re-run the service for the changes
 
 ## Front-end
 
-The front-end part is basing on [Svelte](https://svelte.dev). To run it, `yarn` and/or `make` need to be installed. 
+The front-end part is basing on [Svelte](https://svelte.dev). To run it, `yarn` and/or `make` need to be installed.
 
 1. Clone the repository:
 
 ```
 https://github.com/dasch-swiss/dasch-service-platform.git
 ```
-
 
 2. Install the dependencies:
 
@@ -60,7 +68,7 @@ yarn run dev
 
 This starts the application on the [localhost:5000](http://localhost:5000).
 
-*Note that you will also need to have [Node.js](https://nodejs.org) installed.*
+_Note that you will also need to have [Node.js](https://nodejs.org) installed._
 
 ## Server
 
@@ -72,7 +80,7 @@ The route `/` serves the frontend.
 
 The routes `/projects` and `/projects/:id` form a simple metadata API.  
 The server serves all data found in `./services/metadata/backend/data/*.json`, where the JSON file follows the data structure as currently provided by DSP-JS-LIB.  
-__Note:__ Files starting with underscore (`_`) are excluded. This provides a simple means to leave out files that are not supposed to be public.  
+**Note:** Files starting with underscore (`_`) are excluded. This provides a simple means to leave out files that are not supposed to be public.  
 The server supports pagination and full text search.
 
 To run the server locally, use the command `make metadata`.  
@@ -85,10 +93,11 @@ To be able to use external dependencies with Bazel, all external dependencies ne
 so that they can be referenced in the `BUILD.bazel` files.
 
 The steps to add an external dependency are as follows:
+
 1. to add repository and version to `go.mod`, run `go get gihub.com/stretchr/testify`
-  (exchange the name of the package with the one you would like to add)
+   (exchange the name of the package with the one you would like to add)
 1. from inside this directory, run `go mod download gihub.com/stretchr/testify`
-  (exchange the name of the package with the one you would like to add)
+   (exchange the name of the package with the one you would like to add)
 1. from the root of the repository, run `make gen-go-deps`
 
 Running the `make gen-go-deps` will regenerate the `deps.bzl` file found

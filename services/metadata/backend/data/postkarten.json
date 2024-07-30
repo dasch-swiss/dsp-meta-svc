@@ -131,8 +131,6 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-0811-person-001",
             "__type": "Person",
-            "__createdAt": "1652361078368442000",
-            "__createdBy": "dsp-metadata-gui",
             "familyNames": [
                 "Würsch"
             ],

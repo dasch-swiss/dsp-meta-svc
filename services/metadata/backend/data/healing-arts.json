@@ -1,11 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-meta-svc/main/docs/services/metadata/schema-metadata.json",
     "project": {
-        "__id": "http://ns.dasch.swiss/repository#dsp-083E-project",
         "__type": "Project",
-        "__createdAt": "1721402611087902000",
-        "__createdBy": "dsp-metadata-gui",
-        "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",  
+        "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",
         "teaserText": "The project explores the entangled histories of botany, art and health. It considers plant images in early medieval herbals as modes of knowledge that articulate and negotiate medical practices.",
         "datasets": [
             "http://ns.dasch.swiss/repository#dsp-083E-dataset-000"
@@ -68,14 +65,14 @@
             }
         ],
         "name": "Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries)",
-        "publications": [  
-            {  
-                "text": "Theresa Holler, Andrew Griebeler and Hannah Baader, Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"  
-            },  
-            {  
-                "text": "Theresa Holler, “In search of Panacea. Luxury healing roots in western materia medica”, in: Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"  
-            }  
-        ],  
+        "publications": [
+            {
+                "text": "Theresa Holler, Andrew Griebeler and Hannah Baader, Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"
+            },
+            {
+                "text": "Theresa Holler, “In search of Panacea. Luxury healing roots in western materia medica”, in: Visualizing Drugs & Dyes. Art and Pharmacology in the larger Medieval Mediterranean, Leiden, Brill 2025 (in preparation)"
+            }
+        ],
         "shortcode": "083E",
         "spatialCoverage": [
             {
@@ -96,15 +93,13 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-dataset-000",
             "__type": "Dataset",
-            "__createdAt": "1721402613635306000",
-            "__createdBy": "dsp-metadata-gui",
             "abstracts": [
                 {
                     "en": "The database is a comprehensive collection of early medieval herbals prior to 1200. The ontology of the database includes several main classes (e.g. remedy, manuscript, object, person, text) to describe, contextualise and visualise plant images. By linking these classes to each other, the database displays the transmission of individual plant images and the underlying network between manuscript productions. Special attention has been paid to the very diverse medieval botanical nomenclature, including synonyms, spelling variants and the vernacular. This allows a broad search for remedies and their possible identification across geographical borders."
                 }
             ],
             "accessConditions": "restricted",
-            "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",  
+            "howToCite": "Holler, T.; Baptista Wilhelm, L; Von Kerssenbrock-Krosigk, G.: Healing Arts. Representations and Practices of Medical Knowledge in Art and Literature (9th-12th centuries) [database]. DaSCH. https://ark.dasch.swiss/ark:/72163/1/083E",
             "languages": [
                 {
                     "en": "English",
@@ -133,17 +128,24 @@
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-000",
-                    "roles": ["PI", "Project Leader"]
+                    "roles": [
+                        "PI",
+                        "Project Leader"
+                    ]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-002",
-                    "roles": ["Data Collector"]
+                    "roles": [
+                        "Data Collector"
+                    ]
                 },
                 {
                     "__type": "Attribution",
                     "agent": "http://ns.dasch.swiss/repository#dsp-083E-person-001",
-                    "roles": ["Data Collector"]
+                    "roles": [
+                        "Data Collector"
+                    ]
                 }
             ],
             "status": "Ongoing",
@@ -158,8 +160,6 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-person-001",
             "__type": "Person",
-            "__createdAt": "1721402613916295000",
-            "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
                 "street": "Rheinsprung 9/11",
@@ -184,8 +184,6 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-person-002",
             "__type": "Person",
-            "__createdAt": "1721402614095529000",
-            "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
                 "street": "Rheinsprung 9/11",
@@ -210,8 +208,6 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-person-000",
             "__type": "Person",
-            "__createdAt": "1721402614188634000",
-            "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
                 "street": "Rheinsprung 9/11",
@@ -238,15 +234,11 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-organization-001",
             "__type": "Organization",
-            "__createdAt": "1721402614283967000",
-            "__createdBy": "dsp-metadata-gui",
             "name": "Swiss National Science Foundation (SNSF)"
         },
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-organization-000",
             "__type": "Organization",
-            "__createdAt": "1721402614284065000",
-            "__createdBy": "dsp-metadata-gui",
             "address": {
                 "__type": "Address",
                 "street": "St. Alban-Graben 8/10",
@@ -268,8 +260,6 @@
         {
             "__id": "http://ns.dasch.swiss/repository#dsp-083E-grant-000",
             "__type": "Grant",
-            "__createdAt": "1721402614469767000",
-            "__createdBy": "dsp-metadata-gui",
             "funders": [
                 "http://ns.dasch.swiss/repository#dsp-083E-organization-001"
             ],

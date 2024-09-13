@@ -2,7 +2,7 @@
 
 We would like to inform you that this GitHub repository has been archived and is no longer maintained.
 
-Please use the following repository for the latest updates and continued support: [dasch-swiss/dsp-meta](https://github.com/dasch-swiss/dsp-meta-svc).
+Please use the following repository for the latest updates and continued support: [dasch-swiss/dsp-meta](https://github.com/dasch-swiss/dsp-meta).
 
 Thank you for your understanding and cooperation.
 

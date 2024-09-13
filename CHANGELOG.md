@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.22.1](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.22.0...v1.22.1) (2024-09-13)
+
+
+### Maintenance
+
+* Add archive notice to README (DEV-3943) ([#156](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/156)) ([a66e2da](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/a66e2daee501eee3fee4738ec90bd7efa6828a7a))
+* fix excluded Fathom Analytics domains ([#157](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/157)) ([e052b08](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/e052b08b350e6e068aabf231dd4cd52cd3cc9e4e))
+* Fix existing metadata for finished projects ([#153](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/153)) ([d70bfa3](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/d70bfa30df884e95290d8e802a0a15e102b10e48))
+* in schema make job title and affiliation optional for person (DEV-3933) ([#154](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/154)) ([6bab65c](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/6bab65cb1fa04992d17484f3d23584d6de179305))
+* Remove redundant internal properties from metadata and schema (DEV-3929) ([#155](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/155)) ([a85c978](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/a85c978d706f14cc21f875cb42ec4915c0f42022))
+* Remove unused _*.json metadata ([#151](https://www.github.com/dasch-swiss/dsp-meta-svc/issues/151)) ([614314d](https://www.github.com/dasch-swiss/dsp-meta-svc/commit/614314de89c231359ba31669e298635fee292705))
+
 ## [1.22.0](https://www.github.com/dasch-swiss/dsp-meta-svc/compare/v1.21.0...v1.22.0) (2024-07-25)
 
 
